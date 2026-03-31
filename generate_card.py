@@ -36,7 +36,7 @@ Rules: news 3-6 items, repos 4-8 items, tiếng Việt ngắn gọn dễ hiểu.
 print(f"🔍 Generating card for {date_str}...")
 
 response = client.models.generate_content(
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash",
     contents=PROMPT,
     config=types.GenerateContentConfig(
         tools=[types.Tool(google_search=types.GoogleSearch())],
