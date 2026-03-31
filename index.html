@@ -5,354 +5,71 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>☀️ Morning Digest</title>
 <meta name="theme-color" content="#0d0f14">
-<meta name="description" content="Báo cáo sáng hàng ngày — Claude News & GitHub Hot">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  :root {
-    --bg: #0d0f14;
-    --bg2: #111827;
-    --bg3: #0f172a;
-    --border: #1f2937;
-    --border2: #1e293b;
-    --text: #e2e8f0;
-    --text2: #94a3b8;
-    --text3: #64748b;
-    --accent: #818cf8;
-    --accent2: #c084fc;
-    --green: #34d399;
-    --yellow: #fbbf24;
-    --red: #f87171;
-    --blue: #60a5fa;
-    --pink: #f472b6;
-  }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
-    min-height: 100vh;
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
-  /* ── HEADER ── */
-  .site-header {
-    background: linear-gradient(135deg, #0f172a 0%, #111827 100%);
-    border-bottom: 1px solid var(--border);
-    padding: 20px 16px 16px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-
-  .header-inner {
-    max-width: 720px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-  }
-
-  .header-logo { font-size: 2rem; line-height: 1; }
-
-  .header-text h1 {
-    font-size: 1.15rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .header-text .tagline {
-    font-size: 0.78rem;
-    color: var(--text3);
-    margin-top: 2px;
-  }
-
-  /* ── DATE NAV ── */
-  .date-nav {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 12px 16px 0;
-    display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-  }
-  .date-nav::-webkit-scrollbar { display: none; }
-
-  .date-chip {
-    flex-shrink: 0;
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 5px 12px;
-    font-size: 0.75rem;
-    color: var(--text2);
-    cursor: pointer;
-    transition: all 0.15s;
-    white-space: nowrap;
-    text-decoration: none;
-  }
-  .date-chip:hover, .date-chip.active {
-    background: rgba(129,140,248,0.15);
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-  .date-chip.active { font-weight: 600; }
-
-  /* ── MAIN ── */
-  main {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 16px;
-  }
-
-  .loading, .empty, .error {
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--text3);
-    font-size: 1rem;
-  }
-
-  /* ── CARD ── */
-  .card {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    margin-bottom: 16px;
-    overflow: hidden;
-    transition: border-color 0.2s;
-  }
-  .card:first-child { border-color: rgba(129,140,248,0.35); }
-
-  .card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 16px;
-    cursor: pointer;
-    user-select: none;
-    gap: 12px;
-  }
-  .card-header:hover { background: rgba(255,255,255,0.02); }
-
-  .card-date-wrap { display: flex; align-items: center; gap: 10px; }
-
-  .card-badge-today {
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
-    color: #fff;
-    font-size: 0.65rem;
-    font-weight: 700;
-    padding: 2px 8px;
-    border-radius: 20px;
-    letter-spacing: 0.5px;
-  }
-
-  .card-day {
-    font-size: 0.75rem;
-    color: var(--text3);
-    font-weight: 500;
-  }
-
-  .card-date-label {
-    font-size: 0.92rem;
-    font-weight: 700;
-    color: var(--text);
-  }
-
-  .card-toggle-btn {
-    background: var(--bg3);
-    border: 1px solid var(--border2);
-    border-radius: 8px;
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text3);
-    font-size: 0.7rem;
-    flex-shrink: 0;
-    transition: all 0.15s;
-    cursor: pointer;
-  }
-  .card-toggle-btn:hover { border-color: var(--accent); color: var(--accent); }
-
-  .card-body { display: none; }
-  .card-body.open { display: block; }
-
-  /* ── SECTION ── */
-  .section {
-    border-top: 1px solid var(--border);
-    padding: 14px 16px;
-  }
-
-  .section-title {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--text2);
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  /* ── NEWS ITEMS ── */
-  .news-item {
-    background: var(--bg3);
-    border: 1px solid var(--border2);
-    border-radius: 10px;
-    padding: 11px 13px;
-    margin-bottom: 8px;
-    transition: border-color 0.15s;
-  }
-  .news-item:last-child { margin-bottom: 0; }
-  .news-item:hover { border-color: #334155; }
-
-  .news-top {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 10px;
-    margin-bottom: 5px;
-  }
-
-  .news-title {
-    font-size: 0.855rem;
-    font-weight: 600;
-    color: var(--text);
-    line-height: 1.4;
-    flex: 1;
-  }
-
-  .tag {
-    display: inline-block;
-    font-size: 0.65rem;
-    padding: 2px 7px;
-    border-radius: 20px;
-    font-weight: 700;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-  .tag-hot      { background: rgba(239,68,68,.15);   color: var(--red);   border: 1px solid rgba(239,68,68,.3); }
-  .tag-api      { background: rgba(99,102,241,.15);  color: var(--accent);border: 1px solid rgba(99,102,241,.3); }
-  .tag-feature  { background: rgba(16,185,129,.15);  color: var(--green); border: 1px solid rgba(16,185,129,.3); }
-  .tag-deprecate{ background: rgba(245,158,11,.15);  color: var(--yellow);border: 1px solid rgba(245,158,11,.3); }
-  .tag-model    { background: rgba(236,72,153,.15);  color: var(--pink);  border: 1px solid rgba(236,72,153,.3); }
-
-  .news-desc {
-    font-size: 0.8rem;
-    color: var(--text2);
-    line-height: 1.55;
-  }
-
-  .news-source {
-    font-size: 0.7rem;
-    color: var(--text3);
-    margin-top: 5px;
-  }
-
-  /* ── REPO CARDS ── */
-  .repo-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-  @media (min-width: 560px) {
-    .repo-grid { grid-template-columns: 1fr 1fr; }
-  }
-
-  .repo-card {
-    background: var(--bg3);
-    border: 1px solid var(--border2);
-    border-radius: 10px;
-    padding: 11px 13px;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    transition: border-color 0.15s, transform 0.12s;
-  }
-  .repo-card:hover { border-color: #334155; transform: translateY(-1px); }
-
-  .repo-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .repo-name {
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: var(--accent);
-    word-break: break-all;
-    line-height: 1.3;
-    flex: 1;
-    text-decoration: none;
-  }
-  .repo-name:hover { color: var(--accent2); }
-
-  .repo-stars {
-    font-size: 0.72rem;
-    color: var(--yellow);
-    font-weight: 600;
-    white-space: nowrap;
-  }
-
-  .repo-desc {
-    font-size: 0.78rem;
-    color: var(--text2);
-    line-height: 1.5;
-    flex: 1;
-  }
-
-  .repo-verdict {
-    display: flex;
-    align-items: flex-start;
-    gap: 6px;
-    margin-top: 2px;
-  }
-
-  .verdict {
-    font-size: 0.67rem;
-    font-weight: 700;
-    padding: 2px 7px;
-    border-radius: 20px;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-  .verdict-yes   { background: rgba(16,185,129,.18);  color: var(--green); border: 1px solid rgba(16,185,129,.3); }
-  .verdict-maybe { background: rgba(245,158,11,.18);  color: var(--yellow);border: 1px solid rgba(245,158,11,.3); }
-  .verdict-skip  { background: rgba(100,116,139,.18); color: var(--text3); border: 1px solid rgba(100,116,139,.3); }
-
-  .verdict-reason {
-    font-size: 0.73rem;
-    color: var(--text3);
-    line-height: 1.4;
-  }
-
-  /* ── FOOTER ── */
-  footer {
-    text-align: center;
-    padding: 24px 16px;
-    color: var(--text3);
-    font-size: 0.75rem;
-    border-top: 1px solid var(--border);
-    max-width: 720px;
-    margin: 0 auto;
-  }
-  footer span { color: var(--text3); opacity: 0.6; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0d0f14;--bg2:#111827;--bg3:#0f172a;--border:#1f2937;--border2:#1e293b;--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;--accent:#818cf8;--accent2:#c084fc;--green:#34d399;--yellow:#fbbf24;--red:#f87171;--blue:#60a5fa;--pink:#f472b6}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:100vh;font-size:15px;line-height:1.5}
+.site-header{background:linear-gradient(135deg,#0f172a,#111827);border-bottom:1px solid var(--border);padding:20px 16px 16px;position:sticky;top:0;z-index:100}
+.header-inner{max-width:720px;margin:0 auto;display:flex;align-items:center;gap:14px}
+.header-logo{font-size:2rem;line-height:1}
+.header-text h1{font-size:1.15rem;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.header-text .tagline{font-size:.78rem;color:var(--text3);margin-top:2px}
+.date-nav{max-width:720px;margin:0 auto;padding:12px 16px 0;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.date-nav::-webkit-scrollbar{display:none}
+.date-chip{flex-shrink:0;background:var(--bg2);border:1px solid var(--border);border-radius:20px;padding:5px 12px;font-size:.75rem;color:var(--text2);cursor:pointer;transition:all .15s;white-space:nowrap;text-decoration:none}
+.date-chip:hover,.date-chip.active{background:rgba(129,140,248,.15);border-color:var(--accent);color:var(--accent)}
+.date-chip.active{font-weight:600}
+main{max-width:720px;margin:0 auto;padding:16px}
+.loading,.empty,.error{text-align:center;padding:60px 20px;color:var(--text3);font-size:1rem}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;margin-bottom:16px;overflow:hidden}
+.card:first-child{border-color:rgba(129,140,248,.35)}
+.card-header{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;cursor:pointer;user-select:none;gap:12px}
+.card-header:hover{background:rgba(255,255,255,.02)}
+.card-date-wrap{display:flex;align-items:center;gap:10px}
+.card-badge-today{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-size:.65rem;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:.5px}
+.card-day{font-size:.75rem;color:var(--text3);font-weight:500}
+.card-date-label{font-size:.92rem;font-weight:700;color:var(--text)}
+.card-toggle-btn{background:var(--bg3);border:1px solid var(--border2);border-radius:8px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:var(--text3);font-size:.7rem;flex-shrink:0;transition:all .15s;cursor:pointer}
+.card-toggle-btn:hover{border-color:var(--accent);color:var(--accent)}
+.card-body{display:none}
+.card-body.open{display:block}
+.section{border-top:1px solid var(--border);padding:14px 16px}
+.section-title{font-size:.8rem;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px}
+.news-item{background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:11px 13px;margin-bottom:8px;transition:border-color .15s}
+.news-item:last-child{margin-bottom:0}
+.news-item:hover{border-color:#334155}
+.news-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:5px}
+.news-title{font-size:.855rem;font-weight:600;color:var(--text);line-height:1.4;flex:1}
+a.news-title{text-decoration:none;transition:color .15s}
+a.news-title:hover{color:var(--accent);text-decoration:underline}
+.tag{display:inline-block;font-size:.65rem;padding:2px 7px;border-radius:20px;font-weight:700;white-space:nowrap;flex-shrink:0}
+.tag-hot{background:rgba(239,68,68,.15);color:var(--red);border:1px solid rgba(239,68,68,.3)}
+.tag-api{background:rgba(99,102,241,.15);color:var(--accent);border:1px solid rgba(99,102,241,.3)}
+.tag-feature{background:rgba(16,185,129,.15);color:var(--green);border:1px solid rgba(16,185,129,.3)}
+.tag-deprecate{background:rgba(245,158,11,.15);color:var(--yellow);border:1px solid rgba(245,158,11,.3)}
+.tag-model{background:rgba(236,72,153,.15);color:var(--pink);border:1px solid rgba(236,72,153,.3)}
+.news-desc{font-size:.8rem;color:var(--text2);line-height:1.55}
+.news-source{font-size:.7rem;color:var(--text3);margin-top:5px}
+.repo-grid{display:grid;grid-template-columns:1fr;gap:8px}
+@media(min-width:560px){.repo-grid{grid-template-columns:1fr 1fr}}
+.repo-card{background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:11px 13px;display:flex;flex-direction:column;gap:7px;transition:border-color .15s,transform .12s}
+.repo-card:hover{border-color:#334155;transform:translateY(-1px)}
+.repo-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.repo-name{font-size:.82rem;font-weight:700;color:var(--accent);word-break:break-all;line-height:1.3;flex:1;text-decoration:none}
+.repo-name:hover{color:var(--accent2)}
+.repo-stars{font-size:.72rem;color:var(--yellow);font-weight:600;white-space:nowrap}
+.repo-desc{font-size:.78rem;color:var(--text2);line-height:1.5;flex:1}
+.repo-verdict{display:flex;align-items:flex-start;gap:6px;margin-top:2px}
+.verdict{font-size:.67rem;font-weight:700;padding:2px 7px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+.verdict-yes{background:rgba(16,185,129,.18);color:var(--green);border:1px solid rgba(16,185,129,.3)}
+.verdict-maybe{background:rgba(245,158,11,.18);color:var(--yellow);border:1px solid rgba(245,158,11,.3)}
+.verdict-skip{background:rgba(100,116,139,.18);color:var(--text3);border:1px solid rgba(100,116,139,.3)}
+.verdict-reason{font-size:.73rem;color:var(--text3);line-height:1.4}
+footer{text-align:center;padding:24px 16px;color:var(--text3);font-size:.75rem;border-top:1px solid var(--border);max-width:720px;margin:0 auto}
 </style>
 </head>
 <body>
-
 <header class="site-header">
   <div class="header-inner">
     <div class="header-logo">☀️</div>
@@ -362,132 +79,62 @@
     </div>
   </div>
 </header>
-
 <div class="date-nav" id="date-nav"></div>
 <main id="main"><div class="loading">⏳ Đang tải...</div></main>
-<footer><span>🤖 Tự động bởi Lèo · minhducdl87-code/morning · Rolling 30 ngày</span></footer>
-
+<footer>🤖 Tự động bởi Lèo · minhducdl87-code/morning · Rolling 30 ngày</footer>
 <script>
-const TAG_MAP = {
-  hot: 'tag-hot', api: 'tag-api', feature: 'tag-feature',
-  deprecate: 'tag-deprecate', model: 'tag-model'
-};
-
-const VERDICT_MAP = {
-  yes: ['verdict-yes', '✅ YES'],
-  maybe: ['verdict-maybe', '🤔 MAYBE'],
-  skip: ['verdict-skip', '⏭️ SKIP']
-};
-
-let allCards = [];
-
-function todayStr() {
-  const d = new Date();
-  return d.toISOString().slice(0, 10);
+const TAG_MAP={hot:'tag-hot',api:'tag-api',feature:'tag-feature',deprecate:'tag-deprecate',model:'tag-model'};
+const VERDICT_MAP={yes:['verdict-yes','✅ YES'],maybe:['verdict-maybe','🤔 MAYBE'],skip:['verdict-skip','⏭️ SKIP']};
+function todayStr(){return new Date().toISOString().slice(0,10)}
+function renderNewsItem(n){
+  const tagKey=(n.tag||'').split('|')[0];
+  const cls=TAG_MAP[tagKey]||'tag-api';
+  const title=n.url
+    ?`<a href="${n.url}" target="_blank" rel="noopener" class="news-title">${n.title}</a>`
+    :`<span class="news-title">${n.title}</span>`;
+  return`<div class="news-item"><div class="news-top">${title}<span class="tag ${cls}">${n.tagLabel}</span></div><p class="news-desc">${n.desc}</p>${n.source?`<div class="news-source">📅 ${n.source}</div>`:''}</div>`;
 }
-
-function renderNewsItem(item) {
-  const titleHtml = item.url
-    ? `<a href="${item.url}" target="_blank" rel="noopener" style="color:var(--text);font-weight:600;font-size:.855rem;line-height:1.4;flex:1;text-decoration:none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text)'">${item.title}</a>`
-    : `<span class="news-title">${item.title}</span>`;
-  return `
-    <div class="news-item">
-      <div class="news-top">
-        ${titleHtml}
-        <span class="tag ${TAG_MAP[item.tag] || 'tag-api'}">${item.tagLabel}</span>
+function renderRepo(r){
+  const[cls,lbl]=VERDICT_MAP[r.verdict]||VERDICT_MAP.maybe;
+  return`<div class="repo-card"><div class="repo-top"><a href="${r.url}" target="_blank" rel="noopener" class="repo-name">${r.name}</a><span class="repo-stars">⭐ ${r.stars}</span></div><p class="repo-desc">${r.desc}</p><div class="repo-verdict"><span class="verdict ${cls}">${lbl}</span><span class="verdict-reason">${r.reason}</span></div></div>`;
+}
+function renderCard(card,i){
+  const today=card.date===todayStr();
+  const open=i===0;
+  return`<div class="card" id="card-${card.date}">
+    <div class="card-header" onclick="toggle('${card.date}')">
+      <div class="card-date-wrap">
+        ${today?'<span class="card-badge-today">HÔM NAY</span>':''}
+        <div><div class="card-day">${card.dayLabel}</div><div class="card-date-label">${card.dateLabel}</div></div>
       </div>
-      <p class="news-desc">${item.desc}</p>
-      ${item.source ? `<div class="news-source">📅 ${item.source}</div>` : ''}
-    </div>`;
+      <button class="card-toggle-btn" id="tb-${card.date}">${open?'▲':'▼'}</button>
+    </div>
+    <div class="card-body${open?' open':''}" id="bd-${card.date}">
+      <div class="section"><div class="section-title">🤖 Claude News</div>${(card.news||[]).map(renderNewsItem).join('')||'<p style="color:var(--text3);font-size:.82rem">Hôm nay Anthropic nghỉ ngơi 😴</p>'}</div>
+      <div class="section"><div class="section-title">🐙 GitHub Hot</div><div class="repo-grid">${(card.repos||[]).map(renderRepo).join('')}</div></div>
+    </div>
+  </div>`;
 }
+function toggle(d){
+  const b=document.getElementById('bd-'+d),t=document.getElementById('tb-'+d);
+  if(!b)return;
+  const o=b.classList.toggle('open');
+  t.textContent=o?'▲':'▼';
 }
-
-function renderRepoCard(repo) {
-  const [cls, label] = VERDICT_MAP[repo.verdict] || VERDICT_MAP['maybe'];
-  return `
-    <div class="repo-card">
-      <div class="repo-top">
-        <a href="${repo.url}" target="_blank" rel="noopener" class="repo-name">${repo.name}</a>
-        <span class="repo-stars">⭐ ${repo.stars}</span>
-      </div>
-      <p class="repo-desc">${repo.desc}</p>
-      <div class="repo-verdict">
-        <span class="verdict ${cls}">${label}</span>
-        <span class="verdict-reason">${repo.reason}</span>
-      </div>
-    </div>`;
-}
-
-function renderCard(card, index) {
-  const isToday = card.date === todayStr();
-  const isOpen  = index === 0;
-  const newsHtml  = (card.news  || []).map(renderNewsItem).join('');
-  const reposHtml = (card.repos || []).map(renderRepoCard).join('');
-
-  return `
-    <div class="card" id="card-${card.date}">
-      <div class="card-header" onclick="toggleCard('${card.date}')">
-        <div class="card-date-wrap">
-          ${isToday ? '<span class="card-badge-today">HÔM NAY</span>' : ''}
-          <div>
-            <div class="card-day">${card.dayLabel}</div>
-            <div class="card-date-label">${card.dateLabel}</div>
-          </div>
-        </div>
-        <button class="card-toggle-btn" id="toggle-${card.date}">${isOpen ? '▲' : '▼'}</button>
-      </div>
-      <div class="card-body ${isOpen ? 'open' : ''}" id="body-${card.date}">
-        <div class="section">
-          <div class="section-title">🤖 Claude News</div>
-          <div class="news-list">${newsHtml || '<p style="color:var(--text3);font-size:.82rem">Hôm nay Anthropic nghỉ ngơi 😴</p>'}</div>
-        </div>
-        <div class="section">
-          <div class="section-title">🐙 GitHub Hot</div>
-          <div class="repo-grid">${reposHtml || '<p style="color:var(--text3);font-size:.82rem">Không tìm thấy repo nổi bật 🤷</p>'}</div>
-        </div>
-      </div>
-    </div>`;
-}
-
-function toggleCard(date) {
-  const body = document.getElementById('body-' + date);
-  const btn  = document.getElementById('toggle-' + date);
-  if (!body) return;
-  const open = body.classList.toggle('open');
-  btn.textContent = open ? '▲' : '▼';
-}
-
-function buildDateNav(cards) {
-  const nav = document.getElementById('date-nav');
-  const today = todayStr();
-  nav.innerHTML = cards.map(c => {
-    const active = c.date === today ? ' active' : '';
-    return `<a class="date-chip${active}" href="#card-${c.date}">${c.dayLabel} ${c.dateLabel}</a>`;
-  }).join('');
-}
-
-async function init() {
-  try {
-    const res = await fetch('cards.json?t=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    allCards = await res.json();
-
-    if (!allCards.length) {
-      document.getElementById('main').innerHTML = '<div class="empty">Chưa có bài nào 🌙</div>';
-      return;
-    }
-
-    document.getElementById('tagline').textContent =
-      `${allCards.length} ngày gần nhất · tự động lúc 5AM`;
-
-    buildDateNav(allCards);
-    document.getElementById('main').innerHTML = allCards.map(renderCard).join('');
-  } catch (e) {
-    document.getElementById('main').innerHTML =
-      `<div class="error">Không load được dữ liệu 😅<br><small style="opacity:.5">${e.message}</small></div>`;
+async function init(){
+  try{
+    const r=await fetch('cards.json?v='+Date.now());
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const cards=await r.json();
+    if(!cards.length){document.getElementById('main').innerHTML='<div class="empty">Chưa có bài nào 🌙</div>';return;}
+    document.getElementById('tagline').textContent=cards.length+' ngày gần nhất · tự động lúc 5AM';
+    const nav=document.getElementById('date-nav');
+    nav.innerHTML=cards.map(c=>`<a class="date-chip${c.date===todayStr()?' active':''}" href="#card-${c.date}">${c.dayLabel} ${c.dateLabel}</a>`).join('');
+    document.getElementById('main').innerHTML=cards.map(renderCard).join('');
+  }catch(e){
+    document.getElementById('main').innerHTML=`<div class="error">Lỗi load dữ liệu 😅<br><small>${e.message}</small></div>`;
   }
 }
-
 init();
 </script>
 </body>
