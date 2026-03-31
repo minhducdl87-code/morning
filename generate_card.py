@@ -29,11 +29,11 @@ TASK 2: Search "github trending claude anthropic AI tools this week"
 
 Trả về CHỈ JSON (không markdown, không text thêm):
 {{"date":"{date_str}","dayLabel":"{day_label}","dateLabel":"{date_label}",
-"news":[{{"title":"emoji+tên","desc":"mô tả tiếng Việt max 2 câu","tag":"hot|api|feature|deprecate|model","tagLabel":"🔥 HOT|🔧 API|✨ FEATURE|⏰ DEADLINE|🧠 MODEL","source":"ngày·nguồn"}}],
+"news":[{{"title":"emoji+tên","desc":"mô tả tiếng Việt max 2 câu","tag":"hot|api|feature|deprecate|model","tagLabel":"🔥 HOT|🔧 API|✨ FEATURE|⏰ DEADLINE|🧠 MODEL","source":"ngày·nguồn","url":"https://link-bai-goc-hoac-chuoi-rong-neu-khong-co"}}],
 "repos":[{{"name":"owner/repo","url":"https://github.com/owner/repo","desc":"1 câu tiếng Việt","stars":"12K+","verdict":"yes|maybe|skip","reason":"lý do ngắn cho game developer"}}]}}
 Rules: news 3-6 items, repos 4-8 items, tiếng Việt ngắn gọn dễ hiểu."""
 
-print(f"🔍 Generating card for {date_str}...")
+print(f"Generating card for {date_str}...")
 
 response = client.models.generate_content(
     model="gemini-2.5-flash",
@@ -58,7 +58,7 @@ except Exception:
         except: pass
 
 if not card_json:
-    print("⚠️ Could not parse JSON, using fallback")
+    print("Could not parse JSON, using fallback")
     card_json = {"date":date_str,"dayLabel":day_label,"dateLabel":date_label,"news":[],"repos":[]}
 
 with open("cards.json","r",encoding="utf-8") as f:
@@ -69,4 +69,4 @@ cards = [c for c in cards if datetime.strptime(c["date"],"%Y-%m-%d") >= cutoff.r
 cards.insert(0, card_json)
 with open("cards.json","w",encoding="utf-8") as f:
     json.dump(cards, f, ensure_ascii=False, indent=2)
-print(f"✅ Done! {len(cards)} cards | news:{len(card_json.get('news',[]))} repos:{len(card_json.get('repos',[]))}")
+print(f"Done! {len(cards)} cards | news:{len(card_json.get('news',[]))} repos:{len(card_json.get('repos',[]))}")
