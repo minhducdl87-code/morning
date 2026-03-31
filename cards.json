@@ -5,105 +5,110 @@
     "dateLabel": "01/04/2026",
     "news": [
       {
-        "title": "🔥 Rò rỉ mã nguồn Claude Code",
-        "desc": "Phiên bản 2.1.88 của gói npm @anthropic-ai/claude-code đã vô tình làm lộ mã nguồn TypeScript nội bộ, tiết lộ cách hoạt động của công cụ AI lập trình này. Hàng ngàn nhà phát triển đã sao chép mã nguồn lên GitHub, đồng thời làm dấy lên lo ngại về bảo mật.",
-        "tag": "hot|api|feature",
-        "tagLabel": "🔥 HOT|🔧 API|✨ FEATURE",
-        "source": "31/03/2026·The Economic Times, Cybernews"
-      },
-      {
-        "title": "⏰ Hạn chót ngừng hỗ trợ cửa sổ ngữ cảnh 1M token",
-        "desc": "Anthropic sẽ ngừng hỗ trợ cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và Claude Sonnet 4 vào ngày 30/04/2026. Sau ngày này, các yêu cầu vượt quá giới hạn 200k token tiêu chuẩn sẽ báo lỗi.",
-        "tag": "deadline",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "30/03/2026·Claude Platform API Docs"
-      },
-      {
-        "title": "🔧 Tăng giới hạn tối đa token cho API Claude",
-        "desc": "Giới hạn tối đa token đã được nâng lên 300k trên API Message Batches cho Claude Opus 4.6 và Sonnet 4.6. Điều này cho phép tạo ra các đầu ra dài hơn cho nội dung, dữ liệu có cấu trúc và tác vụ tạo mã lớn.",
-        "tag": "api|feature",
-        "tagLabel": "🔧 API|✨ FEATURE",
-        "source": "30/03/2026·Claude Platform API Docs"
-      },
-      {
-        "title": "🔥 Lệnh cấm Anthropic AI bị phán quyết là bất hợp pháp",
-        "desc": "Một thẩm phán liên bang đã chặn chính phủ liên bang dán nhãn Anthropic và hệ thống AI Claude của họ là 'rủi ro an ninh chuỗi cung ứng'. Phán quyết này viện dẫn Tu chính án thứ nhất, cho rằng quyết định của Lầu Năm Góc đã vi phạm quyền của Anthropic.",
+        "title": "🔥 Claude Code: Lộ mã nguồn CLI",
+        "desc": "Mã nguồn của công cụ Claude Code CLI của Anthropic đã vô tình bị rò rỉ thông qua gói npm, tiết lộ cấu trúc nội bộ và logic điều phối. Đây là một sự cố bảo mật và sở hữu trí tuệ lớn.",
         "tag": "hot",
         "tagLabel": "🔥 HOT",
-        "source": "31/03/2026·Association of Defense Communities"
+        "source": "31/03/2026 · The Register, VentureBeat, Cybernews",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDxFP0ZLJfQD_kjaVnRJBtkMjv4M7h-s8hqOFtXdhBXDXfUTXmR57qgqiirb7Dic_qlR_2xXSyPbD_W5XkAl88oUERUDJsMYhgSBtXbh-yqIFYR5NgTV1sah1-UjxDts4XekLoibCuN0iZxYWzJklS5g6bEcwyok8GkbnbHnX2"
       },
       {
-        "title": "🧠 Claude Code: Opus 4.6 mặc định nỗ lực trung bình",
-        "desc": "Claude Code v2.1.68 đã cập nhật Opus 4.6 mặc định ở chế độ 'nỗ lực trung bình' cho người đăng ký Max và Team, cân bằng giữa tốc độ và độ kỹ lưỡng. Từ khóa 'ultrathink' cũng được giới thiệu lại để kích hoạt nỗ lực cao cho lượt tiếp theo.",
-        "tag": "model|feature",
-        "tagLabel": "🧠 MODEL|✨ FEATURE",
-        "source": "28/03/2026·Claude Code Changelog"
+        "title": "🔧 Claude Code: Người dùng chạm giới hạn sử dụng nhanh hơn dự kiến",
+        "desc": "Người dùng Claude Code đang gặp phải tình trạng hết hạn mức sử dụng nhanh hơn nhiều so với dự kiến, gây gián đoạn công việc. Anthropic đã thừa nhận vấn đề và đang tích cực điều tra.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "31/03/2026 · The Register",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDxFP0ZLJfQD_kjaVnRJBtkMjv4M7h-s8hqOFtXdhBXDXfUTXmR57qgqiirb7Dic_qlR_2xXSyPbD_W5XkAl88oUERUDJsMYhgSBtXbh-yqIFYR5NgTV1sah1-UjxDts4XekLoibCuN0iZxYWzJklS5g6bEcwyok8GkbnbHnX2"
+      },
+      {
+        "title": "✨ Claude: Khả năng điều khiển máy tính của bạn",
+        "desc": "Anthropic đã trang bị cho mô hình ngôn ngữ lớn Claude khả năng điều khiển máy tính của người dùng để thực hiện các tác vụ theo yêu cầu, cạnh tranh với các framework tác nhân cá nhân khác.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "24/03/2026 · AI Business",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsKkhitPLaEwTEBtCtKRbefWM59pMwnFkJFrUxs_qe3iB2I42r9hblNhltcfek92jdu-SVVBsKo_gqx1DgZl08EWsO4681hgqspuegquP0wam6D354OjDqt33UcbufroMNj4L4b7eizMS4XtHwlxUgM_IgzgkU55BZ_TgZ_4S-_51mKBcveC8fbDgPr7KBFkcm"
+      },
+      {
+        "title": "🔧 API & ⏰ DEADLINE: Tăng giới hạn token API, ngừng cửa sổ ngữ cảnh 1M token",
+        "desc": "Giới hạn max_tokens trên Message Batches API cho Claude Opus 4.6 và Sonnet 4.6 đã được tăng lên 300k. Cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và 4 sẽ ngừng hoạt động vào ngày 30/04/2026.",
+        "tag": "api|deadline",
+        "tagLabel": "🔧 API|⏰ DEADLINE",
+        "source": "30/03/2026 · Claude Platform API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8d4FT9UhcKIGX-ttz82x4HP2fMTWxABtA_dMsBQYBmRZL1XlTf9C1YfrYyCCNAbH2BjTWjumqfip0agHnXsjuf8lU1bdZ8I0adYtUVR9TLrEwlBje5b8bxWjVG_ON4dVG9JMjXjUHqJTxx0IeRnZetdDHqeA"
+      },
+      {
+        "title": "🧠 MODEL: Claude Opus 4.6 và Sonnet 4.6",
+        "desc": "Các mô hình Claude Opus 4.6 và Sonnet 4.6 đã được đề cập trong các bản cập nhật API gần đây, cho thấy đây là các phiên bản mới hoặc được cải tiến của Claude.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "30/03/2026 · Claude Platform API Docs, Claude Code Changelog",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8d4FT9UhcKIGX-ttz82x4HP2fMTWxABtA_dMsBQYBmRZL1XlTf9C1YfrYyCCNAbH2BjTWjumqfip0agHnXsjuf8lU1bdZ8I0adYtUVR9TLrEwlBje5b8bxWjVG_ON4dVG9JMjXjUHqJTxx0IeRnZetdDHqeA"
       }
     ],
     "repos": [
       {
         "name": "luongnv89/claude-howto",
         "url": "https://github.com/luongnv89/claude-howto",
-        "desc": "Hướng dẫn trực quan, dựa trên ví dụ về Claude Code, từ các khái niệm cơ bản đến các tác nhân nâng cao, với các mẫu có thể sao chép-dán.",
+        "desc": "Hướng dẫn trực quan, ví dụ cụ thể về Claude Code, từ khái niệm cơ bản đến các tác nhân nâng cao với các mẫu sẵn sàng sử dụng.",
         "stars": "12K+",
         "verdict": "yes",
-        "reason": "Tài liệu hữu ích để tích hợp Claude vào quy trình làm việc phát triển game."
-      },
-      {
-        "name": "moeru-ai/airi",
-        "url": "https://github.com/moeru-ai/airi",
-        "desc": "Một trợ lý AI tự lưu trữ, có khả năng trò chuyện thoại thời gian thực và chơi Minecraft, Factorio, bao gồm cả plugin Tauri cho máy chủ MCP.",
-        "stars": "Mới nổi",
-        "verdict": "yes",
-        "reason": "Tiềm năng cho NPC AI tương tác và tự động hóa trong game như Minecraft."
-      },
-      {
-        "name": "mindcraft-bots/mindcraft",
-        "url": "https://github.com/mindcraft-bots/mindcraft",
-        "desc": "AI Minecraft sử dụng LLM và Mineflayer, cho phép LLM viết/thực thi mã trong game.",
-        "stars": "Mới nổi",
-        "verdict": "yes",
-        "reason": "Tuyệt vời để tạo bot thông minh hoặc AI trong môi trường Minecraft."
+        "reason": "Tài liệu và mẫu hữu ích để tích hợp Claude vào quy trình phát triển game."
       },
       {
         "name": "microsoft/agent-lightning",
         "url": "https://github.com/microsoft/agent-lightning",
-        "desc": "Công cụ huấn luyện tuyệt đối để kích hoạt các tác nhân AI.",
+        "desc": "Công cụ huấn luyện tuyệt đối để khởi động các tác nhân AI.",
         "stars": "16K+",
         "verdict": "yes",
-        "reason": "Có thể dùng để phát triển các tác nhân AI phức tạp cho game."
-      },
-      {
-        "name": "alirezarezvani/claude-skills",
-        "url": "https://github.com/alirezarezvani/claude-skills",
-        "desc": "Bộ sưu tập các kỹ năng Claude có thể tái sử dụng để xây dựng các ứng dụng tác nhân AI.",
-        "stars": "Mới nổi",
-        "verdict": "yes",
-        "reason": "Cung cấp các khối xây dựng cho các tác nhân AI trong game sử dụng Claude."
-      },
-      {
-        "name": "agentscope-ai/agentscope",
-        "url": "https://github.com/agentscope-ai/agentscope",
-        "desc": "Một framework mã nguồn mở giúp các nhà phát triển xây dựng các ứng dụng tác nhân AI bằng cách sử dụng các quy trình làm việc có cấu trúc.",
-        "stars": "Mới nổi",
-        "verdict": "yes",
-        "reason": "Lý tưởng để thiết kế các hệ thống AI tác nhân phức tạp cho game."
-      },
-      {
-        "name": "hyperspaceai/agi",
-        "url": "https://github.com/hyperspaceai/agi",
-        "desc": "Hệ thống AGI phân tán ngang hàng đầu tiên trên thế giới, được cập nhật liên tục bởi hàng ngàn tác nhân AI tự động.",
-        "stars": "Mới nổi",
-        "verdict": "maybe",
-        "reason": "Khái niệm thú vị cho AI game quy mô lớn, nhưng có thể phức tạp để tích hợp."
+        "reason": "Tiềm năng lớn cho việc tạo và quản lý các tác nhân AI trong game, ví dụ như NPC thông minh."
       },
       {
         "name": "obra/superpowers",
         "url": "https://github.com/obra/superpowers",
         "desc": "Một framework kỹ năng tác nhân và phương pháp phát triển phần mềm hiệu quả.",
-        "stars": "Mới nổi",
+        "stars": "10K+",
         "verdict": "yes",
-        "reason": "Hữu ích để xây dựng các tác nhân AI có khả năng và quy trình phát triển có cấu trúc trong game."
+        "reason": "Cung cấp cấu trúc để xây dựng các tác nhân phức tạp, có thể áp dụng cho AI trong game."
+      },
+      {
+        "name": "alirezarezvani/claude-skills",
+        "url": "https://github.com/alirezarezvani/claude-skills",
+        "desc": "Bộ sưu tập các kỹ năng có thể tái sử dụng cho Claude.",
+        "stars": "1K+",
+        "verdict": "yes",
+        "reason": "Giúp mở rộng khả năng của Claude để hỗ trợ các tác vụ phát triển game hoặc tạo nội dung."
+      },
+      {
+        "name": "volcengine/OpenViking",
+        "url": "https://github.com/volcengine/OpenViking",
+        "desc": "Framework mã nguồn mở giúp xây dựng các ứng dụng tác nhân AI với quy trình làm việc có cấu trúc.",
+        "stars": "1K+",
+        "verdict": "yes",
+        "reason": "Lý tưởng để thiết kế các hệ thống AI phức tạp cho game, từ quản lý tài nguyên đến hành vi NPC."
+      },
+      {
+        "name": "agentscope-ai/agentscope",
+        "url": "https://github.com/agentscope-ai/agentscope",
+        "desc": "Bắt đầu xây dựng các ứng dụng đa tác nhân được hỗ trợ bởi LLM một cách dễ dàng hơn.",
+        "stars": "1K+",
+        "verdict": "yes",
+        "reason": "Hỗ trợ phát triển AI đa tác nhân, hữu ích cho các hệ thống NPC tương tác hoặc mô phỏng phức tạp trong game."
+      },
+      {
+        "name": "hetaoBackend/mcp-github-trending",
+        "url": "https://github.com/hetaoBackend/mcp-github-trending",
+        "desc": "Máy chủ MCP cung cấp quyền truy cập vào dữ liệu kho lưu trữ và nhà phát triển thịnh hành của GitHub thông qua API đơn giản.",
+        "stars": "5K+",
+        "verdict": "maybe",
+        "reason": "Hữu ích để theo dõi xu hướng công cụ AI nhưng không trực tiếp hỗ trợ phát triển game."
+      },
+      {
+        "name": "zilliztech/claude-context",
+        "url": "https://github.com/zilliztech/claude-context",
+        "desc": "Mang codebase của bạn làm ngữ cảnh cho Claude Code.",
+        "stars": "5K+",
+        "verdict": "yes",
+        "reason": "Cải thiện khả năng của Claude trong việc hiểu và hỗ trợ phát triển code game bằng cách cung cấp ngữ cảnh dự án."
       }
     ]
   }
