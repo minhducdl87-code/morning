@@ -5,110 +5,70 @@
     "dateLabel": "01/04/2026",
     "news": [
       {
-        "title": "🔥 Claude Code: Lộ mã nguồn CLI",
-        "desc": "Mã nguồn của công cụ Claude Code CLI của Anthropic đã vô tình bị rò rỉ thông qua gói npm, tiết lộ cấu trúc nội bộ và logic điều phối. Đây là một sự cố bảo mật và sở hữu trí tuệ lớn.",
+        "title": "🚨 Rò rỉ mã nguồn Claude Code",
+        "desc": "Mã nguồn của công cụ AI Claude Code của Anthropic đã bị rò rỉ do lỗi đóng gói, tiết lộ chi tiết kiến trúc nội bộ và các tính năng chưa phát hành. Sự cố này gây ra rủi ro bảo mật và cho phép đối thủ phân tích công nghệ của Anthropic.",
         "tag": "hot",
         "tagLabel": "🔥 HOT",
-        "source": "31/03/2026 · The Register, VentureBeat, Cybernews",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDxFP0ZLJfQD_kjaVnRJBtkMjv4M7h-s8hqOFtXdhBXDXfUTXmR57qgqiirb7Dic_qlR_2xXSyPbD_W5XkAl88oUERUDJsMYhgSBtXbh-yqIFYR5NgTV1sah1-UjxDts4XekLoibCuN0iZxYWzJklS5g6bEcwyok8GkbnbHnX2"
+        "source": "31/03/2026·The Economic Times",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8s4VdpBUUixHEcZs_Wf7LoJqwm7QF_mh1KCTSKAurdcbcMDM0y2p7rRhZnI26MVG4OwhW48Qa0yRmPlhLXTCazkswfwFdGKTcSKTCXXtmi3UBALrOii9Q6McVCUdiqCTzwsD50PQLhiiqq-pMwJHqKsI23hyczQQCg0zf4-SUuyxRDz4KY5Bd2rwzpjqc0UkjNcXMIok3UIHDqhSNL-0Yv8wopbwf2_ZQvtP-g4yoxkbSWF_RgP_l3tXt2I1iJXriLQDNBQK8LURpEDGXwDThKjmR51Po30THWVZ9MtPGIqPv7AJyp_FPzz5bcLrKHRlMLCHmrHB6W_ZNRxQGNQ_L5wUG2jxpOA=="
       },
       {
-        "title": "🔧 Claude Code: Người dùng chạm giới hạn sử dụng nhanh hơn dự kiến",
-        "desc": "Người dùng Claude Code đang gặp phải tình trạng hết hạn mức sử dụng nhanh hơn nhiều so với dự kiến, gây gián đoạn công việc. Anthropic đã thừa nhận vấn đề và đang tích cực điều tra.",
+        "title": "⬆️ Tăng giới hạn token cho Claude Opus 4.6 & Sonnet 4.6",
+        "desc": "Anthropic đã tăng giới hạn max_tokens lên 300k trên API Message Batches cho các mô hình Claude Opus 4.6 và Sonnet 4.6, cho phép tạo ra các đầu ra dài hơn.",
         "tag": "api",
         "tagLabel": "🔧 API",
-        "source": "31/03/2026 · The Register",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDxFP0ZLJfQD_kjaVnRJBtkMjv4M7h-s8hqOFtXdhBXDXfUTXmR57qgqiirb7Dic_qlR_2xXSyPbD_W5XkAl88oUERUDJsMYhgSBtXbh-yqIFYR5NgTV1sah1-UjxDts4XekLoibCuN0iZxYWzJklS5g6bEcwyok8GkbnbHnX2"
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4zrwP985fEUwTSrDYhWs9qyw1CT1UkIuAF5ABfwF_MIxtJRORTzA4ofWcTwB8PZkTYjiJ4r_FCVt4KrO3nUIO_Suw1ovzzNPXE_XeBKqfs4zrArZAvui9UKPrv9JoaUG4udYmh0g5N7gojHgb9aWRHQIeJyg="
       },
       {
-        "title": "✨ Claude: Khả năng điều khiển máy tính của bạn",
-        "desc": "Anthropic đã trang bị cho mô hình ngôn ngữ lớn Claude khả năng điều khiển máy tính của người dùng để thực hiện các tác vụ theo yêu cầu, cạnh tranh với các framework tác nhân cá nhân khác.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "24/03/2026 · AI Business",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsKkhitPLaEwTEBtCtKRbefWM59pMwnFkJFrUxs_qe3iB2I42r9hblNhltcfek92jdu-SVVBsKo_gqx1DgZl08EWsO4681hgqspuegquP0wam6D354OjDqt33UcbufroMNj4L4b7eizMS4XtHwlxUgM_IgzgkU55BZ_TgZ_4S-_51mKBcveC8fbDgPr7KBFkcm"
+        "title": "⏰ Hạn chót ngừng hỗ trợ cửa sổ ngữ cảnh 1M token",
+        "desc": "Tính năng beta cửa sổ ngữ cảnh 1M token cho Claude Sonnet 4.5 và Claude Sonnet 4 sẽ bị ngừng hỗ trợ vào ngày 30/04/2026. Sau ngày này, yêu cầu vượt quá giới hạn 200k token sẽ báo lỗi.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4zrwP985fEUwTSrDYhWs9qyw1CT1UkIuAF5ABfwF_MIxtJRORTzA4ofWcTwB8PZkTYjiJ4r_FCVt4KrO3nUIO_Suw1ovzzNPXE_XeBKqfs4zrArZAvui9UKPrv9JoaUG4udYmh0g5N7gojHgb9aWRHQIeJyg="
       },
       {
-        "title": "🔧 API & ⏰ DEADLINE: Tăng giới hạn token API, ngừng cửa sổ ngữ cảnh 1M token",
-        "desc": "Giới hạn max_tokens trên Message Batches API cho Claude Opus 4.6 và Sonnet 4.6 đã được tăng lên 300k. Cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và 4 sẽ ngừng hoạt động vào ngày 30/04/2026.",
-        "tag": "api|deadline",
-        "tagLabel": "🔧 API|⏰ DEADLINE",
-        "source": "30/03/2026 · Claude Platform API Docs",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8d4FT9UhcKIGX-ttz82x4HP2fMTWxABtA_dMsBQYBmRZL1XlTf9C1YfrYyCCNAbH2BjTWjumqfip0agHnXsjuf8lU1bdZ8I0adYtUVR9TLrEwlBje5b8bxWjVG_ON4dVG9JMjXjUHqJTxx0IeRnZetdDHqeA"
-      },
-      {
-        "title": "🧠 MODEL: Claude Opus 4.6 và Sonnet 4.6",
-        "desc": "Các mô hình Claude Opus 4.6 và Sonnet 4.6 đã được đề cập trong các bản cập nhật API gần đây, cho thấy đây là các phiên bản mới hoặc được cải tiến của Claude.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "30/03/2026 · Claude Platform API Docs, Claude Code Changelog",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8d4FT9UhcKIGX-ttz82x4HP2fMTWxABtA_dMsBQYBmRZL1XlTf9C1YfrYyCCNAbH2BjTWjumqfip0agHnXsjuf8lU1bdZ8I0adYtUVR9TLrEwlBje5b8bxWjVG_ON4dVG9JMjXjUHqJTxx0IeRnZetdDHqeA"
+        "title": "⚖️ Lệnh cấm Anthropic bị phán quyết là bất hợp pháp",
+        "desc": "Một thẩm phán liên bang đã chặn chính phủ liên bang dán nhãn Anthropic và hệ thống AI Claude của họ là 'rủi ro an ninh chuỗi cung ứng', với lý do vi phạm Tu chính án thứ nhất.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "31/03/2026·Association of Defense Communities",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFExL2PptVURQ1DS76RC3pPQ6j9rCHP4VM7S7HCB80oYNCnX8aoZ1RL0AYze3yWmnSa-xLpCJBghdDkvdCa0WORBHpe0BUgfUD2qf0qgVbqGhuIbysYbBQZlSfvc54rTNkoJrcnzL-rLW1WVo3H0qOrrXdwBI4sK2EIU2t9dDr3pp7bmV8yW4U9QiQ3"
       }
     ],
     "repos": [
       {
+        "name": "nirholas/claude-code",
+        "url": "https://github.com/nirholas/claude-code",
+        "desc": "Mã nguồn bị rò rỉ của công cụ CLI Claude Code chính thức của Anthropic, hiện đang là chủ đề nóng trên GitHub.",
+        "stars": "30K+",
+        "verdict": "yes",
+        "reason": "Cung cấp cái nhìn sâu sắc về cách Claude Code hoạt động, hữu ích cho việc phát triển công cụ AI và tự động hóa tác nhân."
+      },
+      {
         "name": "luongnv89/claude-howto",
         "url": "https://github.com/luongnv89/claude-howto",
-        "desc": "Hướng dẫn trực quan, ví dụ cụ thể về Claude Code, từ khái niệm cơ bản đến các tác nhân nâng cao với các mẫu sẵn sàng sử dụng.",
+        "desc": "Hướng dẫn trực quan, dựa trên ví dụ về Claude Code, từ các khái niệm cơ bản đến các tác nhân nâng cao.",
         "stars": "12K+",
         "verdict": "yes",
-        "reason": "Tài liệu và mẫu hữu ích để tích hợp Claude vào quy trình phát triển game."
+        "reason": "Tài nguyên tuyệt vời để học và xây dựng các tác nhân Claude, đặc biệt hữu ích cho các nhà phát triển trò chơi muốn tích hợp AI."
       },
       {
         "name": "microsoft/agent-lightning",
         "url": "https://github.com/microsoft/agent-lightning",
-        "desc": "Công cụ huấn luyện tuyệt đối để khởi động các tác nhân AI.",
-        "stars": "16K+",
-        "verdict": "yes",
-        "reason": "Tiềm năng lớn cho việc tạo và quản lý các tác nhân AI trong game, ví dụ như NPC thông minh."
-      },
-      {
-        "name": "obra/superpowers",
-        "url": "https://github.com/obra/superpowers",
-        "desc": "Một framework kỹ năng tác nhân và phương pháp phát triển phần mềm hiệu quả.",
-        "stars": "10K+",
-        "verdict": "yes",
-        "reason": "Cung cấp cấu trúc để xây dựng các tác nhân phức tạp, có thể áp dụng cho AI trong game."
-      },
-      {
-        "name": "alirezarezvani/claude-skills",
-        "url": "https://github.com/alirezarezvani/claude-skills",
-        "desc": "Bộ sưu tập các kỹ năng có thể tái sử dụng cho Claude.",
-        "stars": "1K+",
-        "verdict": "yes",
-        "reason": "Giúp mở rộng khả năng của Claude để hỗ trợ các tác vụ phát triển game hoặc tạo nội dung."
-      },
-      {
-        "name": "volcengine/OpenViking",
-        "url": "https://github.com/volcengine/OpenViking",
-        "desc": "Framework mã nguồn mở giúp xây dựng các ứng dụng tác nhân AI với quy trình làm việc có cấu trúc.",
-        "stars": "1K+",
-        "verdict": "yes",
-        "reason": "Lý tưởng để thiết kế các hệ thống AI phức tạp cho game, từ quản lý tài nguyên đến hành vi NPC."
-      },
-      {
-        "name": "agentscope-ai/agentscope",
-        "url": "https://github.com/agentscope-ai/agentscope",
-        "desc": "Bắt đầu xây dựng các ứng dụng đa tác nhân được hỗ trợ bởi LLM một cách dễ dàng hơn.",
-        "stars": "1K+",
-        "verdict": "yes",
-        "reason": "Hỗ trợ phát triển AI đa tác nhân, hữu ích cho các hệ thống NPC tương tác hoặc mô phỏng phức tạp trong game."
-      },
-      {
-        "name": "hetaoBackend/mcp-github-trending",
-        "url": "https://github.com/hetaoBackend/mcp-github-trending",
-        "desc": "Máy chủ MCP cung cấp quyền truy cập vào dữ liệu kho lưu trữ và nhà phát triển thịnh hành của GitHub thông qua API đơn giản.",
-        "stars": "5K+",
+        "desc": "Công cụ huấn luyện tuyệt đối để kích hoạt các tác nhân AI.",
+        "stars": "N/A",
         "verdict": "maybe",
-        "reason": "Hữu ích để theo dõi xu hướng công cụ AI nhưng không trực tiếp hỗ trợ phát triển game."
+        "reason": "Công cụ chung cho tự động hóa tác nhân, có thể áp dụng cho phát triển trò chơi nhưng không chuyên biệt cho Claude."
       },
       {
-        "name": "zilliztech/claude-context",
-        "url": "https://github.com/zilliztech/claude-context",
-        "desc": "Mang codebase của bạn làm ngữ cảnh cho Claude Code.",
-        "stars": "5K+",
-        "verdict": "yes",
-        "reason": "Cải thiện khả năng của Claude trong việc hiểu và hỗ trợ phát triển code game bằng cách cung cấp ngữ cảnh dự án."
+        "name": "OpenBMB/ChatDev",
+        "url": "https://github.com/OpenBMB/ChatDev",
+        "desc": "ChatDev 2.0: Phát triển mọi thứ thông qua LLM.",
+        "stars": "N/A",
+        "verdict": "maybe",
+        "reason": "Nền tảng tự động hóa tác nhân mạnh mẽ, có thể được điều chỉnh cho các tác vụ phát triển trò chơi nhưng cần tích hợp thêm."
       }
     ]
   }
