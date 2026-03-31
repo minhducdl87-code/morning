@@ -5,96 +5,105 @@
     "dateLabel": "01/04/2026",
     "news": [
       {
-        "title": "🖥️ Computer Use lên Claude Code & Cowork",
-        "desc": "Pro & Max users giờ để Claude tự mở file, click, navigate màn hình máy thật — không chỉ browser nữa. Bước đầu tiên hướng full autonomous desktop agent.",
+        "title": "🔥 Rò rỉ mã nguồn Claude Code",
+        "desc": "Phiên bản 2.1.88 của gói npm @anthropic-ai/claude-code đã vô tình làm lộ mã nguồn TypeScript nội bộ, tiết lộ cách hoạt động của công cụ AI lập trình này. Hàng ngàn nhà phát triển đã sao chép mã nguồn lên GitHub, đồng thời làm dấy lên lo ngại về bảo mật.",
+        "tag": "hot|api|feature",
+        "tagLabel": "🔥 HOT|🔧 API|✨ FEATURE",
+        "source": "31/03/2026·The Economic Times, Cybernews"
+      },
+      {
+        "title": "⏰ Hạn chót ngừng hỗ trợ cửa sổ ngữ cảnh 1M token",
+        "desc": "Anthropic sẽ ngừng hỗ trợ cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và Claude Sonnet 4 vào ngày 30/04/2026. Sau ngày này, các yêu cầu vượt quá giới hạn 200k token tiêu chuẩn sẽ báo lỗi.",
+        "tag": "deadline",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03/2026·Claude Platform API Docs"
+      },
+      {
+        "title": "🔧 Tăng giới hạn tối đa token cho API Claude",
+        "desc": "Giới hạn tối đa token đã được nâng lên 300k trên API Message Batches cho Claude Opus 4.6 và Sonnet 4.6. Điều này cho phép tạo ra các đầu ra dài hơn cho nội dung, dữ liệu có cấu trúc và tác vụ tạo mã lớn.",
+        "tag": "api|feature",
+        "tagLabel": "🔧 API|✨ FEATURE",
+        "source": "30/03/2026·Claude Platform API Docs"
+      },
+      {
+        "title": "🔥 Lệnh cấm Anthropic AI bị phán quyết là bất hợp pháp",
+        "desc": "Một thẩm phán liên bang đã chặn chính phủ liên bang dán nhãn Anthropic và hệ thống AI Claude của họ là 'rủi ro an ninh chuỗi cung ứng'. Phán quyết này viện dẫn Tu chính án thứ nhất, cho rằng quyết định của Lầu Năm Góc đã vi phạm quyền của Anthropic.",
         "tag": "hot",
         "tagLabel": "🔥 HOT",
-        "source": "~24/03/2026 · CNBC, TechCrunch"
+        "source": "31/03/2026·Association of Defense Communities"
       },
       {
-        "title": "⬆️ Max tokens 300K trong Message Batches API",
-        "desc": "Opus 4.6 + Sonnet 4.6 hỗ trợ output tới 300K tokens trong Batch API với beta header output-300k-2026-03-24. Ngon cho long-form content, code gen phức tạp.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "30/03/2026 · platform.claude.com"
-      },
-      {
-        "title": "💬 Claude Code Channels — chat qua Telegram & Discord",
-        "desc": "Móc Claude Code vào Telegram/Discord. Đang đi coffee vẫn nhắn Claude viết code, nó tự chạy trong terminal ở nhà rồi reply lại.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "~24/03/2026 · VentureBeat"
-      },
-      {
-        "title": "⚠️ Deadline 30/04: 1M context window beta tắt trên Sonnet 4.5",
-        "desc": "Beta context-1m-2025-08-07 cho Sonnet 4.5 và Sonnet 4 sẽ bị tắt. Migrate sang Sonnet 4.6 hoặc Opus 4.6 — 2 model này hỗ trợ 1M context mặc định, giá standard.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "30/03/2026 · Deadline: 30/04/2026"
-      },
-      {
-        "title": "🗑️ Deadline 19/04: Haiku 3 về hưu",
-        "desc": "claude-3-haiku-20240307 retire ngày 19/04/2026. Migrate sang Haiku 4.5 — nhanh hơn, thông minh hơn, near-frontier performance.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "Deadline: 19/04/2026"
-      },
-      {
-        "title": "🎨 Custom Viz + Interactive Apps trên Mobile",
-        "desc": "Claude tạo được custom charts, diagrams trực tiếp trong conversation. App iOS/Android có interactive apps — live charts, shareable assets render trong chat.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "~24/03/2026"
+        "title": "🧠 Claude Code: Opus 4.6 mặc định nỗ lực trung bình",
+        "desc": "Claude Code v2.1.68 đã cập nhật Opus 4.6 mặc định ở chế độ 'nỗ lực trung bình' cho người đăng ký Max và Team, cân bằng giữa tốc độ và độ kỹ lưỡng. Từ khóa 'ultrathink' cũng được giới thiệu lại để kích hoạt nỗ lực cao cho lượt tiếp theo.",
+        "tag": "model|feature",
+        "tagLabel": "🧠 MODEL|✨ FEATURE",
+        "source": "28/03/2026·Claude Code Changelog"
       }
     ],
     "repos": [
       {
-        "name": "affaan-m/everything-claude-code",
-        "url": "https://github.com/affaan-m/everything-claude-code",
-        "desc": "Agent harness cực kỳ hoàn chỉnh — configs, skills, hooks, 102 static analysis rules, 1282 test cases. Từ hackathon Anthropic tháng 2/2026.",
-        "stars": "125K+",
+        "name": "luongnv89/claude-howto",
+        "url": "https://github.com/luongnv89/claude-howto",
+        "desc": "Hướng dẫn trực quan, dựa trên ví dụ về Claude Code, từ các khái niệm cơ bản đến các tác nhân nâng cao, với các mẫu có thể sao chép-dán.",
+        "stars": "12K+",
         "verdict": "yes",
-        "reason": "Nếu dùng Claude Code, đây là bộ config bắt buộc phải xem"
+        "reason": "Tài liệu hữu ích để tích hợp Claude vào quy trình làm việc phát triển game."
       },
       {
-        "name": "hesreallyhim/awesome-claude-code",
-        "url": "https://github.com/hesreallyhim/awesome-claude-code",
-        "desc": "Danh sách curated skills, hooks, slash-commands, agent orchestrators, plugins cho Claude Code. Hub tham khảo số 1.",
-        "stars": "35K",
+        "name": "moeru-ai/airi",
+        "url": "https://github.com/moeru-ai/airi",
+        "desc": "Một trợ lý AI tự lưu trữ, có khả năng trò chuyện thoại thời gian thực và chơi Minecraft, Factorio, bao gồm cả plugin Tauri cho máy chủ MCP.",
+        "stars": "Mới nổi",
         "verdict": "yes",
-        "reason": "Bookmark ngay — cập nhật liên tục, chứa mọi thứ cần cho Claude Code"
+        "reason": "Tiềm năng cho NPC AI tương tác và tự động hóa trong game như Minecraft."
       },
       {
-        "name": "czlonkowski/n8n-mcp",
-        "url": "https://github.com/czlonkowski/n8n-mcp",
-        "desc": "MCP server cho Claude tự build n8n workflows — mô tả workflow muốn gì, Claude generate automation trong n8n luôn.",
-        "stars": "Trending",
+        "name": "mindcraft-bots/mindcraft",
+        "url": "https://github.com/mindcraft-bots/mindcraft",
+        "desc": "AI Minecraft sử dụng LLM và Mineflayer, cho phép LLM viết/thực thi mã trong game.",
+        "stars": "Mới nổi",
         "verdict": "yes",
-        "reason": "Game-changer nếu đang dùng n8n cho quy trình tự động hóa"
+        "reason": "Tuyệt vời để tạo bot thông minh hoặc AI trong môi trường Minecraft."
       },
       {
-        "name": "mvanhorn/last30days-skill",
-        "url": "https://github.com/mvanhorn/last30days-skill",
-        "desc": "Skill cho AI agent research bất kỳ topic qua Reddit, X, YouTube, HN, Polymarket — tổng hợp insights có nguồn.",
+        "name": "microsoft/agent-lightning",
+        "url": "https://github.com/microsoft/agent-lightning",
+        "desc": "Công cụ huấn luyện tuyệt đối để kích hoạt các tác nhân AI.",
         "stars": "16K+",
         "verdict": "yes",
-        "reason": "Track game market trends, player sentiment cực ngon"
+        "reason": "Có thể dùng để phát triển các tác nhân AI phức tạp cho game."
+      },
+      {
+        "name": "alirezarezvani/claude-skills",
+        "url": "https://github.com/alirezarezvani/claude-skills",
+        "desc": "Bộ sưu tập các kỹ năng Claude có thể tái sử dụng để xây dựng các ứng dụng tác nhân AI.",
+        "stars": "Mới nổi",
+        "verdict": "yes",
+        "reason": "Cung cấp các khối xây dựng cho các tác nhân AI trong game sử dụng Claude."
+      },
+      {
+        "name": "agentscope-ai/agentscope",
+        "url": "https://github.com/agentscope-ai/agentscope",
+        "desc": "Một framework mã nguồn mở giúp các nhà phát triển xây dựng các ứng dụng tác nhân AI bằng cách sử dụng các quy trình làm việc có cấu trúc.",
+        "stars": "Mới nổi",
+        "verdict": "yes",
+        "reason": "Lý tưởng để thiết kế các hệ thống AI tác nhân phức tạp cho game."
+      },
+      {
+        "name": "hyperspaceai/agi",
+        "url": "https://github.com/hyperspaceai/agi",
+        "desc": "Hệ thống AGI phân tán ngang hàng đầu tiên trên thế giới, được cập nhật liên tục bởi hàng ngàn tác nhân AI tự động.",
+        "stars": "Mới nổi",
+        "verdict": "maybe",
+        "reason": "Khái niệm thú vị cho AI game quy mô lớn, nhưng có thể phức tạp để tích hợp."
       },
       {
         "name": "obra/superpowers",
         "url": "https://github.com/obra/superpowers",
-        "desc": "Agentic skills framework & software development methodology tổng quát để build AI agents. +18K stars tuần này.",
-        "stars": "127K+",
-        "verdict": "maybe",
-        "reason": "Tổng quát — cần research thêm xem fit workflow không"
-      },
-      {
-        "name": "K-Dense-AI/claude-skills-mcp",
-        "url": "https://github.com/K-Dense-AI/claude-skills-mcp",
-        "desc": "MCP server dùng vector search để tìm và load đúng Claude Agent Skill cần thiết on-demand — không cần manually chọn skill.",
-        "stars": "Rising",
+        "desc": "Một framework kỹ năng tác nhân và phương pháp phát triển phần mềm hiệu quả.",
+        "stars": "Mới nổi",
         "verdict": "yes",
-        "reason": "Auto-discover skill phù hợp khi có nhiều skills — rất cần thiết"
+        "reason": "Hữu ích để xây dựng các tác nhân AI có khả năng và quy trình phát triển có cấu trúc trong game."
       }
     ]
   }
