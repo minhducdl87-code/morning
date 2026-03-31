@@ -387,15 +387,19 @@ function todayStr() {
 }
 
 function renderNewsItem(item) {
+  const titleHtml = item.url
+    ? `<a href="${item.url}" target="_blank" rel="noopener" style="color:var(--text);font-weight:600;font-size:.855rem;line-height:1.4;flex:1;text-decoration:none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text)'">${item.title}</a>`
+    : `<span class="news-title">${item.title}</span>`;
   return `
     <div class="news-item">
       <div class="news-top">
-        <span class="news-title">${item.title}</span>
+        ${titleHtml}
         <span class="tag ${TAG_MAP[item.tag] || 'tag-api'}">${item.tagLabel}</span>
       </div>
       <p class="news-desc">${item.desc}</p>
       ${item.source ? `<div class="news-source">📅 ${item.source}</div>` : ''}
     </div>`;
+}
 }
 
 function renderRepoCard(repo) {
