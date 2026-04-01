@@ -1,5 +1,86 @@
 [
   {
+    "date": "2026-04-02",
+    "dayLabel": "Thứ Năm",
+    "dateLabel": "02/04/2026",
+    "news": [
+      {
+        "title": "🔥 Rò rỉ mã nguồn Claude Code",
+        "desc": "Mã nguồn của công cụ lập trình AI Claude Code của Anthropic đã vô tình bị rò rỉ, tiết lộ các tính năng chưa công bố như chế độ tác nhân tự động 'Kairos' và thú cưng ảo 'Tamagotchi'. Anthropic đang nỗ lực gỡ bỏ các bản sao trên GitHub.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "01/04/2026·Nhiều nguồn",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_7OBHG8zO0tEUItyE5Vkpd6y0w7PzP_xOdPbWBFaDttTbQqET1lQ1s24uJI5QEpoJCkISr6xzCxkO1h92_iqYPjGN-mxqNUnsUOK_w1DmwkqMMIjO2dEmZmRlpmOptHNW1URnRoBXv_B-C6cm8wMusdXFoa6anc7xCkiIvlsaXfFjNDIaUkpQqmHolZ1BdslhyeuoRXVgAYM="
+      },
+      {
+        "title": "⏰ Hạn chót ngừng hỗ trợ Context Window 1M token",
+        "desc": "Anthropic sẽ ngừng hỗ trợ beta cho cửa sổ ngữ cảnh 1 triệu token trên Claude Sonnet 4.5 và Claude Sonnet 4 vào ngày 30 tháng 4 năm 2026. Sau ngày này, các yêu cầu vượt quá cửa sổ ngữ cảnh tiêu chuẩn 200k token sẽ báo lỗi.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhLa9XNk0mc5UCSAdqW_boNp1S0kjmaXxc0TMYrG2KmId1Var59O-t1t_rtF76D1tfavhsGocp9KpShHftCuDSpDzoVdNlAO9UPmssevSvK_lYrd8nhwqzBp_q_kzb5HT1m-HSPUEN4fyas2-zs4I52sVEXwM="
+      },
+      {
+        "title": "✨ Tăng giới hạn Max Tokens trên Message Batches API",
+        "desc": "Giới hạn max_tokens đã được nâng lên 300k trên Message Batches API cho Claude Opus 4.6 và Sonnet 4.6, cho phép tạo ra các đầu ra dài hơn cho nội dung, dữ liệu có cấu trúc và tạo mã lớn.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhLa9XNk0mc5UCSAdqW_boNp1S0kjmaXxc0TMYrG2KmId1Var59O-t1t_rtF76D1tfavhsGocp9KpShHftCuDSpDzoVdNlAO9UPmssevSvK_o_kzb5HT1m-HSPUEN4fyas2-zs4I52sVEXwM="
+      },
+      {
+        "title": "🧠 Tính năng 'Kairos' và 'Tamagotchi' bị lộ",
+        "desc": "Mã nguồn Claude Code bị rò rỉ đã tiết lộ chi tiết về 'Kairos', một tác nhân AI tự động luôn hoạt động, và một tính năng thú cưng ảo kiểu 'Tamagotchi' chưa được công bố.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "01/04/2026·Gizmodo, Cybernews",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyVHdClMadPx7K_pwaQvvlpg2G8YBKlK0bGFGPwWnXOA0J5EanqFoMVlUWvQ7NULRl8QYhAGUBfnk3eYp7PdzLC62n6MqceQ-wNlye93khw7Ff0UCaQ-L4tvtU6nkiz87AjJQIqxyyDY3fx4fiQhWTRWQd9CXSdlzxnzSp5D909tUNx9i04ASbXlgEL_i1WP6BuQ=="
+      }
+    ],
+    "repos": [
+      {
+        "name": "instructkr/claw-code",
+        "url": "https://github.com/instructkr/claw-code",
+        "desc": "Bản viết lại 'clean-room' bằng Python của Claude Code bị rò rỉ, trở thành kho lưu trữ phát triển nhanh nhất trên GitHub với hơn 100.000 lượt gắn sao.",
+        "stars": "100K+",
+        "verdict": "yes",
+        "reason": "Bản viết lại mã nguồn Claude Code bị rò rỉ, rất hot và liên quan trực tiếp."
+      },
+      {
+        "name": "community/claude-code-best-practice",
+        "url": "https://github.com/community/claude-code-best-practice",
+        "desc": "Kho lưu trữ tổng hợp các phương pháp hay nhất và quy trình làm việc hiệu quả cho Claude Code, đang thịnh hành với 25.000 lượt gắn sao.",
+        "stars": "25K+",
+        "verdict": "yes",
+        "reason": "Tài nguyên hữu ích cho việc sử dụng Claude Code hiệu quả."
+      },
+      {
+        "name": "anon/free-code",
+        "url": "https://github.com/anon/free-code",
+        "desc": "Dự án tuyên bố loại bỏ telemetry và các biện pháp bảo vệ khỏi Claude Code, mở khóa các tính năng thử nghiệm và cho phép sử dụng các mô hình AI khác.",
+        "stars": "2.6K+",
+        "verdict": "yes",
+        "reason": "Công cụ sửa đổi Claude Code, có thể hữu ích cho các nhà phát triển muốn tùy chỉnh."
+      },
+      {
+        "name": "anon/nano-claude-code",
+        "url": "https://github.com/anon/nano-claude-code",
+        "desc": "Bản triển khai lại tối giản của Claude Code bằng Python (~1300 dòng), được cộng đồng quan tâm sau vụ rò rỉ mã nguồn.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Bản triển khai lại nhỏ gọn, hữu ích cho nghiên cứu và hiểu kiến trúc."
+      },
+      {
+        "name": "anon/original-claude-code-executable",
+        "url": "https://github.com/anon/original-claude-code-executable",
+        "desc": "Kho lưu trữ chứa phiên bản thực thi gốc của Claude Code, được cho là từ mã nguồn bị rò rỉ.",
+        "stars": "6.1K+",
+        "verdict": "yes",
+        "reason": "Cung cấp quyền truy cập vào phiên bản gốc của công cụ Claude Code."
+      }
+    ]
+  },
+  {
     "date": "2026-04-01",
     "dayLabel": "Thứ Tư",
     "dateLabel": "01/04/2026",
