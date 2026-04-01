@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,36 @@
 <meta name="theme-color" content="#0d0f14">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#0d0f14;--bg2:#111827;--bg3:#0f172a;--border:#1f2937;--border2:#1e293b;--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;--accent:#818cf8;--accent2:#c084fc;--green:#34d399;--yellow:#fbbf24;--red:#f87171;--blue:#60a5fa;--pink:#f472b6}
+/* ── Dark theme (default) ── */
+:root{--bg:#0d0f14;--bg2:#111827;--bg3:#0f172a;--border:#1f2937;--border2:#1e293b;--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;--accent:#818cf8;--accent2:#c084fc;--green:#34d399;--yellow:#fbbf24;--red:#f87171;--blue:#60a5fa;--pink:#f472b6;--header-bg:linear-gradient(135deg,#0f172a,#111827)}
+/* ── Light theme override ── */
+[data-theme="light"]{--bg:#f8fafc;--bg2:#ffffff;--bg3:#f1f5f9;--border:#e2e8f0;--border2:#cbd5e1;--text:#0f172a;--text2:#475569;--text3:#94a3b8;--accent:#4f46e5;--accent2:#7c3aed;--green:#059669;--yellow:#d97706;--red:#dc2626;--blue:#2563eb;--pink:#db2777;--header-bg:linear-gradient(135deg,#e0e7ff,#f0f4ff)}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:100vh;font-size:15px;line-height:1.5}
-.site-header{background:linear-gradient(135deg,#0f172a,#111827);border-bottom:1px solid var(--border);padding:20px 16px 16px;position:sticky;top:0;z-index:100}
+/* ── Header ── */
+.site-header{background:var(--header-bg);border-bottom:1px solid var(--border);padding:20px 16px 16px;position:sticky;top:0;z-index:100}
 .header-inner{max-width:720px;margin:0 auto;display:flex;align-items:center;gap:14px}
 .header-logo{font-size:2rem;line-height:1}
+.header-text{flex:1}
 .header-text h1{font-size:1.15rem;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .header-text .tagline{font-size:.78rem;color:var(--text3);margin-top:2px}
-.date-nav{max-width:720px;margin:0 auto;padding:12px 16px 0;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.theme-btn{background:var(--bg3);border:1px solid var(--border2);border-radius:20px;padding:5px 10px;font-size:.95rem;cursor:pointer;transition:border-color .15s;flex-shrink:0}
+.theme-btn:hover{border-color:var(--accent)}
+/* ── View nav (Daily / Weekly) ── */
+.view-nav{max-width:720px;margin:0 auto;padding:10px 16px 0;display:flex;gap:8px}
+.view-btn{background:var(--bg2);border:1px solid var(--border);border-radius:20px;padding:5px 14px;font-size:.78rem;color:var(--text2);cursor:pointer;transition:all .15s;font-weight:500}
+.view-btn:hover,.view-btn.active{background:rgba(129,140,248,.15);border-color:var(--accent);color:var(--accent)}
+.view-btn.active{font-weight:700}
+/* ── Date nav chips ── */
+.date-nav{max-width:720px;margin:0 auto;padding:8px 16px 0;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .date-nav::-webkit-scrollbar{display:none}
 .date-chip{flex-shrink:0;background:var(--bg2);border:1px solid var(--border);border-radius:20px;padding:5px 12px;font-size:.75rem;color:var(--text2);cursor:pointer;transition:all .15s;white-space:nowrap;text-decoration:none}
 .date-chip:hover,.date-chip.active{background:rgba(129,140,248,.15);border-color:var(--accent);color:var(--accent)}
 .date-chip.active{font-weight:600}
+/* ── Main content ── */
 main{max-width:720px;margin:0 auto;padding:16px}
 .loading,.empty,.error{text-align:center;padding:60px 20px;color:var(--text3);font-size:1rem}
+/* ── Cards ── */
 .card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;margin-bottom:16px;overflow:hidden}
 .card:first-child{border-color:rgba(129,140,248,.35)}
 .card-header{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;cursor:pointer;user-select:none;gap:12px}
@@ -34,8 +49,10 @@ main{max-width:720px;margin:0 auto;padding:16px}
 .card-toggle-btn:hover{border-color:var(--accent);color:var(--accent)}
 .card-body{display:none}
 .card-body.open{display:block}
+/* ── Sections ── */
 .section{border-top:1px solid var(--border);padding:14px 16px}
 .section-title{font-size:.8rem;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px}
+/* ── News items ── */
 .news-item{background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:11px 13px;margin-bottom:8px;transition:border-color .15s}
 .news-item:last-child{margin-bottom:0}
 .news-item:hover{border-color:#334155}
@@ -43,14 +60,23 @@ main{max-width:720px;margin:0 auto;padding:16px}
 .news-title{font-size:.855rem;font-weight:600;color:var(--text);line-height:1.4;flex:1}
 a.news-title{text-decoration:none;transition:color .15s}
 a.news-title:hover{color:var(--accent);text-decoration:underline}
+/* ── Tags ── */
 .tag{display:inline-block;font-size:.65rem;padding:2px 7px;border-radius:20px;font-weight:700;white-space:nowrap;flex-shrink:0}
 .tag-hot{background:rgba(239,68,68,.15);color:var(--red);border:1px solid rgba(239,68,68,.3)}
 .tag-api{background:rgba(99,102,241,.15);color:var(--accent);border:1px solid rgba(99,102,241,.3)}
 .tag-feature{background:rgba(16,185,129,.15);color:var(--green);border:1px solid rgba(16,185,129,.3)}
 .tag-deprecate{background:rgba(245,158,11,.15);color:var(--yellow);border:1px solid rgba(245,158,11,.3)}
 .tag-model{background:rgba(236,72,153,.15);color:var(--pink);border:1px solid rgba(236,72,153,.3)}
+/* ── Gaming tags ── */
+.tag-chart{background:rgba(96,165,250,.15);color:var(--blue);border:1px solid rgba(96,165,250,.3)}
+.tag-monet{background:rgba(251,191,36,.15);color:var(--yellow);border:1px solid rgba(251,191,36,.3)}
+.tag-gameplay{background:rgba(52,211,153,.15);color:var(--green);border:1px solid rgba(52,211,153,.3)}
+.tag-social{background:rgba(244,114,182,.15);color:var(--pink);border:1px solid rgba(244,114,182,.3)}
+.tag-casual{background:rgba(129,140,248,.15);color:var(--accent);border:1px solid rgba(129,140,248,.3)}
+/* ── News meta ── */
 .news-desc{font-size:.8rem;color:var(--text2);line-height:1.55}
 .news-source{font-size:.7rem;color:var(--text3);margin-top:5px}
+/* ── Repo grid ── */
 .repo-grid{display:grid;grid-template-columns:1fr;gap:8px}
 @media(min-width:560px){.repo-grid{grid-template-columns:1fr 1fr}}
 .repo-card{background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:11px 13px;display:flex;flex-direction:column;gap:7px;transition:border-color .15s,transform .12s}
@@ -66,6 +92,7 @@ a.news-title:hover{color:var(--accent);text-decoration:underline}
 .verdict-maybe{background:rgba(245,158,11,.18);color:var(--yellow);border:1px solid rgba(245,158,11,.3)}
 .verdict-skip{background:rgba(100,116,139,.18);color:var(--text3);border:1px solid rgba(100,116,139,.3)}
 .verdict-reason{font-size:.73rem;color:var(--text3);line-height:1.4}
+/* ── Footer ── */
 footer{text-align:center;padding:24px 16px;color:var(--text3);font-size:.75rem;border-top:1px solid var(--border);max-width:720px;margin:0 auto}
 </style>
 </head>
@@ -77,65 +104,17 @@ footer{text-align:center;padding:24px 16px;color:var(--text3);font-size:.75rem;b
       <h1>Morning Digest</h1>
       <div class="tagline" id="tagline">Claude News · GitHub Hot · mỗi ngày 5AM</div>
     </div>
+    <button class="theme-btn" id="theme-btn" title="Đổi giao diện" onclick="toggleTheme()">☀️</button>
   </div>
 </header>
+<div class="view-nav">
+  <button class="view-btn active" id="btn-daily"  onclick="setView('daily')">📅 Hàng ngày</button>
+  <button class="view-btn"        id="btn-weekly" onclick="setView('weekly')">📊 Tuần</button>
+</div>
 <div class="date-nav" id="date-nav"></div>
 <main id="main"><div class="loading">⏳ Đang tải...</div></main>
+<main id="main-weekly" style="display:none"></main>
 <footer>🤖 Tự động bởi Lèo · minhducdl87-code/morning · Rolling 30 ngày</footer>
-<script>
-const TAG_MAP={hot:'tag-hot',api:'tag-api',feature:'tag-feature',deprecate:'tag-deprecate',model:'tag-model'};
-const VERDICT_MAP={yes:['verdict-yes','✅ YES'],maybe:['verdict-maybe','🤔 MAYBE'],skip:['verdict-skip','⏭️ SKIP']};
-function todayStr(){return new Date().toISOString().slice(0,10)}
-function renderNewsItem(n){
-  const tagKey=(n.tag||'').split('|')[0];
-  const cls=TAG_MAP[tagKey]||'tag-api';
-  const title=n.url
-    ?`<a href="${n.url}" target="_blank" rel="noopener" class="news-title">${n.title}</a>`
-    :`<span class="news-title">${n.title}</span>`;
-  return`<div class="news-item"><div class="news-top">${title}<span class="tag ${cls}">${n.tagLabel}</span></div><p class="news-desc">${n.desc}</p>${n.source?`<div class="news-source">📅 ${n.source}</div>`:''}</div>`;
-}
-function renderRepo(r){
-  const[cls,lbl]=VERDICT_MAP[r.verdict]||VERDICT_MAP.maybe;
-  return`<div class="repo-card"><div class="repo-top"><a href="${r.url}" target="_blank" rel="noopener" class="repo-name">${r.name}</a><span class="repo-stars">⭐ ${r.stars}</span></div><p class="repo-desc">${r.desc}</p><div class="repo-verdict"><span class="verdict ${cls}">${lbl}</span><span class="verdict-reason">${r.reason}</span></div></div>`;
-}
-function renderCard(card,i){
-  const today=card.date===todayStr();
-  const open=i===0;
-  return`<div class="card" id="card-${card.date}">
-    <div class="card-header" onclick="toggle('${card.date}')">
-      <div class="card-date-wrap">
-        ${today?'<span class="card-badge-today">HÔM NAY</span>':''}
-        <div><div class="card-day">${card.dayLabel}</div><div class="card-date-label">${card.dateLabel}</div></div>
-      </div>
-      <button class="card-toggle-btn" id="tb-${card.date}">${open?'▲':'▼'}</button>
-    </div>
-    <div class="card-body${open?' open':''}" id="bd-${card.date}">
-      <div class="section"><div class="section-title">🤖 Claude News</div>${(card.news||[]).map(renderNewsItem).join('')||'<p style="color:var(--text3);font-size:.82rem">Hôm nay Anthropic nghỉ ngơi 😴</p>'}</div>
-      <div class="section"><div class="section-title">🐙 GitHub Hot</div><div class="repo-grid">${(card.repos||[]).map(renderRepo).join('')}</div></div>
-    </div>
-  </div>`;
-}
-function toggle(d){
-  const b=document.getElementById('bd-'+d),t=document.getElementById('tb-'+d);
-  if(!b)return;
-  const o=b.classList.toggle('open');
-  t.textContent=o?'▲':'▼';
-}
-async function init(){
-  try{
-    const r=await fetch('cards.json?v='+Date.now());
-    if(!r.ok)throw new Error('HTTP '+r.status);
-    const cards=await r.json();
-    if(!cards.length){document.getElementById('main').innerHTML='<div class="empty">Chưa có bài nào 🌙</div>';return;}
-    document.getElementById('tagline').textContent=cards.length+' ngày gần nhất · tự động lúc 5AM';
-    const nav=document.getElementById('date-nav');
-    nav.innerHTML=cards.map(c=>`<a class="date-chip${c.date===todayStr()?' active':''}" href="#card-${c.date}">${c.dayLabel} ${c.dateLabel}</a>`).join('');
-    document.getElementById('main').innerHTML=cards.map(renderCard).join('');
-  }catch(e){
-    document.getElementById('main').innerHTML=`<div class="error">Lỗi load dữ liệu 😅<br><small>${e.message}</small></div>`;
-  }
-}
-init();
-</script>
+<script src="digest.js"></script>
 </body>
 </html>

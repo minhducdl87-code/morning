@@ -2,11 +2,12 @@ name: Morning Digest
 
 "on":
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '0 22 * * *'   # 5:00 AM Vietnam time (daily)
   workflow_dispatch:
 
 jobs:
-  update-digest:
+  # ── Daily digest (runs every day) ──────────────────────────────────────────
+  daily-digest:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -16,14 +17,50 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install google-genai
-      - name: Generate card
+
+      - name: Generate daily card
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python generate_card.py
+
+      - name: Notify Telegram
+        if: env.TELEGRAM_BOT_TOKEN != ''
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python notify-telegram.py
+
       - name: Commit and push
         run: |
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           git add cards.json
           git diff --staged --quiet || git commit -m "morning $(TZ='Asia/Ho_Chi_Minh' date '+%Y-%m-%d')"
+          git push
+
+  # ── Weekly digest (runs every Sunday only) ─────────────────────────────────
+  weekly-digest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    # Only run on Sunday (cron day-of-week = 0) or manual dispatch
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.schedule, '0 22 * * 0')
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install google-genai
+
+      - name: Generate weekly digest
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python generate_weekly.py
+
+      - name: Commit and push weekly
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add weekly.json
+          git diff --staged --quiet || git commit -m "weekly $(TZ='Asia/Ho_Chi_Minh' date '+%Y-%m-%d')"
           git push

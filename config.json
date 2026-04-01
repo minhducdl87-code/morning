@@ -1,0 +1,39 @@
+{
+  "topics": {
+    "claude_news": {
+      "enabled": true,
+      "search_queries": [
+        "Anthropic Claude news {month_year}",
+        "Claude API changelog site:anthropic.com"
+      ],
+      "output_field": "news",
+      "min_items": 3,
+      "max_items": 6,
+      "prompt_instruction": "Lấy tin có IMPACT THỰC TẾ trong 24-48h: model mới, feature mới, breaking change, deadline deprecation.",
+      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"mô tả tiếng Việt max 2 câu\",\"tag\":\"hot|api|feature|deprecate|model\",\"tagLabel\":\"🔥 HOT|🔧 API|✨ FEATURE|⏰ DEADLINE|🧠 MODEL\",\"source\":\"ngày·nguồn\",\"url\":\"https://link-hoặc-chuỗi-rỗng\"}"
+    },
+    "github_trending": {
+      "enabled": true,
+      "search_queries": [
+        "github trending claude anthropic AI tools this week"
+      ],
+      "output_field": "repos",
+      "min_items": 4,
+      "max_items": 8,
+      "prompt_instruction": "Ưu tiên: Claude tools, MCP servers, agent automation, AI utilities.",
+      "schema": "{\"name\":\"owner/repo\",\"url\":\"https://github.com/owner/repo\",\"desc\":\"1 câu tiếng Việt\",\"stars\":\"12K+\",\"verdict\":\"yes|maybe|skip\",\"reason\":\"lý do ngắn\"}"
+    },
+    "mobile_gaming": {
+      "enabled": true,
+      "search_queries": [
+        "mobile game industry news top chart {month_year} social casino casual",
+        "mobile game monetization model IAP battle pass live ops {month_year}"
+      ],
+      "output_field": "gamingNews",
+      "min_items": 3,
+      "max_items": 5,
+      "prompt_instruction": "Ưu tiên: social casino mới nổi, casual games viral, cơ chế gameplay đột phá/độc lạ, mô hình monetization thành công (IAP/ads hybrid, battle pass, live ops subscriptions), top chart games đang trending. Deepdive dòng social casino và casual.",
+      "schema": "{\"title\":\"emoji+tên game/tin\",\"desc\":\"mô tả tiếng Việt max 2 câu, nêu rõ điểm độc đáo\",\"tag\":\"chart|monet|gameplay|social-casino|casual\",\"tagLabel\":\"📊 CHART|💰 MONET|🎮 GAMEPLAY|🎰 SOCIAL|🎈 CASUAL\",\"source\":\"ngày·nguồn\",\"url\":\"https://link-hoặc-chuỗi-rỗng\"}"
+    }
+  }
+}
