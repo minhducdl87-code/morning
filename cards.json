@@ -3,8 +3,113 @@
     "date": "2026-04-01",
     "dayLabel": "Thứ Tư",
     "dateLabel": "01/04/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
+    "news": [
+      {
+        "title": "🔥 Rò rỉ mã nguồn Claude Code",
+        "desc": "Mã nguồn đầy đủ của công cụ Claude Code CLI đã bị rò rỉ qua một file .map trên npm vào ngày 30/03/2026, tiết lộ kiến trúc nội bộ và các tính năng chưa phát hành.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "01/04/2026·Medium",
+        "url": "https://medium.com/@onixreact/claude-code-leak-2c7b3e1f9a2e"
+      },
+      {
+        "title": "🧠 Claude Mythos bị rò rỉ: AI mạnh nhất",
+        "desc": "Mô hình AI tiên tiến nhất của Anthropic, Claude Mythos (tên mã nội bộ \"Capybara\"), đã bị rò rỉ thông tin vào cuối tháng 3/2026, được mô tả là một bước tiến lớn nhưng cũng tiềm ẩn rủi ro an ninh mạng đáng kể.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "31/03/2026·Axios/Fortune",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHwYklq5CocDGYgpvOO1pRuL4F1YvTeRbNi_W3u81gMeLXkQa68ktcZsFE9VsVn8ENHQc9dTIiDb7kDpTooy5CXS-xICeGXQaoZFSBhGtm0w45Nds-zFSShSxukDdEA8XCzpWbVqZh4n8ltBy1dym-vLYU2tqD3E4lAjIxwNtAPBlNtO6BYm7C7nco7DLrSf6oUkDfKmVAnhh73lFziFDgPr080rMuZgkLn8DILTM2NIOZpnLtumF1kAPGVKewq"
+      },
+      {
+        "title": "⏰ Hạn chót ngừng hỗ trợ cửa sổ ngữ cảnh 1M token",
+        "desc": "Anthropic sẽ ngừng hỗ trợ cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và Sonnet 4 vào ngày 30/04/2026. Sau ngày này, các yêu cầu vượt quá cửa sổ ngữ cảnh 200k token tiêu chuẩn sẽ báo lỗi.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFN4nDHP2Kl7l2BF8LSYZMQxublXSO-heRwyBcqEFw36VaPIuA7P2Df5zxpH9o7xufWbSSBQd6qaGs1cYfmZmAn_Kla1gLaPEPJjvA_ApO0_q9y0I0YNxRBDuj_EYr2wzOflFicL46Ph0tt6KDTGrPO9jV4Gm4="
+      },
+      {
+        "title": "🔧 Tăng giới hạn max_tokens cho Message Batches API",
+        "desc": "Anthropic đã tăng giới hạn max_tokens lên 300k trên Message Batches API cho Claude Opus 4.6 và Sonnet 4.6 từ ngày 30/03/2026, cho phép tạo ra các đầu ra dài hơn.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFN4nDHP2Kl7l2BF8LSYZMQxublXSO-heRwyBcqEFw36VaPIuA7P2Df5zxpH9o7xufWbSSBQd6qaGs1cYfmZmAn_Kla1gLaPEPJjvA_ApO0_q9y0I0YNxRBDuj_EYr2wzOflFicL46Ph0tt6KDTGrPO9jV4Gm4="
+      },
+      {
+        "title": "🔥 Khủng hoảng tiêu thụ token Claude Code",
+        "desc": "Người đăng ký Claude Code Max đang báo cáo việc hết hạn mức sử dụng nhanh hơn nhiều so với dự kiến kể từ tháng 3/2026, với việc hạn mức 5 giờ bị đạt chỉ trong 19 phút.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "01/04/2026·DevOps.com",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFN_NLKypTYRiSIRpZOFsJae3OJCScwUItyX1FQy_G10jaa9-q4kQ4XYFDDvxuX_QcphCo9flKRZ4ABsltnh5uCgbXV2IIK34Fzcof--O5Sf8GKmL-SA_QMU20LfY6XffiJ3jjf5VCtfMS52b9WcQ2RwKmSQ42b"
+      },
+      {
+        "title": "✨ Claude có tính năng 'Computer Use' trên Mac",
+        "desc": "Từ ngày 23/03/2026, người dùng gói Pro và Max có thể cấp quyền cho Claude sử dụng máy tính, cho phép AI mở ứng dụng, nhấp, gõ và điều hướng màn hình Mac để thực hiện tác vụ.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "28/03/2026·Insight Media Group",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOmvN_1m1PjOBu0R50whfInlczrBdXTarySRZDRl22CcgPkc_E0u1Mm5GwtUJcjNq6XYMq6vDsm-oHieY7GJmYZ349e6GNMiGW5THRvXfdwgaJuQLyo-7sNOwBDFO_6bTgMPWu3mClsFVqPilLYak="
+      }
+    ],
+    "repos": [
+      {
+        "name": "claude-code-source-code",
+        "url": "https://github.com/anthropic-ai/claude-code-source-code",
+        "desc": "Kho lưu trữ mã nguồn đã được giải nén của Claude Code v2.1.88, được tái tạo từ gói npm sau vụ rò rỉ.",
+        "stars": "30K+",
+        "verdict": "yes",
+        "reason": "Mã nguồn rò rỉ của công cụ Claude Code chính thức, rất hot và được quan tâm."
+      },
+      {
+        "name": "instructkr/claw-code",
+        "url": "https://github.com/instructkr/claw-code",
+        "desc": "Một bản viết lại Claude Code bằng Python từ đầu, tập trung vào kiến trúc và nghiên cứu, nhanh chóng đạt 30K sao trên GitHub.",
+        "stars": "30K+",
+        "verdict": "yes",
+        "reason": "Bản viết lại Claude Code rất phổ biến, cho thấy sự quan tâm lớn đến kiến trúc."
+      },
+      {
+        "name": "ykdojo/claude-code-tips",
+        "url": "https://github.com/ykdojo/claude-code-tips",
+        "desc": "45 mẹo để tận dụng tối đa Claude Code, bao gồm script dòng trạng thái tùy chỉnh và sử dụng Gemini CLI làm 'minion'.",
+        "stars": "6.9K+",
+        "verdict": "yes",
+        "reason": "Tiện ích hữu ích cho người dùng Claude Code để tối ưu hóa công việc."
+      },
+      {
+        "name": "UfoMiao/zcf",
+        "url": "https://github.com/UfoMiao/zcf",
+        "desc": "Quy trình làm việc mã không cần cấu hình cho Claude Code & Codex, giúp tăng cường tự động hóa tác nhân.",
+        "stars": "5.8K+",
+        "verdict": "yes",
+        "reason": "Công cụ tự động hóa tác nhân và quy trình làm việc mã hiệu quả cho Claude."
+      },
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Công cụ mã hóa tác nhân chính thức của Anthropic chạy trong terminal, hiểu codebase và giúp mã hóa nhanh hơn.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Công cụ chính thức từ Anthropic, nền tảng cho nhiều công cụ khác."
+      },
+      {
+        "name": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "desc": "Kho lưu trữ công khai cho Agent Skills, cho phép Claude tùy chỉnh hành vi và tích hợp với các công cụ bên ngoài.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Cung cấp khả năng tự động hóa tác nhân và mở rộng cho Claude."
+      },
+      {
+        "name": "langgptai/awesome-claude-prompts",
+        "url": "https://github.com/langgptai/awesome-claude-prompts",
+        "desc": "Tuyển tập các prompt chất lượng cao để sử dụng Claude hiệu quả hơn.",
+        "stars": "4.7K+",
+        "verdict": "yes",
+        "reason": "Tài nguyên hữu ích cho kỹ thuật nhắc lệnh, cải thiện tương tác với Claude."
+      }
+    ]
   }
 ]
