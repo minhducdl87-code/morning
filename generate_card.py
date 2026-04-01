@@ -51,7 +51,7 @@ def build_prompt(topics: dict) -> str:
 
     lines.append("Trả về CHỈ JSON (không markdown, không text thêm):")
     lines.append("{" + schema_fields + "}")
-    lines.append("Rules: tiếng Việt ngắn gọn dễ hiểu.")
+    lines.append("Rules: tiếng Việt ngắn gọn dễ hiểu. BẮT BUỘC trả về ĐẦY ĐỦ tất cả các field trong schema, KHÔNG được bỏ sót field nào.")
     return "\n".join(lines)
 
 PROMPT = build_prompt(topics)

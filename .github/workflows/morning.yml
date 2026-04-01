@@ -24,7 +24,7 @@ jobs:
         run: python generate_card.py
 
       - name: Notify Telegram
-        if: env.TELEGRAM_BOT_TOKEN != ''
+        if: ${{ secrets.TELEGRAM_BOT_TOKEN != '' }}
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
