@@ -68,23 +68,30 @@ response = client.models.generate_content(
 )
 
 # --- Parse JSON response ---
-text = response.text.strip()
-text = re.sub(r"^```[a-z]*\n?", "", text)
-text = re.sub(r"\n?```$", "", text).strip()
-
-card_json = None
-try:
-    card_json = json.loads(text)
-except Exception:
-    m = re.search(r"\{[\s\S]+\}", text)
-    if m:
-        try: card_json = json.loads(m.group())
-        except: pass
-
-if not card_json:
-    print("Could not parse JSON, using fallback")
+text = response.text
+if not text:
+    print(f"Gemini returned empty response. Candidates: {response.candidates}")
+    print("Using fallback card.")
     card_json = {"date": date_str, "dayLabel": day_label, "dateLabel": date_label,
                  "news": [], "repos": [], "gamingNews": []}
+else:
+    text = text.strip()
+    text = re.sub(r"^```[a-z]*\n?", "", text)
+    text = re.sub(r"\n?```$", "", text).strip()
+
+    card_json = None
+    try:
+        card_json = json.loads(text)
+    except Exception:
+        m = re.search(r"\{[\s\S]+\}", text)
+        if m:
+            try: card_json = json.loads(m.group())
+            except: pass
+
+    if not card_json:
+        print("Could not parse JSON, using fallback")
+        card_json = {"date": date_str, "dayLabel": day_label, "dateLabel": date_label,
+                     "news": [], "repos": [], "gamingNews": []}
 
 # --- Update cards.json (rolling 30-day window) ---
 with open("cards.json", "r", encoding="utf-8") as f:
