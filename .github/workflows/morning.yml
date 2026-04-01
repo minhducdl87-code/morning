@@ -3,6 +3,7 @@ name: Morning Digest
 "on":
   schedule:
     - cron: '0 22 * * *'   # 5:00 AM Vietnam time (daily)
+    - cron: '0 22 * * 0'   # 5:00 AM Vietnam time (Sunday only — for weekly)
   workflow_dispatch:
 
 jobs:
@@ -42,8 +43,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    # Only run on Sunday (cron day-of-week = 0) or manual dispatch
-    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.schedule, '0 22 * * 0')
+    # Only run on Sunday or manual dispatch
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 22 * * 0'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
