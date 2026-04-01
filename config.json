@@ -24,7 +24,7 @@
       "schema": "{\"name\":\"owner/repo\",\"url\":\"https://github.com/owner/repo\",\"desc\":\"1 câu tiếng Việt\",\"stars\":\"12K+\",\"verdict\":\"yes|maybe|skip\",\"reason\":\"lý do ngắn\"}"
     },
     "mobile_gaming": {
-      "enabled": true,
+      "enabled": false,
       "search_queries": [
         "mobile game industry news top chart {month_year} social casino casual",
         "mobile game monetization model IAP battle pass live ops {month_year}"
