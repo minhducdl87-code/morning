@@ -3,11 +3,11 @@
 import json, os, sys, urllib.request, urllib.parse
 
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-CHAT_IDS  = [cid.strip() for cid in os.environ.get("TELEGRAM_CHAT_ID", "").split(",") if cid.strip()]
+CHAT_ID   = "655323886"
 PAGE_URL  = "https://minhducdl87-code.github.io/morning"
 
-if not BOT_TOKEN or not CHAT_IDS:
-    print("TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID not set — skipping notification")
+if not BOT_TOKEN:
+    print("TELEGRAM_BOT_TOKEN not set — skipping notification")
     sys.exit(0)
 
 # --- Load latest card ---
@@ -55,32 +55,24 @@ def build_message(card: dict) -> str:
 
 message = build_message(card)
 
-# --- Send to each Telegram chat ID (stdlib only) ---
+# --- Send to Telegram ---
 url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
-errors = []
-
-for chat_id in CHAT_IDS:
-    payload = urllib.parse.urlencode({
-        "chat_id":    chat_id,
-        "text":       message,
-        "parse_mode": "Markdown",
-        "disable_web_page_preview": "true",
-    }).encode()
-    req = urllib.request.Request(url, data=payload, method="POST")
-    req.add_header("Content-Type", "application/x-www-form-urlencoded")
-    try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            result = json.loads(resp.read())
-            if result.get("ok"):
-                print(f"✓ Sent to chat {chat_id}")
-            else:
-                err = result.get('description', 'unknown')
-                print(f"✗ Telegram API error for {chat_id}: {err}")
-                errors.append(chat_id)
-    except Exception as e:
-        print(f"✗ Failed for {chat_id}: {e}")
-        errors.append(chat_id)
-
-if errors:
-    print(f"Failed chat IDs: {errors}")
+payload = urllib.parse.urlencode({
+    "chat_id":    CHAT_ID,
+    "text":       message,
+    "parse_mode": "Markdown",
+    "disable_web_page_preview": "true",
+}).encode()
+req = urllib.request.Request(url, data=payload, method="POST")
+req.add_header("Content-Type", "application/x-www-form-urlencoded")
+try:
+    with urllib.request.urlopen(req, timeout=10) as resp:
+        result = json.loads(resp.read())
+        if result.get("ok"):
+            print(f"✓ Sent to chat {CHAT_ID}")
+        else:
+            print(f"✗ Telegram API error: {result.get('description', 'unknown')}")
+            sys.exit(1)
+except Exception as e:
+    print(f"✗ Failed: {e}")
     sys.exit(1)
