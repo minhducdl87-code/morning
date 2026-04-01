@@ -57,21 +57,38 @@ def build_prompt(topics: dict) -> str:
 PROMPT = build_prompt(topics)
 print(f"Generating card for {date_str} | topics: {list(topics.keys())}...")
 
-response = client.models.generate_content(
-    model="gemini-2.5-flash",
-    contents=PROMPT,
-    config=types.GenerateContentConfig(
-        tools=[types.Tool(google_search=types.GoogleSearch())],
-        temperature=0.5,
-        max_output_tokens=4096,
-    )
-)
+def call_gemini(prompt, retries=2):
+    """Call Gemini with retry, extract text from all response parts."""
+    for attempt in range(retries + 1):
+        try:
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    tools=[types.Tool(google_search=types.GoogleSearch())],
+                    temperature=0.5,
+                    max_output_tokens=4096,
+                )
+            )
+            # Extract text from all parts (response.text can be None with grounding)
+            text_parts = []
+            if response.candidates:
+                for part in (response.candidates[0].content.parts or []):
+                    if part.text:
+                        text_parts.append(part.text)
+            text = "\n".join(text_parts).strip()
+            if text:
+                return text
+            print(f"Attempt {attempt+1}: empty response. Finish reason: {response.candidates[0].finish_reason if response.candidates else 'no candidates'}")
+        except Exception as e:
+            print(f"Attempt {attempt+1} error: {e}")
+    return None
+
+text = call_gemini(PROMPT)
 
 # --- Parse JSON response ---
-text = response.text
 if not text:
-    print(f"Gemini returned empty response. Candidates: {response.candidates}")
-    print("Using fallback card.")
+    print("All attempts failed. Using fallback card.")
     card_json = {"date": date_str, "dayLabel": day_label, "dateLabel": date_label,
                  "news": [], "repos": [], "gamingNews": []}
 else:
