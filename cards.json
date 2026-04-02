@@ -1,5 +1,94 @@
 [
   {
+    "date": "2026-04-03",
+    "dayLabel": "Thứ Sáu",
+    "dateLabel": "03/04/2026",
+    "news": [
+      {
+        "title": "🔥 Rò rỉ mã nguồn Claude Code",
+        "desc": "Mã nguồn công cụ lập trình AI Claude Code của Anthropic đã bị rò rỉ do lỗi đóng gói, không ảnh hưởng dữ liệu khách hàng. Cộng đồng đang sao chép và viết lại mã nguồn này trên GitHub để tránh các yêu cầu gỡ bỏ.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "01/04/2026·Anthropic/PCMag/Cybernews",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpWhipm3q-W_JdyKyh9ms5ozO-XqSIJTs0IPmpGXF17toKNGAkGaQwZ0LgrbZ9fGVoVhMyLIcHn3hWT05rtrbHgR8qrknrVp7KDVDbm4B4JYpATB9tf3dx3Aw2g0wS9AIBl3dfVdtL-JEHBmVZZL7X3KS4HgFQ10IyOzBx1wBe0_gtYV03Wi3219ETCYE09-GS0hX5b0utu5t6fii0KjdDkePu89OpsIyhqRHHHbjxgIEC_6mtPYsBrKL0UbZwcWXVT4uoFPLqdrJcr2ceDxoZ6ytNwIx_ZoecosLA"
+      },
+      {
+        "title": "🧠 Anthropic xác nhận mô hình Claude Mythos",
+        "desc": "Anthropic đã buộc phải xác nhận sự tồn tại của mô hình AI mạnh mẽ nhất của họ, Claude Mythos, sau khi 3.000 tài liệu chưa công bố bị rò rỉ. Claude Mythos được mô tả là một bước tiến vượt bậc với khả năng suy luận, lập trình và an ninh mạng được cải thiện đáng kể.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "02/04/2026·PYMNTS.com",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPItMqUjTTSpLkiefTdiRF8I5mWaq8XVRgdPoM-6kUgcPCznPmq_4vaac27BtsSwz8oeDFyvzNfHoaZGGFwnarXZ78ubfRG6nLots6VCn0EfJntNGl4zXJ6hWDW4ZqO6fSuJhes2MXyi4wzNv1hvjoUmY1EBmBw4jcgQI3FxVO0qa8kx4w2Cv2RA3QpHa4JYutwMp7g6cszHzT1-ni5jipbqc="
+      },
+      {
+        "title": "⏰ Ngừng hỗ trợ Context Window 1M token",
+        "desc": "Anthropic sẽ ngừng hỗ trợ cửa sổ ngữ cảnh 1 triệu token beta cho Claude Sonnet 4.5 và Claude Sonnet 4 vào ngày 30/04/2026. Sau ngày này, các yêu cầu vượt quá 200k token sẽ báo lỗi.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQER3lWC3UbMKLtSgfKyER-H2nI0gqFI-k3di_8xKJ7Gu5kHYZ89mGz-xWsyXTUKa9QAffOq4J0TySKVQWwyn-wSryA2SA4q4-CeTp2qU2mpIi2uNRcXkuJMe6QkCsOGw8rwwfghEc10Mo4-m-Q_OKHHNcjCRJg"
+      },
+      {
+        "title": "✨ Tăng giới hạn token API lên 300K",
+        "desc": "Giới hạn token tối đa đã được nâng lên 300.000 trên API Message Batches cho Claude Opus 4.6 và Sonnet 4.6. Cần sử dụng header beta `output-300k-2026-03-24` để kích hoạt.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQER3lWC3UbMKLtSgfKyER-H2nI0gqFI-k3di_8xKJ7Gu5kHYZ89mGz-xWsyXTUKa9QAffOq4J0TySKVQWwyn-wSryA2SA4q4-CeTp2qU2mpIi2uNRcXkuJMe6QkCsOGw8rwwfghEc10Mo4-m-Q_OKHHNcjCRJg"
+      },
+      {
+        "title": "✨ Claude có thể sử dụng máy tính của bạn",
+        "desc": "Người dùng gói Pro và Max giờ đây có thể cấp quyền cho Claude truy cập và sử dụng máy tính của họ để thực hiện các tác vụ như mở file, chạy công cụ dev, điều hướng màn hình.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "23/03/2026·Claude Help Center",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZ8U_178tIInw3NLq4DRAbU1q4xU4Q1XOZcKcsOxx4e7dHC8U7esm5FrgS86SVAu6Y4xhVQ8UT0bR_pVxMyBSHOvaiH3ipTd-A1d8XYqanwSiLzvZdy2oGb2XFhpT78Y-E7ay480c-ECpaFhvesibrEv_9z_bjnLQ="
+      }
+    ],
+    "repos": [
+      {
+        "name": "Kuberwastaken/claude-code",
+        "url": "https://github.com/Kuberwastaken/claude-code",
+        "desc": "Một bản sao và phân tích mã nguồn của Claude Code, tiết lộ các tính năng nội bộ như chế độ 'KAIROS' (AI luôn hoạt động).",
+        "stars": "100K+",
+        "verdict": "yes",
+        "reason": "Phân tích sâu mã nguồn rò rỉ, tiết lộ tính năng tiềm năng."
+      },
+      {
+        "name": "realsigridjin/claw-code",
+        "url": "https://github.com/realsigridjin/claw-code",
+        "desc": "Bản viết lại Claude Code bằng Python và Rust, nhằm tránh các lệnh gỡ bỏ DMCA của Anthropic.",
+        "stars": "100K+",
+        "verdict": "yes",
+        "reason": "Giải pháp cộng đồng cho mã nguồn rò rỉ, có thể trở thành công cụ thay thế."
+      },
+      {
+        "name": "free-code/claude-code-unlocked",
+        "url": "https://github.com/free-code/claude-code-unlocked",
+        "desc": "Phiên bản Claude Code đã loại bỏ telemetry, guardrails và mở khóa các tính năng thử nghiệm, cho phép sử dụng các mô hình AI khác.",
+        "stars": "2.6K+",
+        "verdict": "yes",
+        "reason": "Cung cấp phiên bản Claude Code không giới hạn, tiềm năng cho tùy chỉnh."
+      },
+      {
+        "name": "anthropic-community/claude-api-skill",
+        "url": "https://github.com/anthropic-community/claude-api-skill",
+        "desc": "Kỹ năng '/claude-api' để xây dựng ứng dụng với Claude API và Anthropic SDK, hỗ trợ 10 ngôn ngữ mới.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Công cụ chính thức/cộng đồng để tích hợp API Claude, hỗ trợ đa ngôn ngữ."
+      },
+      {
+        "name": "anthropic-community/claude-agent-automation",
+        "url": "https://github.com/anthropic-community/claude-agent-automation",
+        "desc": "Các công cụ và ví dụ về tự động hóa tác nhân AI với Claude, bao gồm khả năng điều khiển máy tính.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Tập trung vào tự động hóa tác nhân AI, tận dụng tính năng mới của Claude."
+      }
+    ]
+  },
+  {
     "date": "2026-04-02",
     "dayLabel": "Thứ Năm",
     "dateLabel": "02/04/2026",
