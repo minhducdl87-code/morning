@@ -1,5 +1,102 @@
 [
   {
+    "date": "2026-04-04",
+    "dayLabel": "Thứ Bảy",
+    "dateLabel": "04/04/2026",
+    "news": [
+      {
+        "title": "🔥 HOT: Rò rỉ mã nguồn Claude Code",
+        "desc": "Mã nguồn công cụ CLI Claude Code của Anthropic đã bị rò rỉ thông qua một gói npm, tiết lộ chi tiết về cách hoạt động nội bộ. Vụ việc này đã gây ra sự lan truyền nhanh chóng trên GitHub và thu hút sự chú ý của cộng đồng AI.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "01/04/2026·PCMag, AI Magazine, Cybernews",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3_lx2UzoInaVuYEndp00SdPumB__WfwWq0o7QFghlxLvTaUnNRPaD0HRqdK6D9wWyyGx0rpJCswO11HnmqH3-rFOyHznTQLqmbU9ya0jGtzdwRcfPtq6WX4CfcaqoSinUKvYUxGbWlWoQFOvTqEBPyYCldpj8YF0EirPCVTCjdKI3ABgQgtUUkXpmYCHSnrR_SGcZgjqzm0c"
+      },
+      {
+        "title": "🧠 MODEL: Lộ tính năng KAIROS & Undercover Mode",
+        "desc": "Vụ rò rỉ mã nguồn Claude Code đã hé lộ các tính năng nội bộ chưa phát hành như 'KAIROS' (chế độ tác nhân tự động luôn bật) và 'Undercover Mode' (ngăn AI tiết lộ thông tin nội bộ khi làm việc trên mã nguồn mở).",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "03/04/2026·Sargent on Tech News Weekly",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0s9AclbIpDejEPlxH9V7eRFLi7Nngp_aiSiyuc_Lvult33GOXkch7_BGeIVICCD7AT0JHGx2OsPHWcpG8tBzu_UKq3G0_eKq1EPzT0FaCYRVKnkM69d37AZ4TyuNDUQtFlLrCf1a1Z1jci5-HUiI3vA"
+      },
+      {
+        "title": "⏰ DEADLINE: Ngừng hỗ trợ cửa sổ ngữ cảnh 1M token",
+        "desc": "Anthropic sẽ ngừng hỗ trợ cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và Claude Sonnet 4 vào ngày 30/04/2026. Sau ngày này, các yêu cầu vượt quá cửa sổ ngữ cảnh 200k token tiêu chuẩn sẽ trả về lỗi.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWv6zgVSbxmyeidwN9PsTBaebI5PZjtl3RgLJxwVEfHrkGl2xgjbt9z94DSToX0gQiif4xzc69eHT6Tc6GYnTbD-OrDeqJbNywZ_hHeh2CrlGkYGskDi0dSxHzF583bky16bYjYlIk1rfrnAtBY65oDyEUwC0"
+      },
+      {
+        "title": "✨ FEATURE: Tăng giới hạn token lên 300k cho API",
+        "desc": "Giới hạn token tối đa đã được nâng lên 300k trên Message Batches API cho Claude Opus 4.6 và Sonnet 4.6. Điều này cho phép tạo ra các đầu ra dài hơn cho nội dung, dữ liệu có cấu trúc và tạo mã lớn.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWv6zgVSbxmyeidwN9PsTBaebI5PZjtl3RgLJxwVEfHrkGl2xgjbt9z94DSToX0gQiif4xzc69eHT6Tc6GYnTbD-OrDeqJbNywZ_hHeh2CrlGkYGskDi0dSxHzF583bky16bYjYlIk1rfrnAtBY65oDyEUwC0"
+      },
+      {
+        "title": "🧠 MODEL: Claude Opus 4.6 mặc định 'medium effort'",
+        "desc": "Claude Opus 4.6 hiện mặc định sử dụng chế độ 'medium effort' cho người dùng Max và Team, mang lại sự cân bằng giữa tốc độ và độ kỹ lưỡng. Các phiên bản Opus 4 và 4.1 đã bị xóa khỏi Claude Code API.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "01/04/2026·Claude Code Changelog",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNTF9N1DoyV1DjLuSJwv-iyCU6j4Io27dtHfRGq6UHb7ghjLNQ2bJsakztbflRQSe2a_Z0NwkyYGuZ7aRiyargHH9FdjYcLeTInS3uzncDbzx57LRQdGW9CA-dJOQRw57sRhs"
+      },
+      {
+        "title": "🔥 HOT: Mã độc lợi dụng rò rỉ Claude Code",
+        "desc": "Tin tặc đang lợi dụng vụ rò rỉ mã nguồn Claude Code bằng cách đăng tải các tệp chứa mã độc trên GitHub, tuyên bố đó là các phiên bản đặc biệt, đã mở khóa của công cụ AI này.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "03/04/2026·PCMag",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRPfRrx_6GLhVjDho3CZ4CEF7CPia1hlvFBAN_M0jQ4xCT-J1LCqlf29sa2xXl_IjP4DX_N5X8coEgOTSBNzHEMC7dFBH9LAhgPe0A_Mcrc92qIEXfsfUO-tb4nNscYvProFvjbW01sdZz3P_lz5qffcg3TB2Lb1HHE-vVZ1gG3-yoOf-1BOltjaxraboHBBcfQA"
+      }
+    ],
+    "repos": [
+      {
+        "name": "claw-code",
+        "url": "https://github.com/claw-code",
+        "desc": "Một bản viết lại hoàn chỉnh của Claude Code bằng Python và Rust, trở thành kho lưu trữ phát triển nhanh nhất trên GitHub sau vụ rò rỉ.",
+        "stars": "100K+",
+        "verdict": "yes",
+        "reason": "Bản viết lại nhanh nhất, cho thấy khả năng tái tạo công cụ Claude."
+      },
+      {
+        "name": "nano-claude-code",
+        "url": "https://github.com/nano-claude-code",
+        "desc": "Một bản triển khai lại tối giản của Claude Code bằng Python, hỗ trợ các gói đa tác nhân, bộ nhớ và kỹ năng, với phiên bản v3.0 mới nhất.",
+        "stars": "5K+",
+        "verdict": "yes",
+        "reason": "Triển khai lại nhẹ, có tính năng đa tác nhân và bộ nhớ."
+      },
+      {
+        "name": "Kuberwastaken/claude-code",
+        "url": "https://github.com/Kuberwastaken/claude-code",
+        "desc": "Kho lưu trữ cung cấp bản viết lại Claude Code bằng Rust và phân tích chi tiết về cách hoạt động nội bộ của nó.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Phân tích sâu về kiến trúc nội bộ của Claude Code."
+      },
+      {
+        "name": "claude-code-source-code",
+        "url": "https://github.com/claude-code-source-code",
+        "desc": "Kho lưu trữ chứa mã nguồn TypeScript đã được giải nén/đóng gói của Claude Code v2.1.88, được phục hồi từ gói npm rò rỉ.",
+        "stars": "N/A",
+        "verdict": "maybe",
+        "reason": "Mã nguồn gốc để nghiên cứu, nhưng có thể bị gỡ xuống do DMCA."
+      },
+      {
+        "name": "free-claude-code-unlocked",
+        "url": "https://github.com/free-claude-code-unlocked",
+        "desc": "Các kho lưu trữ tuyên bố loại bỏ đo từ xa, rào chắn và mở khóa các tính năng thử nghiệm của Claude Code, cho phép sử dụng các mô hình AI khác.",
+        "stars": "2.6K+",
+        "verdict": "maybe",
+        "reason": "Cung cấp các tính năng mở khóa, nhưng tính hợp pháp và an toàn cần được xem xét."
+      }
+    ]
+  },
+  {
     "date": "2026-04-03",
     "dayLabel": "Thứ Sáu",
     "dateLabel": "03/04/2026",
