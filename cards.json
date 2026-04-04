@@ -1,5 +1,86 @@
 [
   {
+    "date": "2026-04-05",
+    "dayLabel": "Chủ Nhật",
+    "dateLabel": "05/04/2026",
+    "news": [
+      {
+        "title": "🚫 Hạn chế API bên thứ ba cho Claude",
+        "desc": "Anthropic đã chặn người dùng đăng ký Claude Pro và Max sử dụng các công cụ AI agent của bên thứ ba như OpenClaw, chuyển chi phí sang mô hình trả theo mức sử dụng.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "04/04/2026·TNW",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNCuThEF5pOpIt8CSZ9Io5wOxVwxJ_JX9XU8uswiMS3EHodVB78D-5OrnTeetkF5WX9RP_wEhFDGUxuVDFjYXZ0kcYgktpqhqmWD1pj-REah3YFS_0cQmPZTG80BKaN4xeVqtT_0srE2o7RRpyx5w3adgfHvPMyHgj6dsOhmaPUiT6HnQ=="
+      },
+      {
+        "title": "🖥️ Claude Code & Cowork điều khiển máy tính",
+        "desc": "Anthropic đã cập nhật tính năng cho phép Claude Code và Claude Cowork trực tiếp điều khiển máy tính Mac hoặc Windows của người dùng để thực hiện các tác vụ.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "03/04/2026·The Decoder",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdguOQZ-LYXXXyELAEdeXkl8R01vNibtTpoX16sUy5iHjEtFr8m4W4dr4B7WXVWp06267xsUlNFs88dKOuFsyA7BlhhbNiSuyHstcsr4v4XFdLdekb0lkHpIjRvDMdygI8A7oi5Kd0nw5_Ksb_8zZWaTkeVPvHZUhtnj4u984gpKREZ2Z-NhNIuQG1qYwwgn639rj9Qx8PzNtQL2rewUf_0Z9FmzFKe3Ybw5lZ"
+      },
+      {
+        "title": "🔥 Mã nguồn Claude Code bị rò rỉ và hệ quả",
+        "desc": "Mã nguồn nội bộ của Claude Code bị rò rỉ do lỗi đóng gói, dẫn đến việc lan truyền nhanh chóng trên GitHub, các bản viết lại và thậm chí cả việc phân phối phần mềm độc hại.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "01-03/04/2026·The Guardian",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFks4QcAIFeAZhs-N77o-9M0UE0HHVQXXFSckPu2kgRDo-slf4elj-jORvY1JIP5wEzCPDqiqg9VgBbdns-6U8WJoSoqgUMWZGW3PE_T58HXC-EORAYxL3K2p5oXWG-DVnaL4hcS7WBhxR7NdzoR11szgqkb0wTrncLpzABrExluo3-PLkAsXZMcBZGpkw="
+      },
+      {
+        "title": "⬆️ Tăng giới hạn token API Claude Opus 4.6 & Sonnet 4.6",
+        "desc": "Anthropic đã tăng giới hạn max_tokens lên 300k cho API Message Batches của Claude Opus 4.6 và Sonnet 4.6, cho phép tạo ra các đầu ra dài hơn.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2UGBYTRqJgjVmrUrwUR4gd7W-6qfLfTxTsQVgM1yXED4GNbDwiubWU30epxkVjBhW4vSyvgZgnq2NG2FYC1K69dAWlsOl0Waw-AyC5g2x3sbpuWe0CGPw9jsvZHuPcr4npjY9JtvJgxZFBBNEj4pdeJ9-cRc="
+      },
+      {
+        "title": "⏰ Ngừng hỗ trợ cửa sổ ngữ cảnh 1M token",
+        "desc": "Cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và Sonnet 4 sẽ ngừng hoạt động vào ngày 30 tháng 4 năm 2026, các yêu cầu vượt quá giới hạn 200k token tiêu chuẩn sẽ báo lỗi.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2UGBYTRqJgjVmrUrwUR4gd7W-6qfLfTxTsQVgM1yXED4GNbDwiubWU30epxkVjBhW4vSyvgZgnq2NG2FYC1K69dAWlsOl0Waw-AyC5g2x3sbpuWe0CGPw9jsvZHuPcr4npjY9JtvJgxZFBBNEj4pdeJ9-cRc="
+      }
+    ],
+    "repos": [
+      {
+        "name": "realsigridjin/claw-code",
+        "url": "https://github.com/realsigridjin/claw-code",
+        "desc": "Bản viết lại Claude Code bị rò rỉ bằng Python/Rust, đã trở thành kho lưu trữ phát triển nhanh nhất trên GitHub.",
+        "stars": "100K+",
+        "verdict": "yes",
+        "reason": "Bản viết lại của công cụ Claude Code bị rò rỉ, cực kỳ phổ biến và có tác động lớn."
+      },
+      {
+        "name": "instructkr/nano-claude-code",
+        "url": "https://github.com/instructkr/nano-claude-code",
+        "desc": "Một bản triển khai lại tối giản của Claude Code bằng Python, hỗ trợ điều phối đa tác nhân, bộ nhớ và hệ thống kỹ năng.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Bản triển khai lại Claude Code với các tính năng agent và utility."
+      },
+      {
+        "name": "Kuberwastaken/claude-code",
+        "url": "https://github.com/Kuberwastaken/claude-code",
+        "desc": "Phân tích chuyên sâu về mã nguồn Claude Code bị rò rỉ, bao gồm các tên mã nội bộ và chế độ 'KAIROS' luôn bật.",
+        "stars": "N/A",
+        "verdict": "maybe",
+        "reason": "Không phải công cụ trực tiếp nhưng cung cấp cái nhìn sâu sắc về công nghệ agent của Claude."
+      },
+      {
+        "name": "anthropic-ai/claude-code-source-code",
+        "url": "https://github.com/anthropic-ai/claude-code-source-code",
+        "desc": "Kho lưu trữ mã nguồn Claude Code đã được giải nén/giải nén, cung cấp tài liệu gốc từ vụ rò rỉ.",
+        "stars": "N/A",
+        "verdict": "maybe",
+        "reason": "Mã nguồn gốc bị rò rỉ, quan trọng cho nhà phát triển nhưng không phải là một công cụ sẵn sàng sử dụng."
+      }
+    ]
+  },
+  {
     "date": "2026-04-04",
     "dayLabel": "Thứ Bảy",
     "dateLabel": "04/04/2026",
