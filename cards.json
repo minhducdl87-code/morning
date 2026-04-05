@@ -5,102 +5,70 @@
     "dateLabel": "06/04/2026",
     "news": [
       {
-        "title": "🔥 HOT: Hạn chế Claude với công cụ bên thứ ba",
-        "desc": "Anthropic đã chặn người dùng Claude Pro và Max sử dụng các công cụ AI agent bên thứ ba như OpenClaw với gói đăng ký hiện có, yêu cầu trả phí riêng cho 'extra usage'. Thay đổi này có hiệu lực từ ngày 04/04/2026 và sẽ mở rộng sang các công cụ khác trong vài tuần tới, gây tăng chi phí đáng kể cho nhiều người dùng.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "04/04/2026·TNW, Business Insider, PCMag",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfo6_jK3MOcA_GxBYZuDW3BhFZCDFkiw9eiyGxWt4nk7oisS7e21bioJG8MCPqvjEkZ7PpHUE-s8PzqTZSHCdjJcXHufIqpeN23iTX3wa4TpP1FQhB8JVpXRGxdZ5GczrUWDDB1Jigy0sbkYq35kxWlh5zxWiQ9XyIcWlKyvCj1tL8ox8Uig=="
-      },
-      {
-        "title": "🔧 API: Tăng giới hạn Max Tokens API",
-        "desc": "Anthropic đã tăng giới hạn `max_tokens` lên 300k cho Message Batches API trên các mô hình Claude Opus 4.6 và Sonnet 4.6, cho phép tạo ra các đầu ra dài hơn cho nội dung, dữ liệu có cấu trúc và tạo mã lớn.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "30/03/2026·Claude API Docs",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhtjNZPIUmBE0pG1lHEb0JcYDCpawCkv0sLNPgT0rIR7DUeRbCh37f6E9eBDhRu4RivQe-jkDGrVlZ0E_ZBS561BwFF6Z7cb5mdaQG0d3t_t_VkFxU4mvBcYjnYlWNESRnSQpKk1rKQatzbac3ak4jDaJze3c="
-      },
-      {
-        "title": "⏰ DEADLINE: Ngừng hỗ trợ 1M token context beta",
-        "desc": "Anthropic sẽ ngừng hỗ trợ cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và Claude Sonnet 4 vào ngày 30/04/2026. Sau ngày này, các yêu cầu vượt quá giới hạn 200k token tiêu chuẩn sẽ trả về lỗi.",
+        "title": "🚫 Hạn chế OpenClaw & Bên thứ ba",
+        "desc": "Anthropic đã ngừng hỗ trợ các công cụ AI agent bên thứ ba như OpenClaw cho người dùng Claude Pro/Max, yêu cầu thanh toán riêng theo hệ thống 'extra usage' mới có hiệu lực từ 04/04/2026.",
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE",
-        "source": "30/03/2026·Claude API Docs",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhtjNZPIUmBE0pG1lHEb0JcYDCpawCkv0sLNPgT0rIR7DUeRbCh37f6E9eBDhRu4RivQe-jkDGrVlZ0E_ZBS561BwFF6Z7cb5mdaQG0d3t_t_VkFxU4mvBcYjnYlWNESRnSQpKk1rKQatzbac3ak4jDaJze3c="
+        "source": "04/04/2026·TNW, Business Insider, MLQ.ai, PCMag",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDSXoe08iUH-jQlvN4qLxggbaADYy6phvFTT26AyzKTMgeGSyBq457Hs3dc5Oulu_VxzGIR_4thMi7EoL2qfgiE2uRPj_Po0ddK7jHBsnuO5-KQxHCneFvWZjerEQoLirO7Chq9h1jNe-5dylxp5OLus9Q1jrZEhzNvU7NUldLVKIYeB2nZQ=="
       },
       {
-        "title": "✨ FEATURE: Claude Code CLI hỗ trợ 'Computer Use'",
-        "desc": "Claude Code CLI hiện có khả năng 'Computer Use' (sử dụng máy tính), cho phép Claude mở ứng dụng, tương tác với giao diện người dùng, kiểm tra và sửa lỗi trực tiếp từ terminal, đặc biệt hữu ích cho các ứng dụng không có API.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "30/03-03/04/2026·Claude Code Docs",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8x6PAFvIdlqmdIhgP3iKoWq2dWPjjj3W8vZnXuhnBPx9-zhDq9gEdQdVqFuVhRVwjSw5hB0LwkXpPp8gVee5zHjkAYhK62wU_Qk3HtfclqI8Bnbov-LALPRdxyARbuHW_dX8QKw3WPbtmqJLn"
-      },
-      {
-        "title": "🔥 HOT: Mã nguồn Claude Code bị rò rỉ, xuất hiện bản rewrite độc hại",
-        "desc": "Mã nguồn Claude Code đã bị rò rỉ vào ngày 31/03/2026 do lỗi đóng gói npm. Kẻ tấn công đang lợi dụng sự kiện này để phát tán phần mềm độc hại qua các kho GitHub giả mạo, đồng thời một phiên bản rewrite bằng Python cũng đã xuất hiện.",
+        "title": "🔥 Rò rỉ mã nguồn Claude Code",
+        "desc": "Mã nguồn Claude Code đã bị rò rỉ vào cuối tháng 3/2026 thông qua một file sourcemap, dẫn đến việc các nhà phát triển tạo ra các bản sao mã nguồn mở và cả nguy cơ phát tán phần mềm độc hại.",
         "tag": "hot",
         "tagLabel": "🔥 HOT",
-        "source": "01-03/04/2026·Zscaler, The Times of India",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHsMZx28RRHYPR9tHmurAEioN69yVCe6unzITYXhaGxW7TwqRY-DrZ-nE9mjrw7o1pgUASAHSsb40GtAJdHTcPSTduIvrPuj5CKJ6GrkSGDJgLURMnHt4xEjaY1IMj4_y5qOWBsoDgInfnYzOwXKDhOltpDNCQnRoJMieBQmHmUofz8zqHw1Q="
+        "source": "02/04/2026·The Times of India, GitHub, Trend Micro",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_OeQDRFK2cuJd50siQt5pHi8qEkqzOnRToaSuS39ZFqVc8butHCP7pXbKdIeYmo1gDNCfItCCCG5M4MD5KOXXIcL8fJ0d-dnFEcnme3VdltJErmHkEIh7mxQz-LEaq7tvVIkiCEfrB2Ur5nm_2ngSDKQxne-4aFpxHSn4LrkBf5csodLO2tZXxJuvBX6b5ukgugdo3lpqQiD7Jj4H-1YH94qJwng_TiDHM7IpZoLh4333ea6YBzG4exAZKYPUOCqncPtg6RUF4YT6Ealxn4b0OSz9MYF26YwWWVa9G03jvjIzwtz2I38yedzOCC1bCzYvargPLA4="
+      },
+      {
+        "title": "✨ Tăng giới hạn token API",
+        "desc": "Giới hạn max_tokens trên Message Batches API cho Claude Opus 4.6 và Sonnet 4.6 đã được tăng lên 300k, cho phép tạo ra các đầu ra dài hơn cho nội dung, dữ liệu có cấu trúc và tạo mã lớn.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMQzFPRmV2s1pyJzX7elbFhCgGptUcx-FsKNIr-cwa5vzT-cfCbEqWkLvxq8hSRT1UkI4szzHb062YvCouAS2XlytrbAdWB19NaJIOuYpdQB7SVZ2DSoQxDvEkhYsGb7EYtWp8QKVFWn7ITSuu7YY3nkon_ok="
+      },
+      {
+        "title": "⏰ Ngừng hỗ trợ context 1M token beta",
+        "desc": "Tính năng beta cửa sổ ngữ cảnh 1M token cho Claude Sonnet 4.5 và Sonnet 4 sẽ ngừng hoạt động vào ngày 30/04/2026, các yêu cầu vượt quá giới hạn 200k token tiêu chuẩn sẽ trả về lỗi.",
+        "tag": "deadline",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMQzFPRmV2s1pyJzX7elbFhCgGptUcx-FsKNIr-cwa5vzT-cfCbEqWkLvxq8hSRT1UkI4szzHb062YvCouAS2XlytrbAdWB19NaJIOuYpdQB7SVZ2DSoQxDvEkhYsGb7EYtWp8QKVFWn7ITSuu7YY3nkon_ok="
       }
     ],
     "repos": [
       {
-        "name": "anthropics/claude-code",
-        "url": "https://github.com/anthropics/claude-code",
-        "desc": "Công cụ CLI chính thức của Anthropic để lập trình với Claude, hỗ trợ tương tác với các tệp cục bộ và lệnh shell.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Công cụ chính thức, có tác động lớn đến quy trình làm việc của nhà phát triển."
-      },
-      {
         "name": "soongenwong/claudecode",
         "url": "https://github.com/soongenwong/claudecode",
-        "desc": "Một triển khai mã nguồn mở của Claude Code được viết bằng Rust, cung cấp các chức năng tương tự và hỗ trợ các nhà cung cấp tương thích với Anthropic/OpenAI.",
+        "desc": "Một triển khai mã nguồn mở của Claude Code bằng Rust, cung cấp CLI agent tương tác và các công cụ nhận biết không gian làm việc.",
         "stars": "N/A",
         "verdict": "yes",
-        "reason": "Bản rewrite mã nguồn mở của Claude Code, đáng chú ý sau sự cố rò rỉ."
+        "reason": "Bản sao mã nguồn mở của Claude Code sau vụ rò rỉ, rất hot và có tác động lớn."
       },
       {
-        "name": "luongnv89/claude-howto",
-        "url": "https://github.com/luongnv89/claude-howto",
-        "desc": "Một kho lưu trữ cung cấp hướng dẫn và ví dụ về cách sử dụng Claude hiệu quả.",
+        "name": "Kuberwastaken/claude-code",
+        "url": "https://github.com/Kuberwastaken/claude-code",
+        "desc": "Phân tích và giải thích cách Claude Code hoạt động, bao gồm cả việc rò rỉ mã nguồn và các tính năng nội bộ.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Cung cấp cái nhìn sâu sắc về vụ rò rỉ và cấu trúc của Claude Code, hữu ích cho nhà phát triển."
+      },
+      {
+        "name": "realsigridjin/claude-code-python-rewrite",
+        "url": "https://github.com/realsigridjin/claude-code-python-rewrite",
+        "desc": "Một bản viết lại hoàn chỉnh của Claude Code bằng Python sử dụng các công cụ AI, được tạo ra sau vụ rò rỉ mã nguồn.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Bản viết lại bằng Python sau vụ rò rỉ, thể hiện khả năng thích ứng và là một công cụ AI mới."
+      },
+      {
+        "name": "anthropic-ai/claude-agent-sdk-python",
+        "url": "https://github.com/anthropic-ai/claude-agent-sdk-python",
+        "desc": "SDK Python chính thức của Anthropic để xây dựng các tác nhân tự trị với khả năng của Claude Code.",
         "stars": "N/A",
         "verdict": "maybe",
-        "reason": "Hướng dẫn sử dụng Claude có thể hữu ích cho người mới bắt đầu."
-      },
-      {
-        "name": "mksglu/claude-context-mode",
-        "url": "https://github.com/mksglu/claude-context-mode",
-        "desc": "Một máy chủ MCP (Model Context Protocol) giúp cô lập việc thực thi công cụ và chỉ gửi những thông tin liên quan đến LLM, giảm kích thước đầu ra.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Công cụ quản lý ngữ cảnh cho AI agent, tối ưu hóa hiệu suất LLM."
-      },
-      {
-        "name": "Gen-Verse/OpenClaw-RL",
-        "url": "https://github.com/Gen-Verse/OpenClaw-RL",
-        "desc": "Một dự án liên quan đến OpenClaw, nền tảng AI agent phổ biến mà Anthropic gần đây đã hạn chế hỗ trợ.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Liên quan đến OpenClaw, một công cụ AI agent có ảnh hưởng lớn."
-      },
-      {
-        "name": "microsoft/VibeVoice",
-        "url": "https://github.com/microsoft/VibeVoice",
-        "desc": "Hệ thống tổng hợp giọng nói mã nguồn mở từ Microsoft, tạo ra giọng nói tự nhiên, biểu cảm từ văn bản.",
-        "stars": "N/A",
-        "verdict": "maybe",
-        "reason": "Công cụ AI tiện ích cho tạo giọng nói, không trực tiếp liên quan đến Claude nhưng có thể tích hợp."
-      },
-      {
-        "name": "NousResearch/hermes-agent",
-        "url": "https://github.com/NousResearch/hermes-agent",
-        "desc": "Một công cụ AI agent giúp xây dựng các hệ thống AI tự động.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Framework cho AI agent, phù hợp với ưu tiên tự động hóa agent."
+        "reason": "Là SDK chính thức, cần thiết cho việc phát triển tác nhân Claude nhưng không phải là một công cụ mới nổi tuần này."
       }
     ]
   },
