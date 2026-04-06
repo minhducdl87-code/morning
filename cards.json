@@ -1,5 +1,102 @@
 [
   {
+    "date": "2026-04-07",
+    "dayLabel": "Thứ Ba",
+    "dateLabel": "07/04/2026",
+    "news": [
+      {
+        "title": "🚫 Hạn chế OpenClaw",
+        "desc": "Anthropic đã chặn người dùng Claude Pro và Max sử dụng các công cụ bên thứ ba như OpenClaw với gói thuê bao hiện có, yêu cầu thanh toán riêng cho \"extra usage\" từ 04/04/2026.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "04/04·TNW, Mashable",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCxrMlqQ3g1njhTg-79Qc_Y2A3wwqh7dM-t9PR4ezqfSC6s5CBtTKI53FmDK-4-_k0LAYjyJDe42Vtggio3qotnlhfhVcZ7wpMaXXPmv8jTecc4UXbLQy8n9LtzNT8WDtkW8lmztduC_KkGCpXFQWLPRS3clMuj71PZbbtESaxlj391Mkw_bL1XWpb"
+      },
+      {
+        "title": "⚠️ Claude.ai gặp lỗi",
+        "desc": "Vào ngày 06/04/2026, Claude.ai gặp phải lỗi nghiêm trọng gây khó khăn khi đăng nhập, sử dụng chế độ thoại và trò chuyện, nhưng Anthropic đã thông báo áp dụng bản sửa lỗi.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "06/04·TechRadar",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6JWPnRiZAgmzvuHmZR_bsD5plsIQxUdd1Cht2jaK1W9UYwo87vOxc26a0ORt1DZvrXgL4HUuAQT2R3UPUJtObvX2no9nsClBOav36rgab6eWLJbF_DVCMGl6b3dqC_2o_8dJAckpz5vq2PgozNEWjvvjip8Rf1dUQOC2Ve30VcEe-Rvaw250v"
+      },
+      {
+        "title": "⏰ Ngừng 1M Context Beta",
+        "desc": "Tính năng cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và Sonnet 4 sẽ ngừng hoạt động vào ngày 30/04/2026, các yêu cầu vượt quá 200K token tiêu chuẩn sẽ báo lỗi.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExZG2y6yKb0eQFjNqnu0p3_ga8qfoPIotxMFcCSI_JxF15MBovNsTLpIcA2VyEbv7InZ8skzBwCilR5BiImkOhFTQwqYN7OPJtbx32Txwa1AS9cVwRevuLwUzKSUVo4EDH0Uc8-hY78A37QdjA1M1LWrLlHdxU="
+      },
+      {
+        "title": "🚨 Lộ Mã Nguồn Claude Code",
+        "desc": "Vào ngày 31/03/2026, mã nguồn nội bộ của Claude Code đã vô tình bị lộ qua một gói npm, dẫn đến việc kẻ xấu lợi dụng tạo các kho lưu trữ GitHub giả mạo để phát tán mã độc.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "03/04·Trend Micro",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbTyPpWV3yALjqUeoXtDX3etrcqKWaSbnykcowKIlb1DLS4vsIwRy-bMnzZPn4IjBpplcmBEfbspMT9OlzY89gMzyqNEu6nyXzvgdqOE40CaMZCwt5aZd6p-0Ov6EOVKX8k-WBctwh3n-AN6JhbLaB5T55wvzV-mWgVQoxaq88hRhNWo1jrQrM4eUYD3yDCRqlBbN9-yri4TuIDQWDML2HYwaXa0l7E0cZz_x5UQ4="
+      }
+    ],
+    "repos": [
+      {
+        "name": "siteboon/claudecodeui",
+        "url": "https://github.com/siteboon/claudecodeui",
+        "desc": "Giao diện web/GUI mã nguồn mở miễn phí để quản lý phiên Claude Code và các dự án từ xa.",
+        "stars": "9.4K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude Code UI hữu ích cho quản lý từ xa, phù hợp với ưu tiên AI utilities."
+      },
+      {
+        "name": "zcaceres/markdownify-mcp",
+        "url": "https://github.com/zcaceres/markdownify-mcp",
+        "desc": "Một máy chủ Model Context Protocol (MCP) để chuyển đổi hầu hết mọi thứ sang Markdown.",
+        "stars": "2.5K+",
+        "verdict": "yes",
+        "reason": "Máy chủ MCP cho chuyển đổi định dạng, phù hợp với ưu tiên MCP servers và AI utilities."
+      },
+      {
+        "name": "777genius/claude-code-source-code",
+        "url": "https://github.com/777genius/claude-code-source-code",
+        "desc": "Mã nguồn của Claude Code, một công cụ mã hóa agentic.",
+        "stars": "861+",
+        "verdict": "maybe",
+        "reason": "Có thể liên quan đến mã nguồn bị lộ, cần kiểm tra tính an toàn và mục đích sử dụng."
+      },
+      {
+        "name": "mem0ai/mem0-chrome-extension",
+        "url": "https://github.com/mem0ai/mem0-chrome-extension",
+        "desc": "Tiện ích mở rộng Chrome cung cấp bộ nhớ dài hạn cho ChatGPT, Claude, Perplexity, Grok.",
+        "stars": "665+",
+        "verdict": "yes",
+        "reason": "Tiện ích mở rộng hữu ích cho Claude, tăng cường khả năng bộ nhớ dài hạn."
+      },
+      {
+        "name": "davccavalcante/claude-code-leaked",
+        "url": "https://github.com/davccavalcante/claude-code-leaked",
+        "desc": "CLI/TUI coding agent chính thức của Anthropic Claude Code, được xây dựng lại từ một bản đồ nguồn bị rò rỉ v2.1.88 (Tháng 3 năm 2026).",
+        "stars": "N/A",
+        "verdict": "skip",
+        "reason": "Đây là bản rò rỉ của mã nguồn Claude Code, có thể chứa mã độc hoặc không an toàn."
+      },
+      {
+        "name": "ComposioHQ/awesome-claude-skills",
+        "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "desc": "Danh sách các Claude Skills, tài nguyên và công cụ để tùy chỉnh quy trình làm việc của Claude AI.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Tài nguyên tổng hợp các kỹ năng và công cụ cho Claude, rất hữu ích cho tự động hóa tác nhân."
+      },
+      {
+        "name": "webfuse-com/awesome-claude",
+        "url": "https://github.com/webfuse-com/awesome-claude",
+        "desc": "Danh sách tổng hợp các tài nguyên tuyệt vời liên quan đến Anthropic Claude.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Danh sách tổng hợp các tài nguyên Claude, hữu ích để khám phá các công cụ và SDK."
+      }
+    ]
+  },
+  {
     "date": "2026-04-06",
     "dayLabel": "Thứ Hai",
     "dateLabel": "06/04/2026",
