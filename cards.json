@@ -1,5 +1,126 @@
 [
   {
+    "date": "2026-04-08",
+    "dayLabel": "Thứ Tư",
+    "dateLabel": "08/04/2026",
+    "news": [
+      {
+        "title": "🚨 Lộ mã nguồn Claude Code",
+        "desc": "Anthropic đã vô tình làm rò rỉ toàn bộ 512.000 dòng mã nguồn của chương trình Claude Code, công cụ lập trình AI phổ biến của họ, thông qua một gói npm bị cấu hình sai. Sự cố này đã gây ra lo ngại về bảo mật và lợi thế cạnh tranh, mặc dù không có dữ liệu khách hàng hay trọng số mô hình nào bị lộ.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "07/04·Business Insider",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5o2QTbrwhMPmoSMB9e0N9MWbVBmZbvD4BL9thGK_Yj8ACE0GCeWd888ehWPW26iZ5fNXOy0xwcbr87jv4i_EGo11PQFBtAH3AtBxSnPFvmPuXco-e-xoAhu6YfWrtIYNXQ6XIG8ugQhQZrVJ8pCpcImUpE99eaqdVGai31qPXKAAgFYMLi2im47A4M309alhLjsfvaG1BP1YazcUEAtUQ59WstA52mgv0QsGBr-3wgEcyllsGbQTh"
+      },
+      {
+        "title": "🧠 Claude Mythos ra mắt hạn chế",
+        "desc": "Anthropic đã công bố mô hình mới Claude Mythos, một mô hình đa năng tương tự Claude Opus 4.6, nhưng được hạn chế quyền truy cập cho các nhà nghiên cứu bảo mật do khả năng mạnh mẽ trong lĩnh vực an ninh mạng. Đây là một phần của Project Glasswing nhằm phát triển các biện pháp bảo vệ an ninh mạng.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "07/04·Simon Willison's Weblog",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEsRH2RSLO9IeqhT5ffc5PyBaclJbpMCNG7WH94emmzR-Sgv-gMTYoMtODyKzmKlSv1phXHG8X0aiLpj6YvguP7ki1tRnczVToAGdRwyoj-Ga8Uf_aI0aVSB-ObYNhQOnGLW-kOapf8kenMZNtkbQNxGQ="
+      },
+      {
+        "title": "📈 Mở rộng hợp tác điện toán với Google & Broadcom",
+        "desc": "Anthropic đã ký thỏa thuận mới với Google và Broadcom để mở rộng đáng kể cơ sở hạ tầng điện toán, dự kiến cung cấp dung lượng TPU thế hệ tiếp theo bắt đầu từ năm 2027. Điều này nhằm hỗ trợ các mô hình Claude tiên tiến và đáp ứng nhu cầu tăng trưởng khách hàng.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "06/04·Anthropic",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFoGOEXJMmjg7upiruRcmMmGinWOOA56PXKmNEx7kBo4fSTX3_z9cPnYKFV77CabS-Dia1GTzfQQUZPNu_FChYu7Toju-3IXi4xkvEoFgF4u-Na9W-yP-k9ZbN6Ymv1JsgVcymCVIlXUfsdNUIHiLT8ZKOoCGP3dqU9dNi-w=="
+      },
+      {
+        "title": "⏰ Ngừng hỗ trợ 1M token context window beta",
+        "desc": "Anthropic sẽ ngừng hỗ trợ bản beta 1M token context window cho Claude Sonnet 4.5 và Claude Sonnet 4 vào ngày 30/04/2026. Người dùng cần di chuyển sang Claude Sonnet 4.6 hoặc Claude Opus 4.6 để tiếp tục sử dụng cửa sổ ngữ cảnh 1M token.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOF0l0nOHSS8gjqzhe-M_HDpPP8IQI997IuUjW_atOhiFLVll7KDoE-am5Gp8a64LPjAXGtJWGrmUoohIpZA51FcgAU8EvL8F_nTqIXKL5o_qaVrBHg5Lr0ZDoCJO9Hc9bLX93TmJcxeoFxUr5IVInH8yTkFk="
+      },
+      {
+        "title": "✨ Claude Sonnet 4.5 được mô tả như 'diễn viên phương pháp'",
+        "desc": "Anthropic đã mô tả Claude Sonnet 4.5 như một 'diễn viên phương pháp', có khả năng kích hoạt các mẫu cụ thể khi được nhắc nhở với các tình huống gợi cảm xúc. Điều này cho thấy khả năng hiểu và phản ứng ngữ cảnh nâng cao của mô hình.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "07/04·Business Insider",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENBaId760J0kM_SkC-WkNULm-YtVyIy49WiPHh9ZBzDhZDzOVTy_KmrK-1uuXON_kHY7AvhiDbxPcmYMJe2O-2rRkWj4vAGZHhCO4C3jWh-TeaIknvHzGXEzk9EfuWxn9c"
+      },
+      {
+        "title": "🤝 Hợp tác với Úc về an toàn AI",
+        "desc": "Anthropic đã hợp tác với Úc để tăng cường an toàn AI và giám sát tác động kinh tế, nhấn mạnh tầm quan trọng ngày càng tăng của quản trị AI có đạo đức.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "01/04·Female Entrepreneurs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq1DUmJxyEScBoHGCiA7wEKMEAmh6DSJeEPN9BuU_vwwFEmbAIICAM8NBk3lBzlE9DsKThUJwcmOzvp1hgbMID9yt5IN2mFnFtcy3U8bLiqbESLBQa1W_Y03HrJtVGNhxqJi9eBVSunm0Gb49TZjLvGsU="
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "desc": "Kho lưu trữ chính thức của Anthropic chứa các 'skill' cho Claude, từ ứng dụng sáng tạo đến các tác vụ kỹ thuật và quy trình làm việc doanh nghiệp.",
+        "stars": "22K+",
+        "verdict": "yes",
+        "reason": "Kho lưu trữ chính thức, cung cấp các kỹ năng cơ bản và nâng cao cho Claude."
+      },
+      {
+        "name": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "desc": "Một quy trình phát triển phần mềm dựa trên tác nhân (agentic) hoàn chỉnh, được xây dựng trên một framework kỹ năng có thể kết hợp, với 40.9K lượt sao.",
+        "stars": "40.9K+",
+        "verdict": "yes",
+        "reason": "Quy trình phát triển agentic mạnh mẽ, phù hợp cho tự động hóa và quản lý tác vụ phức tạp."
+      },
+      {
+        "name": "alirezarezvani/claude-skills",
+        "url": "https://github.com/alirezarezvani/claude-skills",
+        "desc": "Hơn 220 kỹ năng và plugin tác nhân cho Claude Code, Codex, Gemini CLI, Cursor và 8 tác nhân mã hóa khác.",
+        "stars": "Không rõ (từ 220+ skills)",
+        "verdict": "yes",
+        "reason": "Bộ sưu tập kỹ năng phong phú, mở rộng khả năng của Claude Code và các công cụ AI khác."
+      },
+      {
+        "name": "e2b-dev/fragments",
+        "url": "https://github.com/e2b-dev/fragments",
+        "desc": "Mẫu Next.js mã nguồn mở để xây dựng các ứng dụng được tạo hoàn toàn bằng AI.",
+        "stars": "6.2K+",
+        "verdict": "yes",
+        "reason": "Hữu ích cho việc phát triển ứng dụng được hỗ trợ bởi AI và tạo mã nguồn."
+      },
+      {
+        "name": "UfoMiao/zcf",
+        "url": "https://github.com/UfoMiao/zcf",
+        "desc": "Zero-Config Code Flow cho Claude Code & Codex, giúp đơn giản hóa quy trình làm việc.",
+        "stars": "5.9K+",
+        "verdict": "yes",
+        "reason": "Tối ưu hóa quy trình làm việc cho Claude Code, giảm cấu hình phức tạp."
+      },
+      {
+        "name": "nidhinjs/prompt-master",
+        "url": "https://github.com/nidhinjs/prompt-master",
+        "desc": "Một kỹ năng Claude giúp viết các prompt chính xác cho bất kỳ công cụ AI nào, tiết kiệm token và duy trì ngữ cảnh.",
+        "stars": "4.8K+",
+        "verdict": "yes",
+        "reason": "Công cụ hữu ích để cải thiện kỹ thuật prompt engineering và tối ưu hóa chi phí."
+      },
+      {
+        "name": "langgptai/awesome-claude-prompts",
+        "url": "https://github.com/langgptai/awesome-claude-prompts",
+        "desc": "Kho lưu trữ các prompt được tuyển chọn để sử dụng Claude hiệu quả hơn.",
+        "stars": "4.8K+",
+        "verdict": "yes",
+        "reason": "Nguồn tài nguyên tốt để khám phá các cách sử dụng Claude sáng tạo và hiệu quả."
+      },
+      {
+        "name": "zebbern/claude-code-guide",
+        "url": "https://github.com/zebbern/claude-code-guide",
+        "desc": "Hướng dẫn toàn diện về Claude Code, bao gồm cài đặt, lệnh, quy trình làm việc, tác nhân, kỹ năng và mẹo từ người mới bắt đầu đến người dùng thành thạo.",
+        "stars": "3.9K+",
+        "verdict": "yes",
+        "reason": "Tài liệu hướng dẫn chi tiết, rất có giá trị cho người dùng Claude Code ở mọi cấp độ."
+      }
+    ]
+  },
+  {
     "date": "2026-04-07",
     "dayLabel": "Thứ Ba",
     "dateLabel": "07/04/2026",
