@@ -1,5 +1,102 @@
 [
   {
+    "date": "2026-04-10",
+    "dayLabel": "Thứ Sáu",
+    "dateLabel": "10/04/2026",
+    "news": [
+      {
+        "title": "🧠 Claude Mythos Preview",
+        "desc": "Anthropic đã ra mắt mô hình AI Mythos Preview mới, tập trung vào khả năng an ninh mạng để phát hiện và sửa lỗi trong phần mềm mã nguồn mở.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "09/04/2026·Forbes",
+        "url": ""
+      },
+      {
+        "title": "🔥 Claude Cowork ra mắt Enterprise",
+        "desc": "Anthropic chính thức đưa Claude Cowork ra khỏi giai đoạn preview và cung cấp cho các doanh nghiệp với các tính năng kiểm soát truy cập và quyền MCP chi tiết hơn.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "09/04/2026·Tech News",
+        "url": ""
+      },
+      {
+        "title": "✨ 3 lệnh Claude Code mới",
+        "desc": "Anthropic đã âm thầm phát hành 3 lệnh mới cho Claude Code: /ultraplan để lập kế hoạch trên đám mây, /powerup cho hướng dẫn tương tác, và /insights để phân tích.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "09/04/2026·Medium",
+        "url": ""
+      },
+      {
+        "title": "🔧 Cập nhật Claude Code",
+        "desc": "Claude Code bổ sung trình hướng dẫn cài đặt Google Vertex AI tương tác, công cụ Monitor mới để theo dõi sự kiện từ script nền, và hỗ trợ Amazon Bedrock Mantle.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "09/04/2026·GitHub",
+        "url": ""
+      },
+      {
+        "title": "⏰ Ngừng hỗ trợ 1M Context Window Beta",
+        "desc": "Tính năng beta 1M token context window cho Claude Sonnet 4.5 và Sonnet 4 sẽ ngừng hoạt động vào ngày 30/04/2026.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03/2026·Anthropic API Docs",
+        "url": ""
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "desc": "Kho lưu trữ chính thức các kỹ năng (skills) của Anthropic, từ ứng dụng sáng tạo đến các tác vụ kỹ thuật và quy trình làm việc doanh nghiệp.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Kho lưu trữ chính thức, đáng tin cậy và đa dạng."
+      },
+      {
+        "name": "webfuse-com/awesome-claude",
+        "url": "https://github.com/webfuse-com/awesome-claude",
+        "desc": "Danh sách tuyển chọn các tài nguyên tuyệt vời liên quan đến Anthropic Claude, bao gồm SDK, công cụ phát triển và hướng dẫn cộng đồng.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Tài nguyên tổng hợp hữu ích cho nhà phát triển."
+      },
+      {
+        "name": "Jeffallan/claude-skills",
+        "url": "https://github.com/Jeffallan/claude-skills",
+        "desc": "Kho lưu trữ 66 kỹ năng chuyên biệt được xây dựng riêng cho Claude Code, tự động kích hoạt dựa trên ngữ cảnh.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Tập trung vào nhà phát triển, tự động hóa quy trình làm việc."
+      },
+      {
+        "name": "repomix/repomix",
+        "url": "https://repomix.com",
+        "desc": "Công cụ đóng gói toàn bộ dự án vào một tệp duy nhất, giúp Claude có được ngữ cảnh đầy đủ thay vì sao chép từng tệp.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Cải thiện đáng kể ngữ cảnh cho Claude trong các dự án lớn."
+      },
+      {
+        "name": "Everything Claude Code",
+        "url": "https://github.com/Everything-Claude-Code",
+        "desc": "Bộ sưu tập lớn gồm 136 kỹ năng, 30 agent và 60 lệnh cho Claude Code, mở rộng đáng kể các tính năng có sẵn.",
+        "stars": "128K+",
+        "verdict": "yes",
+        "reason": "Bộ sưu tập toàn diện, nhiều tính năng mở rộng cho Claude Code."
+      },
+      {
+        "name": "anthropics/knowledge-work-plugins",
+        "url": "https://github.com/anthropics/knowledge-work-plugins",
+        "desc": "Kho lưu trữ mã nguồn mở các plugin dành cho nhân viên tri thức sử dụng trong Claude Cowork, cũng tương thích với Claude Code.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Plugin chính thức, giúp chuyên biệt hóa Claude cho từng vai trò."
+      }
+    ]
+  },
+  {
     "date": "2026-04-09",
     "dayLabel": "Thứ Năm",
     "dateLabel": "09/04/2026",
