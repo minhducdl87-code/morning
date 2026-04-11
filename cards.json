@@ -1,5 +1,102 @@
 [
   {
+    "date": "2026-04-12",
+    "dayLabel": "Chủ Nhật",
+    "dateLabel": "12/04/2026",
+    "news": [
+      {
+        "title": "🧠 Claude Mythos: Mô hình AI quá nguy hiểm để phát hành công khai",
+        "desc": "Anthropic đã phát triển Claude Mythos, một mô hình AI có khả năng tìm ra hàng nghìn lỗ hổng zero-day trong các hệ thống lớn. Tuy nhiên, do những rủi ro bảo mật tiềm ẩn, Anthropic đã quyết định không phát hành mô hình này ra công chúng.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "10/04·CTV News",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFiiRz4ZW01DP9nRh4aQEFQRWaJ36SGVB3Tv9iSHkjESdqJDwLPZaRBHLysUV6PLsonILJkAbcB_fqEYkFN0nUbi4zQ8UyDbxet1p4tCVyU2LJwUC04Q9ZON4NJKNKmu7l77jN2TfW4_X2RV84AJHG-W0GcZez6vK31XbX-eNC0unB2gUYdI7D6MQGi-V4s31O0qjZ7WRTM632JnfdJB-XnIki10tu2rP8-7ocn5KWsjA=="
+      },
+      {
+        "title": "✨ Claude cho Word: Tiện ích bổ sung mới cho doanh nghiệp",
+        "desc": "Anthropic đã ra mắt phiên bản beta của Claude cho Word, một tiện ích bổ sung mới giúp người dùng doanh nghiệp tương tác với tài liệu, đặt câu hỏi và nhận câu trả lời kèm trích dẫn. Tính năng này hiện chỉ dành cho các gói Team và Enterprise.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "11/04·Business Insider",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrY0HA0UpqPKMwZlO24qAEm4uVnfBtCrujI4fIA27cDWUQnqOaGTeByjDXrklKuETIkeZvQEPuGPIfPSX2gEm9uA1q2VOZ2ZQhxA1Aa5ZyxVLYAaj18sTw_VWMtHJLeugVaCM1I4Z2HDj9B4g7dfM9idw9hml1dNns04qvN2s45YOCXshmhEyZzg=="
+      },
+      {
+        "title": "🧠 Claude 4.6: Opus và Sonnet mới cùng tính năng API nâng cao",
+        "desc": "Claude 4.6 giới thiệu các mô hình Opus 4.6 và Sonnet 4.6 với khả năng vượt trội cho agent và mã hóa. Các cải tiến API bao gồm tìm kiếm và truy xuất web động, cùng với việc thực thi mã miễn phí khi sử dụng các công cụ web.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "Gần đây·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNyKUSpQ6kIRZMHKKssqzMJ7FhcMqsn_xvGUMxospB4aMQ3bhS765NL4t5Kv6fEN3GQpW_oGR1TLfmydJmQuUOTGjipW6oFbxAu75HLaCBik0Juf1tIHme7peQ-E-h-WH-NY6GXmxnZBbVNd5Vqerm5lsS_nIdShXHzTGczuD5lEbT75pO1pQ=="
+      },
+      {
+        "title": "⏰ Hạn chót: Cửa sổ ngữ cảnh 1M token bị loại bỏ vào 30/04/2026",
+        "desc": "Cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và Claude Sonnet 4 sẽ bị loại bỏ vào ngày 30 tháng 4 năm 2026. Sau ngày này, các yêu cầu vượt quá giới hạn 200k token tiêu chuẩn sẽ trả về lỗi.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrQSNOR5thYTrAV9XyjKXWleoWBnk7Wp4E-dcNxhcNY-q_qoRqFAHFJ_AlAfqef2uSjAI9x2n3AUVKZ5FG46rzM-VH0hHIbDSZEhzmzDj7yxtdwIKoSrcFM04r7GX1PMG8EgVL5OHrWNiAEzPI1xP9MDLBoZo="
+      },
+      {
+        "title": "🔧 Claude Code: Cập nhật tính năng và cải tiến trải nghiệm",
+        "desc": "Bản cập nhật Claude Code ngày 10/04/2026 bổ sung lệnh `/team-onboarding` mới, cải thiện chế độ tóm tắt và chế độ tập trung, cùng nhiều nâng cấp khác nhằm tối ưu hóa trải nghiệm người dùng.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "10/04·GitHub",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0LOvpXr-KH4QoZDgSPGaNk9hoejDxjy7tzbqRZQvzhAnJmwfA-OOIpeSaktvTOWagNddmLINChEWM5TAgxdLfmMNN-Gi4aiyJWGAJ_Ryg82jeVphDVvaAEYKr-7T7W51CAq7JT1iUmNNo7upA"
+      }
+    ],
+    "repos": [
+      {
+        "name": "maxritter/pilot-shell",
+        "url": "https://github.com/maxritter/pilot-shell",
+        "desc": "Công cụ giúp Claude Code sẵn sàng cho sản xuất với các kế hoạch theo định hướng đặc tả và kiến thức bền vững.",
+        "stars": "1.6K+",
+        "verdict": "yes",
+        "reason": "Công cụ tự động hóa agent trực tiếp cho Claude Code, rất hữu ích."
+      },
+      {
+        "name": "DeepMyst/Mysti",
+        "url": "https://github.com/DeepMyst/Mysti",
+        "desc": "Đội ngũ agent AI mạnh mẽ cho VS Code, kết hợp Claude Code và OpenAI Codex để cộng tác và đưa ra giải pháp mã hóa.",
+        "stars": "1K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI cho lập trình, tích hợp Claude Code trong VS Code."
+      },
+      {
+        "name": "yasasbanukaofficial/claude-code",
+        "url": "https://github.com/yasasbanukaofficial/claude-code",
+        "desc": "Mã nguồn CLI mã nguồn mở của Claude Code, một agent AI tiên tiến dành cho nhà phát triển.",
+        "stars": "Không rõ",
+        "verdict": "maybe",
+        "reason": "Mã nguồn mở của Claude Code, hữu ích để tìm hiểu hoặc tùy chỉnh, nhưng có thể không phải công cụ độc lập."
+      },
+      {
+        "name": "codeaashu/claude-code",
+        "url": "https://github.com/codeaashu/claude-code",
+        "desc": "Claude Code là một công cụ mã hóa agentic trong terminal, giúp bạn mã hóa nhanh hơn thông qua các lệnh ngôn ngữ tự nhiên.",
+        "stars": "2K+",
+        "verdict": "yes",
+        "reason": "Công cụ mã hóa agentic chính, rất phù hợp với tiêu chí."
+      },
+      {
+        "name": "Hexastack/Hexabot",
+        "url": "https://github.com/Hexastack/Hexabot",
+        "desc": "Hexabot là một công cụ xây dựng chatbot/agent AI mã nguồn mở, cho phép tạo và quản lý chatbot đa kênh, đa ngôn ngữ.",
+        "stars": "Không rõ",
+        "verdict": "maybe",
+        "reason": "Công cụ xây dựng agent tổng quát, có thể tích hợp với Claude."
+      },
+      {
+        "name": "webfuse-com/awesome-claude",
+        "url": "https://github.com/webfuse-com/awesome-claude",
+        "desc": "Danh sách tuyển chọn các tài nguyên tuyệt vời liên quan đến Anthropic Claude.",
+        "stars": "1.3K+",
+        "verdict": "skip",
+        "reason": "Là một danh sách, không phải công cụ trực tiếp để sử dụng."
+      }
+    ]
+  },
+  {
     "date": "2026-04-11",
     "dayLabel": "Thứ Bảy",
     "dateLabel": "11/04/2026",
