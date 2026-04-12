@@ -1,5 +1,102 @@
 [
   {
+    "date": "2026-04-13",
+    "dayLabel": "Thứ Hai",
+    "dateLabel": "13/04/2026",
+    "news": [
+      {
+        "title": "🧠 Claude Mythos & Project Glasswing",
+        "desc": "Anthropic ra mắt Project Glasswing, sử dụng phiên bản xem trước của mô hình Claude Mythos mới để tìm kiếm các lỗ hổng zero-day trong các hệ thống lớn. Tuy nhiên, mô hình này sẽ không được phát hành rộng rãi do khả năng mạnh mẽ và rủi ro tiềm ẩn của nó.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "08/04/2026·Anthropic",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsR9OhUzkvb1IMmA0KSgzFR9c5bG_hldvBg-_QDddrHSE4N_W4H4a9mHFb7AErm4JIehZC8-6qekDcmp0bL-sSGpkh8hqxEYL_IkA4LLlk1Vst8PtVrfWizPuDFFXacJ-DH3cdlgyrVc3wQwcfsCm504UBusUciVRLvFkiiKi_4g=="
+      },
+      {
+        "title": "✨ Claude Cowork GA & Computer Use",
+        "desc": "Claude Cowork hiện đã có sẵn rộng rãi trên macOS và Windows thông qua ứng dụng Claude Desktop. Người dùng gói Pro và Max có thể cấp quyền cho Claude truy cập và sử dụng máy tính để thực hiện các tác vụ.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "09/04/2026·Releasebot",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyrz-1g_yWp7yV-uVDZx1stXvI3VHGkfIFdVeS2XGRAylfGFDd0JcEpDQ30SHwbWh_ZxsV7Ea68OlGY2fTE_XnB5jbIZbgHBZ7mG1NJ0MCibaHC5fxYEpoVnP_VCY1mSPbdTiPib0SvzQ=="
+      },
+      {
+        "title": "🔧 Cải thiện Claude Opus 4.6 & Sonnet 4.6",
+        "desc": "Giới hạn max_tokens đã được nâng lên 300k trên API Message Batches cho Claude Opus 4.6 và Sonnet 4.6. Các công cụ tìm kiếm web và web fetch cũng được cải thiện với tính năng lọc động và thực thi mã miễn phí.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlSoVkC5eeyZJgnuRcruZbOFbvcUjEvgvdB0Q-K_CcrQVjtXZ65lmB2KRCkENvOotx_VI8i88dhOJKzgT3bzJE-BP7nrY2L9bPxdBAOyG5yQZC2xfuO7D9usCKw-BNmqkhInvSBxAw9ztOMnKUc4GiBBWJKFI="
+      },
+      {
+        "title": "⏰ Hết hạn cửa sổ ngữ cảnh 1M token beta",
+        "desc": "Tính năng beta cửa sổ ngữ cảnh 1M token cho Claude Sonnet 4.5 và Claude Sonnet 4 sẽ ngừng hoạt động vào ngày 30 tháng 4 năm 2026. Sau ngày này, các yêu cầu vượt quá giới hạn 200k token tiêu chuẩn sẽ trả về lỗi.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03/2026·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlSoVkC5eeyZJgnuRcruZbOFbvcUjEvgvdB0Q-K_CcrQVjtXZ65lmB2KRCkENvOotx_VI8i88dhOJKzgT3bzJE-BP7nrY2L9bPxdBAOyG5yQZC2xfuO7D9usCKw-BNmqkhInvSBxAw9ztOMnKUc4GiBBWJKFI="
+      },
+      {
+        "title": "🔥 Lỗi rò rỉ mã nguồn Claude Code",
+        "desc": "Anthropic đã vô tình làm lộ mã nguồn nội bộ của Claude Code thông qua một gói npm, dẫn đến việc các tác nhân đe dọa nhanh chóng lợi dụng để phát tán phần mềm độc hại qua các kho lưu trữ GitHub giả mạo.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "03/04/2026·Trend Micro",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAUE-NNUKOs1fPgX3ZzP9HN47ZulrUvN7RqiWBXTj_zFgthlHXX1qUInhr1BIHKLvZK8MrZNxhjiOAyKE4ZeBYIFv8piwhbsYr8qFUYF_FjREtLwQwL-V08GQbVz7UF_rV1mvmk5itjN9y32DSnQ-lk3KdB7Is7N0EYJcW3UKfJpqqV3M6TEEnogEjYoig2vw0BCPZwteHnfyMUEKo_HyA3n1jr4S6CtlOutIUUao="
+      }
+    ],
+    "repos": [
+      {
+        "name": "zebbern/claude-code-guide",
+        "url": "https://github.com/zebbern/claude-code-guide",
+        "desc": "Hướng dẫn toàn diện về thiết lập, lệnh, quy trình làm việc, tác nhân, kỹ năng và mẹo cho Claude Code.",
+        "stars": "3.9k+",
+        "verdict": "yes",
+        "reason": "Tài nguyên hữu ích cho người dùng Claude Code."
+      },
+      {
+        "name": "ComposioHQ/open-claude-cowork",
+        "url": "https://github.com/ComposioHQ/open-claude-cowork",
+        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS, hỗ trợ tự động hóa quy trình làm việc.",
+        "stars": "3.8k+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude nguồn mở với tích hợp rộng rãi."
+      },
+      {
+        "name": "zcaceres/markdownify-mcp",
+        "url": "https://github.com/zcaceres/markdownify-mcp",
+        "desc": "Một máy chủ Giao thức Ngữ cảnh Mô hình (MCP) để chuyển đổi hầu hết mọi thứ sang định dạng Markdown.",
+        "stars": "2.6k+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI hữu ích cho việc xử lý định dạng."
+      },
+      {
+        "name": "alirezarezvani/claude-skills",
+        "url": "https://github.com/alirezarezvani/claude-skills",
+        "desc": "Bộ sưu tập hơn 232 kỹ năng và plugin tác nhân cho Claude Code và các tác nhân mã hóa khác, bao gồm kỹ thuật, marketing và tư vấn.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Tăng cường khả năng tự động hóa tác nhân Claude."
+      },
+      {
+        "name": "anthropic/claude-code",
+        "url": "https://github.com/anthropic/claude-code",
+        "desc": "Công cụ mã hóa tác nhân của Anthropic, hoạt động trong terminal, hiểu codebase và giúp mã hóa nhanh hơn.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Kho lưu trữ chính thức và công cụ cốt lõi từ Anthropic."
+      },
+      {
+        "name": "anthropic/skills",
+        "url": "https://github.com/anthropic/skills",
+        "desc": "Kho lưu trữ công khai cho các Kỹ năng Tác nhân, được quản lý bởi Anthropic.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Tài nguyên chính thức cho việc phát triển kỹ năng tác nhân."
+      }
+    ]
+  },
+  {
     "date": "2026-04-12",
     "dayLabel": "Chủ Nhật",
     "dateLabel": "12/04/2026",
