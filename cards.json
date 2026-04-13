@@ -1,5 +1,94 @@
 [
   {
+    "date": "2026-04-14",
+    "dayLabel": "Thứ Ba",
+    "dateLabel": "14/04/2026",
+    "news": [
+      {
+        "title": "🧠 Claude Mythos Preview ra mắt",
+        "desc": "Anthropic đã phát hành Claude Mythos Preview, một mô hình tiên tiến mới với khả năng vượt trội về lý luận, viết mã và an ninh mạng. Tuy nhiên, quyền truy cập bị hạn chế cho một nhóm các công ty công nghệ thông qua sáng kiến Project Glasswing.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "13/04/2026·InfoQ",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGnu359IHPciJYMUtrsEBKdyPOtg73C4-UeclNoJuSiq1azPV9_eImh2s3srm-XbrkkTfPR6SPfvv9vc4o01yqF4HmEM5OlgoQRLbRia57HQ7GdKDfu4CjqkorOr50L5S1EIsXiikMbQrZp2-9FhWeVITJUcBJ"
+      },
+      {
+        "title": "🔥 Claude Opus 4.6 bị 'nerf'?",
+        "desc": "Người dùng đang phàn nàn rộng rãi về việc hiệu suất của Claude Opus 4.6 bị giảm sút. Anthropic đã phủ nhận việc cố ý giảm chất lượng nhưng thừa nhận đã thay đổi giới hạn sử dụng và cài đặt mặc định (ví dụ: thay đổi mức độ 'effort' mặc định từ trung bình sang cao cho người dùng API vào khoảng ngày 7/4/2026).",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "13/04/2026·VentureBeat",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFr_XQsI-HVGqIH8sraR2AmFGxwLSKvE-C-aw1Q4bn_qdLcFc9b4s2N5c3HYR1g4vWYkjgDojcb_XSzEkWOLh_tv1y4agWpLk_9hDJIt-IjF0S4799DMY05UTAy1IkwXnG9-IfNUV2uQUOCTcQlz9IevYS9CptLODvkfZqrMpXRXJPsGyjlM3U4n4nry8ZIyngjoHEWKOeQ4ow_CL_bgzI"
+      },
+      {
+        "title": "⏰ Hạn chót ngừng hỗ trợ Context Window 1M",
+        "desc": "Tính năng beta cửa sổ ngữ cảnh 1 triệu token cho Claude Sonnet 4.5 và Claude Sonnet 4 sẽ ngừng hoạt động vào ngày 30 tháng 4 năm 2026. Sau ngày này, các yêu cầu vượt quá cửa sổ ngữ cảnh 200k token tiêu chuẩn sẽ trả về lỗi.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03/2026·Claude Platform",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaRj7IIyRc8bmeRdcKMJ0b24HXlFTogiN2phJ4lRu7obEp8MO4Fmcp12Sd1v44htrv4av_TIW8UjwbQkzYtpDDu3puamjEhUfMieQzYkxJWXwPkcVYOvc_IFEB4JamjvvSKFUgLHGTg5IkWWhRw1ngSMkayCY="
+      },
+      {
+        "title": "✨ Claude Cowork ra mắt chính thức",
+        "desc": "Claude Cowork hiện đã có sẵn rộng rãi trên macOS và Windows thông qua ứng dụng Claude Desktop. Người dùng gói Pro và Max có thể cấp quyền truy cập máy tính cho Claude để thực hiện các tác vụ.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "09/04/2026·Releasebot",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGivhLvMx53D6RlCsCpQTLJeAI5mO4NfDaubGIzhVJq9shIHUpC2EXWnZzCagOXmMk5nr_YkWTZV3p57JLp1aF8ojcaCgFuA6JUWDjZbVwkDB25wvTOR0X2TOTgDUGWloiqHwrdlE-kxs="
+      }
+    ],
+    "repos": [
+      {
+        "name": "shanraisshan/claude-code-best-practice",
+        "url": "https://github.com/shanraisshan/claude-code-best-practice",
+        "desc": "Hướng dẫn thực tế để có được mã đáng tin cậy, chất lượng cao từ các trợ lý AI như Claude.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Tập trung trực tiếp vào việc cải thiện hiệu suất Claude Code."
+      },
+      {
+        "name": "ComposioHQ/open-claude-cowork",
+        "url": "https://github.com/ComposioHQ/open-claude-cowork",
+        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS.",
+        "stars": "3.8k+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude Cowork mã nguồn mở với nhiều tích hợp, phù hợp cho tự động hóa tác nhân."
+      },
+      {
+        "name": "zebbern/claude-code-guide",
+        "url": "https://github.com/zebbern/claude-code-guide",
+        "desc": "Hướng dẫn toàn diện về Claude Code bao gồm thiết lập, lệnh, quy trình làm việc, tác nhân và mẹo.",
+        "stars": "3.9k+",
+        "verdict": "yes",
+        "reason": "Tài nguyên tuyệt vời cho người dùng Claude Code muốn nâng cao kỹ năng."
+      },
+      {
+        "name": "zcaceres/markdownify-mcp",
+        "url": "https://github.com/zcaceres/markdownify-mcp",
+        "desc": "Một máy chủ Giao thức ngữ cảnh mô hình (MCP) để chuyển đổi hầu hết mọi thứ sang Markdown.",
+        "stars": "2.6k+",
+        "verdict": "yes",
+        "reason": "Máy chủ MCP hữu ích cho tiện ích AI và xử lý tài liệu."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Dự án tác nhân AI đang lên nhanh nhất tuần này, được xây dựng để cộng tác AI lâu dài, cá nhân hóa.",
+        "stars": "N/A",
+        "verdict": "maybe",
+        "reason": "Không dành riêng cho Claude nhưng liên quan đến tự động hóa tác nhân."
+      },
+      {
+        "name": "anthropic/claude-cookbooks",
+        "url": "https://github.com/anthropic/claude-cookbooks",
+        "desc": "Bộ sưu tập các notebook/công thức thể hiện những cách thú vị và hiệu quả khi sử dụng Claude.",
+        "stars": "N/A",
+        "verdict": "yes",
+        "reason": "Tài nguyên chính thức từ Anthropic để khám phá các trường hợp sử dụng Claude."
+      }
+    ]
+  },
+  {
     "date": "2026-04-13",
     "dayLabel": "Thứ Hai",
     "dateLabel": "13/04/2026",
