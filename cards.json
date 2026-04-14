@@ -1,5 +1,102 @@
 [
   {
+    "date": "2026-04-15",
+    "dayLabel": "Thứ Tư",
+    "dateLabel": "15/04/2026",
+    "news": [
+      {
+        "title": "🧠 MODEL: Claude Opus 4.6 & Sonnet 4.6",
+        "desc": "Anthropic đã ra mắt các mô hình Claude Opus 4.6 và Claude Sonnet 4.6 mới, mang đến những cải tiến đáng kể về khả năng và API. Opus 4.6 được thiết kế cho các tác nhân thông minh và lập trình, trong khi Sonnet 4.6 là mô hình tốt nhất cho các tác nhân phức tạp và mã hóa.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "Mới nhất·Anthropic API Docs",
+        "url": "https://www.anthropic.com/docs/api/whats-new-in-claude-4-6"
+      },
+      {
+        "title": "🔥 HOT: Claude Code Hiệu suất Giảm sút",
+        "desc": "Người dùng báo cáo hiệu suất của Claude, đặc biệt là Claude Code, đã suy giảm đáng kể. Một thay đổi ngầm từ phương pháp 'nghiên cứu trước' sang 'chỉnh sửa trước' được cho là nguyên nhân, khiến công cụ dễ mắc lỗi hơn.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "14/04/2026·Inc.com",
+        "url": "https://www.inc.com/leila-sheridan/users-say-anthropics-claude-is-getting-worse-a-quiet-change-may-be-to-blame.html"
+      },
+      {
+        "title": "🧠 MODEL: Claude Mythos mới",
+        "desc": "Anthropic đã giới thiệu mô hình Claude Mythos mới có khả năng phát hiện lỗ hổng phần mềm trên các hệ thống lớn. Quyền truy cập hiện đang được giới hạn cho các đối tác chọn lọc để ngăn chặn việc lạm dụng.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "14/04/2026·MarketWise",
+        "url": "https://marketwise.com/anthropic-ipo-2026-how-claude-ai-could-disrupt-enterprise-software/"
+      },
+      {
+        "title": "⏰ DEADLINE: Ngừng hỗ trợ Context Window 1M Token (beta)",
+        "desc": "Anthropic sẽ ngừng hỗ trợ cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và Claude Sonnet 4 vào ngày 30 tháng 4 năm 2026. Sau ngày này, các yêu cầu vượt quá cửa sổ ngữ cảnh 200k token tiêu chuẩn sẽ trả về lỗi.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03/2026·Anthropic API Docs",
+        "url": "https://www.anthropic.com/docs/api/changelog"
+      },
+      {
+        "title": "🔧 API: Loại bỏ tính năng Prefill trong Claude 4.6",
+        "desc": "Tính năng điền trước tin nhắn trợ lý (last-assistant-turn prefills) không còn được hỗ trợ trên Claude Opus 4.6. Các yêu cầu sử dụng tính năng này sẽ trả về lỗi 400.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "Mới nhất·Anthropic API Docs",
+        "url": "https://www.anthropic.com/docs/api/whats-new-in-claude-4-6"
+      },
+      {
+        "title": "✨ FEATURE: Chế độ Fast Mode (beta) cho Opus",
+        "desc": "Chế độ Fast Mode (speed: 'fast') hiện có sẵn dưới dạng bản beta, cung cấp khả năng tạo token đầu ra nhanh hơn đáng kể cho các mô hình Opus. Chế độ này nhanh hơn tới 2.5 lần với mức giá cao cấp.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "Mới nhất·Anthropic API Docs",
+        "url": "https://www.anthropic.com/docs/api/whats-new-in-claude-4-6"
+      }
+    ],
+    "repos": [
+      {
+        "name": "forrestchang/andrej-karpathy-skills",
+        "url": "https://github.com/forrestchang/andrej-karpathy-skills",
+        "desc": "Một tệp CLAUDE.md duy nhất để cải thiện hành vi của Claude Code, dựa trên những quan sát của Andrej Karpathy về các cạm bẫy lập trình LLM.",
+        "stars": "32.8K+",
+        "verdict": "yes",
+        "reason": "Công cụ hữu ích để tối ưu hóa Claude Code."
+      },
+      {
+        "name": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "desc": "Một plugin Claude Code tự động ghi lại mọi thứ Claude thực hiện trong các phiên lập trình của bạn, nén bằng AI và đưa ngữ cảnh liên quan vào các phiên sau này.",
+        "stars": "55.5K+",
+        "verdict": "yes",
+        "reason": "Plugin tự động hóa tác nhân, cải thiện bộ nhớ và ngữ cảnh cho Claude Code."
+      },
+      {
+        "name": "ComposioHQ/open-claude-cowork",
+        "url": "https://github.com/ComposioHQ/open-claude-cowork",
+        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS.",
+        "stars": "3.8K+",
+        "verdict": "yes",
+        "reason": "Công cụ tự động hóa quy trình làm việc mã nguồn mở, tích hợp rộng rãi."
+      },
+      {
+        "name": "zcaceres/markdownify-mcp",
+        "url": "https://github.com/zcaceres/markdownify-mcp",
+        "desc": "Một máy chủ Model Context Protocol để chuyển đổi hầu hết mọi thứ sang định dạng Markdown.",
+        "stars": "2.6K+",
+        "verdict": "yes",
+        "reason": "Máy chủ MCP và tiện ích AI hữu ích cho chuyển đổi định dạng."
+      },
+      {
+        "name": "zebbern/claude-code-guide",
+        "url": "https://github.com/zebbern/claude-code-guide",
+        "desc": "Hướng dẫn Claude Code bao gồm thiết lập, lệnh, quy trình làm việc, tác nhân, kỹ năng và các mẹo để trở thành người dùng thành thạo.",
+        "stars": "3.9K+",
+        "verdict": "maybe",
+        "reason": "Hướng dẫn toàn diện cho người dùng Claude Code, không phải công cụ trực tiếp."
+      }
+    ]
+  },
+  {
     "date": "2026-04-14",
     "dayLabel": "Thứ Ba",
     "dateLabel": "14/04/2026",
