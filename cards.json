@@ -1,5 +1,102 @@
 [
   {
+    "date": "2026-04-16",
+    "dayLabel": "Thứ Năm",
+    "dateLabel": "16/04/2026",
+    "news": [
+      {
+        "title": "✨ Claude Code Desktop App Mới & Routines",
+        "desc": "Anthropic đã phát hành ứng dụng Claude Code desktop được thiết kế lại với giao diện nhiều phiên song song, bố cục kéo thả và các công cụ tích hợp như terminal, trình chỉnh sửa file. Tính năng 'Routines' mới cho phép tự động hóa Claude Code chạy mà không cần phiên hoạt động, hiện đang ở dạng xem trước nghiên cứu.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "15/04·MacRumors, VentureBeat",
+        "url": "https://www.macrumors.com/2026/04/15/anthropic-claude-code-desktop-app-redesign/"
+      },
+      {
+        "title": "⏰ Hạn chót ngừng hỗ trợ 1M token context window beta",
+        "desc": "Anthropic sẽ ngừng hỗ trợ bản beta 1M token context window cho Claude Sonnet 4.5 và Claude Sonnet 4 vào ngày 30 tháng 4 năm 2026. Sau ngày này, các yêu cầu vượt quá cửa sổ ngữ cảnh 200k token tiêu chuẩn sẽ trả về lỗi.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03·Claude API Docs",
+        "url": "https://docs.anthropic.com/claude/changelog"
+      },
+      {
+        "title": "✨ Công cụ Agent đã sẵn sàng cho sản xuất",
+        "desc": "Bộ công cụ Agent của Anthropic, bao gồm Managed Agents, ant CLI và công cụ Advisor, hiện đã sẵn sàng cho sản xuất. Điều này cung cấp một ngăn xếp hoàn chỉnh để triển khai các tác nhân tự trị, giúp các nhóm không cần xây dựng từ đầu các công cụ sandboxing, quản lý trạng thái hoặc điều phối đa mô hình.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "14/04·Fazm Blog",
+        "url": "https://fazm.blog/anthropic-april-2026-announcement-everything-claude-shipped-this-month/"
+      },
+      {
+        "title": "🧠 Claude Mythos Preview ra mắt",
+        "desc": "Mô hình Claude Mythos Preview mới của Anthropic có khả năng phát hiện hàng nghìn lỗ hổng zero-day chưa xác định trong phần mềm. Việc truy cập mô hình này đang được giới hạn cho các đối tác chọn lọc để ngăn chặn việc lạm dụng.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "14/04·Fazm Blog, MarketWise",
+        "url": "https://fazm.blog/anthropic-april-2026-announcement-everything-claude-shipped-this-month/"
+      }
+    ],
+    "repos": [
+      {
+        "name": "forrestchang/andrej-karpathy-skills",
+        "url": "https://github.com/forrestchang/andrej-karpathy-skills",
+        "desc": "Một file CLAUDE.md duy nhất để cải thiện hành vi của Claude Code, dựa trên các quan sát của Andrej Karpathy về những cạm bẫy khi viết mã LLM.",
+        "stars": "41K+",
+        "verdict": "yes",
+        "reason": "Tối ưu hóa hành vi Claude Code, hữu ích cho dev."
+      },
+      {
+        "name": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "desc": "Một plugin Claude Code tự động ghi lại mọi thứ Claude làm trong các phiên viết mã, nén bằng AI và đưa ngữ cảnh liên quan vào các phiên sau này.",
+        "stars": "57K+",
+        "verdict": "yes",
+        "reason": "Plugin hữu ích cho quản lý ngữ cảnh và tự động hóa."
+      },
+      {
+        "name": "Donchitos/Claude-Code-Game-Studios",
+        "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+        "desc": "Biến Claude Code thành một studio phát triển game hoàn chỉnh với 49 tác nhân AI, 72 kỹ năng quy trình làm việc và hệ thống điều phối toàn diện.",
+        "stars": "2K+",
+        "verdict": "maybe",
+        "reason": "Ý tưởng thú vị cho tự động hóa game dev, cần đánh giá độ phức tạp."
+      },
+      {
+        "name": "zebbern/claude-code-guide",
+        "url": "https://github.com/zebbern/claude-code-guide",
+        "desc": "Hướng dẫn thiết lập, lệnh, quy trình làm việc, tác nhân, kỹ năng và mẹo để người dùng Claude Code từ người mới bắt đầu đến người dùng chuyên nghiệp.",
+        "stars": "3.9K+",
+        "verdict": "yes",
+        "reason": "Tài liệu hướng dẫn toàn diện cho Claude Code."
+      },
+      {
+        "name": "ComposioHQ/open-claude-cowork",
+        "url": "https://github.com/ComposioHQ/open-claude-cowork",
+        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS.",
+        "stars": "3.8K+",
+        "verdict": "yes",
+        "reason": "Tích hợp AI với nhiều ứng dụng, tiềm năng tự động hóa workflow."
+      },
+      {
+        "name": "zcaceres/markdownify-mcp",
+        "url": "https://github.com/zcaceres/markdownify-mcp",
+        "desc": "Một máy chủ Model Context Protocol để chuyển đổi hầu hết mọi thứ sang Markdown.",
+        "stars": "2.6K+",
+        "verdict": "maybe",
+        "reason": "MCP server tiện ích, nhưng tính ứng dụng cụ thể cần xem xét."
+      },
+      {
+        "name": "codeaashu/claude-code",
+        "url": "https://github.com/codeaashu/claude-code",
+        "desc": "Claude Code là một công cụ mã hóa tác nhân hoạt động trong terminal, hiểu codebase và giúp mã hóa nhanh hơn thông qua các lệnh ngôn ngữ tự nhiên.",
+        "stars": "2K+",
+        "verdict": "yes",
+        "reason": "Công cụ mã hóa AI trực tiếp trong terminal, rất hữu ích cho dev."
+      }
+    ]
+  },
+  {
     "date": "2026-04-15",
     "dayLabel": "Thứ Tư",
     "dateLabel": "15/04/2026",
