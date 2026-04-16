@@ -4,6 +4,7 @@ import json, os, re
 from datetime import datetime, timedelta
 from google import genai
 from google.genai import types
+from digest_utils import get_recent_titles, get_recent_urls
 
 try:
     import zoneinfo
@@ -26,7 +27,14 @@ with open("config.json", "r", encoding="utf-8") as f:
 
 topics = {k: v for k, v in config["topics"].items() if v.get("enabled", True)}
 
-def build_prompt(topics: dict) -> str:
+# --- Load existing cards for dedup context (before building prompt) ---
+with open("cards.json", "r", encoding="utf-8") as f:
+    cards = json.load(f)
+
+recent_titles = get_recent_titles(cards, date_str, now, days=3)
+recent_urls   = get_recent_urls(cards, date_str, now, days=3)
+
+def build_prompt(topics: dict, recent_titles: list) -> str:
     """Build dynamic Gemini prompt based on enabled topics in config."""
     lines = [
         f"Hôm nay là {day_label}, {date_label}.",
@@ -51,6 +59,13 @@ def build_prompt(topics: dict) -> str:
         lines.append(f'Trả về field "{field}" với {min_i}-{max_i} items, schema mỗi item: {schema}\n')
         schema_fields += f',"{field}":[...]'
 
+    # Inject recent titles so Gemini avoids repeating them
+    if recent_titles:
+        lines.append(f"\nTRÁNH lặp lại — các tin sau đã xuất hiện trong 3 ngày qua, KHÔNG đưa vào kết quả:")
+        for t in recent_titles[:15]:  # cap 15 to keep prompt lean
+            lines.append(f"  - {t}")
+        lines.append("")
+
     lines.append("Trả về CHỈ JSON (không markdown, không text thêm):")
     lines.append("{" + schema_fields + "}")
     lines.append("Rules: tiếng Việt ngắn gọn dễ hiểu. BẮT BUỘC trả về ĐẦY ĐỦ tất cả các field trong schema, KHÔNG được bỏ sót field nào.")
@@ -58,7 +73,7 @@ def build_prompt(topics: dict) -> str:
     return "\n".join(lines)
 
 
-PROMPT = build_prompt(topics)
+PROMPT = build_prompt(topics, recent_titles)
 print(f"Generating card for {date_str} | topics: {list(topics.keys())}...")
 print(f"Prompt length: {len(PROMPT)} chars")
 
@@ -157,10 +172,18 @@ card_json.setdefault("date", date_str)
 card_json.setdefault("dayLabel", day_label)
 card_json.setdefault("dateLabel", date_label)
 
-# --- Update cards.json (rolling 30-day window) ---
-with open("cards.json", "r", encoding="utf-8") as f:
-    cards = json.load(f)
+# --- Post-process: dedup news by URL against last 3 days ---
+if recent_urls:
+    before_news   = len(card_json.get("news", []))
+    before_gaming = len(card_json.get("gamingNews", []))
+    card_json["news"]       = [n for n in card_json.get("news", [])       if n.get("url", "") not in recent_urls]
+    card_json["gamingNews"] = [g for g in card_json.get("gamingNews", []) if g.get("url", "") not in recent_urls]
+    removed = (before_news - len(card_json["news"])) + (before_gaming - len(card_json["gamingNews"]))
+    if removed:
+        print(f"Dedup removed {removed} duplicate item(s) found in last 3 days")
 
+# --- Update cards.json (rolling 30-day window) ---
+# cards already loaded above for dedup context — reuse it
 cards = [c for c in cards if c.get("date") != date_str]
 cutoff = now - timedelta(days=30)
 cards = [c for c in cards if datetime.strptime(c["date"], "%Y-%m-%d") >= cutoff.replace(tzinfo=None)]

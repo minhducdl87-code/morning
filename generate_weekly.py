@@ -75,27 +75,56 @@ Tổng hợp Weekly Digest cho {week_label}. Trả về CHỈ JSON (không markd
 }}
 Rules: highlights 3-5 items (chọn tin quan trọng nhất tuần), topRepos 3 items (verdict=yes, nổi bật nhất), topGaming 2-3 items nếu có data gaming, bỏ qua nếu không có. Tiếng Việt ngắn gọn."""
 
+def call_gemini(prompt: str, retries: int = 2) -> str | None:
+    """Call Gemini, extract non-thought text parts, with retry. Thinking disabled — not needed for summarization."""
+    for attempt in range(retries + 1):
+        try:
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    temperature=0.4,
+                    max_output_tokens=2048,
+                    thinking_config=types.ThinkingConfig(thinking_budget=0),  # disable thinking
+                )
+            )
+            text_parts = []
+            if response.candidates:
+                for part in (response.candidates[0].content.parts or []):
+                    if hasattr(part, "thought") and part.thought:
+                        continue  # skip internal thought parts
+                    if hasattr(part, "text") and part.text:
+                        text_parts.append(part.text)
+            text = "\n".join(text_parts).strip()
+            if text:
+                print(f"Attempt {attempt+1}: got {len(text)} chars")
+                return text
+            print(f"Attempt {attempt+1}: empty response")
+        except Exception as e:
+            print(f"Attempt {attempt+1} error: {e}")
+    return None
+
+
 print(f"Generating weekly digest: {week_label} ({from_date} → {to_date}) from {len(week_cards)} cards...")
 
-response = client.models.generate_content(
-    model="gemini-2.5-flash",
-    contents=PROMPT,
-    config=types.GenerateContentConfig(temperature=0.4, max_output_tokens=2048)
-)
+text = call_gemini(PROMPT)
+if not text:
+    print("All attempts failed — skipping weekly digest")
+    raise SystemExit(1)
 
 # --- Parse response ---
-text = response.text.strip()
 text = re.sub(r"^```[a-z]*\n?", "", text)
 text = re.sub(r"\n?```$", "", text).strip()
 
 weekly_card = None
 try:
     weekly_card = json.loads(text)
-except Exception:
+except Exception as e1:
+    print(f"Direct JSON parse failed: {e1}")
     m = re.search(r"\{[\s\S]+\}", text)
     if m:
         try: weekly_card = json.loads(m.group())
-        except: pass
+        except Exception as e2: print(f"Regex parse also failed: {e2}")
 
 if not weekly_card:
     print("Could not parse weekly JSON — skipping")
