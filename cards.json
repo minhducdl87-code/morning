@@ -1,5 +1,103 @@
 [
   {
+    "date": "2026-04-17",
+    "dayLabel": "Thứ Sáu",
+    "dateLabel": "17/04/2026",
+    "news": [
+      {
+        "title": "🧠 Claude Opus 4.7 Ra Mắt",
+        "desc": "Anthropic đã phát hành Claude Opus 4.7, mô hình mạnh mẽ nhất hiện có cho công chúng, cải thiện đáng kể khả năng kỹ thuật phần mềm nâng cao, trí tuệ thị giác và phân tích tài liệu, đồng thời có giá tương đương Opus 4.6.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "16/04·Anthropic",
+        "url": "https://www.anthropic.com/news/introducing-claude-opus-4-7"
+      },
+      {
+        "title": "⏰ Ngừng Hỗ Trợ Claude Sonnet 4 & Opus 4",
+        "desc": "Anthropic thông báo ngừng hỗ trợ các mô hình Claude Sonnet 4 và Claude Opus 4 vào ngày 15/06/2026, khuyến nghị người dùng di chuyển sang Sonnet 4.6 và Opus 4.7.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "14/04·Anthropic API Docs",
+        "url": "https://docs.anthropic.com/claude/reference/changelog#april-14-2026"
+      },
+      {
+        "title": "✨ Ra Mắt Public Beta Công Cụ Advisor",
+        "desc": "Anthropic đã ra mắt công cụ Advisor ở dạng beta công khai, cho phép kết hợp mô hình executor nhanh hơn với mô hình advisor thông minh hơn để hướng dẫn chiến lược trong quá trình tạo.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "09/04·Anthropic API Docs",
+        "url": "https://docs.anthropic.com/claude/reference/changelog#april-9-2026"
+      },
+      {
+        "title": "✨ Claude Managed Agents Public Beta",
+        "desc": "Anthropic đã ra mắt Claude Managed Agents ở dạng beta công khai, một công cụ quản lý tác nhân hoàn chỉnh để chạy Claude như một tác nhân tự trị với sandboxing an toàn và các công cụ tích hợp.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "08/04·Anthropic API Docs",
+        "url": "https://docs.anthropic.com/claude/reference/changelog#april-8-2026"
+      },
+      {
+        "title": "🔥 Lỗ Hổng Prompt Injection trong Claude Code Security Review",
+        "desc": "Các nhà nghiên cứu đã phát hiện một lỗ hổng prompt injection mới (\"Comment and Control\") có thể chiếm quyền điều khiển các tác nhân AI như Claude Code Security Review, cho phép thực thi lệnh tùy ý và đánh cắp thông tin.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "15/04·The Register",
+        "url": "https://www.theregister.com/2026/04/15/anthropic_google_microsoft_ai_bug_bounties/"
+      }
+    ],
+    "repos": [
+      {
+        "name": "forrestchang/andrej-karpathy-skills",
+        "url": "https://github.com/forrestchang/andrej-karpathy-skills",
+        "desc": "Một tệp CLAUDE.md duy nhất để cải thiện hành vi của Claude Code, dựa trên các quan sát của Andrej Karpathy về những cạm bẫy khi viết mã LLM.",
+        "stars": "48K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude Code hữu ích, cải thiện hành vi LLM."
+      },
+      {
+        "name": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "desc": "Một plugin Claude Code tự động ghi lại mọi thứ Claude thực hiện, nén bằng AI và đưa ngữ cảnh liên quan vào các phiên làm việc sau này.",
+        "stars": "59K+",
+        "verdict": "yes",
+        "reason": "Plugin Claude Code giúp quản lý và tái sử dụng ngữ cảnh hiệu quả."
+      },
+      {
+        "name": "ComposioHQ/open-claude-cowork",
+        "url": "https://github.com/ComposioHQ/open-claude-cowork",
+        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS.",
+        "stars": "3.8K+",
+        "verdict": "yes",
+        "reason": "Phiên bản mã nguồn mở của Claude Cowork với nhiều tích hợp, phù hợp tự động hóa."
+      },
+      {
+        "name": "zcaceres/markdownify-mcp",
+        "url": "https://github.com/zcaceres/markdownify-mcp",
+        "desc": "Một máy chủ Model Context Protocol để chuyển đổi hầu hết mọi thứ sang Markdown.",
+        "stars": "2.6K+",
+        "verdict": "yes",
+        "reason": "MCP server tiện ích, chuyển đổi định dạng tài liệu sang Markdown."
+      },
+      {
+        "name": "repowise-dev/claude-code-prompts",
+        "url": "https://github.com/repowise-dev/claude-code-prompts",
+        "desc": "Các mẫu prompt độc lập cho các tác nhân mã hóa AI, bao gồm system prompts, tool prompts và quản lý bộ nhớ.",
+        "stars": "Không rõ",
+        "verdict": "maybe",
+        "reason": "Tài nguyên hữu ích cho prompt engineering với Claude Code, nhưng số sao không rõ."
+      },
+      {
+        "name": "alirezarezvani/claude-skills",
+        "url": "https://github.com/alirezarezvani/claude-skills",
+        "desc": "232+ kỹ năng và plugin tác nhân Claude Code cho nhiều tác nhân mã hóa khác nhau.",
+        "stars": "Không rõ",
+        "verdict": "maybe",
+        "reason": "Bộ sưu tập kỹ năng và plugin lớn cho Claude Code, nhưng số sao không rõ."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-04-16",
     "dayLabel": "Thứ Năm",
     "dateLabel": "16/04/2026",
