@@ -1,1 +1,63 @@
-[]
+[
+  {
+    "weekLabel": "Tuần 16/2026",
+    "fromDate": "2026-04-10",
+    "toDate": "2026-04-16",
+    "highlights": [
+      {
+        "title": "🔥 Claude Mythos Preview bị trì hoãn phát hành công khai",
+        "desc": "Mô hình AI đầy hứa hẹn Claude Mythos đã bị trì hoãn phát hành công khai, gây ra nhiều đồn đoán về khả năng và mức độ nguy hiểm của nó. Trước đó, đã có thông tin cho rằng Mythos quá nguy hiểm để phát hành.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT"
+      },
+      {
+        "title": "✨ Ứng dụng Claude Code Desktop được thiết kế lại & Ra mắt Routines",
+        "desc": "Claude Code Desktop nhận được bản thiết kế lại đáng kể, mang lại trải nghiệm người dùng tốt hơn. Đồng thời, tính năng Routines mới được giới thiệu, giúp tự động hóa các tác vụ lặp lại trong quá trình phát triển mã.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE"
+      },
+      {
+        "title": "🧠 MODEL: Claude Opus 4.6 & Sonnet 4.6",
+        "desc": "Anthropic đã ra mắt các phiên bản mô hình mới Claude Opus 4.6 và Sonnet 4.6, hứa hẹn cải thiện hiệu suất và khả năng. Tuy nhiên, cũng có những lo ngại về việc Claude Opus 4.6 bị 'nerf' (giảm sức mạnh).",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL"
+      },
+      {
+        "title": "⏰ Hạn chót ngừng hỗ trợ Context Window 1M Token",
+        "desc": "Người dùng được nhắc nhở về hạn chót ngừng hỗ trợ Context Window 1M Token (beta) vào ngày 30/04/2026. Điều này có thể ảnh hưởng đến các ứng dụng đang sử dụng cửa sổ ngữ cảnh lớn này.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE"
+      },
+      {
+        "title": "🔥 Claude Code Hiệu suất Giảm sút & Mã nguồn bị rò rỉ",
+        "desc": "Hiệu suất của Claude Code đã giảm sút trong tuần này, gây lo ngại cho các nhà phát triển. Nghiêm trọng hơn, mã nguồn của Claude Code đã bị rò rỉ và lạm dụng, đặt ra vấn đề về bảo mật và tính toàn vẹn.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "ComposioHQ/open-claude-cowork",
+        "url": "https://github.com/ComposioHQ/open-claude-cowork",
+        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp, nhận được sự quan tâm lớn khi Claude Cowork ra mắt chính thức và Enterprise.",
+        "stars": "N/A",
+        "verdict": "yes"
+      },
+      {
+        "name": "zcaceres/markdownify-mcp",
+        "url": "https://github.com/zcaceres/markdownify-mcp",
+        "desc": "Một máy chủ Model Context Protocol (MCP) để chuyển đổi hầu hết mọi thứ sang Markdown, được nhắc đến nhiều lần trong tuần này vì tính hữu ích trong việc chuẩn hóa dữ liệu cho các mô hình AI.",
+        "stars": "N/A",
+        "verdict": "yes"
+      },
+      {
+        "name": "zebbern/claude-code-guide",
+        "url": "https://github.com/zebbern/claude-code-guide",
+        "desc": "Hướng dẫn toàn diện cho Claude Code, bao gồm cài đặt, lệnh và quy trình làm việc, trở thành tài nguyên quan trọng cho người dùng mới và hiện tại của Claude Code.",
+        "stars": "N/A",
+        "verdict": "yes"
+      }
+    ],
+    "topGaming": []
+  }
+]
