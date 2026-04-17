@@ -1,5 +1,111 @@
 [
   {
+    "date": "2026-04-18",
+    "dayLabel": "Thứ Bảy",
+    "dateLabel": "18/04/2026",
+    "news": [
+      {
+        "title": "✨ Claude Design Ra Mắt",
+        "desc": "Anthropic đã ra mắt Claude Design, một sản phẩm mới cho phép người dùng cộng tác với Claude để tạo ra các thiết kế, prototype, slide và nhiều tác phẩm trực quan khác. Đây là một phần của bộ công cụ Mac hiện có, bao gồm Claude Cowork và Claude Code.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "17/04·9to5Mac",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFECoveqtvHils5ZumCbWlSXb36Zynw2-60Zy7Igv_-bIPrXN-WcUGwFSkw1t1H1HZZSPd23KMnFnDRMNVz8bjia6Gx1ClnJXwr7OUZlBFi7CYWLyVM9mz5ji0yk7rrExnBeV9xSiqqIKofet4Iemt99F-oRfrOvuW0-cfPHW9X0k14o8dDOKJ0lEgw1fR2rrOwaWYow06m5dU-Ke-ZRkuPU8MF"
+      },
+      {
+        "title": "🔥 Claude Mythos Quá Nguy Hiểm để Phát Hành Công Khai",
+        "desc": "Anthropic đã xác nhận rằng Claude Mythos, dù mạnh mẽ hơn Opus 4.7, đã bị đánh giá là quá nguy hiểm để phát hành rộng rãi cho công chúng, chỉ giới hạn cho các đối tác qua Project Glasswing.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "17/04·Mashable",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUbwHfFD35DbrA6kumHt88KEdiqbuk1tzbQ71M2vfL79-abeGeGehy0PxeKhneJb0NaCrjgQyZewZ0k_6nezLagPsDy-NMtxL5_gBYdN6QAIokeyYGM6OOJ1SVysSLWrIxweRRr4BbHxwNKDQdEPlClB4L3HFbpkC1"
+      },
+      {
+        "title": "🔧 API & ✨ FEATURE: Claude Opus 4.7 Thêm Cấp Độ Nỗ Lực 'xhigh' & Ngân Sách Tác Vụ Beta",
+        "desc": "Claude Opus 4.7 giới thiệu cấp độ nỗ lực 'xhigh' mới cho phép kiểm soát tốt hơn giữa khả năng suy luận và độ trễ. Ngoài ra, API Claude Platform ra mắt tính năng ngân sách tác vụ (task budgets) ở bản beta công khai.",
+        "tag": "api|feature",
+        "tagLabel": "🔧 API|✨ FEATURE",
+        "source": "16/04·Anthropic",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELjAeSu2j0R0TeRBvCDMDP9S-zYG2bStzTBF-E23GPI4Ak_Z6sHKX6xaYSZlG4YWfE0oDeDNk0bovesav446w_QnipBw12XpmcRhnVTauY3YbWYjf6MOsYMD2pnKbsd85KLCbuQVER9A=="
+      },
+      {
+        "title": "🔧 API: Claude Opus 4.7 Có Thay Đổi Gây Đứt Gãy API",
+        "desc": "Phiên bản Claude Opus 4.7 mới bao gồm các thay đổi gây đứt gãy (breaking changes) đối với API so với Opus 4.6, yêu cầu người dùng tham khảo hướng dẫn di chuyển trước khi nâng cấp.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "16/04·Claude API Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_rz0fnzPQehobS0W1pKRb1E5P89rA4jtcvHjfXeTtLzm3FTP5E0N2PMIH4GKPRiwvyNs6wdSDvdNylQfLqVzotSYTNQOSdeApLNb-4SZ3fgDFZcNiBG0CYH9NMBSzeOrA_XljMdpZAKOR8RyMRk3TVn_S9A=="
+      },
+      {
+        "title": "✨ Claude Code: Chế Độ Tự Động & Thông Báo Đẩy",
+        "desc": "Claude Code hiện có chế độ tự động cho người đăng ký Max khi sử dụng Opus 4.7. Ngoài ra, công cụ thông báo đẩy mới cho phép Claude gửi thông báo di động khi Remote Control được bật.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "17/04·GitHub",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENzIkMMqlfKthHoONBIVjhaRedLW5Uy_89Zw000w_IkVrF_Aaxf2bNRpmbVJyql3vO8Ff0QvKnthCIUBTxIgIRpO21HcntddjAMmbpJl6XpdC4INxPYZCp9Gu763VRd7yCF4e1H_H2iPMVvXo="
+      },
+      {
+        "title": "✨ Claude Code: Tính Năng Đánh Giá Mã Với Agent",
+        "desc": "Anthropic đã giới thiệu tính năng Code Review mới cho Claude Code, bổ sung hệ thống đánh giá pull request dựa trên agent sử dụng nhiều AI reviewer. Tính năng này hiện có ở bản xem trước nghiên cứu cho người dùng Team và Enterprise.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "17/04·InfoQ",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZOuDHlTO59oGNikmhMShnuuMe6CmpDPWahyg_Qc9OicVT5Bz7hIJjSgEENWXiP0hPaSNFcPeGGlw6s8e58wpxc2IkxsokVoZY8kuMYAU4U-GzKTvxrCyz1SsEvqO6UB1B-ty30kreWR6fIIlcm1rx"
+      }
+    ],
+    "repos": [
+      {
+        "name": "Donchitos/Claude-Code-Game-Studios",
+        "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+        "desc": "Biến Claude Code thành một studio phát triển game hoàn chỉnh với 49 AI agent và 72 kỹ năng workflow.",
+        "stars": "11.6K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tự động hóa agent, tiện ích AI."
+      },
+      {
+        "name": "zebbern/claude-code-guide",
+        "url": "https://github.com/zebbern/claude-code-guide",
+        "desc": "Hướng dẫn toàn diện về Claude Code, bao gồm thiết lập, lệnh, workflow, agent và kỹ năng.",
+        "stars": "3.9K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, hướng dẫn sử dụng AI agent."
+      },
+      {
+        "name": "ComposioHQ/open-claude-cowork",
+        "url": "https://github.com/ComposioHQ/open-claude-cowork",
+        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS.",
+        "stars": "3.8K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tự động hóa agent, tích hợp."
+      },
+      {
+        "name": "zcaceres/markdownify-mcp",
+        "url": "https://github.com/zcaceres/markdownify-mcp",
+        "desc": "Một máy chủ Model Context Protocol (MCP) để chuyển đổi hầu hết mọi thứ sang Markdown.",
+        "stars": "2.6K+",
+        "verdict": "yes",
+        "reason": "MCP server, tiện ích AI."
+      },
+      {
+        "name": "alirezarezvani/claude-skills",
+        "url": "https://github.com/alirezarezvani/claude-skills",
+        "desc": "Bộ sưu tập hơn 232 kỹ năng và plugin agent cho Claude Code và các công cụ mã hóa khác.",
+        "stars": "Không rõ",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tự động hóa agent, tiện ích AI."
+      },
+      {
+        "name": "EvoMap/evolver",
+        "url": "https://github.com/EvoMap/evolver",
+        "desc": "Công cụ tự tiến hóa được hỗ trợ bởi GEP cho các AI Agent.",
+        "stars": "3.9K+",
+        "verdict": "maybe",
+        "reason": "Liên quan đến AI agent, nhưng không trực tiếp Claude."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-04-17",
     "dayLabel": "Thứ Sáu",
     "dateLabel": "17/04/2026",
