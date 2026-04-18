@@ -1,5 +1,119 @@
 [
   {
+    "date": "2026-04-19",
+    "dayLabel": "Chủ Nhật",
+    "dateLabel": "19/04/2026",
+    "news": [
+      {
+        "title": "☁️ Claude Có Sẵn Trên Amazon Bedrock",
+        "desc": "Anthropic đã mở quyền truy cập Claude cho tất cả khách hàng Amazon Bedrock, bao gồm Claude Opus 4.7 và Claude Haiku 4.5, qua Messages API ở 27 khu vực AWS.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "16/04/2026·Anthropic",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNzfHxAhtRClezs3UOkuUx7vVH73j-yHHYyCFiRxUHDZtuMyE73rjm9Qw4qz663yUJbd8l1LXVjgx-Bq783OEApVy5OaPhvNRmh0Av67vq9SxzUacfVPpqZmBxasIWhmj625OyImQhGFMO9lKqMGlwFOoXeWk="
+      },
+      {
+        "title": "📈 Tăng Giới Hạn Max_Tokens Lên 300K",
+        "desc": "Giới hạn max_tokens trên Message Batches API cho Claude Opus 4.6 và Sonnet 4.6 đã được tăng lên 300.000, cho phép tạo ra các đầu ra dài hơn cho nội dung, dữ liệu có cấu trúc và mã lớn.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "30/03/2026·Anthropic",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNzfHxAhtRClezs3UOkuUx7vVH73j-yHHYyCFiRxUHDZtuMyE73rjm9Qw4qz663yUJbd8l1LXVjgx-Bq783OEApVy5OaPhvNRmh0Av67vq9SxzUacfVPpqZmBxasIWhmj625OyImQhGFMO9lKqMGlwFOoXeWk="
+      },
+      {
+        "title": "🚨 Cảnh Báo: Thay Đổi Gói Đăng Ký Claude Max",
+        "desc": "Một người dùng GitHub trên Claude Code dự đoán Anthropic đang dần chấm dứt các gói đăng ký Max, hướng tới mô hình tập trung vào doanh nghiệp hoặc các gói cao cấp hơn, đắt đỏ hơn.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "16/04/2026·Reddit",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCeqQl0-jBsRSPsIAmJZRm2XsjqHmXgzkx5FcsMyI8HOLFXbFSvqcLtzoeb35E6NQUEUzqA_qqW61VBa0S-yC7dPIkxg3UV1MAzMOGPBnzQUN2jG6fZNLK92qL3IQTsVjkBV2B8U-0HWUzzSllXdXkpk_9-ZQ0iV0pwsnckWYWnqBOyXKTSAmfXygTsps_j2RLG8AvrOHW-ef-HlIdiZt7WX7S42W0Ffl5qWY="
+      },
+      {
+        "title": "🚀 Ra Mắt ant CLI cho Claude API",
+        "desc": "Anthropic đã ra mắt ant CLI, một công cụ dòng lệnh cho Claude API, giúp tương tác nhanh hơn, tích hợp với Claude Code và quản lý tài nguyên API bằng YAML.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "08/04/2026·Anthropic",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNzfHxAhtRClezs3UOkuUx7vVH73j-yHHYyCFiRxUHDZtuMyE73rjm9Qw4qz663yUJbd8l1LXVjgx-Bq783OEApVy5OaPhvNRmh0Av67vq9SxzUacfVPpqZmBxasIWhmj625OyImQhGFMO9lKqMGlwFOoXeWk="
+      },
+      {
+        "title": "⚠️ Phản Ứng Tiêu Cực Về Claude Opus 4.7",
+        "desc": "Sau khi ra mắt, Claude Opus 4.7 nhận nhiều phản hồi tiêu cực từ người dùng về việc tốn nhiều token hơn và hiệu suất kém hơn so với phiên bản trước, gây ra 'Claude-lash' trên mạng xã hội.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "17/04/2026·Business Insider",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWPWBAR7S-uDf7XBZQvRJUez0Z5czuk-n96JPuxVL3n_V1gUciW5Z_8_VE-OWDJu50Hr-uBgDVR2CN_sFQiuAuOm-HWH_M_BmY3m0VoVKj-lITaesdZxOwOo4_9GIkQMAgQe-wFu--hot62Eqlq7MmYqriJnWF491Ppfcwkw5cnzDUkjuCnBBFZR5h"
+      }
+    ],
+    "repos": [
+      {
+        "name": "e2b-dev/fragments",
+        "url": "https://github.com/e2b-dev/fragments",
+        "desc": "Mẫu Next.js mã nguồn mở để xây dựng các ứng dụng được AI tạo ra hoàn toàn.",
+        "stars": "6.2k",
+        "verdict": "yes",
+        "reason": "Công cụ AI tạo ứng dụng, liên quan đến Claude."
+      },
+      {
+        "name": "UfoMiao/zcf",
+        "url": "https://github.com/UfoMiao/zcf",
+        "desc": "Zero-Config Code Flow cho Claude Code & Codex, hỗ trợ các tác vụ AI agent.",
+        "stars": "5.9k",
+        "verdict": "yes",
+        "reason": "Công cụ cho Claude Code, tự động hóa tác vụ."
+      },
+      {
+        "name": "nidhinjs/prompt-master",
+        "url": "https://github.com/nidhinjs/prompt-master",
+        "desc": "Một kỹ năng Claude giúp viết các prompt chính xác cho bất kỳ công cụ AI nào.",
+        "stars": "5.2k",
+        "verdict": "yes",
+        "reason": "Tiện ích AI cho Claude, cải thiện prompt engineering."
+      },
+      {
+        "name": "langgptai/awesome-claude-prompts",
+        "url": "https://github.com/langgptai/awesome-claude-prompts",
+        "desc": "Kho lưu trữ các prompt được tuyển chọn để sử dụng Claude hiệu quả hơn.",
+        "stars": "4.8k",
+        "verdict": "yes",
+        "reason": "Tiện ích AI cho Claude, tài nguyên prompt."
+      },
+      {
+        "name": "zebbern/claude-code-guide",
+        "url": "https://github.com/zebbern/claude-code-guide",
+        "desc": "Hướng dẫn Claude Code - Thiết lập, lệnh, quy trình làm việc, agent, kỹ năng & mẹo từ người mới bắt đầu đến người dùng chuyên nghiệp.",
+        "stars": "3.9k",
+        "verdict": "yes",
+        "reason": "Hướng dẫn và tài nguyên cho Claude Code và agent."
+      },
+      {
+        "name": "winfunc/opcode",
+        "url": "https://github.com/winfunc/opcode",
+        "desc": "Ứng dụng GUI mạnh mẽ và Toolkit cho Claude Code để tạo agent tùy chỉnh và quản lý phiên tương tác.",
+        "stars": "Không rõ",
+        "verdict": "yes",
+        "reason": "Công cụ GUI cho Claude Code, quản lý agent."
+      },
+      {
+        "name": "yasasbanukaofficial/claude-code",
+        "url": "https://github.com/yasasbanukaofficial/claude-code",
+        "desc": "Mã nguồn CLI Claude Code mã nguồn mở, một AI Agent nâng cao cho các nhà phát triển.",
+        "stars": "Không rõ",
+        "verdict": "yes",
+        "reason": "CLI và agent cho nhà phát triển Claude Code."
+      },
+      {
+        "name": "alirezarezvani/claude-skills",
+        "url": "https://github.com/alirezarezvani/claude-skills",
+        "desc": "Hơn 232 kỹ năng & plugin agent cho Claude Code và các agent mã hóa khác.",
+        "stars": "Không rõ",
+        "verdict": "yes",
+        "reason": "Bộ sưu tập kỹ năng và plugin cho Claude Code."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-04-18",
     "dayLabel": "Thứ Bảy",
     "dateLabel": "18/04/2026",
