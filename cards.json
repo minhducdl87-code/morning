@@ -5,70 +5,78 @@
     "dateLabel": "20/04/2026",
     "news": [
       {
-        "title": "🔧 Claude Code: Cải Tiến Trải Nghiệm Người Dùng",
-        "desc": "Bản cập nhật Claude Code v2.1.111 mang đến giao diện TUI toàn màn hình không giật, thanh trượt điều chỉnh mức độ nỗ lực AI và tính năng tự động khớp giao diện với terminal của bạn.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "18/04·Anthropic",
-        "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111"
+        "title": "⏰ Ngừng Hỗ Trợ 1M Context Beta",
+        "desc": "Tính năng cửa sổ ngữ cảnh 1 triệu token beta cho Claude Sonnet 4.5 và Sonnet 4 sẽ ngừng hoạt động vào ngày 30/04/2026. Người dùng nên cập nhật để tránh lỗi.",
+        "tag": "deadline",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "30/03·Anthropic",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGj-BuL4KfynOYDqs30kWodcK4ZJWZQ45jMRex2l35-cubjPdRoJBXDmHpNp6hnDP5vfN_jik_Wf9UdoS_wBnL-cyh__z4DI3Ng0rLiBOjhzB80g2b_u_7xpynjGtG0wX4H3-wL-tKzfuNUHBA9fbW8ls5NHkw="
       },
       {
-        "title": "🔧 Claude Code: Công Cụ Đánh Giá Mã Nâng Cao",
-        "desc": "Phiên bản Claude Code v2.1.111 giới thiệu skill '/ultrareview' để đánh giá mã toàn diện trên đám mây bằng phân tích đa tác nhân song song, cùng với tính năng đề xuất quyền hạn ít hơn cho các lệnh Bash.",
+        "title": "✨ Claude Code: Chế Độ Tự Động cho Max",
+        "desc": "Chế độ tự động hiện có sẵn cho người đăng ký Claude Max khi sử dụng Opus 4.7, không còn yêu cầu cờ --enable-auto-mode.",
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
-        "source": "18/04·Anthropic",
-        "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111"
+        "source": "18/04·Claude Code Changelog",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEu4vpFmmm1BMs4HEintysRJPb-YjwA12ST0tCpfdW_U6n97_THwprU9r8PqT2EovlpC3GnOQmJMynyo7eX-lGAp9mqONWqUkEbAHRhydKQkS7i0P_CwgX-yR0qlWPjj3gc_Ek="
       },
       {
-        "title": "🔧 Claude Code: Hỗ Trợ PowerShell",
-        "desc": "Tính năng công cụ PowerShell đang được triển khai dần trong Claude Code, cho phép người dùng Windows tận dụng các tập lệnh PowerShell trực tiếp trong môi trường Claude Code.",
+        "title": "✨ Claude Code: Lệnh /ultrareview",
+        "desc": "Lệnh mới /ultrareview cho phép đánh giá mã toàn diện trên đám mây bằng cách sử dụng phân tích đa tác nhân song song.",
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
-        "source": "18/04·Anthropic",
-        "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111"
+        "source": "18/04·Claude Code Changelog",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEu4vpFmmm1BMs4HEintysRJPb-YjwA12ST0tCpfdW_U6n97_THwprU9r8PqT2EovlpC3GnOQmJMynyo7eX-lGAp9mqONWqUkEbAHRhydKQkS7i0P_CwgX-yR0qlWPjj3gc_Ek="
+      },
+      {
+        "title": "🔧 API: Thay Đổi Gây Đứt Gãy API Opus 4.7",
+        "desc": "Claude Opus 4.7 loại bỏ các tính năng 'extended thinking budgets' và 'sampling parameters', đồng thời bỏ qua 'thinking content' theo mặc định, yêu cầu cập nhật API.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "16/04·Anthropic",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtVdAKW55px0dgqb6UrrJYul-sM0NzDJ5MECADqlZrEg3gxK0ISDwJLUc3wTg8trgRw9e0riRQF80c-kbM_ErDZHH0q8fK-E5AgDF4qGJWIKhQSZAw8UqQrwwPpAKycl2h2YnqOnTB9v96ANFhZMEhwC5oslO46ZSGNbKyVGvkp6AGdowNXY4="
       }
     ],
     "repos": [
       {
-        "name": "siteboon/claudecodeui",
-        "url": "https://github.com/siteboon/claudecodeui",
-        "desc": "Giao diện web/GUI mã nguồn mở miễn phí để quản lý phiên Claude Code và dự án của bạn từ xa.",
-        "stars": "9.8K+",
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Công cụ lập trình agentic CLI của Anthropic giúp tăng tốc code bằng các lệnh ngôn ngữ tự nhiên.",
+        "stars": "114.3k",
         "verdict": "yes",
-        "reason": "Công cụ Claude UI hữu ích cho quản lý từ xa."
+        "reason": "Kho lưu trữ chính thức, công cụ AI agentic cốt lõi."
       },
       {
-        "name": "zcaceres/markdownify-mcp",
-        "url": "https://github.com/zcaceres/markdownify-mcp",
-        "desc": "Một máy chủ Giao thức Ngữ cảnh Mô hình (MCP) để chuyển đổi hầu hết mọi thứ sang Markdown.",
-        "stars": "2.6K+",
+        "name": "ComposioHQ/awesome-claude-skills",
+        "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "desc": "Danh sách tuyển chọn các kỹ năng, tài nguyên và công cụ Claude để tùy chỉnh quy trình làm việc AI.",
+        "stars": "N/A",
         "verdict": "yes",
-        "reason": "Máy chủ MCP cho chuyển đổi định dạng, hữu ích cho tác vụ AI."
+        "reason": "Tài nguyên hữu ích cho việc mở rộng khả năng của Claude với các kỹ năng."
       },
       {
-        "name": "777genius/claude-code-source-code",
-        "url": "https://github.com/777genius/claude-code-source-code",
-        "desc": "Mã nguồn của Claude Code, một công cụ mã hóa tác nhân AI.",
-        "stars": "895+",
+        "name": "quemsah/awesome-claude-plugins",
+        "url": "https://github.com/quemsah/awesome-claude-plugins",
+        "desc": "Bộ sưu tập tự động các số liệu về việc áp dụng plugin Claude Code trên các kho lưu trữ GitHub.",
+        "stars": "N/A",
         "verdict": "maybe",
-        "reason": "Mã nguồn của một công cụ cốt lõi, có thể hữu ích cho nhà phát triển."
+        "reason": "Hữu ích để theo dõi xu hướng plugin, nhưng có thể không phải là công cụ trực tiếp."
       },
       {
-        "name": "mem0ai/mem0-chrome-extension",
-        "url": "https://github.com/mem0ai/mem0-chrome-extension",
-        "desc": "Tiện ích mở rộng Chrome cung cấp bộ nhớ dài hạn cho các chatbot AI như ChatGPT, Claude, Perplexity, Grok.",
-        "stars": "670+",
+        "name": "webfuse-com/awesome-claude",
+        "url": "https://github.com/webfuse-com/awesome-claude",
+        "desc": "Danh sách tuyển chọn các tài nguyên tuyệt vời liên quan đến Anthropic Claude.",
+        "stars": "N/A",
         "verdict": "yes",
-        "reason": "Tiện ích bộ nhớ dài hạn cho Claude và các LLM khác."
+        "reason": "Một danh sách tổng hợp toàn diện các tài nguyên Claude."
       },
       {
-        "name": "rohitg00/awesome-claude-design",
-        "url": "https://github.com/rohitg00/awesome-claude-design",
-        "desc": "Danh sách tuyển chọn các tệp DESIGN.md, công thức phối lại và tín hiệu cộng đồng liên quan đến Claude Design.",
-        "stars": "14+",
+        "name": "Jenqyang/Awesome-AI-Agents",
+        "url": "https://github.com/Jenqyang/Awesome-AI-Agents",
+        "desc": "Bộ sưu tập các tác nhân tự trị được hỗ trợ bởi LLM, bao gồm các công cụ liên quan đến Claude.",
+        "stars": "N/A",
         "verdict": "maybe",
-        "reason": "Tài nguyên cho Claude Design, hữu ích cho người dùng quan tâm đến thiết kế AI."
+        "reason": "Danh sách chung về AI agents, có thể chứa các công cụ Claude nhưng không tập trung."
       }
     ],
     "gamingNews": []
