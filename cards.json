@@ -1,5 +1,79 @@
 [
   {
+    "date": "2026-04-20",
+    "dayLabel": "Thứ Hai",
+    "dateLabel": "20/04/2026",
+    "news": [
+      {
+        "title": "🔧 Claude Code: Cải Tiến Trải Nghiệm Người Dùng",
+        "desc": "Bản cập nhật Claude Code v2.1.111 mang đến giao diện TUI toàn màn hình không giật, thanh trượt điều chỉnh mức độ nỗ lực AI và tính năng tự động khớp giao diện với terminal của bạn.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "18/04·Anthropic",
+        "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111"
+      },
+      {
+        "title": "🔧 Claude Code: Công Cụ Đánh Giá Mã Nâng Cao",
+        "desc": "Phiên bản Claude Code v2.1.111 giới thiệu skill '/ultrareview' để đánh giá mã toàn diện trên đám mây bằng phân tích đa tác nhân song song, cùng với tính năng đề xuất quyền hạn ít hơn cho các lệnh Bash.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "18/04·Anthropic",
+        "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111"
+      },
+      {
+        "title": "🔧 Claude Code: Hỗ Trợ PowerShell",
+        "desc": "Tính năng công cụ PowerShell đang được triển khai dần trong Claude Code, cho phép người dùng Windows tận dụng các tập lệnh PowerShell trực tiếp trong môi trường Claude Code.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "18/04·Anthropic",
+        "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111"
+      }
+    ],
+    "repos": [
+      {
+        "name": "siteboon/claudecodeui",
+        "url": "https://github.com/siteboon/claudecodeui",
+        "desc": "Giao diện web/GUI mã nguồn mở miễn phí để quản lý phiên Claude Code và dự án của bạn từ xa.",
+        "stars": "9.8K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude UI hữu ích cho quản lý từ xa."
+      },
+      {
+        "name": "zcaceres/markdownify-mcp",
+        "url": "https://github.com/zcaceres/markdownify-mcp",
+        "desc": "Một máy chủ Giao thức Ngữ cảnh Mô hình (MCP) để chuyển đổi hầu hết mọi thứ sang Markdown.",
+        "stars": "2.6K+",
+        "verdict": "yes",
+        "reason": "Máy chủ MCP cho chuyển đổi định dạng, hữu ích cho tác vụ AI."
+      },
+      {
+        "name": "777genius/claude-code-source-code",
+        "url": "https://github.com/777genius/claude-code-source-code",
+        "desc": "Mã nguồn của Claude Code, một công cụ mã hóa tác nhân AI.",
+        "stars": "895+",
+        "verdict": "maybe",
+        "reason": "Mã nguồn của một công cụ cốt lõi, có thể hữu ích cho nhà phát triển."
+      },
+      {
+        "name": "mem0ai/mem0-chrome-extension",
+        "url": "https://github.com/mem0ai/mem0-chrome-extension",
+        "desc": "Tiện ích mở rộng Chrome cung cấp bộ nhớ dài hạn cho các chatbot AI như ChatGPT, Claude, Perplexity, Grok.",
+        "stars": "670+",
+        "verdict": "yes",
+        "reason": "Tiện ích bộ nhớ dài hạn cho Claude và các LLM khác."
+      },
+      {
+        "name": "rohitg00/awesome-claude-design",
+        "url": "https://github.com/rohitg00/awesome-claude-design",
+        "desc": "Danh sách tuyển chọn các tệp DESIGN.md, công thức phối lại và tín hiệu cộng đồng liên quan đến Claude Design.",
+        "stars": "14+",
+        "verdict": "maybe",
+        "reason": "Tài nguyên cho Claude Design, hữu ích cho người dùng quan tâm đến thiết kế AI."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-04-19",
     "dayLabel": "Chủ Nhật",
     "dateLabel": "19/04/2026",
