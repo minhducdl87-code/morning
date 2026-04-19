@@ -1,5 +1,66 @@
 [
   {
+    "weekLabel": "Tuần 17/2026",
+    "fromDate": "2026-04-14",
+    "toDate": "2026-04-20",
+    "highlights": [
+      {
+        "title": "🧠 Claude Opus 4.7 Ra Mắt",
+        "desc": "Phiên bản Claude Opus 4.7 mới đã được ra mắt, mang đến những cải tiến đáng kể về hiệu suất và khả năng. Đây là một bước tiến quan trọng trong việc nâng cao năng lực của Claude, hứa hẹn trải nghiệm người dùng tốt hơn.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL"
+      },
+      {
+        "title": "🚨 Cảnh Báo: Thay Đổi Gói Đăng Ký Claude Max",
+        "desc": "Anthropic đã thông báo về những thay đổi quan trọng trong các gói đăng ký Claude Max. Người dùng nên xem xét kỹ các thay đổi này để đảm bảo không bị gián đoạn dịch vụ hoặc ảnh hưởng đến chi phí.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT"
+      },
+      {
+        "title": "☁️ Claude Có Sẵn Trên Amazon Bedrock",
+        "desc": "Claude hiện đã có mặt trên Amazon Bedrock, mở rộng khả năng tiếp cận và tích hợp cho các nhà phát triển và doanh nghiệp sử dụng nền tảng đám mây của Amazon. Điều này giúp Claude tiếp cận một lượng lớn người dùng tiềm năng.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE"
+      },
+      {
+        "title": "📈 Tăng Giới Hạn Max_Tokens Lên 300K",
+        "desc": "Giới hạn max_tokens cho Claude API đã được tăng lên 300K, cho phép người dùng xử lý các tác vụ phức tạp hơn và dài hơn. Cải tiến này đặc biệt hữu ích cho các ứng dụng yêu cầu ngữ cảnh rộng.",
+        "tag": "api",
+        "tagLabel": "🔧 API"
+      },
+      {
+        "title": "⏰ Ngừng Hỗ Trợ Claude Sonnet 4 & Opus 4",
+        "desc": "Anthropic đã thông báo ngừng hỗ trợ các phiên bản Claude Sonnet 4 và Opus 4. Người dùng cần cập nhật lên các phiên bản mới hơn để tiếp tục nhận được hỗ trợ và các tính năng mới nhất.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "zcaceres/markdownify-mcp",
+        "url": "https://github.com/zcaceres/markdownify-mcp",
+        "desc": "Máy chủ Giao thức Ngữ cảnh Mô hình (MCP) này nổi bật vì khả năng chuyển đổi hầu hết mọi thứ thành Markdown, được nhắc đến nhiều lần trong tuần và có vẻ rất hữu ích cho các tác nhân AI.",
+        "stars": "Không rõ",
+        "verdict": "yes"
+      },
+      {
+        "name": "ComposioHQ/open-claude-cowork",
+        "url": "https://github.com/ComposioHQ/open-claude-cowork",
+        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp đã thu hút sự chú ý đáng kể, cho thấy nhu cầu cao về các công cụ hợp tác AI đa năng.",
+        "stars": "Không rõ",
+        "verdict": "yes"
+      },
+      {
+        "name": "zebbern/claude-code-guide",
+        "url": "https://github.com/zebbern/claude-code-guide",
+        "desc": "Hướng dẫn toàn diện về Claude Code này được nhắc đến nhiều lần, cho thấy nó là một tài nguyên quan trọng cho người dùng muốn tìm hiểu và làm việc với Claude Code.",
+        "stars": "Không rõ",
+        "verdict": "yes"
+      }
+    ],
+    "topGaming": []
+  },
+  {
     "weekLabel": "Tuần 16/2026",
     "fromDate": "2026-04-10",
     "toDate": "2026-04-16",
