@@ -1,5 +1,87 @@
 [
   {
+    "date": "2026-04-21",
+    "dayLabel": "Thứ Ba",
+    "dateLabel": "21/04/2026",
+    "news": [
+      {
+        "title": "🤝 Mở Rộng Hợp Tác Amazon",
+        "desc": "Anthropic và Amazon mở rộng hợp tác chiến lược, cam kết hơn 100 tỷ USD trong 10 năm tới để đảm bảo 5GW năng lực tính toán mới trên AWS, bao gồm chip Trainium2, Trainium3 và Trainium4. Điều này nhằm hỗ trợ đào tạo và triển khai Claude, cũng như mở rộng khả năng suy luận ở châu Á và châu Âu.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "20/04·Anthropic",
+        "url": "https://www.anthropic.com/news/anthropic-amazon-expand-collaboration"
+      },
+      {
+        "title": "⏰ Ngừng Hỗ Trợ Claude 4/Sonnet 4",
+        "desc": "Anthropic thông báo ngừng hỗ trợ các model Claude Sonnet 4 và Claude Opus 4, với lịch trình ngừng hoạt động trên Claude API vào ngày 15 tháng 6 năm 2026. Người dùng được khuyến nghị di chuyển sang Claude Sonnet 4.6 và Claude Opus 4.7.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "14/04·Claude API Docs",
+        "url": "https://docs.anthropic.com/claude/reference/changelog"
+      },
+      {
+        "title": "✨ Claude Code: Hỗ Trợ Worktree",
+        "desc": "Claude Code phiên bản 2.1.105 đã thêm tham số đường dẫn vào công cụ EnterWorktree để chuyển sang một worktree hiện có của kho lưu trữ hiện tại. Điều này cải thiện khả năng quản lý dự án và quy trình làm việc cho các nhà phát triển.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "Gần đây·GitHub",
+        "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      },
+      {
+        "title": "✨ Claude Code: Tính Năng Tóm Tắt Phiên (/recap)",
+        "desc": "Claude Code đã thêm tính năng tóm tắt phiên (/recap) để cung cấp ngữ cảnh khi quay lại một phiên làm việc, có thể cấu hình trong /config và gọi thủ công. Điều này giúp duy trì luồng công việc và giảm thiểu việc mất ngữ cảnh giữa các phiên.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "Gần đây·GitHub",
+        "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Công cụ lập trình agentic của Anthropic, hoạt động trong terminal, hiểu codebase và hỗ trợ lập trình nhanh hơn qua các lệnh ngôn ngữ tự nhiên.",
+        "stars": "114K+",
+        "verdict": "yes",
+        "reason": "Kho lưu trữ chính thức, công cụ lập trình AI mạnh mẽ."
+      },
+      {
+        "name": "shanraisshan/claude-code-best-practice",
+        "url": "https://github.com/shanraisshan/claude-code-best-practice",
+        "desc": "Tổng hợp 69 mẹo thực tế để sử dụng Claude Code hiệu quả, từ lập trình cảm tính đến kỹ thuật agentic.",
+        "stars": "4K+",
+        "verdict": "yes",
+        "reason": "Tài nguyên hữu ích cho các kỹ sư sử dụng Claude Code."
+      },
+      {
+        "name": "webfuse-com/awesome-claude",
+        "url": "https://github.com/webfuse-com/awesome-claude",
+        "desc": "Danh sách tuyển chọn các tài nguyên tuyệt vời liên quan đến Anthropic Claude, bao gồm SDK, công cụ và hướng dẫn.",
+        "stars": "Không rõ",
+        "verdict": "yes",
+        "reason": "Kho tài nguyên tổng hợp cho hệ sinh thái Claude."
+      },
+      {
+        "name": "jeffallan/claude-skills",
+        "url": "https://github.com/jeffallan/claude-skills",
+        "desc": "Kho lưu trữ chứa 66 kỹ năng chuyên biệt cho Claude Code, tự động kích hoạt dựa trên ngữ cảnh và bao gồm nhiều danh mục phát triển.",
+        "stars": "Không rõ",
+        "verdict": "yes",
+        "reason": "Bộ kỹ năng phong phú, tập trung vào nhà phát triển."
+      },
+      {
+        "name": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "desc": "Kho lưu trữ công khai của Anthropic cho các Agent Skills, bao gồm các kỹ năng từ ứng dụng sáng tạo đến tác vụ kỹ thuật và quy trình làm việc doanh nghiệp.",
+        "stars": "Không rõ",
+        "verdict": "yes",
+        "reason": "Kho lưu trữ kỹ năng chính thức từ Anthropic."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-04-20",
     "dayLabel": "Thứ Hai",
     "dateLabel": "20/04/2026",
