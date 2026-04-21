@@ -1,5 +1,127 @@
 [
   {
+    "date": "2026-04-22",
+    "dayLabel": "Thứ Tư",
+    "dateLabel": "22/04/2026",
+    "news": [
+      {
+        "title": "🧠 Claude Opus 4.7 Ra Mắt",
+        "desc": "Anthropic đã ra mắt Claude Opus 4.7, mẫu mô hình tiên tiến nhất của họ với hiệu suất vượt trội trong kỹ thuật phần mềm, tác nhân, thị giác và các tác vụ đa bước. Mô hình này mang lại sự kỹ lưỡng và nhất quán cao hơn cho các công việc quan trọng.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "16/04/2026·Anthropic",
+        "url": "https://www.anthropic.com/news/introducing-claude-opus-4-7"
+      },
+      {
+        "title": "✨ Claude Design Ra Mắt",
+        "desc": "Anthropic Labs đã giới thiệu Claude Design, một sản phẩm mới cho phép người dùng cộng tác với Claude để tạo ra các tác phẩm hình ảnh chuyên nghiệp như thiết kế, nguyên mẫu, slide và tài liệu.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "17/04/2026·Anthropic Labs",
+        "url": "https://www.anthropic.com/newsroom"
+      },
+      {
+        "title": "✨ Công Cụ Advisor Beta",
+        "desc": "Anthropic đã ra mắt công cụ Advisor ở phiên bản beta công khai, cho phép kết hợp mô hình thực thi nhanh hơn với mô hình cố vấn thông minh hơn để hướng dẫn chiến lược giữa quá trình tạo.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "09/04/2026·Claude API Docs",
+        "url": "https://www.anthropic.com/api/docs/changelog"
+      },
+      {
+        "title": "✨ Claude Managed Agents Beta",
+        "desc": "Anthropic đã ra mắt Claude Managed Agents ở phiên bản beta công khai, một hệ thống tác nhân được quản lý hoàn toàn để chạy Claude như một tác nhân tự trị với sandbox an toàn và các công cụ tích hợp.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "08/04/2026·Claude API Docs",
+        "url": "https://www.anthropic.com/api/docs/changelog"
+      },
+      {
+        "title": "🔧 API: Cấp Độ Nỗ Lực 'xhigh'",
+        "desc": "Claude Opus 4.7 giới thiệu cấp độ nỗ lực mới 'xhigh' (giữa high và max), mang lại khả năng kiểm soát tốt hơn giữa lý luận và độ trễ cho các vấn đề khó trên nền tảng Claude API.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "16/04/2026·Anthropic",
+        "url": "https://www.anthropic.com/news/introducing-claude-opus-4-7"
+      },
+      {
+        "title": "✨ Claude Code: Hỗ Trợ PowerShell",
+        "desc": "Công cụ PowerShell đang dần được triển khai cho Claude Code, cho phép người dùng Windows opt-in hoặc opt-out thông qua biến môi trường CLAUDE_CODE_USE_POWERSHELL_TOOL.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "18/04/2026·Claude Code Changelog",
+        "url": "https://www.anthropic.com/api/docs/claude-code/changelog"
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Claude Code là một công cụ lập trình tác nhân hoạt động trong terminal, hiểu codebase và giúp bạn viết code nhanh hơn.",
+        "stars": "114.3K+",
+        "verdict": "yes",
+        "reason": "Đây là repo chính thức của Anthropic, rất quan trọng cho các công cụ và tiện ích Claude."
+      },
+      {
+        "name": "webfuse-com/awesome-claude",
+        "url": "https://github.com/webfuse-com/awesome-claude",
+        "desc": "Một danh sách tuyển chọn các tài nguyên và công cụ tuyệt vời liên quan đến Anthropic Claude.",
+        "stars": "Không rõ",
+        "verdict": "yes",
+        "reason": "Danh sách tổng hợp các công cụ và tài nguyên, hữu ích để khám phá thêm."
+      },
+      {
+        "name": "hesreallyhim/awesome-claude-code",
+        "url": "https://github.com/hesreallyhim/awesome-claude-code",
+        "desc": "Danh sách các slash-commands, file CLAUDE.md, công cụ CLI và quy trình làm việc cho Claude Code.",
+        "stars": "40K+",
+        "verdict": "yes",
+        "reason": "Tập trung vào các tiện ích và quy trình làm việc cho Claude Code."
+      },
+      {
+        "name": "musistudio/claude-code-router",
+        "url": "https://github.com/musistudio/claude-code-router",
+        "desc": "Một công cụ giúp tối ưu hóa việc sử dụng token của Claude Code bằng cách định tuyến các yêu cầu.",
+        "stars": "32.6K+",
+        "verdict": "yes",
+        "reason": "Giúp tiết kiệm token, có tác động thực tế đến chi phí sử dụng API."
+      },
+      {
+        "name": "rtk",
+        "url": "https://github.com/rtk",
+        "desc": "Một proxy CLI viết bằng Rust giúp lọc output của các lệnh shell trước khi gửi đến Claude, giảm lượng token.",
+        "stars": "31.2K+",
+        "verdict": "yes",
+        "reason": "Công cụ tối ưu hóa token, rất hữu ích cho việc quản lý chi phí."
+      },
+      {
+        "name": "Eyal Toledano/claude-task-master",
+        "url": "https://github.com/Eyal Toledano/claude-task-master",
+        "desc": "Tập trung vào việc quản lý và lập kế hoạch tác vụ cho Claude, cải thiện hiệu quả làm việc.",
+        "stars": "26.6K+",
+        "verdict": "yes",
+        "reason": "Hỗ trợ tự động hóa tác nhân và quản lý quy trình làm việc."
+      },
+      {
+        "name": "jeffallan/claude-skills",
+        "url": "https://github.com/jeffallan/claude-skills",
+        "desc": "Một kho lưu trữ chứa 66 kỹ năng chuyên biệt cho nhà phát triển, tự động kích hoạt dựa trên ngữ cảnh.",
+        "stars": "Không rõ",
+        "verdict": "yes",
+        "reason": "Tập trung vào các kỹ năng và tự động hóa cho nhà phát triển."
+      },
+      {
+        "name": "claude-code-best-practice",
+        "url": "https://github.com/claude-code-best-practice",
+        "desc": "Cung cấp các phương pháp hay nhất và ví dụ để sử dụng Claude Code hiệu quả.",
+        "stars": "15K+",
+        "verdict": "yes",
+        "reason": "Hướng dẫn sử dụng Claude Code hiệu quả, rất hữu ích cho người dùng."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-04-21",
     "dayLabel": "Thứ Ba",
     "dateLabel": "21/04/2026",
