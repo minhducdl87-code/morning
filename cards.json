@@ -1,5 +1,95 @@
 [
   {
+    "date": "2026-04-23",
+    "dayLabel": "Thứ Năm",
+    "dateLabel": "23/04/2026",
+    "news": [
+      {
+        "title": "⚠️ Loại Bỏ Claude Code Khỏi Gói Pro (Thử Nghiệm)",
+        "desc": "Anthropic đã tạm thời loại bỏ quyền truy cập Claude Code khỏi gói Pro 20$/tháng cho một số người dùng mới, nhưng sau đó tuyên bố đây chỉ là một thử nghiệm nhỏ.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "22/04/2026·vertexaisearch.cloud.google.com",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVdcbU8ED4PIvWs9jNpADOs6kCe_3I_pN9Y8JVsvIK_snyjJlT2kVqP3fsyBvB_LAlzMmRRkvTKBEwcGOvmfuqY14tj7l3riZrvbBBT_f3Orn1q0-t7SfXwTwm-05oQrBuRnLrZ2F1WBZ2BFEV5_x0iYIJqjo="
+      },
+      {
+        "title": "🚨 Claude Tạo Mã Có Lỗ Hổng Bảo Mật",
+        "desc": "Các chuyên gia an ninh mạng cảnh báo rằng các mô hình Claude mới nhất của Anthropic đang tạo ra mã có các vấn đề bảo mật nghiêm trọng và chất lượng kém.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "22/04/2026·Forbes",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhcfIYOrjFiItYxnQegEw6Fog1gUd-V36b_mbCfYoewQGkYg-a7G0HYKNCDXOHckz8rVnjYo5eLY9Q_hJpXZRw1BwGigy3j9aYBcN09yKqGlI5yP-l-wxnkGnRw4aw1qHrdtn4J4mmjGsq9j_D2Zg6kD2GBVrWBTiwKjhTryKI4sn4gTVzz8zpc2kDp8Kplf1d1rNYqieVVFhxCRpmBkV38TDJe1u9Sfkn_ATh2xhg2Rx7GA=="
+      },
+      {
+        "title": "✨ Claude Code: Chế Độ Toàn Màn Hình /tui",
+        "desc": "Claude Code thêm lệnh /tui fullscreen để chuyển sang chế độ hiển thị toàn màn hình không nhấp nháy trong cuộc trò chuyện.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "18/04/2026·Claude Code Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhC_C9MbI2mhpTfWT042aeJXjbAvbIChru1uc763ibbt5nk8JR5v1-4R7LReOLtvsfvYEyH7CbjppLmeokJlWo9sWxpv43Dr0rngcB2vhr70QNW0uGLdIOpApyKddTNH8D4no="
+      },
+      {
+        "title": "✨ Claude Code: Hỗ Trợ Thông Báo Đẩy",
+        "desc": "Claude Code giờ đây có thể gửi thông báo đẩy di động khi Remote Control và tùy chọn \"Push when Claude decides\" được bật.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "18/04/2026·Claude Code Docs",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhC_C9MbI2mhpTfWT042aeJXjbAvbIChru1uc763ibbt5nk8JR5v1-4R7LReOLtvsfvYEyH7CbjppLmeokJlWo9sWxpv43Dr0rngcB2vhr70QNW0uGLdIOpApyKddTNH8D4no="
+      },
+      {
+        "title": "✨ Claude Opus 4.7: Ngân Sách Nhiệm Vụ (Beta)",
+        "desc": "Claude Opus 4.7 giới thiệu tính năng ngân sách nhiệm vụ (task budgets) ở dạng beta, cho phép người dùng kiểm soát lượng token mà mô hình sử dụng cho một tác vụ.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "16/04/2026·Anthropic",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzaT16sB5gVK9zfaMeUXFBqJJfmb2NC4tRlZszaa10VNIDLSi_GiyBgbY--k0A6pnYX7YdbuJBGIZJcPHjTKHBavdLPR8sy0_FezIRf8_hJ2lj6Bse3uGTd598qwzGtwgssdikyky1GYVv6_ALXdQPW1QLQxJLOpyYAFi_OkkZ45DJp9i3qoQ="
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Claude Code là một công cụ lập trình agentic chạy trong terminal, hiểu codebase và giúp bạn viết mã nhanh hơn.",
+        "stars": "114.3k+",
+        "verdict": "yes",
+        "reason": "Kho lưu trữ chính thức, công cụ lập trình AI agentic."
+      },
+      {
+        "name": "webfuse-com/awesome-claude",
+        "url": "https://github.com/webfuse-com/awesome-claude",
+        "desc": "Một danh sách được tuyển chọn các tài nguyên tuyệt vời liên quan đến Anthropic Claude, bao gồm SDK, công cụ phát triển và hướng dẫn cộng đồng.",
+        "stars": "Không rõ",
+        "verdict": "yes",
+        "reason": "Tài nguyên tổng hợp hữu ích cho các công cụ và SDK của Claude."
+      },
+      {
+        "name": "claude-code-best-practice",
+        "url": "https://github.com/claude-code-best-practice",
+        "desc": "Kho lưu trữ này cung cấp các phương pháp hay nhất và ví dụ để sử dụng Claude Code hiệu quả.",
+        "stars": "15K+",
+        "verdict": "yes",
+        "reason": "Hướng dẫn thực tế và ví dụ để tối ưu hóa việc sử dụng Claude Code."
+      },
+      {
+        "name": "nano-claude-code",
+        "url": "https://github.com/nano-claude-code",
+        "desc": "Một triển khai lại tối thiểu của Claude Code bằng Python, hỗ trợ nhiều mô hình và có hệ thống kỹ năng, bộ nhớ.",
+        "stars": "Không rõ",
+        "verdict": "yes",
+        "reason": "Triển khai lại mã nguồn mở, hữu ích cho nghiên cứu và tùy chỉnh."
+      },
+      {
+        "name": "claude-agent-sdk-python",
+        "url": "https://github.com/anthropics/claude-agent-sdk-python",
+        "desc": "SDK Python chính thức để xây dựng các tác nhân tự trị tùy chỉnh với khả năng của Claude Code.",
+        "stars": "Không rõ",
+        "verdict": "yes",
+        "reason": "SDK chính thức cần thiết để phát triển tác nhân Claude."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-04-22",
     "dayLabel": "Thứ Tư",
     "dateLabel": "22/04/2026",
