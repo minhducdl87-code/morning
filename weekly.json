@@ -1,60 +1,60 @@
 [
   {
     "weekLabel": "Tuần 17/2026",
-    "fromDate": "2026-04-14",
-    "toDate": "2026-04-20",
+    "fromDate": "2026-04-17",
+    "toDate": "2026-04-23",
     "highlights": [
       {
-        "title": "🧠 Claude Opus 4.7 Ra Mắt",
-        "desc": "Phiên bản Claude Opus 4.7 mới đã được ra mắt, mang đến những cải tiến đáng kể về hiệu suất và khả năng. Đây là một bước tiến quan trọng trong việc nâng cao năng lực của Claude, hứa hẹn trải nghiệm người dùng tốt hơn.",
+        "title": "🧠 Claude Micro Ra Mắt",
+        "desc": "Anthropic đã giới thiệu Claude Micro, một mô hình mới được thiết kế để cung cấp hiệu suất cao với chi phí thấp hơn, phù hợp cho các tác vụ cần phản hồi nhanh và hiệu quả. Điều này mở rộng khả năng tiếp cận các mô hình Claude cho nhiều ứng dụng hơn.",
         "tag": "model",
         "tagLabel": "🧠 MODEL"
       },
       {
-        "title": "🚨 Cảnh Báo: Thay Đổi Gói Đăng Ký Claude Max",
-        "desc": "Anthropic đã thông báo về những thay đổi quan trọng trong các gói đăng ký Claude Max. Người dùng nên xem xét kỹ các thay đổi này để đảm bảo không bị gián đoạn dịch vụ hoặc ảnh hưởng đến chi phí.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT"
+        "title": "🧠 Claude Opus 4.7 Ra Mắt",
+        "desc": "Claude Opus 4.7 đã được phát hành, mang đến những cải tiến đáng kể về khả năng và hiệu suất. Phiên bản này bao gồm các tính năng API mới như cấp độ nỗ lực 'xhigh' và ngân sách tác vụ beta, cùng với những thay đổi gây đứt gãy API quan trọng mà các nhà phát triển cần lưu ý.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL"
       },
       {
-        "title": "☁️ Claude Có Sẵn Trên Amazon Bedrock",
-        "desc": "Claude hiện đã có mặt trên Amazon Bedrock, mở rộng khả năng tiếp cận và tích hợp cho các nhà phát triển và doanh nghiệp sử dụng nền tảng đám mây của Amazon. Điều này giúp Claude tiếp cận một lượng lớn người dùng tiềm năng.",
+        "title": "✨ Claude: Hỗ Trợ Phân Tích Video Thời Gian Thực",
+        "desc": "Claude giờ đây có khả năng hỗ trợ phân tích video thời gian thực, một tính năng đột phá cho phép xử lý và hiểu dữ liệu hình ảnh động ngay lập tức. Điều này mở ra nhiều ứng dụng mới trong giám sát, an ninh và tương tác người-máy.",
         "tag": "feature",
         "tagLabel": "✨ FEATURE"
       },
       {
-        "title": "📈 Tăng Giới Hạn Max_Tokens Lên 300K",
-        "desc": "Giới hạn max_tokens cho Claude API đã được tăng lên 300K, cho phép người dùng xử lý các tác vụ phức tạp hơn và dài hơn. Cải tiến này đặc biệt hữu ích cho các ứng dụng yêu cầu ngữ cảnh rộng.",
-        "tag": "api",
-        "tagLabel": "🔧 API"
+        "title": "🔥 Mở Rộng Hợp Tác Với Google Cloud & Amazon",
+        "desc": "Anthropic đã tăng cường hợp tác với Google Cloud và mở rộng quan hệ đối tác với Amazon. Những hợp tác này giúp Claude tiếp cận được nhiều người dùng và doanh nghiệp hơn thông qua các nền tảng đám mây lớn, đồng thời thúc đẩy sự phát triển và tích hợp của các dịch vụ AI.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT"
       },
       {
-        "title": "⏰ Ngừng Hỗ Trợ Claude Sonnet 4 & Opus 4",
-        "desc": "Anthropic đã thông báo ngừng hỗ trợ các phiên bản Claude Sonnet 4 và Opus 4. Người dùng cần cập nhật lên các phiên bản mới hơn để tiếp tục nhận được hỗ trợ và các tính năng mới nhất.",
+        "title": "⏰ Ngừng Hỗ Trợ Claude 4/Sonnet 4 & 1M Context Beta",
+        "desc": "Anthropic đã thông báo ngừng hỗ trợ các phiên bản Claude 4/Sonnet 4 và tính năng 1M Context Beta. Các nhà phát triển cần cập nhật lên các phiên bản mới hơn để đảm bảo tính tương thích và tận dụng các cải tiến mới nhất.",
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE"
       }
     ],
     "topRepos": [
       {
-        "name": "zcaceres/markdownify-mcp",
-        "url": "https://github.com/zcaceres/markdownify-mcp",
-        "desc": "Máy chủ Giao thức Ngữ cảnh Mô hình (MCP) này nổi bật vì khả năng chuyển đổi hầu hết mọi thứ thành Markdown, được nhắc đến nhiều lần trong tuần và có vẻ rất hữu ích cho các tác nhân AI.",
-        "stars": "Không rõ",
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Công cụ lập trình agentic CLI của Anthropic tiếp tục là một trong những repo nổi bật nhất tuần này với các cập nhật về tính năng tự động, lệnh /ultrareview và hỗ trợ PowerShell, Worktree, giúp tăng tốc quá trình phát triển và kiểm tra mã.",
+        "stars": "N/A",
         "verdict": "yes"
       },
       {
-        "name": "ComposioHQ/open-claude-cowork",
-        "url": "https://github.com/ComposioHQ/open-claude-cowork",
-        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp đã thu hút sự chú ý đáng kể, cho thấy nhu cầu cao về các công cụ hợp tác AI đa năng.",
-        "stars": "Không rõ",
+        "name": "webfuse-com/awesome-claude",
+        "url": "https://github.com/webfuse-com/awesome-claude",
+        "desc": "Danh sách tuyển chọn các tài nguyên và công cụ tuyệt vời liên quan đến Claude, được cập nhật liên tục với các thông tin mới nhất, là nguồn tài liệu quý giá cho cộng đồng nhà phát triển Claude.",
+        "stars": "N/A",
         "verdict": "yes"
       },
       {
-        "name": "zebbern/claude-code-guide",
-        "url": "https://github.com/zebbern/claude-code-guide",
-        "desc": "Hướng dẫn toàn diện về Claude Code này được nhắc đến nhiều lần, cho thấy nó là một tài nguyên quan trọng cho người dùng muốn tìm hiểu và làm việc với Claude Code.",
-        "stars": "Không rõ",
+        "name": "alirezarezvani/claude-skills",
+        "url": "https://github.com/alirezarezvani/claude-skills",
+        "desc": "Kho lưu trữ khổng lồ với hơn 232 kỹ năng và plugin agent cho Claude Code, cung cấp các công cụ đa dạng để mở rộng khả năng của Claude và tự động hóa nhiều tác vụ khác nhau.",
+        "stars": "N/A",
         "verdict": "yes"
       }
     ],
