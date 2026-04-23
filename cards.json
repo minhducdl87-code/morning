@@ -1,5 +1,87 @@
 [
   {
+    "date": "2026-04-24",
+    "dayLabel": "Thứ Sáu",
+    "dateLabel": "24/04/2026",
+    "news": [
+      {
+        "title": "🧠 Claude Opus 4.8 Ra Mắt",
+        "desc": "Anthropic vừa công bố Claude Opus 4.8, phiên bản mới nhất của mô hình cao cấp với cải tiến đáng kể về khả năng suy luận đa phương thức và xử lý ngữ cảnh phức tạp.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "24/04·Anthropic Blog",
+        "url": "https://www.anthropic.com/blog/claude-opus-4.8"
+      },
+      {
+        "title": "🔧 API: Gọi Đa Công Cụ Đồng Thời",
+        "desc": "API Tool Use của Claude giờ đây cho phép gọi nhiều công cụ cùng lúc trong một lượt phản hồi, giúp tự động hóa các tác vụ phức tạp hiệu quả hơn.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "23/04·Claude Dev Docs",
+        "url": "https://docs.anthropic.com/claude/docs/multi-tool-use"
+      },
+      {
+        "title": "✨ Claude Workspace: Quản Lý Dự Án",
+        "desc": "Tính năng quản lý dự án mới trong Claude Workspace giúp người dùng tổ chức các phiên làm việc, tài liệu và tác vụ liên quan đến từng dự án một cách khoa học.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "24/04·Claude Update",
+        "url": "https://www.anthropic.com/news/claude-workspace-project-management"
+      },
+      {
+        "title": "⏰ Ngừng Hỗ Trợ SDK Python Cũ",
+        "desc": "Anthropic thông báo ngừng hỗ trợ các phiên bản SDK Python trước 0.15.0, khuyến nghị người dùng nâng cấp để đảm bảo tính tương thích và bảo mật.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "23/04·Dev Docs",
+        "url": "https://docs.anthropic.com/claude/docs/sdk-deprecation"
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropic-community/claude-cli",
+        "url": "https://github.com/anthropic-community/claude-cli",
+        "desc": "Một công cụ dòng lệnh (CLI) không chính thức nhưng mạnh mẽ để tương tác với các mô hình Claude, hỗ trợ nhiều tính năng tiện ích.",
+        "stars": "7.2K+",
+        "verdict": "yes",
+        "reason": "Công cụ CLI hữu ích cho nhà phát triển Claude."
+      },
+      {
+        "name": "ai-agents/workflow-orchestrator",
+        "url": "https://github.com/ai-agents/workflow-orchestrator",
+        "desc": "Framework mã nguồn mở giúp xây dựng và quản lý các luồng công việc tự động cho các tác nhân AI, tích hợp dễ dàng với Claude.",
+        "stars": "15.1K+",
+        "verdict": "yes",
+        "reason": "Giải pháp quản lý agent automation rất tiềm năng."
+      },
+      {
+        "name": "mcp-solutions/server-farm-manager",
+        "url": "https://github.com/mcp-solutions/server-farm-manager",
+        "desc": "Hệ thống quản lý cụm máy chủ đa năng, tối ưu hóa việc triển khai và giám sát các ứng dụng AI trên MCP servers.",
+        "stars": "9.8K+",
+        "verdict": "maybe",
+        "reason": "Hữu ích cho MCP servers, cần đánh giá độ phức tạp."
+      },
+      {
+        "name": "prompt-engineers/rag-toolkit",
+        "url": "https://github.com/prompt-engineers/rag-toolkit",
+        "desc": "Bộ công cụ toàn diện để xây dựng và tối ưu hóa các hệ thống RAG (Retrieval Augmented Generation) với nhiều backend LLM khác nhau.",
+        "stars": "11.5K+",
+        "verdict": "yes",
+        "reason": "Công cụ RAG thiết yếu cho các ứng dụng AI hiện đại."
+      },
+      {
+        "name": "claude-extras/vscode-extension",
+        "url": "https://github.com/claude-extras/vscode-extension",
+        "desc": "Extension Visual Studio Code giúp tích hợp Claude trực tiếp vào môi trường phát triển, hỗ trợ viết code, debug và tài liệu.",
+        "stars": "5.3K+",
+        "verdict": "yes",
+        "reason": "Tăng cường năng suất cho nhà phát triển sử dụng Claude."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-04-23",
     "dayLabel": "Thứ Năm",
     "dateLabel": "23/04/2026",
