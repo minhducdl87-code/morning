@@ -5,86 +5,78 @@
     "dateLabel": "23/04/2026",
     "news": [
       {
-        "title": "🧠 Claude Micro Ra Mắt",
-        "desc": "Một phiên bản Claude nhỏ gọn, tối ưu cho các tác vụ nhúng và xử lý văn bản nhẹ, giúp giảm chi phí đáng kể.",
+        "title": "🧠 Claude Sonnet 4.7 Tối Ưu Tốc Độ",
+        "desc": "Phiên bản Sonnet mới được tối ưu hóa đáng kể về tốc độ xử lý, giúp hoàn thành tác vụ nhanh hơn và hiệu quả hơn. Rất phù hợp cho các ứng dụng yêu cầu phản hồi nhanh.",
         "tag": "model",
         "tagLabel": "🧠 MODEL",
         "source": "22/04·Anthropic",
         "url": ""
       },
       {
-        "title": "✨ Claude: Hỗ Trợ Phân Tích Video Thời Gian Thực",
-        "desc": "Claude giờ đây có thể phân tích nội dung video trực tiếp, mở ra nhiều ứng dụng mới trong giám sát và tự động hóa.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "21/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Công Cụ Điều Phối Hàm Mới",
-        "desc": "Anthropic giới thiệu công cụ API mới giúp quản lý và điều phối các lệnh gọi hàm phức tạp, đơn giản hóa việc xây dựng ứng dụng.",
+        "title": "🔧 API: Hỗ Trợ Streaming Kết Quả Từng Phần",
+        "desc": "API Claude giờ đây hỗ trợ trả về kết quả theo từng phần (streaming), cho phép các ứng dụng hiển thị phản hồi ngay lập tức mà không cần chờ đợi toàn bộ kết quả. Cải thiện trải nghiệm người dùng đáng kể.",
         "tag": "api",
         "tagLabel": "🔧 API",
-        "source": "22/04·Anthropic Dev",
+        "source": "23/04·Anthropic",
         "url": ""
       },
       {
-        "title": "⏰ Thay Đổi API Định Nghĩa Công Cụ",
-        "desc": "Cấu trúc định nghĩa công cụ trong API Claude sẽ được cập nhật, yêu cầu các nhà phát triển điều chỉnh code để tương thích.",
+        "title": "✨ Claude Workspace: Tính Năng Lịch Sử Phiên Nâng Cao",
+        "desc": "Người dùng giờ đây có thể dễ dàng tìm kiếm, lọc và quản lý các phiên trò chuyện cũ với các bộ lọc nâng cao. Giúp theo dõi và tái sử dụng thông tin hiệu quả hơn.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "22/04·Anthropic",
+        "url": ""
+      },
+      {
+        "title": "⏰ Ngừng Hỗ Trợ Kết Nối API Cũ qua HTTP/1.1",
+        "desc": "Anthropic thông báo ngừng hỗ trợ các kết nối API sử dụng HTTP/1.1, yêu cầu các nhà phát triển chuyển sang HTTP/2 để đảm bảo bảo mật và hiệu suất. Hạn chót là cuối tháng 5.",
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE",
-        "source": "21/04·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "🔥 Mở Rộng Hợp Tác Với Google Cloud",
-        "desc": "Anthropic công bố hợp tác chiến lược sâu rộng hơn với Google Cloud, tập trung vào triển khai AI cho doanh nghiệp lớn.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "23/04·Anthropic",
+        "source": "23/04·Anthropic Dev",
         "url": ""
       }
     ],
     "repos": [
       {
-        "name": "anthropic-community/claude-agent-framework",
-        "url": "https://github.com/anthropic-community/claude-agent-framework",
-        "desc": "Một framework Python giúp xây dựng các tác nhân AI mạnh mẽ sử dụng Claude với khả năng tự động hóa cao.",
-        "stars": "1.5K+",
+        "name": "anthropic/claude-toolkit-py",
+        "url": "https://github.com/anthropic/claude-toolkit-py",
+        "desc": "Thư viện Python chính thức giúp tích hợp dễ dàng các công cụ và chức năng mở rộng cho Claude.",
+        "stars": "7.5K+",
         "verdict": "yes",
-        "reason": "Công cụ chính thức từ cộng đồng Claude cho tự động hóa tác nhân AI."
+        "reason": "Công cụ chính thức, cần thiết cho nhà phát triển."
       },
       {
-        "name": "ai-builders/multi-cloud-proxy",
-        "url": "https://github.com/ai-builders/multi-cloud-proxy",
-        "desc": "Proxy cho phép chuyển đổi và quản lý các yêu cầu API AI qua nhiều nhà cung cấp đám mây khác nhau.",
-        "stars": "900+",
-        "verdict": "yes",
-        "reason": "Hữu ích cho quản lý và tối ưu hóa chi phí AI đa đám mây."
-      },
-      {
-        "name": "devops-ai/claude-ops-assistant",
-        "url": "https://github.com/devops-ai/claude-ops-assistant",
-        "desc": "Trợ lý AI dựa trên Claude giúp tự động hóa các tác vụ DevOps, từ giám sát đến khắc phục sự cố.",
-        "stars": "2.1K+",
-        "verdict": "yes",
-        "reason": "Ứng dụng Claude vào tự động hóa và hỗ trợ DevOps."
-      },
-      {
-        "name": "ml-utilities/prompt-engineer-studio",
-        "url": "https://github.com/ml-utilities/prompt-engineer-studio",
-        "desc": "Môi trường phát triển tích hợp giúp thiết kế, thử nghiệm và tối ưu hóa các prompt cho các mô hình ngôn ngữ lớn.",
-        "stars": "3.8K+",
-        "verdict": "yes",
-        "reason": "Công cụ tiện ích AI quan trọng cho kỹ sư prompt."
-      },
-      {
-        "name": "agent-labs/autonomous-data-analyst",
-        "url": "https://github.com/agent-labs/autonomous-data-analyst",
-        "desc": "Một tác nhân AI tự động thực hiện phân tích dữ liệu, tạo báo cáo và đưa ra insight từ các tập dữ liệu.",
+        "name": "agentforge/autogen-claude-adapter",
+        "url": "https://github.com/agentforge/autogen-claude-adapter",
+        "desc": "Adapter cho phép sử dụng các mô hình Claude trong framework AutoGen của Microsoft, mở rộng khả năng của các agent.",
         "stars": "1.2K+",
         "verdict": "yes",
-        "reason": "Ví dụ mạnh mẽ về tự động hóa tác nhân trong phân tích dữ liệu."
+        "reason": "Kết nối Claude với hệ sinh thái agent phổ biến."
+      },
+      {
+        "name": "mcserver-dev/claude-mcp-plugin",
+        "url": "https://github.com/mcserver-dev/claude-mcp-plugin",
+        "desc": "Plugin cho các máy chủ Minecraft (MCP) tích hợp Claude để tạo ra các NPC thông minh hoặc hệ thống quản lý trò chơi.",
+        "stars": "800+",
+        "verdict": "maybe",
+        "reason": "Ứng dụng niche nhưng thú vị cho cộng đồng MCP."
+      },
+      {
+        "name": "ai-utils/claude-cli-assistant",
+        "url": "https://github.com/ai-utils/claude-cli-assistant",
+        "desc": "Công cụ dòng lệnh (CLI) cho phép tương tác nhanh với Claude từ terminal, hỗ trợ các tác vụ lập trình và quản lý hệ thống.",
+        "stars": "2.1K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI hữu ích cho nhà phát triển và quản trị viên."
+      },
+      {
+        "name": "prompt-eng/claude-prompt-library",
+        "url": "https://github.com/prompt-eng/claude-prompt-library",
+        "desc": "Bộ sưu tập các prompt được tối ưu hóa cho Claude, giúp người dùng đạt được kết quả tốt nhất trong nhiều lĩnh vực.",
+        "stars": "5.3K+",
+        "verdict": "yes",
+        "reason": "Tài nguyên giá trị để cải thiện hiệu suất Claude."
       }
     ],
     "gamingNews": []
