@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 from google import genai
 from google.genai import types
 from digest_utils import get_recent_titles, get_recent_urls
+from jina_fetch import fetch_topic_context
 
 try:
     import zoneinfo
@@ -34,105 +35,109 @@ with open("cards.json", "r", encoding="utf-8") as f:
 recent_titles = get_recent_titles(cards, date_str, now, days=3)
 recent_urls   = get_recent_urls(cards, date_str, now, days=3)
 
-def build_prompt(topics: dict, recent_titles: list) -> str:
-    """Build dynamic Gemini prompt based on enabled topics in config."""
+def build_prompt(topics: dict, recent_titles: list, topic_contexts: dict) -> str:
+    """Build Gemini prompt with pre-fetched Jina context."""
     lines = [
         f"Hôm nay là {day_label}, {date_label}.",
-        "Dùng Google Search tìm kiếm và tổng hợp morning digest. Thực hiện các task sau:\n"
+        "Dựa trên dữ liệu tìm kiếm bên dưới, tổng hợp morning digest.\n"
     ]
 
     schema_fields = f'"date":"{date_str}","dayLabel":"{day_label}","dateLabel":"{date_label}"'
 
     for i, (key, topic) in enumerate(topics.items(), start=1):
-        queries = " và ".join(
-            f'"{q.replace("{month_year}", month_year)}"'
-            for q in topic["search_queries"]
-        )
         field   = topic["output_field"]
         min_i   = topic["min_items"]
         max_i   = topic["max_items"]
         instr   = topic["prompt_instruction"]
         schema  = topic["schema"]
 
-        lines.append(f"TASK {i}: Search {queries}")
-        lines.append(f"{instr}")
+        lines.append(f"── TASK {i}: {key} ──")
+        lines.append(instr)
+
+        ctx = topic_contexts.get(key, "")
+        if ctx:
+            lines.append(f"Dữ liệu tìm kiếm:\n{ctx}")
+        else:
+            lines.append("(Không có dữ liệu tìm kiếm — tự tổng hợp từ kiến thức.)")
+
         lines.append(f'Trả về field "{field}" với {min_i}-{max_i} items, schema mỗi item: {schema}\n')
         schema_fields += f',"{field}":[...]'
 
-    # Inject recent titles so Gemini avoids repeating them
     if recent_titles:
-        lines.append(f"\nTRÁNH lặp lại — các tin sau đã xuất hiện trong 3 ngày qua, KHÔNG đưa vào kết quả:")
-        for t in recent_titles[:15]:  # cap 15 to keep prompt lean
+        lines.append("TRÁNH lặp lại — các tin sau đã xuất hiện trong 3 ngày qua, KHÔNG đưa vào:")
+        for t in recent_titles[:15]:
             lines.append(f"  - {t}")
         lines.append("")
 
     lines.append("Trả về CHỈ JSON (không markdown, không text thêm):")
     lines.append("{" + schema_fields + "}")
-    lines.append("Rules: tiếng Việt ngắn gọn dễ hiểu. BẮT BUỘC trả về ĐẦY ĐỦ tất cả các field trong schema, KHÔNG được bỏ sót field nào.")
+    lines.append("Rules: tiếng Việt ngắn gọn dễ hiểu. BẮT BUỘC trả về ĐẦY ĐỦ tất cả các field.")
 
     return "\n".join(lines)
 
 
-PROMPT = build_prompt(topics, recent_titles)
+# --- Step 1: Fetch web content via Jina ---
 print(f"Generating card for {date_str} | topics: {list(topics.keys())}...")
-print(f"Prompt length: {len(PROMPT)} chars")
+print("Step 1: Fetching web content via Jina...")
+
+topic_contexts = {}
+for key, topic in topics.items():
+    ctx = fetch_topic_context(topic, month_year)
+    topic_contexts[key] = ctx
+
+has_jina = any(topic_contexts.values())
+print(f"Jina fetch done. Has context: {has_jina}")
+
+# --- Step 2: Build prompt and call Gemini ---
+PROMPT = build_prompt(topics, recent_titles, topic_contexts)
+print(f"Step 2: Calling Gemini... (prompt: {len(PROMPT)} chars)")
 
 
-def call_gemini(prompt, retries=2):
-    """Call Gemini with retry, extract ONLY model text parts (skip thought parts)."""
+def call_gemini(prompt, retries=2, use_search=False):
+    """Call Gemini with retry. use_search=True enables Google Search as fallback."""
+    tools = [types.Tool(google_search=types.GoogleSearch())] if use_search else []
     for attempt in range(retries + 1):
         try:
             response = client.models.generate_content(
                 model="gemini-2.5-flash",
                 contents=prompt,
                 config=types.GenerateContentConfig(
-                    tools=[types.Tool(google_search=types.GoogleSearch())],
+                    tools=tools,
                     temperature=0.5,
                     max_output_tokens=8192,
-                    # Let the model think but with a budget
                     thinking_config=types.ThinkingConfig(thinking_budget=2048),
                 )
             )
 
-            # Extract ONLY model text parts — skip thought parts
             text_parts = []
             if response.candidates:
                 for part in (response.candidates[0].content.parts or []):
-                    # Skip thought parts (thinking model internals)
                     if hasattr(part, 'thought') and part.thought:
                         continue
-                    # Only collect actual text output
                     if hasattr(part, 'text') and part.text:
                         text_parts.append(part.text)
 
             text = "\n".join(text_parts).strip()
             if text:
-                print(f"Attempt {attempt+1}: got {len(text)} chars response")
+                print(f"  Attempt {attempt+1}: got {len(text)} chars")
                 return text
 
-            # Debug: show what we got
-            finish_reason = "unknown"
+            finish = "unknown"
             if response.candidates:
-                finish_reason = str(response.candidates[0].finish_reason)
-                part_types = []
-                for part in (response.candidates[0].content.parts or []):
-                    if hasattr(part, 'thought') and part.thought:
-                        part_types.append("thought")
-                    elif hasattr(part, 'text') and part.text:
-                        part_types.append("text")
-                    else:
-                        part_types.append(f"other({type(part).__name__})")
-                print(f"Attempt {attempt+1}: empty text. Finish: {finish_reason}, parts: {part_types}")
-            else:
-                print(f"Attempt {attempt+1}: no candidates")
+                finish = str(response.candidates[0].finish_reason)
+            print(f"  Attempt {attempt+1}: empty. Finish: {finish}")
 
         except Exception as e:
-            print(f"Attempt {attempt+1} error: {e}")
+            print(f"  Attempt {attempt+1} error: {e}")
 
     return None
 
 
-text = call_gemini(PROMPT)
+# Try without Google Search first (Jina context), fallback to Google Search
+text = call_gemini(PROMPT, use_search=False)
+if not text and not has_jina:
+    print("Jina had no data and Gemini failed — retrying with Google Search grounding...")
+    text = call_gemini(PROMPT, retries=1, use_search=True)
 
 # --- Parse JSON response ---
 if not text:

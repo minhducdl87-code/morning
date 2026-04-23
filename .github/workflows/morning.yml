@@ -24,6 +24,7 @@ jobs:
       - name: Generate daily card
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
         run: python generate_card.py
 
       - name: Notify Telegram
