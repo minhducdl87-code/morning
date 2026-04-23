@@ -5,60 +5,73 @@
     "toDate": "2026-04-23",
     "highlights": [
       {
-        "title": "🧠 Claude Micro Ra Mắt",
-        "desc": "Anthropic đã giới thiệu Claude Micro, một mô hình mới được thiết kế để cung cấp hiệu suất cao với chi phí thấp hơn, phù hợp cho các tác vụ cần phản hồi nhanh và hiệu quả. Điều này mở rộng khả năng tiếp cận các mô hình Claude cho nhiều ứng dụng hơn.",
+        "title": "🧠 Claude Opus 4.7 & Sonnet 4.7 Ra Mắt",
+        "desc": "Anthropic đã ra mắt đồng thời hai mô hình AI mới: Claude Opus 4.7 và Claude Sonnet 4.7. Opus 4.7 là mô hình cao cấp, trong khi Sonnet 4.7 được tối ưu hóa về tốc độ, mang lại nhiều lựa chọn hơn cho người dùng và nhà phát triển.",
         "tag": "model",
         "tagLabel": "🧠 MODEL"
       },
       {
-        "title": "🧠 Claude Opus 4.7 Ra Mắt",
-        "desc": "Claude Opus 4.7 đã được phát hành, mang đến những cải tiến đáng kể về khả năng và hiệu suất. Phiên bản này bao gồm các tính năng API mới như cấp độ nỗ lực 'xhigh' và ngân sách tác vụ beta, cùng với những thay đổi gây đứt gãy API quan trọng mà các nhà phát triển cần lưu ý.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL"
+        "title": "⏰ Ngừng Hỗ Trợ Các Phiên Bản Claude Cũ",
+        "desc": "Anthropic thông báo ngừng hỗ trợ các phiên bản Claude 4/Sonnet 4 và Opus 4, cùng với việc ngừng hỗ trợ kết nối API cũ qua HTTP/1.1. Người dùng cần cập nhật để đảm bảo tính tương thích và an toàn.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE"
       },
       {
-        "title": "✨ Claude: Hỗ Trợ Phân Tích Video Thời Gian Thực",
-        "desc": "Claude giờ đây có khả năng hỗ trợ phân tích video thời gian thực, một tính năng đột phá cho phép xử lý và hiểu dữ liệu hình ảnh động ngay lập tức. Điều này mở ra nhiều ứng dụng mới trong giám sát, an ninh và tương tác người-máy.",
+        "title": "✨ Claude Code: Nhiều Tính Năng Mới",
+        "desc": "Claude Code liên tục được bổ sung các tính năng mạnh mẽ như hỗ trợ Worktree, PowerShell, chế độ tự động cho Max, lệnh /ultrareview và tính năng đánh giá mã với Agent, nâng cao khả năng lập trình và quản lý dự án.",
         "tag": "feature",
         "tagLabel": "✨ FEATURE"
       },
       {
-        "title": "🔥 Mở Rộng Hợp Tác Với Google Cloud & Amazon",
-        "desc": "Anthropic đã tăng cường hợp tác với Google Cloud và mở rộng quan hệ đối tác với Amazon. Những hợp tác này giúp Claude tiếp cận được nhiều người dùng và doanh nghiệp hơn thông qua các nền tảng đám mây lớn, đồng thời thúc đẩy sự phát triển và tích hợp của các dịch vụ AI.",
+        "title": "🔥 Lỗ Hổng Prompt Injection trong Claude Code Security Review",
+        "desc": "Một lỗ hổng prompt injection nghiêm trọng đã được phát hiện trong tính năng Security Review của Claude Code, tiềm ẩn rủi ro bảo mật. Người dùng cần cảnh giác và theo dõi các bản vá lỗi từ Anthropic.",
         "tag": "hot",
         "tagLabel": "🔥 HOT"
       },
       {
-        "title": "⏰ Ngừng Hỗ Trợ Claude 4/Sonnet 4 & 1M Context Beta",
-        "desc": "Anthropic đã thông báo ngừng hỗ trợ các phiên bản Claude 4/Sonnet 4 và tính năng 1M Context Beta. Các nhà phát triển cần cập nhật lên các phiên bản mới hơn để đảm bảo tính tương thích và tận dụng các cải tiến mới nhất.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE"
+        "title": "🔧 API: Hỗ Trợ Streaming Kết Quả Từng Phần & Tăng Giới Hạn Token",
+        "desc": "API của Claude giờ đây hỗ trợ streaming kết quả từng phần, cải thiện trải nghiệm người dùng. Đồng thời, giới hạn max_tokens đã được tăng lên 300K, cho phép xử lý các tác vụ phức tạp hơn.",
+        "tag": "api",
+        "tagLabel": "🔧 API"
       }
     ],
     "topRepos": [
       {
         "name": "anthropics/claude-code",
         "url": "https://github.com/anthropics/claude-code",
-        "desc": "Công cụ lập trình agentic CLI của Anthropic tiếp tục là một trong những repo nổi bật nhất tuần này với các cập nhật về tính năng tự động, lệnh /ultrareview và hỗ trợ PowerShell, Worktree, giúp tăng tốc quá trình phát triển và kiểm tra mã.",
+        "desc": "Công cụ lập trình agentic CLI chính thức của Anthropic, tiếp tục là tâm điểm với nhiều cập nhật và tính năng mới trong tuần này.",
         "stars": "N/A",
         "verdict": "yes"
       },
       {
         "name": "webfuse-com/awesome-claude",
         "url": "https://github.com/webfuse-com/awesome-claude",
-        "desc": "Danh sách tuyển chọn các tài nguyên và công cụ tuyệt vời liên quan đến Claude, được cập nhật liên tục với các thông tin mới nhất, là nguồn tài liệu quý giá cho cộng đồng nhà phát triển Claude.",
+        "desc": "Danh sách tuyển chọn các tài nguyên và công cụ tuyệt vời liên quan đến Claude, được cập nhật thường xuyên và rất hữu ích cho cộng đồng.",
         "stars": "N/A",
         "verdict": "yes"
       },
       {
         "name": "alirezarezvani/claude-skills",
         "url": "https://github.com/alirezarezvani/claude-skills",
-        "desc": "Kho lưu trữ khổng lồ với hơn 232 kỹ năng và plugin agent cho Claude Code, cung cấp các công cụ đa dạng để mở rộng khả năng của Claude và tự động hóa nhiều tác vụ khác nhau.",
+        "desc": "Kho lưu trữ khổng lồ với hơn 232 kỹ năng và plugin agent cho Claude Code, cung cấp khả năng mở rộng mạnh mẽ cho các tác nhân AI.",
         "stars": "N/A",
         "verdict": "yes"
       }
     ],
-    "topGaming": []
+    "topGaming": [
+      {
+        "title": "🎮 mcserver-dev/claude-mcp-plugin",
+        "desc": "Plugin cho các máy chủ Minecraft (MCP) tích hợp Claude để tạo trải nghiệm tương tác AI trong game, mang lại khả năng sáng tạo mới cho người chơi.",
+        "tag": "gameplay",
+        "tagLabel": "🎮 GAMEPLAY"
+      },
+      {
+        "title": "🎮 Donchitos/Claude-Code-Game-Studios",
+        "desc": "Biến Claude Code thành một studio phát triển game hoàn chỉnh, cho phép AI hỗ trợ toàn bộ quá trình tạo game từ ý tưởng đến triển khai.",
+        "tag": "gameplay",
+        "tagLabel": "🎮 GAMEPLAY"
+      }
+    ]
   },
   {
     "weekLabel": "Tuần 16/2026",
