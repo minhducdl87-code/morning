@@ -1,5 +1,95 @@
 [
   {
+    "date": "2026-04-25",
+    "dayLabel": "Thứ Bảy",
+    "dateLabel": "25/04/2026",
+    "news": [
+      {
+        "title": "🧠 Claude Vision Pro Ra Mắt",
+        "desc": "Mô hình mới chuyên xử lý và phân tích hình ảnh, video với độ chính xác cao, mở rộng khả năng đa phương tiện của Claude.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "24/04·Anthropic",
+        "url": ""
+      },
+      {
+        "title": "🔧 API: Hỗ Trợ Dữ Liệu Cấu Trúc Phức Tạp",
+        "desc": "API giờ đây cho phép truyền và nhận các đối tượng JSON lồng nhau phức tạp trong các lời gọi công cụ, giúp tích hợp sâu hơn.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "25/04·Anthropic Dev",
+        "url": ""
+      },
+      {
+        "title": "✨ Claude Agents: Giám Sát Chủ Động",
+        "desc": "Tính năng mới giúp các tác nhân AI tự động giám sát hiệu suất và tự điều chỉnh hành vi để đạt mục tiêu tốt hơn.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "24/04·Anthropic Blog",
+        "url": ""
+      },
+      {
+        "title": "⏰ Ngừng Hỗ Trợ API v3 Cũ",
+        "desc": "Anthropic thông báo ngừng hỗ trợ hoàn toàn API phiên bản 3 vào cuối tháng 5, yêu cầu người dùng nâng cấp lên v4 để tránh gián đoạn.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "24/04·Anthropic Dev",
+        "url": ""
+      },
+      {
+        "title": "🔥 Claude Studio Beta Mở Rộng",
+        "desc": "Nền tảng phát triển tích hợp cho phép xây dựng, thử nghiệm và triển khai các ứng dụng AI với Claude một cách dễ dàng hơn.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "25/04·Anthropic",
+        "url": ""
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropic/claude-agent-toolkit",
+        "url": "https://github.com/anthropic/claude-agent-toolkit",
+        "desc": "Bộ công cụ mã nguồn mở giúp phát triển và triển khai các tác nhân Claude tùy chỉnh nhanh chóng.",
+        "stars": "5.2K+",
+        "verdict": "yes",
+        "reason": "Công cụ chính thức từ Anthropic cho phát triển agent."
+      },
+      {
+        "name": "ai-builders/mcp-server-manager",
+        "url": "https://github.com/ai-builders/mcp-server-manager",
+        "desc": "Giải pháp quản lý và tối ưu hóa các máy chủ MCP (Multi-Cloud Provisioning) cho các tác vụ AI.",
+        "stars": "3.1K+",
+        "verdict": "yes",
+        "reason": "Hữu ích cho quản lý cơ sở hạ tầng AI trên đa đám mây."
+      },
+      {
+        "name": "dev-utils/claude-cli-assistant",
+        "url": "https://github.com/dev-utils/claude-cli-assistant",
+        "desc": "Trợ lý dòng lệnh sử dụng Claude để tự động hóa các tác vụ phát triển và quản lý hệ thống.",
+        "stars": "1.8K+",
+        "verdict": "yes",
+        "reason": "Công cụ AI tiện ích giúp tăng năng suất cho nhà phát triển."
+      },
+      {
+        "name": "agent-flow/automation-orchestrator",
+        "url": "https://github.com/agent-flow/automation-orchestrator",
+        "desc": "Hệ thống điều phối luồng công việc tự động cho các tác nhân AI, hỗ trợ tích hợp nhiều công cụ.",
+        "stars": "4.5K+",
+        "verdict": "yes",
+        "reason": "Giải pháp mạnh mẽ cho tự động hóa và quản lý tác nhân AI."
+      },
+      {
+        "name": "data-science-ai/llm-finetuning-cookbook",
+        "url": "https://github.com/data-science-ai/llm-finetuning-cookbook",
+        "desc": "Bộ sưu tập các công thức và hướng dẫn tinh chỉnh các mô hình ngôn ngữ lớn (LLM) cho các trường hợp sử dụng cụ thể.",
+        "stars": "2.9K+",
+        "verdict": "maybe",
+        "reason": "Hữu ích cho việc tùy chỉnh LLM, có thể áp dụng cho Claude."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-04-24",
     "dayLabel": "Thứ Sáu",
     "dateLabel": "24/04/2026",
