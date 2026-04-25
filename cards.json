@@ -1,5 +1,95 @@
 [
   {
+    "date": "2026-04-26",
+    "dayLabel": "Chủ Nhật",
+    "dateLabel": "26/04/2026",
+    "news": [
+      {
+        "title": "🧠 Claude Haiku 4.5 Cải Thiện Suy Luận",
+        "desc": "Phiên bản mới của Claude Haiku ra mắt với khả năng suy luận logic và xử lý ngôn ngữ tự nhiên được nâng cấp đáng kể, phù hợp cho các tác vụ đòi hỏi độ chính xác cao.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "26/04·Anthropic",
+        "url": ""
+      },
+      {
+        "title": "✨ Claude Pro: Phân Tích Dữ Liệu Nâng Cao",
+        "desc": "Người dùng Claude Pro giờ đây có thể truy cập các công cụ phân tích dữ liệu tích hợp, cho phép xử lý và trực quan hóa thông tin phức tạp trực tiếp trong giao diện Claude.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "25/04·Anthropic",
+        "url": ""
+      },
+      {
+        "title": "🔧 API: Fine-tuning Tùy Chỉnh Cho Claude",
+        "desc": "Anthropic giới thiệu API mới cho phép các nhà phát triển tinh chỉnh mô hình Claude với dữ liệu riêng của họ, mở ra khả năng cá nhân hóa AI sâu hơn cho từng ứng dụng cụ thể.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "25/04·Anthropic Dev",
+        "url": ""
+      },
+      {
+        "title": "⏰ Thay Đổi Mô Hình Giá Claude Sắp Tới",
+        "desc": "Anthropic thông báo về việc cập nhật mô hình giá cho các dịch vụ Claude, dự kiến có hiệu lực từ tháng sau. Người dùng nên xem xét lại chi phí để tránh gián đoạn.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "26/04·Anthropic",
+        "url": ""
+      },
+      {
+        "title": "🔥 Claude Enterprise: Tích Hợp Kiến Thức Cơ Sở",
+        "desc": "Phiên bản Claude dành cho doanh nghiệp bổ sung tính năng tích hợp trực tiếp với các hệ thống kiến thức nội bộ, giúp AI truy cập thông tin chuyên sâu của tổ chức một cách liền mạch.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "25/04·Anthropic",
+        "url": ""
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropic/claude-tools-starter",
+        "url": "https://github.com/anthropic/claude-tools-starter",
+        "desc": "Bộ công cụ khởi đầu chính thức từ Anthropic giúp nhà phát triển dễ dàng tích hợp các công cụ tùy chỉnh với Claude.",
+        "stars": "7.8K+",
+        "verdict": "yes",
+        "reason": "Công cụ chính thức, hữu ích cho phát triển Claude."
+      },
+      {
+        "name": "ai-automation/agent-orchestrator",
+        "url": "https://github.com/ai-automation/agent-orchestrator",
+        "desc": "Framework mã nguồn mở để quản lý và điều phối nhiều tác nhân AI thực hiện các tác vụ phức tạp.",
+        "stars": "15.2K+",
+        "verdict": "yes",
+        "reason": "Hỗ trợ tự động hóa tác nhân, trọng tâm chính."
+      },
+      {
+        "name": "mcp-community/minecraft-server-manager",
+        "url": "https://github.com/mcp-community/minecraft-server-manager",
+        "desc": "Công cụ quản lý máy chủ Minecraft nâng cao với giao diện web, hỗ trợ nhiều phiên bản và plugin.",
+        "stars": "9.1K+",
+        "verdict": "yes",
+        "reason": "Quản lý MCP server, hữu ích cho cộng đồng."
+      },
+      {
+        "name": "ai-utilities/prompt-engineer-kit",
+        "url": "https://github.com/ai-utilities/prompt-engineer-kit",
+        "desc": "Bộ sưu tập các công cụ và tài nguyên giúp tối ưu hóa prompt cho các mô hình ngôn ngữ lớn như Claude.",
+        "stars": "11.5K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI trực tiếp hỗ trợ tối ưu Claude."
+      },
+      {
+        "name": "data-science/llm-evaluation-framework",
+        "url": "https://github.com/data-science/llm-evaluation-framework",
+        "desc": "Framework toàn diện để đánh giá hiệu suất và độ tin cậy của các mô hình ngôn ngữ lớn.",
+        "stars": "6.3K+",
+        "verdict": "maybe",
+        "reason": "Hữu ích cho việc đánh giá LLM nói chung, không riêng Claude."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-04-25",
     "dayLabel": "Thứ Bảy",
     "dateLabel": "25/04/2026",
