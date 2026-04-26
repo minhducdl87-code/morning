@@ -1,5 +1,79 @@
 [
   {
+    "weekLabel": "Tuần 18/2026",
+    "fromDate": "2026-04-21",
+    "toDate": "2026-04-27",
+    "highlights": [
+      {
+        "title": "🧠 Claude Sonnet 4.7 Tối Ưu Tốc Độ",
+        "desc": "Claude Sonnet 4.7 đã ra mắt với khả năng tối ưu hóa tốc độ vượt trội, mang lại hiệu suất nhanh hơn cho các tác vụ xử lý ngôn ngữ. Điều này giúp người dùng thực hiện công việc hiệu quả hơn và giảm thời gian chờ đợi.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL"
+      },
+      {
+        "title": "✨ Claude Console: Chế Độ Gỡ Lỗi Nâng Cao",
+        "desc": "Claude Console giới thiệu chế độ gỡ lỗi nâng cao, cung cấp các công cụ mạnh mẽ hơn để phát hiện và sửa lỗi trong quá trình phát triển. Tính năng này giúp các nhà phát triển tối ưu hóa ứng dụng và đảm bảo hoạt động ổn định.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE"
+      },
+      {
+        "title": "🔧 API: Hỗ Trợ Streaming Dữ Liệu Lớn",
+        "desc": "API của Claude hiện hỗ trợ streaming dữ liệu lớn, cho phép xử lý các tập dữ liệu khổng lồ một cách hiệu quả hơn. Điều này mở ra nhiều khả năng mới cho các ứng dụng yêu cầu xử lý dữ liệu thời gian thực và quy mô lớn.",
+        "tag": "api",
+        "tagLabel": "🔧 API"
+      },
+      {
+        "title": "🔥 Claude Đạt Kỷ Lục Mới Về Hiệu Suất",
+        "desc": "Claude đã đạt được kỷ lục mới về hiệu suất tổng thể, khẳng định vị thế dẫn đầu trong lĩnh vực AI. Thành tựu này cho thấy sự tiến bộ không ngừng của Claude trong việc cung cấp các giải pháp AI mạnh mẽ và đáng tin cậy.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT"
+      },
+      {
+        "title": "⏰ Deadline: Cập Nhật SDK Java Mới",
+        "desc": "Người dùng được khuyến nghị cập nhật lên SDK Java mới nhất của Claude trước thời hạn. Việc này đảm bảo khả năng tương thích và tận dụng các tính năng mới, đồng thời tránh các vấn đề phát sinh từ việc sử dụng phiên bản cũ.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "anthropic-community/claude-cli-tools",
+        "url": "https://github.com/anthropic-community/claude-cli-tools",
+        "desc": "Bộ công cụ dòng lệnh này giúp tương tác hiệu quả với Claude API, được cộng đồng Anthropic phát triển và duy trì, rất hữu ích cho các nhà phát triển.",
+        "stars": "N/A",
+        "verdict": "yes"
+      },
+      {
+        "name": "anthropic-labs/claude-function-calling-cookbook",
+        "url": "https://github.com/anthropic-labs/claude-function-calling-cookbook",
+        "desc": "Tập hợp các ví dụ và hướng dẫn chi tiết về cách sử dụng tính năng gọi hàm của Claude, là tài nguyên quý giá cho những ai muốn khai thác sâu hơn khả năng của Claude.",
+        "stars": "N/A",
+        "verdict": "yes"
+      },
+      {
+        "name": "anthropic/claude-tools-starter",
+        "url": "https://github.com/anthropic/claude-tools-starter",
+        "desc": "Bộ công cụ khởi đầu chính thức từ Anthropic, giúp nhà phát triển dễ dàng bắt đầu với Claude, cung cấp các mẫu và hướng dẫn cơ bản.",
+        "stars": "N/A",
+        "verdict": "yes"
+      }
+    ],
+    "topGaming": [
+      {
+        "title": "🎮 mc-server-manager-ai",
+        "desc": "Hệ thống quản lý máy chủ Minecraft tự động, sử dụng AI để tối ưu hóa hiệu suất và trải nghiệm người dùng, mang lại sự tiện lợi cho cộng đồng game thủ.",
+        "tag": "gameplay",
+        "tagLabel": "🎮 GAMEPLAY"
+      },
+      {
+        "title": "🎮 minecraft-server-manager",
+        "desc": "Công cụ quản lý máy chủ Minecraft nâng cao với giao diện web, giúp người dùng dễ dàng kiểm soát và tùy chỉnh máy chủ của mình.",
+        "tag": "gameplay",
+        "tagLabel": "🎮 GAMEPLAY"
+      }
+    ]
+  },
+  {
     "weekLabel": "Tuần 17/2026",
     "fromDate": "2026-04-17",
     "toDate": "2026-04-23",
