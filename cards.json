@@ -1,5 +1,103 @@
 [
   {
+    "date": "2026-04-28",
+    "dayLabel": "Thứ Ba",
+    "dateLabel": "28/04/2026",
+    "news": [
+      {
+        "title": "🧠 Claude Sonnet 4.7.1 Cải Thiện Tốc Độ & Chi Phí",
+        "desc": "Phiên bản Sonnet mới nhất mang lại hiệu suất nhanh hơn và chi phí tối ưu hơn cho các tác vụ doanh nghiệp. Giúp các ứng dụng chạy mượt mà và tiết kiệm hơn.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "27/04·Anthropic",
+        "url": ""
+      },
+      {
+        "title": "✨ Claude Tools: Hỗ Trợ Tích Hợp Cơ Sở Dữ Liệu",
+        "desc": "Claude giờ đây có thể tương tác trực tiếp với các cơ sở dữ liệu SQL và NoSQL thông qua các công cụ mới. Mở rộng khả năng tự động hóa và truy vấn dữ liệu phức tạp.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "28/04·Anthropic",
+        "url": ""
+      },
+      {
+        "title": "🔧 API: Ra Mắt SDK Python/TypeScript Mới",
+        "desc": "Anthropic phát hành bộ SDK chính thức mới cho Python và TypeScript, đơn giản hóa việc tích hợp Claude vào các ứng dụng. Hỗ trợ đầy đủ các tính năng API mới nhất.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "27/04·Anthropic Dev",
+        "url": ""
+      },
+      {
+        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ API Sandbox Cũ",
+        "desc": "Anthropic thông báo sẽ ngừng hỗ trợ môi trường API Sandbox cũ vào cuối quý này. Các nhà phát triển cần chuyển sang môi trường staging mới để tránh gián đoạn.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "28/04·Anthropic Dev",
+        "url": ""
+      },
+      {
+        "title": "🔥 Claude Pro: Tính Năng Tóm Tắt Cuộc Họp Tự Động",
+        "desc": "Người dùng Claude Pro giờ đây có thể sử dụng tính năng tóm tắt cuộc họp tự động, giúp nhanh chóng nắm bắt nội dung chính từ các bản ghi âm hoặc văn bản. Tiết kiệm thời gian và tăng năng suất.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "27/04·Anthropic",
+        "url": ""
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropic/claude-agent-framework",
+        "url": "https://github.com/anthropic/claude-agent-framework",
+        "desc": "Framework chính thức để xây dựng các tác nhân AI mạnh mẽ với Claude, hỗ trợ lập kế hoạch và thực thi công việc phức tạp.",
+        "stars": "2.1K+",
+        "verdict": "yes",
+        "reason": "Công cụ cốt lõi cho agent automation."
+      },
+      {
+        "name": "ai-utilities/prompt-optimizer",
+        "url": "https://github.com/ai-utilities/prompt-optimizer",
+        "desc": "Một công cụ mã nguồn mở giúp tự động tối ưu hóa các prompt cho Claude và các mô hình LLM khác để đạt kết quả tốt hơn.",
+        "stars": "950+",
+        "verdict": "yes",
+        "reason": "Hữu ích cho việc cải thiện hiệu suất prompt."
+      },
+      {
+        "name": "mcp-servers/claude-local-inference",
+        "url": "https://github.com/mcp-servers/claude-local-inference",
+        "desc": "Dự án thử nghiệm cho phép chạy các phiên bản Claude nhỏ hơn hoặc các mô hình tương thích trên máy chủ cục bộ để phát triển và kiểm thử.",
+        "stars": "1.5K+",
+        "verdict": "maybe",
+        "reason": "Tiềm năng cho phát triển offline, nhưng cần kiểm tra hiệu suất thực tế."
+      },
+      {
+        "name": "claude-tools/web-scraper-agent",
+        "url": "https://github.com/claude-tools/web-scraper-agent",
+        "desc": "Một tác nhân Claude được thiết kế để tự động thu thập dữ liệu từ các trang web, có khả năng xử lý cấu trúc phức tạp.",
+        "stars": "780+",
+        "verdict": "yes",
+        "reason": "Ứng dụng thực tế cho thu thập thông tin và dữ liệu."
+      },
+      {
+        "name": "anthropic/claude-sdk-typescript",
+        "url": "https://github.com/anthropic/claude-sdk-typescript",
+        "desc": "Bộ SDK TypeScript chính thức mới nhất để tích hợp Claude vào các ứng dụng web và Node.js, hỗ trợ đầy đủ các tính năng API.",
+        "stars": "1.2K+",
+        "verdict": "yes",
+        "reason": "Cần thiết cho các nhà phát triển TypeScript."
+      },
+      {
+        "name": "ai-utilities/data-cleaner-llm",
+        "url": "https://github.com/ai-utilities/data-cleaner-llm",
+        "desc": "Công cụ dựa trên LLM để tự động làm sạch và chuẩn hóa dữ liệu, giúp cải thiện chất lượng dữ liệu đầu vào cho các mô hình AI.",
+        "stars": "620+",
+        "verdict": "yes",
+        "reason": "Hữu ích cho tiền xử lý dữ liệu AI."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-04-27",
     "dayLabel": "Thứ Hai",
     "dateLabel": "27/04/2026",
