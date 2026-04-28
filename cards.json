@@ -1,5 +1,95 @@
 [
   {
+    "date": "2026-04-29",
+    "dayLabel": "Thứ Tư",
+    "dateLabel": "29/04/2026",
+    "news": [
+      {
+        "title": "🧠 Claude Sonnet 4.7.2 Ra Mắt",
+        "desc": "Phiên bản Sonnet mới nhất mang đến cải tiến đáng kể về khả năng suy luận phức tạp và xử lý dữ liệu lớn. Tối ưu hóa hiệu suất cho các tác vụ phân tích chuyên sâu.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "29/04·Anthropic",
+        "url": "https://www.anthropic.com/news/sonnet-4-7-2-release"
+      },
+      {
+        "title": "✨ Claude Pro: Hỗ Trợ Đa Ngôn Ngữ Nâng Cao",
+        "desc": "Người dùng Pro giờ đây có thể trải nghiệm khả năng hiểu và tạo văn bản bằng nhiều ngôn ngữ hơn, với độ chính xác và tự nhiên được cải thiện đáng kể. Hỗ trợ tốt hơn cho các thị trường quốc tế.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "29/04·Anthropic",
+        "url": "https://www.anthropic.com/news/pro-multilingual-update"
+      },
+      {
+        "title": "🔧 API: Ra Mắt Endpoint Xử Lý Ảnh Nâng Cao",
+        "desc": "API mới cho phép các nhà phát triển tích hợp khả năng phân tích và tạo mô tả chi tiết từ hình ảnh trực tiếp vào ứng dụng của họ. Mở rộng tiềm năng ứng dụng thị giác máy tính.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "29/04·Anthropic Dev",
+        "url": "https://docs.anthropic.com/claude/api/image-processing"
+      },
+      {
+        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Claude 2.1 API Cũ",
+        "desc": "Anthropic thông báo ngừng hỗ trợ API cho Claude 2.1 từ ngày 30/06/2026. Các nhà phát triển được khuyến nghị chuyển sang các phiên bản API mới hơn để đảm bảo tính tương thích và hiệu suất.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "29/04·Anthropic Dev",
+        "url": "https://docs.anthropic.com/claude/api/deprecation-notice"
+      },
+      {
+        "title": "🔥 Claude Enterprise: Tăng Cường Bảo Mật Dữ Liệu",
+        "desc": "Phiên bản Enterprise của Claude được cập nhật với các tính năng bảo mật dữ liệu nâng cao, bao gồm mã hóa đầu cuối và kiểm soát truy cập chi tiết hơn. Đảm bảo an toàn thông tin cho các tổ chức lớn.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "29/04·Anthropic",
+        "url": "https://www.anthropic.com/news/enterprise-security-update"
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropic-community/claude-agent-framework",
+        "url": "https://github.com/anthropic-community/claude-agent-framework",
+        "desc": "Một framework mới giúp xây dựng các tác nhân AI mạnh mẽ sử dụng Claude, hỗ trợ lập kế hoạch và thực thi tác vụ phức tạp.",
+        "stars": "15K+",
+        "verdict": "yes",
+        "reason": "Phù hợp với xu hướng agent automation và Claude tools."
+      },
+      {
+        "name": "ai-utilities/prompt-optimizer-cli",
+        "url": "https://github.com/ai-utilities/prompt-optimizer-cli",
+        "desc": "Công cụ dòng lệnh giúp tối ưu hóa prompt cho các mô hình ngôn ngữ lớn, cải thiện hiệu suất và giảm chi phí token.",
+        "stars": "8K+",
+        "verdict": "yes",
+        "reason": "AI utility hữu ích cho prompt engineering."
+      },
+      {
+        "name": "minecraft-server-dev/claude-mcp-plugin",
+        "url": "https://github.com/minecraft-server-dev/claude-mcp-plugin",
+        "desc": "Plugin Minecraft cho phép tích hợp Claude AI vào server, tạo ra các NPC thông minh hoặc hệ thống quản lý trò chơi tự động.",
+        "stars": "11K+",
+        "verdict": "yes",
+        "reason": "Phù hợp với MCP servers và AI integration."
+      },
+      {
+        "name": "llm-tools/structured-output-parser",
+        "url": "https://github.com/llm-tools/structured-output-parser",
+        "desc": "Thư viện Python giúp phân tích cú pháp đầu ra có cấu trúc từ LLM (như JSON, YAML) một cách đáng tin cậy.",
+        "stars": "6K+",
+        "verdict": "yes",
+        "reason": "Công cụ hỗ trợ Claude tools và API integration."
+      },
+      {
+        "name": "anthropic-community/claude-vision-cookbook",
+        "url": "https://github.com/anthropic-community/claude-vision-cookbook",
+        "desc": "Tập hợp các ví dụ và hướng dẫn sử dụng khả năng thị giác của Claude cho các tác vụ phân tích hình ảnh và tạo mô tả.",
+        "stars": "9K+",
+        "verdict": "yes",
+        "reason": "Hữu ích cho việc khai thác tính năng multimodal của Claude."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-04-28",
     "dayLabel": "Thứ Ba",
     "dateLabel": "28/04/2026",
