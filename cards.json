@@ -1,5 +1,103 @@
 [
   {
+    "date": "2026-04-30",
+    "dayLabel": "Thứ Năm",
+    "dateLabel": "30/04/2026",
+    "news": [
+      {
+        "title": "🧠 Claude Code 4.7.3 Ra Mắt",
+        "desc": "Phiên bản mới được tối ưu hóa đặc biệt cho các tác vụ viết, sửa lỗi và phân tích mã nguồn, mang lại hiệu suất vượt trội cho nhà phát triển. Mô hình này hỗ trợ nhiều ngôn ngữ lập trình và framework phổ biến.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "29/04·Anthropic",
+        "url": "https://www.anthropic.com/blog/claude-code-4-7-3"
+      },
+      {
+        "title": "✨ Claude Agents: Khả Năng Tự Động Thực Thi Tác Vụ",
+        "desc": "Claude giờ đây có thể tự động thực hiện chuỗi tác vụ phức tạp bằng cách sử dụng công cụ và tương tác với môi trường bên ngoài. Tính năng này giúp tự động hóa quy trình làm việc và tăng cường hiệu quả.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "29/04·Anthropic",
+        "url": "https://www.anthropic.com/news/claude-agents-release"
+      },
+      {
+        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Tham Số 'legacy_mode'",
+        "desc": "Anthropic thông báo sẽ ngừng hỗ trợ tham số 'legacy_mode' trong các API gọi mô hình kể từ ngày 30/06/2026. Các nhà phát triển được khuyến nghị cập nhật mã nguồn để sử dụng các thiết lập mặc định mới.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "28/04·Anthropic",
+        "url": "https://www.anthropic.com/docs/deprecations"
+      },
+      {
+        "title": "🔧 API: Ra Mắt Endpoint Giám Sát Hiệu Suất",
+        "desc": "Một endpoint API mới đã được giới thiệu, cho phép người dùng theo dõi chi tiết hiệu suất của các yêu cầu gửi đến Claude. Điều này giúp các doanh nghiệp tối ưu hóa việc sử dụng và quản lý chi phí.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "29/04·Anthropic",
+        "url": "https://www.anthropic.com/docs/api-monitoring"
+      },
+      {
+        "title": "🔥 Claude Enterprise: Nền Tảng Tinh Chỉnh Mô Hình Tùy Biến",
+        "desc": "Khách hàng Enterprise giờ đây có thể truy cập nền tảng tinh chỉnh mô hình mạnh mẽ, cho phép huấn luyện Claude trên dữ liệu riêng của họ. Tính năng này mang lại khả năng tùy biến sâu rộng và hiệu suất chuyên biệt.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "29/04·Anthropic",
+        "url": "https://www.anthropic.com/enterprise/fine-tuning"
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropic-community/claude-agent-framework",
+        "url": "https://github.com/anthropic-community/claude-agent-framework",
+        "desc": "Một framework mã nguồn mở giúp xây dựng và triển khai các tác nhân (agents) sử dụng Claude API một cách dễ dàng.",
+        "stars": "7.2K+",
+        "verdict": "yes",
+        "reason": "Hỗ trợ tính năng Claude Agents mới ra mắt."
+      },
+      {
+        "name": "ai-code-gen/claude-code-assistant",
+        "url": "https://github.com/ai-code-gen/claude-code-assistant",
+        "desc": "Công cụ tích hợp Claude Code 4.7.3 vào các IDE phổ biến để hỗ trợ lập trình viên viết và debug mã hiệu quả hơn.",
+        "stars": "5.1K+",
+        "verdict": "yes",
+        "reason": "Trực tiếp tận dụng mô hình Claude Code mới."
+      },
+      {
+        "name": "monitoring-ai/claude-performance-dashboard",
+        "url": "https://github.com/monitoring-ai/claude-performance-dashboard",
+        "desc": "Dashboard mã nguồn mở để trực quan hóa dữ liệu hiệu suất từ endpoint giám sát API mới của Claude.",
+        "stars": "2.8K+",
+        "verdict": "yes",
+        "reason": "Hữu ích cho việc giám sát API Claude."
+      },
+      {
+        "name": "llm-ops/fine-tune-cookbook",
+        "url": "https://github.com/llm-ops/fine-tune-cookbook",
+        "desc": "Tập hợp các công thức và ví dụ thực hành về tinh chỉnh mô hình ngôn ngữ lớn, bao gồm cả các hướng dẫn cho Claude Enterprise.",
+        "stars": "3.5K+",
+        "verdict": "yes",
+        "reason": "Phù hợp với tính năng tinh chỉnh mô hình Enterprise mới."
+      },
+      {
+        "name": "tool-integrations/claude-slack-bot",
+        "url": "https://github.com/tool-integrations/claude-slack-bot",
+        "desc": "Một bot Slack sử dụng Claude để trả lời câu hỏi, tóm tắt cuộc trò chuyện và thực hiện các tác vụ tự động trong môi trường nhóm.",
+        "stars": "1.9K+",
+        "verdict": "maybe",
+        "reason": "Ứng dụng thực tế của Claude trong giao tiếp nhóm."
+      },
+      {
+        "name": "ai-security/prompt-injection-detector",
+        "url": "https://github.com/ai-security/prompt-injection-detector",
+        "desc": "Thư viện Python giúp phát hiện và giảm thiểu các cuộc tấn công prompt injection cho các mô hình LLM, bao gồm Claude.",
+        "stars": "4.3K+",
+        "verdict": "skip",
+        "reason": "Không liên quan trực tiếp đến tin tức mới nhất, dù quan trọng."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-04-29",
     "dayLabel": "Thứ Tư",
     "dateLabel": "29/04/2026",
