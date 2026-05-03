@@ -1,5 +1,79 @@
 [
   {
+    "weekLabel": "Tuần 19/2026",
+    "fromDate": "2026-04-28",
+    "toDate": "2026-05-04",
+    "highlights": [
+      {
+        "title": "🧠 Claude CodeGen 4.7.5 Ra Mắt",
+        "desc": "Claude tiếp tục nâng cấp các mô hình cốt lõi với CodeGen 4.7.5, hứa hẹn cải thiện đáng kể khả năng tạo và hiểu mã. Điều này mang lại lợi ích lớn cho các nhà phát triển và ứng dụng AI trong lập trình.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL"
+      },
+      {
+        "title": "🔥 Claude Enterprise: Mã Hóa Lượng Tử",
+        "desc": "Claude Enterprise tăng cường bảo mật dữ liệu với mã hóa lượng tử, một bước tiến lớn trong việc bảo vệ thông tin nhạy cảm. Đây là tính năng quan trọng cho các doanh nghiệp yêu cầu mức độ bảo mật cao nhất.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT"
+      },
+      {
+        "title": "✨ Claude Pro: Chế Độ 'Tự Động Tóm Tắt'",
+        "desc": "Claude Pro ra mắt chế độ 'Tự Động Tóm Tắt' tài liệu dài, giúp người dùng tiết kiệm thời gian và nắm bắt thông tin nhanh chóng. Tính năng này đặc biệt hữu ích cho việc xử lý các văn bản phức tạp và dài.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE"
+      },
+      {
+        "title": "🔧 API: Endpoint 'Real-time Translation'",
+        "desc": "Claude ra mắt endpoint API 'Real-time Translation', mở ra khả năng tích hợp dịch thuật tức thì vào các ứng dụng. Điều này thúc đẩy sự phát triển của các giải pháp đa ngôn ngữ và giao tiếp toàn cầu.",
+        "tag": "api",
+        "tagLabel": "🔧 API"
+      },
+      {
+        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Claude 3.5 API",
+        "desc": "Claude thông báo ngừng hỗ trợ Claude 3.5 API, khuyến nghị người dùng chuyển sang các phiên bản mới hơn. Đây là một cảnh báo quan trọng để các nhà phát triển cập nhật hệ thống của mình.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "anthropic-community/claude-cli",
+        "url": "https://github.com/anthropic-community/claude-cli",
+        "desc": "Công cụ dòng lệnh mạnh mẽ để tương tác với Claude API, giúp các nhà phát triển dễ dàng quản lý và thử nghiệm các tác vụ AI.",
+        "stars": "N/A",
+        "verdict": "yes"
+      },
+      {
+        "name": "ai-agents-dev/auto-task-orchestrator",
+        "url": "https://github.com/ai-agents-dev/auto-task-orchestrator",
+        "desc": "Framework mã nguồn mở giúp tự động hóa và điều phối các tác vụ AI phức tạp, rất hữu ích cho việc xây dựng các hệ thống tác nhân thông minh.",
+        "stars": "N/A",
+        "verdict": "yes"
+      },
+      {
+        "name": "ai-dev-tools/prompt-engineering-studio",
+        "url": "https://github.com/ai-dev-tools/prompt-engineering-studio",
+        "desc": "Môi trường phát triển tích hợp (IDE) chuyên biệt cho kỹ thuật prompt, giúp các kỹ sư AI thiết kế và tối ưu hóa prompt hiệu quả hơn.",
+        "stars": "N/A",
+        "verdict": "yes"
+      }
+    ],
+    "topGaming": [
+      {
+        "title": "🎮 MCP Server Optimizer",
+        "desc": "Công cụ tối ưu hóa hiệu suất cho các máy chủ Minecraft (MCP), giúp cải thiện trải nghiệm chơi game và quản lý tài nguyên hiệu quả.",
+        "tag": "gameplay",
+        "tagLabel": "🎮 GAMEPLAY"
+      },
+      {
+        "title": "🎮 Minecraft Claude AI Plugin",
+        "desc": "Plugin Minecraft cho phép tích hợp Claude AI vào server, tạo ra các tương tác thông minh và trải nghiệm độc đáo trong game.",
+        "tag": "gameplay",
+        "tagLabel": "🎮 GAMEPLAY"
+      }
+    ]
+  },
+  {
     "weekLabel": "Tuần 18/2026",
     "fromDate": "2026-04-21",
     "toDate": "2026-04-27",
