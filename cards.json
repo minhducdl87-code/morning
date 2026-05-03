@@ -5,86 +5,86 @@
     "dateLabel": "04/05/2026",
     "news": [
       {
-        "title": "🧠 Claude CodeGen 4.7.5 Ra Mắt",
-        "desc": "Phiên bản mới của mô hình Claude chuyên biệt cho lập trình, cải thiện đáng kể khả năng sinh mã và gỡ lỗi. Hỗ trợ nhiều ngôn ngữ và framework phổ biến.",
+        "title": "🧠 Claude 4.8.0 Ra Mắt",
+        "desc": "Phiên bản mới nhất của Claude mang đến khả năng suy luận nâng cao và hiểu ngữ cảnh sâu sắc hơn, cải thiện đáng kể hiệu suất cho các tác vụ phức tạp.",
         "tag": "model",
         "tagLabel": "🧠 MODEL",
-        "source": "03/05·Anthropic",
-        "url": "https://anthropic.com/blog/codegen-4.7.5"
+        "source": "04/05·Anthropic",
+        "url": ""
       },
       {
-        "title": "✨ Claude Pro: Chế Độ 'Tự Động Tóm Tắt' Tài Liệu Dài",
-        "desc": "Tính năng mới cho phép Claude Pro tự động tóm tắt các tài liệu, bài báo hoặc cuộc trò chuyện dài thành các điểm chính ngắn gọn. Giúp tiết kiệm thời gian đọc và nắm bắt thông tin nhanh chóng.",
+        "title": "✨ Claude Pro: Hỗ Trợ Đa Ngôn Ngữ Nâng Cao",
+        "desc": "Người dùng Pro giờ đây có thể trải nghiệm khả năng hiểu và tạo văn bản bằng nhiều ngôn ngữ với độ chính xác và tự nhiên cao hơn, hỗ trợ tốt hơn cho các dự án toàn cầu.",
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
-        "source": "04/05·Claude Pro",
-        "url": "https://claude.ai/pro-features/auto-summarize"
+        "source": "03/05·Anthropic",
+        "url": ""
       },
       {
-        "title": "🔧 API: Ra Mắt Endpoint 'Real-time Translation'",
-        "desc": "Endpoint API mới cho phép dịch ngôn ngữ theo thời gian thực với độ trễ thấp, hỗ trợ hơn 50 ngôn ngữ. Lý tưởng cho các ứng dụng dịch thuật trực tiếp và hội nghị.",
+        "title": "🔧 API: Ra Mắt Webhook cho Thông Báo Sự Kiện",
+        "desc": "Các nhà phát triển có thể cấu hình webhook để nhận thông báo tức thì về các sự kiện quan trọng như hoàn thành tác vụ dài, lỗi API hoặc cập nhật trạng thái mô hình.",
         "tag": "api",
         "tagLabel": "🔧 API",
-        "source": "03/05·Anthropic Dev",
-        "url": "https://docs.anthropic.com/api/real-time-translation"
+        "source": "04/05·Anthropic Dev",
+        "url": ""
       },
       {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Claude 3.5 API",
-        "desc": "Anthropic thông báo sẽ ngừng hỗ trợ API của phiên bản Claude 3.5 vào ngày 01/08/2026. Các nhà phát triển được khuyến nghị nâng cấp lên các phiên bản mới hơn để đảm bảo tính tương thích và bảo mật.",
+        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ API Claude 3.5",
+        "desc": "Anthropic thông báo ngừng hỗ trợ API Claude 3.5 từ ngày 01/07/2026. Các nhà phát triển được khuyến nghị nâng cấp lên phiên bản API 4.x để tránh gián đoạn dịch vụ.",
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE",
         "source": "04/05·Anthropic",
-        "url": "https://anthropic.com/blog/api-deprecation-claude-3.5"
+        "url": ""
       },
       {
-        "title": "🔥 Claude Enterprise: Nâng Cấp Bảo Mật Dữ Liệu Với Mã Hóa Lượng Tử",
-        "desc": "Phiên bản Claude Enterprise được nâng cấp với công nghệ mã hóa lượng tử tiên tiến, tăng cường bảo mật dữ liệu tuyệt đối cho các tổ chức. Đảm bảo an toàn thông tin ngay cả trước các mối đe dọa trong tương lai.",
+        "title": "🔥 Claude Enterprise: Tích Hợp Hệ Thống Quản Lý Dự Án",
+        "desc": "Phiên bản Enterprise nay có thể tích hợp trực tiếp với các nền tảng quản lý dự án phổ biến, giúp tự động hóa báo cáo, phân tích tiến độ và hỗ trợ ra quyết định.",
         "tag": "hot",
         "tagLabel": "🔥 HOT",
         "source": "03/05·Anthropic",
-        "url": "https://anthropic.com/enterprise/quantum-security"
+        "url": ""
       }
     ],
     "repos": [
       {
-        "name": "anthropic-community/claude-cli",
-        "url": "https://github.com/anthropic-community/claude-cli",
-        "desc": "Công cụ dòng lệnh mạnh mẽ để tương tác với Claude API, hỗ trợ nhiều chế độ và tùy chọn. Rất hữu ích cho nhà phát triển.",
-        "stars": "25K+",
-        "verdict": "yes",
-        "reason": "Công cụ chính thức từ cộng đồng, rất hữu ích cho nhà phát triển."
-      },
-      {
-        "name": "ai-agents-dev/auto-task-orchestrator",
-        "url": "https://github.com/ai-agents-dev/auto-task-orchestrator",
-        "desc": "Framework mã nguồn mở giúp tự động hóa và điều phối các tác vụ phức tạp cho AI agent. Rất phù hợp cho việc xây dựng các hệ thống agent tự động.",
-        "stars": "18K+",
-        "verdict": "yes",
-        "reason": "Rất phù hợp cho việc xây dựng các hệ thống agent tự động."
-      },
-      {
-        "name": "ml-utils/data-privacy-toolkit",
-        "url": "https://github.com/ml-utils/data-privacy-toolkit",
-        "desc": "Bộ công cụ giúp ẩn danh hóa dữ liệu nhạy cảm, đảm bảo quyền riêng tư khi huấn luyện mô hình AI. Cần thiết cho các dự án AI yêu cầu tuân thủ GDPR/quyền riêng tư.",
+        "name": "anthropic/claude-agent-toolkit",
+        "url": "https://github.com/anthropic/claude-agent-toolkit",
+        "desc": "Bộ công cụ mã nguồn mở giúp xây dựng các tác nhân AI mạnh mẽ sử dụng Claude, hỗ trợ tích hợp công cụ và quản lý quy trình làm việc.",
         "stars": "15K+",
         "verdict": "yes",
-        "reason": "Cần thiết cho các dự án AI yêu cầu tuân thủ GDPR/quyền riêng tư."
+        "reason": "Công cụ chính thức từ Anthropic, rất hữu ích cho phát triển agent."
       },
       {
-        "name": "cloud-gaming-solutions/mcp-server-optimizer",
-        "url": "https://github.com/cloud-gaming-solutions/mcp-server-optimizer",
-        "desc": "Công cụ tối ưu hóa hiệu suất cho các máy chủ Minecraft (MCP), giảm độ trễ và tăng khả năng chịu tải. Hữu ích cho các nhà cung cấp dịch vụ máy chủ Minecraft.",
+        "name": "ai-utilities/prompt-optimizer-cli",
+        "url": "https://github.com/ai-utilities/prompt-optimizer-cli",
+        "desc": "Một công cụ dòng lệnh giúp tự động tối ưu hóa các prompt cho Claude và các mô hình AI khác, cải thiện chất lượng phản hồi và giảm chi phí token.",
+        "stars": "8.5K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI thiết thực, giúp cải thiện hiệu suất prompt."
+      },
+      {
+        "name": "mcpservers/claude-mc-plugin",
+        "url": "https://github.com/mcpservers/claude-mc-plugin",
+        "desc": "Plugin Minecraft cho phép tích hợp Claude vào máy chủ, hỗ trợ quản lý, tương tác với người chơi và tạo nội dung động trong game.",
+        "stars": "6.2K+",
+        "verdict": "yes",
+        "reason": "Ứng dụng Claude vào MCP server, mở ra nhiều khả năng mới."
+      },
+      {
+        "name": "agent-automation/autocoder-agent",
+        "url": "https://github.com/agent-automation/autocoder-agent",
+        "desc": "Một agent AI có khả năng tự động viết, debug và kiểm thử mã nguồn dựa trên mô tả yêu cầu, sử dụng Claude làm lõi xử lý ngôn ngữ.",
         "stars": "10K+",
         "verdict": "yes",
-        "reason": "Hữu ích cho các nhà cung cấp dịch vụ máy chủ Minecraft."
+        "reason": "Ví dụ điển hình về agent automation, tiềm năng lớn trong phát triển phần mềm."
       },
       {
-        "name": "ai-dev-tools/prompt-engineering-studio",
-        "url": "https://github.com/ai-dev-tools/prompt-engineering-studio",
-        "desc": "Môi trường phát triển tích hợp (IDE) cho kỹ thuật prompt, giúp thiết kế, thử nghiệm và tối ưu hóa các prompt cho LLM. Công cụ chuyên biệt cho kỹ sư prompt.",
-        "stars": "22K+",
+        "name": "llm-tools/data-extractor-claude",
+        "url": "https://github.com/llm-tools/data-extractor-claude",
+        "desc": "Thư viện Python chuyên dụng để trích xuất dữ liệu có cấu trúc từ văn bản phi cấu trúc bằng cách tận dụng khả năng của Claude.",
+        "stars": "4.9K+",
         "verdict": "yes",
-        "reason": "Công cụ chuyên biệt cho kỹ sư prompt."
+        "reason": "Công cụ hữu ích cho xử lý dữ liệu với Claude, ứng dụng rộng rãi."
       }
     ],
     "gamingNews": []
