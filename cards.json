@@ -1,5 +1,103 @@
 [
   {
+    "date": "2026-05-06",
+    "dayLabel": "Thứ Tư",
+    "dateLabel": "06/05/2026",
+    "news": [
+      {
+        "title": "🧠 Claude 4.9.1 Cải Thiện Hiệu Năng",
+        "desc": "Phiên bản mới tập trung tối ưu hóa tốc độ phản hồi và tăng cường khả năng an toàn trong các tác vụ phức tạp.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "05/05·Anthropic",
+        "url": ""
+      },
+      {
+        "title": "✨ Claude Pro: Hướng Dẫn Tùy Chỉnh Nâng Cao",
+        "desc": "Người dùng Pro nay có thể thiết lập các hướng dẫn tùy chỉnh chi tiết hơn cho từng dự án hoặc loại tác vụ.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "05/05·Anthropic",
+        "url": ""
+      },
+      {
+        "title": "🔧 API: Ra Mắt Streaming API Mới",
+        "desc": "API mới cho phép nhận phản hồi theo thời gian thực, lý tưởng cho các ứng dụng yêu cầu độ trễ thấp và tương tác liên tục.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "05/05·Anthropic Dev",
+        "url": ""
+      },
+      {
+        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Phương Thức Auth Cũ",
+        "desc": "Từ 01/07/2026, các phương thức xác thực API cũ sẽ không còn được hỗ trợ, yêu cầu nâng cấp lên OAuth 2.0 hoặc API Keys mới.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "06/05·Anthropic Dev",
+        "url": ""
+      },
+      {
+        "title": "🔥 Claude Enterprise: Hợp Tác Với Google Cloud",
+        "desc": "Claude Enterprise mở rộng khả năng triển khai trên Google Cloud, mang lại lựa chọn linh hoạt hơn cho các doanh nghiệp lớn.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "05/05·Anthropic",
+        "url": ""
+      },
+      {
+        "title": "✨ Claude: Tính Năng Tạo Ảnh Trực Tiếp",
+        "desc": "Claude giờ đây có thể tạo ra hình ảnh dựa trên mô tả văn bản, mở rộng khả năng sáng tạo và ứng dụng đa phương tiện.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "06/05·Anthropic",
+        "url": ""
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropic-community/claude-prompt-optimizer",
+        "url": "https://github.com/anthropic-community/claude-prompt-optimizer",
+        "desc": "Công cụ mã nguồn mở giúp tối ưu hóa và kiểm thử các prompt cho Claude để đạt hiệu quả cao nhất.",
+        "stars": "5.2K+",
+        "verdict": "yes",
+        "reason": "Hữu ích cho dev Claude."
+      },
+      {
+        "name": "ai-agents/claude-multi-agent-framework",
+        "url": "https://github.com/ai-agents/claude-multi-agent-framework",
+        "desc": "Một framework Python cho phép xây dựng và quản lý các hệ thống đa tác nhân sử dụng Claude làm lõi.",
+        "stars": "8.7K+",
+        "verdict": "yes",
+        "reason": "Xu hướng agent automation."
+      },
+      {
+        "name": "mcp-servers/nextgen-minecraft-server",
+        "url": "https://github.com/mcp-servers/nextgen-minecraft-server",
+        "desc": "Dự án máy chủ Minecraft thế hệ mới với hiệu suất cao và khả năng mở rộng tốt hơn.",
+        "stars": "1.5K+",
+        "verdict": "maybe",
+        "reason": "MCP server mới, cần đánh giá thêm."
+      },
+      {
+        "name": "ai-utilities/llm-cost-tracker",
+        "url": "https://github.com/ai-utilities/llm-cost-tracker",
+        "desc": "Công cụ theo dõi và phân tích chi phí sử dụng các mô hình ngôn ngữ lớn (LLM) từ nhiều nhà cung cấp.",
+        "stars": "3.1K+",
+        "verdict": "yes",
+        "reason": "Quản lý chi phí AI thiết yếu."
+      },
+      {
+        "name": "claude-tools/claude-vision-assistant",
+        "url": "https://github.com/claude-tools/claude-vision-assistant",
+        "desc": "Trợ lý thị giác dựa trên Claude, giúp phân tích hình ảnh và cung cấp mô tả chi tiết.",
+        "stars": "4.9K+",
+        "verdict": "yes",
+        "reason": "Ứng dụng trực tiếp Claude Vision."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-05",
     "dayLabel": "Thứ Ba",
     "dateLabel": "05/05/2026",
@@ -2595,79 +2693,6 @@
         "stars": "N/A",
         "verdict": "yes",
         "reason": "Danh sách tổng hợp các tài nguyên Claude, hữu ích để khám phá các công cụ và SDK."
-      }
-    ]
-  },
-  {
-    "date": "2026-04-06",
-    "dayLabel": "Thứ Hai",
-    "dateLabel": "06/04/2026",
-    "news": [
-      {
-        "title": "🚫 Hạn chế OpenClaw & Bên thứ ba",
-        "desc": "Anthropic đã ngừng hỗ trợ các công cụ AI agent bên thứ ba như OpenClaw cho người dùng Claude Pro/Max, yêu cầu thanh toán riêng theo hệ thống 'extra usage' mới có hiệu lực từ 04/04/2026.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "04/04/2026·TNW, Business Insider, MLQ.ai, PCMag",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDSXoe08iUH-jQlvN4qLxggbaADYy6phvFTT26AyzKTMgeGSyBq457Hs3dc5Oulu_VxzGIR_4thMi7EoL2qfgiE2uRPj_Po0ddK7jHBsnuO5-KQxHCneFvWZjerEQoLirO7Chq9h1jNe-5dylxp5OLus9Q1jrZEhzNvU7NUldLVKIYeB2nZQ=="
-      },
-      {
-        "title": "🔥 Rò rỉ mã nguồn Claude Code",
-        "desc": "Mã nguồn Claude Code đã bị rò rỉ vào cuối tháng 3/2026 thông qua một file sourcemap, dẫn đến việc các nhà phát triển tạo ra các bản sao mã nguồn mở và cả nguy cơ phát tán phần mềm độc hại.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "02/04/2026·The Times of India, GitHub, Trend Micro",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_OeQDRFK2cuJd50siQt5pHi8qEkqzOnRToaSuS39ZFqVc8butHCP7pXbKdIeYmo1gDNCfItCCCG5M4MD5KOXXIcL8fJ0d-dnFEcnme3VdltJErmHkEIh7mxQz-LEaq7tvVIkiCEfrB2Ur5nm_2ngSDKQxne-4aFpxHSn4LrkBf5csodLO2tZXxJuvBX6b5ukgugdo3lpqQiD7Jj4H-1YH94qJwng_TiDHM7IpZoLh4333ea6YBzG4exAZKYPUOCqncPtg6RUF4YT6Ealxn4b0OSz9MYF26YwWWVa9G03jvjIzwtz2I38yedzOCC1bCzYvargPLA4="
-      },
-      {
-        "title": "✨ Tăng giới hạn token API",
-        "desc": "Giới hạn max_tokens trên Message Batches API cho Claude Opus 4.6 và Sonnet 4.6 đã được tăng lên 300k, cho phép tạo ra các đầu ra dài hơn cho nội dung, dữ liệu có cấu trúc và tạo mã lớn.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "30/03/2026·Claude API Docs",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMQzFPRmV2s1pyJzX7elbFhCgGptUcx-FsKNIr-cwa5vzT-cfCbEqWkLvxq8hSRT1UkI4szzHb062YvCouAS2XlytrbAdWB19NaJIOuYpdQB7SVZ2DSoQxDvEkhYsGb7EYtWp8QKVFWn7ITSuu7YY3nkon_ok="
-      },
-      {
-        "title": "⏰ Ngừng hỗ trợ context 1M token beta",
-        "desc": "Tính năng beta cửa sổ ngữ cảnh 1M token cho Claude Sonnet 4.5 và Sonnet 4 sẽ ngừng hoạt động vào ngày 30/04/2026, các yêu cầu vượt quá giới hạn 200k token tiêu chuẩn sẽ trả về lỗi.",
-        "tag": "deadline",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "30/03/2026·Claude API Docs",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMQzFPRmV2s1pyJzX7elbFhCgGptUcx-FsKNIr-cwa5vzT-cfCbEqWkLvxq8hSRT1UkI4szzHb062YvCouAS2XlytrbAdWB19NaJIOuYpdQB7SVZ2DSoQxDvEkhYsGb7EYtWp8QKVFWn7ITSuu7YY3nkon_ok="
-      }
-    ],
-    "repos": [
-      {
-        "name": "soongenwong/claudecode",
-        "url": "https://github.com/soongenwong/claudecode",
-        "desc": "Một triển khai mã nguồn mở của Claude Code bằng Rust, cung cấp CLI agent tương tác và các công cụ nhận biết không gian làm việc.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Bản sao mã nguồn mở của Claude Code sau vụ rò rỉ, rất hot và có tác động lớn."
-      },
-      {
-        "name": "Kuberwastaken/claude-code",
-        "url": "https://github.com/Kuberwastaken/claude-code",
-        "desc": "Phân tích và giải thích cách Claude Code hoạt động, bao gồm cả việc rò rỉ mã nguồn và các tính năng nội bộ.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Cung cấp cái nhìn sâu sắc về vụ rò rỉ và cấu trúc của Claude Code, hữu ích cho nhà phát triển."
-      },
-      {
-        "name": "realsigridjin/claude-code-python-rewrite",
-        "url": "https://github.com/realsigridjin/claude-code-python-rewrite",
-        "desc": "Một bản viết lại hoàn chỉnh của Claude Code bằng Python sử dụng các công cụ AI, được tạo ra sau vụ rò rỉ mã nguồn.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Bản viết lại bằng Python sau vụ rò rỉ, thể hiện khả năng thích ứng và là một công cụ AI mới."
-      },
-      {
-        "name": "anthropic-ai/claude-agent-sdk-python",
-        "url": "https://github.com/anthropic-ai/claude-agent-sdk-python",
-        "desc": "SDK Python chính thức của Anthropic để xây dựng các tác nhân tự trị với khả năng của Claude Code.",
-        "stars": "N/A",
-        "verdict": "maybe",
-        "reason": "Là SDK chính thức, cần thiết cho việc phát triển tác nhân Claude nhưng không phải là một công cụ mới nổi tuần này."
       }
     ]
   }
