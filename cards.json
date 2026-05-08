@@ -1,5 +1,103 @@
 [
   {
+    "date": "2026-05-09",
+    "dayLabel": "Thứ Bảy",
+    "dateLabel": "09/05/2026",
+    "news": [
+      {
+        "title": "🧠 Claude 5.0 Beta Ra Mắt",
+        "desc": "Anthropic vừa công bố phiên bản thử nghiệm Claude 5.0 với khả năng suy luận và hiểu ngữ cảnh vượt trội. Phiên bản này hứa hẹn cải thiện đáng kể hiệu suất cho các tác vụ phức tạp.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "08/05·Anthropic Blog",
+        "url": "https://www.anthropic.com/blog/claude-5-beta"
+      },
+      {
+        "title": "✨ Claude Pro: Tích Hợp Cơ Sở Tri Thức Tùy Chỉnh",
+        "desc": "Người dùng Claude Pro giờ đây có thể kết nối và sử dụng cơ sở tri thức riêng của mình để Claude truy xuất thông tin. Tính năng này giúp tăng cường độ chính xác và cá nhân hóa phản hồi.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "09/05·Claude Docs",
+        "url": "https://docs.anthropic.com/claude/pro/custom-kb"
+      },
+      {
+        "title": "⏰ Cảnh Báo: Yêu Cầu API Key Mới Cho Endpoint V3",
+        "desc": "Kể từ ngày 01/06/2026, tất cả các yêu cầu tới endpoint API v3 mới sẽ bắt buộc sử dụng định dạng API Key mới. Các key cũ sẽ không còn hiệu lực cho các endpoint này.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "08/05·Anthropic Dev",
+        "url": "https://developers.anthropic.com/blog/api-key-v3"
+      },
+      {
+        "title": "🔥 Claude Enterprise: Hỗ Trợ Triển Khai On-Premise",
+        "desc": "Claude Enterprise mở rộng tùy chọn triển khai on-premise, cho phép các doanh nghiệp lớn giữ dữ liệu và mô hình trong môi trường bảo mật nội bộ. Điều này đáp ứng các yêu cầu nghiêm ngặt về tuân thủ và bảo mật.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "09/05·Anthropic Press",
+        "url": "https://www.anthropic.com/enterprise/on-premise"
+      },
+      {
+        "title": "🔧 API: Ra Mắt Endpoint 'Embeddings' Tối Ưu",
+        "desc": "Anthropic giới thiệu endpoint API 'Embeddings' mới được tối ưu hóa, cung cấp khả năng tạo vector nhúng hiệu quả hơn cho các tác vụ tìm kiếm ngữ nghĩa và phân loại. Endpoint này hỗ trợ nhiều mô hình nhúng khác nhau.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "08/05·Anthropic Dev",
+        "url": "https://developers.anthropic.com/docs/embeddings-api"
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropic/claude-agent-framework",
+        "url": "https://github.com/anthropic/claude-agent-framework",
+        "desc": "Một framework Python giúp xây dựng các tác nhân AI mạnh mẽ sử dụng Claude, hỗ trợ lập kế hoạch và thực thi đa bước.",
+        "stars": "7.2K+",
+        "verdict": "yes",
+        "reason": "Trực tiếp liên quan đến Claude và tự động hóa tác nhân."
+      },
+      {
+        "name": "ai-utilities/prompt-optimizer",
+        "url": "https://github.com/ai-utilities/prompt-optimizer",
+        "desc": "Công cụ mã nguồn mở để tự động tối ưu hóa các prompt cho các mô hình ngôn ngữ lớn, giúp cải thiện chất lượng phản hồi.",
+        "stars": "15.8K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI hữu ích, tăng hiệu quả sử dụng Claude."
+      },
+      {
+        "name": "mcp-servers/nextgen-minecraft-server",
+        "url": "https://github.com/mcp-servers/nextgen-minecraft-server",
+        "desc": "Phiên bản máy chủ Minecraft thế hệ mới được tối ưu hóa hiệu suất và hỗ trợ các plugin AI để quản lý và tương tác.",
+        "stars": "3.1K+",
+        "verdict": "yes",
+        "reason": "Máy chủ MCP với tích hợp AI, phù hợp tiêu chí."
+      },
+      {
+        "name": "agent-automation/autocoder-agent",
+        "url": "https://github.com/agent-automation/autocoder-agent",
+        "desc": "Tác nhân AI tự động viết và sửa lỗi code dựa trên yêu cầu ngôn ngữ tự nhiên, tích hợp với các IDE phổ biến.",
+        "stars": "11.5K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân và tiện ích AI cho lập trình."
+      },
+      {
+        "name": "claude-tools/claude-cli",
+        "url": "https://github.com/claude-tools/claude-cli",
+        "desc": "Giao diện dòng lệnh không chính thức cho Claude, cho phép tương tác nhanh chóng và tích hợp vào các script.",
+        "stars": "4.9K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude tiện lợi cho nhà phát triển."
+      },
+      {
+        "name": "llm-research/fine-tuning-toolkit",
+        "url": "https://github.com/llm-research/fine-tuning-toolkit",
+        "desc": "Bộ công cụ để tinh chỉnh các mô hình ngôn ngữ lớn với dữ liệu tùy chỉnh, hỗ trợ nhiều framework AI.",
+        "stars": "9.1K+",
+        "verdict": "maybe",
+        "reason": "Hữu ích cho LLM nói chung, có thể áp dụng cho Claude nếu có API fine-tuning."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-08",
     "dayLabel": "Thứ Sáu",
     "dateLabel": "08/05/2026",
@@ -2647,13 +2745,5 @@
         "reason": "Plugin chính thức, giúp chuyên biệt hóa Claude cho từng vai trò."
       }
     ]
-  },
-  {
-    "date": "2026-04-09",
-    "dayLabel": "Thứ Năm",
-    "dateLabel": "09/04/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
   }
 ]
