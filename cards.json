@@ -1,5 +1,95 @@
 [
   {
+    "date": "2026-05-10",
+    "dayLabel": "Chủ Nhật",
+    "dateLabel": "10/05/2026",
+    "news": [
+      {
+        "title": "🧠 Claude Vision 1.0 Ra Mắt",
+        "desc": "Anthropic chính thức giới thiệu Claude Vision 1.0, mô hình đa phương thức mới với khả năng hiểu và phân tích hình ảnh nâng cao, mở ra nhiều ứng dụng mới cho doanh nghiệp.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "source": "09/05·Anthropic",
+        "url": "https://anthropic.com/blog/claude-vision-1-0"
+      },
+      {
+        "title": "✨ Claude Pro: Hỗ Trợ Đàm Thoại Bằng Giọng Nói",
+        "desc": "Người dùng Claude Pro giờ đây có thể tương tác với mô hình thông qua giọng nói, cho phép nhập liệu và nhận phản hồi âm thanh tự nhiên, tiện lợi hơn trong nhiều tình huống.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "09/05·Claude Blog",
+        "url": "https://claude.ai/blog/voice-interaction"
+      },
+      {
+        "title": "🔧 API: Ra Mắt Endpoint 'Streaming Chat' Tối Ưu",
+        "desc": "Anthropic đã phát hành endpoint API 'Streaming Chat' mới, cung cấp phản hồi theo thời gian thực với độ trễ thấp hơn, cải thiện trải nghiệm cho các ứng dụng tương tác trực tiếp.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "10/05·Dev Docs",
+        "url": "https://docs.anthropic.com/api/streaming-chat"
+      },
+      {
+        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ API Key Định Dạng Cũ",
+        "desc": "Anthropic thông báo sẽ ngừng hỗ trợ định dạng API key cũ vào ngày 30/06/2026. Các nhà phát triển cần cập nhật lên định dạng API key mới để đảm bảo dịch vụ liên tục.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "09/05·Dev Docs",
+        "url": "https://docs.anthropic.com/api/key-deprecation"
+      },
+      {
+        "title": "🔥 Claude AI Assistant Cho Máy Tính Để Bàn",
+        "desc": "Phiên bản Claude AI Assistant dành cho desktop đã được phát hành, mang sức mạnh của Claude trực tiếp lên máy tính của bạn, hỗ trợ đa nhiệm và tích hợp sâu vào hệ điều hành.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "source": "10/05·Claude Blog",
+        "url": "https://claude.ai/blog/desktop-assistant"
+      }
+    ],
+    "repos": [
+      {
+        "name": "anthropic-community/claude-cli",
+        "url": "https://github.com/anthropic-community/claude-cli",
+        "desc": "Công cụ dòng lệnh mạnh mẽ để tương tác với API Claude, hỗ trợ nhiều tính năng từ chat đến quản lý model.",
+        "stars": "3.5K+",
+        "verdict": "yes",
+        "reason": "Claude tools, tiện ích cho dev."
+      },
+      {
+        "name": "agent-forge/multi-agent-framework",
+        "url": "https://github.com/agent-forge/multi-agent-framework",
+        "desc": "Một framework mã nguồn mở để xây dựng và triển khai các hệ thống đa tác tử AI phức tạp.",
+        "stars": "18K+",
+        "verdict": "yes",
+        "reason": "Agent automation, xu hướng AI."
+      },
+      {
+        "name": "local-llm-dev/ollama-webui",
+        "url": "https://github.com/local-llm-dev/ollama-webui",
+        "desc": "Giao diện người dùng web thân thiện cho Ollama, giúp dễ dàng chạy và quản lý các LLM cục bộ.",
+        "stars": "22K+",
+        "verdict": "yes",
+        "reason": "AI utilities, quản lý LLM cục bộ."
+      },
+      {
+        "name": "prompt-engineers/prompt-flow-studio",
+        "url": "https://github.com/prompt-engineers/prompt-flow-studio",
+        "desc": "Môi trường phát triển trực quan để thiết kế, thử nghiệm và tối ưu hóa các luồng prompt cho LLM.",
+        "stars": "9K+",
+        "verdict": "yes",
+        "reason": "AI utilities, công cụ prompt engineering."
+      },
+      {
+        "name": "mcp-server-dev/fabric-ai-mod",
+        "url": "https://github.com/mcp-server-dev/fabric-ai-mod",
+        "desc": "Một mod Minecraft Fabric tích hợp AI để tạo ra các NPC thông minh hơn và thế giới năng động hơn.",
+        "stars": "1.2K+",
+        "verdict": "maybe",
+        "reason": "MCP servers, tích hợp AI trong game."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-09",
     "dayLabel": "Thứ Bảy",
     "dateLabel": "09/05/2026",
@@ -2648,102 +2738,5 @@
     "news": [],
     "repos": [],
     "gamingNews": []
-  },
-  {
-    "date": "2026-04-10",
-    "dayLabel": "Thứ Sáu",
-    "dateLabel": "10/04/2026",
-    "news": [
-      {
-        "title": "🧠 Claude Mythos Preview",
-        "desc": "Anthropic đã ra mắt mô hình AI Mythos Preview mới, tập trung vào khả năng an ninh mạng để phát hiện và sửa lỗi trong phần mềm mã nguồn mở.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "09/04/2026·Forbes",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Cowork ra mắt Enterprise",
-        "desc": "Anthropic chính thức đưa Claude Cowork ra khỏi giai đoạn preview và cung cấp cho các doanh nghiệp với các tính năng kiểm soát truy cập và quyền MCP chi tiết hơn.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "09/04/2026·Tech News",
-        "url": ""
-      },
-      {
-        "title": "✨ 3 lệnh Claude Code mới",
-        "desc": "Anthropic đã âm thầm phát hành 3 lệnh mới cho Claude Code: /ultraplan để lập kế hoạch trên đám mây, /powerup cho hướng dẫn tương tác, và /insights để phân tích.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "09/04/2026·Medium",
-        "url": ""
-      },
-      {
-        "title": "🔧 Cập nhật Claude Code",
-        "desc": "Claude Code bổ sung trình hướng dẫn cài đặt Google Vertex AI tương tác, công cụ Monitor mới để theo dõi sự kiện từ script nền, và hỗ trợ Amazon Bedrock Mantle.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "09/04/2026·GitHub",
-        "url": ""
-      },
-      {
-        "title": "⏰ Ngừng hỗ trợ 1M Context Window Beta",
-        "desc": "Tính năng beta 1M token context window cho Claude Sonnet 4.5 và Sonnet 4 sẽ ngừng hoạt động vào ngày 30/04/2026.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "30/03/2026·Anthropic API Docs",
-        "url": ""
-      }
-    ],
-    "repos": [
-      {
-        "name": "anthropics/skills",
-        "url": "https://github.com/anthropics/skills",
-        "desc": "Kho lưu trữ chính thức các kỹ năng (skills) của Anthropic, từ ứng dụng sáng tạo đến các tác vụ kỹ thuật và quy trình làm việc doanh nghiệp.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Kho lưu trữ chính thức, đáng tin cậy và đa dạng."
-      },
-      {
-        "name": "webfuse-com/awesome-claude",
-        "url": "https://github.com/webfuse-com/awesome-claude",
-        "desc": "Danh sách tuyển chọn các tài nguyên tuyệt vời liên quan đến Anthropic Claude, bao gồm SDK, công cụ phát triển và hướng dẫn cộng đồng.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Tài nguyên tổng hợp hữu ích cho nhà phát triển."
-      },
-      {
-        "name": "Jeffallan/claude-skills",
-        "url": "https://github.com/Jeffallan/claude-skills",
-        "desc": "Kho lưu trữ 66 kỹ năng chuyên biệt được xây dựng riêng cho Claude Code, tự động kích hoạt dựa trên ngữ cảnh.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Tập trung vào nhà phát triển, tự động hóa quy trình làm việc."
-      },
-      {
-        "name": "repomix/repomix",
-        "url": "https://repomix.com",
-        "desc": "Công cụ đóng gói toàn bộ dự án vào một tệp duy nhất, giúp Claude có được ngữ cảnh đầy đủ thay vì sao chép từng tệp.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Cải thiện đáng kể ngữ cảnh cho Claude trong các dự án lớn."
-      },
-      {
-        "name": "Everything Claude Code",
-        "url": "https://github.com/Everything-Claude-Code",
-        "desc": "Bộ sưu tập lớn gồm 136 kỹ năng, 30 agent và 60 lệnh cho Claude Code, mở rộng đáng kể các tính năng có sẵn.",
-        "stars": "128K+",
-        "verdict": "yes",
-        "reason": "Bộ sưu tập toàn diện, nhiều tính năng mở rộng cho Claude Code."
-      },
-      {
-        "name": "anthropics/knowledge-work-plugins",
-        "url": "https://github.com/anthropics/knowledge-work-plugins",
-        "desc": "Kho lưu trữ mã nguồn mở các plugin dành cho nhân viên tri thức sử dụng trong Claude Cowork, cũng tương thích với Claude Code.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Plugin chính thức, giúp chuyên biệt hóa Claude cho từng vai trò."
-      }
-    ]
   }
 ]
