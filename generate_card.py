@@ -4,7 +4,7 @@ import json, os, re
 from datetime import datetime, timedelta
 from google import genai
 from google.genai import types
-from digest_utils import get_recent_titles, get_recent_urls
+from digest_utils import get_recent_titles, get_recent_urls, validate_news_urls, validate_repo_urls
 from jina_fetch import fetch_topic_context
 
 try:
@@ -28,15 +28,16 @@ with open("config.json", "r", encoding="utf-8") as f:
 
 topics = {k: v for k, v in config["topics"].items() if v.get("enabled", True)}
 
-# --- Load existing cards for dedup context (before building prompt) ---
+# --- Load existing cards for dedup context ---
 with open("cards.json", "r", encoding="utf-8") as f:
     cards = json.load(f)
 
 recent_titles = get_recent_titles(cards, date_str, now, days=3)
 recent_urls   = get_recent_urls(cards, date_str, now, days=3)
 
+
 def build_prompt(topics: dict, recent_titles: list, topic_contexts: dict) -> str:
-    """Build Gemini prompt with pre-fetched Jina context."""
+    """Build Gemini prompt with pre-fetched context. Hard rules prevent URL hallucination."""
     lines = [
         f"Hôm nay là {day_label}, {date_label}.",
         "Dựa trên dữ liệu tìm kiếm bên dưới, tổng hợp morning digest.\n"
@@ -58,7 +59,8 @@ def build_prompt(topics: dict, recent_titles: list, topic_contexts: dict) -> str
         if ctx:
             lines.append(f"Dữ liệu tìm kiếm:\n{ctx}")
         else:
-            lines.append("(Không có dữ liệu tìm kiếm — tự tổng hợp từ kiến thức.)")
+            # Critical: do NOT tell Gemini to invent. Allow Google Search grounding fallback.
+            lines.append("(Không có dữ liệu tìm kiếm. Nếu được cấp Google Search tool, dùng nó. Nếu không, trả về mảng rỗng [].)")
 
         lines.append(f'Trả về field "{field}" với {min_i}-{max_i} items, schema mỗi item: {schema}\n')
         schema_fields += f',"{field}":[...]'
@@ -71,22 +73,31 @@ def build_prompt(topics: dict, recent_titles: list, topic_contexts: dict) -> str
 
     lines.append("Trả về CHỈ JSON (không markdown, không text thêm):")
     lines.append("{" + schema_fields + "}")
-    lines.append("Rules: tiếng Việt ngắn gọn dễ hiểu. BẮT BUỘC trả về ĐẦY ĐỦ tất cả các field.")
+    lines.append("")
+    lines.append("HARD RULES (BẮT BUỘC):")
+    lines.append("1. URL CHỈ được lấy từ 'Dữ liệu tìm kiếm' / 'Dữ liệu GitHub' / Google Search citations. KHÔNG bịa, KHÔNG sửa, KHÔNG đoán.")
+    lines.append("2. Nếu không có URL thật cho 1 item → set \"url\":\"\" (chuỗi rỗng), KHÔNG copy schema text như 'https://link-...'")
+    lines.append("3. Repo: name + url + stars phải khớp DỮ LIỆU GITHUB nguyên văn. KHÔNG tạo repo mới.")
+    lines.append("4. Nếu data ít hơn min_items → trả số ít hơn, KHÔNG bịa thêm để đủ.")
+    lines.append("5. Tiếng Việt ngắn gọn dễ hiểu. Trả về ĐẦY ĐỦ tất cả các field.")
 
     return "\n".join(lines)
 
 
-# --- Step 1: Fetch web content via Jina ---
+# --- Step 1: Fetch web content ---
 print(f"Generating card for {date_str} | topics: {list(topics.keys())}...")
-print("Step 1: Fetching web content via Jina...")
+print("Step 1: Fetching web content...")
 
 topic_contexts = {}
+valid_urls_per_topic = {}
 for key, topic in topics.items():
-    ctx = fetch_topic_context(topic, month_year)
+    ctx, urls = fetch_topic_context(topic, month_year)
     topic_contexts[key] = ctx
+    valid_urls_per_topic[key] = urls
 
-has_jina = any(topic_contexts.values())
-print(f"Jina fetch done. Has context: {has_jina}")
+all_valid_urls = set().union(*valid_urls_per_topic.values())
+has_data = bool(all_valid_urls)
+print(f"Fetch done. Total URLs in whitelist: {len(all_valid_urls)}")
 
 # --- Step 2: Build prompt and call Gemini ---
 PROMPT = build_prompt(topics, recent_titles, topic_contexts)
@@ -94,7 +105,7 @@ print(f"Step 2: Calling Gemini... (prompt: {len(PROMPT)} chars)")
 
 
 def call_gemini(prompt, retries=2, use_search=False):
-    """Call Gemini with retry. use_search=True enables Google Search as fallback."""
+    """Call Gemini with retry. Returns (text, grounding_urls). use_search enables Google Search."""
     tools = [types.Tool(google_search=types.GoogleSearch())] if use_search else []
     for attempt in range(retries + 1):
         try:
@@ -103,24 +114,33 @@ def call_gemini(prompt, retries=2, use_search=False):
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     tools=tools,
-                    temperature=0.5,
+                    temperature=0.3,
                     max_output_tokens=8192,
                     thinking_config=types.ThinkingConfig(thinking_budget=2048),
                 )
             )
 
             text_parts = []
+            grounding_urls = set()
             if response.candidates:
-                for part in (response.candidates[0].content.parts or []):
+                cand = response.candidates[0]
+                for part in (cand.content.parts or []):
                     if hasattr(part, 'thought') and part.thought:
                         continue
                     if hasattr(part, 'text') and part.text:
                         text_parts.append(part.text)
+                # Extract grounding citations (real source URLs from Google Search)
+                gm = getattr(cand, 'grounding_metadata', None)
+                if gm:
+                    for chunk in (getattr(gm, 'grounding_chunks', None) or []):
+                        web = getattr(chunk, 'web', None)
+                        if web and getattr(web, 'uri', None):
+                            grounding_urls.add(web.uri)
 
             text = "\n".join(text_parts).strip()
             if text:
-                print(f"  Attempt {attempt+1}: got {len(text)} chars")
-                return text
+                print(f"  Attempt {attempt+1}: got {len(text)} chars, {len(grounding_urls)} citations")
+                return text, grounding_urls
 
             finish = "unknown"
             if response.candidates:
@@ -130,14 +150,21 @@ def call_gemini(prompt, retries=2, use_search=False):
         except Exception as e:
             print(f"  Attempt {attempt+1} error: {e}")
 
-    return None
+    return None, set()
 
 
-# Try without Google Search first (Jina context), fallback to Google Search
-text = call_gemini(PROMPT, use_search=False)
-if not text and not has_jina:
-    print("Jina had no data and Gemini failed — retrying with Google Search grounding...")
-    text = call_gemini(PROMPT, retries=1, use_search=True)
+# Try without Google Search (Jina/GitHub context), fallback to Google Search if no data
+text, citations = call_gemini(PROMPT, use_search=False)
+if not text or not has_data:
+    print("Falling back to Gemini + Google Search grounding...")
+    text2, citations2 = call_gemini(PROMPT, retries=1, use_search=True)
+    if text2:
+        text = text2
+        citations |= citations2
+
+# Merge citations into URL whitelist
+all_valid_urls |= citations
+print(f"Final URL whitelist size: {len(all_valid_urls)}")
 
 # --- Parse JSON response ---
 if not text:
@@ -157,7 +184,6 @@ else:
         card_json = json.loads(text)
     except Exception as e1:
         print(f"Direct JSON parse failed: {e1}")
-        # Try to extract JSON block from response
         m = re.search(r"\{[\s\S]+\}", text)
         if m:
             try:
@@ -177,18 +203,23 @@ card_json.setdefault("date", date_str)
 card_json.setdefault("dayLabel", day_label)
 card_json.setdefault("dateLabel", date_label)
 
-# --- Post-process: dedup news by URL against last 3 days ---
+# --- URL validation: drop fake URLs / fake repos ---
+print("Step 3: Validating URLs...")
+card_json["news"]       = validate_news_urls(card_json.get("news", []),       all_valid_urls)
+card_json["gamingNews"] = validate_news_urls(card_json.get("gamingNews", []), all_valid_urls)
+card_json["repos"]      = validate_repo_urls(card_json.get("repos", []),      valid_urls_per_topic.get("github_trending", set()))
+
+# --- Dedup news by URL against last 3 days ---
 if recent_urls:
     before_news   = len(card_json.get("news", []))
     before_gaming = len(card_json.get("gamingNews", []))
-    card_json["news"]       = [n for n in card_json.get("news", [])       if n.get("url", "") not in recent_urls]
-    card_json["gamingNews"] = [g for g in card_json.get("gamingNews", []) if g.get("url", "") not in recent_urls]
+    card_json["news"]       = [n for n in card_json.get("news", [])       if not n.get("url") or n["url"] not in recent_urls]
+    card_json["gamingNews"] = [g for g in card_json.get("gamingNews", []) if not g.get("url") or g["url"] not in recent_urls]
     removed = (before_news - len(card_json["news"])) + (before_gaming - len(card_json["gamingNews"]))
     if removed:
         print(f"Dedup removed {removed} duplicate item(s) found in last 3 days")
 
 # --- Update cards.json (rolling 30-day window) ---
-# cards already loaded above for dedup context — reuse it
 cards = [c for c in cards if c.get("date") != date_str]
 cutoff = now - timedelta(days=30)
 cards = [c for c in cards if datetime.strptime(c["date"], "%Y-%m-%d") >= cutoff.replace(tzinfo=None)]

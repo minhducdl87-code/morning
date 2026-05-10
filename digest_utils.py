@@ -1,5 +1,8 @@
 """Shared utilities for Morning Digest generators."""
+import re
 from datetime import datetime, timedelta
+
+GITHUB_REPO_RE = re.compile(r"^https://github\.com/[^/\s]+/[^/\s]+/?$")
 
 
 def get_recent_titles(cards: list, date_str: str, now, days: int = 3) -> list:
@@ -34,3 +37,34 @@ def get_recent_urls(cards: list, date_str: str, now, days: int = 3) -> set:
             urls |= {n["url"] for n in c.get("news", [])       if n.get("url")}
             urls |= {g["url"] for g in c.get("gamingNews", []) if g.get("url")}
     return urls - {""}
+
+
+def validate_news_urls(items: list, valid_urls: set) -> list:
+    """Clear URL on news items if not in whitelist. Drops obvious schema-leak placeholders."""
+    cleaned = []
+    for n in items:
+        url = (n.get("url") or "").strip()
+        if url:
+            # Drop schema literal leaks (e.g. "https://link-hoặc-chuỗi-rỗng")
+            if "link-ho" in url or " " in url or not url.startswith("http"):
+                n["url"] = ""
+            elif url not in valid_urls:
+                print(f"  [validate] news URL not in whitelist, clearing: {url}")
+                n["url"] = ""
+        cleaned.append(n)
+    return cleaned
+
+
+def validate_repo_urls(items: list, valid_urls: set) -> list:
+    """Drop repo items whose URL doesn't match github.com/owner/repo or isn't in whitelist."""
+    cleaned = []
+    for r in items:
+        url = (r.get("url") or "").strip()
+        if not GITHUB_REPO_RE.match(url):
+            print(f"  [validate] dropped repo (bad URL format): {url}")
+            continue
+        if valid_urls and url not in valid_urls:
+            print(f"  [validate] dropped repo (not in whitelist): {url}")
+            continue
+        cleaned.append(r)
+    return cleaned
