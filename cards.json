@@ -3,88 +3,71 @@
     "date": "2026-05-10",
     "dayLabel": "Chủ Nhật",
     "dateLabel": "10/05/2026",
-    "news": [
-      {
-        "title": "🧠 Claude Vision 1.0 Ra Mắt",
-        "desc": "Anthropic chính thức giới thiệu Claude Vision 1.0, mô hình đa phương thức mới với khả năng hiểu và phân tích hình ảnh nâng cao, mở ra nhiều ứng dụng mới cho doanh nghiệp.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "09/05·Anthropic",
-        "url": "https://anthropic.com/blog/claude-vision-1-0"
-      },
-      {
-        "title": "✨ Claude Pro: Hỗ Trợ Đàm Thoại Bằng Giọng Nói",
-        "desc": "Người dùng Claude Pro giờ đây có thể tương tác với mô hình thông qua giọng nói, cho phép nhập liệu và nhận phản hồi âm thanh tự nhiên, tiện lợi hơn trong nhiều tình huống.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "09/05·Claude Blog",
-        "url": "https://claude.ai/blog/voice-interaction"
-      },
-      {
-        "title": "🔧 API: Ra Mắt Endpoint 'Streaming Chat' Tối Ưu",
-        "desc": "Anthropic đã phát hành endpoint API 'Streaming Chat' mới, cung cấp phản hồi theo thời gian thực với độ trễ thấp hơn, cải thiện trải nghiệm cho các ứng dụng tương tác trực tiếp.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "10/05·Dev Docs",
-        "url": "https://docs.anthropic.com/api/streaming-chat"
-      },
-      {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ API Key Định Dạng Cũ",
-        "desc": "Anthropic thông báo sẽ ngừng hỗ trợ định dạng API key cũ vào ngày 30/06/2026. Các nhà phát triển cần cập nhật lên định dạng API key mới để đảm bảo dịch vụ liên tục.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "09/05·Dev Docs",
-        "url": "https://docs.anthropic.com/api/key-deprecation"
-      },
-      {
-        "title": "🔥 Claude AI Assistant Cho Máy Tính Để Bàn",
-        "desc": "Phiên bản Claude AI Assistant dành cho desktop đã được phát hành, mang sức mạnh của Claude trực tiếp lên máy tính của bạn, hỗ trợ đa nhiệm và tích hợp sâu vào hệ điều hành.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "10/05·Claude Blog",
-        "url": "https://claude.ai/blog/desktop-assistant"
-      }
-    ],
+    "news": [],
     "repos": [
       {
-        "name": "anthropic-community/claude-cli",
-        "url": "https://github.com/anthropic-community/claude-cli",
-        "desc": "Công cụ dòng lệnh mạnh mẽ để tương tác với API Claude, hỗ trợ nhiều tính năng từ chat đến quản lý model.",
-        "stars": "3.5K+",
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "370.4K+",
         "verdict": "yes",
-        "reason": "Claude tools, tiện ích cho dev."
+        "reason": "Trợ lý AI cá nhân, tiện ích AI."
       },
       {
-        "name": "agent-forge/multi-agent-framework",
-        "url": "https://github.com/agent-forge/multi-agent-framework",
-        "desc": "Một framework mã nguồn mở để xây dựng và triển khai các hệ thống đa tác tử AI phức tạp.",
-        "stars": "18K+",
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
+        "stars": "187.3K+",
         "verdict": "yes",
-        "reason": "Agent automation, xu hướng AI."
+        "reason": "Tự động hóa, tiện ích AI."
       },
       {
-        "name": "local-llm-dev/ollama-webui",
-        "url": "https://github.com/local-llm-dev/ollama-webui",
-        "desc": "Giao diện người dùng web thân thiện cho Ollama, giúp dễ dàng chạy và quản lý các LLM cục bộ.",
-        "stars": "22K+",
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Cung cấp công cụ để mọi người có thể sử dụng và xây dựng trên nền tảng AI dễ tiếp cận.",
+        "stars": "184.1K+",
         "verdict": "yes",
-        "reason": "AI utilities, quản lý LLM cục bộ."
+        "reason": "Tiện ích AI, tự động hóa agent."
       },
       {
-        "name": "prompt-engineers/prompt-flow-studio",
-        "url": "https://github.com/prompt-engineers/prompt-flow-studio",
-        "desc": "Môi trường phát triển trực quan để thiết kế, thử nghiệm và tối ưu hóa các luồng prompt cho LLM.",
-        "stars": "9K+",
+        "name": "affaan-m/everything-claude-code",
+        "url": "https://github.com/affaan-m/everything-claude-code",
+        "desc": "Hệ thống tối ưu hóa hiệu suất agent cho Claude Code và các công cụ AI khác.",
+        "stars": "177.4K+",
         "verdict": "yes",
-        "reason": "AI utilities, công cụ prompt engineering."
+        "reason": "Công cụ Claude, tự động hóa agent."
       },
       {
-        "name": "mcp-server-dev/fabric-ai-mod",
-        "url": "https://github.com/mcp-server-dev/fabric-ai-mod",
-        "desc": "Một mod Minecraft Fabric tích hợp AI để tạo ra các NPC thông minh hơn và thế giới năng động hơn.",
-        "stars": "1.2K+",
-        "verdict": "maybe",
-        "reason": "MCP servers, tích hợp AI trong game."
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển quy trình làm việc agentic.",
+        "stars": "140.8K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa agent, tiện ích AI."
+      },
+      {
+        "name": "langflow-ai/langflow",
+        "url": "https://github.com/langflow-ai/langflow",
+        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các agent và quy trình làm việc được hỗ trợ bởi AI.",
+        "stars": "147.9K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa agent, tiện ích AI."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Giúp bạn nhanh chóng sử dụng các mô hình AI như Kimi-K2.5, GLM-5, MiniMax và nhiều mô hình khác.",
+        "stars": "171.1K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, hỗ trợ mô hình."
+      },
+      {
+        "name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "desc": "Framework định nghĩa mô hình cho các mô hình học máy tiên tiến trong nhiều lĩnh vực.",
+        "stars": "160.4K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, mô hình."
       }
     ],
     "gamingNews": []
