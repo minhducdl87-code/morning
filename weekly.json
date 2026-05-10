@@ -3,28 +3,17 @@
     "weekLabel": "Tuần 19/2026",
     "fromDate": "2026-05-04",
     "toDate": "2026-05-10",
-    "highlights": [],
-    "topRepos": [
+    "highlights": [
       {
-        "name": "Significant-Gravitas/AutoGPT",
-        "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "Tiếp tục là một trong những dự án AI agent nổi bật nhất, cung cấp công cụ mạnh mẽ để mọi người có thể sử dụng và xây dựng các tác nhân AI tự động hóa.",
-        "stars": "12K+",
-        "verdict": "yes"
-      },
-      {
-        "name": "ollama/ollama",
-        "url": "https://github.com/ollama/ollama",
-        "desc": "Dự án này giúp người dùng nhanh chóng sử dụng các mô hình AI lớn như Kimi-K2.5, Gemini và nhiều mô hình khác một cách dễ dàng trên máy tính cá nhân.",
-        "stars": "12K+",
-        "verdict": "yes"
+        "title": "✨ Claude Pro: Tích Hợp Cơ Sở Tri Thức Tùy Chỉnh",
+        "desc": "Người dùng Claude Pro giờ đây có thể kết nối và sử dụng cơ sở tri thức riêng của mình để Claude truy xuất thông tin, giúp tăng cường khả năng trả lời chính xác và phù hợp với dữ liệu nội bộ của người dùng.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://docs.anthropic.com/claude/pro/custom-kb"
       }
     ],
-    "topGaming": [],
-    "news": [],
-    "gamingNews": [],
-    "topNews": [],
-    "repos": []
+    "topRepos": [],
+    "topGaming": []
   },
   {
     "weekLabel": "Tuần 18/2026",
