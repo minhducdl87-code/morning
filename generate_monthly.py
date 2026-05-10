@@ -15,6 +15,7 @@ import json, os, sys, argparse
 from collections import OrderedDict
 from datetime import datetime, timedelta
 from digest_utils import batch_check_urls, GITHUB_REPO_RE
+from jina_fetch import github_search
 
 try:
     import zoneinfo
@@ -100,11 +101,43 @@ def rank_repos(items: list, top_n: int = 8) -> list:
     return out
 
 
-def build_monthly(year: int, month: int, cards: list) -> dict | None:
+def fetch_live_github_for_month(year: int, month: int) -> list:
+    """Live GitHub Search for repos created/pushed in target month — fallback for sparse cards."""
+    first, _ = month_bounds(year, month)
+    queries = [
+        f"claude OR anthropic OR mcp pushed:>{first} stars:>50",
+        f"agent OR \"ai tools\" pushed:>{first} stars:>200",
+        f"llm OR ai pushed:>{first} stars:>500",
+    ]
+    seen = {}
+    for q in queries:
+        for r in github_search(q, max_results=8):
+            if r["url"] and r["url"] not in seen:
+                seen[r["url"]] = {
+                    "name":   r["name"],
+                    "url":    r["url"],
+                    "desc":   r["desc"][:200],
+                    "stars":  r["stars"],
+                    "verdict":"yes",
+                    "reason": f"Trending {month_label(year, month)}",
+                }
+    return list(seen.values())
+
+
+def build_monthly(year: int, month: int, cards: list, fetch_live: bool = False) -> dict | None:
     news, repos, gaming = filter_items_in_month(cards, year, month)
     news   = dedupe_by_url(news)
     repos  = dedupe_by_url(repos)
     gaming = dedupe_by_url(gaming)
+
+    # Fallback: if repos sparse for this month (e.g. current month early), pull live GitHub
+    if fetch_live and len(repos) < 4:
+        print(f"  Sparse repos ({len(repos)}) — fetching live GitHub for {month_label(year, month)}...")
+        live = fetch_live_github_for_month(year, month)
+        existing_urls = {r["url"] for r in repos}
+        for r in live:
+            if r["url"] not in existing_urls:
+                repos.append(r)
 
     # HEAD re-check to catch any URL that died since last scrub
     all_urls = [x["url"] for x in news + repos + gaming if x.get("url")]
@@ -155,23 +188,26 @@ def main():
     with open("cards.json", "r", encoding="utf-8") as f:
         cards = json.load(f)
 
+    now = datetime.now(tz)
+
     if args.backfill:
         year, month = map(int, args.backfill.split("-"))
-        print(f"Backfilling {month_label(year, month)} from cards.json...")
-        m = build_monthly(year, month, cards)
+        # Fetch live GitHub if backfilling current month (sparse cards expected)
+        is_current = (year == now.year and month == now.month)
+        print(f"Backfilling {month_label(year, month)} from cards.json{' + live GitHub' if is_current else ''}...")
+        m = build_monthly(year, month, cards, fetch_live=is_current)
         if m:
             print(f"  topNews:{len(m['topNews'])} topRepos:{len(m['topRepos'])} topGaming:{len(m['topGaming'])}")
             upsert_monthly(m)
         return
 
     # Default: roll up PREVIOUS month
-    now = datetime.now(tz)
     if now.month == 1:
         year, month = now.year - 1, 12
     else:
         year, month = now.year, now.month - 1
     print(f"Rolling up previous month: {month_label(year, month)}")
-    m = build_monthly(year, month, cards)
+    m = build_monthly(year, month, cards, fetch_live=False)
     if m:
         upsert_monthly(m)
 

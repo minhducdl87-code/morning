@@ -1,5 +1,87 @@
 [
   {
+    "monthLabel": "Tháng 5/2026",
+    "fromDate": "2026-05-01",
+    "toDate": "2026-05-31",
+    "topNews": [
+      {
+        "title": "✨ Claude Pro: Tích Hợp Cơ Sở Tri Thức Tùy Chỉnh",
+        "desc": "Người dùng Claude Pro giờ đây có thể kết nối và sử dụng cơ sở tri thức riêng của mình để Claude truy xuất thông tin. Tính năng này giúp tăng cường độ chính xác và cá nhân hóa phản hồi.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "09/05·Claude Docs",
+        "url": "https://docs.anthropic.com/claude/pro/custom-kb"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+        "stars": "370.4K+",
+        "verdict": "yes",
+        "reason": "Trending Tháng 5/2026"
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+        "stars": "187.3K+",
+        "verdict": "yes",
+        "reason": "Trending Tháng 5/2026"
+      },
+      {
+        "name": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "desc": "An agentic skills framework & software development methodology that works.",
+        "stars": "185.0K+",
+        "verdict": "yes",
+        "reason": "Trending Tháng 5/2026"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "stars": "184.1K+",
+        "verdict": "yes",
+        "reason": "Trending Tháng 5/2026"
+      },
+      {
+        "name": "affaan-m/everything-claude-code",
+        "url": "https://github.com/affaan-m/everything-claude-code",
+        "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "stars": "177.5K+",
+        "verdict": "yes",
+        "reason": "Trending Tháng 5/2026"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "stars": "171.1K+",
+        "verdict": "yes",
+        "reason": "Trending Tháng 5/2026"
+      },
+      {
+        "name": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "stars": "161.9K+",
+        "verdict": "yes",
+        "reason": "Trending Tháng 5/2026"
+      },
+      {
+        "name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "desc": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+        "stars": "160.4K+",
+        "verdict": "yes",
+        "reason": "Trending Tháng 5/2026"
+      }
+    ],
+    "topGaming": []
+  },
+  {
     "monthLabel": "Tháng 4/2026",
     "fromDate": "2026-04-01",
     "toDate": "2026-04-30",
