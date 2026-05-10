@@ -1,5 +1,43 @@
 [
   {
+    "weekLabel": "Tuần 20/2026",
+    "fromDate": "2026-05-05",
+    "toDate": "2026-05-11",
+    "highlights": [
+      {
+        "title": "✨ Claude Pro: Tích Hợp Cơ Sở Tri Thức Tùy Chỉnh",
+        "desc": "Người dùng Claude Pro giờ đây có thể kết nối và sử dụng cơ sở tri thức riêng của mình để Claude truy xuất thông tin, giúp tăng cường khả năng cá nhân hóa và độ chính xác của các phản hồi AI. Tính năng này mở ra nhiều ứng dụng mới cho các doanh nghiệp và cá nhân muốn tận dụng dữ liệu riêng của họ với sức mạnh của Claude.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://docs.anthropic.com/claude/pro/custom-kb"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Dự án thu hút sự chú ý lớn với vai trò là trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng, cho thấy tiềm năng rộng lớn trong việc đưa AI đến gần hơn với người dùng phổ thông.",
+        "stars": "370.5K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa workflow này nổi bật với khả năng tích hợp AI và hỗ trợ hơn 400 tích hợp, trở thành công cụ mạnh mẽ cho việc tự động hóa các quy trình phức tạp và nâng cao hiệu suất làm việc.",
+        "stars": "187.4K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "AutoGPT tiếp tục khẳng định tầm nhìn về AI dễ tiếp cận cho mọi người, cung cấp các công cụ giúp người dùng tập trung vào những gì quan trọng, thúc đẩy sự phát triển của các ứng dụng AI tự động.",
+        "stars": "184.2K+",
+        "verdict": "yes"
+      }
+    ],
+    "topGaming": []
+  },
+  {
     "weekLabel": "Tuần 19/2026",
     "fromDate": "2026-05-04",
     "toDate": "2026-05-10",
