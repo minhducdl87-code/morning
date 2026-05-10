@@ -9,6 +9,12 @@ GITHUB_REPO_RE = re.compile(r"^https://github\.com/[^/\s]+/[^/\s]+/?$")
 HTTP_TIMEOUT   = 5
 HEAD_WORKERS   = 8
 
+# Domains we consider "not a real source" — short-lived redirects, schema leaks
+URL_BLACKLIST  = (
+    "vertexaisearch.cloud.google.com",  # Gemini grounding redirect with expiring token
+    "link-ho",                           # schema literal leak ("link-hoặc-...")
+)
+
 
 def get_recent_titles(cards: list, date_str: str, now, days: int = 3) -> list:
     """Extract news/gaming titles from last N days (excluding today) for dedup prompt injection."""
@@ -50,7 +56,9 @@ def is_url_live(url: str) -> bool:
     """Return True if URL responds 2xx/3xx within timeout. Used to drop 404 fake links."""
     if not url or not url.startswith("http"):
         return False
-    if " " in url or "link-ho" in url:  # schema leaks
+    if " " in url:
+        return False
+    if any(bad in url for bad in URL_BLACKLIST):
         return False
     try:
         req = urllib.request.Request(url, method="HEAD")

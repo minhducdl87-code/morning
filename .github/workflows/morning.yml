@@ -3,13 +3,28 @@ name: Morning Digest
 "on":
   schedule:
     - cron: '0 22 * * *'   # 5:00 AM Vietnam time (daily)
-    - cron: '0 22 * * 0'   # 5:00 AM Vietnam time (Sunday only — for weekly)
+    - cron: '0 22 * * 0'   # 5:00 AM Vietnam time (Sunday — weekly trigger)
+    - cron: '0 22 1 * *'   # 5:00 AM Vietnam time (1st of month — monthly trigger)
   workflow_dispatch:
+    inputs:
+      run_weekly:
+        description: 'Also run weekly digest'
+        type: boolean
+        default: false
+      run_monthly:
+        description: 'Also run monthly rollup'
+        type: boolean
+        default: false
+      backfill_month:
+        description: 'Backfill specific month YYYY-MM (skip daily if set)'
+        type: string
+        default: ''
 
 jobs:
-  # ── Daily digest (runs every day) ──────────────────────────────────────────
+  # ── Daily digest ────────────────────────────────────────────────────────────
   daily-digest:
     runs-on: ubuntu-latest
+    if: github.event.inputs.backfill_month == ''
     permissions:
       contents: write
     env:
@@ -39,14 +54,16 @@ jobs:
           git diff --staged --quiet || git commit -m "morning $(TZ='Asia/Ho_Chi_Minh' date '+%Y-%m-%d')"
           git push
 
-  # ── Weekly digest (runs every Sunday only) ─────────────────────────────────
+  # ── Weekly digest (Sunday or manual) ───────────────────────────────────────
   weekly-digest:
-    needs: daily-digest   # run AFTER daily to avoid git push conflict
+    needs: daily-digest
     runs-on: ubuntu-latest
+    if: |
+      always() &&
+      (github.event.schedule == '0 22 * * 0' ||
+       github.event.inputs.run_weekly == 'true')
     permissions:
       contents: write
-    # Only run on Sunday or manual dispatch
-    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 22 * * 0'
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v5
@@ -54,7 +71,7 @@ jobs:
           python-version: '3.11'
       - run: pip install google-genai
 
-      - name: Pull latest cards (daily may have committed)
+      - name: Pull latest
         run: git pull
 
       - name: Generate weekly digest
@@ -62,10 +79,46 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python generate_weekly.py
 
-      - name: Commit and push weekly
+      - name: Commit and push
         run: |
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           git add weekly.json
           git diff --staged --quiet || git commit -m "weekly $(TZ='Asia/Ho_Chi_Minh' date '+%Y-%m-%d')"
+          git push
+
+  # ── Monthly rollup (1st of month or manual) ────────────────────────────────
+  monthly-digest:
+    needs: [daily-digest, weekly-digest]
+    runs-on: ubuntu-latest
+    if: |
+      always() &&
+      (github.event.schedule == '0 22 1 * *' ||
+       github.event.inputs.run_monthly == 'true' ||
+       github.event.inputs.backfill_month != '')
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Pull latest
+        run: git pull
+
+      - name: Generate monthly digest
+        run: |
+          if [ -n "${{ github.event.inputs.backfill_month }}" ]; then
+            python generate_monthly.py --backfill "${{ github.event.inputs.backfill_month }}"
+          else
+            python generate_monthly.py
+          fi
+
+      - name: Commit and push
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add monthly.json
+          git diff --staged --quiet || git commit -m "monthly $(TZ='Asia/Ho_Chi_Minh' date '+%Y-%m-%d')"
           git push

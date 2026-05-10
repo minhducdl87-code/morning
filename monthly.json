@@ -1,0 +1,148 @@
+[
+  {
+    "monthLabel": "Tháng 4/2026",
+    "fromDate": "2026-04-01",
+    "toDate": "2026-04-30",
+    "topNews": [
+      {
+        "title": "⏰ Ngừng Hỗ Trợ Claude Sonnet 4 & Opus 4",
+        "desc": "Anthropic thông báo ngừng hỗ trợ các mô hình Claude Sonnet 4 và Claude Opus 4 vào ngày 15/06/2026, khuyến nghị người dùng di chuyển sang Sonnet 4.6 và Opus 4.7.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "14/04·Anthropic API Docs",
+        "url": "https://docs.anthropic.com/claude/reference/changelog#april-14-2026"
+      },
+      {
+        "title": "⏰ Ngừng Hỗ Trợ Claude 4/Sonnet 4",
+        "desc": "Anthropic thông báo ngừng hỗ trợ các model Claude Sonnet 4 và Claude Opus 4, với lịch trình ngừng hoạt động trên Claude API vào ngày 15 tháng 6 năm 2026. Người dùng được khuyến nghị di chuyển sang Claude Sonnet 4.6 và Claude Opus 4.7.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "14/04·Claude API Docs",
+        "url": "https://docs.anthropic.com/claude/reference/changelog"
+      },
+      {
+        "title": "⏰ Ngừng Hỗ Trợ SDK Python Cũ",
+        "desc": "Anthropic thông báo ngừng hỗ trợ các phiên bản SDK Python trước 0.15.0, khuyến nghị người dùng nâng cấp để đảm bảo tính tương thích và bảo mật.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "23/04·Dev Docs",
+        "url": "https://docs.anthropic.com/claude/docs/sdk-deprecation"
+      },
+      {
+        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Claude 2.1 API Cũ",
+        "desc": "Anthropic thông báo ngừng hỗ trợ API cho Claude 2.1 từ ngày 30/06/2026. Các nhà phát triển được khuyến nghị chuyển sang các phiên bản API mới hơn để đảm bảo tính tương thích và hiệu suất.",
+        "tag": "deprecate",
+        "tagLabel": "⏰ DEADLINE",
+        "source": "29/04·Anthropic Dev",
+        "url": "https://docs.anthropic.com/claude/api/deprecation-notice"
+      },
+      {
+        "title": "✨ Ra Mắt Public Beta Công Cụ Advisor",
+        "desc": "Anthropic đã ra mắt công cụ Advisor ở dạng beta công khai, cho phép kết hợp mô hình executor nhanh hơn với mô hình advisor thông minh hơn để hướng dẫn chiến lược trong quá trình tạo.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "09/04·Anthropic API Docs",
+        "url": "https://docs.anthropic.com/claude/reference/changelog#april-9-2026"
+      },
+      {
+        "title": "✨ Claude Managed Agents Public Beta",
+        "desc": "Anthropic đã ra mắt Claude Managed Agents ở dạng beta công khai, một công cụ quản lý tác nhân hoàn chỉnh để chạy Claude như một tác nhân tự trị với sandboxing an toàn và các công cụ tích hợp.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "08/04·Anthropic API Docs",
+        "url": "https://docs.anthropic.com/claude/reference/changelog#april-8-2026"
+      },
+      {
+        "title": "✨ Claude Code: Hỗ Trợ Worktree",
+        "desc": "Claude Code phiên bản 2.1.105 đã thêm tham số đường dẫn vào công cụ EnterWorktree để chuyển sang một worktree hiện có của kho lưu trữ hiện tại. Điều này cải thiện khả năng quản lý dự án và quy trình làm việc cho các nhà phát triển.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "source": "Gần đây·GitHub",
+        "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      },
+      {
+        "title": "🔧 API: Gọi Đa Công Cụ Đồng Thời",
+        "desc": "API Tool Use của Claude giờ đây cho phép gọi nhiều công cụ cùng lúc trong một lượt phản hồi, giúp tự động hóa các tác vụ phức tạp hiệu quả hơn.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "23/04·Claude Dev Docs",
+        "url": "https://docs.anthropic.com/claude/docs/multi-tool-use"
+      },
+      {
+        "title": "🔧 API: Ra Mắt Endpoint Xử Lý Ảnh Nâng Cao",
+        "desc": "API mới cho phép các nhà phát triển tích hợp khả năng phân tích và tạo mô tả chi tiết từ hình ảnh trực tiếp vào ứng dụng của họ. Mở rộng tiềm năng ứng dụng thị giác máy tính.",
+        "tag": "api",
+        "tagLabel": "🔧 API",
+        "source": "29/04·Anthropic Dev",
+        "url": "https://docs.anthropic.com/claude/api/image-processing"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "desc": "Một framework kỹ năng agentic và phương pháp phát triển phần mềm hiệu quả.",
+        "stars": "167.6K+",
+        "verdict": "yes",
+        "reason": "Hỗ trợ phát triển phần mềm bằng AI agent."
+      },
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Claude Code là một công cụ lập trình tác nhân hoạt động trong terminal, hiểu codebase và giúp bạn viết code nhanh hơn.",
+        "stars": "114.3K+",
+        "verdict": "yes",
+        "reason": "Đây là repo chính thức của Anthropic, rất quan trọng cho các công cụ và tiện ích Claude."
+      },
+      {
+        "name": "forrestchang/andrej-karpathy-skills",
+        "url": "https://github.com/forrestchang/andrej-karpathy-skills",
+        "desc": "Tệp CLAUDE.md để cải thiện hành vi của Claude Code, dựa trên quan sát của Andrej Karpathy về các lỗi mã hóa của LLM.",
+        "stars": "81.1K+",
+        "verdict": "yes",
+        "reason": "Cải thiện hiệu suất Claude Code."
+      },
+      {
+        "name": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "desc": "Một plugin Claude Code tự động ghi lại mọi thứ Claude thực hiện, nén bằng AI và đưa ngữ cảnh liên quan vào các phiên làm việc sau này.",
+        "stars": "59K+",
+        "verdict": "yes",
+        "reason": "Plugin Claude Code giúp quản lý và tái sử dụng ngữ cảnh hiệu quả."
+      },
+      {
+        "name": "hesreallyhim/awesome-claude-code",
+        "url": "https://github.com/hesreallyhim/awesome-claude-code",
+        "desc": "Danh sách các slash-commands, file CLAUDE.md, công cụ CLI và quy trình làm việc cho Claude Code.",
+        "stars": "40K+",
+        "verdict": "yes",
+        "reason": "Tập trung vào các tiện ích và quy trình làm việc cho Claude Code."
+      },
+      {
+        "name": "musistudio/claude-code-router",
+        "url": "https://github.com/musistudio/claude-code-router",
+        "desc": "Một công cụ giúp tối ưu hóa việc sử dụng token của Claude Code bằng cách định tuyến các yêu cầu.",
+        "stars": "32.6K+",
+        "verdict": "yes",
+        "reason": "Giúp tiết kiệm token, có tác động thực tế đến chi phí sử dụng API."
+      },
+      {
+        "name": "Donchitos/Claude-Code-Game-Studios",
+        "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+        "desc": "Biến Claude Code thành một studio phát triển game hoàn chỉnh với 49 AI agent và 72 kỹ năng workflow.",
+        "stars": "11.6K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tự động hóa agent, tiện ích AI."
+      },
+      {
+        "name": "e2b-dev/fragments",
+        "url": "https://github.com/e2b-dev/fragments",
+        "desc": "Mẫu Next.js mã nguồn mở để xây dựng các ứng dụng được AI tạo ra hoàn toàn.",
+        "stars": "6.2k",
+        "verdict": "yes",
+        "reason": "Công cụ AI tạo ứng dụng, liên quan đến Claude."
+      }
+    ],
+    "topGaming": []
+  }
+]
