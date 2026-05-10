@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Weekly digest generator — runs every Sunday, summarises last 7 daily cards via Gemini."""
+"""Weekly digest generator — runs every Sunday, summarises last 7 daily cards via Gemini.
+TOP RULE: every news/gaming item MUST have a real, HEAD-validated URL — no exceptions."""
 import json, os, re
 from datetime import datetime, timedelta
 from google import genai
 from google.genai import types
+from digest_utils import batch_check_urls, GITHUB_REPO_RE
 
 try:
     import zoneinfo
@@ -32,67 +34,86 @@ if len(week_cards) < MIN_CARDS:
     print(f"Only {len(week_cards)} cards this week (min {MIN_CARDS}) — skipping weekly digest")
     raise SystemExit(0)
 
-from_date = week_cards[-1]["date"]
-to_date   = week_cards[0]["date"]
-
-# ISO week number for label
-week_num  = now.isocalendar()[1]
+from_date  = week_cards[-1]["date"]
+to_date    = week_cards[0]["date"]
+week_num   = now.isocalendar()[1]
 week_label = f"Tuần {week_num}/{now.year}"
 
-# --- Compact card context (title + tag + date only to keep prompt small) ---
+
 def compact_cards(cards: list) -> str:
+    """Build context with URL on every line so Gemini can cite real sources."""
     rows = []
     for c in cards:
         date = c.get("date", "")
         for n in c.get("news", []):
-            rows.append(f"[{date}][claude] {n.get('title','')} ({n.get('tag','')})")
+            url = n.get("url", "")
+            if not url:  # weekly skips items without URL — top rule
+                continue
+            rows.append(f"[{date}][news][{n.get('tag','')}] {n.get('title','')} | URL: {url} | {n.get('desc','')[:120]}")
         for r in c.get("repos", []):
-            rows.append(f"[{date}][repo:{r.get('verdict','')}] {r.get('name','')} — {r.get('desc','')[:60]}")
+            url = r.get("url", "")
+            if not url:
+                continue
+            rows.append(f"[{date}][repo:{r.get('verdict','')}] {r.get('name','')} | URL: {url} | ⭐{r.get('stars','')} | {r.get('desc','')[:120]}")
         for g in c.get("gamingNews", []):
-            rows.append(f"[{date}][gaming] {g.get('title','')} ({g.get('tag','')})")
+            url = g.get("url", "")
+            if not url:
+                continue
+            rows.append(f"[{date}][gaming][{g.get('tag','')}] {g.get('title','')} | URL: {url} | {g.get('desc','')[:120]}")
     return "\n".join(rows)
 
-context = compact_cards(week_cards)
 
-PROMPT = f"""Dưới đây là dữ liệu Morning Digest từ {from_date} đến {to_date}:
+context = compact_cards(week_cards)
+if not context.strip():
+    print("No items with URLs in week — skipping weekly digest")
+    raise SystemExit(0)
+
+PROMPT = f"""Dưới đây là dữ liệu Morning Digest từ {from_date} đến {to_date} (chỉ items có URL thật):
 
 {context}
 
-Tổng hợp Weekly Digest cho {week_label}. Trả về CHỈ JSON (không markdown):
+Tổng hợp Weekly Digest cho {week_label}. Trả về CHỈ JSON (không markdown, không text thêm):
 {{
   "weekLabel": "{week_label}",
   "fromDate": "{from_date}",
   "toDate": "{to_date}",
   "highlights": [
-    {{"title":"emoji+tên","desc":"tóm tắt tiếng Việt 2-3 câu, nêu impact","tag":"hot|api|feature|deprecate|model","tagLabel":"🔥 HOT|🔧 API|✨ FEATURE|⏰ DEADLINE|🧠 MODEL"}}
+    {{"title":"emoji+tên","desc":"tóm tắt tiếng Việt 2-3 câu nêu impact","tag":"hot|api|feature|deprecate|model","tagLabel":"🔥 HOT|🔧 API|✨ FEATURE|⏰ DEADLINE|🧠 MODEL","url":"https://...nguyên-xi-từ-context"}}
   ],
   "topRepos": [
     {{"name":"owner/repo","url":"https://github.com/owner/repo","desc":"lý do nổi bật tuần này tiếng Việt","stars":"12K+","verdict":"yes"}}
   ],
   "topGaming": [
-    {{"title":"emoji+tên","desc":"tóm tắt tiếng Việt","tag":"chart|monet|gameplay|social-casino|casual","tagLabel":"📊 CHART|💰 MONET|🎮 GAMEPLAY|🎰 SOCIAL|🎈 CASUAL"}}
+    {{"title":"emoji+tên","desc":"tóm tắt tiếng Việt","tag":"chart|monet|gameplay|social-casino|casual","tagLabel":"📊 CHART|💰 MONET|🎮 GAMEPLAY|🎰 SOCIAL|🎈 CASUAL","url":"https://...nguyên-xi-từ-context"}}
   ]
 }}
-Rules: highlights 3-5 items (chọn tin quan trọng nhất tuần), topRepos 3 items (verdict=yes, nổi bật nhất), topGaming 2-3 items nếu có data gaming, bỏ qua nếu không có. Tiếng Việt ngắn gọn."""
+
+HARD RULES (TOP PRIORITY — KHÔNG VI PHẠM):
+1. MỌI item BẮT BUỘC có field "url" với URL THẬT, copy NGUYÊN XI từ "URL:" trong context trên. KHÔNG bịa, KHÔNG sửa, KHÔNG đoán.
+2. Item nào không có URL trong context → BỎ QUA, không đưa vào output.
+3. Repo: name + url + stars phải khớp NGUYÊN VĂN context.
+4. highlights: 3-5 items quan trọng nhất tuần. topRepos: 3 items verdict=yes nổi bật nhất. topGaming: 2-3 items nếu có data gaming.
+5. Thà ít mà thật, đừng cố nhồi đủ số lượng. Tiếng Việt ngắn gọn."""
+
 
 def call_gemini(prompt: str, retries: int = 2) -> str | None:
-    """Call Gemini, extract non-thought text parts, with retry. Thinking disabled — not needed for summarization."""
+    """Call Gemini, extract non-thought text parts, with retry."""
     for attempt in range(retries + 1):
         try:
             response = client.models.generate_content(
                 model="gemini-2.5-flash",
                 contents=prompt,
                 config=types.GenerateContentConfig(
-                    temperature=0.4,
+                    temperature=0.3,
                     max_output_tokens=2048,
-                    thinking_config=types.ThinkingConfig(thinking_budget=0),  # disable thinking
+                    thinking_config=types.ThinkingConfig(thinking_budget=0),
                 )
             )
             text_parts = []
             if response.candidates:
                 for part in (response.candidates[0].content.parts or []):
                     if hasattr(part, "thought") and part.thought:
-                        continue  # skip internal thought parts
+                        continue
                     if hasattr(part, "text") and part.text:
                         text_parts.append(part.text)
             text = "\n".join(text_parts).strip()
@@ -130,6 +151,39 @@ if not weekly_card:
     print("Could not parse weekly JSON — skipping")
     raise SystemExit(1)
 
+
+# --- STRICT validation: every news/gaming item must have live URL; repos must match github.com format + live ---
+def strict_filter(items: list, live_map: dict, require_github: bool = False) -> list:
+    """Drop any item whose URL is missing/dead. For repos, also require github.com/owner/repo format."""
+    cleaned = []
+    for it in items:
+        url = (it.get("url") or "").strip()
+        if not url:
+            print(f"  [strict] dropped (no URL): {it.get('title') or it.get('name')}")
+            continue
+        if require_github and not GITHUB_REPO_RE.match(url):
+            print(f"  [strict] dropped (bad repo format): {url}")
+            continue
+        if not live_map.get(url, False):
+            print(f"  [strict] dropped (dead URL): {url}")
+            continue
+        cleaned.append(it)
+    return cleaned
+
+
+print("Validating URLs (HEAD-check)...")
+all_urls = (
+    [it.get("url","") for it in weekly_card.get("highlights", [])] +
+    [it.get("url","") for it in weekly_card.get("topRepos", [])] +
+    [it.get("url","") for it in weekly_card.get("topGaming", [])]
+)
+live_map = batch_check_urls(all_urls)
+print(f"  {sum(live_map.values())}/{len(live_map)} URLs are live")
+
+weekly_card["highlights"] = strict_filter(weekly_card.get("highlights", []), live_map)
+weekly_card["topRepos"]   = strict_filter(weekly_card.get("topRepos", []),   live_map, require_github=True)
+weekly_card["topGaming"]  = strict_filter(weekly_card.get("topGaming", []),  live_map)
+
 # --- Update weekly.json (rolling MAX_WEEKS window) ---
 try:
     with open("weekly.json", "r", encoding="utf-8") as f:
@@ -137,7 +191,6 @@ try:
 except (FileNotFoundError, json.JSONDecodeError):
     weeklies = []
 
-# Remove existing entry for same week, keep within rolling window
 weeklies = [w for w in weeklies if w.get("weekLabel") != week_label]
 weeklies.insert(0, weekly_card)
 weeklies = weeklies[:MAX_WEEKS]

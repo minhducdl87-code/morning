@@ -93,16 +93,18 @@ def batch_check_urls(urls: list[str]) -> dict[str, bool]:
 # ── Validation: clear bad news URLs, drop bad repo items ──────────────────────
 
 def validate_news_items(items: list, live_map: dict) -> list:
-    """Clear URL on news items if dead/fake. Keep title/desc so news still shows."""
+    """STRICT: drop news items without live URL. Top rule — news must have real source."""
+    cleaned = []
     for n in items:
         url = (n.get("url") or "").strip()
         if not url:
-            n["url"] = ""
+            print(f"  [validate] dropped news (no URL): {n.get('title','')[:60]}")
             continue
         if not live_map.get(url, False):
-            print(f"  [validate] dead news URL cleared: {url}")
-            n["url"] = ""
-    return items
+            print(f"  [validate] dropped news (dead URL): {url}")
+            continue
+        cleaned.append(n)
+    return cleaned
 
 
 def validate_repo_items(items: list, live_map: dict) -> list:

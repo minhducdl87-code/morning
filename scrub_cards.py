@@ -52,22 +52,23 @@ def scrub_weekly(path: str = "weekly.json") -> None:
     items = data if isinstance(data, list) else [data]
     all_urls = []
     for it in items:
-        for k in ("news", "gamingNews", "repos", "topNews", "topRepos"):
+        for k in ("news", "gamingNews", "repos", "topNews", "topRepos", "highlights", "topGaming"):
             for x in it.get(k, []) or []:
                 u = x.get("url", "")
                 if u:
                     all_urls.append(u)
-    if not all_urls:
-        print(f"{path}: no URLs to check")
-        return
 
     print(f"\nChecking {len(set(all_urls))} URLs in {path}...")
-    live_map = batch_check_urls(all_urls)
+    live_map = batch_check_urls(all_urls) if all_urls else {}
     for it in items:
-        for k in ("news", "gamingNews", "topNews"):
-            it[k] = validate_news_items(it.get(k, []) or [], live_map)
+        # News-like fields: strict drop if no live URL (top rule)
+        for k in ("news", "gamingNews", "topNews", "highlights", "topGaming"):
+            if k in it:
+                it[k] = validate_news_items(it.get(k, []) or [], live_map)
+        # Repo fields: drop bad-format + dead
         for k in ("repos", "topRepos"):
-            it[k] = validate_repo_items(it.get(k, []) or [], live_map)
+            if k in it:
+                it[k] = validate_repo_items(it.get(k, []) or [], live_map)
 
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)

@@ -13,44 +13,12 @@
     "dateLabel": "09/05/2026",
     "news": [
       {
-        "title": "🧠 Claude 5.0 Beta Ra Mắt",
-        "desc": "Anthropic vừa công bố phiên bản thử nghiệm Claude 5.0 với khả năng suy luận và hiểu ngữ cảnh vượt trội. Phiên bản này hứa hẹn cải thiện đáng kể hiệu suất cho các tác vụ phức tạp.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "08/05·Anthropic Blog",
-        "url": ""
-      },
-      {
         "title": "✨ Claude Pro: Tích Hợp Cơ Sở Tri Thức Tùy Chỉnh",
         "desc": "Người dùng Claude Pro giờ đây có thể kết nối và sử dụng cơ sở tri thức riêng của mình để Claude truy xuất thông tin. Tính năng này giúp tăng cường độ chính xác và cá nhân hóa phản hồi.",
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "09/05·Claude Docs",
         "url": "https://docs.anthropic.com/claude/pro/custom-kb"
-      },
-      {
-        "title": "⏰ Cảnh Báo: Yêu Cầu API Key Mới Cho Endpoint V3",
-        "desc": "Kể từ ngày 01/06/2026, tất cả các yêu cầu tới endpoint API v3 mới sẽ bắt buộc sử dụng định dạng API Key mới. Các key cũ sẽ không còn hiệu lực cho các endpoint này.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "08/05·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Enterprise: Hỗ Trợ Triển Khai On-Premise",
-        "desc": "Claude Enterprise mở rộng tùy chọn triển khai on-premise, cho phép các doanh nghiệp lớn giữ dữ liệu và mô hình trong môi trường bảo mật nội bộ. Điều này đáp ứng các yêu cầu nghiêm ngặt về tuân thủ và bảo mật.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "09/05·Anthropic Press",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Ra Mắt Endpoint 'Embeddings' Tối Ưu",
-        "desc": "Anthropic giới thiệu endpoint API 'Embeddings' mới được tối ưu hóa, cung cấp khả năng tạo vector nhúng hiệu quả hơn cho các tác vụ tìm kiếm ngữ nghĩa và phân loại. Endpoint này hỗ trợ nhiều mô hình nhúng khác nhau.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "08/05·Anthropic Dev",
-        "url": ""
       }
     ],
     "repos": [],
@@ -60,40 +28,7 @@
     "date": "2026-05-08",
     "dayLabel": "Thứ Sáu",
     "dateLabel": "08/05/2026",
-    "news": [
-      {
-        "title": "✨ Claude Pro: Hỗ Trợ Tích Hợp Công Cụ Tùy Chỉnh",
-        "desc": "Người dùng Claude Pro giờ đây có thể tích hợp các công cụ và plugin tùy chỉnh, giúp tự động hóa quy trình làm việc phức tạp và mở rộng khả năng của Claude.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "07/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Cập Nhật SDK Python Hỗ Trợ Async/Await",
-        "desc": "SDK Python của Claude API đã được cập nhật, bổ sung hỗ trợ async/await, giúp các nhà phát triển xây dựng ứng dụng hiệu năng cao và không đồng bộ dễ dàng hơn.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "08/05·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "⏰ Cảnh Báo: Thay Đổi Chính Sách Giới Hạn Tốc Độ API",
-        "desc": "Anthropic thông báo cập nhật chính sách giới hạn tốc độ (rate limit) cho một số endpoint API, yêu cầu các nhà phát triển xem xét và điều chỉnh ứng dụng của mình.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "08/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Enterprise: Mở Rộng Hỗ Trợ Ngôn Ngữ Doanh Nghiệp",
-        "desc": "Claude Enterprise tăng cường khả năng xử lý và tạo nội dung bằng nhiều ngôn ngữ doanh nghiệp chuyên biệt, phục vụ tốt hơn cho các thị trường toàn cầu.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "07/05·Anthropic",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [],
     "gamingNews": []
   },
@@ -101,48 +36,7 @@
     "date": "2026-05-07",
     "dayLabel": "Thứ Năm",
     "dateLabel": "07/05/2026",
-    "news": [
-      {
-        "title": "🧠 Claude CodeGen 1.0 Ra Mắt",
-        "desc": "Mô hình mới tối ưu cho việc tạo và phân tích mã nguồn, hỗ trợ nhiều ngôn ngữ lập trình. Cải thiện đáng kể hiệu suất cho các tác vụ phát triển phần mềm.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "06/05·Anthropic Blog",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Pro: Phân Tích Dữ Liệu Nâng Cao Với Biểu Đồ",
-        "desc": "Tính năng mới cho phép Claude Pro phân tích dữ liệu phức tạp và tự động tạo biểu đồ trực quan. Giúp người dùng dễ dàng hiểu và trình bày thông tin.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "07/05·Claude Docs",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Cập Nhật Endpoint 'Chat' V2.0 Yêu Cầu Header Mới",
-        "desc": "Phiên bản API Chat V2.0 yêu cầu thêm header xác thực `X-Claude-Auth-V2`. Các ứng dụng cũ cần cập nhật để tránh gián đoạn dịch vụ.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "06/05·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Tham Số 'max_tokens_old'",
-        "desc": "Tham số `max_tokens_old` trong các yêu cầu API sẽ bị loại bỏ vào ngày 15/05/2026. Vui lòng chuyển sang sử dụng `max_output_tokens` để đảm bảo tương thích.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "07/05·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Enterprise: Ra Mắt Tính Năng Kiểm Soát Truy Cập Tùy Chỉnh",
-        "desc": "Doanh nghiệp giờ đây có thể thiết lập các chính sách kiểm soát truy cập chi tiết cho từng nhóm người dùng. Tăng cường bảo mật và tuân thủ quy định.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "06/05·Anthropic Blog",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [],
     "gamingNews": []
   },
@@ -150,56 +44,7 @@
     "date": "2026-05-06",
     "dayLabel": "Thứ Tư",
     "dateLabel": "06/05/2026",
-    "news": [
-      {
-        "title": "🧠 Claude 4.9.1 Cải Thiện Hiệu Năng",
-        "desc": "Phiên bản mới tập trung tối ưu hóa tốc độ phản hồi và tăng cường khả năng an toàn trong các tác vụ phức tạp.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "05/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Pro: Hướng Dẫn Tùy Chỉnh Nâng Cao",
-        "desc": "Người dùng Pro nay có thể thiết lập các hướng dẫn tùy chỉnh chi tiết hơn cho từng dự án hoặc loại tác vụ.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "05/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Ra Mắt Streaming API Mới",
-        "desc": "API mới cho phép nhận phản hồi theo thời gian thực, lý tưởng cho các ứng dụng yêu cầu độ trễ thấp và tương tác liên tục.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "05/05·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Phương Thức Auth Cũ",
-        "desc": "Từ 01/07/2026, các phương thức xác thực API cũ sẽ không còn được hỗ trợ, yêu cầu nâng cấp lên OAuth 2.0 hoặc API Keys mới.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "06/05·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Enterprise: Hợp Tác Với Google Cloud",
-        "desc": "Claude Enterprise mở rộng khả năng triển khai trên Google Cloud, mang lại lựa chọn linh hoạt hơn cho các doanh nghiệp lớn.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "05/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude: Tính Năng Tạo Ảnh Trực Tiếp",
-        "desc": "Claude giờ đây có thể tạo ra hình ảnh dựa trên mô tả văn bản, mở rộng khả năng sáng tạo và ứng dụng đa phương tiện.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "06/05·Anthropic",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [],
     "gamingNews": []
   },
@@ -207,56 +52,7 @@
     "date": "2026-05-05",
     "dayLabel": "Thứ Ba",
     "dateLabel": "05/05/2026",
-    "news": [
-      {
-        "title": "🧠 Claude Opus 4.9.0 Ra Mắt",
-        "desc": "Phiên bản mới cải thiện đáng kể khả năng suy luận phức tạp và xử lý dữ liệu lớn. Tối ưu hóa cho các tác vụ phân tích chuyên sâu.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "05/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Pro: Tích Hợp Tìm Kiếm Nâng Cao (RAG)",
-        "desc": "Người dùng Pro giờ đây có thể kết nối Claude với các kho dữ liệu riêng tư để truy xuất thông tin chính xác hơn. Giúp tăng cường độ tin cậy của phản hồi.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "05/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Ra Mắt SDK .NET Mới",
-        "desc": "Anthropic chính thức phát hành SDK .NET cho phép các nhà phát triển tích hợp Claude vào ứng dụng .NET dễ dàng hơn. Hỗ trợ đầy đủ các tính năng API hiện có.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "04/05·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ API 'Summarize' Cũ",
-        "desc": "Endpoint `/v1/summarize` sẽ ngừng hoạt động vào 01/06/2026; khuyến nghị chuyển sang sử dụng `/v2/messages` với công cụ tóm tắt mới.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "04/05·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Enterprise: Hợp Tác Với Salesforce Để Tối Ưu CRM",
-        "desc": "Claude Enterprise tích hợp sâu hơn với nền tảng Salesforce, mang lại khả năng phân tích khách hàng và tự động hóa quy trình CRM thông minh. Nâng cao hiệu quả kinh doanh.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "05/05·Anthropic Blog",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude: Hỗ Trợ Nhập Liệu Âm Thanh Trực Tiếp",
-        "desc": "Claude giờ đây có thể xử lý trực tiếp các tệp âm thanh hoặc luồng âm thanh để phân tích và phản hồi. Mở rộng khả năng tương tác đa phương thức.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "05/05·Anthropic",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [],
     "gamingNews": []
   },
@@ -264,48 +60,7 @@
     "date": "2026-05-04",
     "dayLabel": "Thứ Hai",
     "dateLabel": "04/05/2026",
-    "news": [
-      {
-        "title": "🧠 Claude 4.8.0 Ra Mắt",
-        "desc": "Phiên bản mới nhất của Claude mang đến khả năng suy luận nâng cao và hiểu ngữ cảnh sâu sắc hơn, cải thiện đáng kể hiệu suất cho các tác vụ phức tạp.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "04/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Pro: Hỗ Trợ Đa Ngôn Ngữ Nâng Cao",
-        "desc": "Người dùng Pro giờ đây có thể trải nghiệm khả năng hiểu và tạo văn bản bằng nhiều ngôn ngữ với độ chính xác và tự nhiên cao hơn, hỗ trợ tốt hơn cho các dự án toàn cầu.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "03/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Ra Mắt Webhook cho Thông Báo Sự Kiện",
-        "desc": "Các nhà phát triển có thể cấu hình webhook để nhận thông báo tức thì về các sự kiện quan trọng như hoàn thành tác vụ dài, lỗi API hoặc cập nhật trạng thái mô hình.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "04/05·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ API Claude 3.5",
-        "desc": "Anthropic thông báo ngừng hỗ trợ API Claude 3.5 từ ngày 01/07/2026. Các nhà phát triển được khuyến nghị nâng cấp lên phiên bản API 4.x để tránh gián đoạn dịch vụ.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "04/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Enterprise: Tích Hợp Hệ Thống Quản Lý Dự Án",
-        "desc": "Phiên bản Enterprise nay có thể tích hợp trực tiếp với các nền tảng quản lý dự án phổ biến, giúp tự động hóa báo cáo, phân tích tiến độ và hỗ trợ ra quyết định.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "03/05·Anthropic",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [],
     "gamingNews": []
   },
@@ -313,48 +68,7 @@
     "date": "2026-05-03",
     "dayLabel": "Chủ Nhật",
     "dateLabel": "03/05/2026",
-    "news": [
-      {
-        "title": "🧠 Claude Vision 4.7.4 Ra Mắt",
-        "desc": "Phiên bản mới cải thiện đáng kể khả năng phân tích hình ảnh và video, mang lại độ chính xác cao hơn cho các tác vụ thị giác máy tính.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "02/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Pro: Tính Năng 'Tùy Chỉnh Phong Cách' Phản Hồi",
-        "desc": "Người dùng Claude Pro giờ đây có thể định hình giọng điệu và phong cách trả lời của Claude, từ chuyên nghiệp đến thân thiện, phù hợp với từng ngữ cảnh.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "02/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Ra Mắt Endpoint 'Batch Processing'",
-        "desc": "Endpoint mới cho phép xử lý đồng thời nhiều yêu cầu cùng lúc, tối ưu hóa hiệu suất và giảm chi phí cho các ứng dụng quy mô lớn.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "01/05·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ SDK JavaScript Dưới Phiên Bản 0.10.0",
-        "desc": "Các nhà phát triển cần cập nhật SDK JavaScript lên phiên bản mới nhất để đảm bảo tương thích, tiếp tục nhận hỗ trợ và các bản vá bảo mật.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "01/05·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Enterprise: Tích Hợp Công Cụ Phân Tích Dữ Liệu Lớn",
-        "desc": "Nền tảng Enterprise giờ đây có thể kết nối trực tiếp với các kho dữ liệu lớn và cung cấp công cụ phân tích chuyên sâu, hỗ trợ ra quyết định kinh doanh.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "02/05·Anthropic",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [],
     "gamingNews": []
   },
@@ -362,48 +76,7 @@
     "date": "2026-05-02",
     "dayLabel": "Thứ Bảy",
     "dateLabel": "02/05/2026",
-    "news": [
-      {
-        "title": "🧠 Claude Sonnet 4.7.3 Ra Mắt",
-        "desc": "Phiên bản mới này cải thiện đáng kể khả năng lập luận logic và xử lý ngôn ngữ tự nhiên, mang lại hiệu suất tốt hơn cho các tác vụ phức tạp.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "02/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Pro: Chế Độ 'Luôn Bật' cho Tác Vụ Nền",
-        "desc": "Người dùng Pro giờ đây có thể thiết lập Claude hoạt động liên tục trong nền để giám sát hoặc tự động hóa các tác vụ định kỳ mà không cần tương tác trực tiếp.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "01/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Hỗ Trợ Streaming Phản Hồi Từng Phần",
-        "desc": "API mới cho phép nhận phản hồi từ Claude theo từng phần nhỏ ngay khi mô hình tạo ra, giúp giảm độ trễ và cải thiện trải nghiệm người dùng trong các ứng dụng thời gian thực.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "02/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ SDK Python Dưới Phiên Bản 0.15.0",
-        "desc": "Anthropic khuyến nghị các nhà phát triển cập nhật lên phiên bản SDK Python 0.15.0 trở lên để đảm bảo tương thích và truy cập các tính năng mới nhất.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "01/05·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Enterprise: Tích Hợp Đa Nền Tảng Dữ Liệu Lớn",
-        "desc": "Phiên bản Enterprise giờ đây hỗ trợ tích hợp sâu rộng với các nền tảng dữ liệu lớn như Snowflake và Databricks, giúp phân tích và trích xuất thông tin từ kho dữ liệu khổng lồ.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "02/05·Anthropic",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [],
     "gamingNews": []
   },
@@ -411,48 +84,7 @@
     "date": "2026-05-01",
     "dayLabel": "Thứ Sáu",
     "dateLabel": "01/05/2026",
-    "news": [
-      {
-        "title": "🧠 Claude Opus 4.7.3 Ra Mắt",
-        "desc": "Phiên bản mới nhất của Claude Opus với khả năng suy luận nâng cao và hiểu ngữ cảnh sâu hơn, cải thiện đáng kể hiệu suất trong các tác vụ phức tạp.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "Hôm nay·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Pro: Tích Hợp Trợ Lý Cá Nhân Đa Nền Tảng",
-        "desc": "Người dùng Claude Pro giờ đây có thể đồng bộ hóa trợ lý AI trên nhiều thiết bị và ứng dụng, mang lại trải nghiệm liền mạch và cá nhân hóa.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "30/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Ra Mắt Endpoint Xử Lý Dữ Liệu Bán Cấu Trúc",
-        "desc": "Endpoint API mới cho phép các nhà phát triển dễ dàng trích xuất và phân tích thông tin từ các định dạng dữ liệu bán cấu trúc như XML, CSV, và JSON phức tạp.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "30/04·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Phiên Bản Claude 3.0 API",
-        "desc": "Anthropic thông báo ngừng hỗ trợ chính thức cho phiên bản Claude 3.0 API từ ngày 01/07/2026; khuyến nghị các nhà phát triển chuyển sang phiên bản mới hơn.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "Hôm nay·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Enterprise: Tích Hợp Hệ Thống Quản Lý Tri Thức",
-        "desc": "Phiên bản Enterprise của Claude giờ đây có thể tích hợp sâu vào các hệ thống quản lý tri thức nội bộ, giúp AI truy cập và sử dụng thông tin doanh nghiệp hiệu quả hơn.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "01/05·Anthropic",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [],
     "gamingNews": []
   },
@@ -460,48 +92,7 @@
     "date": "2026-04-30",
     "dayLabel": "Thứ Năm",
     "dateLabel": "30/04/2026",
-    "news": [
-      {
-        "title": "🧠 Claude Code 4.7.3 Ra Mắt",
-        "desc": "Phiên bản mới được tối ưu hóa đặc biệt cho các tác vụ viết, sửa lỗi và phân tích mã nguồn, mang lại hiệu suất vượt trội cho nhà phát triển. Mô hình này hỗ trợ nhiều ngôn ngữ lập trình và framework phổ biến.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "29/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Agents: Khả Năng Tự Động Thực Thi Tác Vụ",
-        "desc": "Claude giờ đây có thể tự động thực hiện chuỗi tác vụ phức tạp bằng cách sử dụng công cụ và tương tác với môi trường bên ngoài. Tính năng này giúp tự động hóa quy trình làm việc và tăng cường hiệu quả.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "29/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Tham Số 'legacy_mode'",
-        "desc": "Anthropic thông báo sẽ ngừng hỗ trợ tham số 'legacy_mode' trong các API gọi mô hình kể từ ngày 30/06/2026. Các nhà phát triển được khuyến nghị cập nhật mã nguồn để sử dụng các thiết lập mặc định mới.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "28/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Ra Mắt Endpoint Giám Sát Hiệu Suất",
-        "desc": "Một endpoint API mới đã được giới thiệu, cho phép người dùng theo dõi chi tiết hiệu suất của các yêu cầu gửi đến Claude. Điều này giúp các doanh nghiệp tối ưu hóa việc sử dụng và quản lý chi phí.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "29/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Enterprise: Nền Tảng Tinh Chỉnh Mô Hình Tùy Biến",
-        "desc": "Khách hàng Enterprise giờ đây có thể truy cập nền tảng tinh chỉnh mô hình mạnh mẽ, cho phép huấn luyện Claude trên dữ liệu riêng của họ. Tính năng này mang lại khả năng tùy biến sâu rộng và hiệu suất chuyên biệt.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "29/04·Anthropic",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [],
     "gamingNews": []
   },
@@ -510,22 +101,6 @@
     "dayLabel": "Thứ Tư",
     "dateLabel": "29/04/2026",
     "news": [
-      {
-        "title": "🧠 Claude Sonnet 4.7.2 Ra Mắt",
-        "desc": "Phiên bản Sonnet mới nhất mang đến cải tiến đáng kể về khả năng suy luận phức tạp và xử lý dữ liệu lớn. Tối ưu hóa hiệu suất cho các tác vụ phân tích chuyên sâu.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "29/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Pro: Hỗ Trợ Đa Ngôn Ngữ Nâng Cao",
-        "desc": "Người dùng Pro giờ đây có thể trải nghiệm khả năng hiểu và tạo văn bản bằng nhiều ngôn ngữ hơn, với độ chính xác và tự nhiên được cải thiện đáng kể. Hỗ trợ tốt hơn cho các thị trường quốc tế.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "29/04·Anthropic",
-        "url": ""
-      },
       {
         "title": "🔧 API: Ra Mắt Endpoint Xử Lý Ảnh Nâng Cao",
         "desc": "API mới cho phép các nhà phát triển tích hợp khả năng phân tích và tạo mô tả chi tiết từ hình ảnh trực tiếp vào ứng dụng của họ. Mở rộng tiềm năng ứng dụng thị giác máy tính.",
@@ -541,14 +116,6 @@
         "tagLabel": "⏰ DEADLINE",
         "source": "29/04·Anthropic Dev",
         "url": "https://docs.anthropic.com/claude/api/deprecation-notice"
-      },
-      {
-        "title": "🔥 Claude Enterprise: Tăng Cường Bảo Mật Dữ Liệu",
-        "desc": "Phiên bản Enterprise của Claude được cập nhật với các tính năng bảo mật dữ liệu nâng cao, bao gồm mã hóa đầu cuối và kiểm soát truy cập chi tiết hơn. Đảm bảo an toàn thông tin cho các tổ chức lớn.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "29/04·Anthropic",
-        "url": ""
       }
     ],
     "repos": [],
@@ -558,48 +125,7 @@
     "date": "2026-04-28",
     "dayLabel": "Thứ Ba",
     "dateLabel": "28/04/2026",
-    "news": [
-      {
-        "title": "🧠 Claude Sonnet 4.7.1 Cải Thiện Tốc Độ & Chi Phí",
-        "desc": "Phiên bản Sonnet mới nhất mang lại hiệu suất nhanh hơn và chi phí tối ưu hơn cho các tác vụ doanh nghiệp. Giúp các ứng dụng chạy mượt mà và tiết kiệm hơn.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "27/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Tools: Hỗ Trợ Tích Hợp Cơ Sở Dữ Liệu",
-        "desc": "Claude giờ đây có thể tương tác trực tiếp với các cơ sở dữ liệu SQL và NoSQL thông qua các công cụ mới. Mở rộng khả năng tự động hóa và truy vấn dữ liệu phức tạp.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "28/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Ra Mắt SDK Python/TypeScript Mới",
-        "desc": "Anthropic phát hành bộ SDK chính thức mới cho Python và TypeScript, đơn giản hóa việc tích hợp Claude vào các ứng dụng. Hỗ trợ đầy đủ các tính năng API mới nhất.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "27/04·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ API Sandbox Cũ",
-        "desc": "Anthropic thông báo sẽ ngừng hỗ trợ môi trường API Sandbox cũ vào cuối quý này. Các nhà phát triển cần chuyển sang môi trường staging mới để tránh gián đoạn.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "28/04·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Pro: Tính Năng Tóm Tắt Cuộc Họp Tự Động",
-        "desc": "Người dùng Claude Pro giờ đây có thể sử dụng tính năng tóm tắt cuộc họp tự động, giúp nhanh chóng nắm bắt nội dung chính từ các bản ghi âm hoặc văn bản. Tiết kiệm thời gian và tăng năng suất.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "27/04·Anthropic",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [],
     "gamingNews": []
   },
@@ -607,48 +133,7 @@
     "date": "2026-04-27",
     "dayLabel": "Thứ Hai",
     "dateLabel": "27/04/2026",
-    "news": [
-      {
-        "title": "🧠 Claude Opus 4.7 Ra Mắt",
-        "desc": "Anthropic đã phát hành Claude Opus 4.7 vào ngày 16/04/2026, phiên bản mới nhất của dòng mô hình Claude. Mô hình này có sự khác biệt về hành vi so với Claude Opus 4.6, diễn giải các lời nhắc theo nghĩa đen hơn và điều chỉnh độ dài phản hồi dựa trên độ phức tạp của tác vụ.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "16/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Ra Mắt Rate Limits API",
-        "desc": "Anthropic đã phát hành Rate Limits API vào ngày 24/04/2026, cho phép quản trị viên truy vấn giới hạn tốc độ được cấu hình cho tổ chức và không gian làm việc của họ một cách có lập trình.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "24/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "⏰ Ngừng Hỗ Trợ Beta 1M Token Context Cũ",
-        "desc": "Tính năng beta cửa sổ ngữ cảnh 1 triệu token cho Claude Sonnet 4.5 và Claude Sonnet 4 sẽ ngừng hoạt động vào ngày 30/04/2026. Người dùng cần chuyển sang Claude Sonnet 4.6 hoặc Claude Opus 4.6 để tiếp tục sử dụng cửa sổ ngữ cảnh 1 triệu token.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "30/03·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Workbench: Công Cụ Tạo Prompt & Đánh Giá",
-        "desc": "Claude Workbench là một công cụ AI được Anthropic phát triển, có khả năng tự động tạo prompt, đánh giá và thậm chí tự xây dựng các ứng dụng. Công cụ này giúp kỹ sư AI tối ưu hóa các tương tác với mô hình và tăng tốc quá trình phát triển.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "26/02·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude AI Summit 2026 Đang Diễn Ra",
-        "desc": "Hội nghị Sản phẩm AI (Product AI Summit) đang diễn ra từ ngày 15-17/04/2026, với các phiên thảo luận chuyên sâu về các công cụ Claude đang thay đổi cách thức làm việc của các nhóm sản phẩm.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "15/04·Centercode",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [
       {
         "name": "Alishahryar1/free-claude-code",
@@ -705,48 +190,7 @@
     "date": "2026-04-26",
     "dayLabel": "Chủ Nhật",
     "dateLabel": "26/04/2026",
-    "news": [
-      {
-        "title": "🧠 Claude Haiku 4.5 Cải Thiện Suy Luận",
-        "desc": "Phiên bản mới của Claude Haiku ra mắt với khả năng suy luận logic và xử lý ngôn ngữ tự nhiên được nâng cấp đáng kể, phù hợp cho các tác vụ đòi hỏi độ chính xác cao.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "26/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Pro: Phân Tích Dữ Liệu Nâng Cao",
-        "desc": "Người dùng Claude Pro giờ đây có thể truy cập các công cụ phân tích dữ liệu tích hợp, cho phép xử lý và trực quan hóa thông tin phức tạp trực tiếp trong giao diện Claude.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "25/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Fine-tuning Tùy Chỉnh Cho Claude",
-        "desc": "Anthropic giới thiệu API mới cho phép các nhà phát triển tinh chỉnh mô hình Claude với dữ liệu riêng của họ, mở ra khả năng cá nhân hóa AI sâu hơn cho từng ứng dụng cụ thể.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "25/04·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "⏰ Thay Đổi Mô Hình Giá Claude Sắp Tới",
-        "desc": "Anthropic thông báo về việc cập nhật mô hình giá cho các dịch vụ Claude, dự kiến có hiệu lực từ tháng sau. Người dùng nên xem xét lại chi phí để tránh gián đoạn.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "26/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Enterprise: Tích Hợp Kiến Thức Cơ Sở",
-        "desc": "Phiên bản Claude dành cho doanh nghiệp bổ sung tính năng tích hợp trực tiếp với các hệ thống kiến thức nội bộ, giúp AI truy cập thông tin chuyên sâu của tổ chức một cách liền mạch.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "25/04·Anthropic",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [],
     "gamingNews": []
   },
@@ -754,48 +198,7 @@
     "date": "2026-04-25",
     "dayLabel": "Thứ Bảy",
     "dateLabel": "25/04/2026",
-    "news": [
-      {
-        "title": "🧠 Claude Vision Pro Ra Mắt",
-        "desc": "Mô hình mới chuyên xử lý và phân tích hình ảnh, video với độ chính xác cao, mở rộng khả năng đa phương tiện của Claude.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "24/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Hỗ Trợ Dữ Liệu Cấu Trúc Phức Tạp",
-        "desc": "API giờ đây cho phép truyền và nhận các đối tượng JSON lồng nhau phức tạp trong các lời gọi công cụ, giúp tích hợp sâu hơn.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "25/04·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Agents: Giám Sát Chủ Động",
-        "desc": "Tính năng mới giúp các tác nhân AI tự động giám sát hiệu suất và tự điều chỉnh hành vi để đạt mục tiêu tốt hơn.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "24/04·Anthropic Blog",
-        "url": ""
-      },
-      {
-        "title": "⏰ Ngừng Hỗ Trợ API v3 Cũ",
-        "desc": "Anthropic thông báo ngừng hỗ trợ hoàn toàn API phiên bản 3 vào cuối tháng 5, yêu cầu người dùng nâng cấp lên v4 để tránh gián đoạn.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "24/04·Anthropic Dev",
-        "url": ""
-      },
-      {
-        "title": "🔥 Claude Studio Beta Mở Rộng",
-        "desc": "Nền tảng phát triển tích hợp cho phép xây dựng, thử nghiệm và triển khai các ứng dụng AI với Claude một cách dễ dàng hơn.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "25/04·Anthropic",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [],
     "gamingNews": []
   },
@@ -805,28 +208,12 @@
     "dateLabel": "24/04/2026",
     "news": [
       {
-        "title": "🧠 Claude Opus 4.8 Ra Mắt",
-        "desc": "Anthropic vừa công bố Claude Opus 4.8, phiên bản mới nhất của mô hình cao cấp với cải tiến đáng kể về khả năng suy luận đa phương thức và xử lý ngữ cảnh phức tạp.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "24/04·Anthropic Blog",
-        "url": ""
-      },
-      {
         "title": "🔧 API: Gọi Đa Công Cụ Đồng Thời",
         "desc": "API Tool Use của Claude giờ đây cho phép gọi nhiều công cụ cùng lúc trong một lượt phản hồi, giúp tự động hóa các tác vụ phức tạp hiệu quả hơn.",
         "tag": "api",
         "tagLabel": "🔧 API",
         "source": "23/04·Claude Dev Docs",
         "url": "https://docs.anthropic.com/claude/docs/multi-tool-use"
-      },
-      {
-        "title": "✨ Claude Workspace: Quản Lý Dự Án",
-        "desc": "Tính năng quản lý dự án mới trong Claude Workspace giúp người dùng tổ chức các phiên làm việc, tài liệu và tác vụ liên quan đến từng dự án một cách khoa học.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "24/04·Claude Update",
-        "url": ""
       },
       {
         "title": "⏰ Ngừng Hỗ Trợ SDK Python Cũ",
@@ -844,40 +231,7 @@
     "date": "2026-04-23",
     "dayLabel": "Thứ Năm",
     "dateLabel": "23/04/2026",
-    "news": [
-      {
-        "title": "🧠 Claude Sonnet 4.7 Tối Ưu Tốc Độ",
-        "desc": "Phiên bản Sonnet mới được tối ưu hóa đáng kể về tốc độ xử lý, giúp hoàn thành tác vụ nhanh hơn và hiệu quả hơn. Rất phù hợp cho các ứng dụng yêu cầu phản hồi nhanh.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "22/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Hỗ Trợ Streaming Kết Quả Từng Phần",
-        "desc": "API Claude giờ đây hỗ trợ trả về kết quả theo từng phần (streaming), cho phép các ứng dụng hiển thị phản hồi ngay lập tức mà không cần chờ đợi toàn bộ kết quả. Cải thiện trải nghiệm người dùng đáng kể.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "23/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Workspace: Tính Năng Lịch Sử Phiên Nâng Cao",
-        "desc": "Người dùng giờ đây có thể dễ dàng tìm kiếm, lọc và quản lý các phiên trò chuyện cũ với các bộ lọc nâng cao. Giúp theo dõi và tái sử dụng thông tin hiệu quả hơn.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "22/04·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "⏰ Ngừng Hỗ Trợ Kết Nối API Cũ qua HTTP/1.1",
-        "desc": "Anthropic thông báo ngừng hỗ trợ các kết nối API sử dụng HTTP/1.1, yêu cầu các nhà phát triển chuyển sang HTTP/2 để đảm bảo bảo mật và hiệu suất. Hạn chót là cuối tháng 5.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "23/04·Anthropic Dev",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [],
     "gamingNews": []
   },
@@ -885,56 +239,7 @@
     "date": "2026-04-22",
     "dayLabel": "Thứ Tư",
     "dateLabel": "22/04/2026",
-    "news": [
-      {
-        "title": "🧠 Claude Opus 4.7 Ra Mắt",
-        "desc": "Anthropic đã ra mắt Claude Opus 4.7, mẫu mô hình tiên tiến nhất của họ với hiệu suất vượt trội trong kỹ thuật phần mềm, tác nhân, thị giác và các tác vụ đa bước. Mô hình này mang lại sự kỹ lưỡng và nhất quán cao hơn cho các công việc quan trọng.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "16/04/2026·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Design Ra Mắt",
-        "desc": "Anthropic Labs đã giới thiệu Claude Design, một sản phẩm mới cho phép người dùng cộng tác với Claude để tạo ra các tác phẩm hình ảnh chuyên nghiệp như thiết kế, nguyên mẫu, slide và tài liệu.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "17/04/2026·Anthropic Labs",
-        "url": ""
-      },
-      {
-        "title": "✨ Công Cụ Advisor Beta",
-        "desc": "Anthropic đã ra mắt công cụ Advisor ở phiên bản beta công khai, cho phép kết hợp mô hình thực thi nhanh hơn với mô hình cố vấn thông minh hơn để hướng dẫn chiến lược giữa quá trình tạo.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "09/04/2026·Claude API Docs",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Managed Agents Beta",
-        "desc": "Anthropic đã ra mắt Claude Managed Agents ở phiên bản beta công khai, một hệ thống tác nhân được quản lý hoàn toàn để chạy Claude như một tác nhân tự trị với sandbox an toàn và các công cụ tích hợp.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "08/04/2026·Claude API Docs",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Cấp Độ Nỗ Lực 'xhigh'",
-        "desc": "Claude Opus 4.7 giới thiệu cấp độ nỗ lực mới 'xhigh' (giữa high và max), mang lại khả năng kiểm soát tốt hơn giữa lý luận và độ trễ cho các vấn đề khó trên nền tảng Claude API.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "16/04/2026·Anthropic",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Code: Hỗ Trợ PowerShell",
-        "desc": "Công cụ PowerShell đang dần được triển khai cho Claude Code, cho phép người dùng Windows opt-in hoặc opt-out thông qua biến môi trường CLAUDE_CODE_USE_POWERSHELL_TOOL.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "18/04/2026·Claude Code Changelog",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [
       {
         "name": "anthropics/claude-code",
@@ -984,14 +289,6 @@
     "dayLabel": "Thứ Ba",
     "dateLabel": "21/04/2026",
     "news": [
-      {
-        "title": "🤝 Mở Rộng Hợp Tác Amazon",
-        "desc": "Anthropic và Amazon mở rộng hợp tác chiến lược, cam kết hơn 100 tỷ USD trong 10 năm tới để đảm bảo 5GW năng lực tính toán mới trên AWS, bao gồm chip Trainium2, Trainium3 và Trainium4. Điều này nhằm hỗ trợ đào tạo và triển khai Claude, cũng như mở rộng khả năng suy luận ở châu Á và châu Âu.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "20/04·Anthropic",
-        "url": ""
-      },
       {
         "title": "⏰ Ngừng Hỗ Trợ Claude 4/Sonnet 4",
         "desc": "Anthropic thông báo ngừng hỗ trợ các model Claude Sonnet 4 và Claude Opus 4, với lịch trình ngừng hoạt động trên Claude API vào ngày 15 tháng 6 năm 2026. Người dùng được khuyến nghị di chuyển sang Claude Sonnet 4.6 và Claude Opus 4.7.",
@@ -1075,22 +372,6 @@
         "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGj-BuL4KfynOYDqs30kWodcK4ZJWZQ45jMRex2l35-cubjPdRoJBXDmHpNp6hnDP5vfN_jik_Wf9UdoS_wBnL-cyh__z4DI3Ng0rLiBOjhzB80g2b_u_7xpynjGtG0wX4H3-wL-tKzfuNUHBA9fbW8ls5NHkw="
       },
       {
-        "title": "✨ Claude Code: Chế Độ Tự Động cho Max",
-        "desc": "Chế độ tự động hiện có sẵn cho người đăng ký Claude Max khi sử dụng Opus 4.7, không còn yêu cầu cờ --enable-auto-mode.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "18/04·Claude Code Changelog",
-        "url": ""
-      },
-      {
-        "title": "✨ Claude Code: Lệnh /ultrareview",
-        "desc": "Lệnh mới /ultrareview cho phép đánh giá mã toàn diện trên đám mây bằng cách sử dụng phân tích đa tác nhân song song.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "18/04·Claude Code Changelog",
-        "url": ""
-      },
-      {
         "title": "🔧 API: Thay Đổi Gây Đứt Gãy API Opus 4.7",
         "desc": "Claude Opus 4.7 loại bỏ các tính năng 'extended thinking budgets' và 'sampling parameters', đồng thời bỏ qua 'thinking content' theo mặc định, yêu cầu cập nhật API.",
         "tag": "api",
@@ -1163,14 +444,6 @@
         "tagLabel": "🔧 API",
         "source": "30/03/2026·Anthropic",
         "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNzfHxAhtRClezs3UOkuUx7vVH73j-yHHYyCFiRxUHDZtuMyE73rjm9Qw4qz663yUJbd8l1LXVjgx-Bq783OEApVy5OaPhvNRmh0Av67vq9SxzUacfVPpqZmBxasIWhmj625OyImQhGFMO9lKqMGlwFOoXeWk="
-      },
-      {
-        "title": "🚨 Cảnh Báo: Thay Đổi Gói Đăng Ký Claude Max",
-        "desc": "Một người dùng GitHub trên Claude Code dự đoán Anthropic đang dần chấm dứt các gói đăng ký Max, hướng tới mô hình tập trung vào doanh nghiệp hoặc các gói cao cấp hơn, đắt đỏ hơn.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "16/04/2026·Reddit",
-        "url": ""
       },
       {
         "title": "🚀 Ra Mắt ant CLI cho Claude API",
@@ -1369,14 +642,6 @@
     "dateLabel": "17/04/2026",
     "news": [
       {
-        "title": "🧠 Claude Opus 4.7 Ra Mắt",
-        "desc": "Anthropic đã phát hành Claude Opus 4.7, mô hình mạnh mẽ nhất hiện có cho công chúng, cải thiện đáng kể khả năng kỹ thuật phần mềm nâng cao, trí tuệ thị giác và phân tích tài liệu, đồng thời có giá tương đương Opus 4.6.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "16/04·Anthropic",
-        "url": ""
-      },
-      {
         "title": "⏰ Ngừng Hỗ Trợ Claude Sonnet 4 & Opus 4",
         "desc": "Anthropic thông báo ngừng hỗ trợ các mô hình Claude Sonnet 4 và Claude Opus 4 vào ngày 15/06/2026, khuyến nghị người dùng di chuyển sang Sonnet 4.6 và Opus 4.7.",
         "tag": "deprecate",
@@ -1399,14 +664,6 @@
         "tagLabel": "✨ FEATURE",
         "source": "08/04·Anthropic API Docs",
         "url": "https://docs.anthropic.com/claude/reference/changelog#april-8-2026"
-      },
-      {
-        "title": "🔥 Lỗ Hổng Prompt Injection trong Claude Code Security Review",
-        "desc": "Các nhà nghiên cứu đã phát hiện một lỗ hổng prompt injection mới (\"Comment and Control\") có thể chiếm quyền điều khiển các tác nhân AI như Claude Code Security Review, cho phép thực thi lệnh tùy ý và đánh cắp thông tin.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "15/04·The Register",
-        "url": ""
       }
     ],
     "repos": [
@@ -1475,30 +732,6 @@
         "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVuKRd2CrnigAhjlr4d4wRbOFo0MYAF3fIM6yLIVTuZV3zgJjSkhBAQlv8hglTO6qyaVekso7E6XzJXWfi_i9zlf2ScgngP4lxeVNvOthY_kS-BtB1ewl2gVXTWC9oDvb75_aVoZwTjNsIS9KiMhhAj40S6EFTmXmPtWG-P3pc0xxLgZSfZAvwOuU"
       },
       {
-        "title": "✨ Ra mắt Routines cho Claude Code",
-        "desc": "Anthropic cũng giới thiệu Routines, một cách mới để thiết lập các tác vụ tự động hóa Claude Code chạy mà không cần phiên hoạt động.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "15/04·VentureBeat",
-        "url": ""
-      },
-      {
-        "title": "🔧 Cải tiến xử lý API bị kẹt trong Claude Code",
-        "desc": "Các luồng API hiện sẽ hủy bỏ sau 5 phút không có dữ liệu và thử lại thay vì bị treo vô thời hạn, cải thiện độ ổn định.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "15/04·GitHub",
-        "url": ""
-      },
-      {
-        "title": "⏰ Hạn chót ngừng hỗ trợ Context Window 1M Token",
-        "desc": "Anthropic sẽ ngừng hỗ trợ cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và Claude Sonnet 4 vào ngày 30 tháng 4 năm 2026.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "30/03·Claude API Docs",
-        "url": ""
-      },
-      {
         "title": "🔥 Claude Mythos Preview bị trì hoãn phát hành công khai",
         "desc": "Anthropic đã trì hoãn phát hành công khai Claude Mythos Preview do lo ngại về rủi ro tấn công, mặc dù nó đã tìm thấy hàng nghìn lỗ hổng zero-day chưa từng được biết đến.",
         "tag": "hot",
@@ -1555,56 +788,7 @@
     "date": "2026-04-15",
     "dayLabel": "Thứ Tư",
     "dateLabel": "15/04/2026",
-    "news": [
-      {
-        "title": "🧠 MODEL: Claude Opus 4.6 & Sonnet 4.6",
-        "desc": "Anthropic đã ra mắt các mô hình Claude Opus 4.6 và Claude Sonnet 4.6 mới, mang đến những cải tiến đáng kể về khả năng và API. Opus 4.6 được thiết kế cho các tác nhân thông minh và lập trình, trong khi Sonnet 4.6 là mô hình tốt nhất cho các tác nhân phức tạp và mã hóa.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "Mới nhất·Anthropic API Docs",
-        "url": ""
-      },
-      {
-        "title": "🔥 HOT: Claude Code Hiệu suất Giảm sút",
-        "desc": "Người dùng báo cáo hiệu suất của Claude, đặc biệt là Claude Code, đã suy giảm đáng kể. Một thay đổi ngầm từ phương pháp 'nghiên cứu trước' sang 'chỉnh sửa trước' được cho là nguyên nhân, khiến công cụ dễ mắc lỗi hơn.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "14/04/2026·Inc.com",
-        "url": ""
-      },
-      {
-        "title": "🧠 MODEL: Claude Mythos mới",
-        "desc": "Anthropic đã giới thiệu mô hình Claude Mythos mới có khả năng phát hiện lỗ hổng phần mềm trên các hệ thống lớn. Quyền truy cập hiện đang được giới hạn cho các đối tác chọn lọc để ngăn chặn việc lạm dụng.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "14/04/2026·MarketWise",
-        "url": ""
-      },
-      {
-        "title": "⏰ DEADLINE: Ngừng hỗ trợ Context Window 1M Token (beta)",
-        "desc": "Anthropic sẽ ngừng hỗ trợ cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và Claude Sonnet 4 vào ngày 30 tháng 4 năm 2026. Sau ngày này, các yêu cầu vượt quá cửa sổ ngữ cảnh 200k token tiêu chuẩn sẽ trả về lỗi.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "30/03/2026·Anthropic API Docs",
-        "url": ""
-      },
-      {
-        "title": "🔧 API: Loại bỏ tính năng Prefill trong Claude 4.6",
-        "desc": "Tính năng điền trước tin nhắn trợ lý (last-assistant-turn prefills) không còn được hỗ trợ trên Claude Opus 4.6. Các yêu cầu sử dụng tính năng này sẽ trả về lỗi 400.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "Mới nhất·Anthropic API Docs",
-        "url": ""
-      },
-      {
-        "title": "✨ FEATURE: Chế độ Fast Mode (beta) cho Opus",
-        "desc": "Chế độ Fast Mode (speed: 'fast') hiện có sẵn dưới dạng bản beta, cung cấp khả năng tạo token đầu ra nhanh hơn đáng kể cho các mô hình Opus. Chế độ này nhanh hơn tới 2.5 lần với mức giá cao cấp.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "Mới nhất·Anthropic API Docs",
-        "url": ""
-      }
-    ],
+    "news": [],
     "repos": [
       {
         "name": "forrestchang/andrej-karpathy-skills",
@@ -1663,28 +847,12 @@
         "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGnu359IHPciJYMUtrsEBKdyPOtg73C4-UeclNoJuSiq1azPV9_eImh2s3srm-XbrkkTfPR6SPfvv9vc4o01yqF4HmEM5OlgoQRLbRia57HQ7GdKDfu4CjqkorOr50L5S1EIsXiikMbQrZp2-9FhWeVITJUcBJ"
       },
       {
-        "title": "🔥 Claude Opus 4.6 bị 'nerf'?",
-        "desc": "Người dùng đang phàn nàn rộng rãi về việc hiệu suất của Claude Opus 4.6 bị giảm sút. Anthropic đã phủ nhận việc cố ý giảm chất lượng nhưng thừa nhận đã thay đổi giới hạn sử dụng và cài đặt mặc định (ví dụ: thay đổi mức độ 'effort' mặc định từ trung bình sang cao cho người dùng API vào khoảng ngày 7/4/2026).",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "13/04/2026·VentureBeat",
-        "url": ""
-      },
-      {
         "title": "⏰ Hạn chót ngừng hỗ trợ Context Window 1M",
         "desc": "Tính năng beta cửa sổ ngữ cảnh 1 triệu token cho Claude Sonnet 4.5 và Claude Sonnet 4 sẽ ngừng hoạt động vào ngày 30 tháng 4 năm 2026. Sau ngày này, các yêu cầu vượt quá cửa sổ ngữ cảnh 200k token tiêu chuẩn sẽ trả về lỗi.",
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE",
         "source": "30/03/2026·Claude Platform",
         "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaRj7IIyRc8bmeRdcKMJ0b24HXlFTogiN2phJ4lRu7obEp8MO4Fmcp12Sd1v44htrv4av_TIW8UjwbQkzYtpDDu3puamjEhUfMieQzYkxJWXwPkcVYOvc_IFEB4JamjvvSKFUgLHGTg5IkWWhRw1ngSMkayCY="
-      },
-      {
-        "title": "✨ Claude Cowork ra mắt chính thức",
-        "desc": "Claude Cowork hiện đã có sẵn rộng rãi trên macOS và Windows thông qua ứng dụng Claude Desktop. Người dùng gói Pro và Max có thể cấp quyền truy cập máy tính cho Claude để thực hiện các tác vụ.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "09/04/2026·Releasebot",
-        "url": ""
       }
     ],
     "repos": [
@@ -1753,14 +921,6 @@
         "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpL2mXBoigcMpvQa71WyZHQzXl0A4nfitPkETGu9E7sph_y0uebMsYG6PTiCZ0bTOvPAT7nEk9IzGsvbSyraqTQ4iCuusZ5GEen35eJQwlAwIa9VCZHaB-xydt3UHZ9YUS3vRvqVuQTexuwxXuXQ9rdixigZB6z192tLKFg3OpZMoAjn4OJA=="
       },
       {
-        "title": "🔥 Mở rộng hợp tác Compute",
-        "desc": "Anthropic mở rộng hợp tác với Google và Broadcom để có thêm nhiều gigawatt dung lượng TPU thế hệ tiếp theo, dự kiến trực tuyến từ năm 2027. Điều này nhằm đáp ứng nhu cầu tăng trưởng vượt bậc của các mô hình Claude.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT",
-        "source": "06/04/2026·Anthropic",
-        "url": ""
-      },
-      {
         "title": "⏰ Hạn chót Deprecation",
         "desc": "Anthropic sẽ ngừng hỗ trợ cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và Claude Sonnet 4 vào ngày 30/04/2026. Sau ngày này, các yêu cầu vượt quá 200k token tiêu chuẩn sẽ trả về lỗi.",
         "tag": "deprecate",
@@ -1819,14 +979,6 @@
     "dateLabel": "12/04/2026",
     "news": [
       {
-        "title": "🧠 Claude Mythos: Mô hình AI quá nguy hiểm để phát hành công khai",
-        "desc": "Anthropic đã phát triển Claude Mythos, một mô hình AI có khả năng tìm ra hàng nghìn lỗ hổng zero-day trong các hệ thống lớn. Tuy nhiên, do những rủi ro bảo mật tiềm ẩn, Anthropic đã quyết định không phát hành mô hình này ra công chúng.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "10/04·CTV News",
-        "url": ""
-      },
-      {
         "title": "✨ Claude cho Word: Tiện ích bổ sung mới cho doanh nghiệp",
         "desc": "Anthropic đã ra mắt phiên bản beta của Claude cho Word, một tiện ích bổ sung mới giúp người dùng doanh nghiệp tương tác với tài liệu, đặt câu hỏi và nhận câu trả lời kèm trích dẫn. Tính năng này hiện chỉ dành cho các gói Team và Enterprise.",
         "tag": "feature",
@@ -1835,28 +987,12 @@
         "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrY0HA0UpqPKMwZlO24qAEm4uVnfBtCrujI4fIA27cDWUQnqOaGTeByjDXrklKuETIkeZvQEPuGPIfPSX2gEm9uA1q2VOZ2ZQhxA1Aa5ZyxVLYAaj18sTw_VWMtHJLeugVaCM1I4Z2HDj9B4g7dfM9idw9hml1dNns04qvN2s45YOCXshmhEyZzg=="
       },
       {
-        "title": "🧠 Claude 4.6: Opus và Sonnet mới cùng tính năng API nâng cao",
-        "desc": "Claude 4.6 giới thiệu các mô hình Opus 4.6 và Sonnet 4.6 với khả năng vượt trội cho agent và mã hóa. Các cải tiến API bao gồm tìm kiếm và truy xuất web động, cùng với việc thực thi mã miễn phí khi sử dụng các công cụ web.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL",
-        "source": "Gần đây·Claude API Docs",
-        "url": ""
-      },
-      {
         "title": "⏰ Hạn chót: Cửa sổ ngữ cảnh 1M token bị loại bỏ vào 30/04/2026",
         "desc": "Cửa sổ ngữ cảnh 1M token beta cho Claude Sonnet 4.5 và Claude Sonnet 4 sẽ bị loại bỏ vào ngày 30 tháng 4 năm 2026. Sau ngày này, các yêu cầu vượt quá giới hạn 200k token tiêu chuẩn sẽ trả về lỗi.",
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE",
         "source": "30/03·Claude API Docs",
         "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrQSNOR5thYTrAV9XyjKXWleoWBnk7Wp4E-dcNxhcNY-q_qoRqFAHFJ_AlAfqef2uSjAI9x2n3AUVKZ5FG46rzM-VH0hHIbDSZEhzmzDj7yxtdwIKoSrcFM04r7GX1PMG8EgVL5OHrWNiAEzPI1xP9MDLBoZo="
-      },
-      {
-        "title": "🔧 Claude Code: Cập nhật tính năng và cải tiến trải nghiệm",
-        "desc": "Bản cập nhật Claude Code ngày 10/04/2026 bổ sung lệnh `/team-onboarding` mới, cải thiện chế độ tóm tắt và chế độ tập trung, cùng nhiều nâng cấp khác nhằm tối ưu hóa trải nghiệm người dùng.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "10/04·GitHub",
-        "url": ""
       }
     ],
     "repos": [

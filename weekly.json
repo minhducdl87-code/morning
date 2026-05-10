@@ -3,92 +3,36 @@
     "weekLabel": "Tuần 19/2026",
     "fromDate": "2026-05-04",
     "toDate": "2026-05-10",
-    "highlights": [
+    "highlights": [],
+    "topRepos": [
       {
-        "title": "🧠 Claude 5.0 Beta Ra Mắt",
-        "desc": "Anthropic đã chính thức ra mắt phiên bản Beta của Claude 5.0, đánh dấu một bước tiến lớn trong khả năng của mô hình AI. Phiên bản này hứa hẹn mang lại hiệu suất vượt trội và các tính năng mới, mở ra nhiều cơ hội ứng dụng tiên tiến cho người dùng và doanh nghiệp.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL"
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Tiếp tục là một trong những dự án AI agent nổi bật nhất, cung cấp công cụ mạnh mẽ để mọi người có thể sử dụng và xây dựng các tác nhân AI tự động hóa.",
+        "stars": "12K+",
+        "verdict": "yes"
       },
       {
-        "title": "🔥 Claude Enterprise: Hỗ Trợ Triển Khai On-Premise",
-        "desc": "Claude Enterprise giờ đây hỗ trợ triển khai On-Premise, cho phép các doanh nghiệp kiểm soát hoàn toàn dữ liệu và môi trường AI của mình. Điều này đặc biệt quan trọng đối với các ngành yêu cầu bảo mật cao và tuân thủ quy định nghiêm ngặt, mang lại sự linh hoạt và an toàn tối đa.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT"
-      },
-      {
-        "title": "✨ Claude Pro: Tích Hợp Cơ Sở Tri Thức Tùy Chỉnh",
-        "desc": "Người dùng Claude Pro giờ đây có thể tích hợp cơ sở tri thức tùy chỉnh, giúp mô hình truy cập và sử dụng thông tin chuyên biệt của họ. Tính năng này nâng cao đáng kể khả năng cá nhân hóa và độ chính xác của Claude trong các tác vụ cụ thể, từ đó tối ưu hóa hiệu quả công việc.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE"
-      },
-      {
-        "title": "🔧 API: Ra Mắt Endpoint 'Embeddings' Tối Ưu",
-        "desc": "Anthropic đã giới thiệu endpoint 'Embeddings' mới cho API của Claude, được tối ưu hóa để tạo ra các vector nhúng chất lượng cao. Điều này cải thiện hiệu suất cho các ứng dụng tìm kiếm ngữ nghĩa, phân loại văn bản và các tác vụ xử lý ngôn ngữ tự nhiên khác, giúp nhà phát triển xây dựng các giải pháp mạnh mẽ hơn.",
-        "tag": "api",
-        "tagLabel": "🔧 API"
-      },
-      {
-        "title": "⏰ Cảnh Báo: Yêu Cầu API Key Mới Cho Endpoint V3",
-        "desc": "Người dùng được cảnh báo về việc yêu cầu API Key mới cho Endpoint V3 của Claude. Đây là một thay đổi quan trọng nhằm tăng cường bảo mật và quản lý truy cập. Các nhà phát triển cần cập nhật API Key của mình để đảm bảo các ứng dụng tiếp tục hoạt động trơn tru và an toàn.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE"
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Dự án này giúp người dùng nhanh chóng sử dụng các mô hình AI lớn như Kimi-K2.5, Gemini và nhiều mô hình khác một cách dễ dàng trên máy tính cá nhân.",
+        "stars": "12K+",
+        "verdict": "yes"
       }
     ],
-    "topRepos": [],
-    "topGaming": []
+    "topGaming": [],
+    "news": [],
+    "gamingNews": [],
+    "topNews": [],
+    "repos": []
   },
   {
     "weekLabel": "Tuần 18/2026",
     "fromDate": "2026-04-21",
     "toDate": "2026-04-27",
-    "highlights": [
-      {
-        "title": "🧠 Claude Sonnet 4.7 Tối Ưu Tốc Độ",
-        "desc": "Claude Sonnet 4.7 đã ra mắt với khả năng tối ưu hóa tốc độ vượt trội, mang lại hiệu suất nhanh hơn cho các tác vụ xử lý ngôn ngữ. Điều này giúp người dùng thực hiện công việc hiệu quả hơn và giảm thời gian chờ đợi.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL"
-      },
-      {
-        "title": "✨ Claude Console: Chế Độ Gỡ Lỗi Nâng Cao",
-        "desc": "Claude Console giới thiệu chế độ gỡ lỗi nâng cao, cung cấp các công cụ mạnh mẽ hơn để phát hiện và sửa lỗi trong quá trình phát triển. Tính năng này giúp các nhà phát triển tối ưu hóa ứng dụng và đảm bảo hoạt động ổn định.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE"
-      },
-      {
-        "title": "🔧 API: Hỗ Trợ Streaming Dữ Liệu Lớn",
-        "desc": "API của Claude hiện hỗ trợ streaming dữ liệu lớn, cho phép xử lý các tập dữ liệu khổng lồ một cách hiệu quả hơn. Điều này mở ra nhiều khả năng mới cho các ứng dụng yêu cầu xử lý dữ liệu thời gian thực và quy mô lớn.",
-        "tag": "api",
-        "tagLabel": "🔧 API"
-      },
-      {
-        "title": "🔥 Claude Đạt Kỷ Lục Mới Về Hiệu Suất",
-        "desc": "Claude đã đạt được kỷ lục mới về hiệu suất tổng thể, khẳng định vị thế dẫn đầu trong lĩnh vực AI. Thành tựu này cho thấy sự tiến bộ không ngừng của Claude trong việc cung cấp các giải pháp AI mạnh mẽ và đáng tin cậy.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT"
-      },
-      {
-        "title": "⏰ Deadline: Cập Nhật SDK Java Mới",
-        "desc": "Người dùng được khuyến nghị cập nhật lên SDK Java mới nhất của Claude trước thời hạn. Việc này đảm bảo khả năng tương thích và tận dụng các tính năng mới, đồng thời tránh các vấn đề phát sinh từ việc sử dụng phiên bản cũ.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE"
-      }
-    ],
+    "highlights": [],
     "topRepos": [],
-    "topGaming": [
-      {
-        "title": "🎮 mc-server-manager-ai",
-        "desc": "Hệ thống quản lý máy chủ Minecraft tự động, sử dụng AI để tối ưu hóa hiệu suất và trải nghiệm người dùng, mang lại sự tiện lợi cho cộng đồng game thủ.",
-        "tag": "gameplay",
-        "tagLabel": "🎮 GAMEPLAY"
-      },
-      {
-        "title": "🎮 minecraft-server-manager",
-        "desc": "Công cụ quản lý máy chủ Minecraft nâng cao với giao diện web, giúp người dùng dễ dàng kiểm soát và tùy chỉnh máy chủ của mình.",
-        "tag": "gameplay",
-        "tagLabel": "🎮 GAMEPLAY"
-      }
-    ],
+    "topGaming": [],
     "news": [],
     "gamingNews": [],
     "topNews": [],
@@ -98,38 +42,7 @@
     "weekLabel": "Tuần 17/2026",
     "fromDate": "2026-04-17",
     "toDate": "2026-04-23",
-    "highlights": [
-      {
-        "title": "🧠 Claude Opus 4.7 & Sonnet 4.7 Ra Mắt",
-        "desc": "Anthropic đã ra mắt đồng thời hai mô hình AI mới: Claude Opus 4.7 và Claude Sonnet 4.7. Opus 4.7 là mô hình cao cấp, trong khi Sonnet 4.7 được tối ưu hóa về tốc độ, mang lại nhiều lựa chọn hơn cho người dùng và nhà phát triển.",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL"
-      },
-      {
-        "title": "⏰ Ngừng Hỗ Trợ Các Phiên Bản Claude Cũ",
-        "desc": "Anthropic thông báo ngừng hỗ trợ các phiên bản Claude 4/Sonnet 4 và Opus 4, cùng với việc ngừng hỗ trợ kết nối API cũ qua HTTP/1.1. Người dùng cần cập nhật để đảm bảo tính tương thích và an toàn.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE"
-      },
-      {
-        "title": "✨ Claude Code: Nhiều Tính Năng Mới",
-        "desc": "Claude Code liên tục được bổ sung các tính năng mạnh mẽ như hỗ trợ Worktree, PowerShell, chế độ tự động cho Max, lệnh /ultrareview và tính năng đánh giá mã với Agent, nâng cao khả năng lập trình và quản lý dự án.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE"
-      },
-      {
-        "title": "🔥 Lỗ Hổng Prompt Injection trong Claude Code Security Review",
-        "desc": "Một lỗ hổng prompt injection nghiêm trọng đã được phát hiện trong tính năng Security Review của Claude Code, tiềm ẩn rủi ro bảo mật. Người dùng cần cảnh giác và theo dõi các bản vá lỗi từ Anthropic.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT"
-      },
-      {
-        "title": "🔧 API: Hỗ Trợ Streaming Kết Quả Từng Phần & Tăng Giới Hạn Token",
-        "desc": "API của Claude giờ đây hỗ trợ streaming kết quả từng phần, cải thiện trải nghiệm người dùng. Đồng thời, giới hạn max_tokens đã được tăng lên 300K, cho phép xử lý các tác vụ phức tạp hơn.",
-        "tag": "api",
-        "tagLabel": "🔧 API"
-      }
-    ],
+    "highlights": [],
     "topRepos": [
       {
         "name": "anthropics/claude-code",
@@ -153,20 +66,7 @@
         "verdict": "yes"
       }
     ],
-    "topGaming": [
-      {
-        "title": "🎮 mcserver-dev/claude-mcp-plugin",
-        "desc": "Plugin cho các máy chủ Minecraft (MCP) tích hợp Claude để tạo trải nghiệm tương tác AI trong game, mang lại khả năng sáng tạo mới cho người chơi.",
-        "tag": "gameplay",
-        "tagLabel": "🎮 GAMEPLAY"
-      },
-      {
-        "title": "🎮 Donchitos/Claude-Code-Game-Studios",
-        "desc": "Biến Claude Code thành một studio phát triển game hoàn chỉnh, cho phép AI hỗ trợ toàn bộ quá trình tạo game từ ý tưởng đến triển khai.",
-        "tag": "gameplay",
-        "tagLabel": "🎮 GAMEPLAY"
-      }
-    ],
+    "topGaming": [],
     "news": [],
     "gamingNews": [],
     "topNews": [],
@@ -176,38 +76,7 @@
     "weekLabel": "Tuần 16/2026",
     "fromDate": "2026-04-10",
     "toDate": "2026-04-16",
-    "highlights": [
-      {
-        "title": "🔥 Claude Mythos Preview bị trì hoãn phát hành công khai",
-        "desc": "Mô hình AI đầy hứa hẹn Claude Mythos đã bị trì hoãn phát hành công khai, gây ra nhiều đồn đoán về khả năng và mức độ nguy hiểm của nó. Trước đó, đã có thông tin cho rằng Mythos quá nguy hiểm để phát hành.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT"
-      },
-      {
-        "title": "✨ Ứng dụng Claude Code Desktop được thiết kế lại & Ra mắt Routines",
-        "desc": "Claude Code Desktop nhận được bản thiết kế lại đáng kể, mang lại trải nghiệm người dùng tốt hơn. Đồng thời, tính năng Routines mới được giới thiệu, giúp tự động hóa các tác vụ lặp lại trong quá trình phát triển mã.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE"
-      },
-      {
-        "title": "🧠 MODEL: Claude Opus 4.6 & Sonnet 4.6",
-        "desc": "Anthropic đã ra mắt các phiên bản mô hình mới Claude Opus 4.6 và Sonnet 4.6, hứa hẹn cải thiện hiệu suất và khả năng. Tuy nhiên, cũng có những lo ngại về việc Claude Opus 4.6 bị 'nerf' (giảm sức mạnh).",
-        "tag": "model",
-        "tagLabel": "🧠 MODEL"
-      },
-      {
-        "title": "⏰ Hạn chót ngừng hỗ trợ Context Window 1M Token",
-        "desc": "Người dùng được nhắc nhở về hạn chót ngừng hỗ trợ Context Window 1M Token (beta) vào ngày 30/04/2026. Điều này có thể ảnh hưởng đến các ứng dụng đang sử dụng cửa sổ ngữ cảnh lớn này.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE"
-      },
-      {
-        "title": "🔥 Claude Code Hiệu suất Giảm sút & Mã nguồn bị rò rỉ",
-        "desc": "Hiệu suất của Claude Code đã giảm sút trong tuần này, gây lo ngại cho các nhà phát triển. Nghiêm trọng hơn, mã nguồn của Claude Code đã bị rò rỉ và lạm dụng, đặt ra vấn đề về bảo mật và tính toàn vẹn.",
-        "tag": "hot",
-        "tagLabel": "🔥 HOT"
-      }
-    ],
+    "highlights": [],
     "topRepos": [
       {
         "name": "ComposioHQ/open-claude-cowork",
