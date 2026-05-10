@@ -6,69 +6,37 @@
     "highlights": [
       {
         "title": "🧠 Claude 5.0 Beta Ra Mắt",
-        "desc": "Anthropic đã chính thức ra mắt phiên bản Beta của Claude 5.0, đánh dấu một bước tiến lớn trong khả năng của mô hình AI này. Phiên bản mới hứa hẹn mang lại hiệu suất vượt trội và các tính năng tiên tiến hơn, mở ra nhiều cơ hội ứng dụng mới cho người dùng và nhà phát triển.",
+        "desc": "Anthropic đã chính thức ra mắt phiên bản Beta của Claude 5.0, đánh dấu một bước tiến lớn trong khả năng của mô hình AI. Phiên bản này hứa hẹn mang lại hiệu suất vượt trội và các tính năng mới, mở ra nhiều cơ hội ứng dụng tiên tiến cho người dùng và doanh nghiệp.",
         "tag": "model",
         "tagLabel": "🧠 MODEL"
       },
       {
         "title": "🔥 Claude Enterprise: Hỗ Trợ Triển Khai On-Premise",
-        "desc": "Claude Enterprise giờ đây đã hỗ trợ triển khai On-Premise, cho phép các doanh nghiệp lớn tích hợp và vận hành Claude trực tiếp trên hạ tầng của mình. Điều này giúp tăng cường bảo mật dữ liệu và kiểm soát hoàn toàn môi trường AI, đặc biệt quan trọng đối với các ngành yêu cầu tuân thủ nghiêm ngặt.",
+        "desc": "Claude Enterprise giờ đây hỗ trợ triển khai On-Premise, cho phép các doanh nghiệp kiểm soát hoàn toàn dữ liệu và môi trường AI của mình. Điều này đặc biệt quan trọng đối với các ngành yêu cầu bảo mật cao và tuân thủ quy định nghiêm ngặt, mang lại sự linh hoạt và an toàn tối đa.",
         "tag": "hot",
         "tagLabel": "🔥 HOT"
       },
       {
         "title": "✨ Claude Pro: Tích Hợp Cơ Sở Tri Thức Tùy Chỉnh",
-        "desc": "Claude Pro đã được nâng cấp với khả năng tích hợp cơ sở tri thức tùy chỉnh, cho phép người dùng cung cấp dữ liệu riêng để Claude học hỏi và đưa ra phản hồi chính xác hơn. Tính năng này giúp cá nhân hóa trải nghiệm và tăng cường hiệu quả làm việc cho các tác vụ chuyên biệt.",
+        "desc": "Người dùng Claude Pro giờ đây có thể tích hợp cơ sở tri thức tùy chỉnh, giúp mô hình truy cập và sử dụng thông tin chuyên biệt của họ. Tính năng này nâng cao đáng kể khả năng cá nhân hóa và độ chính xác của Claude trong các tác vụ cụ thể, từ đó tối ưu hóa hiệu quả công việc.",
         "tag": "feature",
         "tagLabel": "✨ FEATURE"
       },
       {
         "title": "🔧 API: Ra Mắt Endpoint 'Embeddings' Tối Ưu",
-        "desc": "Anthropic đã giới thiệu endpoint 'Embeddings' mới được tối ưu hóa cho API của Claude. Endpoint này cải thiện đáng kể hiệu suất và độ chính xác khi tạo các vector nhúng (embeddings), hỗ trợ tốt hơn cho các ứng dụng tìm kiếm ngữ nghĩa và phân tích dữ liệu.",
+        "desc": "Anthropic đã giới thiệu endpoint 'Embeddings' mới cho API của Claude, được tối ưu hóa để tạo ra các vector nhúng chất lượng cao. Điều này cải thiện hiệu suất cho các ứng dụng tìm kiếm ngữ nghĩa, phân loại văn bản và các tác vụ xử lý ngôn ngữ tự nhiên khác, giúp nhà phát triển xây dựng các giải pháp mạnh mẽ hơn.",
         "tag": "api",
         "tagLabel": "🔧 API"
       },
       {
         "title": "⏰ Cảnh Báo: Yêu Cầu API Key Mới Cho Endpoint V3",
-        "desc": "Người dùng được cảnh báo về việc yêu cầu API Key mới cho Endpoint V3 của Claude. Sự thay đổi này nhằm tăng cường bảo mật và quản lý truy cập API, yêu cầu các nhà phát triển cập nhật cấu hình để đảm bảo hoạt động liên tục của ứng dụng.",
+        "desc": "Người dùng được cảnh báo về việc yêu cầu API Key mới cho Endpoint V3 của Claude. Đây là một thay đổi quan trọng nhằm tăng cường bảo mật và quản lý truy cập. Các nhà phát triển cần cập nhật API Key của mình để đảm bảo các ứng dụng tiếp tục hoạt động trơn tru và an toàn.",
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE"
       }
     ],
-    "topRepos": [
-      {
-        "name": "Significant-Gravitas/AutoGPT",
-        "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "Tiếp tục là một trong những dự án AI agent nổi bật nhất, cung cấp công cụ mạnh mẽ để mọi người có thể sử dụng và xây dựng các tác nhân AI tự động hóa.",
-        "stars": "12K+",
-        "verdict": "yes"
-      },
-      {
-        "name": "ollama/ollama",
-        "url": "https://github.com/ollama/ollama",
-        "desc": "Dự án này giúp người dùng nhanh chóng sử dụng các mô hình AI lớn như Kimi-K2.5, Gemini và nhiều mô hình khác một cách dễ dàng trên máy tính cá nhân.",
-        "stars": "12K+",
-        "verdict": "yes"
-      }
-    ],
-    "topGaming": [
-      {
-        "title": "🎮 nextgen-minecraft-server",
-        "desc": "Dự án máy chủ Minecraft thế hệ mới được tối ưu hóa hiệu suất và tích hợp các tính năng AI, mang lại trải nghiệm chơi game mượt mà và thông minh hơn.",
-        "tag": "gameplay",
-        "tagLabel": "🎮 GAMEPLAY"
-      },
-      {
-        "title": "🎮 claude-mc-plugin",
-        "desc": "Plugin Minecraft cho phép tích hợp Claude vào máy chủ, hỗ trợ các tương tác AI thông minh trong game, từ quản lý đến tạo nội dung.",
-        "tag": "gameplay",
-        "tagLabel": "🎮 GAMEPLAY"
-      }
-    ],
-    "news": [],
-    "gamingNews": [],
-    "topNews": [],
-    "repos": []
+    "topRepos": [],
+    "topGaming": []
   },
   {
     "weekLabel": "Tuần 18/2026",
