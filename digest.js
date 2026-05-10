@@ -13,14 +13,29 @@ function todayStr() { return new Date().toISOString().slice(0,10); }
 function monthKey(s) { return s.slice(0,7); }
 function monthLabelVi(key) { const [y,m]=key.split('-'); return `${MONTHS_VI[parseInt(m,10)]}/${y}`; }
 
-function isoYearWeek(dateStr) {
-  // Returns "YYYY-WW" using ISO 8601 week
-  const d = new Date(dateStr+'T00:00:00Z');
-  const dayNr = (d.getUTCDay() + 6) % 7;
-  d.setUTCDate(d.getUTCDate() - dayNr + 3);
-  const yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
-  const wk = Math.ceil(((d - yearStart) / 86400000 + 1) / 7);
-  return `${d.getUTCFullYear()}-${String(wk).padStart(2,'0')}`;
+// Custom week-of-month rule (Anh defined):
+//   Tuần 1: ngày 1-7  | Tuần 2: 8-14  | Tuần 3: 15-21  | Tuần 4: 22-28  | Tuần 5: 29-end
+function monthWeekKey(dateStr) {
+  // "2026-05-10" → "2026-05-W2"
+  const day = parseInt(dateStr.slice(8,10), 10);
+  const w = Math.min(5, Math.floor((day - 1) / 7) + 1);
+  return dateStr.slice(0,7) + '-W' + w;
+}
+function monthWeekRange(key) {
+  // "2026-05-W2" → {from:"2026-05-08", to:"2026-05-14"}
+  const ym = key.slice(0,7);
+  const w  = parseInt(key.slice(-1), 10);
+  const [year, month] = ym.split('-').map(Number);
+  const lastDay  = new Date(year, month, 0).getDate();
+  const startDay = (w - 1) * 7 + 1;
+  const endDay   = (w === 5) ? lastDay : Math.min(w * 7, lastDay);
+  const pad = n => String(n).padStart(2,'0');
+  return {from: `${ym}-${pad(startDay)}`, to: `${ym}-${pad(endDay)}`};
+}
+function weekLabelText(key) {
+  const r = monthWeekRange(key);
+  const w = key.slice(-1);
+  return `Tuần ${w} (${r.from.slice(8)}-${r.to.slice(8)}/${r.from.slice(5,7)})`;
 }
 
 // ── Theme + ToC drawer ────────────────────────────────────────────────────────
@@ -135,13 +150,14 @@ function monthlyCardHtml(m) {
   </div>`;
 }
 
-// Group of daily cards in same ISO week — week's combined view
+// Group of daily cards within same month-week + optional weekly summary preface
 function weekgroupHtml(view) {
+  const summaryHtml = view.summary ? weeklyCardHtml(view.summary) : '';
   const cards = view.data.map(dailyCardHtml).join('');
-  // Empty fallback: if no news AND no repos in any daily → show monthly fallback
-  const hasContent = view.data.some(c => (c.news||[]).length || (c.repos||[]).length || (c.gamingNews||[]).length);
+  const hasContent = view.data.some(c => (c.news||[]).length || (c.repos||[]).length || (c.gamingNews||[]).length)
+                  || (view.summary && ((view.summary.highlights||[]).length || (view.summary.topRepos||[]).length));
   const fallback = hasContent ? '' : renderEmptyFallback(view.monthKey);
-  return cards + fallback;
+  return summaryHtml + cards + fallback;
 }
 
 function renderEmptyFallback(currentMonthKey) {
@@ -165,28 +181,32 @@ function buildViews(daily, weekly, monthly) {
   const views = [];
   const byId = {};
 
-  // Group dailies by ISO week
+  // Group dailies by month-week key (custom rule)
   const weekGroups = {};
   for (const d of daily) {
-    const wk = isoYearWeek(d.date);
+    const wk = monthWeekKey(d.date);
     (weekGroups[wk] = weekGroups[wk] || []).push(d);
   }
 
-  // Sort week keys desc
-  const weekKeys = Object.keys(weekGroups).sort().reverse();
-  const currentWeek = weekKeys[0] || isoYearWeek(todayStr());
+  // Index weekly summaries by their fromDate's month-week key (drop ISO-week semantics)
+  const weeklyByMW = {};
+  for (const w of weekly||[]) {
+    if (w.fromDate) weeklyByMW[monthWeekKey(w.fromDate)] = w;
+  }
 
-  // Build week-group + individual daily views
+  // Determine current week key from latest daily, fallback to today
+  const weekKeys = Object.keys(weekGroups).sort().reverse();
+  const currentWeek = weekKeys[0] || monthWeekKey(todayStr());
+
+  // Build weekgroup + individual daily views
   for (const wk of weekKeys) {
     const days = weekGroups[wk].sort((a,b) => b.date.localeCompare(a.date));
-    const mKey = monthKey(days[0].date);
-    const fromD = days[days.length-1].date.slice(5);
-    const toD   = days[0].date.slice(5);
-    const wkNum = wk.split('-')[1];
+    const mKey = wk.slice(0,7);
     const id = `weekgroup-${wk}`;
     const view = {
-      id, type:'weekgroup', data:days, monthKey:mKey,
-      label: `Tuần ${wkNum} (${fromD} → ${toD})`,
+      id, type:'weekgroup', data:days, monthKey:mKey, weekKey:wk,
+      label: weekLabelText(wk),
+      summary: weeklyByMW[wk] || null,
       isCurrent: wk === currentWeek,
     };
     views.push(view);
@@ -199,15 +219,8 @@ function buildViews(daily, weekly, monthly) {
     }
   }
 
-  // Weekly cards
+  // Monthly views (one per month)
   const monthlyByKey = {};
-  for (const w of weekly||[]) {
-    const id = `week-${w.fromDate}`;
-    const v = {id, type:'weekly', data:w, monthKey:monthKey(w.toDate),
-               label:`${w.weekLabel||'Tuần'} (${w.fromDate.slice(5)} → ${w.toDate.slice(5)})`};
-    views.push(v); byId[id] = v;
-  }
-  // Monthly
   for (const m of monthly||[]) {
     const id = `month-${m.fromDate}`;
     const v = {id, type:'monthly', data:m, monthKey:monthKey(m.fromDate), label:'Tổng kết tháng'};
@@ -215,7 +228,6 @@ function buildViews(daily, weekly, monthly) {
     monthlyByKey[v.monthKey] = m;
   }
 
-  // Default: current week group if exists
   const defaultId = byId[`weekgroup-${currentWeek}`] ? `weekgroup-${currentWeek}`
                   : (views[0] ? views[0].id : '');
 
