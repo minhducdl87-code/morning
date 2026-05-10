@@ -1,73 +1,73 @@
 [
   {
     "weekLabel": "Tuần 19/2026",
-    "fromDate": "2026-04-28",
-    "toDate": "2026-05-04",
+    "fromDate": "2026-05-04",
+    "toDate": "2026-05-10",
     "highlights": [
       {
-        "title": "🧠 Claude CodeGen 4.7.5 Ra Mắt",
-        "desc": "Claude tiếp tục nâng cấp các mô hình cốt lõi với CodeGen 4.7.5, hứa hẹn cải thiện đáng kể khả năng tạo và hiểu mã. Điều này mang lại lợi ích lớn cho các nhà phát triển và ứng dụng AI trong lập trình.",
+        "title": "🧠 Claude 5.0 Beta Ra Mắt",
+        "desc": "Anthropic đã chính thức ra mắt phiên bản Beta của Claude 5.0, đánh dấu một bước tiến lớn trong khả năng của mô hình AI này. Phiên bản mới hứa hẹn mang lại hiệu suất vượt trội và các tính năng tiên tiến hơn, mở ra nhiều cơ hội ứng dụng mới cho người dùng và nhà phát triển.",
         "tag": "model",
         "tagLabel": "🧠 MODEL"
       },
       {
-        "title": "🔥 Claude Enterprise: Mã Hóa Lượng Tử",
-        "desc": "Claude Enterprise tăng cường bảo mật dữ liệu với mã hóa lượng tử, một bước tiến lớn trong việc bảo vệ thông tin nhạy cảm. Đây là tính năng quan trọng cho các doanh nghiệp yêu cầu mức độ bảo mật cao nhất.",
+        "title": "🔥 Claude Enterprise: Hỗ Trợ Triển Khai On-Premise",
+        "desc": "Claude Enterprise giờ đây đã hỗ trợ triển khai On-Premise, cho phép các doanh nghiệp lớn tích hợp và vận hành Claude trực tiếp trên hạ tầng của mình. Điều này giúp tăng cường bảo mật dữ liệu và kiểm soát hoàn toàn môi trường AI, đặc biệt quan trọng đối với các ngành yêu cầu tuân thủ nghiêm ngặt.",
         "tag": "hot",
         "tagLabel": "🔥 HOT"
       },
       {
-        "title": "✨ Claude Pro: Chế Độ 'Tự Động Tóm Tắt'",
-        "desc": "Claude Pro ra mắt chế độ 'Tự Động Tóm Tắt' tài liệu dài, giúp người dùng tiết kiệm thời gian và nắm bắt thông tin nhanh chóng. Tính năng này đặc biệt hữu ích cho việc xử lý các văn bản phức tạp và dài.",
+        "title": "✨ Claude Pro: Tích Hợp Cơ Sở Tri Thức Tùy Chỉnh",
+        "desc": "Claude Pro đã được nâng cấp với khả năng tích hợp cơ sở tri thức tùy chỉnh, cho phép người dùng cung cấp dữ liệu riêng để Claude học hỏi và đưa ra phản hồi chính xác hơn. Tính năng này giúp cá nhân hóa trải nghiệm và tăng cường hiệu quả làm việc cho các tác vụ chuyên biệt.",
         "tag": "feature",
         "tagLabel": "✨ FEATURE"
       },
       {
-        "title": "🔧 API: Endpoint 'Real-time Translation'",
-        "desc": "Claude ra mắt endpoint API 'Real-time Translation', mở ra khả năng tích hợp dịch thuật tức thì vào các ứng dụng. Điều này thúc đẩy sự phát triển của các giải pháp đa ngôn ngữ và giao tiếp toàn cầu.",
+        "title": "🔧 API: Ra Mắt Endpoint 'Embeddings' Tối Ưu",
+        "desc": "Anthropic đã giới thiệu endpoint 'Embeddings' mới được tối ưu hóa cho API của Claude. Endpoint này cải thiện đáng kể hiệu suất và độ chính xác khi tạo các vector nhúng (embeddings), hỗ trợ tốt hơn cho các ứng dụng tìm kiếm ngữ nghĩa và phân tích dữ liệu.",
         "tag": "api",
         "tagLabel": "🔧 API"
       },
       {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Claude 3.5 API",
-        "desc": "Claude thông báo ngừng hỗ trợ Claude 3.5 API, khuyến nghị người dùng chuyển sang các phiên bản mới hơn. Đây là một cảnh báo quan trọng để các nhà phát triển cập nhật hệ thống của mình.",
+        "title": "⏰ Cảnh Báo: Yêu Cầu API Key Mới Cho Endpoint V3",
+        "desc": "Người dùng được cảnh báo về việc yêu cầu API Key mới cho Endpoint V3 của Claude. Sự thay đổi này nhằm tăng cường bảo mật và quản lý truy cập API, yêu cầu các nhà phát triển cập nhật cấu hình để đảm bảo hoạt động liên tục của ứng dụng.",
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE"
       }
     ],
     "topRepos": [
       {
-        "name": "anthropic-community/claude-cli",
-        "url": "https://github.com/anthropic-community/claude-cli",
-        "desc": "Công cụ dòng lệnh mạnh mẽ để tương tác với Claude API, giúp các nhà phát triển dễ dàng quản lý và thử nghiệm các tác vụ AI.",
-        "stars": "N/A",
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Tiếp tục là một trong những dự án AI agent nổi bật nhất, cung cấp công cụ mạnh mẽ để mọi người có thể sử dụng và xây dựng các tác nhân AI tự động hóa.",
+        "stars": "12K+",
         "verdict": "yes"
       },
       {
-        "name": "ai-agents-dev/auto-task-orchestrator",
-        "url": "https://github.com/ai-agents-dev/auto-task-orchestrator",
-        "desc": "Framework mã nguồn mở giúp tự động hóa và điều phối các tác vụ AI phức tạp, rất hữu ích cho việc xây dựng các hệ thống tác nhân thông minh.",
-        "stars": "N/A",
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Dự án này giúp người dùng nhanh chóng sử dụng các mô hình AI lớn như Kimi-K2.5, Gemini và nhiều mô hình khác một cách dễ dàng trên máy tính cá nhân.",
+        "stars": "12K+",
         "verdict": "yes"
       },
       {
-        "name": "ai-dev-tools/prompt-engineering-studio",
-        "url": "https://github.com/ai-dev-tools/prompt-engineering-studio",
-        "desc": "Môi trường phát triển tích hợp (IDE) chuyên biệt cho kỹ thuật prompt, giúp các kỹ sư AI thiết kế và tối ưu hóa prompt hiệu quả hơn.",
-        "stars": "N/A",
+        "name": "anthropic/claude-agent-framework",
+        "url": "https://github.com/anthropic/claude-agent-framework",
+        "desc": "Framework Python chính thức từ Anthropic, giúp các nhà phát triển xây dựng các tác nhân AI mạnh mẽ sử dụng Claude, nhận được sự quan tâm lớn từ cộng đồng.",
+        "stars": "12K+",
         "verdict": "yes"
       }
     ],
     "topGaming": [
       {
-        "title": "🎮 MCP Server Optimizer",
-        "desc": "Công cụ tối ưu hóa hiệu suất cho các máy chủ Minecraft (MCP), giúp cải thiện trải nghiệm chơi game và quản lý tài nguyên hiệu quả.",
+        "title": "🎮 nextgen-minecraft-server",
+        "desc": "Dự án máy chủ Minecraft thế hệ mới được tối ưu hóa hiệu suất và tích hợp các tính năng AI, mang lại trải nghiệm chơi game mượt mà và thông minh hơn.",
         "tag": "gameplay",
         "tagLabel": "🎮 GAMEPLAY"
       },
       {
-        "title": "🎮 Minecraft Claude AI Plugin",
-        "desc": "Plugin Minecraft cho phép tích hợp Claude AI vào server, tạo ra các tương tác thông minh và trải nghiệm độc đáo trong game.",
+        "title": "🎮 claude-mc-plugin",
+        "desc": "Plugin Minecraft cho phép tích hợp Claude vào máy chủ, hỗ trợ các tương tác AI thông minh trong game, từ quản lý đến tạo nội dung.",
         "tag": "gameplay",
         "tagLabel": "🎮 GAMEPLAY"
       }
