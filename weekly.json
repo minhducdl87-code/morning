@@ -49,13 +49,6 @@
         "desc": "Dự án này giúp người dùng nhanh chóng sử dụng các mô hình AI lớn như Kimi-K2.5, Gemini và nhiều mô hình khác một cách dễ dàng trên máy tính cá nhân.",
         "stars": "12K+",
         "verdict": "yes"
-      },
-      {
-        "name": "anthropic/claude-agent-framework",
-        "url": "https://github.com/anthropic/claude-agent-framework",
-        "desc": "Framework Python chính thức từ Anthropic, giúp các nhà phát triển xây dựng các tác nhân AI mạnh mẽ sử dụng Claude, nhận được sự quan tâm lớn từ cộng đồng.",
-        "stars": "12K+",
-        "verdict": "yes"
       }
     ],
     "topGaming": [
@@ -71,7 +64,11 @@
         "tag": "gameplay",
         "tagLabel": "🎮 GAMEPLAY"
       }
-    ]
+    ],
+    "news": [],
+    "gamingNews": [],
+    "topNews": [],
+    "repos": []
   },
   {
     "weekLabel": "Tuần 18/2026",
@@ -109,29 +106,7 @@
         "tagLabel": "⏰ DEADLINE"
       }
     ],
-    "topRepos": [
-      {
-        "name": "anthropic-community/claude-cli-tools",
-        "url": "https://github.com/anthropic-community/claude-cli-tools",
-        "desc": "Bộ công cụ dòng lệnh này giúp tương tác hiệu quả với Claude API, được cộng đồng Anthropic phát triển và duy trì, rất hữu ích cho các nhà phát triển.",
-        "stars": "N/A",
-        "verdict": "yes"
-      },
-      {
-        "name": "anthropic-labs/claude-function-calling-cookbook",
-        "url": "https://github.com/anthropic-labs/claude-function-calling-cookbook",
-        "desc": "Tập hợp các ví dụ và hướng dẫn chi tiết về cách sử dụng tính năng gọi hàm của Claude, là tài nguyên quý giá cho những ai muốn khai thác sâu hơn khả năng của Claude.",
-        "stars": "N/A",
-        "verdict": "yes"
-      },
-      {
-        "name": "anthropic/claude-tools-starter",
-        "url": "https://github.com/anthropic/claude-tools-starter",
-        "desc": "Bộ công cụ khởi đầu chính thức từ Anthropic, giúp nhà phát triển dễ dàng bắt đầu với Claude, cung cấp các mẫu và hướng dẫn cơ bản.",
-        "stars": "N/A",
-        "verdict": "yes"
-      }
-    ],
+    "topRepos": [],
     "topGaming": [
       {
         "title": "🎮 mc-server-manager-ai",
@@ -145,7 +120,11 @@
         "tag": "gameplay",
         "tagLabel": "🎮 GAMEPLAY"
       }
-    ]
+    ],
+    "news": [],
+    "gamingNews": [],
+    "topNews": [],
+    "repos": []
   },
   {
     "weekLabel": "Tuần 17/2026",
@@ -219,7 +198,11 @@
         "tag": "gameplay",
         "tagLabel": "🎮 GAMEPLAY"
       }
-    ]
+    ],
+    "news": [],
+    "gamingNews": [],
+    "topNews": [],
+    "repos": []
   },
   {
     "weekLabel": "Tuần 16/2026",
@@ -280,6 +263,10 @@
         "verdict": "yes"
       }
     ],
-    "topGaming": []
+    "topGaming": [],
+    "news": [],
+    "gamingNews": [],
+    "topNews": [],
+    "repos": []
   }
 ]

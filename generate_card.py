@@ -4,7 +4,7 @@ import json, os, re
 from datetime import datetime, timedelta
 from google import genai
 from google.genai import types
-from digest_utils import get_recent_titles, get_recent_urls, validate_news_urls, validate_repo_urls
+from digest_utils import get_recent_titles, get_recent_urls, batch_check_urls, validate_news_items, validate_repo_items
 from jina_fetch import fetch_topic_context
 
 try:
@@ -75,11 +75,11 @@ def build_prompt(topics: dict, recent_titles: list, topic_contexts: dict) -> str
     lines.append("{" + schema_fields + "}")
     lines.append("")
     lines.append("HARD RULES (BẮT BUỘC):")
-    lines.append("1. URL CHỈ được lấy từ 'Dữ liệu tìm kiếm' / 'Dữ liệu GitHub' / Google Search citations. KHÔNG bịa, KHÔNG sửa, KHÔNG đoán.")
-    lines.append("2. Nếu không có URL thật cho 1 item → set \"url\":\"\" (chuỗi rỗng), KHÔNG copy schema text như 'https://link-...'")
-    lines.append("3. Repo: name + url + stars phải khớp DỮ LIỆU GITHUB nguyên văn. KHÔNG tạo repo mới.")
-    lines.append("4. Nếu data ít hơn min_items → trả số ít hơn, KHÔNG bịa thêm để đủ.")
-    lines.append("5. Tiếng Việt ngắn gọn dễ hiểu. Trả về ĐẦY ĐỦ tất cả các field.")
+    lines.append("1. URL phải là URL THẬT, kiểm chứng được (sẽ được HEAD-check sau). KHÔNG bịa pattern plausible.")
+    lines.append("2. Ưu tiên URL từ 'Dữ liệu tìm kiếm' / 'Dữ liệu GitHub' / Google Search citations.")
+    lines.append("3. Nếu không chắc URL → set \"url\":\"\" (chuỗi rỗng) hơn là đoán. Item vẫn hiển thị với title+desc.")
+    lines.append("4. Repo: name + url + stars phải khớp DỮ LIỆU GITHUB nguyên văn. KHÔNG tạo repo mới.")
+    lines.append("5. Tiếng Việt ngắn gọn dễ hiểu. Trả về ĐẦY ĐỦ tất cả các field. Min_items là goal, không phải buộc — thà ít mà đúng.")
 
     return "\n".join(lines)
 
@@ -203,11 +203,20 @@ card_json.setdefault("date", date_str)
 card_json.setdefault("dayLabel", day_label)
 card_json.setdefault("dateLabel", date_label)
 
-# --- URL validation: drop fake URLs / fake repos ---
-print("Step 3: Validating URLs...")
-card_json["news"]       = validate_news_urls(card_json.get("news", []),       all_valid_urls)
-card_json["gamingNews"] = validate_news_urls(card_json.get("gamingNews", []), all_valid_urls)
-card_json["repos"]      = validate_repo_urls(card_json.get("repos", []),      valid_urls_per_topic.get("github_trending", set()))
+# --- URL validation: HEAD-check all URLs in parallel, drop dead ones ---
+print("Step 3: HEAD-checking URLs...")
+all_urls = (
+    [n.get("url","") for n in card_json.get("news", [])] +
+    [g.get("url","") for g in card_json.get("gamingNews", [])] +
+    [r.get("url","") for r in card_json.get("repos", [])]
+)
+live_map = batch_check_urls(all_urls)
+live_count = sum(1 for v in live_map.values() if v)
+print(f"  {live_count}/{len(live_map)} URLs are live")
+
+card_json["news"]       = validate_news_items(card_json.get("news", []),       live_map)
+card_json["gamingNews"] = validate_news_items(card_json.get("gamingNews", []), live_map)
+card_json["repos"]      = validate_repo_items(card_json.get("repos", []),      live_map)
 
 # --- Dedup news by URL against last 3 days ---
 if recent_urls:

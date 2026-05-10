@@ -83,7 +83,7 @@
         "tag": "model",
         "tagLabel": "🧠 MODEL",
         "source": "08/05·Anthropic Blog",
-        "url": "https://www.anthropic.com/blog/claude-5-beta"
+        "url": ""
       },
       {
         "title": "✨ Claude Pro: Tích Hợp Cơ Sở Tri Thức Tùy Chỉnh",
@@ -99,7 +99,7 @@
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE",
         "source": "08/05·Anthropic Dev",
-        "url": "https://developers.anthropic.com/blog/api-key-v3"
+        "url": ""
       },
       {
         "title": "🔥 Claude Enterprise: Hỗ Trợ Triển Khai On-Premise",
@@ -107,7 +107,7 @@
         "tag": "hot",
         "tagLabel": "🔥 HOT",
         "source": "09/05·Anthropic Press",
-        "url": "https://www.anthropic.com/enterprise/on-premise"
+        "url": ""
       },
       {
         "title": "🔧 API: Ra Mắt Endpoint 'Embeddings' Tối Ưu",
@@ -115,59 +115,10 @@
         "tag": "api",
         "tagLabel": "🔧 API",
         "source": "08/05·Anthropic Dev",
-        "url": "https://developers.anthropic.com/docs/embeddings-api"
+        "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "anthropic/claude-agent-framework",
-        "url": "https://github.com/anthropic/claude-agent-framework",
-        "desc": "Một framework Python giúp xây dựng các tác nhân AI mạnh mẽ sử dụng Claude, hỗ trợ lập kế hoạch và thực thi đa bước.",
-        "stars": "7.2K+",
-        "verdict": "yes",
-        "reason": "Trực tiếp liên quan đến Claude và tự động hóa tác nhân."
-      },
-      {
-        "name": "ai-utilities/prompt-optimizer",
-        "url": "https://github.com/ai-utilities/prompt-optimizer",
-        "desc": "Công cụ mã nguồn mở để tự động tối ưu hóa các prompt cho các mô hình ngôn ngữ lớn, giúp cải thiện chất lượng phản hồi.",
-        "stars": "15.8K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI hữu ích, tăng hiệu quả sử dụng Claude."
-      },
-      {
-        "name": "mcp-servers/nextgen-minecraft-server",
-        "url": "https://github.com/mcp-servers/nextgen-minecraft-server",
-        "desc": "Phiên bản máy chủ Minecraft thế hệ mới được tối ưu hóa hiệu suất và hỗ trợ các plugin AI để quản lý và tương tác.",
-        "stars": "3.1K+",
-        "verdict": "yes",
-        "reason": "Máy chủ MCP với tích hợp AI, phù hợp tiêu chí."
-      },
-      {
-        "name": "agent-automation/autocoder-agent",
-        "url": "https://github.com/agent-automation/autocoder-agent",
-        "desc": "Tác nhân AI tự động viết và sửa lỗi code dựa trên yêu cầu ngôn ngữ tự nhiên, tích hợp với các IDE phổ biến.",
-        "stars": "11.5K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa tác nhân và tiện ích AI cho lập trình."
-      },
-      {
-        "name": "claude-tools/claude-cli",
-        "url": "https://github.com/claude-tools/claude-cli",
-        "desc": "Giao diện dòng lệnh không chính thức cho Claude, cho phép tương tác nhanh chóng và tích hợp vào các script.",
-        "stars": "4.9K+",
-        "verdict": "yes",
-        "reason": "Công cụ Claude tiện lợi cho nhà phát triển."
-      },
-      {
-        "name": "llm-research/fine-tuning-toolkit",
-        "url": "https://github.com/llm-research/fine-tuning-toolkit",
-        "desc": "Bộ công cụ để tinh chỉnh các mô hình ngôn ngữ lớn với dữ liệu tùy chỉnh, hỗ trợ nhiều framework AI.",
-        "stars": "9.1K+",
-        "verdict": "maybe",
-        "reason": "Hữu ích cho LLM nói chung, có thể áp dụng cho Claude nếu có API fine-tuning."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -181,7 +132,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "07/05·Anthropic",
-        "url": "https://link-hoặc-chuỗi-rỗng"
+        "url": ""
       },
       {
         "title": "🔧 API: Cập Nhật SDK Python Hỗ Trợ Async/Await",
@@ -189,7 +140,7 @@
         "tag": "api",
         "tagLabel": "🔧 API",
         "source": "08/05·Anthropic Dev",
-        "url": "https://link-hoặc-chuỗi-rỗng"
+        "url": ""
       },
       {
         "title": "⏰ Cảnh Báo: Thay Đổi Chính Sách Giới Hạn Tốc Độ API",
@@ -197,7 +148,7 @@
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE",
         "source": "08/05·Anthropic",
-        "url": "https://link-hoặc-chuỗi-rỗng"
+        "url": ""
       },
       {
         "title": "🔥 Claude Enterprise: Mở Rộng Hỗ Trợ Ngôn Ngữ Doanh Nghiệp",
@@ -205,51 +156,11 @@
         "tag": "hot",
         "tagLabel": "🔥 HOT",
         "source": "07/05·Anthropic",
-        "url": "https://link-hoặc-chuỗi-rỗng"
+        "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "claude-ai/agent-framework-v2",
-        "url": "https://github.com/claude-ai/agent-framework-v2",
-        "desc": "Phiên bản mới của framework phát triển tác tử AI cho Claude, với kiến trúc mô-đun và khả năng mở rộng tốt hơn.",
-        "stars": "15K+",
-        "verdict": "yes",
-        "reason": "Công cụ chính thức từ Claude cho tự động hóa tác tử."
-      },
-      {
-        "name": "ai-utilities/prompt-optimizer",
-        "url": "https://github.com/ai-utilities/prompt-optimizer",
-        "desc": "Một công cụ mã nguồn mở giúp tối ưu hóa các prompt cho mô hình ngôn ngữ lớn, cải thiện chất lượng và hiệu quả phản hồi.",
-        "stars": "8K+",
-        "verdict": "yes",
-        "reason": "Hữu ích cho mọi người dùng Claude để cải thiện prompt."
-      },
-      {
-        "name": "mcp-servers/nextgen-ai-infra",
-        "url": "https://github.com/mcp-servers/nextgen-ai-infra",
-        "desc": "Dự án cung cấp các cấu hình và kịch bản triển khai hạ tầng AI thế hệ mới trên các máy chủ đám mây, tối ưu cho các mô hình lớn.",
-        "stars": "10K+",
-        "verdict": "yes",
-        "reason": "Hạ tầng quan trọng cho việc triển khai và vận hành các mô hình AI."
-      },
-      {
-        "name": "claude-community/claude-slack-bot",
-        "url": "https://github.com/claude-community/claude-slack-bot",
-        "desc": "Một bot Slack tích hợp Claude, cho phép người dùng tương tác với AI trực tiếp trong không gian làm việc của họ.",
-        "stars": "6K+",
-        "verdict": "yes",
-        "reason": "Công cụ tích hợp Claude vào quy trình làm việc hàng ngày."
-      },
-      {
-        "name": "agent-automation/autocoder-agent",
-        "url": "https://github.com/agent-automation/autocoder-agent",
-        "desc": "Tác tử AI có khả năng tự động viết và sửa lỗi code dựa trên yêu cầu ngôn ngữ tự nhiên, hỗ trợ nhiều ngôn ngữ lập trình.",
-        "stars": "11K+",
-        "verdict": "yes",
-        "reason": "Ứng dụng tự động hóa tác tử mạnh mẽ trong phát triển phần mềm."
-      }
-    ]
+    "repos": [],
+    "gamingNews": []
   },
   {
     "date": "2026-05-07",
@@ -297,56 +208,8 @@
         "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "claude-ai/agent-framework",
-        "url": "https://github.com/claude-ai/agent-framework",
-        "desc": "Một framework Python mới giúp xây dựng các tác nhân AI mạnh mẽ và có khả năng tự động hóa tác vụ phức tạp với Claude.",
-        "stars": "2.1K+",
-        "verdict": "yes",
-        "reason": "Framework chính thức cho agent automation."
-      },
-      {
-        "name": "anthropic/claude-cli-tools",
-        "url": "https://github.com/anthropic/claude-cli-tools",
-        "desc": "Bộ công cụ dòng lệnh giúp tương tác và quản lý các mô hình Claude dễ dàng hơn từ terminal.",
-        "stars": "980+",
-        "verdict": "yes",
-        "reason": "Công cụ hữu ích để quản lý Claude."
-      },
-      {
-        "name": "ai-utilities/prompt-optimizer",
-        "url": "https://github.com/ai-utilities/prompt-optimizer",
-        "desc": "Công cụ mã nguồn mở sử dụng AI để tự động tối ưu hóa các prompt cho Claude và các mô hình ngôn ngữ khác.",
-        "stars": "1.5K+",
-        "verdict": "yes",
-        "reason": "Hữu ích cho việc cải thiện hiệu suất prompt."
-      },
-      {
-        "name": "mcp-servers/claude-integration-server",
-        "url": "https://github.com/mcp-servers/claude-integration-server",
-        "desc": "Máy chủ tích hợp nhẹ cho phép kết nối Claude với các ứng dụng doanh nghiệp và hệ thống legacy một cách an toàn.",
-        "stars": "750+",
-        "verdict": "yes",
-        "reason": "Giải pháp MCP server cho tích hợp Claude."
-      },
-      {
-        "name": "agent-flow/workflow-orchestrator",
-        "url": "https://github.com/agent-flow/workflow-orchestrator",
-        "desc": "Một hệ thống điều phối workflow cho phép tự động hóa chuỗi các tác vụ AI và con người, hỗ trợ tích hợp với Claude.",
-        "stars": "1.2K+",
-        "verdict": "yes",
-        "reason": "Tăng cường khả năng tự động hóa tác nhân."
-      },
-      {
-        "name": "llm-tools/data-privacy-toolkit",
-        "url": "https://github.com/llm-tools/data-privacy-toolkit",
-        "desc": "Bộ công cụ giúp ẩn danh và bảo vệ dữ liệu nhạy cảm khi sử dụng với các mô hình ngôn ngữ lớn như Claude.",
-        "stars": "600+",
-        "verdict": "maybe",
-        "reason": "Liên quan đến AI utilities, nhưng không trực tiếp về Claude tools."
-      }
-    ]
+    "repos": [],
+    "gamingNews": []
   },
   {
     "date": "2026-05-06",
@@ -402,48 +265,7 @@
         "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "anthropic-community/claude-prompt-optimizer",
-        "url": "https://github.com/anthropic-community/claude-prompt-optimizer",
-        "desc": "Công cụ mã nguồn mở giúp tối ưu hóa và kiểm thử các prompt cho Claude để đạt hiệu quả cao nhất.",
-        "stars": "5.2K+",
-        "verdict": "yes",
-        "reason": "Hữu ích cho dev Claude."
-      },
-      {
-        "name": "ai-agents/claude-multi-agent-framework",
-        "url": "https://github.com/ai-agents/claude-multi-agent-framework",
-        "desc": "Một framework Python cho phép xây dựng và quản lý các hệ thống đa tác nhân sử dụng Claude làm lõi.",
-        "stars": "8.7K+",
-        "verdict": "yes",
-        "reason": "Xu hướng agent automation."
-      },
-      {
-        "name": "mcp-servers/nextgen-minecraft-server",
-        "url": "https://github.com/mcp-servers/nextgen-minecraft-server",
-        "desc": "Dự án máy chủ Minecraft thế hệ mới với hiệu suất cao và khả năng mở rộng tốt hơn.",
-        "stars": "1.5K+",
-        "verdict": "maybe",
-        "reason": "MCP server mới, cần đánh giá thêm."
-      },
-      {
-        "name": "ai-utilities/llm-cost-tracker",
-        "url": "https://github.com/ai-utilities/llm-cost-tracker",
-        "desc": "Công cụ theo dõi và phân tích chi phí sử dụng các mô hình ngôn ngữ lớn (LLM) từ nhiều nhà cung cấp.",
-        "stars": "3.1K+",
-        "verdict": "yes",
-        "reason": "Quản lý chi phí AI thiết yếu."
-      },
-      {
-        "name": "claude-tools/claude-vision-assistant",
-        "url": "https://github.com/claude-tools/claude-vision-assistant",
-        "desc": "Trợ lý thị giác dựa trên Claude, giúp phân tích hình ảnh và cung cấp mô tả chi tiết.",
-        "stars": "4.9K+",
-        "verdict": "yes",
-        "reason": "Ứng dụng trực tiếp Claude Vision."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -500,56 +322,7 @@
         "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "claude-ai/agent-framework",
-        "url": "https://github.com/claude-ai/agent-framework",
-        "desc": "Một framework mạnh mẽ để xây dựng các AI agent tự động hóa tác vụ phức tạp với Claude.",
-        "stars": "2.5K+",
-        "verdict": "yes",
-        "reason": "Phù hợp với tự động hóa agent và công cụ Claude."
-      },
-      {
-        "name": "anthropic-community/claude-tools-collection",
-        "url": "https://github.com/anthropic-community/claude-tools-collection",
-        "desc": "Bộ sưu tập các công cụ và tiện ích do cộng đồng phát triển để mở rộng khả năng của Claude.",
-        "stars": "1.8K+",
-        "verdict": "yes",
-        "reason": "Tập trung vào công cụ Claude, hữu ích cho nhà phát triển."
-      },
-      {
-        "name": "ai-utils/prompt-engineering-cookbook",
-        "url": "https://github.com/ai-utils/prompt-engineering-cookbook",
-        "desc": "Tài liệu hướng dẫn và ví dụ thực tế về kỹ thuật prompt hiệu quả cho các mô hình ngôn ngữ lớn, bao gồm Claude.",
-        "stars": "3.1K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI quan trọng, áp dụng trực tiếp cho Claude."
-      },
-      {
-        "name": "mcp-dev/minecraft-server-manager-ai",
-        "url": "https://github.com/mcp-dev/minecraft-server-manager-ai",
-        "desc": "Công cụ quản lý máy chủ Minecraft tự động sử dụng AI để giám sát và tối ưu hóa hiệu suất.",
-        "stars": "950+",
-        "verdict": "yes",
-        "reason": "Ứng dụng AI cho MCP servers, phù hợp tiêu chí."
-      },
-      {
-        "name": "gen-ai-labs/code-reviewer-claude",
-        "url": "https://github.com/gen-ai-labs/code-reviewer-claude",
-        "desc": "Một công cụ đánh giá code tự động được xây dựng dựa trên Claude, giúp cải thiện chất lượng code.",
-        "stars": "1.2K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI ứng dụng Claude, có giá trị thực tế."
-      },
-      {
-        "name": "data-science-ai/llm-finetuning-recipes",
-        "url": "https://github.com/data-science-ai/llm-finetuning-recipes",
-        "desc": "Các công thức và hướng dẫn để tinh chỉnh các mô hình ngôn ngữ lớn cho các tác vụ cụ thể.",
-        "stars": "2.0K+",
-        "verdict": "maybe",
-        "reason": "Hữu ích cho LLM nói chung, có thể áp dụng cho Claude."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -598,48 +371,7 @@
         "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "anthropic/claude-agent-toolkit",
-        "url": "https://github.com/anthropic/claude-agent-toolkit",
-        "desc": "Bộ công cụ mã nguồn mở giúp xây dựng các tác nhân AI mạnh mẽ sử dụng Claude, hỗ trợ tích hợp công cụ và quản lý quy trình làm việc.",
-        "stars": "15K+",
-        "verdict": "yes",
-        "reason": "Công cụ chính thức từ Anthropic, rất hữu ích cho phát triển agent."
-      },
-      {
-        "name": "ai-utilities/prompt-optimizer-cli",
-        "url": "https://github.com/ai-utilities/prompt-optimizer-cli",
-        "desc": "Một công cụ dòng lệnh giúp tự động tối ưu hóa các prompt cho Claude và các mô hình AI khác, cải thiện chất lượng phản hồi và giảm chi phí token.",
-        "stars": "8.5K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI thiết thực, giúp cải thiện hiệu suất prompt."
-      },
-      {
-        "name": "mcpservers/claude-mc-plugin",
-        "url": "https://github.com/mcpservers/claude-mc-plugin",
-        "desc": "Plugin Minecraft cho phép tích hợp Claude vào máy chủ, hỗ trợ quản lý, tương tác với người chơi và tạo nội dung động trong game.",
-        "stars": "6.2K+",
-        "verdict": "yes",
-        "reason": "Ứng dụng Claude vào MCP server, mở ra nhiều khả năng mới."
-      },
-      {
-        "name": "agent-automation/autocoder-agent",
-        "url": "https://github.com/agent-automation/autocoder-agent",
-        "desc": "Một agent AI có khả năng tự động viết, debug và kiểm thử mã nguồn dựa trên mô tả yêu cầu, sử dụng Claude làm lõi xử lý ngôn ngữ.",
-        "stars": "10K+",
-        "verdict": "yes",
-        "reason": "Ví dụ điển hình về agent automation, tiềm năng lớn trong phát triển phần mềm."
-      },
-      {
-        "name": "llm-tools/data-extractor-claude",
-        "url": "https://github.com/llm-tools/data-extractor-claude",
-        "desc": "Thư viện Python chuyên dụng để trích xuất dữ liệu có cấu trúc từ văn bản phi cấu trúc bằng cách tận dụng khả năng của Claude.",
-        "stars": "4.9K+",
-        "verdict": "yes",
-        "reason": "Công cụ hữu ích cho xử lý dữ liệu với Claude, ứng dụng rộng rãi."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -653,7 +385,7 @@
         "tag": "model",
         "tagLabel": "🧠 MODEL",
         "source": "02/05·Anthropic",
-        "url": "https://link-hoặc-chuỗi-rỗng"
+        "url": ""
       },
       {
         "title": "✨ Claude Pro: Tính Năng 'Tùy Chỉnh Phong Cách' Phản Hồi",
@@ -661,7 +393,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "02/05·Anthropic",
-        "url": "https://link-hoặc-chuỗi-rỗng"
+        "url": ""
       },
       {
         "title": "🔧 API: Ra Mắt Endpoint 'Batch Processing'",
@@ -669,7 +401,7 @@
         "tag": "api",
         "tagLabel": "🔧 API",
         "source": "01/05·Anthropic Dev",
-        "url": "https://link-hoặc-chuỗi-rỗng"
+        "url": ""
       },
       {
         "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ SDK JavaScript Dưới Phiên Bản 0.10.0",
@@ -677,7 +409,7 @@
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE",
         "source": "01/05·Anthropic Dev",
-        "url": "https://link-hoặc-chuỗi-rỗng"
+        "url": ""
       },
       {
         "title": "🔥 Claude Enterprise: Tích Hợp Công Cụ Phân Tích Dữ Liệu Lớn",
@@ -685,51 +417,10 @@
         "tag": "hot",
         "tagLabel": "🔥 HOT",
         "source": "02/05·Anthropic",
-        "url": "https://link-hoặc-chuỗi-rỗng"
+        "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "anthropic-contrib/claude-agent-framework",
-        "url": "https://github.com/anthropic-contrib/claude-agent-framework",
-        "desc": "Một framework mạnh mẽ để xây dựng các tác nhân AI tự động hóa phức tạp sử dụng Claude.",
-        "stars": "7.2K+",
-        "verdict": "yes",
-        "reason": "Công cụ phát triển agent cho Claude, rất phù hợp."
-      },
-      {
-        "name": "ai-utilities/prompt-optimizer",
-        "url": "https://github.com/ai-utilities/prompt-optimizer",
-        "desc": "Công cụ tối ưu hóa prompt tự động để cải thiện hiệu suất phản hồi từ các mô hình ngôn ngữ lớn.",
-        "stars": "4.1K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI giúp nâng cao chất lượng tương tác với mô hình."
-      },
-      {
-        "name": "mcp-servers/modular-cloud-platform",
-        "url": "https://github.com/mcp-servers/modular-cloud-platform",
-        "desc": "Nền tảng đám mây mô-đun cho phép triển khai và quản lý các dịch vụ AI một cách linh hoạt.",
-        "stars": "1.8K+",
-        "verdict": "yes",
-        "reason": "Hệ thống MCP cho triển khai AI, đúng ưu tiên."
-      },
-      {
-        "name": "agent-automation/workflow-orchestrator",
-        "url": "https://github.com/agent-automation/workflow-orchestrator",
-        "desc": "Hệ thống điều phối các quy trình làm việc tự động hóa, tích hợp dễ dàng với các tác nhân AI.",
-        "stars": "3.5K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa quy trình, hỗ trợ agent AI."
-      },
-      {
-        "name": "claude-tools/vision-api-examples",
-        "url": "https://github.com/claude-tools/vision-api-examples",
-        "desc": "Bộ sưu tập các ví dụ và hướng dẫn sử dụng API thị giác của Claude cho các tác vụ phân tích hình ảnh.",
-        "stars": "1.1K+",
-        "verdict": "yes",
-        "reason": "Ví dụ thực tế về API Claude Vision, hữu ích."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -778,48 +469,7 @@
         "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "anthropic/claude-toolkit",
-        "url": "https://github.com/anthropic/claude-toolkit",
-        "desc": "Một bộ công cụ mã nguồn mở giúp xây dựng và triển khai các ứng dụng Claude với khả năng mở rộng và quản lý tốt hơn.",
-        "stars": "5.2K+",
-        "verdict": "yes",
-        "reason": "Tập trung vào công cụ Claude, rất hữu ích cho nhà phát triển."
-      },
-      {
-        "name": "ai-agents/autonomous-workflow",
-        "url": "https://github.com/ai-agents/autonomous-workflow",
-        "desc": "Khung làm việc để tạo các tác vụ tự động hóa phức tạp sử dụng các mô hình AI, tối ưu cho việc tích hợp với các trợ lý AI.",
-        "stars": "8.1K+",
-        "verdict": "yes",
-        "reason": "Phù hợp với chủ đề tự động hóa và agent AI."
-      },
-      {
-        "name": "llm-utils/prompt-engineer-studio",
-        "url": "https://github.com/llm-utils/prompt-engineer-studio",
-        "desc": "Nền tảng trực quan giúp thiết kế, thử nghiệm và tối ưu hóa các prompt cho nhiều mô hình ngôn ngữ lớn khác nhau.",
-        "stars": "3.9K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI quan trọng cho việc phát triển và tinh chỉnh mô hình."
-      },
-      {
-        "name": "mcp-servers/distributed-ai-compute",
-        "url": "https://github.com/mcp-servers/distributed-ai-compute",
-        "desc": "Giải pháp server phân tán để chạy các tác vụ AI nặng, tối ưu hóa việc sử dụng tài nguyên và khả năng mở rộng.",
-        "stars": "6.7K+",
-        "verdict": "yes",
-        "reason": "Liên quan trực tiếp đến MCP servers và tính toán AI."
-      },
-      {
-        "name": "data-pipelines/realtime-vector-db",
-        "url": "https://github.com/data-pipelines/realtime-vector-db",
-        "desc": "Một cơ sở dữ liệu vector hiệu suất cao được thiết kế cho các ứng dụng AI thời gian thực và tìm kiếm ngữ nghĩa.",
-        "stars": "4.5K+",
-        "verdict": "maybe",
-        "reason": "Hữu ích cho AI nhưng không trực tiếp về Claude hoặc agent."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -868,48 +518,7 @@
         "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "anthropic-community/claude-agent-toolkit",
-        "url": "https://github.com/anthropic-community/claude-agent-toolkit",
-        "desc": "Bộ công cụ mã nguồn mở giúp xây dựng và triển khai các tác nhân AI của Claude với khả năng sử dụng công cụ tùy chỉnh.",
-        "stars": "5.2K+",
-        "verdict": "yes",
-        "reason": "Rất tiềm năng cho phát triển agent."
-      },
-      {
-        "name": "ai-automation/mcp-server-orchestrator",
-        "url": "https://github.com/ai-automation/mcp-server-orchestrator",
-        "desc": "Công cụ điều phối và quản lý các máy chủ MCP (Massive Compute Platform) được tối ưu hóa cho các tác vụ AI cường độ cao.",
-        "stars": "3.8K+",
-        "verdict": "yes",
-        "reason": "Quan trọng cho việc mở rộng hạ tầng AI."
-      },
-      {
-        "name": "utility-ai/prompt-optimizer",
-        "url": "https://github.com/utility-ai/prompt-optimizer",
-        "desc": "Thư viện Python giúp tự động hóa quá trình tối ưu hóa prompt cho các mô hình ngôn ngữ lớn, cải thiện chất lượng phản hồi.",
-        "stars": "7.1K+",
-        "verdict": "yes",
-        "reason": "Tiện ích cần thiết để nâng cao hiệu suất prompt."
-      },
-      {
-        "name": "llm-tools/multi-modal-data-parser",
-        "url": "https://github.com/llm-tools/multi-modal-data-parser",
-        "desc": "Một parser mạnh mẽ hỗ trợ xử lý và chuẩn hóa dữ liệu đa phương thức (văn bản, hình ảnh, âm thanh) cho các ứng dụng AI.",
-        "stars": "2.9K+",
-        "verdict": "maybe",
-        "reason": "Hữu ích cho các mô hình đa phương thức."
-      },
-      {
-        "name": "agent-dev/autonomous-workflow-engine",
-        "url": "https://github.com/agent-dev/autonomous-workflow-engine",
-        "desc": "Nền tảng cho phép thiết kế và thực thi các quy trình làm việc tự động hoàn toàn bằng AI, giảm thiểu sự can thiệp của con người.",
-        "stars": "4.5K+",
-        "verdict": "yes",
-        "reason": "Phù hợp với xu hướng tự động hóa agent."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -923,7 +532,7 @@
         "tag": "model",
         "tagLabel": "🧠 MODEL",
         "source": "29/04·Anthropic",
-        "url": "https://www.anthropic.com/blog/claude-code-4-7-3"
+        "url": ""
       },
       {
         "title": "✨ Claude Agents: Khả Năng Tự Động Thực Thi Tác Vụ",
@@ -931,7 +540,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "29/04·Anthropic",
-        "url": "https://www.anthropic.com/news/claude-agents-release"
+        "url": ""
       },
       {
         "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Tham Số 'legacy_mode'",
@@ -939,7 +548,7 @@
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE",
         "source": "28/04·Anthropic",
-        "url": "https://www.anthropic.com/docs/deprecations"
+        "url": ""
       },
       {
         "title": "🔧 API: Ra Mắt Endpoint Giám Sát Hiệu Suất",
@@ -947,7 +556,7 @@
         "tag": "api",
         "tagLabel": "🔧 API",
         "source": "29/04·Anthropic",
-        "url": "https://www.anthropic.com/docs/api-monitoring"
+        "url": ""
       },
       {
         "title": "🔥 Claude Enterprise: Nền Tảng Tinh Chỉnh Mô Hình Tùy Biến",
@@ -955,59 +564,10 @@
         "tag": "hot",
         "tagLabel": "🔥 HOT",
         "source": "29/04·Anthropic",
-        "url": "https://www.anthropic.com/enterprise/fine-tuning"
+        "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "anthropic-community/claude-agent-framework",
-        "url": "https://github.com/anthropic-community/claude-agent-framework",
-        "desc": "Một framework mã nguồn mở giúp xây dựng và triển khai các tác nhân (agents) sử dụng Claude API một cách dễ dàng.",
-        "stars": "7.2K+",
-        "verdict": "yes",
-        "reason": "Hỗ trợ tính năng Claude Agents mới ra mắt."
-      },
-      {
-        "name": "ai-code-gen/claude-code-assistant",
-        "url": "https://github.com/ai-code-gen/claude-code-assistant",
-        "desc": "Công cụ tích hợp Claude Code 4.7.3 vào các IDE phổ biến để hỗ trợ lập trình viên viết và debug mã hiệu quả hơn.",
-        "stars": "5.1K+",
-        "verdict": "yes",
-        "reason": "Trực tiếp tận dụng mô hình Claude Code mới."
-      },
-      {
-        "name": "monitoring-ai/claude-performance-dashboard",
-        "url": "https://github.com/monitoring-ai/claude-performance-dashboard",
-        "desc": "Dashboard mã nguồn mở để trực quan hóa dữ liệu hiệu suất từ endpoint giám sát API mới của Claude.",
-        "stars": "2.8K+",
-        "verdict": "yes",
-        "reason": "Hữu ích cho việc giám sát API Claude."
-      },
-      {
-        "name": "llm-ops/fine-tune-cookbook",
-        "url": "https://github.com/llm-ops/fine-tune-cookbook",
-        "desc": "Tập hợp các công thức và ví dụ thực hành về tinh chỉnh mô hình ngôn ngữ lớn, bao gồm cả các hướng dẫn cho Claude Enterprise.",
-        "stars": "3.5K+",
-        "verdict": "yes",
-        "reason": "Phù hợp với tính năng tinh chỉnh mô hình Enterprise mới."
-      },
-      {
-        "name": "tool-integrations/claude-slack-bot",
-        "url": "https://github.com/tool-integrations/claude-slack-bot",
-        "desc": "Một bot Slack sử dụng Claude để trả lời câu hỏi, tóm tắt cuộc trò chuyện và thực hiện các tác vụ tự động trong môi trường nhóm.",
-        "stars": "1.9K+",
-        "verdict": "maybe",
-        "reason": "Ứng dụng thực tế của Claude trong giao tiếp nhóm."
-      },
-      {
-        "name": "ai-security/prompt-injection-detector",
-        "url": "https://github.com/ai-security/prompt-injection-detector",
-        "desc": "Thư viện Python giúp phát hiện và giảm thiểu các cuộc tấn công prompt injection cho các mô hình LLM, bao gồm Claude.",
-        "stars": "4.3K+",
-        "verdict": "skip",
-        "reason": "Không liên quan trực tiếp đến tin tức mới nhất, dù quan trọng."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -1021,7 +581,7 @@
         "tag": "model",
         "tagLabel": "🧠 MODEL",
         "source": "29/04·Anthropic",
-        "url": "https://www.anthropic.com/news/sonnet-4-7-2-release"
+        "url": ""
       },
       {
         "title": "✨ Claude Pro: Hỗ Trợ Đa Ngôn Ngữ Nâng Cao",
@@ -1029,7 +589,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "29/04·Anthropic",
-        "url": "https://www.anthropic.com/news/pro-multilingual-update"
+        "url": ""
       },
       {
         "title": "🔧 API: Ra Mắt Endpoint Xử Lý Ảnh Nâng Cao",
@@ -1053,51 +613,10 @@
         "tag": "hot",
         "tagLabel": "🔥 HOT",
         "source": "29/04·Anthropic",
-        "url": "https://www.anthropic.com/news/enterprise-security-update"
+        "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "anthropic-community/claude-agent-framework",
-        "url": "https://github.com/anthropic-community/claude-agent-framework",
-        "desc": "Một framework mới giúp xây dựng các tác nhân AI mạnh mẽ sử dụng Claude, hỗ trợ lập kế hoạch và thực thi tác vụ phức tạp.",
-        "stars": "15K+",
-        "verdict": "yes",
-        "reason": "Phù hợp với xu hướng agent automation và Claude tools."
-      },
-      {
-        "name": "ai-utilities/prompt-optimizer-cli",
-        "url": "https://github.com/ai-utilities/prompt-optimizer-cli",
-        "desc": "Công cụ dòng lệnh giúp tối ưu hóa prompt cho các mô hình ngôn ngữ lớn, cải thiện hiệu suất và giảm chi phí token.",
-        "stars": "8K+",
-        "verdict": "yes",
-        "reason": "AI utility hữu ích cho prompt engineering."
-      },
-      {
-        "name": "minecraft-server-dev/claude-mcp-plugin",
-        "url": "https://github.com/minecraft-server-dev/claude-mcp-plugin",
-        "desc": "Plugin Minecraft cho phép tích hợp Claude AI vào server, tạo ra các NPC thông minh hoặc hệ thống quản lý trò chơi tự động.",
-        "stars": "11K+",
-        "verdict": "yes",
-        "reason": "Phù hợp với MCP servers và AI integration."
-      },
-      {
-        "name": "llm-tools/structured-output-parser",
-        "url": "https://github.com/llm-tools/structured-output-parser",
-        "desc": "Thư viện Python giúp phân tích cú pháp đầu ra có cấu trúc từ LLM (như JSON, YAML) một cách đáng tin cậy.",
-        "stars": "6K+",
-        "verdict": "yes",
-        "reason": "Công cụ hỗ trợ Claude tools và API integration."
-      },
-      {
-        "name": "anthropic-community/claude-vision-cookbook",
-        "url": "https://github.com/anthropic-community/claude-vision-cookbook",
-        "desc": "Tập hợp các ví dụ và hướng dẫn sử dụng khả năng thị giác của Claude cho các tác vụ phân tích hình ảnh và tạo mô tả.",
-        "stars": "9K+",
-        "verdict": "yes",
-        "reason": "Hữu ích cho việc khai thác tính năng multimodal của Claude."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -1146,56 +665,7 @@
         "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "anthropic/claude-agent-framework",
-        "url": "https://github.com/anthropic/claude-agent-framework",
-        "desc": "Framework chính thức để xây dựng các tác nhân AI mạnh mẽ với Claude, hỗ trợ lập kế hoạch và thực thi công việc phức tạp.",
-        "stars": "2.1K+",
-        "verdict": "yes",
-        "reason": "Công cụ cốt lõi cho agent automation."
-      },
-      {
-        "name": "ai-utilities/prompt-optimizer",
-        "url": "https://github.com/ai-utilities/prompt-optimizer",
-        "desc": "Một công cụ mã nguồn mở giúp tự động tối ưu hóa các prompt cho Claude và các mô hình LLM khác để đạt kết quả tốt hơn.",
-        "stars": "950+",
-        "verdict": "yes",
-        "reason": "Hữu ích cho việc cải thiện hiệu suất prompt."
-      },
-      {
-        "name": "mcp-servers/claude-local-inference",
-        "url": "https://github.com/mcp-servers/claude-local-inference",
-        "desc": "Dự án thử nghiệm cho phép chạy các phiên bản Claude nhỏ hơn hoặc các mô hình tương thích trên máy chủ cục bộ để phát triển và kiểm thử.",
-        "stars": "1.5K+",
-        "verdict": "maybe",
-        "reason": "Tiềm năng cho phát triển offline, nhưng cần kiểm tra hiệu suất thực tế."
-      },
-      {
-        "name": "claude-tools/web-scraper-agent",
-        "url": "https://github.com/claude-tools/web-scraper-agent",
-        "desc": "Một tác nhân Claude được thiết kế để tự động thu thập dữ liệu từ các trang web, có khả năng xử lý cấu trúc phức tạp.",
-        "stars": "780+",
-        "verdict": "yes",
-        "reason": "Ứng dụng thực tế cho thu thập thông tin và dữ liệu."
-      },
-      {
-        "name": "anthropic/claude-sdk-typescript",
-        "url": "https://github.com/anthropic/claude-sdk-typescript",
-        "desc": "Bộ SDK TypeScript chính thức mới nhất để tích hợp Claude vào các ứng dụng web và Node.js, hỗ trợ đầy đủ các tính năng API.",
-        "stars": "1.2K+",
-        "verdict": "yes",
-        "reason": "Cần thiết cho các nhà phát triển TypeScript."
-      },
-      {
-        "name": "ai-utilities/data-cleaner-llm",
-        "url": "https://github.com/ai-utilities/data-cleaner-llm",
-        "desc": "Công cụ dựa trên LLM để tự động làm sạch và chuẩn hóa dữ liệu, giúp cải thiện chất lượng dữ liệu đầu vào cho các mô hình AI.",
-        "stars": "620+",
-        "verdict": "yes",
-        "reason": "Hữu ích cho tiền xử lý dữ liệu AI."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -1209,7 +679,7 @@
         "tag": "model",
         "tagLabel": "🧠 MODEL",
         "source": "16/04·Anthropic",
-        "url": "https://www.claude.ai"
+        "url": ""
       },
       {
         "title": "🔧 API: Ra Mắt Rate Limits API",
@@ -1217,7 +687,7 @@
         "tag": "api",
         "tagLabel": "🔧 API",
         "source": "24/04·Anthropic",
-        "url": "https://docs.claude.ai/reference/rate-limits-api"
+        "url": ""
       },
       {
         "title": "⏰ Ngừng Hỗ Trợ Beta 1M Token Context Cũ",
@@ -1225,7 +695,7 @@
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE",
         "source": "30/03·Anthropic",
-        "url": "https://docs.claude.ai/docs/release-notes"
+        "url": ""
       },
       {
         "title": "✨ Claude Workbench: Công Cụ Tạo Prompt & Đánh Giá",
@@ -1233,7 +703,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "26/02·Anthropic",
-        "url": "https://www.anthropic.com/news/claude-workbench"
+        "url": ""
       },
       {
         "title": "🔥 Claude AI Summit 2026 Đang Diễn Ra",
@@ -1241,7 +711,7 @@
         "tag": "hot",
         "tagLabel": "🔥 HOT",
         "source": "15/04·Centercode",
-        "url": "https://www.centercode.com/product-ai-summit-2026"
+        "url": ""
       }
     ],
     "repos": [
@@ -1342,48 +812,7 @@
         "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "anthropic/claude-tools-starter",
-        "url": "https://github.com/anthropic/claude-tools-starter",
-        "desc": "Bộ công cụ khởi đầu chính thức từ Anthropic giúp nhà phát triển dễ dàng tích hợp các công cụ tùy chỉnh với Claude.",
-        "stars": "7.8K+",
-        "verdict": "yes",
-        "reason": "Công cụ chính thức, hữu ích cho phát triển Claude."
-      },
-      {
-        "name": "ai-automation/agent-orchestrator",
-        "url": "https://github.com/ai-automation/agent-orchestrator",
-        "desc": "Framework mã nguồn mở để quản lý và điều phối nhiều tác nhân AI thực hiện các tác vụ phức tạp.",
-        "stars": "15.2K+",
-        "verdict": "yes",
-        "reason": "Hỗ trợ tự động hóa tác nhân, trọng tâm chính."
-      },
-      {
-        "name": "mcp-community/minecraft-server-manager",
-        "url": "https://github.com/mcp-community/minecraft-server-manager",
-        "desc": "Công cụ quản lý máy chủ Minecraft nâng cao với giao diện web, hỗ trợ nhiều phiên bản và plugin.",
-        "stars": "9.1K+",
-        "verdict": "yes",
-        "reason": "Quản lý MCP server, hữu ích cho cộng đồng."
-      },
-      {
-        "name": "ai-utilities/prompt-engineer-kit",
-        "url": "https://github.com/ai-utilities/prompt-engineer-kit",
-        "desc": "Bộ sưu tập các công cụ và tài nguyên giúp tối ưu hóa prompt cho các mô hình ngôn ngữ lớn như Claude.",
-        "stars": "11.5K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI trực tiếp hỗ trợ tối ưu Claude."
-      },
-      {
-        "name": "data-science/llm-evaluation-framework",
-        "url": "https://github.com/data-science/llm-evaluation-framework",
-        "desc": "Framework toàn diện để đánh giá hiệu suất và độ tin cậy của các mô hình ngôn ngữ lớn.",
-        "stars": "6.3K+",
-        "verdict": "maybe",
-        "reason": "Hữu ích cho việc đánh giá LLM nói chung, không riêng Claude."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -1432,48 +861,7 @@
         "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "anthropic/claude-agent-toolkit",
-        "url": "https://github.com/anthropic/claude-agent-toolkit",
-        "desc": "Bộ công cụ mã nguồn mở giúp phát triển và triển khai các tác nhân Claude tùy chỉnh nhanh chóng.",
-        "stars": "5.2K+",
-        "verdict": "yes",
-        "reason": "Công cụ chính thức từ Anthropic cho phát triển agent."
-      },
-      {
-        "name": "ai-builders/mcp-server-manager",
-        "url": "https://github.com/ai-builders/mcp-server-manager",
-        "desc": "Giải pháp quản lý và tối ưu hóa các máy chủ MCP (Multi-Cloud Provisioning) cho các tác vụ AI.",
-        "stars": "3.1K+",
-        "verdict": "yes",
-        "reason": "Hữu ích cho quản lý cơ sở hạ tầng AI trên đa đám mây."
-      },
-      {
-        "name": "dev-utils/claude-cli-assistant",
-        "url": "https://github.com/dev-utils/claude-cli-assistant",
-        "desc": "Trợ lý dòng lệnh sử dụng Claude để tự động hóa các tác vụ phát triển và quản lý hệ thống.",
-        "stars": "1.8K+",
-        "verdict": "yes",
-        "reason": "Công cụ AI tiện ích giúp tăng năng suất cho nhà phát triển."
-      },
-      {
-        "name": "agent-flow/automation-orchestrator",
-        "url": "https://github.com/agent-flow/automation-orchestrator",
-        "desc": "Hệ thống điều phối luồng công việc tự động cho các tác nhân AI, hỗ trợ tích hợp nhiều công cụ.",
-        "stars": "4.5K+",
-        "verdict": "yes",
-        "reason": "Giải pháp mạnh mẽ cho tự động hóa và quản lý tác nhân AI."
-      },
-      {
-        "name": "data-science-ai/llm-finetuning-cookbook",
-        "url": "https://github.com/data-science-ai/llm-finetuning-cookbook",
-        "desc": "Bộ sưu tập các công thức và hướng dẫn tinh chỉnh các mô hình ngôn ngữ lớn (LLM) cho các trường hợp sử dụng cụ thể.",
-        "stars": "2.9K+",
-        "verdict": "maybe",
-        "reason": "Hữu ích cho việc tùy chỉnh LLM, có thể áp dụng cho Claude."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -1487,7 +875,7 @@
         "tag": "model",
         "tagLabel": "🧠 MODEL",
         "source": "24/04·Anthropic Blog",
-        "url": "https://www.anthropic.com/blog/claude-opus-4.8"
+        "url": ""
       },
       {
         "title": "🔧 API: Gọi Đa Công Cụ Đồng Thời",
@@ -1503,7 +891,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "24/04·Claude Update",
-        "url": "https://www.anthropic.com/news/claude-workspace-project-management"
+        "url": ""
       },
       {
         "title": "⏰ Ngừng Hỗ Trợ SDK Python Cũ",
@@ -1514,48 +902,7 @@
         "url": "https://docs.anthropic.com/claude/docs/sdk-deprecation"
       }
     ],
-    "repos": [
-      {
-        "name": "anthropic-community/claude-cli",
-        "url": "https://github.com/anthropic-community/claude-cli",
-        "desc": "Một công cụ dòng lệnh (CLI) không chính thức nhưng mạnh mẽ để tương tác với các mô hình Claude, hỗ trợ nhiều tính năng tiện ích.",
-        "stars": "7.2K+",
-        "verdict": "yes",
-        "reason": "Công cụ CLI hữu ích cho nhà phát triển Claude."
-      },
-      {
-        "name": "ai-agents/workflow-orchestrator",
-        "url": "https://github.com/ai-agents/workflow-orchestrator",
-        "desc": "Framework mã nguồn mở giúp xây dựng và quản lý các luồng công việc tự động cho các tác nhân AI, tích hợp dễ dàng với Claude.",
-        "stars": "15.1K+",
-        "verdict": "yes",
-        "reason": "Giải pháp quản lý agent automation rất tiềm năng."
-      },
-      {
-        "name": "mcp-solutions/server-farm-manager",
-        "url": "https://github.com/mcp-solutions/server-farm-manager",
-        "desc": "Hệ thống quản lý cụm máy chủ đa năng, tối ưu hóa việc triển khai và giám sát các ứng dụng AI trên MCP servers.",
-        "stars": "9.8K+",
-        "verdict": "maybe",
-        "reason": "Hữu ích cho MCP servers, cần đánh giá độ phức tạp."
-      },
-      {
-        "name": "prompt-engineers/rag-toolkit",
-        "url": "https://github.com/prompt-engineers/rag-toolkit",
-        "desc": "Bộ công cụ toàn diện để xây dựng và tối ưu hóa các hệ thống RAG (Retrieval Augmented Generation) với nhiều backend LLM khác nhau.",
-        "stars": "11.5K+",
-        "verdict": "yes",
-        "reason": "Công cụ RAG thiết yếu cho các ứng dụng AI hiện đại."
-      },
-      {
-        "name": "claude-extras/vscode-extension",
-        "url": "https://github.com/claude-extras/vscode-extension",
-        "desc": "Extension Visual Studio Code giúp tích hợp Claude trực tiếp vào môi trường phát triển, hỗ trợ viết code, debug và tài liệu.",
-        "stars": "5.3K+",
-        "verdict": "yes",
-        "reason": "Tăng cường năng suất cho nhà phát triển sử dụng Claude."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -1596,48 +943,7 @@
         "url": ""
       }
     ],
-    "repos": [
-      {
-        "name": "anthropic/claude-toolkit-py",
-        "url": "https://github.com/anthropic/claude-toolkit-py",
-        "desc": "Thư viện Python chính thức giúp tích hợp dễ dàng các công cụ và chức năng mở rộng cho Claude.",
-        "stars": "7.5K+",
-        "verdict": "yes",
-        "reason": "Công cụ chính thức, cần thiết cho nhà phát triển."
-      },
-      {
-        "name": "agentforge/autogen-claude-adapter",
-        "url": "https://github.com/agentforge/autogen-claude-adapter",
-        "desc": "Adapter cho phép sử dụng các mô hình Claude trong framework AutoGen của Microsoft, mở rộng khả năng của các agent.",
-        "stars": "1.2K+",
-        "verdict": "yes",
-        "reason": "Kết nối Claude với hệ sinh thái agent phổ biến."
-      },
-      {
-        "name": "mcserver-dev/claude-mcp-plugin",
-        "url": "https://github.com/mcserver-dev/claude-mcp-plugin",
-        "desc": "Plugin cho các máy chủ Minecraft (MCP) tích hợp Claude để tạo ra các NPC thông minh hoặc hệ thống quản lý trò chơi.",
-        "stars": "800+",
-        "verdict": "maybe",
-        "reason": "Ứng dụng niche nhưng thú vị cho cộng đồng MCP."
-      },
-      {
-        "name": "ai-utils/claude-cli-assistant",
-        "url": "https://github.com/ai-utils/claude-cli-assistant",
-        "desc": "Công cụ dòng lệnh (CLI) cho phép tương tác nhanh với Claude từ terminal, hỗ trợ các tác vụ lập trình và quản lý hệ thống.",
-        "stars": "2.1K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI hữu ích cho nhà phát triển và quản trị viên."
-      },
-      {
-        "name": "prompt-eng/claude-prompt-library",
-        "url": "https://github.com/prompt-eng/claude-prompt-library",
-        "desc": "Bộ sưu tập các prompt được tối ưu hóa cho Claude, giúp người dùng đạt được kết quả tốt nhất trong nhiều lĩnh vực.",
-        "stars": "5.3K+",
-        "verdict": "yes",
-        "reason": "Tài nguyên giá trị để cải thiện hiệu suất Claude."
-      }
-    ],
+    "repos": [],
     "gamingNews": []
   },
   {
@@ -1651,7 +957,7 @@
         "tag": "model",
         "tagLabel": "🧠 MODEL",
         "source": "16/04/2026·Anthropic",
-        "url": "https://www.anthropic.com/news/introducing-claude-opus-4-7"
+        "url": ""
       },
       {
         "title": "✨ Claude Design Ra Mắt",
@@ -1659,7 +965,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "17/04/2026·Anthropic Labs",
-        "url": "https://www.anthropic.com/newsroom"
+        "url": ""
       },
       {
         "title": "✨ Công Cụ Advisor Beta",
@@ -1667,7 +973,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "09/04/2026·Claude API Docs",
-        "url": "https://www.anthropic.com/api/docs/changelog"
+        "url": ""
       },
       {
         "title": "✨ Claude Managed Agents Beta",
@@ -1675,7 +981,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "08/04/2026·Claude API Docs",
-        "url": "https://www.anthropic.com/api/docs/changelog"
+        "url": ""
       },
       {
         "title": "🔧 API: Cấp Độ Nỗ Lực 'xhigh'",
@@ -1683,7 +989,7 @@
         "tag": "api",
         "tagLabel": "🔧 API",
         "source": "16/04/2026·Anthropic",
-        "url": "https://www.anthropic.com/news/introducing-claude-opus-4-7"
+        "url": ""
       },
       {
         "title": "✨ Claude Code: Hỗ Trợ PowerShell",
@@ -1691,7 +997,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "18/04/2026·Claude Code Changelog",
-        "url": "https://www.anthropic.com/api/docs/claude-code/changelog"
+        "url": ""
       }
     ],
     "repos": [
@@ -1728,36 +1034,12 @@
         "reason": "Giúp tiết kiệm token, có tác động thực tế đến chi phí sử dụng API."
       },
       {
-        "name": "rtk",
-        "url": "https://github.com/rtk",
-        "desc": "Một proxy CLI viết bằng Rust giúp lọc output của các lệnh shell trước khi gửi đến Claude, giảm lượng token.",
-        "stars": "31.2K+",
-        "verdict": "yes",
-        "reason": "Công cụ tối ưu hóa token, rất hữu ích cho việc quản lý chi phí."
-      },
-      {
-        "name": "Eyal Toledano/claude-task-master",
-        "url": "https://github.com/Eyal Toledano/claude-task-master",
-        "desc": "Tập trung vào việc quản lý và lập kế hoạch tác vụ cho Claude, cải thiện hiệu quả làm việc.",
-        "stars": "26.6K+",
-        "verdict": "yes",
-        "reason": "Hỗ trợ tự động hóa tác nhân và quản lý quy trình làm việc."
-      },
-      {
         "name": "jeffallan/claude-skills",
         "url": "https://github.com/jeffallan/claude-skills",
         "desc": "Một kho lưu trữ chứa 66 kỹ năng chuyên biệt cho nhà phát triển, tự động kích hoạt dựa trên ngữ cảnh.",
         "stars": "Không rõ",
         "verdict": "yes",
         "reason": "Tập trung vào các kỹ năng và tự động hóa cho nhà phát triển."
-      },
-      {
-        "name": "claude-code-best-practice",
-        "url": "https://github.com/claude-code-best-practice",
-        "desc": "Cung cấp các phương pháp hay nhất và ví dụ để sử dụng Claude Code hiệu quả.",
-        "stars": "15K+",
-        "verdict": "yes",
-        "reason": "Hướng dẫn sử dụng Claude Code hiệu quả, rất hữu ích cho người dùng."
       }
     ],
     "gamingNews": []
@@ -1773,7 +1055,7 @@
         "tag": "hot",
         "tagLabel": "🔥 HOT",
         "source": "20/04·Anthropic",
-        "url": "https://www.anthropic.com/news/anthropic-amazon-expand-collaboration"
+        "url": ""
       },
       {
         "title": "⏰ Ngừng Hỗ Trợ Claude 4/Sonnet 4",
@@ -1863,7 +1145,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "18/04·Claude Code Changelog",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEu4vpFmmm1BMs4HEintysRJPb-YjwA12ST0tCpfdW_U6n97_THwprU9r8PqT2EovlpC3GnOQmJMynyo7eX-lGAp9mqONWqUkEbAHRhydKQkS7i0P_CwgX-yR0qlWPjj3gc_Ek="
+        "url": ""
       },
       {
         "title": "✨ Claude Code: Lệnh /ultrareview",
@@ -1871,7 +1153,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "18/04·Claude Code Changelog",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEu4vpFmmm1BMs4HEintysRJPb-YjwA12ST0tCpfdW_U6n97_THwprU9r8PqT2EovlpC3GnOQmJMynyo7eX-lGAp9mqONWqUkEbAHRhydKQkS7i0P_CwgX-yR0qlWPjj3gc_Ek="
+        "url": ""
       },
       {
         "title": "🔧 API: Thay Đổi Gây Đứt Gãy API Opus 4.7",
@@ -1953,7 +1235,7 @@
         "tag": "hot",
         "tagLabel": "🔥 HOT",
         "source": "16/04/2026·Reddit",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCeqQl0-jBsRSPsIAmJZRm2XsjqHmXgzkx5FcsMyI8HOLFXbFSvqcLtzoeb35E6NQUEUzqA_qqW61VBa0S-yC7dPIkxg3UV1MAzMOGPBnzQUN2jG6fZNLK92qL3IQTsVjkBV2B8U-0HWUzzSllXdXkpk_9-ZQ0iV0pwsnckWYWnqBOyXKTSAmfXygTsps_j2RLG8AvrOHW-ef-HlIdiZt7WX7S42W0Ffl5qWY="
+        "url": ""
       },
       {
         "title": "🚀 Ra Mắt ant CLI cho Claude API",
@@ -2157,7 +1439,7 @@
         "tag": "model",
         "tagLabel": "🧠 MODEL",
         "source": "16/04·Anthropic",
-        "url": "https://www.anthropic.com/news/introducing-claude-opus-4-7"
+        "url": ""
       },
       {
         "title": "⏰ Ngừng Hỗ Trợ Claude Sonnet 4 & Opus 4",
@@ -2189,7 +1471,7 @@
         "tag": "hot",
         "tagLabel": "🔥 HOT",
         "source": "15/04·The Register",
-        "url": "https://www.theregister.com/2026/04/15/anthropic_google_microsoft_ai_bug_bounties/"
+        "url": ""
       }
     ],
     "repos": [
@@ -2263,7 +1545,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "15/04·VentureBeat",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpANmnnB6hfFDnydJ1WYetekApwhSIxk1sNL8iAah6jXvT45EHDu62FX4SFxnKJ7Ghqj40WhjwV2lUTsN2nFqzdTlR_C_ZI2Cagd3W2aOBzn4564LldvqgiGYzlzyvvLEft1TZZBufh8ZvCQkeBLylrqHeuek2QOJx2JkURfe_li9ZEE6k3yHjelLxQIxPcigh6cp7A6y0nQLjvImi1G9-N6T6F3vcWVcEO2ADZokWT2nRtH8Binw0DOjKyImuoHW5EnrnBShobQ"
+        "url": ""
       },
       {
         "title": "🔧 Cải tiến xử lý API bị kẹt trong Claude Code",
@@ -2271,7 +1553,7 @@
         "tag": "api",
         "tagLabel": "🔧 API",
         "source": "15/04·GitHub",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnFRfovPte-Ey39wo_XGaaXdP0Mt7tHChu5jQqMaBfRjmcPwgzDUccn1B3X3sS5I5vAQEo02rovlFB_ptXOc3li9Hgwb4kvCZdT9DxLRvuMkncUikKuCd4zS94swF52L52a-mmQnU6Cg3MC7w"
+        "url": ""
       },
       {
         "title": "⏰ Hạn chót ngừng hỗ trợ Context Window 1M Token",
@@ -2279,7 +1561,7 @@
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE",
         "source": "30/03·Claude API Docs",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1NE-asPW4H7HxTmfInV8DGoKC54jap0WigqMjfEji3igh7wshNZV_pl_DgTyY_aAIyJRq8aucE4GRTlKmsq84RJdbRrS7NRQaQliASgSmf2qOObgSWLB--7oaauTOnYWZ9FZ1xeBVOIbT7DdwyYGAthXT5Q"
+        "url": ""
       },
       {
         "title": "🔥 Claude Mythos Preview bị trì hoãn phát hành công khai",
@@ -2345,7 +1627,7 @@
         "tag": "model",
         "tagLabel": "🧠 MODEL",
         "source": "Mới nhất·Anthropic API Docs",
-        "url": "https://www.anthropic.com/docs/api/whats-new-in-claude-4-6"
+        "url": ""
       },
       {
         "title": "🔥 HOT: Claude Code Hiệu suất Giảm sút",
@@ -2353,7 +1635,7 @@
         "tag": "hot",
         "tagLabel": "🔥 HOT",
         "source": "14/04/2026·Inc.com",
-        "url": "https://www.inc.com/leila-sheridan/users-say-anthropics-claude-is-getting-worse-a-quiet-change-may-be-to-blame.html"
+        "url": ""
       },
       {
         "title": "🧠 MODEL: Claude Mythos mới",
@@ -2361,7 +1643,7 @@
         "tag": "model",
         "tagLabel": "🧠 MODEL",
         "source": "14/04/2026·MarketWise",
-        "url": "https://marketwise.com/anthropic-ipo-2026-how-claude-ai-could-disrupt-enterprise-software/"
+        "url": ""
       },
       {
         "title": "⏰ DEADLINE: Ngừng hỗ trợ Context Window 1M Token (beta)",
@@ -2369,7 +1651,7 @@
         "tag": "deprecate",
         "tagLabel": "⏰ DEADLINE",
         "source": "30/03/2026·Anthropic API Docs",
-        "url": "https://www.anthropic.com/docs/api/changelog"
+        "url": ""
       },
       {
         "title": "🔧 API: Loại bỏ tính năng Prefill trong Claude 4.6",
@@ -2377,7 +1659,7 @@
         "tag": "api",
         "tagLabel": "🔧 API",
         "source": "Mới nhất·Anthropic API Docs",
-        "url": "https://www.anthropic.com/docs/api/whats-new-in-claude-4-6"
+        "url": ""
       },
       {
         "title": "✨ FEATURE: Chế độ Fast Mode (beta) cho Opus",
@@ -2385,7 +1667,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "Mới nhất·Anthropic API Docs",
-        "url": "https://www.anthropic.com/docs/api/whats-new-in-claude-4-6"
+        "url": ""
       }
     ],
     "repos": [
@@ -2429,7 +1711,8 @@
         "verdict": "maybe",
         "reason": "Hướng dẫn toàn diện cho người dùng Claude Code, không phải công cụ trực tiếp."
       }
-    ]
+    ],
+    "gamingNews": []
   },
   {
     "date": "2026-04-14",
@@ -2450,7 +1733,7 @@
         "tag": "hot",
         "tagLabel": "🔥 HOT",
         "source": "13/04/2026·VentureBeat",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFr_XQsI-HVGqIH8sraR2AmFGxwLSKvE-C-aw1Q4bn_qdLcFc9b4s2N5c3HYR1g4vWYkjgDojcb_XSzEkWOLh_tv1y4agWpLk_9hDJIt-IjF0S4799DMY05UTAy1IkwXnG9-IfNUV2uQUOCTcQlz9IevYS9CptLODvkfZqrMpXRXJPsGyjlM3U4n4nry8ZIyngjoHEWKOeQ4ow_CL_bgzI"
+        "url": ""
       },
       {
         "title": "⏰ Hạn chót ngừng hỗ trợ Context Window 1M",
@@ -2466,7 +1749,7 @@
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "09/04/2026·Releasebot",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGivhLvMx53D6RlCsCpQTLJeAI5mO4NfDaubGIzhVJq9shIHUpC2EXWnZzCagOXmMk5nr_YkWTZV3p57JLp1aF8ojcaCgFuA6JUWDjZbVwkDB25wvTOR0X2TOTgDUGWloiqHwrdlE-kxs="
+        "url": ""
       }
     ],
     "repos": [
@@ -2509,16 +1792,9 @@
         "stars": "N/A",
         "verdict": "maybe",
         "reason": "Không dành riêng cho Claude nhưng liên quan đến tự động hóa tác nhân."
-      },
-      {
-        "name": "anthropic/claude-cookbooks",
-        "url": "https://github.com/anthropic/claude-cookbooks",
-        "desc": "Bộ sưu tập các notebook/công thức thể hiện những cách thú vị và hiệu quả khi sử dụng Claude.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Tài nguyên chính thức từ Anthropic để khám phá các trường hợp sử dụng Claude."
       }
-    ]
+    ],
+    "gamingNews": []
   },
   {
     "date": "2026-04-13",
@@ -2547,7 +1823,7 @@
         "tag": "hot",
         "tagLabel": "🔥 HOT",
         "source": "06/04/2026·Anthropic",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4jHvExLDyWrN9e91vnca88lvorBfOl_J3u-oOpYfnJEEJ-qLRRwJNJqx3J_VQ-q_x7zMotMJ9cAbAFKohI43CzaeIR8KuXfeapg0dl5mGRWLOQ9VYNI7gIWqVs0YQpPl76lljZfpZyOzfnvaLPsjl_XAXhprO5vfFylzX"
+        "url": ""
       },
       {
         "title": "⏰ Hạn chót Deprecation",
@@ -2592,22 +1868,6 @@
         "reason": "Tiện ích MCP server hữu ích cho xử lý văn bản."
       },
       {
-        "name": "Anthropic/claude-code",
-        "url": "https://github.com/Anthropic/claude-code",
-        "desc": "Công cụ mã hóa agentic chính thức từ Anthropic, giúp tăng tốc viết code và quản lý quy trình Git.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Công cụ chính thức từ Anthropic, rất quan trọng cho nhà phát triển."
-      },
-      {
-        "name": "Anthropic/skills",
-        "url": "https://github.com/Anthropic/skills",
-        "desc": "Kho lưu trữ công khai cho các kỹ năng (Agent Skills) chính thức của Anthropic.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Nguồn tài nguyên chính thức để mở rộng khả năng của agent Claude."
-      },
-      {
         "name": "alirezarezvani/claude-skills",
         "url": "https://github.com/alirezarezvani/claude-skills",
         "desc": "Bộ sưu tập hơn 232 kỹ năng và plugin cho Claude Code và các agent mã hóa khác.",
@@ -2615,7 +1875,8 @@
         "verdict": "yes",
         "reason": "Bộ sưu tập lớn các kỹ năng do cộng đồng đóng góp cho Claude."
       }
-    ]
+    ],
+    "gamingNews": []
   },
   {
     "date": "2026-04-12",
@@ -2628,7 +1889,7 @@
         "tag": "model",
         "tagLabel": "🧠 MODEL",
         "source": "10/04·CTV News",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFiiRz4ZW01DP9nRh4aQEFQRWaJ36SGVB3Tv9iSHkjESdqJDwLPZaRBHLysUV6PLsonILJkAbcB_fqEYkFN0nUbi4zQ8UyDbxet1p4tCVyU2LJwUC04Q9ZON4NJKNKmu7l77jN2TfW4_X2RV84AJHG-W0GcZez6vK31XbX-eNC0unB2gUYdI7D6MQGi-V4s31O0qjZ7WRTM632JnfdJB-XnIki10tu2rP8-7ocn5KWsjA=="
+        "url": ""
       },
       {
         "title": "✨ Claude cho Word: Tiện ích bổ sung mới cho doanh nghiệp",
@@ -2644,7 +1905,7 @@
         "tag": "model",
         "tagLabel": "🧠 MODEL",
         "source": "Gần đây·Claude API Docs",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNyKUSpQ6kIRZMHKKssqzMJ7FhcMqsn_xvGUMxospB4aMQ3bhS765NL4t5Kv6fEN3GQpW_oGR1TLfmydJmQuUOTGjipW6oFbxAu75HLaCBik0Juf1tIHme7peQ-E-h-WH-NY6GXmxnZBbVNd5Vqerm5lsS_nIdShXHzTGczuD5lEbT75pO1pQ=="
+        "url": ""
       },
       {
         "title": "⏰ Hạn chót: Cửa sổ ngữ cảnh 1M token bị loại bỏ vào 30/04/2026",
@@ -2660,7 +1921,7 @@
         "tag": "api",
         "tagLabel": "🔧 API",
         "source": "10/04·GitHub",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0LOvpXr-KH4QoZDgSPGaNk9hoejDxjy7tzbqRZQvzhAnJmwfA-OOIpeSaktvTOWagNddmLINChEWM5TAgxdLfmMNN-Gi4aiyJWGAJ_Ryg82jeVphDVvaAEYKr-7T7W51CAq7JT1iUmNNo7upA"
+        "url": ""
       }
     ],
     "repos": [
@@ -2712,7 +1973,8 @@
         "verdict": "skip",
         "reason": "Là một danh sách, không phải công cụ trực tiếp để sử dụng."
       }
-    ]
+    ],
+    "gamingNews": []
   },
   {
     "date": "2026-04-11",
