@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-05-13",
+    "dayLabel": "Thứ Tư",
+    "dateLabel": "13/05/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "371.3K+",
+        "verdict": "yes",
+        "reason": "trợ lý AI cá nhân"
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
+        "stars": "187.6K+",
+        "verdict": "yes",
+        "reason": "tự động hóa AI, agent"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Dự án tiên phong về AI tự động, cung cấp công cụ để xây dựng và sử dụng AI dễ dàng.",
+        "stars": "184.2K+",
+        "verdict": "yes",
+        "reason": "công cụ AI, agent"
+      },
+      {
+        "name": "affaan-m/everything-claude-code",
+        "url": "https://github.com/affaan-m/everything-claude-code",
+        "desc": "Hệ thống tối ưu hóa hiệu suất agent cho Claude Code và các công cụ AI khác.",
+        "stars": "180.5K+",
+        "verdict": "yes",
+        "reason": "công cụ Claude, tối ưu agent"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Nền tảng giúp bạn dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5 và Gemma.",
+        "stars": "171.3K+",
+        "verdict": "yes",
+        "reason": "chạy LLM, tiện ích AI"
+      },
+      {
+        "name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "desc": "Framework định nghĩa mô hình cho các mô hình học máy tiên tiến trong văn bản, thị giác, âm thanh và đa phương thức.",
+        "stars": "160.5K+",
+        "verdict": "yes",
+        "reason": "framework mô hình AI"
+      },
+      {
+        "name": "langflow-ai/langflow",
+        "url": "https://github.com/langflow-ai/langflow",
+        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các tác nhân và quy trình làm việc được hỗ trợ bởi AI.",
+        "stars": "148.0K+",
+        "verdict": "yes",
+        "reason": "xây dựng agent AI"
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân (agentic workflow).",
+        "stars": "141.1K+",
+        "verdict": "yes",
+        "reason": "nền tảng agent AI"
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-12",
     "dayLabel": "Thứ Ba",
     "dateLabel": "12/05/2026",
@@ -843,47 +916,6 @@
         "stars": "N/A",
         "verdict": "maybe",
         "reason": "Không dành riêng cho Claude nhưng liên quan đến tự động hóa tác nhân."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-13",
-    "dayLabel": "Thứ Hai",
-    "dateLabel": "13/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "zebbern/claude-code-guide",
-        "url": "https://github.com/zebbern/claude-code-guide",
-        "desc": "Hướng dẫn toàn diện cho Claude Code, bao gồm cài đặt, lệnh, quy trình làm việc, agents và mẹo sử dụng.",
-        "stars": "3.9K+",
-        "verdict": "yes",
-        "reason": "Tài liệu hữu ích cho người dùng Claude Code."
-      },
-      {
-        "name": "ComposioHQ/open-claude-cowork",
-        "url": "https://github.com/ComposioHQ/open-claude-cowork",
-        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS và tự động hóa quy trình làm việc.",
-        "stars": "3.8K+",
-        "verdict": "yes",
-        "reason": "Công cụ tự động hóa agent mạnh mẽ với nhiều tích hợp."
-      },
-      {
-        "name": "zcaceres/markdownify-mcp",
-        "url": "https://github.com/zcaceres/markdownify-mcp",
-        "desc": "Một máy chủ Model Context Protocol (MCP) để chuyển đổi hầu hết mọi thứ sang định dạng Markdown.",
-        "stars": "2.6K+",
-        "verdict": "yes",
-        "reason": "Tiện ích MCP server hữu ích cho xử lý văn bản."
-      },
-      {
-        "name": "alirezarezvani/claude-skills",
-        "url": "https://github.com/alirezarezvani/claude-skills",
-        "desc": "Bộ sưu tập hơn 232 kỹ năng và plugin cho Claude Code và các agent mã hóa khác.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Bộ sưu tập lớn các kỹ năng do cộng đồng đóng góp cho Claude."
       }
     ],
     "gamingNews": []
