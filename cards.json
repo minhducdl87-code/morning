@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-05-14",
+    "dayLabel": "Thứ Năm",
+    "dateLabel": "14/05/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "affaan-m/everything-claude-code",
+        "url": "https://github.com/affaan-m/everything-claude-code",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân, tập trung vào Claude Code và các mô hình tương tự với các tính năng như kỹ năng, bản năng, bộ nhớ và bảo mật.",
+        "stars": "181.3K+",
+        "verdict": "yes",
+        "reason": "Claude tools, agent automation"
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân (agentic workflow).",
+        "stars": "141.3K+",
+        "verdict": "yes",
+        "reason": "Agent automation, AI utilities"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Giúp người dùng dễ dàng chạy các mô hình AI như Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma và nhiều mô hình khác.",
+        "stars": "171.3K+",
+        "verdict": "yes",
+        "reason": "AI utilities, models"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "AutoGPT là tầm nhìn về AI dễ tiếp cận cho mọi người, cung cấp các công cụ để người dùng tập trung vào những gì quan trọng.",
+        "stars": "184.3K+",
+        "verdict": "yes",
+        "reason": "AI utilities, agent automation"
+      },
+      {
+        "name": "langchain-ai/langchain",
+        "url": "https://github.com/langchain-ai/langchain",
+        "desc": "Nền tảng kỹ thuật tác nhân (agent engineering) giúp xây dựng các ứng dụng mạnh mẽ với LLM.",
+        "stars": "136.7K+",
+        "verdict": "yes",
+        "reason": "Agent automation, AI utilities"
+      },
+      {
+        "name": "infiniflow/ragflow",
+        "url": "https://github.com/infiniflow/ragflow",
+        "desc": "Công cụ RAG mã nguồn mở hàng đầu kết hợp RAG tiên tiến với khả năng tác nhân để tạo lớp ngữ cảnh vượt trội cho LLM.",
+        "stars": "80.4K+",
+        "verdict": "yes",
+        "reason": "AI utilities, agent automation"
+      },
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân của riêng bạn, hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "371.6K+",
+        "verdict": "yes",
+        "reason": "AI utilities, agent automation"
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI gốc, kết hợp xây dựng trực quan với mã tùy chỉnh và hơn 400 tích hợp.",
+        "stars": "187.7K+",
+        "verdict": "yes",
+        "reason": "Agent automation, AI capabilities"
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-13",
     "dayLabel": "Thứ Tư",
     "dateLabel": "13/05/2026",
@@ -867,55 +940,6 @@
         "stars": "3.9K+",
         "verdict": "maybe",
         "reason": "Hướng dẫn toàn diện cho người dùng Claude Code, không phải công cụ trực tiếp."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-14",
-    "dayLabel": "Thứ Ba",
-    "dateLabel": "14/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "shanraisshan/claude-code-best-practice",
-        "url": "https://github.com/shanraisshan/claude-code-best-practice",
-        "desc": "Hướng dẫn thực tế để có được mã đáng tin cậy, chất lượng cao từ các trợ lý AI như Claude.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Tập trung trực tiếp vào việc cải thiện hiệu suất Claude Code."
-      },
-      {
-        "name": "ComposioHQ/open-claude-cowork",
-        "url": "https://github.com/ComposioHQ/open-claude-cowork",
-        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS.",
-        "stars": "3.8k+",
-        "verdict": "yes",
-        "reason": "Công cụ Claude Cowork mã nguồn mở với nhiều tích hợp, phù hợp cho tự động hóa tác nhân."
-      },
-      {
-        "name": "zebbern/claude-code-guide",
-        "url": "https://github.com/zebbern/claude-code-guide",
-        "desc": "Hướng dẫn toàn diện về Claude Code bao gồm thiết lập, lệnh, quy trình làm việc, tác nhân và mẹo.",
-        "stars": "3.9k+",
-        "verdict": "yes",
-        "reason": "Tài nguyên tuyệt vời cho người dùng Claude Code muốn nâng cao kỹ năng."
-      },
-      {
-        "name": "zcaceres/markdownify-mcp",
-        "url": "https://github.com/zcaceres/markdownify-mcp",
-        "desc": "Một máy chủ Giao thức ngữ cảnh mô hình (MCP) để chuyển đổi hầu hết mọi thứ sang Markdown.",
-        "stars": "2.6k+",
-        "verdict": "yes",
-        "reason": "Máy chủ MCP hữu ích cho tiện ích AI và xử lý tài liệu."
-      },
-      {
-        "name": "NousResearch/hermes-agent",
-        "url": "https://github.com/NousResearch/hermes-agent",
-        "desc": "Dự án tác nhân AI đang lên nhanh nhất tuần này, được xây dựng để cộng tác AI lâu dài, cá nhân hóa.",
-        "stars": "N/A",
-        "verdict": "maybe",
-        "reason": "Không dành riêng cho Claude nhưng liên quan đến tự động hóa tác nhân."
       }
     ],
     "gamingNews": []
