@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-05-16",
+    "dayLabel": "Thứ Bảy",
+    "dateLabel": "16/05/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "372.2K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI cá nhân, tiện ích AI đa nền tảng."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
+        "stars": "188.0K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác vụ, tích hợp AI."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Dự án tiên phong mang AI dễ tiếp cận đến mọi người, cung cấp công cụ để xây dựng và sử dụng AI.",
+        "stars": "184.3K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, tự động hóa tác nhân."
+      },
+      {
+        "name": "affaan-m/everything-claude-code",
+        "url": "https://github.com/affaan-m/everything-claude-code",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân cho Claude Code và các mô hình tương tự, tập trung vào kỹ năng, bộ nhớ và bảo mật.",
+        "stars": "183.2K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tối ưu hóa tác nhân AI."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Dễ dàng chạy các mô hình AI như Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma và nhiều mô hình khác.",
+        "stars": "171.5K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, hỗ trợ nhiều mô hình."
+      },
+      {
+        "name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "desc": "Framework định nghĩa mô hình cho các mô hình học máy tiên tiến trong văn bản, thị giác, âm thanh và đa phương thức.",
+        "stars": "160.6K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, framework mô hình học máy."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Một tác nhân AI có khả năng học hỏi và phát triển cùng bạn.",
+        "stars": "151.9K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân AI."
+      },
+      {
+        "name": "langflow-ai/langflow",
+        "url": "https://github.com/langflow-ai/langflow",
+        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các tác nhân và quy trình làm việc được hỗ trợ bởi AI.",
+        "stars": "148.1K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân AI, tiện ích AI."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-15",
     "dayLabel": "Thứ Sáu",
     "dateLabel": "15/05/2026",
@@ -915,55 +988,6 @@
         "stars": "Không rõ",
         "verdict": "maybe",
         "reason": "Bộ sưu tập kỹ năng và plugin lớn cho Claude Code, nhưng số sao không rõ."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-16",
-    "dayLabel": "Thứ Năm",
-    "dateLabel": "16/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "forrestchang/andrej-karpathy-skills",
-        "url": "https://github.com/forrestchang/andrej-karpathy-skills",
-        "desc": "Một tệp CLAUDE.md duy nhất để cải thiện hành vi của Claude Code, dựa trên các quan sát của Andrej Karpathy về những cạm bẫy khi mã hóa LLM.",
-        "stars": "42K+",
-        "verdict": "yes",
-        "reason": "Tài liệu hữu ích để tối ưu hóa Claude Code."
-      },
-      {
-        "name": "thedotmack/claude-mem",
-        "url": "https://github.com/thedotmack/claude-mem",
-        "desc": "Một plugin Claude Code tự động ghi lại mọi thứ Claude thực hiện trong các phiên mã hóa, nén bằng AI và đưa ngữ cảnh liên quan vào các phiên sau này.",
-        "stars": "57K+",
-        "verdict": "yes",
-        "reason": "Plugin hữu ích cho quản lý ngữ cảnh và bộ nhớ trong Claude Code."
-      },
-      {
-        "name": "Donchitos/Claude-Code-Game-Studios",
-        "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-        "desc": "Biến Claude Code thành một studio phát triển game hoàn chỉnh với 49 tác nhân AI, 72 kỹ năng quy trình làm việc và một hệ thống điều phối toàn diện.",
-        "stars": "N/A",
-        "verdict": "maybe",
-        "reason": "Tiềm năng lớn cho phát triển game, cần đánh giá thêm về tính thực tế."
-      },
-      {
-        "name": "zcaceres/markdownify-mcp",
-        "url": "https://github.com/zcaceres/markdownify-mcp",
-        "desc": "Một máy chủ Model Context Protocol để chuyển đổi hầu hết mọi thứ sang Markdown.",
-        "stars": "2.6K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI hữu ích cho việc xử lý và chuyển đổi định dạng tài liệu."
-      },
-      {
-        "name": "ComposioHQ/open-claude-cowork",
-        "url": "https://github.com/ComposioHQ/open-claude-cowork",
-        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS.",
-        "stars": "3.8K+",
-        "verdict": "yes",
-        "reason": "Giải pháp tự động hóa quy trình làm việc mạnh mẽ với nhiều tích hợp."
       }
     ],
     "gamingNews": []
