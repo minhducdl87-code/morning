@@ -1,5 +1,71 @@
 [
   {
+    "weekLabel": "Tuần 21/2026",
+    "fromDate": "2026-05-12",
+    "toDate": "2026-05-18",
+    "highlights": [
+      {
+        "title": "✨ openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân OpenClaw tiếp tục dẫn đầu với hơn 370K sao, khẳng định vị thế là một trong những dự án AI được quan tâm nhất tuần này. Khả năng hoạt động trên mọi hệ điều hành và nền tảng là điểm mạnh lớn.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/openclaw/openclaw"
+      },
+      {
+        "title": "🧠 n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc n8n-io/n8n tiếp tục tăng trưởng mạnh mẽ, đạt 188.4K+ sao. Với khả năng AI tích hợp và hỗ trợ hơn 400 tích hợp, đây là công cụ không thể thiếu cho các quy trình làm việc hiện đại.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/n8n-io/n8n"
+      },
+      {
+        "title": "🔥 affaan-m/everything-claude-code",
+        "desc": "Dự án affaan-m/everything-claude-code có mức tăng trưởng sao ấn tượng, đạt 185.6K+ sao. Hệ thống tối ưu hóa hiệu suất tác tử cho Claude Code và các công cụ AI lập trình khác đang thu hút sự chú ý lớn từ cộng đồng.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "url": "https://github.com/affaan-m/everything-claude-code"
+      },
+      {
+        "title": "🧠 ollama/ollama",
+        "desc": "Ollama tiếp tục là lựa chọn hàng đầu để chạy các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5, MiniMax và nhiều mô hình khác một cách dễ dàng. Dự án đạt 171.6K+ sao, cho thấy sự phổ biến ngày càng tăng.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/ollama/ollama"
+      },
+      {
+        "title": "✨ langflow-ai/langflow",
+        "desc": "Langflow-ai/langflow, công cụ mạnh mẽ để xây dựng và triển khai các tác tử và quy trình làm việc được hỗ trợ bởi AI, đạt 148.4K+ sao. Đây là một nền tảng quan trọng cho việc phát triển ứng dụng AI.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/langflow-ai/langflow"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Dự án này duy trì vị trí dẫn đầu với số sao cao nhất, cho thấy sự quan tâm lớn đến trợ lý AI cá nhân đa nền tảng.",
+        "stars": "372.4K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc này tiếp tục tăng trưởng sao mạnh mẽ, khẳng định vai trò quan trọng trong việc tích hợp AI vào các quy trình.",
+        "stars": "188.4K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "affaan-m/everything-claude-code",
+        "url": "https://github.com/affaan-m/everything-claude-code",
+        "desc": "Dự án này có mức tăng trưởng sao ấn tượng nhất tuần, cho thấy sự quan tâm đặc biệt đến việc tối ưu hóa hiệu suất tác tử AI cho Claude Code.",
+        "stars": "185.6K+",
+        "verdict": "yes"
+      }
+    ],
+    "topGaming": []
+  },
+  {
     "weekLabel": "Tuần 20/2026",
     "fromDate": "2026-05-05",
     "toDate": "2026-05-11",
