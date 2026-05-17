@@ -6,60 +6,68 @@
     "news": [],
     "repos": [
       {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "372.7K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI cá nhân, tiện ích AI."
+      },
+      {
         "name": "n8n-io/n8n",
         "url": "https://github.com/n8n-io/n8n",
         "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
         "stars": "188.4K+",
         "verdict": "yes",
-        "reason": "Tự động hóa quy trình, khả năng AI."
+        "reason": "Tự động hóa, tích hợp AI, tiện ích AI."
       },
       {
         "name": "affaan-m/everything-claude-code",
         "url": "https://github.com/affaan-m/everything-claude-code",
-        "desc": "Hệ thống tối ưu hóa hiệu suất tác tử cho Claude Code và các công cụ AI lập trình khác.",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân cho Claude Code và các công cụ AI khác, tập trung vào kỹ năng, bộ nhớ và bảo mật.",
         "stars": "185.6K+",
         "verdict": "yes",
-        "reason": "Công cụ Claude, tự động hóa tác tử."
+        "reason": "Công cụ Claude, tự động hóa tác nhân."
       },
       {
         "name": "Significant-Gravitas/AutoGPT",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "Dự án tiên phong về AI tự chủ, cung cấp công cụ để mọi người dễ dàng sử dụng và phát triển AI.",
+        "desc": "Dự án hướng tới việc cung cấp AI dễ tiếp cận cho mọi người, tập trung vào các công cụ để người dùng xây dựng và sử dụng AI.",
         "stars": "184.4K+",
         "verdict": "yes",
-        "reason": "Tự động hóa tác tử, tiện ích AI."
+        "reason": "Tiện ích AI, tự động hóa tác nhân."
       },
       {
         "name": "ollama/ollama",
         "url": "https://github.com/ollama/ollama",
-        "desc": "Dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5, MiniMax và nhiều mô hình khác.",
+        "desc": "Giúp người dùng dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5, MiniMax và nhiều mô hình khác.",
         "stars": "171.6K+",
         "verdict": "yes",
-        "reason": "Tiện ích AI, triển khai mô hình."
+        "reason": "Mô hình AI, tiện ích AI."
+      },
+      {
+        "name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "desc": "Framework định nghĩa mô hình cho các mô hình học máy tiên tiến trong văn bản, thị giác, âm thanh và đa phương thức.",
+        "stars": "160.7K+",
+        "verdict": "yes",
+        "reason": "Mô hình AI, tiện ích AI."
       },
       {
         "name": "NousResearch/hermes-agent",
         "url": "https://github.com/NousResearch/hermes-agent",
-        "desc": "Tác tử AI có khả năng học hỏi và phát triển cùng người dùng.",
+        "desc": "Một tác nhân AI có khả năng phát triển cùng với người dùng.",
         "stars": "154.7K+",
         "verdict": "yes",
-        "reason": "Tự động hóa tác tử, tiện ích AI."
+        "reason": "Tự động hóa tác nhân."
       },
       {
         "name": "langflow-ai/langflow",
         "url": "https://github.com/langflow-ai/langflow",
-        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các tác tử và quy trình làm việc được hỗ trợ bởi AI.",
+        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các tác nhân và quy trình làm việc được hỗ trợ bởi AI.",
         "stars": "148.4K+",
         "verdict": "yes",
-        "reason": "Tự động hóa tác tử, tiện ích AI."
-      },
-      {
-        "name": "langgenius/dify",
-        "url": "https://github.com/langgenius/dify",
-        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác tử AI.",
-        "stars": "141.7K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa tác tử, tiện ích AI."
+        "reason": "Tự động hóa tác nhân, tiện ích AI."
       }
     ],
     "gamingNews": []
