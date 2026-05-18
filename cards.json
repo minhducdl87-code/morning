@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-05-19",
+    "dayLabel": "Thứ Ba",
+    "dateLabel": "19/05/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "affaan-m/everything-claude-code",
+        "url": "https://github.com/affaan-m/everything-claude-code",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân, tập trung vào các công cụ Claude Code và các mô hình AI khác.",
+        "stars": "186.5K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tự động hóa tác nhân."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc mã nguồn mở với khả năng AI tích hợp và hơn 400 tích hợp.",
+        "stars": "188.6K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân, tiện ích AI."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Dễ dàng chạy các mô hình AI như Kimi-K2.5, GLM-5, MiniMax, DeepSeek và nhiều mô hình khác trên máy cục bộ.",
+        "stars": "171.7K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, hỗ trợ mô hình."
+      },
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân của riêng bạn, hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "373.0K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, tự động hóa tác nhân."
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển quy trình làm việc dựa trên tác nhân AI.",
+        "stars": "141.8K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân."
+      },
+      {
+        "name": "langflow-ai/langflow",
+        "url": "https://github.com/langflow-ai/langflow",
+        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các tác nhân và quy trình làm việc được hỗ trợ bởi AI.",
+        "stars": "148.5K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân, tiện ích AI."
+      },
+      {
+        "name": "infiniflow/ragflow",
+        "url": "https://github.com/infiniflow/ragflow",
+        "desc": "Công cụ RAG mã nguồn mở hàng đầu kết hợp RAG tiên tiến với khả năng tác nhân cho LLM.",
+        "stars": "80.8K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, tự động hóa tác nhân."
+      },
+      {
+        "name": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "desc": "Kho lưu trữ công khai cho các kỹ năng của tác nhân AI, được phát triển bởi Anthropics.",
+        "stars": "137.0K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tự động hóa tác nhân."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-18",
     "dayLabel": "Thứ Hai",
     "dateLabel": "18/05/2026",
@@ -922,79 +995,6 @@
         "stars": "N/A",
         "verdict": "maybe",
         "reason": "Danh sách chung về AI agents, có thể chứa các công cụ Claude nhưng không tập trung."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-19",
-    "dayLabel": "Chủ Nhật",
-    "dateLabel": "19/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "e2b-dev/fragments",
-        "url": "https://github.com/e2b-dev/fragments",
-        "desc": "Mẫu Next.js mã nguồn mở để xây dựng các ứng dụng được AI tạo ra hoàn toàn.",
-        "stars": "6.2k",
-        "verdict": "yes",
-        "reason": "Công cụ AI tạo ứng dụng, liên quan đến Claude."
-      },
-      {
-        "name": "UfoMiao/zcf",
-        "url": "https://github.com/UfoMiao/zcf",
-        "desc": "Zero-Config Code Flow cho Claude Code & Codex, hỗ trợ các tác vụ AI agent.",
-        "stars": "5.9k",
-        "verdict": "yes",
-        "reason": "Công cụ cho Claude Code, tự động hóa tác vụ."
-      },
-      {
-        "name": "nidhinjs/prompt-master",
-        "url": "https://github.com/nidhinjs/prompt-master",
-        "desc": "Một kỹ năng Claude giúp viết các prompt chính xác cho bất kỳ công cụ AI nào.",
-        "stars": "5.2k",
-        "verdict": "yes",
-        "reason": "Tiện ích AI cho Claude, cải thiện prompt engineering."
-      },
-      {
-        "name": "langgptai/awesome-claude-prompts",
-        "url": "https://github.com/langgptai/awesome-claude-prompts",
-        "desc": "Kho lưu trữ các prompt được tuyển chọn để sử dụng Claude hiệu quả hơn.",
-        "stars": "4.8k",
-        "verdict": "yes",
-        "reason": "Tiện ích AI cho Claude, tài nguyên prompt."
-      },
-      {
-        "name": "zebbern/claude-code-guide",
-        "url": "https://github.com/zebbern/claude-code-guide",
-        "desc": "Hướng dẫn Claude Code - Thiết lập, lệnh, quy trình làm việc, agent, kỹ năng & mẹo từ người mới bắt đầu đến người dùng chuyên nghiệp.",
-        "stars": "3.9k",
-        "verdict": "yes",
-        "reason": "Hướng dẫn và tài nguyên cho Claude Code và agent."
-      },
-      {
-        "name": "winfunc/opcode",
-        "url": "https://github.com/winfunc/opcode",
-        "desc": "Ứng dụng GUI mạnh mẽ và Toolkit cho Claude Code để tạo agent tùy chỉnh và quản lý phiên tương tác.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "Công cụ GUI cho Claude Code, quản lý agent."
-      },
-      {
-        "name": "yasasbanukaofficial/claude-code",
-        "url": "https://github.com/yasasbanukaofficial/claude-code",
-        "desc": "Mã nguồn CLI Claude Code mã nguồn mở, một AI Agent nâng cao cho các nhà phát triển.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "CLI và agent cho nhà phát triển Claude Code."
-      },
-      {
-        "name": "alirezarezvani/claude-skills",
-        "url": "https://github.com/alirezarezvani/claude-skills",
-        "desc": "Hơn 232 kỹ năng & plugin agent cho Claude Code và các agent mã hóa khác.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "Bộ sưu tập kỹ năng và plugin cho Claude Code."
       }
     ],
     "gamingNews": []
