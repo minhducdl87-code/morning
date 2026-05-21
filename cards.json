@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-05-22",
+    "dayLabel": "Thứ Sáu",
+    "dateLabel": "22/05/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân của bạn, hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "373.8K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI cá nhân, tiện ích AI."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ tự host hoặc cloud.",
+        "stars": "189.1K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân, khả năng AI."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân, tập trung vào Claude Code, Codex và các mô hình khác.",
+        "stars": "188.1K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tối ưu hóa tác nhân AI."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "AutoGPT là tầm nhìn về AI dễ tiếp cận cho mọi người, cung cấp công cụ để bạn tập trung vào điều quan trọng.",
+        "stars": "184.4K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, tự động hóa tác nhân."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Giúp bạn dễ dàng chạy các mô hình như Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma và nhiều mô hình khác.",
+        "stars": "171.9K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, hỗ trợ nhiều mô hình."
+      },
+      {
+        "name": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "desc": "Nền tảng chia sẻ, khám phá và thu thập các prompt từ cộng đồng, miễn phí và mã nguồn mở.",
+        "stars": "162.6K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, quản lý prompt."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Tác nhân AI có khả năng học hỏi và phát triển cùng bạn.",
+        "stars": "161.4K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân AI."
+      },
+      {
+        "name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "desc": "Framework định nghĩa mô hình cho các mô hình học máy tiên tiến trong văn bản, thị giác, âm thanh và đa phương thức.",
+        "stars": "160.9K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, framework mô hình."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-21",
     "dayLabel": "Thứ Năm",
     "dateLabel": "21/05/2026",
@@ -971,55 +1044,6 @@
     "dateLabel": "23/04/2026",
     "news": [],
     "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-22",
-    "dayLabel": "Thứ Tư",
-    "dateLabel": "22/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "anthropics/claude-code",
-        "url": "https://github.com/anthropics/claude-code",
-        "desc": "Claude Code là một công cụ lập trình tác nhân hoạt động trong terminal, hiểu codebase và giúp bạn viết code nhanh hơn.",
-        "stars": "114.3K+",
-        "verdict": "yes",
-        "reason": "Đây là repo chính thức của Anthropic, rất quan trọng cho các công cụ và tiện ích Claude."
-      },
-      {
-        "name": "webfuse-com/awesome-claude",
-        "url": "https://github.com/webfuse-com/awesome-claude",
-        "desc": "Một danh sách tuyển chọn các tài nguyên và công cụ tuyệt vời liên quan đến Anthropic Claude.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "Danh sách tổng hợp các công cụ và tài nguyên, hữu ích để khám phá thêm."
-      },
-      {
-        "name": "hesreallyhim/awesome-claude-code",
-        "url": "https://github.com/hesreallyhim/awesome-claude-code",
-        "desc": "Danh sách các slash-commands, file CLAUDE.md, công cụ CLI và quy trình làm việc cho Claude Code.",
-        "stars": "40K+",
-        "verdict": "yes",
-        "reason": "Tập trung vào các tiện ích và quy trình làm việc cho Claude Code."
-      },
-      {
-        "name": "musistudio/claude-code-router",
-        "url": "https://github.com/musistudio/claude-code-router",
-        "desc": "Một công cụ giúp tối ưu hóa việc sử dụng token của Claude Code bằng cách định tuyến các yêu cầu.",
-        "stars": "32.6K+",
-        "verdict": "yes",
-        "reason": "Giúp tiết kiệm token, có tác động thực tế đến chi phí sử dụng API."
-      },
-      {
-        "name": "jeffallan/claude-skills",
-        "url": "https://github.com/jeffallan/claude-skills",
-        "desc": "Một kho lưu trữ chứa 66 kỹ năng chuyên biệt cho nhà phát triển, tự động kích hoạt dựa trên ngữ cảnh.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "Tập trung vào các kỹ năng và tự động hóa cho nhà phát triển."
-      }
-    ],
     "gamingNews": []
   }
 ]
