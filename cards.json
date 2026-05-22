@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-05-23",
+    "dayLabel": "Thứ Bảy",
+    "dateLabel": "23/05/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân của bạn, hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "374.0K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI đa nền tảng, tiện ích AI."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
+        "stars": "189.3K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân, tiện ích AI."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân, tập trung vào Claude Code, Codex và các mô hình khác.",
+        "stars": "188.5K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tự động hóa tác nhân."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "AutoGPT là tầm nhìn về AI dễ tiếp cận cho mọi người, cung cấp công cụ để bạn tập trung vào điều quan trọng.",
+        "stars": "184.5K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, tự động hóa tác nhân."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Dễ dàng chạy các mô hình AI như Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma và nhiều mô hình khác.",
+        "stars": "172.0K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, triển khai mô hình."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Tác nhân AI có khả năng phát triển cùng bạn.",
+        "stars": "163.1K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân."
+      },
+      {
+        "name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "desc": "Khung định nghĩa mô hình cho các mô hình học máy tiên tiến trong văn bản, thị giác, âm thanh và đa phương thức.",
+        "stars": "160.9K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, khung mô hình."
+      },
+      {
+        "name": "langflow-ai/langflow",
+        "url": "https://github.com/langflow-ai/langflow",
+        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các tác nhân và quy trình làm việc được hỗ trợ bởi AI.",
+        "stars": "148.7K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân, tiện ích AI."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-22",
     "dayLabel": "Thứ Sáu",
     "dateLabel": "22/05/2026",
@@ -1035,14 +1108,6 @@
         "url": "https://docs.anthropic.com/claude/docs/sdk-deprecation"
       }
     ],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-23",
-    "dayLabel": "Thứ Năm",
-    "dateLabel": "23/04/2026",
-    "news": [],
     "repos": [],
     "gamingNews": []
   }
