@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-05-24",
+    "dayLabel": "Chủ Nhật",
+    "dateLabel": "24/05/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "374.2K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI cá nhân, tiện ích AI."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
+        "stars": "189.4K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa, khả năng AI."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân, tập trung vào Claude Code và các mô hình AI khác.",
+        "stars": "189.1K+",
+        "verdict": "yes",
+        "reason": "Tối ưu hóa tác nhân, công cụ Claude."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Dự án cung cấp công cụ để mọi người dễ dàng sử dụng và xây dựng AI.",
+        "stars": "184.5K+",
+        "verdict": "yes",
+        "reason": "AI dễ tiếp cận, công cụ tác nhân."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Nền tảng giúp chạy các mô hình AI như Kimi-K2.5, GLM-5, MiniMax, DeepSeek, Qwen, Gemma một cách dễ dàng.",
+        "stars": "172.1K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, hỗ trợ nhiều mô hình."
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân (agentic workflow).",
+        "stars": "142.4K+",
+        "verdict": "yes",
+        "reason": "Phát triển tác nhân AI."
+      },
+      {
+        "name": "langflow-ai/langflow",
+        "url": "https://github.com/langflow-ai/langflow",
+        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các tác nhân AI và quy trình làm việc.",
+        "stars": "148.7K+",
+        "verdict": "yes",
+        "reason": "Xây dựng tác nhân AI."
+      },
+      {
+        "name": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "desc": "Kho lưu trữ công khai cho các kỹ năng của tác nhân (Agent Skills).",
+        "stars": "139.7K+",
+        "verdict": "yes",
+        "reason": "Kỹ năng tác nhân, công cụ Claude."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-23",
     "dayLabel": "Thứ Bảy",
     "dateLabel": "23/05/2026",
@@ -1083,31 +1156,6 @@
     "dayLabel": "Thứ Bảy",
     "dateLabel": "25/04/2026",
     "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-24",
-    "dayLabel": "Thứ Sáu",
-    "dateLabel": "24/04/2026",
-    "news": [
-      {
-        "title": "🔧 API: Gọi Đa Công Cụ Đồng Thời",
-        "desc": "API Tool Use của Claude giờ đây cho phép gọi nhiều công cụ cùng lúc trong một lượt phản hồi, giúp tự động hóa các tác vụ phức tạp hiệu quả hơn.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "23/04·Claude Dev Docs",
-        "url": "https://docs.anthropic.com/claude/docs/multi-tool-use"
-      },
-      {
-        "title": "⏰ Ngừng Hỗ Trợ SDK Python Cũ",
-        "desc": "Anthropic thông báo ngừng hỗ trợ các phiên bản SDK Python trước 0.15.0, khuyến nghị người dùng nâng cấp để đảm bảo tính tương thích và bảo mật.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "23/04·Dev Docs",
-        "url": "https://docs.anthropic.com/claude/docs/sdk-deprecation"
-      }
-    ],
     "repos": [],
     "gamingNews": []
   }
