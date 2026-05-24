@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-05-25",
+    "dayLabel": "Thứ Hai",
+    "dateLabel": "25/05/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "374.4K+",
+        "verdict": "yes",
+        "reason": "trợ lý AI cá nhân"
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hiệu suất cho các tác nhân AI như Claude Code, Codex và Opencode.",
+        "stars": "190.5K+",
+        "verdict": "yes",
+        "reason": "tối ưu tác nhân AI, công cụ Claude"
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc mã nguồn mở với khả năng AI tích hợp.",
+        "stars": "189.5K+",
+        "verdict": "yes",
+        "reason": "tự động hóa AI, tiện ích AI"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Giúp bạn dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5 và Gemma.",
+        "stars": "172.2K+",
+        "verdict": "yes",
+        "reason": "tiện ích AI, chạy mô hình"
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân AI.",
+        "stars": "142.5K+",
+        "verdict": "yes",
+        "reason": "phát triển tác nhân AI"
+      },
+      {
+        "name": "langchain-ai/langchain",
+        "url": "https://github.com/langchain-ai/langchain",
+        "desc": "Nền tảng kỹ thuật tác nhân hàng đầu để xây dựng các ứng dụng AI.",
+        "stars": "137.5K+",
+        "verdict": "yes",
+        "reason": "nền tảng tác nhân AI"
+      },
+      {
+        "name": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "desc": "Kho lưu trữ công khai các kỹ năng dành cho tác nhân AI.",
+        "stars": "140.2K+",
+        "verdict": "yes",
+        "reason": "kỹ năng tác nhân AI, công cụ Claude"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Cung cấp các công cụ để mọi người có thể sử dụng và xây dựng trên nền tảng AI.",
+        "stars": "184.5K+",
+        "verdict": "yes",
+        "reason": "công cụ AI, tự động hóa tác nhân"
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-24",
     "dayLabel": "Chủ Nhật",
     "dateLabel": "24/05/2026",
@@ -1147,14 +1220,6 @@
     "date": "2026-04-26",
     "dayLabel": "Chủ Nhật",
     "dateLabel": "26/04/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-25",
-    "dayLabel": "Thứ Bảy",
-    "dateLabel": "25/04/2026",
     "news": [],
     "repos": [],
     "gamingNews": []
