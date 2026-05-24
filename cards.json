@@ -6,68 +6,52 @@
     "news": [],
     "repos": [
       {
-        "name": "openclaw/openclaw",
-        "url": "https://github.com/openclaw/openclaw",
-        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
-        "stars": "374.4K+",
-        "verdict": "yes",
-        "reason": "trợ lý AI cá nhân"
-      },
-      {
-        "name": "affaan-m/ECC",
-        "url": "https://github.com/affaan-m/ECC",
-        "desc": "Hệ thống tối ưu hiệu suất cho các tác nhân AI như Claude Code, Codex và Opencode.",
-        "stars": "190.5K+",
-        "verdict": "yes",
-        "reason": "tối ưu tác nhân AI, công cụ Claude"
-      },
-      {
         "name": "n8n-io/n8n",
         "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa quy trình làm việc mã nguồn mở với khả năng AI tích hợp.",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
         "stars": "189.5K+",
         "verdict": "yes",
-        "reason": "tự động hóa AI, tiện ích AI"
-      },
-      {
-        "name": "ollama/ollama",
-        "url": "https://github.com/ollama/ollama",
-        "desc": "Giúp bạn dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5 và Gemma.",
-        "stars": "172.2K+",
-        "verdict": "yes",
-        "reason": "tiện ích AI, chạy mô hình"
-      },
-      {
-        "name": "langgenius/dify",
-        "url": "https://github.com/langgenius/dify",
-        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân AI.",
-        "stars": "142.5K+",
-        "verdict": "yes",
-        "reason": "phát triển tác nhân AI"
-      },
-      {
-        "name": "langchain-ai/langchain",
-        "url": "https://github.com/langchain-ai/langchain",
-        "desc": "Nền tảng kỹ thuật tác nhân hàng đầu để xây dựng các ứng dụng AI.",
-        "stars": "137.5K+",
-        "verdict": "yes",
-        "reason": "nền tảng tác nhân AI"
-      },
-      {
-        "name": "anthropics/skills",
-        "url": "https://github.com/anthropics/skills",
-        "desc": "Kho lưu trữ công khai các kỹ năng dành cho tác nhân AI.",
-        "stars": "140.2K+",
-        "verdict": "yes",
-        "reason": "kỹ năng tác nhân AI, công cụ Claude"
+        "reason": "Tự động hóa tác nhân, tiện ích AI."
       },
       {
         "name": "Significant-Gravitas/AutoGPT",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "Cung cấp các công cụ để mọi người có thể sử dụng và xây dựng trên nền tảng AI.",
+        "desc": "Dự án tiên phong mang AI dễ tiếp cận đến mọi người, cung cấp công cụ để xây dựng và sử dụng AI.",
         "stars": "184.5K+",
         "verdict": "yes",
-        "reason": "công cụ AI, tự động hóa tác nhân"
+        "reason": "Tiện ích AI, tự động hóa tác nhân."
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân (agentic workflow).",
+        "stars": "142.5K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân, tiện ích AI."
+      },
+      {
+        "name": "open-webui/open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "desc": "Giao diện AI thân thiện với người dùng, hỗ trợ Ollama, OpenAI API và nhiều mô hình khác.",
+        "stars": "138.5K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, giao diện người dùng."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Dễ dàng khởi chạy và sử dụng các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5, Gemma và nhiều mô hình khác.",
+        "stars": "172.2K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, máy chủ mô hình."
+      },
+      {
+        "name": "langchain-ai/langchain",
+        "url": "https://github.com/langchain-ai/langchain",
+        "desc": "Nền tảng kỹ thuật tác nhân hàng đầu, giúp xây dựng các ứng dụng mạnh mẽ với LLM.",
+        "stars": "137.5K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân, tiện ích AI."
       }
     ],
     "gamingNews": []
