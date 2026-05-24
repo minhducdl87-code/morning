@@ -1,5 +1,71 @@
 [
   {
+    "weekLabel": "Tuần 22/2026",
+    "fromDate": "2026-05-19",
+    "toDate": "2026-05-25",
+    "highlights": [
+      {
+        "title": "✨ openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân này tiếp tục tăng trưởng mạnh mẽ, đạt hơn 374K sao trong tuần. Nó hoạt động đa nền tảng, mang đến giải pháp AI tiện lợi cho người dùng cá nhân.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "url": "https://github.com/openclaw/openclaw"
+      },
+      {
+        "title": "🧠 ollama/ollama",
+        "desc": "Nền tảng này giúp người dùng dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5 và Gemma cục bộ. Với hơn 172K sao, nó là công cụ quan trọng cho việc triển khai và thử nghiệm AI.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/ollama/ollama"
+      },
+      {
+        "title": "✨ affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hiệu suất cho các tác nhân AI như Claude Code, Codex và Opencode đã vượt mốc 190K sao. Đây là một công cụ quan trọng giúp cải thiện hiệu quả hoạt động của các mô hình AI.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/affaan-m/ECC"
+      },
+      {
+        "title": "✨ n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc mã nguồn mở này tích hợp khả năng AI và hỗ trợ hơn 400 tích hợp. Nó tiếp tục là lựa chọn hàng đầu cho việc tự động hóa thông minh.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/n8n-io/n8n"
+      },
+      {
+        "title": "🧠 langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất này giúp phát triển các quy trình làm việc dựa trên tác nhân AI. Với hơn 142K sao, nó đơn giản hóa việc xây dựng và triển khai các ứng dụng AI phức tạp.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/langgenius/dify"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Dự án này tiếp tục là repo có nhiều sao nhất trong tuần, tăng trưởng ổn định và đạt hơn 374K sao, khẳng định vị thế trợ lý AI cá nhân đa nền tảng.",
+        "stars": "374.4K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân AI này đã có mức tăng trưởng sao ấn tượng, vượt qua 190K sao, cho thấy sự quan tâm lớn đến việc cải thiện hiệu quả của các mô hình AI.",
+        "stars": "190.5K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Với khả năng dễ dàng chạy các mô hình ngôn ngữ lớn cục bộ, Ollama duy trì vị trí top và tiếp tục tăng trưởng sao, đạt hơn 172K sao, là công cụ không thể thiếu cho các nhà phát triển AI.",
+        "stars": "172.2K+",
+        "verdict": "yes"
+      }
+    ],
+    "topGaming": []
+  },
+  {
     "weekLabel": "Tuần 21/2026",
     "fromDate": "2026-05-12",
     "toDate": "2026-05-18",
