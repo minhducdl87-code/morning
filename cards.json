@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-05-27",
+    "dayLabel": "Thứ Tư",
+    "dateLabel": "27/05/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất cho các tác nhân AI như Claude Code, tập trung vào kỹ năng, bản năng, bộ nhớ và bảo mật.",
+        "stars": "194.3K+",
+        "verdict": "yes",
+        "reason": "Tối ưu hóa hiệu suất tác nhân AI, liên quan trực tiếp Claude Code."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc mã nguồn mở với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
+        "stars": "189.8K+",
+        "verdict": "yes",
+        "reason": "Nền tảng tự động hóa quy trình với AI, phù hợp tự động hóa tác nhân."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "AutoGPT là dự án tiên phong mang AI dễ tiếp cận đến mọi người, cung cấp công cụ để xây dựng và sử dụng AI.",
+        "stars": "184.6K+",
+        "verdict": "yes",
+        "reason": "Một trong những dự án tác nhân AI tự động nổi bật nhất."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Một tác nhân AI được thiết kế để phát triển và học hỏi cùng với người dùng.",
+        "stars": "168.6K+",
+        "verdict": "yes",
+        "reason": "Trực tiếp là một tác nhân AI."
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân AI.",
+        "stars": "142.7K+",
+        "verdict": "yes",
+        "reason": "Nền tảng phát triển quy trình tác nhân AI."
+      },
+      {
+        "name": "langflow-ai/langflow",
+        "url": "https://github.com/langflow-ai/langflow",
+        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các tác nhân và quy trình làm việc được hỗ trợ bởi AI.",
+        "stars": "148.8K+",
+        "verdict": "yes",
+        "reason": "Công cụ xây dựng và triển khai tác nhân AI."
+      },
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Claude Code là công cụ lập trình dạng tác nhân hoạt động trong terminal, giúp tăng tốc độ code và quản lý Git.",
+        "stars": "126.7K+",
+        "verdict": "yes",
+        "reason": "Công cụ lập trình dạng tác nhân của Anthropic, liên quan trực tiếp Claude."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Giúp bạn dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5, Gemma và nhiều mô hình khác trên máy cục bộ.",
+        "stars": "172.4K+",
+        "verdict": "yes",
+        "reason": "Công cụ tiện ích AI để chạy các mô hình LLM cục bộ."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-26",
     "dayLabel": "Thứ Ba",
     "dateLabel": "26/05/2026",
@@ -1214,63 +1287,6 @@
     "dateLabel": "28/04/2026",
     "news": [],
     "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-27",
-    "dayLabel": "Thứ Hai",
-    "dateLabel": "27/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "Alishahryar1/free-claude-code",
-        "url": "https://github.com/Alishahryar1/free-claude-code",
-        "desc": "Sử dụng Claude Code miễn phí qua terminal, VSCode extension hoặc Discord.",
-        "stars": "5.8K+",
-        "verdict": "yes",
-        "reason": "Công cụ Claude miễn phí, tiện lợi."
-      },
-      {
-        "name": "forrestchang/andrej-karpathy-skills",
-        "url": "https://github.com/forrestchang/andrej-karpathy-skills",
-        "desc": "Tệp CLAUDE.md để cải thiện hành vi của Claude Code, dựa trên quan sát của Andrej Karpathy về các lỗi mã hóa của LLM.",
-        "stars": "81.1K+",
-        "verdict": "yes",
-        "reason": "Cải thiện hiệu suất Claude Code."
-      },
-      {
-        "name": "huggingface/ml-intern",
-        "url": "https://github.com/huggingface/ml-intern",
-        "desc": "Kỹ sư ML mã nguồn mở có thể đọc tài liệu, huấn luyện mô hình và triển khai các mô hình ML.",
-        "stars": "5.9K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa tác vụ kỹ sư ML."
-      },
-      {
-        "name": "obra/superpowers",
-        "url": "https://github.com/obra/superpowers",
-        "desc": "Một framework kỹ năng agentic và phương pháp phát triển phần mềm hiệu quả.",
-        "stars": "167.6K+",
-        "verdict": "yes",
-        "reason": "Hỗ trợ phát triển phần mềm bằng AI agent."
-      },
-      {
-        "name": "punkpeye/awesome-mcp-servers",
-        "url": "https://github.com/punkpeye/awesome-mcp-servers",
-        "desc": "Danh sách tổng hợp các máy chủ Model Context Protocol (MCP) để mở rộng khả năng của AI.",
-        "stars": "4.5K+",
-        "verdict": "yes",
-        "reason": "Tài nguyên cho MCP servers."
-      },
-      {
-        "name": "modelcontextprotocol/servers",
-        "url": "https://github.com/modelcontextprotocol/servers",
-        "desc": "Kho lưu trữ chính thức cho các máy chủ Model Context Protocol (MCP).",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Nguồn chính thức về MCP servers."
-      }
-    ],
     "gamingNews": []
   }
 ]
