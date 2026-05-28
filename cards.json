@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-05-29",
+    "dayLabel": "Thứ Sáu",
+    "dateLabel": "29/05/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân của bạn, hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "375.3K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI cá nhân, đa nền tảng."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất cho các tác nhân AI như Claude Code, Codex và hơn thế nữa.",
+        "stars": "197.2K+",
+        "verdict": "yes",
+        "reason": "Tối ưu hóa tác nhân AI, hỗ trợ Claude Code."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Nền tảng giúp bạn dễ dàng chạy các mô hình AI như Kimi-K2.5, GLM-5, MiniMax và nhiều mô hình khác.",
+        "stars": "172.5K+",
+        "verdict": "yes",
+        "reason": "Chạy các mô hình AI phổ biến."
+      },
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Công cụ lập trình dựa trên tác nhân AI Claude, giúp bạn viết mã nhanh hơn và hiểu codebase.",
+        "stars": "127.3K+",
+        "verdict": "yes",
+        "reason": "Công cụ lập trình chuyên biệt cho Claude."
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc tác nhân AI.",
+        "stars": "143.0K+",
+        "verdict": "yes",
+        "reason": "Nền tảng phát triển quy trình tác nhân AI."
+      },
+      {
+        "name": "langflow-ai/langflow",
+        "url": "https://github.com/langflow-ai/langflow",
+        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các tác nhân và quy trình làm việc AI.",
+        "stars": "148.9K+",
+        "verdict": "yes",
+        "reason": "Xây dựng và triển khai tác nhân AI."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp và hơn 400 tích hợp.",
+        "stars": "190.1K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa quy trình với AI tích hợp."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "AutoGPT là tầm nhìn về AI dễ tiếp cận cho mọi người để sử dụng và xây dựng.",
+        "stars": "184.6K+",
+        "verdict": "yes",
+        "reason": "AI dễ tiếp cận và tự động hóa tác nhân."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-28",
     "dayLabel": "Thứ Năm",
     "dateLabel": "28/05/2026",
@@ -1326,31 +1399,6 @@
     "dayLabel": "Thứ Năm",
     "dateLabel": "30/04/2026",
     "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-29",
-    "dayLabel": "Thứ Tư",
-    "dateLabel": "29/04/2026",
-    "news": [
-      {
-        "title": "🔧 API: Ra Mắt Endpoint Xử Lý Ảnh Nâng Cao",
-        "desc": "API mới cho phép các nhà phát triển tích hợp khả năng phân tích và tạo mô tả chi tiết từ hình ảnh trực tiếp vào ứng dụng của họ. Mở rộng tiềm năng ứng dụng thị giác máy tính.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "29/04·Anthropic Dev",
-        "url": "https://docs.anthropic.com/claude/api/image-processing"
-      },
-      {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Claude 2.1 API Cũ",
-        "desc": "Anthropic thông báo ngừng hỗ trợ API cho Claude 2.1 từ ngày 30/06/2026. Các nhà phát triển được khuyến nghị chuyển sang các phiên bản API mới hơn để đảm bảo tính tương thích và hiệu suất.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "29/04·Anthropic Dev",
-        "url": "https://docs.anthropic.com/claude/api/deprecation-notice"
-      }
-    ],
     "repos": [],
     "gamingNews": []
   }
