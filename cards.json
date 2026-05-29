@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-05-30",
+    "dayLabel": "Thứ Bảy",
+    "dateLabel": "30/05/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân của bạn, hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "375.5K+",
+        "verdict": "yes",
+        "reason": "AI assistant, AI utilities"
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hiệu suất tác nhân, hỗ trợ phát triển ưu tiên nghiên cứu cho Claude Code và các mô hình khác.",
+        "stars": "198.5K+",
+        "verdict": "yes",
+        "reason": "Claude tools, agent automation"
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI gốc, có thể tự host hoặc dùng cloud.",
+        "stars": "190.3K+",
+        "verdict": "yes",
+        "reason": "Agent automation, AI capabilities"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "AutoGPT mang tầm nhìn AI dễ tiếp cận cho mọi người, cung cấp công cụ để bạn tập trung vào những gì quan trọng.",
+        "stars": "184.6K+",
+        "verdict": "yes",
+        "reason": "AI utilities, agent"
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Một tác nhân AI có khả năng phát triển cùng với người dùng.",
+        "stars": "172.8K+",
+        "verdict": "yes",
+        "reason": "Agent automation"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Giúp bạn nhanh chóng chạy các mô hình AI như Kimi-K2.5, GLM-5, MiniMax, DeepSeek và nhiều mô hình khác.",
+        "stars": "172.6K+",
+        "verdict": "yes",
+        "reason": "AI utilities, model deployment"
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân AI.",
+        "stars": "143.1K+",
+        "verdict": "yes",
+        "reason": "Agentic workflow development"
+      },
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Claude Code là một công cụ lập trình dựa trên tác nhân AI, hoạt động trong terminal và hỗ trợ các tác vụ mã hóa.",
+        "stars": "127.8K+",
+        "verdict": "yes",
+        "reason": "Claude tools, agentic coding"
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-29",
     "dayLabel": "Thứ Sáu",
     "dateLabel": "29/05/2026",
@@ -1390,14 +1463,6 @@
     "date": "2026-05-01",
     "dayLabel": "Thứ Sáu",
     "dateLabel": "01/05/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-30",
-    "dayLabel": "Thứ Năm",
-    "dateLabel": "30/04/2026",
     "news": [],
     "repos": [],
     "gamingNews": []
