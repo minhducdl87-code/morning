@@ -1,5 +1,71 @@
 [
   {
+    "weekLabel": "Tuần 23/2026",
+    "fromDate": "2026-05-26",
+    "toDate": "2026-06-01",
+    "highlights": [
+      {
+        "title": "✨ openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân OpenClaw tiếp tục dẫn đầu với hơn 375K sao, khẳng định vị thế là giải pháp AI đa nền tảng, hoạt động trên mọi hệ điều hành. Dự án này cho thấy sự quan tâm lớn đến các công cụ AI cá nhân hóa.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "url": "https://github.com/openclaw/openclaw"
+      },
+      {
+        "title": "🧠 affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân ECC của affaan-m đạt mốc 200.5K sao, cho thấy nhu cầu cao về các công cụ cải thiện hiệu quả cho Claude Code và các mô hình AI khác. Đây là một bước tiến quan trọng trong việc phát triển AI agent.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/affaan-m/ECC"
+      },
+      {
+        "title": "✨ n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa workflow mã nguồn mở n8n-io/n8n tiếp tục tăng trưởng mạnh mẽ, đạt 190.5K sao. Với khả năng AI tích hợp và hơn 400 tích hợp, n8n đang trở thành lựa chọn hàng đầu cho việc tự động hóa các quy trình kinh doanh.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/n8n-io/n8n"
+      },
+      {
+        "title": "🧠 ollama/ollama",
+        "desc": "Ollama tiếp tục thu hút sự chú ý với 172.7K sao, cho phép người dùng dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5, Gemma ngay trên máy tính cá nhân. Điều này giúp dân chủ hóa việc tiếp cận và sử dụng các mô hình AI tiên tiến.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/ollama/ollama"
+      },
+      {
+        "title": "✨ langgenius/dify",
+        "desc": "Dify, nền tảng sẵn sàng cho sản xuất để phát triển các workflow agentic, đạt 143.3K sao. Đây là một công cụ quan trọng giúp các nhà phát triển xây dựng và triển khai các ứng dụng AI agent một cách hiệu quả.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/langgenius/dify"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Dự án tiếp tục giữ vững vị trí dẫn đầu với số sao tăng trưởng ổn định, khẳng định vai trò là trợ lý AI cá nhân đa nền tảng được ưa chuộng.",
+        "stars": "375.9K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Đạt mốc 200.5K sao, dự án này nổi bật với khả năng tối ưu hóa hiệu suất cho các tác nhân AI, đặc biệt là Claude Code, cho thấy tầm quan trọng của việc cải thiện hiệu quả AI agent.",
+        "stars": "200.5K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "AutoGPT tiếp tục là dự án tiên phong trong lĩnh vực AI agent tự động, giúp AI dễ tiếp cận hơn cho mọi người và duy trì mức độ phổ biến cao với 184.7K sao.",
+        "stars": "184.7K+",
+        "verdict": "yes"
+      }
+    ],
+    "topGaming": []
+  },
+  {
     "weekLabel": "Tuần 22/2026",
     "fromDate": "2026-05-19",
     "toDate": "2026-05-25",
