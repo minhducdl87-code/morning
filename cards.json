@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-06-01",
+    "dayLabel": "Thứ Hai",
+    "dateLabel": "01/06/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân của bạn, hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "375.9K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI cá nhân, tiện ích AI."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất agent, tập trung vào Claude Code và các mô hình khác.",
+        "stars": "200.5K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tự động hóa agent, tiện ích AI."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa workflow mã nguồn mở với khả năng AI tích hợp.",
+        "stars": "190.5K+",
+        "verdict": "yes",
+        "reason": "Nền tảng tự động hóa workflow với AI, phù hợp agent automation."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Dự án tiên phong về AI agent tự động, giúp AI dễ tiếp cận hơn cho mọi người.",
+        "stars": "184.7K+",
+        "verdict": "yes",
+        "reason": "Công cụ AI agent nổi bật, tiện ích AI."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Chạy các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5, Gemma ngay trên máy tính của bạn.",
+        "stars": "172.7K+",
+        "verdict": "yes",
+        "reason": "Chạy các mô hình AI cục bộ, tiện ích AI."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Một agent AI được thiết kế để phát triển và học hỏi cùng bạn.",
+        "stars": "174.6K+",
+        "verdict": "yes",
+        "reason": "Agent automation, AI utilities."
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các workflow agentic.",
+        "stars": "143.3K+",
+        "verdict": "yes",
+        "reason": "Nền tảng phát triển agent workflow."
+      },
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Công cụ coding agent của Anthropic, giúp bạn viết code nhanh hơn trong terminal.",
+        "stars": "128.9K+",
+        "verdict": "yes",
+        "reason": "Công cụ coding agent của Anthropic, liên quan Claude."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-05-31",
     "dayLabel": "Chủ Nhật",
     "dateLabel": "31/05/2026",
@@ -1520,14 +1593,6 @@
     "date": "2026-05-03",
     "dayLabel": "Chủ Nhật",
     "dateLabel": "03/05/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-02",
-    "dayLabel": "Thứ Bảy",
-    "dateLabel": "02/05/2026",
     "news": [],
     "repos": [],
     "gamingNews": []
