@@ -17,66 +17,66 @@
       {
         "name": "openclaw/openclaw",
         "url": "https://github.com/openclaw/openclaw",
-        "desc": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-        "stars": "370.4K+",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "375.7K+",
         "verdict": "yes",
-        "reason": "Trending Tháng 5/2026"
+        "reason": "AI utilities, agent automation"
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hiệu suất tác nhân cho Claude Code và các mô hình AI khác.",
+        "stars": "199.2K+",
+        "verdict": "yes",
+        "reason": "Claude tools, agent automation"
       },
       {
         "name": "n8n-io/n8n",
         "url": "https://github.com/n8n-io/n8n",
-        "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-        "stars": "187.3K+",
+        "desc": "Nền tảng tự động hóa quy trình làm việc mã nguồn mở với khả năng AI tích hợp.",
+        "stars": "190.4K+",
         "verdict": "yes",
-        "reason": "Trending Tháng 5/2026"
-      },
-      {
-        "name": "obra/superpowers",
-        "url": "https://github.com/obra/superpowers",
-        "desc": "An agentic skills framework & software development methodology that works.",
-        "stars": "185.0K+",
-        "verdict": "yes",
-        "reason": "Trending Tháng 5/2026"
-      },
-      {
-        "name": "Significant-Gravitas/AutoGPT",
-        "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
-        "stars": "184.1K+",
-        "verdict": "yes",
-        "reason": "Trending Tháng 5/2026"
+        "reason": "Agent automation, AI utilities"
       },
       {
         "name": "affaan-m/everything-claude-code",
         "url": "https://github.com/affaan-m/everything-claude-code",
-        "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-        "stars": "177.5K+",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân, tập trung vào các công cụ Claude Code và các mô hình AI khác.",
+        "stars": "186.5K+",
         "verdict": "yes",
-        "reason": "Trending Tháng 5/2026"
+        "reason": "Công cụ Claude, tự động hóa tác nhân."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "AutoGPT là công cụ AI tiên phong giúp mọi người dễ dàng sử dụng và xây dựng các ứng dụng AI.",
+        "stars": "184.7K+",
+        "verdict": "yes",
+        "reason": "AI utilities, agent automation"
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Một tác nhân AI có khả năng học hỏi và phát triển cùng với người dùng.",
+        "stars": "173.7K+",
+        "verdict": "yes",
+        "reason": "Agent automation"
       },
       {
         "name": "ollama/ollama",
         "url": "https://github.com/ollama/ollama",
-        "desc": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
-        "stars": "171.1K+",
+        "desc": "Dễ dàng chạy các mô hình AI như Kimi-K2.5, GLM-5, MiniMax và nhiều mô hình khác.",
+        "stars": "172.7K+",
         "verdict": "yes",
-        "reason": "Trending Tháng 5/2026"
+        "reason": "AI utilities"
       },
       {
         "name": "f/prompts.chat",
         "url": "https://github.com/f/prompts.chat",
-        "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
-        "stars": "161.9K+",
+        "desc": "Nền tảng chia sẻ, khám phá và thu thập các prompt từ cộng đồng, miễn phí và mã nguồn mở.",
+        "stars": "162.6K+",
         "verdict": "yes",
-        "reason": "Trending Tháng 5/2026"
-      },
-      {
-        "name": "huggingface/transformers",
-        "url": "https://github.com/huggingface/transformers",
-        "desc": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
-        "stars": "160.4K+",
-        "verdict": "yes",
-        "reason": "Trending Tháng 5/2026"
+        "reason": "Tiện ích AI, quản lý prompt."
       }
     ],
     "topGaming": []
