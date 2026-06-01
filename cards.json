@@ -6,68 +6,68 @@
     "news": [],
     "repos": [
       {
-        "name": "openclaw/openclaw",
-        "url": "https://github.com/openclaw/openclaw",
-        "desc": "Trợ lý AI cá nhân đa nền tảng, giúp bạn làm việc hiệu quả hơn.",
-        "stars": "376.1K+",
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Claude Code là công cụ lập trình dạng agent, hoạt động trong terminal, giúp bạn viết code nhanh hơn bằng cách tự động hóa tác vụ và giải thích mã.",
+        "stars": "129.3K+",
         "verdict": "yes",
-        "reason": "Trợ lý AI cá nhân rất phổ biến, phù hợp với AI utilities."
+        "reason": "Công cụ agentic của Claude, hỗ trợ lập trình."
+      },
+      {
+        "name": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "desc": "Kho lưu trữ công khai các kỹ năng (skills) dành cho các agent AI.",
+        "stars": "145.2K+",
+        "verdict": "yes",
+        "reason": "Tập trung vào kỹ năng cho agent, liên quan đến Anthropics."
       },
       {
         "name": "affaan-m/ECC",
         "url": "https://github.com/affaan-m/ECC",
-        "desc": "Hệ thống tối ưu hiệu suất cho các tác nhân AI, đặc biệt là Claude Code.",
+        "desc": "Hệ thống tối ưu hiệu suất cho agent harness, hỗ trợ Claude Code và các mô hình AI khác.",
         "stars": "202.2K+",
         "verdict": "yes",
-        "reason": "Tối ưu hiệu suất agent AI, liên quan trực tiếp đến Claude tools."
-      },
-      {
-        "name": "n8n-io/n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa workflow với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
-        "stars": "190.6K+",
-        "verdict": "yes",
-        "reason": "Nền tảng tự động hóa workflow với AI, phù hợp với agent automation."
-      },
-      {
-        "name": "ollama/ollama",
-        "url": "https://github.com/ollama/ollama",
-        "desc": "Giúp bạn dễ dàng chạy các mô hình AI như Kimi-K2.5, GLM-5 và Gemma trên máy tính của mình.",
-        "stars": "172.9K+",
-        "verdict": "yes",
-        "reason": "Công cụ chạy mô hình AI cục bộ, một AI utility quan trọng."
-      },
-      {
-        "name": "Significant-Gravitas/AutoGPT",
-        "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "Dự án tiên phong về AI agent, cung cấp công cụ để mọi người có thể sử dụng và xây dựng AI.",
-        "stars": "184.7K+",
-        "verdict": "yes",
-        "reason": "Một trong những dự án agent AI nổi bật và có tầm ảnh hưởng lớn."
-      },
-      {
-        "name": "langgenius/dify",
-        "url": "https://github.com/langgenius/dify",
-        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các workflow agentic.",
-        "stars": "143.4K+",
-        "verdict": "yes",
-        "reason": "Nền tảng phát triển workflow agentic, rất phù hợp với agent automation."
-      },
-      {
-        "name": "anthropics/claude-code",
-        "url": "https://github.com/anthropics/claude-code",
-        "desc": "Công cụ lập trình agentic của Anthropic, giúp bạn viết code nhanh hơn và hiểu codebase.",
-        "stars": "129.3K+",
-        "verdict": "yes",
-        "reason": "Công cụ lập trình agentic trực tiếp từ Anthropic, thuộc nhóm Claude tools."
+        "reason": "Tối ưu hiệu suất agent, hỗ trợ Claude Code."
       },
       {
         "name": "langchain-ai/langchain",
         "url": "https://github.com/langchain-ai/langchain",
-        "desc": "Nền tảng kỹ thuật agent hàng đầu, giúp xây dựng các ứng dụng dựa trên LLM.",
+        "desc": "Nền tảng kỹ thuật agent hàng đầu để xây dựng các ứng dụng AI mạnh mẽ.",
         "stars": "138.2K+",
         "verdict": "yes",
-        "reason": "Nền tảng kỹ thuật agent rất phổ biến và quan trọng trong hệ sinh thái AI."
+        "reason": "Nền tảng kỹ thuật agent phổ biến."
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dạng agentic.",
+        "stars": "143.4K+",
+        "verdict": "yes",
+        "reason": "Nền tảng phát triển workflow agentic."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Giúp bạn dễ dàng chạy các mô hình AI như Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma và nhiều mô hình khác.",
+        "stars": "172.9K+",
+        "verdict": "yes",
+        "reason": "Công cụ chạy và quản lý các mô hình AI cục bộ."
+      },
+      {
+        "name": "open-webui/open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "desc": "Giao diện AI thân thiện với người dùng, hỗ trợ Ollama, OpenAI API và nhiều dịch vụ khác.",
+        "stars": "139.6K+",
+        "verdict": "yes",
+        "reason": "Giao diện người dùng cho AI, hỗ trợ nhiều API."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "AutoGPT là tầm nhìn về AI dễ tiếp cận cho mọi người, để sử dụng và xây dựng dựa trên đó.",
+        "stars": "184.7K+",
+        "verdict": "yes",
+        "reason": "Công cụ AI tự động hóa nổi bật."
       }
     ],
     "gamingNews": []
