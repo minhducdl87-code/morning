@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-06-05",
+    "dayLabel": "Thứ Sáu",
+    "dateLabel": "05/06/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "376.9K+",
+        "verdict": "yes",
+        "reason": "AI utilities, personal AI assistant."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân, hỗ trợ Claude Code và các mô hình khác.",
+        "stars": "207.2K+",
+        "verdict": "yes",
+        "reason": "Claude tools, agent automation."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ 400+ tích hợp.",
+        "stars": "191.1K+",
+        "verdict": "yes",
+        "reason": "Agent automation, AI capabilities."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Dự án mang AI dễ tiếp cận đến mọi người, cung cấp công cụ để xây dựng và sử dụng AI.",
+        "stars": "184.8K+",
+        "verdict": "yes",
+        "reason": "AI utilities, agent automation."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Một tác nhân AI có khả năng phát triển và học hỏi cùng người dùng.",
+        "stars": "180.9K+",
+        "verdict": "yes",
+        "reason": "Agent automation."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Nền tảng dễ dàng chạy các mô hình AI như Kimi-K2.6, GLM-5.1, Gemma và nhiều mô hình khác.",
+        "stars": "173.2K+",
+        "verdict": "yes",
+        "reason": "AI utilities, model deployment."
+      },
+      {
+        "name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "desc": "Framework định nghĩa mô hình cho các mô hình học máy tiên tiến trong nhiều lĩnh vực.",
+        "stars": "161.3K+",
+        "verdict": "yes",
+        "reason": "AI utilities, model framework."
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân AI.",
+        "stars": "143.9K+",
+        "verdict": "yes",
+        "reason": "Agent automation."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-06-04",
     "dayLabel": "Thứ Năm",
     "dateLabel": "04/06/2026",
@@ -1780,14 +1853,6 @@
     "date": "2026-05-07",
     "dayLabel": "Thứ Năm",
     "dateLabel": "07/05/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-06",
-    "dayLabel": "Thứ Tư",
-    "dateLabel": "06/05/2026",
     "news": [],
     "repos": [],
     "gamingNews": []
