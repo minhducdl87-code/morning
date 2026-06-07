@@ -1,5 +1,71 @@
 [
   {
+    "weekLabel": "Tuần 24/2026",
+    "fromDate": "2026-06-02",
+    "toDate": "2026-06-08",
+    "highlights": [
+      {
+        "title": "🔥 openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân OpenClaw tiếp tục dẫn đầu với hơn 377K sao, khẳng định vị thế là giải pháp AI đa nền tảng, hoạt động trên mọi hệ điều hành. Dự án này cho thấy sự quan tâm lớn của cộng đồng đối với các công cụ AI cá nhân hóa.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "url": "https://github.com/openclaw/openclaw"
+      },
+      {
+        "title": "🧠 affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hiệu suất ECC của affaan-m đạt hơn 209K sao, chuyên biệt cho các agent AI như Claude Code và Codex. Đây là một công cụ quan trọng giúp cải thiện hiệu quả hoạt động của các tác nhân AI trong nhiều lĩnh vực.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/affaan-m/ECC"
+      },
+      {
+        "title": "✨ n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc n8n-io/n8n với khả năng AI tích hợp và hơn 400 tích hợp đã vượt mốc 191K sao. Điều này cho thấy nhu cầu cao về các giải pháp tự động hóa thông minh, kết nối đa dạng các dịch vụ.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/n8n-io/n8n"
+      },
+      {
+        "title": "🧠 ollama/ollama",
+        "desc": "Ollama tiếp tục là nền tảng phổ biến để chạy các mô hình ngôn ngữ lớn như Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, v.v., đạt hơn 173K sao. Sự phát triển của Ollama phản ánh xu hướng sử dụng các mô hình AI cục bộ và dễ tiếp cận.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/ollama/ollama"
+      },
+      {
+        "title": "✨ langflow-ai/langflow",
+        "desc": "Langflow-ai/langflow, công cụ mạnh mẽ để xây dựng và triển khai các agent và workflow AI, đã đạt gần 150K sao. Đây là một giải pháp quan trọng cho các nhà phát triển muốn tạo ra các ứng dụng AI phức tạp một cách trực quan.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/langflow-ai/langflow"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Dự án này liên tục tăng trưởng sao, khẳng định vị thế là trợ lý AI cá nhân đa nền tảng được cộng đồng quan tâm nhất tuần qua.",
+        "stars": "377.4K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hiệu suất cho các agent AI như Claude Code và Codex tiếp tục thu hút sự chú ý với mức tăng trưởng sao ấn tượng.",
+        "stars": "209.8K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp này vẫn giữ vững vị trí top, cho thấy nhu cầu cao về các giải pháp tự động hóa thông minh.",
+        "stars": "191.5K+",
+        "verdict": "yes"
+      }
+    ],
+    "topGaming": []
+  },
+  {
     "weekLabel": "Tuần 23/2026",
     "fromDate": "2026-05-26",
     "toDate": "2026-06-01",
