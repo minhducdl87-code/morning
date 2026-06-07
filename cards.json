@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-06-08",
+    "dayLabel": "Thứ Hai",
+    "dateLabel": "08/06/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "377.4K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI cá nhân đa nền tảng, phù hợp với AI utilities."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hiệu suất cho các agent AI như Claude Code, Codex.",
+        "stars": "209.8K+",
+        "verdict": "yes",
+        "reason": "Tối ưu hiệu suất agent, liên quan trực tiếp đến Claude tools và AI agents."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với các khả năng AI tích hợp.",
+        "stars": "191.5K+",
+        "verdict": "yes",
+        "reason": "Nền tảng tự động hóa workflow với AI, phù hợp với agent automation và AI utilities."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Một agent AI được thiết kế để phát triển cùng người dùng.",
+        "stars": "185.9K+",
+        "verdict": "yes",
+        "reason": "Dự án agent AI rõ ràng, phù hợp với agent automation."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Dự án tiên phong về AI agent tự động, giúp AI dễ tiếp cận hơn.",
+        "stars": "184.8K+",
+        "verdict": "yes",
+        "reason": "Một trong những dự án agent AI nổi bật nhất."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Nền tảng để chạy các mô hình ngôn ngữ lớn như Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, v.v.",
+        "stars": "173.5K+",
+        "verdict": "yes",
+        "reason": "Công cụ quan trọng để chạy và thử nghiệm các mô hình AI."
+      },
+      {
+        "name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "desc": "Framework định nghĩa mô hình cho các mô hình học máy tiên tiến trong nhiều lĩnh vực.",
+        "stars": "161.4K+",
+        "verdict": "yes",
+        "reason": "Framework cốt lõi cho phát triển và triển khai các mô hình AI."
+      },
+      {
+        "name": "langflow-ai/langflow",
+        "url": "https://github.com/langflow-ai/langflow",
+        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các agent và workflow AI.",
+        "stars": "149.4K+",
+        "verdict": "yes",
+        "reason": "Công cụ xây dựng và triển khai agent AI, phù hợp với agent automation."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-06-07",
     "dayLabel": "Chủ Nhật",
     "dateLabel": "07/06/2026",
@@ -1967,23 +2040,6 @@
     "dayLabel": "Chủ Nhật",
     "dateLabel": "10/05/2026",
     "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-09",
-    "dayLabel": "Thứ Bảy",
-    "dateLabel": "09/05/2026",
-    "news": [
-      {
-        "title": "✨ Claude Pro: Tích Hợp Cơ Sở Tri Thức Tùy Chỉnh",
-        "desc": "Người dùng Claude Pro giờ đây có thể kết nối và sử dụng cơ sở tri thức riêng của mình để Claude truy xuất thông tin. Tính năng này giúp tăng cường độ chính xác và cá nhân hóa phản hồi.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "09/05·Claude Docs",
-        "url": "https://docs.anthropic.com/claude/pro/custom-kb"
-      }
-    ],
     "repos": [],
     "gamingNews": []
   }
