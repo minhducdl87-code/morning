@@ -11,23 +11,23 @@
         "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
         "stars": "377.4K+",
         "verdict": "yes",
-        "reason": "Trợ lý AI cá nhân đa nền tảng, phù hợp với AI utilities."
+        "reason": "Trợ lý AI cá nhân, phù hợp với AI utilities."
       },
       {
         "name": "affaan-m/ECC",
         "url": "https://github.com/affaan-m/ECC",
-        "desc": "Hệ thống tối ưu hiệu suất cho các agent AI như Claude Code, Codex.",
+        "desc": "Hệ thống tối ưu hiệu suất cho các công cụ agent như Claude Code, Codex và Opencode.",
         "stars": "209.8K+",
         "verdict": "yes",
-        "reason": "Tối ưu hiệu suất agent, liên quan trực tiếp đến Claude tools và AI agents."
+        "reason": "Liên quan trực tiếp đến công cụ Claude và tối ưu hóa agent."
       },
       {
         "name": "n8n-io/n8n",
         "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa quy trình làm việc với các khả năng AI tích hợp.",
+        "desc": "Nền tảng tự động hóa workflow với khả năng AI tích hợp, hỗ trợ 400+ tích hợp.",
         "stars": "191.5K+",
         "verdict": "yes",
-        "reason": "Nền tảng tự động hóa workflow với AI, phù hợp với agent automation và AI utilities."
+        "reason": "Tự động hóa workflow và khả năng AI bản địa."
       },
       {
         "name": "NousResearch/hermes-agent",
@@ -35,23 +35,23 @@
         "desc": "Một agent AI được thiết kế để phát triển cùng người dùng.",
         "stars": "185.9K+",
         "verdict": "yes",
-        "reason": "Dự án agent AI rõ ràng, phù hợp với agent automation."
+        "reason": "Dự án agent AI rõ ràng."
       },
       {
         "name": "Significant-Gravitas/AutoGPT",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "Dự án tiên phong về AI agent tự động, giúp AI dễ tiếp cận hơn.",
+        "desc": "Dự án AI agent tiên phong, cung cấp công cụ để phát triển và sử dụng AI dễ dàng.",
         "stars": "184.8K+",
         "verdict": "yes",
-        "reason": "Một trong những dự án agent AI nổi bật nhất."
+        "reason": "Một trong những dự án AI agent nổi bật."
       },
       {
         "name": "ollama/ollama",
         "url": "https://github.com/ollama/ollama",
-        "desc": "Nền tảng để chạy các mô hình ngôn ngữ lớn như Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, v.v.",
+        "desc": "Dễ dàng chạy các mô hình AI như Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek và nhiều mô hình khác.",
         "stars": "173.5K+",
         "verdict": "yes",
-        "reason": "Công cụ quan trọng để chạy và thử nghiệm các mô hình AI."
+        "reason": "Công cụ tiện ích AI để chạy các mô hình LLM."
       },
       {
         "name": "huggingface/transformers",
@@ -59,15 +59,15 @@
         "desc": "Framework định nghĩa mô hình cho các mô hình học máy tiên tiến trong nhiều lĩnh vực.",
         "stars": "161.4K+",
         "verdict": "yes",
-        "reason": "Framework cốt lõi cho phát triển và triển khai các mô hình AI."
+        "reason": "Framework cốt lõi cho các mô hình AI, tiện ích AI."
       },
       {
         "name": "langflow-ai/langflow",
         "url": "https://github.com/langflow-ai/langflow",
-        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các agent và workflow AI.",
+        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các agent và workflow được hỗ trợ bởi AI.",
         "stars": "149.4K+",
         "verdict": "yes",
-        "reason": "Công cụ xây dựng và triển khai agent AI, phù hợp với agent automation."
+        "reason": "Xây dựng và triển khai agent AI và workflow."
       }
     ],
     "gamingNews": []
