@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-06-10",
+    "dayLabel": "Thứ Tư",
+    "dateLabel": "10/06/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "377.8K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI cá nhân, tiện ích AI."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hiệu suất cho các tác nhân AI như Claude Code, Codex và các mô hình khác.",
+        "stars": "211.9K+",
+        "verdict": "yes",
+        "reason": "Tối ưu hóa tác nhân, công cụ Claude."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
+        "stars": "191.8K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân, tiện ích AI."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Giúp bạn dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.6, GLM-5.1, Gemma và nhiều mô hình khác.",
+        "stars": "173.7K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, hỗ trợ mô hình."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Một tác nhân AI có khả năng học hỏi và phát triển cùng với người dùng.",
+        "stars": "188.8K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác nhân."
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân AI.",
+        "stars": "144.6K+",
+        "verdict": "yes",
+        "reason": "Phát triển tác nhân AI."
+      },
+      {
+        "name": "langflow-ai/langflow",
+        "url": "https://github.com/langflow-ai/langflow",
+        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các tác nhân và quy trình làm việc được hỗ trợ bởi AI.",
+        "stars": "149.5K+",
+        "verdict": "yes",
+        "reason": "Xây dựng tác nhân AI."
+      },
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Công cụ lập trình dựa trên tác nhân Claude, giúp bạn viết mã nhanh hơn và hiểu codebase.",
+        "stars": "131.3K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tự động hóa tác nhân."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-06-09",
     "dayLabel": "Thứ Ba",
     "dateLabel": "09/06/2026",
@@ -2090,14 +2163,6 @@
         "reason": "Agent automation"
       }
     ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-11",
-    "dayLabel": "Thứ Hai",
-    "dateLabel": "11/05/2026",
-    "news": [],
-    "repos": [],
     "gamingNews": []
   }
 ]
