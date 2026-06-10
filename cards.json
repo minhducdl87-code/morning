@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-06-11",
+    "dayLabel": "Thứ Năm",
+    "dateLabel": "11/06/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng, mang đến trải nghiệm AI toàn diện.",
+        "stars": "378.0K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI cá nhân đa nền tảng, tiện ích AI tổng hợp."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất cho các tác nhân AI như Claude Code, Codex, Opencode, tập trung vào kỹ năng, bản năng và bảo mật.",
+        "stars": "212.7K+",
+        "verdict": "yes",
+        "reason": "Tối ưu hóa hiệu suất tác nhân AI, đặc biệt cho công cụ Claude."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc mã nguồn mở với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
+        "stars": "192.0K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa quy trình làm việc với AI, tích hợp rộng rãi."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.6, GLM-5.1, MiniMax và nhiều mô hình khác trên máy cục bộ.",
+        "stars": "173.8K+",
+        "verdict": "yes",
+        "reason": "Công cụ chạy các mô hình AI phổ biến, tiện ích AI."
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân AI.",
+        "stars": "144.7K+",
+        "verdict": "yes",
+        "reason": "Nền tảng phát triển tác nhân AI, tự động hóa."
+      },
+      {
+        "name": "open-webui/open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "desc": "Giao diện AI thân thiện với người dùng, hỗ trợ Ollama, OpenAI API và nhiều dịch vụ khác.",
+        "stars": "141.0K+",
+        "verdict": "yes",
+        "reason": "Giao diện người dùng cho AI, tiện ích AI."
+      },
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Công cụ lập trình dựa trên tác nhân của Claude, hoạt động trong terminal, giúp tăng tốc độ viết mã và quản lý Git.",
+        "stars": "131.6K+",
+        "verdict": "yes",
+        "reason": "Công cụ lập trình của Claude, tác nhân AI."
+      },
+      {
+        "name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "desc": "Framework định nghĩa mô hình cho các mô hình học máy tiên tiến trong văn bản, thị giác, âm thanh và đa phương thức.",
+        "stars": "161.5K+",
+        "verdict": "yes",
+        "reason": "Framework cốt lõi cho các mô hình học máy, tiện ích AI."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-06-10",
     "dayLabel": "Thứ Tư",
     "dateLabel": "10/06/2026",
@@ -2088,79 +2161,6 @@
         "stars": "141.1K+",
         "verdict": "yes",
         "reason": "nền tảng agent AI"
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-12",
-    "dayLabel": "Thứ Ba",
-    "dateLabel": "12/05/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "openclaw/openclaw",
-        "url": "https://github.com/openclaw/openclaw",
-        "desc": "Trợ lý AI cá nhân của riêng bạn, hoạt động trên mọi hệ điều hành và nền tảng.",
-        "stars": "370.9K+",
-        "verdict": "yes",
-        "reason": "AI utilities, agent automation"
-      },
-      {
-        "name": "n8n-io/n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ tự host hoặc cloud.",
-        "stars": "187.5K+",
-        "verdict": "yes",
-        "reason": "AI utilities, agent automation"
-      },
-      {
-        "name": "Significant-Gravitas/AutoGPT",
-        "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "Tầm nhìn về AI dễ tiếp cận cho mọi người, cung cấp công cụ để tập trung vào những gì quan trọng.",
-        "stars": "184.2K+",
-        "verdict": "yes",
-        "reason": "AI utilities, agent automation"
-      },
-      {
-        "name": "affaan-m/everything-claude-code",
-        "url": "https://github.com/affaan-m/everything-claude-code",
-        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân với các kỹ năng, bản năng và bộ nhớ cho Claude Code.",
-        "stars": "179.5K+",
-        "verdict": "yes",
-        "reason": "Claude tools, agent automation"
-      },
-      {
-        "name": "ollama/ollama",
-        "url": "https://github.com/ollama/ollama",
-        "desc": "Khởi động và chạy các mô hình AI như Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma.",
-        "stars": "171.2K+",
-        "verdict": "yes",
-        "reason": "AI utilities, models"
-      },
-      {
-        "name": "huggingface/transformers",
-        "url": "https://github.com/huggingface/transformers",
-        "desc": "Framework định nghĩa mô hình cho các mô hình học máy tiên tiến trong văn bản, thị giác, âm thanh và đa phương thức.",
-        "stars": "160.5K+",
-        "verdict": "yes",
-        "reason": "AI utilities, models"
-      },
-      {
-        "name": "langflow-ai/langflow",
-        "url": "https://github.com/langflow-ai/langflow",
-        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các tác nhân và quy trình làm việc được hỗ trợ bởi AI.",
-        "stars": "148.0K+",
-        "verdict": "yes",
-        "reason": "Agent automation, AI utilities"
-      },
-      {
-        "name": "langgenius/dify",
-        "url": "https://github.com/langgenius/dify",
-        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển quy trình làm việc tác nhân.",
-        "stars": "141.0K+",
-        "verdict": "yes",
-        "reason": "Agent automation"
       }
     ],
     "gamingNews": []
