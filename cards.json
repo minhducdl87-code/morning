@@ -11,15 +11,15 @@
         "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
         "stars": "378.7K+",
         "verdict": "yes",
-        "reason": "AI cá nhân, đa nền tảng"
+        "reason": "AI utilities, personal AI assistant"
       },
       {
         "name": "affaan-m/ECC",
         "url": "https://github.com/affaan-m/ECC",
-        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân cho Claude Code, Codex và các mô hình khác.",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân, tập trung vào Claude Code và các mô hình AI khác.",
         "stars": "215.5K+",
         "verdict": "yes",
-        "reason": "Tối ưu hóa tác nhân Claude"
+        "reason": "Claude tools, agent automation, AI utilities"
       },
       {
         "name": "NousResearch/hermes-agent",
@@ -27,7 +27,7 @@
         "desc": "Một tác nhân AI có khả năng học hỏi và phát triển cùng người dùng.",
         "stars": "193.5K+",
         "verdict": "yes",
-        "reason": "Tác nhân AI thông minh"
+        "reason": "Agent automation, AI utilities"
       },
       {
         "name": "n8n-io/n8n",
@@ -35,39 +35,39 @@
         "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp và hơn 400 tích hợp.",
         "stars": "192.5K+",
         "verdict": "yes",
-        "reason": "Tự động hóa workflow AI"
+        "reason": "Agent automation, AI capabilities"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Dự án tiên phong mang AI tự động đến gần hơn với mọi người, cung cấp công cụ để xây dựng và sử dụng AI.",
+        "stars": "184.9K+",
+        "verdict": "yes",
+        "reason": "Agent automation, AI utilities"
       },
       {
         "name": "ollama/ollama",
         "url": "https://github.com/ollama/ollama",
-        "desc": "Dễ dàng chạy các mô hình AI như Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek và nhiều mô hình khác.",
+        "desc": "Dễ dàng chạy các mô hình AI như Kimi-K2.6, GLM-5.1, MiniMax và nhiều mô hình khác.",
         "stars": "174.2K+",
         "verdict": "yes",
-        "reason": "Chạy mô hình AI cục bộ"
+        "reason": "AI utilities, model deployment"
       },
       {
-        "name": "langgenius/dify",
-        "url": "https://github.com/langgenius/dify",
-        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân.",
-        "stars": "145.2K+",
+        "name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "desc": "Framework định nghĩa mô hình cho các mô hình học máy tiên tiến trong văn bản, thị giác, âm thanh và đa phương thức.",
+        "stars": "161.6K+",
         "verdict": "yes",
-        "reason": "Phát triển tác nhân AI"
+        "reason": "AI utilities, model development"
       },
       {
         "name": "anthropics/claude-code",
         "url": "https://github.com/anthropics/claude-code",
-        "desc": "Công cụ lập trình dựa trên tác nhân Claude, giúp mã hóa nhanh hơn và hiểu codebase.",
+        "desc": "Công cụ mã hóa dựa trên tác nhân của Claude, giúp bạn viết code nhanh hơn và hiểu codebase.",
         "stars": "132.4K+",
         "verdict": "yes",
-        "reason": "Công cụ lập trình Claude"
-      },
-      {
-        "name": "langchain-ai/langchain",
-        "url": "https://github.com/langchain-ai/langchain",
-        "desc": "Nền tảng kỹ thuật tác nhân hàng đầu để xây dựng các ứng dụng AI.",
-        "stars": "139.3K+",
-        "verdict": "yes",
-        "reason": "Nền tảng kỹ thuật tác nhân"
+        "reason": "Claude tools, agent automation, AI utilities"
       }
     ],
     "gamingNews": []
