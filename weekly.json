@@ -1,5 +1,71 @@
 [
   {
+    "weekLabel": "Tuần 25/2026",
+    "fromDate": "2026-06-09",
+    "toDate": "2026-06-15",
+    "highlights": [
+      {
+        "title": "✨ openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân openclaw tiếp tục dẫn đầu với hơn 378K sao, hoạt động trên mọi hệ điều hành và nền tảng, mang đến trải nghiệm AI toàn diện cho người dùng.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/openclaw/openclaw"
+      },
+      {
+        "title": "🧠 affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân ECC của affaan-m liên tục được cập nhật, hỗ trợ Claude Code, Codex và các mô hình khác, tập trung vào kỹ năng, bộ nhớ và bảo mật.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/affaan-m/ECC"
+      },
+      {
+        "title": "🔥 n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc n8n-io/n8n duy trì sự phổ biến với khả năng AI tích hợp và hơn 400 tích hợp, giúp người dùng dễ dàng xây dựng các quy trình làm việc phức tạp.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "url": "https://github.com/n8n-io/n8n"
+      },
+      {
+        "title": "🧠 ollama/ollama",
+        "desc": "Ollama tiếp tục là lựa chọn hàng đầu để chạy các mô hình AI lớn như Kimi-K2.6, GLM-5.1, MiniMax ngay trên máy tính cá nhân, với sự tăng trưởng ổn định về số lượng sao.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/ollama/ollama"
+      },
+      {
+        "title": "✨ NousResearch/hermes-agent",
+        "desc": "Tác nhân AI Hermes-agent của NousResearch nổi bật với khả năng học hỏi và phát triển cùng người dùng, mang lại trải nghiệm cá nhân hóa và linh hoạt.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/NousResearch/hermes-agent"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Duy trì vị trí dẫn đầu với mức tăng trưởng sao ấn tượng, là trợ lý AI cá nhân toàn diện hoạt động trên mọi nền tảng.",
+        "stars": "378.7K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Tiếp tục tăng trưởng mạnh mẽ, cung cấp hệ thống tối ưu hóa hiệu suất cho các tác nhân AI hàng đầu như Claude Code và Codex.",
+        "stars": "215.5K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc mã nguồn mở với khả năng AI tích hợp và hơn 400 tích hợp, cho thấy sự ổn định và hữu ích cao.",
+        "stars": "192.5K+",
+        "verdict": "yes"
+      }
+    ],
+    "topGaming": []
+  },
+  {
     "weekLabel": "Tuần 24/2026",
     "fromDate": "2026-06-02",
     "toDate": "2026-06-08",
