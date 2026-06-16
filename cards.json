@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-06-17",
+    "dayLabel": "Thứ Tư",
+    "dateLabel": "17/06/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Claude Code là công cụ lập trình agentic tích hợp trong terminal, giúp bạn viết code nhanh hơn và quản lý Git.",
+        "stars": "132.8K+",
+        "verdict": "yes",
+        "reason": "Công cụ agentic trực tiếp từ Anthropic, hỗ trợ lập trình."
+      },
+      {
+        "name": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "desc": "Kho lưu trữ công khai các kỹ năng (skills) dành cho Agent, giúp mở rộng khả năng của các tác nhân AI.",
+        "stars": "151.7K+",
+        "verdict": "yes",
+        "reason": "Tập trung vào kỹ năng cho agent, liên quan trực tiếp đến Claude."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hiệu suất agent harness, phát triển kỹ năng, bản năng, bộ nhớ và bảo mật cho Claude Code và các nền tảng khác.",
+        "stars": "216.7K+",
+        "verdict": "yes",
+        "reason": "Tối ưu hóa hiệu suất cho các công cụ Claude và agent."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Một agent AI có khả năng học hỏi và phát triển cùng với người dùng, hỗ trợ các tác vụ đa dạng.",
+        "stars": "195.3K+",
+        "verdict": "yes",
+        "reason": "Agent AI đa năng, phù hợp với tự động hóa agent."
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc agentic, giúp xây dựng và triển khai ứng dụng AI.",
+        "stars": "145.5K+",
+        "verdict": "yes",
+        "reason": "Nền tảng phát triển workflow agentic."
+      },
+      {
+        "name": "langflow-ai/langflow",
+        "url": "https://github.com/langflow-ai/langflow",
+        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các agent và quy trình làm việc được hỗ trợ bởi AI.",
+        "stars": "149.8K+",
+        "verdict": "yes",
+        "reason": "Công cụ xây dựng và triển khai agent AI."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Giúp bạn dễ dàng chạy các mô hình AI như Kimi-K2.6, GLM-5.1, MiniMax và nhiều mô hình khác trên máy tính của mình.",
+        "stars": "174.3K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI để chạy các mô hình ngôn ngữ lớn."
+      },
+      {
+        "name": "open-webui/open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "desc": "Giao diện AI thân thiện với người dùng, hỗ trợ Ollama, OpenAI API và nhiều nền tảng khác.",
+        "stars": "141.9K+",
+        "verdict": "yes",
+        "reason": "Giao diện người dùng cho các tiện ích AI."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-06-16",
     "dayLabel": "Thứ Ba",
     "dateLabel": "16/06/2026",
@@ -2064,79 +2137,6 @@
         "stars": "137.0K+",
         "verdict": "yes",
         "reason": "Công cụ Claude, tự động hóa tác nhân."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-18",
-    "dayLabel": "Thứ Hai",
-    "dateLabel": "18/05/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "openclaw/openclaw",
-        "url": "https://github.com/openclaw/openclaw",
-        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
-        "stars": "372.7K+",
-        "verdict": "yes",
-        "reason": "Trợ lý AI cá nhân, tiện ích AI."
-      },
-      {
-        "name": "n8n-io/n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
-        "stars": "188.4K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa, tích hợp AI, tiện ích AI."
-      },
-      {
-        "name": "affaan-m/everything-claude-code",
-        "url": "https://github.com/affaan-m/everything-claude-code",
-        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân cho Claude Code và các công cụ AI khác, tập trung vào kỹ năng, bộ nhớ và bảo mật.",
-        "stars": "185.6K+",
-        "verdict": "yes",
-        "reason": "Công cụ Claude, tự động hóa tác nhân."
-      },
-      {
-        "name": "Significant-Gravitas/AutoGPT",
-        "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "Dự án hướng tới việc cung cấp AI dễ tiếp cận cho mọi người, tập trung vào các công cụ để người dùng xây dựng và sử dụng AI.",
-        "stars": "184.4K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI, tự động hóa tác nhân."
-      },
-      {
-        "name": "ollama/ollama",
-        "url": "https://github.com/ollama/ollama",
-        "desc": "Giúp người dùng dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5, MiniMax và nhiều mô hình khác.",
-        "stars": "171.6K+",
-        "verdict": "yes",
-        "reason": "Mô hình AI, tiện ích AI."
-      },
-      {
-        "name": "huggingface/transformers",
-        "url": "https://github.com/huggingface/transformers",
-        "desc": "Framework định nghĩa mô hình cho các mô hình học máy tiên tiến trong văn bản, thị giác, âm thanh và đa phương thức.",
-        "stars": "160.7K+",
-        "verdict": "yes",
-        "reason": "Mô hình AI, tiện ích AI."
-      },
-      {
-        "name": "NousResearch/hermes-agent",
-        "url": "https://github.com/NousResearch/hermes-agent",
-        "desc": "Một tác nhân AI có khả năng phát triển cùng với người dùng.",
-        "stars": "154.7K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa tác nhân."
-      },
-      {
-        "name": "langflow-ai/langflow",
-        "url": "https://github.com/langflow-ai/langflow",
-        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các tác nhân và quy trình làm việc được hỗ trợ bởi AI.",
-        "stars": "148.4K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa tác nhân, tiện ích AI."
       }
     ],
     "gamingNews": []
