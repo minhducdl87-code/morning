@@ -8,66 +8,66 @@
       {
         "name": "openclaw/openclaw",
         "url": "https://github.com/openclaw/openclaw",
-        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng, được thiết kế để dễ dàng sử dụng.",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
         "stars": "379.8K+",
         "verdict": "yes",
-        "reason": "Trợ lý AI cá nhân, đa nền tảng, tiện ích AI."
+        "reason": "Trợ lý AI cá nhân đa nền tảng, phù hợp với tiện ích AI."
       },
       {
         "name": "obra/superpowers",
         "url": "https://github.com/obra/superpowers",
-        "desc": "Một framework kỹ năng tác nhân và phương pháp phát triển phần mềm hiệu quả, tập trung vào khả năng của tác nhân AI.",
+        "desc": "Một framework kỹ năng tác nhân và phương pháp phát triển phần mềm hiệu quả.",
         "stars": "235.0K+",
         "verdict": "yes",
-        "reason": "Framework kỹ năng tác nhân, phát triển phần mềm AI."
+        "reason": "Framework kỹ năng tác nhân và phương pháp phát triển phần mềm."
       },
       {
         "name": "affaan-m/ECC",
         "url": "https://github.com/affaan-m/ECC",
-        "desc": "Hệ thống tối ưu hiệu suất cho các tác nhân AI như Claude Code, tập trung vào kỹ năng, bản năng, bộ nhớ và bảo mật.",
+        "desc": "Hệ thống tối ưu hiệu suất cho các tác nhân AI, đặc biệt liên quan đến Claude Code.",
         "stars": "219.3K+",
         "verdict": "yes",
-        "reason": "Tối ưu hiệu suất tác nhân AI, liên quan trực tiếp đến Claude Code."
+        "reason": "Hệ thống tối ưu hiệu suất tác nhân AI, liên quan đến Claude Code."
       },
       {
         "name": "NousResearch/hermes-agent",
         "url": "https://github.com/NousResearch/hermes-agent",
-        "desc": "Một tác nhân AI có khả năng học hỏi và phát triển cùng người dùng, mang lại trải nghiệm cá nhân hóa.",
+        "desc": "Một tác nhân AI có khả năng học hỏi và phát triển cùng người dùng.",
         "stars": "199.0K+",
         "verdict": "yes",
-        "reason": "Tác nhân AI có khả năng học hỏi, tự động hóa tác nhân."
+        "reason": "Tác nhân AI có khả năng học hỏi và phát triển."
       },
       {
         "name": "n8n-io/n8n",
         "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ xây dựng trực quan và mã tùy chỉnh.",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
         "stars": "193.5K+",
         "verdict": "yes",
-        "reason": "Tự động hóa quy trình làm việc, tích hợp AI."
+        "reason": "Nền tảng tự động hóa quy trình làm việc với khả năng AI."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Dự án tiên phong về tác nhân AI tự động, giúp AI dễ tiếp cận hơn cho mọi người.",
+        "stars": "185.1K+",
+        "verdict": "yes",
+        "reason": "Dự án tiên phong về tác nhân AI tự động."
       },
       {
         "name": "ollama/ollama",
         "url": "https://github.com/ollama/ollama",
-        "desc": "Giúp người dùng dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.6, GLM-5.1, MiniMax và nhiều mô hình khác.",
+        "desc": "Giúp người dùng dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.6, GLM-5.1, DeepSeek và nhiều mô hình khác.",
         "stars": "174.7K+",
         "verdict": "yes",
-        "reason": "Tiện ích AI, hỗ trợ chạy nhiều mô hình LLM."
+        "reason": "Công cụ chạy các mô hình AI cục bộ, tiện ích AI."
       },
       {
-        "name": "langgenius/dify",
-        "url": "https://github.com/langgenius/dify",
-        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân AI, giúp triển khai nhanh chóng.",
-        "stars": "146.1K+",
+        "name": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "desc": "Nền tảng chia sẻ và khám phá các prompt hiệu quả cho AI, hữu ích cho việc tương tác với LLM.",
+        "stars": "164.0K+",
         "verdict": "yes",
-        "reason": "Nền tảng phát triển quy trình làm việc tác nhân AI."
-      },
-      {
-        "name": "anthropics/claude-code",
-        "url": "https://github.com/anthropics/claude-code",
-        "desc": "Công cụ lập trình dựa trên tác nhân Claude, giúp tăng tốc độ viết mã, giải thích code và quản lý Git ngay trong terminal.",
-        "stars": "133.6K+",
-        "verdict": "yes",
-        "reason": "Công cụ Claude, công cụ lập trình dựa trên tác nhân."
+        "reason": "Nền tảng chia sẻ prompt cho AI, tiện ích AI."
       }
     ],
     "gamingNews": []
