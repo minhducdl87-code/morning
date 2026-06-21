@@ -1,5 +1,71 @@
 [
   {
+    "weekLabel": "Tuần 26/2026",
+    "fromDate": "2026-06-16",
+    "toDate": "2026-06-22",
+    "highlights": [
+      {
+        "title": "✨ openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân OpenClaw tiếp tục dẫn đầu với hơn 379.8K sao, khẳng định vị thế là giải pháp AI đa nền tảng, dễ sử dụng nhất cho người dùng cá nhân.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "url": "https://github.com/openclaw/openclaw"
+      },
+      {
+        "title": "🧠 obra/superpowers",
+        "desc": "Superpowers của Obra nổi bật như một framework kỹ năng tác nhân và phương pháp phát triển phần mềm hiệu quả, tập trung vào khả năng của AI, đạt 235.0K sao.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/obra/superpowers"
+      },
+      {
+        "title": "✨ affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hiệu suất ECC tiếp tục thu hút sự chú ý với 219.3K sao, tập trung vào kỹ năng, bản năng, bộ nhớ và bảo mật cho các tác nhân AI như Claude Code.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/affaan-m/ECC"
+      },
+      {
+        "title": "🧠 NousResearch/hermes-agent",
+        "desc": "Hermes-agent của NousResearch đạt 199.0K sao, là một tác nhân AI có khả năng học hỏi và phát triển cùng người dùng, mang lại trải nghiệm cá nhân hóa.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/NousResearch/hermes-agent"
+      },
+      {
+        "title": "✨ n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc n8n với khả năng AI tích hợp tiếp tục tăng trưởng, đạt 193.5K sao, hỗ trợ xây dựng trực quan và mã tùy chỉnh.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/n8n-io/n8n"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Duy trì vị trí dẫn đầu với hơn 379.8K sao, là trợ lý AI cá nhân đa nền tảng được ưa chuộng.",
+        "stars": "379.8K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "desc": "Tăng trưởng ổn định, đạt 235.0K sao, nổi bật với framework kỹ năng tác nhân và phương pháp phát triển phần mềm hiệu quả.",
+        "stars": "235.0K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Tiếp tục tăng sao, đạt 219.3K, là hệ thống tối ưu hiệu suất quan trọng cho các tác nhân AI như Claude Code.",
+        "stars": "219.3K+",
+        "verdict": "yes"
+      }
+    ],
+    "topGaming": []
+  },
+  {
     "weekLabel": "Tuần 25/2026",
     "fromDate": "2026-06-09",
     "toDate": "2026-06-15",
