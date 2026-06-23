@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-06-24",
+    "dayLabel": "Thứ Tư",
+    "dateLabel": "24/06/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "380.1K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI đa nền tảng."
+      },
+      {
+        "name": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "desc": "Một framework kỹ năng agentic và phương pháp phát triển phần mềm hiệu quả.",
+        "stars": "236.9K+",
+        "verdict": "yes",
+        "reason": "Framework kỹ năng agentic."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất agent harness cho Claude Code và các mô hình khác.",
+        "stars": "220.5K+",
+        "verdict": "yes",
+        "reason": "Tối ưu hóa agent cho Claude."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Một agent có khả năng học hỏi và phát triển cùng người dùng.",
+        "stars": "200.9K+",
+        "verdict": "yes",
+        "reason": "Agent AI phát triển."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp và hơn 400 tích hợp.",
+        "stars": "193.8K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa workflow với AI."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Giúp bạn dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.6, GLM-5.1 và Gemma.",
+        "stars": "174.8K+",
+        "verdict": "yes",
+        "reason": "Công cụ chạy LLM."
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc agentic.",
+        "stars": "146.3K+",
+        "verdict": "yes",
+        "reason": "Nền tảng phát triển agentic."
+      },
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Claude Code là công cụ lập trình agentic giúp bạn viết code nhanh hơn và hiểu codebase.",
+        "stars": "134.0K+",
+        "verdict": "yes",
+        "reason": "Công cụ lập trình Claude."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-06-23",
     "dayLabel": "Thứ Ba",
     "dateLabel": "23/06/2026",
@@ -2080,63 +2153,6 @@
         "stars": "137.6K+",
         "verdict": "yes",
         "reason": "Nền tảng kỹ thuật tác nhân, phù hợp agent automation."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-25",
-    "dayLabel": "Thứ Hai",
-    "dateLabel": "25/05/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "n8n-io/n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
-        "stars": "189.5K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa tác nhân, tiện ích AI."
-      },
-      {
-        "name": "Significant-Gravitas/AutoGPT",
-        "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "Dự án tiên phong mang AI dễ tiếp cận đến mọi người, cung cấp công cụ để xây dựng và sử dụng AI.",
-        "stars": "184.5K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI, tự động hóa tác nhân."
-      },
-      {
-        "name": "langgenius/dify",
-        "url": "https://github.com/langgenius/dify",
-        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân (agentic workflow).",
-        "stars": "142.5K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa tác nhân, tiện ích AI."
-      },
-      {
-        "name": "open-webui/open-webui",
-        "url": "https://github.com/open-webui/open-webui",
-        "desc": "Giao diện AI thân thiện với người dùng, hỗ trợ Ollama, OpenAI API và nhiều mô hình khác.",
-        "stars": "138.5K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI, giao diện người dùng."
-      },
-      {
-        "name": "ollama/ollama",
-        "url": "https://github.com/ollama/ollama",
-        "desc": "Dễ dàng khởi chạy và sử dụng các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5, Gemma và nhiều mô hình khác.",
-        "stars": "172.2K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI, máy chủ mô hình."
-      },
-      {
-        "name": "langchain-ai/langchain",
-        "url": "https://github.com/langchain-ai/langchain",
-        "desc": "Nền tảng kỹ thuật tác nhân hàng đầu, giúp xây dựng các ứng dụng mạnh mẽ với LLM.",
-        "stars": "137.5K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa tác nhân, tiện ích AI."
       }
     ],
     "gamingNews": []
