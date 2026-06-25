@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-06-26",
+    "dayLabel": "Thứ Sáu",
+    "dateLabel": "26/06/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "380.5K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI cá nhân, tiện ích AI."
+      },
+      {
+        "name": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "desc": "Một framework kỹ năng agentic và phương pháp phát triển phần mềm hiệu quả.",
+        "stars": "238.6K+",
+        "verdict": "yes",
+        "reason": "Framework kỹ năng agentic, tự động hóa AI."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hiệu suất cho agent, tập trung vào Claude Code và các mô hình khác.",
+        "stars": "221.7K+",
+        "verdict": "yes",
+        "reason": "Tối ưu hóa công cụ Claude, tự động hóa agent."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Giúp bạn dễ dàng chạy các mô hình AI như Kimi-K2.6, GLM-5.1, Gemma và nhiều mô hình khác.",
+        "stars": "174.9K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI để chạy các mô hình."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
+        "stars": "194.1K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa quy trình làm việc, khả năng AI."
+      },
+      {
+        "name": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc agentic.",
+        "stars": "146.6K+",
+        "verdict": "yes",
+        "reason": "Phát triển quy trình agentic, tiện ích AI."
+      },
+      {
+        "name": "langchain-ai/langchain",
+        "url": "https://github.com/langchain-ai/langchain",
+        "desc": "Nền tảng kỹ thuật agent hàng đầu để xây dựng các ứng dụng AI.",
+        "stars": "140.2K+",
+        "verdict": "yes",
+        "reason": "Nền tảng kỹ thuật agent, tiện ích AI."
+      },
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Công cụ mã hóa agentic của Claude, giúp bạn viết code nhanh hơn và hiểu codebase.",
+        "stars": "134.4K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tự động hóa agent."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-06-25",
     "dayLabel": "Thứ Năm",
     "dateLabel": "25/06/2026",
@@ -2080,79 +2153,6 @@
         "stars": "184.6K+",
         "verdict": "yes",
         "reason": "Dự án tiên phong về agent AI tự động."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-27",
-    "dayLabel": "Thứ Tư",
-    "dateLabel": "27/05/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "affaan-m/ECC",
-        "url": "https://github.com/affaan-m/ECC",
-        "desc": "Hệ thống tối ưu hóa hiệu suất cho các tác nhân AI như Claude Code, tập trung vào kỹ năng, bản năng, bộ nhớ và bảo mật.",
-        "stars": "194.3K+",
-        "verdict": "yes",
-        "reason": "Tối ưu hóa hiệu suất tác nhân AI, liên quan trực tiếp Claude Code."
-      },
-      {
-        "name": "n8n-io/n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa quy trình làm việc mã nguồn mở với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
-        "stars": "189.8K+",
-        "verdict": "yes",
-        "reason": "Nền tảng tự động hóa quy trình với AI, phù hợp tự động hóa tác nhân."
-      },
-      {
-        "name": "Significant-Gravitas/AutoGPT",
-        "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "AutoGPT là dự án tiên phong mang AI dễ tiếp cận đến mọi người, cung cấp công cụ để xây dựng và sử dụng AI.",
-        "stars": "184.6K+",
-        "verdict": "yes",
-        "reason": "Một trong những dự án tác nhân AI tự động nổi bật nhất."
-      },
-      {
-        "name": "NousResearch/hermes-agent",
-        "url": "https://github.com/NousResearch/hermes-agent",
-        "desc": "Một tác nhân AI được thiết kế để phát triển và học hỏi cùng với người dùng.",
-        "stars": "168.6K+",
-        "verdict": "yes",
-        "reason": "Trực tiếp là một tác nhân AI."
-      },
-      {
-        "name": "langgenius/dify",
-        "url": "https://github.com/langgenius/dify",
-        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân AI.",
-        "stars": "142.7K+",
-        "verdict": "yes",
-        "reason": "Nền tảng phát triển quy trình tác nhân AI."
-      },
-      {
-        "name": "langflow-ai/langflow",
-        "url": "https://github.com/langflow-ai/langflow",
-        "desc": "Công cụ mạnh mẽ để xây dựng và triển khai các tác nhân và quy trình làm việc được hỗ trợ bởi AI.",
-        "stars": "148.8K+",
-        "verdict": "yes",
-        "reason": "Công cụ xây dựng và triển khai tác nhân AI."
-      },
-      {
-        "name": "anthropics/claude-code",
-        "url": "https://github.com/anthropics/claude-code",
-        "desc": "Claude Code là công cụ lập trình dạng tác nhân hoạt động trong terminal, giúp tăng tốc độ code và quản lý Git.",
-        "stars": "126.7K+",
-        "verdict": "yes",
-        "reason": "Công cụ lập trình dạng tác nhân của Anthropic, liên quan trực tiếp Claude."
-      },
-      {
-        "name": "ollama/ollama",
-        "url": "https://github.com/ollama/ollama",
-        "desc": "Giúp bạn dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5, Gemma và nhiều mô hình khác trên máy cục bộ.",
-        "stars": "172.4K+",
-        "verdict": "yes",
-        "reason": "Công cụ tiện ích AI để chạy các mô hình LLM cục bộ."
       }
     ],
     "gamingNews": []
