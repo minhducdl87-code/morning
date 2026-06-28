@@ -1,5 +1,71 @@
 [
   {
+    "weekLabel": "Tuần 27/2026",
+    "fromDate": "2026-06-23",
+    "toDate": "2026-06-29",
+    "highlights": [
+      {
+        "title": "🔥 openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân OpenClaw tiếp tục dẫn đầu với hơn 380K sao, khẳng định vị thế là giải pháp AI toàn diện hoạt động trên mọi hệ điều hành và nền tảng, mang lại trải nghiệm AI liền mạch cho người dùng.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "url": "https://github.com/openclaw/openclaw"
+      },
+      {
+        "title": "✨ obra/superpowers",
+        "desc": "Framework kỹ năng tác nhân Superpowers tiếp tục phát triển mạnh mẽ, đạt hơn 240K sao. Đây là một phương pháp hiệu quả để phát triển phần mềm và các tác nhân AI, hỗ trợ cộng đồng xây dựng các ứng dụng thông minh.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/obra/superpowers"
+      },
+      {
+        "title": "🧠 affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất ECC của affaan-m đã vượt mốc 223K sao, tập trung vào việc cải thiện kỹ năng, trí nhớ và bảo mật cho các tác nhân AI như Claude Code, giúp các mô hình hoạt động hiệu quả hơn.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/affaan-m/ECC"
+      },
+      {
+        "title": "✨ NousResearch/hermes-agent",
+        "desc": "Hermes-agent của NousResearch đạt hơn 204K sao, nổi bật với khả năng học hỏi và phát triển cùng người dùng. Đây là một tác nhân AI linh hoạt, thích ứng với nhu cầu cá nhân và cải thiện theo thời gian.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/NousResearch/hermes-agent"
+      },
+      {
+        "title": "🧠 ollama/ollama",
+        "desc": "Ollama tiếp tục là công cụ phổ biến để chạy các mô hình AI cục bộ, đạt hơn 175K sao. Nó giúp người dùng dễ dàng triển khai các mô hình như Kimi-K2.6, GLM-5.1 và Gemma, mở rộng khả năng tiếp cận AI.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/ollama/ollama"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Duy trì vị trí dẫn đầu với hơn 380K sao, là trợ lý AI cá nhân toàn diện hoạt động trên mọi nền tảng.",
+        "stars": "380.7K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "desc": "Tiếp tục tăng trưởng mạnh mẽ, đạt hơn 240K sao, là framework kỹ năng tác nhân và phương pháp phát triển phần mềm hiệu quả.",
+        "stars": "240.6K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Vượt mốc 223K sao, là hệ thống tối ưu hóa hiệu suất tác nhân, đặc biệt cho Claude Code và các mô hình AI khác.",
+        "stars": "223.0K+",
+        "verdict": "yes"
+      }
+    ],
+    "topGaming": []
+  },
+  {
     "weekLabel": "Tuần 26/2026",
     "fromDate": "2026-06-16",
     "toDate": "2026-06-22",
