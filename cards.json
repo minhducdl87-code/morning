@@ -6,12 +6,12 @@
     "news": [],
     "repos": [
       {
-        "name": "affaan-m/ECC",
-        "url": "https://github.com/affaan-m/ECC",
-        "desc": "Hệ thống tối ưu hóa hiệu suất cho các tác nhân AI, đặc biệt là Claude Code.",
-        "stars": "223.0K+",
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "380.9K+",
         "verdict": "yes",
-        "reason": "Liên quan trực tiếp đến Claude Code và tối ưu hóa tác nhân AI."
+        "reason": "Trợ lý AI cá nhân đa nền tảng, phù hợp với tiện ích AI."
       },
       {
         "name": "obra/superpowers",
@@ -19,47 +19,55 @@
         "desc": "Một framework kỹ năng tác nhân và phương pháp phát triển phần mềm hiệu quả.",
         "stars": "240.6K+",
         "verdict": "yes",
-        "reason": "Framework kỹ năng tác nhân, phù hợp với ưu tiên agent automation."
+        "reason": "Framework kỹ năng tác nhân và phương pháp phát triển phần mềm, liên quan đến tự động hóa tác nhân."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hiệu suất cho các tác nhân AI, đặc biệt liên quan đến Claude Code.",
+        "stars": "223.0K+",
+        "verdict": "yes",
+        "reason": "Tối ưu hóa hiệu suất tác nhân AI và công cụ Claude."
       },
       {
         "name": "NousResearch/hermes-agent",
         "url": "https://github.com/NousResearch/hermes-agent",
-        "desc": "Tác nhân AI có khả năng học hỏi và phát triển cùng người dùng.",
+        "desc": "Một tác nhân AI có khả năng học hỏi và phát triển cùng người dùng.",
         "stars": "204.9K+",
         "verdict": "yes",
-        "reason": "Tác nhân AI, phù hợp với ưu tiên agent automation và AI utilities."
+        "reason": "Tác nhân AI có khả năng phát triển, phù hợp với tự động hóa tác nhân."
       },
       {
         "name": "n8n-io/n8n",
         "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp.",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ 400+ tích hợp.",
         "stars": "194.4K+",
         "verdict": "yes",
-        "reason": "Tự động hóa quy trình làm việc với AI, phù hợp với ưu tiên agent automation."
+        "reason": "Nền tảng tự động hóa quy trình làm việc với AI tích hợp."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Dự án tiên phong về tác nhân AI tự động, giúp AI dễ tiếp cận hơn cho mọi người.",
+        "stars": "185.2K+",
+        "verdict": "yes",
+        "reason": "Dự án tác nhân AI tự động nổi tiếng, tiện ích AI."
       },
       {
         "name": "ollama/ollama",
         "url": "https://github.com/ollama/ollama",
-        "desc": "Giúp chạy các mô hình AI như Kimi-K2.6, GLM-5.1, Gemma một cách dễ dàng.",
+        "desc": "Giúp người dùng dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.6, GLM-5.1, Gemma và nhiều mô hình khác.",
         "stars": "175.1K+",
         "verdict": "yes",
-        "reason": "Hỗ trợ chạy nhiều mô hình AI, phù hợp với ưu tiên AI utilities."
-      },
-      {
-        "name": "anthropics/claude-code",
-        "url": "https://github.com/anthropics/claude-code",
-        "desc": "Công cụ lập trình dựa trên tác nhân của Claude, giúp tăng tốc độ viết code và quản lý Git.",
-        "stars": "134.8K+",
-        "verdict": "yes",
-        "reason": "Công cụ của Claude, liên quan trực tiếp đến Claude tools và agent automation."
+        "reason": "Công cụ chạy các mô hình ngôn ngữ lớn, tiện ích AI."
       },
       {
         "name": "langgenius/dify",
         "url": "https://github.com/langgenius/dify",
-        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển quy trình làm việc tác nhân.",
+        "desc": "Nền tảng sẵn sàng sản xuất để phát triển các quy trình làm việc dựa trên tác nhân AI.",
         "stars": "146.9K+",
         "verdict": "yes",
-        "reason": "Nền tảng phát triển quy trình tác nhân, phù hợp với ưu tiên agent automation."
+        "reason": "Nền tảng phát triển quy trình làm việc tác nhân AI."
       }
     ],
     "gamingNews": []
