@@ -8,66 +8,66 @@
       {
         "name": "openclaw/openclaw",
         "url": "https://github.com/openclaw/openclaw",
-        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng, mang lại trải nghiệm AI toàn diện.",
         "stars": "381.3K+",
         "verdict": "yes",
-        "reason": "Trợ lý AI cá nhân đa nền tảng, rất hữu ích."
+        "reason": "Trợ lý AI cá nhân đa nền tảng, tiện ích AI."
       },
       {
         "name": "obra/superpowers",
         "url": "https://github.com/obra/superpowers",
-        "desc": "Một framework kỹ năng tác nhân và phương pháp phát triển phần mềm hiệu quả.",
+        "desc": "Một framework kỹ năng agentic và phương pháp phát triển phần mềm hiệu quả.",
         "stars": "243.4K+",
         "verdict": "yes",
-        "reason": "Framework kỹ năng tác nhân quan trọng cho phát triển AI."
+        "reason": "Framework kỹ năng agentic, tự động hóa AI."
       },
       {
         "name": "affaan-m/ECC",
         "url": "https://github.com/affaan-m/ECC",
-        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân cho Claude Code, Codex và các mô hình khác.",
+        "desc": "Hệ thống tối ưu hóa hiệu suất agent harness, tập trung vào kỹ năng, bộ nhớ và bảo mật cho các công cụ Claude Code và AI khác.",
         "stars": "224.6K+",
         "verdict": "yes",
-        "reason": "Tối ưu hóa hiệu suất tác nhân, đặc biệt cho các công cụ Claude."
+        "reason": "Tối ưu hóa hiệu suất agent, công cụ Claude."
       },
       {
         "name": "NousResearch/hermes-agent",
         "url": "https://github.com/NousResearch/hermes-agent",
-        "desc": "Một tác nhân AI có khả năng học hỏi và phát triển cùng người dùng.",
+        "desc": "Một agent AI có khả năng học hỏi và phát triển cùng người dùng.",
         "stars": "207.3K+",
         "verdict": "yes",
-        "reason": "Tác nhân AI có khả năng tự học và phát triển."
+        "reason": "Agent AI phát triển, tự động hóa AI."
       },
       {
         "name": "n8n-io/n8n",
         "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa quy trình làm việc mã nguồn mở với khả năng AI tích hợp.",
+        "desc": "Nền tảng tự động hóa quy trình làm việc mã nguồn mở với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
         "stars": "194.8K+",
         "verdict": "yes",
-        "reason": "Nền tảng tự động hóa mạnh mẽ với khả năng AI."
+        "reason": "Tự động hóa quy trình làm việc với AI, tiện ích AI."
       },
       {
         "name": "Significant-Gravitas/AutoGPT",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "Dự án tiên phong mang AI dễ tiếp cận đến mọi người để sử dụng và xây dựng.",
+        "desc": "Dự án tiên phong mang AI dễ tiếp cận đến mọi người, cung cấp công cụ để xây dựng và sử dụng AI.",
         "stars": "185.2K+",
         "verdict": "yes",
-        "reason": "Công cụ AI tự động hóa nổi bật và phổ biến."
+        "reason": "Tự động hóa agent, tiện ích AI."
       },
       {
         "name": "ollama/ollama",
         "url": "https://github.com/ollama/ollama",
-        "desc": "Giúp bạn dễ dàng chạy các mô hình AI như Kimi-K2.6, GLM-5.1, MiniMax và nhiều mô hình khác.",
+        "desc": "Giúp bạn dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.6, GLM-5.1 và nhiều mô hình khác.",
         "stars": "175.2K+",
         "verdict": "yes",
-        "reason": "Công cụ quan trọng để chạy và quản lý các mô hình AI cục bộ."
+        "reason": "Tiện ích AI, chạy các mô hình LLM."
       },
       {
-        "name": "anthropics/skills",
-        "url": "https://github.com/anthropics/skills",
-        "desc": "Kho lưu trữ công khai các kỹ năng dành cho tác nhân AI từ Anthropics.",
-        "stars": "157.3K+",
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Công cụ lập trình agentic của Claude, hoạt động trong terminal để giúp bạn viết code nhanh hơn, giải thích mã và quản lý Git.",
+        "stars": "135.3K+",
         "verdict": "yes",
-        "reason": "Kho kỹ năng tác nhân từ nhà phát triển Claude (Anthropics)."
+        "reason": "Công cụ Claude, tự động hóa agent, tiện ích AI."
       }
     ],
     "gamingNews": []
