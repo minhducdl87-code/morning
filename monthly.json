@@ -1,5 +1,78 @@
 [
   {
+    "monthLabel": "Tháng 6/2026",
+    "fromDate": "2026-06-01",
+    "toDate": "2026-06-30",
+    "topNews": [],
+    "topRepos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân của bạn, hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "381.0K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI cá nhân, tiện ích AI."
+      },
+      {
+        "name": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "desc": "Một framework kỹ năng agentic và phương pháp phát triển phần mềm hiệu quả.",
+        "stars": "241.5K+",
+        "verdict": "yes",
+        "reason": "Framework kỹ năng agentic, tự động hóa AI."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất agent harness cho Claude Code, Codex và hơn thế nữa.",
+        "stars": "223.5K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tự động hóa agent."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Agent có khả năng phát triển cùng bạn.",
+        "stars": "205.7K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa agent, tiện ích AI."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa workflow mã nguồn mở với khả năng AI tích hợp.",
+        "stars": "194.5K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa workflow, khả năng AI."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Tầm nhìn về AI dễ tiếp cận cho mọi người, để sử dụng và xây dựng.",
+        "stars": "185.2K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, tự động hóa agent."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Dễ dàng chạy các mô hình như Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma.",
+        "stars": "175.2K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, hỗ trợ nhiều mô hình."
+      },
+      {
+        "name": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "desc": "Nền tảng chia sẻ và khám phá các prompt hiệu quả cho AI, hữu ích cho việc tương tác với LLM.",
+        "stars": "164.0K+",
+        "verdict": "yes",
+        "reason": "Nền tảng chia sẻ prompt cho AI, tiện ích AI."
+      }
+    ],
+    "topGaming": []
+  },
+  {
     "monthLabel": "Tháng 5/2026",
     "fromDate": "2026-05-01",
     "toDate": "2026-05-31",
