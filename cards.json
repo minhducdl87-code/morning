@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-07-03",
+    "dayLabel": "Thứ Sáu",
+    "dateLabel": "03/07/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "381.5K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI cá nhân đa nền tảng, rất hữu ích."
+      },
+      {
+        "name": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "desc": "Một framework kỹ năng tác nhân (agentic skills) và phương pháp phát triển phần mềm hiệu quả.",
+        "stars": "244.4K+",
+        "verdict": "yes",
+        "reason": "Framework kỹ năng tác nhân và phương pháp phát triển phần mềm."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất cho tác nhân, tập trung vào Claude Code và các công cụ AI khác.",
+        "stars": "225.2K+",
+        "verdict": "yes",
+        "reason": "Tối ưu hóa hiệu suất tác nhân, liên quan đến Claude Code."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Một tác nhân AI có khả năng phát triển và học hỏi cùng người dùng.",
+        "stars": "208.0K+",
+        "verdict": "yes",
+        "reason": "Tác nhân AI có khả năng phát triển, phù hợp với tự động hóa tác nhân."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
+        "stars": "194.9K+",
+        "verdict": "yes",
+        "reason": "Nền tảng tự động hóa quy trình làm việc với AI, rất hữu ích."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Giúp bạn dễ dàng chạy các mô hình AI như Kimi-K2.6, GLM-5.1, MiniMax và nhiều mô hình khác.",
+        "stars": "175.3K+",
+        "verdict": "yes",
+        "reason": "Công cụ tiện ích để chạy các mô hình AI cục bộ."
+      },
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Công cụ lập trình tác nhân (agentic coding) của Claude, giúp bạn viết code nhanh hơn và hiểu codebase.",
+        "stars": "135.5K+",
+        "verdict": "yes",
+        "reason": "Công cụ lập trình tác nhân của Claude, rất phù hợp với tiêu chí."
+      },
+      {
+        "name": "langchain-ai/langchain",
+        "url": "https://github.com/langchain-ai/langchain",
+        "desc": "Nền tảng kỹ thuật tác nhân (agent engineering) hàng đầu để xây dựng các ứng dụng AI.",
+        "stars": "140.8K+",
+        "verdict": "yes",
+        "reason": "Nền tảng kỹ thuật tác nhân, rất quan trọng trong phát triển AI."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-07-02",
     "dayLabel": "Thứ Năm",
     "dateLabel": "02/07/2026",
@@ -2072,79 +2145,6 @@
         "stars": "129.8K+",
         "verdict": "yes",
         "reason": "Claude tools, agentic coding"
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-06-03",
-    "dayLabel": "Thứ Tư",
-    "dateLabel": "03/06/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "openclaw/openclaw",
-        "url": "https://github.com/openclaw/openclaw",
-        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng, giúp bạn tự động hóa công việc.",
-        "stars": "376.3K+",
-        "verdict": "yes",
-        "reason": "AI assistant, highest stars, relevant to AI utilities/agent automation."
-      },
-      {
-        "name": "affaan-m/ECC",
-        "url": "https://github.com/affaan-m/ECC",
-        "desc": "Hệ thống tối ưu hiệu suất cho các tác nhân AI như Claude Code, Codex, Opencode, tập trung vào kỹ năng và bảo mật.",
-        "stars": "203.9K+",
-        "verdict": "yes",
-        "reason": "Claude tools, agent automation, AI utilities."
-      },
-      {
-        "name": "n8n-io/n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
-        "stars": "190.8K+",
-        "verdict": "yes",
-        "reason": "Workflow automation with AI, highly relevant."
-      },
-      {
-        "name": "Significant-Gravitas/AutoGPT",
-        "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "Dự án cung cấp công cụ AI tự động hóa, giúp mọi người dễ dàng sử dụng và phát triển AI.",
-        "stars": "184.7K+",
-        "verdict": "yes",
-        "reason": "Accessible AI, agent automation, high stars."
-      },
-      {
-        "name": "ollama/ollama",
-        "url": "https://github.com/ollama/ollama",
-        "desc": "Giúp bạn dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.5, GLM-5, Gemma và nhiều mô hình khác.",
-        "stars": "173.0K+",
-        "verdict": "yes",
-        "reason": "AI utilities for running models, very popular."
-      },
-      {
-        "name": "NousResearch/hermes-agent",
-        "url": "https://github.com/NousResearch/hermes-agent",
-        "desc": "Một tác nhân AI được thiết kế để phát triển và học hỏi cùng với người dùng.",
-        "stars": "177.3K+",
-        "verdict": "yes",
-        "reason": "Agent automation, AI utilities."
-      },
-      {
-        "name": "langgenius/dify",
-        "url": "https://github.com/langgenius/dify",
-        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân AI.",
-        "stars": "143.6K+",
-        "verdict": "yes",
-        "reason": "Agentic workflow development, highly relevant."
-      },
-      {
-        "name": "anthropics/claude-code",
-        "url": "https://github.com/anthropics/claude-code",
-        "desc": "Công cụ lập trình dựa trên tác nhân Claude, giúp bạn viết mã nhanh hơn bằng cách tự động hóa tác vụ và giải thích code.",
-        "stars": "129.6K+",
-        "verdict": "yes",
-        "reason": "Claude tools, agentic coding, highly relevant."
       }
     ],
     "gamingNews": []
