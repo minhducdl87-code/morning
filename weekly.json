@@ -1,5 +1,71 @@
 [
   {
+    "weekLabel": "Tuần 28/2026",
+    "fromDate": "2026-06-30",
+    "toDate": "2026-07-06",
+    "highlights": [
+      {
+        "title": "🦀 openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân OpenClaw tiếp tục dẫn đầu với hơn 381K sao, khẳng định vị thế là giải pháp AI toàn diện hoạt động trên mọi hệ điều hành và nền tảng. Dự án liên tục cập nhật và mở rộng khả năng, mang lại trải nghiệm AI mạnh mẽ cho người dùng.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "url": "https://github.com/openclaw/openclaw"
+      },
+      {
+        "title": "✨ obra/superpowers",
+        "desc": "Superpowers của Obra là một framework kỹ năng agentic và phương pháp phát triển phần mềm hiệu quả, thu hút sự chú ý lớn trong tuần này. Với hơn 246K sao, nó cung cấp các công cụ mạnh mẽ để xây dựng và quản lý các tác nhân AI.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/obra/superpowers"
+      },
+      {
+        "title": "🧠 ollama/ollama",
+        "desc": "Ollama tiếp tục là công cụ được ưa chuộng để chạy các mô hình AI lớn như Kimi-K2.6, GLM-5.1 và MiniMax một cách dễ dàng. Với hơn 175K sao, nó giúp đơn giản hóa việc triển khai và sử dụng các mô hình ngôn ngữ tiên tiến.",
+        "tag": "model",
+        "tagLabel": "🧠 MODEL",
+        "url": "https://github.com/ollama/ollama"
+      },
+      {
+        "title": "🛠️ anthropics/claude-code",
+        "desc": "Claude Code, công cụ lập trình agentic từ Anthropics, đã đạt hơn 136K sao. Nó hoạt động trực tiếp trong terminal, giúp tăng tốc độ viết code, giải thích mã và quản lý Git, trở thành một trợ thủ đắc lực cho các nhà phát triển.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://github.com/anthropics/claude-code"
+      },
+      {
+        "title": "🚀 Significant-Gravitas/AutoGPT",
+        "desc": "AutoGPT tiếp tục sứ mệnh mang AI dễ tiếp cận đến mọi người, cung cấp công cụ để xây dựng và sử dụng AI một cách hiệu quả. Với hơn 185K sao, dự án này là một trong những nền tảng tiên phong trong lĩnh vực AI agent.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT"
+      }
+    ],
+    "topRepos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Duy trì vị trí dẫn đầu với hơn 381K sao, là trợ lý AI cá nhân toàn diện hoạt động trên mọi nền tảng, liên tục phát triển và cập nhật.",
+        "stars": "381.8K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "desc": "Framework kỹ năng agentic và phương pháp phát triển phần mềm hiệu quả, đạt hơn 246K sao, cho thấy sự quan tâm lớn từ cộng đồng AI.",
+        "stars": "246.8K+",
+        "verdict": "yes"
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất agent, tập trung vào kỹ năng, bản năng, bộ nhớ và bảo mật cho Claude Code và các mô hình khác, vượt 226K sao.",
+        "stars": "226.3K+",
+        "verdict": "yes"
+      }
+    ],
+    "topGaming": []
+  },
+  {
     "weekLabel": "Tuần 27/2026",
     "fromDate": "2026-06-23",
     "toDate": "2026-06-29",
@@ -551,40 +617,6 @@
         "name": "alirezarezvani/claude-skills",
         "url": "https://github.com/alirezarezvani/claude-skills",
         "desc": "Kho lưu trữ khổng lồ với hơn 232 kỹ năng và plugin agent cho Claude Code, cung cấp khả năng mở rộng mạnh mẽ cho các tác nhân AI.",
-        "stars": "N/A",
-        "verdict": "yes"
-      }
-    ],
-    "topGaming": [],
-    "news": [],
-    "gamingNews": [],
-    "topNews": [],
-    "repos": []
-  },
-  {
-    "weekLabel": "Tuần 16/2026",
-    "fromDate": "2026-04-10",
-    "toDate": "2026-04-16",
-    "highlights": [],
-    "topRepos": [
-      {
-        "name": "ComposioHQ/open-claude-cowork",
-        "url": "https://github.com/ComposioHQ/open-claude-cowork",
-        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp, nhận được sự quan tâm lớn khi Claude Cowork ra mắt chính thức và Enterprise.",
-        "stars": "N/A",
-        "verdict": "yes"
-      },
-      {
-        "name": "zcaceres/markdownify-mcp",
-        "url": "https://github.com/zcaceres/markdownify-mcp",
-        "desc": "Một máy chủ Model Context Protocol (MCP) để chuyển đổi hầu hết mọi thứ sang Markdown, được nhắc đến nhiều lần trong tuần này vì tính hữu ích trong việc chuẩn hóa dữ liệu cho các mô hình AI.",
-        "stars": "N/A",
-        "verdict": "yes"
-      },
-      {
-        "name": "zebbern/claude-code-guide",
-        "url": "https://github.com/zebbern/claude-code-guide",
-        "desc": "Hướng dẫn toàn diện cho Claude Code, bao gồm cài đặt, lệnh và quy trình làm việc, trở thành tài nguyên quan trọng cho người dùng mới và hiện tại của Claude Code.",
         "stars": "N/A",
         "verdict": "yes"
       }
