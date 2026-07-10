@@ -1,5 +1,78 @@
 [
   {
+    "date": "2026-07-11",
+    "dayLabel": "Thứ Bảy",
+    "dateLabel": "11/07/2026",
+    "news": [],
+    "repos": [
+      {
+        "name": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
+        "stars": "382.5K+",
+        "verdict": "yes",
+        "reason": "Trợ lý AI cá nhân, tiện ích AI."
+      },
+      {
+        "name": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "desc": "Một framework kỹ năng tác tử và phương pháp phát triển phần mềm hiệu quả.",
+        "stars": "251.7K+",
+        "verdict": "yes",
+        "reason": "Framework kỹ năng tác tử, tự động hóa tác tử."
+      },
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "desc": "Hệ thống tối ưu hóa hiệu suất tác tử cho Claude Code, Codex và các nền tảng khác.",
+        "stars": "228.3K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tối ưu hóa tác tử."
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "desc": "Tác tử AI có khả năng học hỏi và phát triển cùng người dùng.",
+        "stars": "212.7K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác tử, tiện ích AI."
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Nền tảng tự động hóa quy trình làm việc với khả năng AI tích hợp, hỗ trợ 400+ tích hợp.",
+        "stars": "196.0K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa quy trình, khả năng AI."
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "desc": "Nền tảng AI tự động hóa giúp mọi người dễ dàng sử dụng và xây dựng các ứng dụng AI.",
+        "stars": "185.5K+",
+        "verdict": "yes",
+        "reason": "Tự động hóa tác tử, tiện ích AI."
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "desc": "Dễ dàng chạy các mô hình AI như Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek và nhiều mô hình khác.",
+        "stars": "175.9K+",
+        "verdict": "yes",
+        "reason": "Tiện ích AI, hỗ trợ chạy nhiều mô hình."
+      },
+      {
+        "name": "anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code",
+        "desc": "Công cụ lập trình tác tử của Claude, giúp bạn viết mã nhanh hơn và hiểu codebase.",
+        "stars": "137.3K+",
+        "verdict": "yes",
+        "reason": "Công cụ Claude, tự động hóa tác tử."
+      }
+    ],
+    "gamingNews": []
+  },
+  {
     "date": "2026-07-10",
     "dayLabel": "Thứ Sáu",
     "dateLabel": "10/07/2026",
@@ -2056,79 +2129,6 @@
         "stars": "131.8K+",
         "verdict": "yes",
         "reason": "Công cụ Claude và tự động hóa tác nhân."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-06-11",
-    "dayLabel": "Thứ Năm",
-    "dateLabel": "11/06/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "openclaw/openclaw",
-        "url": "https://github.com/openclaw/openclaw",
-        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng, mang đến trải nghiệm AI toàn diện.",
-        "stars": "378.0K+",
-        "verdict": "yes",
-        "reason": "Trợ lý AI cá nhân đa nền tảng, tiện ích AI tổng hợp."
-      },
-      {
-        "name": "affaan-m/ECC",
-        "url": "https://github.com/affaan-m/ECC",
-        "desc": "Hệ thống tối ưu hóa hiệu suất cho các tác nhân AI như Claude Code, Codex, Opencode, tập trung vào kỹ năng, bản năng và bảo mật.",
-        "stars": "212.7K+",
-        "verdict": "yes",
-        "reason": "Tối ưu hóa hiệu suất tác nhân AI, đặc biệt cho công cụ Claude."
-      },
-      {
-        "name": "n8n-io/n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa quy trình làm việc mã nguồn mở với khả năng AI tích hợp, hỗ trợ hơn 400 tích hợp.",
-        "stars": "192.0K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa quy trình làm việc với AI, tích hợp rộng rãi."
-      },
-      {
-        "name": "ollama/ollama",
-        "url": "https://github.com/ollama/ollama",
-        "desc": "Dễ dàng chạy các mô hình ngôn ngữ lớn như Kimi-K2.6, GLM-5.1, MiniMax và nhiều mô hình khác trên máy cục bộ.",
-        "stars": "173.8K+",
-        "verdict": "yes",
-        "reason": "Công cụ chạy các mô hình AI phổ biến, tiện ích AI."
-      },
-      {
-        "name": "langgenius/dify",
-        "url": "https://github.com/langgenius/dify",
-        "desc": "Nền tảng sẵn sàng cho sản xuất để phát triển các quy trình làm việc dựa trên tác nhân AI.",
-        "stars": "144.7K+",
-        "verdict": "yes",
-        "reason": "Nền tảng phát triển tác nhân AI, tự động hóa."
-      },
-      {
-        "name": "open-webui/open-webui",
-        "url": "https://github.com/open-webui/open-webui",
-        "desc": "Giao diện AI thân thiện với người dùng, hỗ trợ Ollama, OpenAI API và nhiều dịch vụ khác.",
-        "stars": "141.0K+",
-        "verdict": "yes",
-        "reason": "Giao diện người dùng cho AI, tiện ích AI."
-      },
-      {
-        "name": "anthropics/claude-code",
-        "url": "https://github.com/anthropics/claude-code",
-        "desc": "Công cụ lập trình dựa trên tác nhân của Claude, hoạt động trong terminal, giúp tăng tốc độ viết mã và quản lý Git.",
-        "stars": "131.6K+",
-        "verdict": "yes",
-        "reason": "Công cụ lập trình của Claude, tác nhân AI."
-      },
-      {
-        "name": "huggingface/transformers",
-        "url": "https://github.com/huggingface/transformers",
-        "desc": "Framework định nghĩa mô hình cho các mô hình học máy tiên tiến trong văn bản, thị giác, âm thanh và đa phương thức.",
-        "stars": "161.5K+",
-        "verdict": "yes",
-        "reason": "Framework cốt lõi cho các mô hình học máy, tiện ích AI."
       }
     ],
     "gamingNews": []
