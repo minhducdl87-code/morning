@@ -2,10 +2,10 @@ name: Morning Digest
 
 "on":
   schedule:
-    - cron: '0 22 * * *'   # 5:00 AM Vietnam time (daily morning digest)
+    - cron: '0 2 * * *'    # 9:00 AM Vietnam time (daily morning digest)
     - cron: '0 3 * * *'    # 10:00 AM Vietnam time (recap push to Telegram)
-    - cron: '0 22 * * 0'   # 5:00 AM Vietnam time (Sunday — weekly trigger)
-    - cron: '0 22 1 * *'   # 5:00 AM Vietnam time (1st of month — monthly trigger)
+    - cron: '0 2 * * 0'    # 9:00 AM Vietnam time (Sunday — weekly trigger)
+    - cron: '0 2 1 * *'    # 9:00 AM Vietnam time (1st of month — monthly trigger)
   workflow_dispatch:
     inputs:
       run_weekly:
@@ -78,7 +78,7 @@ jobs:
     if: |
       always() &&
       github.event.schedule != '0 3 * * *' &&
-      (github.event.schedule == '0 22 * * 0' ||
+      (github.event.schedule == '0 2 * * 0' ||
        github.event.inputs.run_weekly == 'true')
     permissions:
       contents: write
@@ -112,7 +112,7 @@ jobs:
     if: |
       always() &&
       github.event.schedule != '0 3 * * *' &&
-      (github.event.schedule == '0 22 1 * *' ||
+      (github.event.schedule == '0 2 1 * *' ||
        github.event.inputs.run_monthly == 'true' ||
        github.event.inputs.backfill_month != '')
     permissions:

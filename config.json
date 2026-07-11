@@ -1,9 +1,9 @@
 {
   "site": {
     "title": "🐟 Cá Mặn Đau Lưng",
-    "tagline": "Tin cho người 3x · Sáng 5h · Recap trưa 10h",
+    "tagline": "Tin cho người 3x · Sáng 9h · Recap 10h",
     "logo": "🐟",
-    "footer": "🐟 Cá Mặn Đau Lưng · Sáng 5AM · Recap 10AM · Không tin lá cải"
+    "footer": "🐟 Cá Mặn Đau Lưng · Sáng 9AM · Recap 10AM · Không tin lá cải"
   },
   "telegram": {
     "chat_ids": ["655323886", "782194719"]
