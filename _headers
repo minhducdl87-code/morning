@@ -1,0 +1,29 @@
+# Cloudflare Pages headers — https://developers.cloudflare.com/pages/configuration/headers/
+
+# Data files: no cache (freshly regenerated 5AM / 10AM VN daily)
+/cards.json
+  Cache-Control: public, max-age=60, must-revalidate
+
+/weekly.json
+  Cache-Control: public, max-age=300, must-revalidate
+
+/monthly.json
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/config.json
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# HTML: short cache — layout changes ship often
+/*.html
+  Cache-Control: public, max-age=300
+
+# JS: content-hashed later but for now short cache
+/*.js
+  Cache-Control: public, max-age=300
+
+# Security headers
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
