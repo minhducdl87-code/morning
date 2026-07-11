@@ -5,98 +5,82 @@
     "dateLabel": "11/07/2026",
     "tech": [
       {
-        "title": "🤖 Apple kiện OpenAI: Cáo buộc đánh cắp bí mật",
-        "desc": "Apple đã khởi kiện OpenAI, cáo buộc công ty này đánh cắp bí mật kinh doanh và sử dụng nhân viên cũ của Apple để phát triển AI, sau những lời chê bai từ Elon Musk về Apple Intelligence.",
+        "title": "🍎 Apple kiện OpenAI, cáo buộc 'đánh cắp bí mật'",
+        "desc": "Apple đã khởi kiện OpenAI, tố cáo công ty này 'đánh cắp bí mật kinh doanh' liên quan đến phần cứng, sau những lời chỉ trích từ Elon Musk về Apple Intelligence.",
         "tag": "ai",
         "tagLabel": "🤖 AI",
-        "source": "11/07·Tinhte",
+        "source": "11/07·Tinhte, GenK, VnExpress",
         "url": "https://tinhte.vn/thread/khi-apple-tu-tat-vao-mat-minh-tu-loi-che-cua-elon-musk-den-don-kien-nam-2026.4159812/"
       },
       {
         "title": "🤖 Diaflow: Nền tảng AI teammates tự hoạt động",
-        "desc": "Một nền tảng AI mới tên Diaflow vừa ra mắt, cho phép tạo ra các AI teammates có khả năng tự hoạt động, hứa hẹn thay đổi cách chúng ta làm việc.",
+        "desc": "Một nền tảng AI mới mang tên Diaflow vừa ra mắt, hứa hẹn cung cấp các 'AI teammates' có khả năng tự hoạt động, giúp tối ưu công việc cho người dùng.",
         "tag": "ai",
         "tagLabel": "🤖 AI",
         "source": "11/07·Tinhte",
         "url": "https://tinhte.vn/thread/gioi-thieu-diaflow-nen-tang-ai-teammates-tu-hoat-dong.4156850/"
       },
       {
-        "title": "⭐ ASUS Zephyrus DUO: Laptop 2 màn hình giá 200 triệu",
-        "desc": "Chiếc laptop ASUS Zephyrus DUO với hai màn hình và mức giá 200 triệu đồng vừa được đánh giá chi tiết, hướng đến người dùng chuyên nghiệp cần hiệu năng và không gian làm việc tối ưu.",
-        "tag": "review",
-        "tagLabel": "⭐ REVIEW",
+        "title": "💸 Tính năng AI trên máy vẫn phải trả phí hàng tháng",
+        "desc": "Apple âm thầm cập nhật trong macOS 27 beta 3 rằng một số tính năng AI chạy trên thiết bị vẫn yêu cầu phí thuê bao hàng tháng, gây nhiều tranh cãi.",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
         "source": "11/07·Tinhte",
-        "url": "https://tinhte.vn/thread/danh-gia-asus-zephyrus-duo-2-man-hinh-200-trieu-ban-can-gi-o-no.4156681/"
+        "url": "https://tinhte.vn/thread/khi-tinh-nang-ai-chay-ngay-tren-may-van-phai-tra-phi-hang-thang.4159440/"
       },
       {
-        "title": "🚀 Galaxy Ring: Thiết bị theo dõi giấc ngủ tiện lợi",
-        "desc": "Galaxy Ring được nhắc lại với khả năng theo dõi giấc ngủ vượt trội, thoải mái hơn 49 lần so với đồng hồ thông minh, mang lại trải nghiệm tiện lợi cho người dùng.",
-        "tag": "launch",
-        "tagLabel": "🚀 LAUNCH",
+        "title": "⌚ Galaxy Ring: Thiết bị theo dõi sức khỏe tiện lợi",
+        "desc": "Galaxy Ring được nhắc lại với ưu điểm theo dõi giấc ngủ thoải mái hơn 49 lần so với đồng hồ thông minh, phù hợp cho ai muốn một thiết bị đeo nhẹ nhàng.",
+        "tag": "review",
+        "tagLabel": "⭐ REVIEW",
         "source": "11/07·Tinhte",
         "url": "https://tinhte.vn/thread/anh-em-con-nho-galaxy-ring-khong.4159800/"
       }
     ],
     "finance": [
       {
-        "title": "🪙 Vàng giảm giá, người mua thiệt tới 6 triệu đồng/lượng",
-        "desc": "Giá vàng miếng SJC và vàng nhẫn 9999 giảm mạnh trong tuần qua, khiến người mua vàng miếng lỗ từ 2,2 - 6 triệu đồng/lượng, còn vàng nhẫn chịu mức lỗ cao hơn.",
-        "tag": "gold",
-        "tagLabel": "🪙 VÀNG",
-        "source": "11/07·VnEconomy",
-        "url": "https://vneconomy.vn/nguoi-mua-vang-nhan-vang-mieng-thiet-toi-6-trieu-dongluong-trong-mot-tuan.htm"
-      },
-      {
-        "title": "💵 Lãi suất tiết kiệm cao nhất 7,3%/năm, thẻ tín dụng 48%/năm",
-        "desc": "Tuần qua, lãi suất tiền gửi tiết kiệm cao nhất ghi nhận ở mức 7,3%/năm, trong khi lãi suất thẻ tín dụng có thể vọt lên tới 48%/năm, bạn nên cân nhắc kỹ các khoản vay.",
-        "tag": "rate",
-        "tagLabel": "💵 LÃI SUẤT",
-        "source": "11/07·CafeBiz",
-        "url": "https://cafebiz.vn/tai-chinh-tuan-qua-lai-suat-tiet-kiem-cao-nhat-73-nam-lai-suat-the-tin-dung-vot-len-48-nam-176260711192144072.chn"
-      },
-      {
-        "title": "📈 Cổ phiếu HVN của Vietnam Airlines đón tin vui",
-        "desc": "Từ ngày 14/7 tới, cổ phiếu HVN của Vietnam Airlines sẽ không còn bị hạn chế giao dịch, mang lại tín hiệu tích cực cho nhà đầu tư.",
-        "tag": "stock",
-        "tagLabel": "📈 CK",
-        "source": "11/07·CafeF",
-        "url": "https://cafef.vn/co-phieu-cua-vietnam-airlines-don-tin-vui-tu-ngay-14-7-18826071115060179.chn"
-      },
-      {
-        "title": "📈 Tổng Giám đốc PNJ đăng ký mua 1 triệu cổ phiếu",
-        "desc": "Giữa lúc cổ phiếu PNJ đang chịu áp lực giảm giá, Tổng Giám đốc PNJ đã đăng ký mua vào 1 triệu cổ phiếu, cho thấy niềm tin vào triển vọng của doanh nghiệp.",
+        "title": "📈 Tổng Giám đốc PNJ mua 1 triệu cổ phiếu",
+        "desc": "Tổng Giám đốc PNJ đăng ký mua 1 triệu cổ phiếu giữa lúc cổ phiếu PNJ đang giảm sâu, cho thấy niềm tin vào doanh nghiệp.",
         "tag": "stock",
         "tagLabel": "📈 CK",
         "source": "11/07·CafeF",
         "url": "https://cafef.vn/tong-giam-doc-pnj-dang-ky-mua-1-trieu-co-phieu-giua-con-bao-kim-cuong-18826071121325865.chn"
       },
       {
-        "title": "💸 Tài khoản ngân hàng tự động trừ phí 10.000 - 25.000 đồng/tháng",
-        "desc": "Nhiều khách hàng của Agribank, BIDV, Vietcombank, VietinBank sẽ bị tự động trừ phí từ 10.000 - 25.000 đồng/tháng cho các dịch vụ cơ bản, bạn nên kiểm tra lại tài khoản của mình.",
-        "tag": "deal",
-        "tagLabel": "💸 DEAL",
-        "source": "11/07·GenK",
-        "url": "https://genk.vn/tai-khoan-agribank-bidv-vietcombank-vietinbank-cua-nhung-khach-hang-sau-se-tu-dong-tru-10000-25000-dong-thang-165260711171630764.chn"
+        "title": "📈 Cổ phiếu HVN của Vietnam Airlines sắp hết hạn chế",
+        "desc": "Từ ngày 14/7, cổ phiếu HVN của Vietnam Airlines sẽ không còn bị hạn chế giao dịch, mở ra cơ hội mới cho nhà đầu tư.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "11/07·CafeF",
+        "url": "https://cafef.vn/co-phieu-cua-vietnam-airlines-don-tin-vui-tu-ngay-14-7-18826071115060179.chn"
+      },
+      {
+        "title": "💵 Lãi suất tiết kiệm cao nhất 7,3%/năm, thẻ tín dụng 48%/năm",
+        "desc": "Tuần qua, lãi suất tiền gửi kỳ hạn 12 tháng cao nhất là 7,3%/năm, trong khi lãi suất thẻ tín dụng có thể lên tới 48%/năm.",
+        "tag": "rate",
+        "tagLabel": "💵 LÃI SUẤT",
+        "source": "11/07·CafeBiz",
+        "url": "https://cafebiz.vn/tai-chinh-tuan-qua-lai-suat-tiet-kiem-cao-nhat-73-nam-lai-suat-the-tin-dung-vot-len-48-nam-176260711192144072.chn"
+      },
+      {
+        "title": "📈 Chủ tịch DIC Corp tiếp tục bị bán giải chấp cổ phiếu DIG",
+        "desc": "Ông Nguyễn Hùng Cường, Chủ tịch HĐQT DIC Corp và người thân tiếp tục bị bán giải chấp cổ phiếu DIG, ảnh hưởng đến giá cổ phiếu.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "11/07·CafeF",
+        "url": "https://cafef.vn/chu-tich-dic-corp-cung-nguoi-than-tiep-tuc-bi-ban-giai-chap-co-phieu-dig-188260711100328046.chn"
       }
     ],
     "entertainment": [],
     "gaming": [],
     "vietnam": [
       {
-        "title": "🏙️ Hà Nội xây khẩn cấp 5 hồ điều hòa chống ngập",
-        "desc": "Hà Nội đang triển khai xây dựng khẩn cấp 5 hồ điều hòa với tổng dung tích trữ nước khoảng 3 triệu m³, sẵn sàng ứng phó với tình trạng ngập lụt khi mưa lớn.",
-        "tag": "society",
-        "tagLabel": "🏙️ XÃ HỘI",
-        "source": "08/07·Tuổi Trẻ",
-        "url": "https://tuoitre.vn/toan-canh-5-ho-dieu-hoa-duoc-xay-khan-cap-o-ha-noi-san-sang-chong-ngap-100260708135005497.htm"
-      },
-      {
-        "title": "💼 Khách Nga trở lại, cần thêm lý do để chi tiêu nhiều hơn",
-        "desc": "Thị trường khách Nga đang có cú lội ngược dòng ngoạn mục tại Việt Nam sau thời gian gián đoạn, tuy nhiên cần thêm các yếu tố để khuyến khích họ chi tiêu nhiều hơn.",
+        "title": "✈️ Cảng hàng không quốc tế Gia Bình quy tụ nhân tài quốc tế",
+        "desc": "Dự án Cảng hàng không quốc tế Gia Bình không chỉ giảm áp lực hạ tầng mà còn thu hút nhân tài quốc tế, trở thành cực tăng trưởng mới cho hàng không miền Bắc.",
         "tag": "economy",
         "tagLabel": "💼 KINH TẾ",
         "source": "11/07·Tuổi Trẻ",
-        "url": "https://tuoitre.vn/khach-nga-tro-lai-can-them-ly-do-de-chi-tieu-nhieu-hon-100260711193837622.htm"
+        "url": "https://tuoitre.vn/cang-hang-khong-quoc-te-gia-binh-quy-tu-nhan-tai-quoc-te-100260711185512149.htm"
       }
     ],
     "lifestyle": []
