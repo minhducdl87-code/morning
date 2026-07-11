@@ -1,24 +1,68 @@
 name: Deploy to Cloudflare Pages
 
-# Deploys full repo to CF Pages project 'camandaulung' on every push to main.
-# Static site (no build). Requires GitHub secrets: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID.
+# Deploys full repo to Cloudflare Pages on every push to main.
+#
+# Config (all optional — with sane defaults):
+#   Secrets:
+#     CLOUDFLARE_API_TOKEN     required — deploy gated off if missing (skipped, not failed)
+#     CLOUDFLARE_ACCOUNT_ID    required — deploy gated off if missing
+#   Repo variables (Settings → Variables → Actions):
+#     CF_PROJECT_NAME          optional — defaults to repo name (e.g. 'morning')
+#     CF_BRANCH                optional — defaults to 'main'
+
 "on":
   push:
     branches: [main]
   workflow_dispatch:
 
 jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    outputs:
+      ready: ${{ steps.check.outputs.ready }}
+      project: ${{ steps.check.outputs.project }}
+      branch: ${{ steps.check.outputs.branch }}
+    steps:
+      - id: check
+        env:
+          HAS_TOKEN:   ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+          HAS_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+          PROJECT:     ${{ vars.CF_PROJECT_NAME }}
+          BRANCH:      ${{ vars.CF_BRANCH }}
+          REPO_NAME:   ${{ github.event.repository.name }}
+        run: |
+          project="${PROJECT:-$REPO_NAME}"
+          branch="${BRANCH:-main}"
+          echo "project=$project" >> "$GITHUB_OUTPUT"
+          echo "branch=$branch"   >> "$GITHUB_OUTPUT"
+
+          if [ "$HAS_TOKEN" = "true" ] && [ "$HAS_ACCOUNT" = "true" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+            echo "✅ CF secrets present — will deploy to project '$project' branch '$branch'"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Cloudflare Pages deploy SKIPPED — secrets not configured yet."
+            echo "::warning::To enable: set CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID in repo secrets."
+            echo "::warning::Optional: set repo var CF_PROJECT_NAME (default: repo name)."
+            echo "::warning::See plans/260711-2208-cf-pages-deploy/plan.md for setup steps."
+          fi
+
   deploy:
+    needs: preflight
+    if: needs.preflight.outputs.ready == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: read
       deployments: write
     steps:
       - uses: actions/checkout@v5
-
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy . --project-name=camandaulung --branch=main --commit-dirty=true
+          command: >-
+            pages deploy .
+            --project-name=${{ needs.preflight.outputs.project }}
+            --branch=${{ needs.preflight.outputs.branch }}
+            --commit-dirty=true
