@@ -8,7 +8,7 @@ compatibility_flags = ["nodejs_compat"]
 # Then paste id below.
 [[kv_namespaces]]
 binding = "STATE"
-id = "REPLACE_WITH_KV_ID"
+id = "2c1835f957724aa1855d15732ae787bb"
 
 # Public env (safe to commit)
 [vars]
