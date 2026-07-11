@@ -1,799 +1,104 @@
 [
   {
-    "date": "2026-05-10",
-    "dayLabel": "Chủ Nhật",
-    "dateLabel": "10/05/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-09",
+    "date": "2026-07-11",
     "dayLabel": "Thứ Bảy",
-    "dateLabel": "09/05/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-08",
-    "dayLabel": "Thứ Sáu",
-    "dateLabel": "08/05/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-07",
-    "dayLabel": "Thứ Năm",
-    "dateLabel": "07/05/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-06",
-    "dayLabel": "Thứ Tư",
-    "dateLabel": "06/05/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-05",
-    "dayLabel": "Thứ Ba",
-    "dateLabel": "05/05/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-04",
-    "dayLabel": "Thứ Hai",
-    "dateLabel": "04/05/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-03",
-    "dayLabel": "Chủ Nhật",
-    "dateLabel": "03/05/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-02",
-    "dayLabel": "Thứ Bảy",
-    "dateLabel": "02/05/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-05-01",
-    "dayLabel": "Thứ Sáu",
-    "dateLabel": "01/05/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-30",
-    "dayLabel": "Thứ Năm",
-    "dateLabel": "30/04/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-29",
-    "dayLabel": "Thứ Tư",
-    "dateLabel": "29/04/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-28",
-    "dayLabel": "Thứ Ba",
-    "dateLabel": "28/04/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-27",
-    "dayLabel": "Thứ Hai",
-    "dateLabel": "27/04/2026",
-    "news": [],
-    "repos": [
+    "dateLabel": "11/07/2026",
+    "tech": [
       {
-        "name": "Alishahryar1/free-claude-code",
-        "url": "https://github.com/Alishahryar1/free-claude-code",
-        "desc": "Sử dụng Claude Code miễn phí qua terminal, VSCode extension hoặc Discord.",
-        "stars": "5.8K+",
-        "verdict": "yes",
-        "reason": "Công cụ Claude miễn phí, tiện lợi."
+        "title": "🤖 Apple kiện OpenAI: Cáo buộc đánh cắp bí mật",
+        "desc": "Apple đã khởi kiện OpenAI, cáo buộc công ty này đánh cắp bí mật kinh doanh và sử dụng nhân viên cũ của Apple để phát triển AI, sau những lời chê bai từ Elon Musk về Apple Intelligence.",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
+        "source": "11/07·Tinhte",
+        "url": "https://tinhte.vn/thread/khi-apple-tu-tat-vao-mat-minh-tu-loi-che-cua-elon-musk-den-don-kien-nam-2026.4159812/"
       },
       {
-        "name": "forrestchang/andrej-karpathy-skills",
-        "url": "https://github.com/forrestchang/andrej-karpathy-skills",
-        "desc": "Tệp CLAUDE.md để cải thiện hành vi của Claude Code, dựa trên quan sát của Andrej Karpathy về các lỗi mã hóa của LLM.",
-        "stars": "81.1K+",
-        "verdict": "yes",
-        "reason": "Cải thiện hiệu suất Claude Code."
+        "title": "🤖 Diaflow: Nền tảng AI teammates tự hoạt động",
+        "desc": "Một nền tảng AI mới tên Diaflow vừa ra mắt, cho phép tạo ra các AI teammates có khả năng tự hoạt động, hứa hẹn thay đổi cách chúng ta làm việc.",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
+        "source": "11/07·Tinhte",
+        "url": "https://tinhte.vn/thread/gioi-thieu-diaflow-nen-tang-ai-teammates-tu-hoat-dong.4156850/"
       },
       {
-        "name": "huggingface/ml-intern",
-        "url": "https://github.com/huggingface/ml-intern",
-        "desc": "Kỹ sư ML mã nguồn mở có thể đọc tài liệu, huấn luyện mô hình và triển khai các mô hình ML.",
-        "stars": "5.9K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa tác vụ kỹ sư ML."
+        "title": "⭐ ASUS Zephyrus DUO: Laptop 2 màn hình giá 200 triệu",
+        "desc": "Chiếc laptop ASUS Zephyrus DUO với hai màn hình và mức giá 200 triệu đồng vừa được đánh giá chi tiết, hướng đến người dùng chuyên nghiệp cần hiệu năng và không gian làm việc tối ưu.",
+        "tag": "review",
+        "tagLabel": "⭐ REVIEW",
+        "source": "11/07·Tinhte",
+        "url": "https://tinhte.vn/thread/danh-gia-asus-zephyrus-duo-2-man-hinh-200-trieu-ban-can-gi-o-no.4156681/"
       },
       {
-        "name": "obra/superpowers",
-        "url": "https://github.com/obra/superpowers",
-        "desc": "Một framework kỹ năng agentic và phương pháp phát triển phần mềm hiệu quả.",
-        "stars": "167.6K+",
-        "verdict": "yes",
-        "reason": "Hỗ trợ phát triển phần mềm bằng AI agent."
-      },
-      {
-        "name": "punkpeye/awesome-mcp-servers",
-        "url": "https://github.com/punkpeye/awesome-mcp-servers",
-        "desc": "Danh sách tổng hợp các máy chủ Model Context Protocol (MCP) để mở rộng khả năng của AI.",
-        "stars": "4.5K+",
-        "verdict": "yes",
-        "reason": "Tài nguyên cho MCP servers."
-      },
-      {
-        "name": "modelcontextprotocol/servers",
-        "url": "https://github.com/modelcontextprotocol/servers",
-        "desc": "Kho lưu trữ chính thức cho các máy chủ Model Context Protocol (MCP).",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Nguồn chính thức về MCP servers."
+        "title": "🚀 Galaxy Ring: Thiết bị theo dõi giấc ngủ tiện lợi",
+        "desc": "Galaxy Ring được nhắc lại với khả năng theo dõi giấc ngủ vượt trội, thoải mái hơn 49 lần so với đồng hồ thông minh, mang lại trải nghiệm tiện lợi cho người dùng.",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "11/07·Tinhte",
+        "url": "https://tinhte.vn/thread/anh-em-con-nho-galaxy-ring-khong.4159800/"
       }
     ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-26",
-    "dayLabel": "Chủ Nhật",
-    "dateLabel": "26/04/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-25",
-    "dayLabel": "Thứ Bảy",
-    "dateLabel": "25/04/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-24",
-    "dayLabel": "Thứ Sáu",
-    "dateLabel": "24/04/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-23",
-    "dayLabel": "Thứ Năm",
-    "dateLabel": "23/04/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-22",
-    "dayLabel": "Thứ Tư",
-    "dateLabel": "22/04/2026",
-    "news": [],
-    "repos": [
+    "finance": [
       {
-        "name": "anthropics/claude-code",
-        "url": "https://github.com/anthropics/claude-code",
-        "desc": "Claude Code là một công cụ lập trình tác nhân hoạt động trong terminal, hiểu codebase và giúp bạn viết code nhanh hơn.",
-        "stars": "114.3K+",
-        "verdict": "yes",
-        "reason": "Đây là repo chính thức của Anthropic, rất quan trọng cho các công cụ và tiện ích Claude."
+        "title": "🪙 Vàng giảm giá, người mua thiệt tới 6 triệu đồng/lượng",
+        "desc": "Giá vàng miếng SJC và vàng nhẫn 9999 giảm mạnh trong tuần qua, khiến người mua vàng miếng lỗ từ 2,2 - 6 triệu đồng/lượng, còn vàng nhẫn chịu mức lỗ cao hơn.",
+        "tag": "gold",
+        "tagLabel": "🪙 VÀNG",
+        "source": "11/07·VnEconomy",
+        "url": "https://vneconomy.vn/nguoi-mua-vang-nhan-vang-mieng-thiet-toi-6-trieu-dongluong-trong-mot-tuan.htm"
       },
       {
-        "name": "webfuse-com/awesome-claude",
-        "url": "https://github.com/webfuse-com/awesome-claude",
-        "desc": "Một danh sách tuyển chọn các tài nguyên và công cụ tuyệt vời liên quan đến Anthropic Claude.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "Danh sách tổng hợp các công cụ và tài nguyên, hữu ích để khám phá thêm."
+        "title": "💵 Lãi suất tiết kiệm cao nhất 7,3%/năm, thẻ tín dụng 48%/năm",
+        "desc": "Tuần qua, lãi suất tiền gửi tiết kiệm cao nhất ghi nhận ở mức 7,3%/năm, trong khi lãi suất thẻ tín dụng có thể vọt lên tới 48%/năm, bạn nên cân nhắc kỹ các khoản vay.",
+        "tag": "rate",
+        "tagLabel": "💵 LÃI SUẤT",
+        "source": "11/07·CafeBiz",
+        "url": "https://cafebiz.vn/tai-chinh-tuan-qua-lai-suat-tiet-kiem-cao-nhat-73-nam-lai-suat-the-tin-dung-vot-len-48-nam-176260711192144072.chn"
       },
       {
-        "name": "hesreallyhim/awesome-claude-code",
-        "url": "https://github.com/hesreallyhim/awesome-claude-code",
-        "desc": "Danh sách các slash-commands, file CLAUDE.md, công cụ CLI và quy trình làm việc cho Claude Code.",
-        "stars": "40K+",
-        "verdict": "yes",
-        "reason": "Tập trung vào các tiện ích và quy trình làm việc cho Claude Code."
+        "title": "📈 Cổ phiếu HVN của Vietnam Airlines đón tin vui",
+        "desc": "Từ ngày 14/7 tới, cổ phiếu HVN của Vietnam Airlines sẽ không còn bị hạn chế giao dịch, mang lại tín hiệu tích cực cho nhà đầu tư.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "11/07·CafeF",
+        "url": "https://cafef.vn/co-phieu-cua-vietnam-airlines-don-tin-vui-tu-ngay-14-7-18826071115060179.chn"
       },
       {
-        "name": "musistudio/claude-code-router",
-        "url": "https://github.com/musistudio/claude-code-router",
-        "desc": "Một công cụ giúp tối ưu hóa việc sử dụng token của Claude Code bằng cách định tuyến các yêu cầu.",
-        "stars": "32.6K+",
-        "verdict": "yes",
-        "reason": "Giúp tiết kiệm token, có tác động thực tế đến chi phí sử dụng API."
+        "title": "📈 Tổng Giám đốc PNJ đăng ký mua 1 triệu cổ phiếu",
+        "desc": "Giữa lúc cổ phiếu PNJ đang chịu áp lực giảm giá, Tổng Giám đốc PNJ đã đăng ký mua vào 1 triệu cổ phiếu, cho thấy niềm tin vào triển vọng của doanh nghiệp.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "11/07·CafeF",
+        "url": "https://cafef.vn/tong-giam-doc-pnj-dang-ky-mua-1-trieu-co-phieu-giua-con-bao-kim-cuong-18826071121325865.chn"
       },
       {
-        "name": "jeffallan/claude-skills",
-        "url": "https://github.com/jeffallan/claude-skills",
-        "desc": "Một kho lưu trữ chứa 66 kỹ năng chuyên biệt cho nhà phát triển, tự động kích hoạt dựa trên ngữ cảnh.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "Tập trung vào các kỹ năng và tự động hóa cho nhà phát triển."
+        "title": "💸 Tài khoản ngân hàng tự động trừ phí 10.000 - 25.000 đồng/tháng",
+        "desc": "Nhiều khách hàng của Agribank, BIDV, Vietcombank, VietinBank sẽ bị tự động trừ phí từ 10.000 - 25.000 đồng/tháng cho các dịch vụ cơ bản, bạn nên kiểm tra lại tài khoản của mình.",
+        "tag": "deal",
+        "tagLabel": "💸 DEAL",
+        "source": "11/07·GenK",
+        "url": "https://genk.vn/tai-khoan-agribank-bidv-vietcombank-vietinbank-cua-nhung-khach-hang-sau-se-tu-dong-tru-10000-25000-dong-thang-165260711171630764.chn"
       }
     ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-21",
-    "dayLabel": "Thứ Ba",
-    "dateLabel": "21/04/2026",
-    "news": [
+    "entertainment": [],
+    "gaming": [],
+    "vietnam": [
       {
-        "title": "✨ Claude Code: Hỗ Trợ Worktree",
-        "desc": "Claude Code phiên bản 2.1.105 đã thêm tham số đường dẫn vào công cụ EnterWorktree để chuyển sang một worktree hiện có của kho lưu trữ hiện tại. Điều này cải thiện khả năng quản lý dự án và quy trình làm việc cho các nhà phát triển.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "Gần đây·GitHub",
-        "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        "title": "🏙️ Hà Nội xây khẩn cấp 5 hồ điều hòa chống ngập",
+        "desc": "Hà Nội đang triển khai xây dựng khẩn cấp 5 hồ điều hòa với tổng dung tích trữ nước khoảng 3 triệu m³, sẵn sàng ứng phó với tình trạng ngập lụt khi mưa lớn.",
+        "tag": "society",
+        "tagLabel": "🏙️ XÃ HỘI",
+        "source": "08/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/toan-canh-5-ho-dieu-hoa-duoc-xay-khan-cap-o-ha-noi-san-sang-chong-ngap-100260708135005497.htm"
       },
       {
-        "title": "✨ Claude Code: Tính Năng Tóm Tắt Phiên (/recap)",
-        "desc": "Claude Code đã thêm tính năng tóm tắt phiên (/recap) để cung cấp ngữ cảnh khi quay lại một phiên làm việc, có thể cấu hình trong /config và gọi thủ công. Điều này giúp duy trì luồng công việc và giảm thiểu việc mất ngữ cảnh giữa các phiên.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "Gần đây·GitHub",
-        "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        "title": "💼 Khách Nga trở lại, cần thêm lý do để chi tiêu nhiều hơn",
+        "desc": "Thị trường khách Nga đang có cú lội ngược dòng ngoạn mục tại Việt Nam sau thời gian gián đoạn, tuy nhiên cần thêm các yếu tố để khuyến khích họ chi tiêu nhiều hơn.",
+        "tag": "economy",
+        "tagLabel": "💼 KINH TẾ",
+        "source": "11/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/khach-nga-tro-lai-can-them-ly-do-de-chi-tieu-nhieu-hon-100260711193837622.htm"
       }
     ],
-    "repos": [
-      {
-        "name": "anthropics/claude-code",
-        "url": "https://github.com/anthropics/claude-code",
-        "desc": "Công cụ lập trình agentic của Anthropic, hoạt động trong terminal, hiểu codebase và hỗ trợ lập trình nhanh hơn qua các lệnh ngôn ngữ tự nhiên.",
-        "stars": "114K+",
-        "verdict": "yes",
-        "reason": "Kho lưu trữ chính thức, công cụ lập trình AI mạnh mẽ."
-      },
-      {
-        "name": "shanraisshan/claude-code-best-practice",
-        "url": "https://github.com/shanraisshan/claude-code-best-practice",
-        "desc": "Tổng hợp 69 mẹo thực tế để sử dụng Claude Code hiệu quả, từ lập trình cảm tính đến kỹ thuật agentic.",
-        "stars": "4K+",
-        "verdict": "yes",
-        "reason": "Tài nguyên hữu ích cho các kỹ sư sử dụng Claude Code."
-      },
-      {
-        "name": "webfuse-com/awesome-claude",
-        "url": "https://github.com/webfuse-com/awesome-claude",
-        "desc": "Danh sách tuyển chọn các tài nguyên tuyệt vời liên quan đến Anthropic Claude, bao gồm SDK, công cụ và hướng dẫn.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "Kho tài nguyên tổng hợp cho hệ sinh thái Claude."
-      },
-      {
-        "name": "jeffallan/claude-skills",
-        "url": "https://github.com/jeffallan/claude-skills",
-        "desc": "Kho lưu trữ chứa 66 kỹ năng chuyên biệt cho Claude Code, tự động kích hoạt dựa trên ngữ cảnh và bao gồm nhiều danh mục phát triển.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "Bộ kỹ năng phong phú, tập trung vào nhà phát triển."
-      },
-      {
-        "name": "anthropics/skills",
-        "url": "https://github.com/anthropics/skills",
-        "desc": "Kho lưu trữ công khai của Anthropic cho các Agent Skills, bao gồm các kỹ năng từ ứng dụng sáng tạo đến tác vụ kỹ thuật và quy trình làm việc doanh nghiệp.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "Kho lưu trữ kỹ năng chính thức từ Anthropic."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-20",
-    "dayLabel": "Thứ Hai",
-    "dateLabel": "20/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "anthropics/claude-code",
-        "url": "https://github.com/anthropics/claude-code",
-        "desc": "Công cụ lập trình agentic CLI của Anthropic giúp tăng tốc code bằng các lệnh ngôn ngữ tự nhiên.",
-        "stars": "114.3k",
-        "verdict": "yes",
-        "reason": "Kho lưu trữ chính thức, công cụ AI agentic cốt lõi."
-      },
-      {
-        "name": "ComposioHQ/awesome-claude-skills",
-        "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-        "desc": "Danh sách tuyển chọn các kỹ năng, tài nguyên và công cụ Claude để tùy chỉnh quy trình làm việc AI.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Tài nguyên hữu ích cho việc mở rộng khả năng của Claude với các kỹ năng."
-      },
-      {
-        "name": "quemsah/awesome-claude-plugins",
-        "url": "https://github.com/quemsah/awesome-claude-plugins",
-        "desc": "Bộ sưu tập tự động các số liệu về việc áp dụng plugin Claude Code trên các kho lưu trữ GitHub.",
-        "stars": "N/A",
-        "verdict": "maybe",
-        "reason": "Hữu ích để theo dõi xu hướng plugin, nhưng có thể không phải là công cụ trực tiếp."
-      },
-      {
-        "name": "webfuse-com/awesome-claude",
-        "url": "https://github.com/webfuse-com/awesome-claude",
-        "desc": "Danh sách tuyển chọn các tài nguyên tuyệt vời liên quan đến Anthropic Claude.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Một danh sách tổng hợp toàn diện các tài nguyên Claude."
-      },
-      {
-        "name": "Jenqyang/Awesome-AI-Agents",
-        "url": "https://github.com/Jenqyang/Awesome-AI-Agents",
-        "desc": "Bộ sưu tập các tác nhân tự trị được hỗ trợ bởi LLM, bao gồm các công cụ liên quan đến Claude.",
-        "stars": "N/A",
-        "verdict": "maybe",
-        "reason": "Danh sách chung về AI agents, có thể chứa các công cụ Claude nhưng không tập trung."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-19",
-    "dayLabel": "Chủ Nhật",
-    "dateLabel": "19/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "e2b-dev/fragments",
-        "url": "https://github.com/e2b-dev/fragments",
-        "desc": "Mẫu Next.js mã nguồn mở để xây dựng các ứng dụng được AI tạo ra hoàn toàn.",
-        "stars": "6.2k",
-        "verdict": "yes",
-        "reason": "Công cụ AI tạo ứng dụng, liên quan đến Claude."
-      },
-      {
-        "name": "UfoMiao/zcf",
-        "url": "https://github.com/UfoMiao/zcf",
-        "desc": "Zero-Config Code Flow cho Claude Code & Codex, hỗ trợ các tác vụ AI agent.",
-        "stars": "5.9k",
-        "verdict": "yes",
-        "reason": "Công cụ cho Claude Code, tự động hóa tác vụ."
-      },
-      {
-        "name": "nidhinjs/prompt-master",
-        "url": "https://github.com/nidhinjs/prompt-master",
-        "desc": "Một kỹ năng Claude giúp viết các prompt chính xác cho bất kỳ công cụ AI nào.",
-        "stars": "5.2k",
-        "verdict": "yes",
-        "reason": "Tiện ích AI cho Claude, cải thiện prompt engineering."
-      },
-      {
-        "name": "langgptai/awesome-claude-prompts",
-        "url": "https://github.com/langgptai/awesome-claude-prompts",
-        "desc": "Kho lưu trữ các prompt được tuyển chọn để sử dụng Claude hiệu quả hơn.",
-        "stars": "4.8k",
-        "verdict": "yes",
-        "reason": "Tiện ích AI cho Claude, tài nguyên prompt."
-      },
-      {
-        "name": "zebbern/claude-code-guide",
-        "url": "https://github.com/zebbern/claude-code-guide",
-        "desc": "Hướng dẫn Claude Code - Thiết lập, lệnh, quy trình làm việc, agent, kỹ năng & mẹo từ người mới bắt đầu đến người dùng chuyên nghiệp.",
-        "stars": "3.9k",
-        "verdict": "yes",
-        "reason": "Hướng dẫn và tài nguyên cho Claude Code và agent."
-      },
-      {
-        "name": "winfunc/opcode",
-        "url": "https://github.com/winfunc/opcode",
-        "desc": "Ứng dụng GUI mạnh mẽ và Toolkit cho Claude Code để tạo agent tùy chỉnh và quản lý phiên tương tác.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "Công cụ GUI cho Claude Code, quản lý agent."
-      },
-      {
-        "name": "yasasbanukaofficial/claude-code",
-        "url": "https://github.com/yasasbanukaofficial/claude-code",
-        "desc": "Mã nguồn CLI Claude Code mã nguồn mở, một AI Agent nâng cao cho các nhà phát triển.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "CLI và agent cho nhà phát triển Claude Code."
-      },
-      {
-        "name": "alirezarezvani/claude-skills",
-        "url": "https://github.com/alirezarezvani/claude-skills",
-        "desc": "Hơn 232 kỹ năng & plugin agent cho Claude Code và các agent mã hóa khác.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "Bộ sưu tập kỹ năng và plugin cho Claude Code."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-18",
-    "dayLabel": "Thứ Bảy",
-    "dateLabel": "18/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "Donchitos/Claude-Code-Game-Studios",
-        "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-        "desc": "Biến Claude Code thành một studio phát triển game hoàn chỉnh với 49 AI agent và 72 kỹ năng workflow.",
-        "stars": "11.6K+",
-        "verdict": "yes",
-        "reason": "Công cụ Claude, tự động hóa agent, tiện ích AI."
-      },
-      {
-        "name": "zebbern/claude-code-guide",
-        "url": "https://github.com/zebbern/claude-code-guide",
-        "desc": "Hướng dẫn toàn diện về Claude Code, bao gồm thiết lập, lệnh, workflow, agent và kỹ năng.",
-        "stars": "3.9K+",
-        "verdict": "yes",
-        "reason": "Công cụ Claude, hướng dẫn sử dụng AI agent."
-      },
-      {
-        "name": "ComposioHQ/open-claude-cowork",
-        "url": "https://github.com/ComposioHQ/open-claude-cowork",
-        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS.",
-        "stars": "3.8K+",
-        "verdict": "yes",
-        "reason": "Công cụ Claude, tự động hóa agent, tích hợp."
-      },
-      {
-        "name": "zcaceres/markdownify-mcp",
-        "url": "https://github.com/zcaceres/markdownify-mcp",
-        "desc": "Một máy chủ Model Context Protocol (MCP) để chuyển đổi hầu hết mọi thứ sang Markdown.",
-        "stars": "2.6K+",
-        "verdict": "yes",
-        "reason": "MCP server, tiện ích AI."
-      },
-      {
-        "name": "alirezarezvani/claude-skills",
-        "url": "https://github.com/alirezarezvani/claude-skills",
-        "desc": "Bộ sưu tập hơn 232 kỹ năng và plugin agent cho Claude Code và các công cụ mã hóa khác.",
-        "stars": "Không rõ",
-        "verdict": "yes",
-        "reason": "Công cụ Claude, tự động hóa agent, tiện ích AI."
-      },
-      {
-        "name": "EvoMap/evolver",
-        "url": "https://github.com/EvoMap/evolver",
-        "desc": "Công cụ tự tiến hóa được hỗ trợ bởi GEP cho các AI Agent.",
-        "stars": "3.9K+",
-        "verdict": "maybe",
-        "reason": "Liên quan đến AI agent, nhưng không trực tiếp Claude."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-17",
-    "dayLabel": "Thứ Sáu",
-    "dateLabel": "17/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "forrestchang/andrej-karpathy-skills",
-        "url": "https://github.com/forrestchang/andrej-karpathy-skills",
-        "desc": "Một tệp CLAUDE.md duy nhất để cải thiện hành vi của Claude Code, dựa trên các quan sát của Andrej Karpathy về những cạm bẫy khi viết mã LLM.",
-        "stars": "48K+",
-        "verdict": "yes",
-        "reason": "Công cụ Claude Code hữu ích, cải thiện hành vi LLM."
-      },
-      {
-        "name": "thedotmack/claude-mem",
-        "url": "https://github.com/thedotmack/claude-mem",
-        "desc": "Một plugin Claude Code tự động ghi lại mọi thứ Claude thực hiện, nén bằng AI và đưa ngữ cảnh liên quan vào các phiên làm việc sau này.",
-        "stars": "59K+",
-        "verdict": "yes",
-        "reason": "Plugin Claude Code giúp quản lý và tái sử dụng ngữ cảnh hiệu quả."
-      },
-      {
-        "name": "ComposioHQ/open-claude-cowork",
-        "url": "https://github.com/ComposioHQ/open-claude-cowork",
-        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS.",
-        "stars": "3.8K+",
-        "verdict": "yes",
-        "reason": "Phiên bản mã nguồn mở của Claude Cowork với nhiều tích hợp, phù hợp tự động hóa."
-      },
-      {
-        "name": "zcaceres/markdownify-mcp",
-        "url": "https://github.com/zcaceres/markdownify-mcp",
-        "desc": "Một máy chủ Model Context Protocol để chuyển đổi hầu hết mọi thứ sang Markdown.",
-        "stars": "2.6K+",
-        "verdict": "yes",
-        "reason": "MCP server tiện ích, chuyển đổi định dạng tài liệu sang Markdown."
-      },
-      {
-        "name": "repowise-dev/claude-code-prompts",
-        "url": "https://github.com/repowise-dev/claude-code-prompts",
-        "desc": "Các mẫu prompt độc lập cho các tác nhân mã hóa AI, bao gồm system prompts, tool prompts và quản lý bộ nhớ.",
-        "stars": "Không rõ",
-        "verdict": "maybe",
-        "reason": "Tài nguyên hữu ích cho prompt engineering với Claude Code, nhưng số sao không rõ."
-      },
-      {
-        "name": "alirezarezvani/claude-skills",
-        "url": "https://github.com/alirezarezvani/claude-skills",
-        "desc": "232+ kỹ năng và plugin tác nhân Claude Code cho nhiều tác nhân mã hóa khác nhau.",
-        "stars": "Không rõ",
-        "verdict": "maybe",
-        "reason": "Bộ sưu tập kỹ năng và plugin lớn cho Claude Code, nhưng số sao không rõ."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-16",
-    "dayLabel": "Thứ Năm",
-    "dateLabel": "16/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "forrestchang/andrej-karpathy-skills",
-        "url": "https://github.com/forrestchang/andrej-karpathy-skills",
-        "desc": "Một tệp CLAUDE.md duy nhất để cải thiện hành vi của Claude Code, dựa trên các quan sát của Andrej Karpathy về những cạm bẫy khi mã hóa LLM.",
-        "stars": "42K+",
-        "verdict": "yes",
-        "reason": "Tài liệu hữu ích để tối ưu hóa Claude Code."
-      },
-      {
-        "name": "thedotmack/claude-mem",
-        "url": "https://github.com/thedotmack/claude-mem",
-        "desc": "Một plugin Claude Code tự động ghi lại mọi thứ Claude thực hiện trong các phiên mã hóa, nén bằng AI và đưa ngữ cảnh liên quan vào các phiên sau này.",
-        "stars": "57K+",
-        "verdict": "yes",
-        "reason": "Plugin hữu ích cho quản lý ngữ cảnh và bộ nhớ trong Claude Code."
-      },
-      {
-        "name": "Donchitos/Claude-Code-Game-Studios",
-        "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-        "desc": "Biến Claude Code thành một studio phát triển game hoàn chỉnh với 49 tác nhân AI, 72 kỹ năng quy trình làm việc và một hệ thống điều phối toàn diện.",
-        "stars": "N/A",
-        "verdict": "maybe",
-        "reason": "Tiềm năng lớn cho phát triển game, cần đánh giá thêm về tính thực tế."
-      },
-      {
-        "name": "zcaceres/markdownify-mcp",
-        "url": "https://github.com/zcaceres/markdownify-mcp",
-        "desc": "Một máy chủ Model Context Protocol để chuyển đổi hầu hết mọi thứ sang Markdown.",
-        "stars": "2.6K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI hữu ích cho việc xử lý và chuyển đổi định dạng tài liệu."
-      },
-      {
-        "name": "ComposioHQ/open-claude-cowork",
-        "url": "https://github.com/ComposioHQ/open-claude-cowork",
-        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS.",
-        "stars": "3.8K+",
-        "verdict": "yes",
-        "reason": "Giải pháp tự động hóa quy trình làm việc mạnh mẽ với nhiều tích hợp."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-15",
-    "dayLabel": "Thứ Tư",
-    "dateLabel": "15/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "forrestchang/andrej-karpathy-skills",
-        "url": "https://github.com/forrestchang/andrej-karpathy-skills",
-        "desc": "Một tệp CLAUDE.md duy nhất để cải thiện hành vi của Claude Code, dựa trên những quan sát của Andrej Karpathy về các cạm bẫy lập trình LLM.",
-        "stars": "32.8K+",
-        "verdict": "yes",
-        "reason": "Công cụ hữu ích để tối ưu hóa Claude Code."
-      },
-      {
-        "name": "thedotmack/claude-mem",
-        "url": "https://github.com/thedotmack/claude-mem",
-        "desc": "Một plugin Claude Code tự động ghi lại mọi thứ Claude thực hiện trong các phiên lập trình của bạn, nén bằng AI và đưa ngữ cảnh liên quan vào các phiên sau này.",
-        "stars": "55.5K+",
-        "verdict": "yes",
-        "reason": "Plugin tự động hóa tác nhân, cải thiện bộ nhớ và ngữ cảnh cho Claude Code."
-      },
-      {
-        "name": "ComposioHQ/open-claude-cowork",
-        "url": "https://github.com/ComposioHQ/open-claude-cowork",
-        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS.",
-        "stars": "3.8K+",
-        "verdict": "yes",
-        "reason": "Công cụ tự động hóa quy trình làm việc mã nguồn mở, tích hợp rộng rãi."
-      },
-      {
-        "name": "zcaceres/markdownify-mcp",
-        "url": "https://github.com/zcaceres/markdownify-mcp",
-        "desc": "Một máy chủ Model Context Protocol để chuyển đổi hầu hết mọi thứ sang định dạng Markdown.",
-        "stars": "2.6K+",
-        "verdict": "yes",
-        "reason": "Máy chủ MCP và tiện ích AI hữu ích cho chuyển đổi định dạng."
-      },
-      {
-        "name": "zebbern/claude-code-guide",
-        "url": "https://github.com/zebbern/claude-code-guide",
-        "desc": "Hướng dẫn Claude Code bao gồm thiết lập, lệnh, quy trình làm việc, tác nhân, kỹ năng và các mẹo để trở thành người dùng thành thạo.",
-        "stars": "3.9K+",
-        "verdict": "maybe",
-        "reason": "Hướng dẫn toàn diện cho người dùng Claude Code, không phải công cụ trực tiếp."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-14",
-    "dayLabel": "Thứ Ba",
-    "dateLabel": "14/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "shanraisshan/claude-code-best-practice",
-        "url": "https://github.com/shanraisshan/claude-code-best-practice",
-        "desc": "Hướng dẫn thực tế để có được mã đáng tin cậy, chất lượng cao từ các trợ lý AI như Claude.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Tập trung trực tiếp vào việc cải thiện hiệu suất Claude Code."
-      },
-      {
-        "name": "ComposioHQ/open-claude-cowork",
-        "url": "https://github.com/ComposioHQ/open-claude-cowork",
-        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS.",
-        "stars": "3.8k+",
-        "verdict": "yes",
-        "reason": "Công cụ Claude Cowork mã nguồn mở với nhiều tích hợp, phù hợp cho tự động hóa tác nhân."
-      },
-      {
-        "name": "zebbern/claude-code-guide",
-        "url": "https://github.com/zebbern/claude-code-guide",
-        "desc": "Hướng dẫn toàn diện về Claude Code bao gồm thiết lập, lệnh, quy trình làm việc, tác nhân và mẹo.",
-        "stars": "3.9k+",
-        "verdict": "yes",
-        "reason": "Tài nguyên tuyệt vời cho người dùng Claude Code muốn nâng cao kỹ năng."
-      },
-      {
-        "name": "zcaceres/markdownify-mcp",
-        "url": "https://github.com/zcaceres/markdownify-mcp",
-        "desc": "Một máy chủ Giao thức ngữ cảnh mô hình (MCP) để chuyển đổi hầu hết mọi thứ sang Markdown.",
-        "stars": "2.6k+",
-        "verdict": "yes",
-        "reason": "Máy chủ MCP hữu ích cho tiện ích AI và xử lý tài liệu."
-      },
-      {
-        "name": "NousResearch/hermes-agent",
-        "url": "https://github.com/NousResearch/hermes-agent",
-        "desc": "Dự án tác nhân AI đang lên nhanh nhất tuần này, được xây dựng để cộng tác AI lâu dài, cá nhân hóa.",
-        "stars": "N/A",
-        "verdict": "maybe",
-        "reason": "Không dành riêng cho Claude nhưng liên quan đến tự động hóa tác nhân."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-13",
-    "dayLabel": "Thứ Hai",
-    "dateLabel": "13/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "zebbern/claude-code-guide",
-        "url": "https://github.com/zebbern/claude-code-guide",
-        "desc": "Hướng dẫn toàn diện cho Claude Code, bao gồm cài đặt, lệnh, quy trình làm việc, agents và mẹo sử dụng.",
-        "stars": "3.9K+",
-        "verdict": "yes",
-        "reason": "Tài liệu hữu ích cho người dùng Claude Code."
-      },
-      {
-        "name": "ComposioHQ/open-claude-cowork",
-        "url": "https://github.com/ComposioHQ/open-claude-cowork",
-        "desc": "Phiên bản mã nguồn mở của Claude Cowork với hơn 500 tích hợp ứng dụng SaaS và tự động hóa quy trình làm việc.",
-        "stars": "3.8K+",
-        "verdict": "yes",
-        "reason": "Công cụ tự động hóa agent mạnh mẽ với nhiều tích hợp."
-      },
-      {
-        "name": "zcaceres/markdownify-mcp",
-        "url": "https://github.com/zcaceres/markdownify-mcp",
-        "desc": "Một máy chủ Model Context Protocol (MCP) để chuyển đổi hầu hết mọi thứ sang định dạng Markdown.",
-        "stars": "2.6K+",
-        "verdict": "yes",
-        "reason": "Tiện ích MCP server hữu ích cho xử lý văn bản."
-      },
-      {
-        "name": "alirezarezvani/claude-skills",
-        "url": "https://github.com/alirezarezvani/claude-skills",
-        "desc": "Bộ sưu tập hơn 232 kỹ năng và plugin cho Claude Code và các agent mã hóa khác.",
-        "stars": "N/A",
-        "verdict": "yes",
-        "reason": "Bộ sưu tập lớn các kỹ năng do cộng đồng đóng góp cho Claude."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-12",
-    "dayLabel": "Chủ Nhật",
-    "dateLabel": "12/04/2026",
-    "news": [],
-    "repos": [
-      {
-        "name": "maxritter/pilot-shell",
-        "url": "https://github.com/maxritter/pilot-shell",
-        "desc": "Công cụ giúp Claude Code sẵn sàng cho sản xuất với các kế hoạch theo định hướng đặc tả và kiến thức bền vững.",
-        "stars": "1.6K+",
-        "verdict": "yes",
-        "reason": "Công cụ tự động hóa agent trực tiếp cho Claude Code, rất hữu ích."
-      },
-      {
-        "name": "DeepMyst/Mysti",
-        "url": "https://github.com/DeepMyst/Mysti",
-        "desc": "Đội ngũ agent AI mạnh mẽ cho VS Code, kết hợp Claude Code và OpenAI Codex để cộng tác và đưa ra giải pháp mã hóa.",
-        "stars": "1K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI cho lập trình, tích hợp Claude Code trong VS Code."
-      },
-      {
-        "name": "yasasbanukaofficial/claude-code",
-        "url": "https://github.com/yasasbanukaofficial/claude-code",
-        "desc": "Mã nguồn CLI mã nguồn mở của Claude Code, một agent AI tiên tiến dành cho nhà phát triển.",
-        "stars": "Không rõ",
-        "verdict": "maybe",
-        "reason": "Mã nguồn mở của Claude Code, hữu ích để tìm hiểu hoặc tùy chỉnh, nhưng có thể không phải công cụ độc lập."
-      },
-      {
-        "name": "codeaashu/claude-code",
-        "url": "https://github.com/codeaashu/claude-code",
-        "desc": "Claude Code là một công cụ mã hóa agentic trong terminal, giúp bạn mã hóa nhanh hơn thông qua các lệnh ngôn ngữ tự nhiên.",
-        "stars": "2K+",
-        "verdict": "yes",
-        "reason": "Công cụ mã hóa agentic chính, rất phù hợp với tiêu chí."
-      },
-      {
-        "name": "Hexastack/Hexabot",
-        "url": "https://github.com/Hexastack/Hexabot",
-        "desc": "Hexabot là một công cụ xây dựng chatbot/agent AI mã nguồn mở, cho phép tạo và quản lý chatbot đa kênh, đa ngôn ngữ.",
-        "stars": "Không rõ",
-        "verdict": "maybe",
-        "reason": "Công cụ xây dựng agent tổng quát, có thể tích hợp với Claude."
-      },
-      {
-        "name": "webfuse-com/awesome-claude",
-        "url": "https://github.com/webfuse-com/awesome-claude",
-        "desc": "Danh sách tuyển chọn các tài nguyên tuyệt vời liên quan đến Anthropic Claude.",
-        "stars": "1.3K+",
-        "verdict": "skip",
-        "reason": "Là một danh sách, không phải công cụ trực tiếp để sử dụng."
-      }
-    ],
-    "gamingNews": []
-  },
-  {
-    "date": "2026-04-11",
-    "dayLabel": "Thứ Bảy",
-    "dateLabel": "11/04/2026",
-    "news": [],
-    "repos": [],
-    "gamingNews": []
+    "lifestyle": []
   }
 ]
