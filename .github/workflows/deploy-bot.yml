@@ -60,3 +60,19 @@ jobs:
           GEMINI_API_KEY:           ${{ secrets.GEMINI_API_KEY }}
           OPENAI_API_KEY:           ${{ secrets.OPENAI_API_KEY }}
           JINA_API_KEY:             ${{ secrets.JINA_API_KEY }}
+
+      - name: Register Telegram webhook
+        env:
+          TELEGRAM_BOT_TOKEN:      ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_WEBHOOK_SECRET: ${{ secrets.TELEGRAM_WEBHOOK_SECRET }}
+          WORKER_URL: https://caman-bot.minhducdl87.workers.dev
+        run: |
+          echo "Registering webhook → $WORKER_URL/webhook"
+          resp=$(curl -sS \
+            -d "url=$WORKER_URL/webhook" \
+            -d "secret_token=$TELEGRAM_WEBHOOK_SECRET" \
+            -d "drop_pending_updates=true" \
+            -d 'allowed_updates=["message","edited_message"]' \
+            "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/setWebhook")
+          echo "$resp" | jq . || echo "$resp"
+          echo "$resp" | grep -q '"ok":true' || { echo "::error::setWebhook failed"; exit 1; }
