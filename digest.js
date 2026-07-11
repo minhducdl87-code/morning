@@ -61,22 +61,8 @@ function weekLabelText(key) {
   return `Tuần ${w} (${r.from.slice(8)}-${r.to.slice(8)}/${r.from.slice(5,7)})`;
 }
 
-// ── Theme + ToC drawer ────────────────────────────────────────────────────────
+// ── ToC drawer (theme is handled by puffer-theme.js external) ─────────────────
 
-function initTheme() {
-  const saved = localStorage.getItem('theme') || 'dark';
-  document.documentElement.dataset.theme = saved;
-  const btn = document.getElementById('theme-btn');
-  if (btn) btn.textContent = saved === 'dark' ? '☀️' : '🌙';
-}
-function toggleTheme() {
-  const curr = document.documentElement.dataset.theme || 'dark';
-  const next = curr === 'dark' ? 'light' : 'dark';
-  document.documentElement.dataset.theme = next;
-  localStorage.setItem('theme', next);
-  const btn = document.getElementById('theme-btn');
-  if (btn) btn.textContent = next === 'dark' ? '☀️' : '🌙';
-}
 function toggleToc() {
   document.getElementById('toc').classList.toggle('open');
   document.getElementById('toc-backdrop').classList.toggle('show');
@@ -352,7 +338,6 @@ async function loadConfig() {
 }
 
 async function init() {
-  initTheme();
   await loadConfig();
   try {
     const [dailyRes, weeklyRes, monthlyRes] = await Promise.all([

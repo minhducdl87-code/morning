@@ -1,52 +1,38 @@
 <!DOCTYPE html>
-<html lang="vi" data-theme="dark">
+<html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🐟 Cá Mặn Đau Lưng</title>
 <meta name="theme-color" content="#040d0a">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-<style>
-/* ═══ pufferfish_report_theme v2 — Morning Digest with ToC ═══ */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
-:root{
-  --bg:#040d0a;--bg2:#071510;--bg3:#0a1e18;
-  --surface:#0a1e18;--surface2:#0e2820;
-  --border:rgba(0,229,160,0.12);--border2:rgba(0,229,160,0.25);
-  --text:#e8faf4;--text2:#9abfb0;--text3:#6aada0;
-  --accent:#00e5a0;--accent2:#00b8ff;
-  --green:#00e5a0;--yellow:#ffd166;--red:#ff4757;--blue:#00bcd4;--pink:#a88eff;--orange:#ff9800;
-  --dot:rgba(0,229,160,0.10);
-  --shadow:rgba(0,0,0,0.4);
-  --mono:'JetBrains Mono',ui-monospace,monospace;
-  --display:'Sora',system-ui,sans-serif;
-  --body:'DM Sans',system-ui,sans-serif;
+<!-- Puffer Theme v1 (external — auto-updates when Hub deploys new version) -->
+<link rel="stylesheet" href="https://puffer.zingplay.dev/static/puffer-theme/v1/theme.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ═══ App-specific styles on top of pufferfish_report_theme v1 ═══ */
+
+/* Compat aliases — legacy var names used by app CSS below */
+:root {
+  --bg3: #0a1e18;
+  --text2: var(--sub);
+  --text3: var(--muted);
+  --pink: var(--purple);
+  --yellow: var(--warn);
+  --green: var(--up);
+  --border2: rgba(0,229,160,0.25);
+  --display: 'Sora', system-ui, sans-serif;
+  --body: 'DM Sans', system-ui, sans-serif;
 }
-[data-theme="light"]{
-  --bg:#f0f7f4;--bg2:#e4f0ea;--bg3:#ffffff;
-  --surface:#ffffff;--surface2:#f0f9f5;
-  --border:rgba(0,120,80,0.25);--border2:rgba(0,153,104,0.3);
-  --text:#0a2018;--text2:#1a5040;--text3:#2d5c44;
-  --accent:#009968;--accent2:#0077b8;
-  --green:#1a6b3a;--yellow:#d4a017;--red:#c0202e;--blue:#0077b8;--pink:#7a5fd9;--orange:#7a3c00;
-  --dot:rgba(0,140,85,0.07);
-  --shadow:rgba(10,46,36,0.08);
+body.light {
+  --bg3: #ffffff;
+  --border2: rgba(0,140,85,0.35);
 }
-html{scroll-behavior:smooth}
-body{
-  background:var(--bg);color:var(--text);
-  font-family:var(--body);min-height:100vh;
-  font-size:15px;line-height:1.6;
-  transition:background .3s,color .3s;
-  position:relative;
-}
-body::before{
-  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
-  background-image:radial-gradient(circle,var(--dot) 1px,transparent 1px);
-  background-size:32px 32px;
-}
-body > *{position:relative;z-index:1}
+
+/* Reset margins/padding on body (puffer sets 32px padding — we manage layout ourselves) */
+body { padding: 0; }
+html { scroll-behavior: smooth; }
 
 /* ── Header ── */
 .site-header{
@@ -66,14 +52,17 @@ body > *{position:relative;z-index:1}
   margin-top:3px;text-transform:uppercase;letter-spacing:2px;font-weight:600;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
-.theme-btn,.toc-btn{
+.toc-btn{
+  display:none;
   background:var(--surface);border:1px solid var(--border);
-  border-radius:24px;padding:6px 12px;font-size:.95rem;
+  border-radius:24px;padding:6px 12px;
+  font-family:var(--mono);font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;
   cursor:pointer;transition:all .15s;
-  flex-shrink:0;color:var(--text2);
+  flex-shrink:0;color:var(--sub);
 }
-.theme-btn:hover,.toc-btn:hover{border-color:var(--accent);color:var(--accent)}
-.toc-btn{display:none;font-family:var(--mono);font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:600}
+.toc-btn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* Puffer theme-toggle floats top-right; header itself has no toggle button */
 
 /* ── Layout: ToC sidebar + main ── */
 .layout{
@@ -301,6 +290,9 @@ footer{
 </style>
 </head>
 <body>
+<!-- Puffer theme toggle (floating top-right, controlled by external theme.js) -->
+<button class="theme-toggle" id="themeToggle" title="Đổi giao diện"><span id="themeIcon">🌙</span></button>
+
 <header class="site-header">
   <div class="header-inner">
     <button class="toc-btn" onclick="toggleToc()">☰ Mục lục</button>
@@ -309,7 +301,6 @@ footer{
       <h1 id="site-title">Cá Mặn Đau Lưng</h1>
       <div class="tagline" id="tagline">Tin cho người 3x · Sáng 5h · Recap 10h</div>
     </div>
-    <button class="theme-btn" id="theme-btn" title="Đổi giao diện" onclick="toggleTheme()">☀️</button>
   </div>
 </header>
 <div class="toc-backdrop" id="toc-backdrop" onclick="toggleToc()"></div>
@@ -322,5 +313,6 @@ footer{
 </div>
 <footer id="site-footer">🐟 Cá Mặn Đau Lưng · Sáng 5AM · Recap 10AM · Không tin lá cải</footer>
 <script src="digest.js"></script>
+<script src="https://puffer.zingplay.dev/static/puffer-theme/v1/theme.js"></script>
 </body>
 </html>
