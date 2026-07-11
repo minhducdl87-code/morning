@@ -1,0 +1,80 @@
+// OpenAI wrapper: chat (fallback + /deep), whisper (voice), image gen
+import type { Msg } from '../types';
+
+const CHAT_URL   = 'https://api.openai.com/v1/chat/completions';
+const IMAGE_URL  = 'https://api.openai.com/v1/images/generations';
+const AUDIO_URL  = 'https://api.openai.com/v1/audio/transcriptions';
+
+interface ChatResp { choices?: { message?: { content?: string } }[]; error?: { message: string }; }
+
+export async function openaiChat(
+  apiKey: string, model: string, system: string, history: Msg[], userText: string,
+): Promise<string | null> {
+  const messages: any[] = [{ role: 'system', content: system }];
+  for (const m of history) messages.push({ role: m.role, content: m.text });
+  messages.push({ role: 'user', content: userText });
+
+  try {
+    const r = await fetch(CHAT_URL, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', authorization: `Bearer ${apiKey}` },
+      body: JSON.stringify({ model, messages, temperature: 0.5, max_tokens: 1024 }),
+    });
+    const j = await r.json() as ChatResp;
+    if (j.error) { console.error('[openai chat]', j.error.message); return null; }
+    return j.choices?.[0]?.message?.content?.trim() || null;
+  } catch (e) {
+    console.error('[openai chat] fetch error:', e);
+    return null;
+  }
+}
+
+interface ImageResp {
+  data?: ({ url?: string; b64_json?: string })[];
+  error?: { message: string };
+}
+
+// Returns first image URL, or data: URI if API returns b64
+export async function openaiImage(apiKey: string, model: string, prompt: string): Promise<string | null> {
+  try {
+    const r = await fetch(IMAGE_URL, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', authorization: `Bearer ${apiKey}` },
+      body: JSON.stringify({ model, prompt, n: 1, size: '1024x1024' }),
+    });
+    const j = await r.json() as ImageResp;
+    if (j.error) { console.error('[openai image]', j.error.message); return null; }
+    const d = j.data?.[0];
+    if (d?.url) return d.url;
+    if (d?.b64_json) return `data:image/png;base64,${d.b64_json}`;
+    return null;
+  } catch (e) {
+    console.error('[openai image] fetch error:', e);
+    return null;
+  }
+}
+
+interface WhisperResp { text?: string; error?: { message: string }; }
+
+// Transcribe voice/audio → text. audioBlob is fetched Telegram file (OGG usually).
+export async function openaiTranscribe(
+  apiKey: string, model: string, audioBlob: Blob, filename = 'voice.ogg',
+): Promise<string | null> {
+  try {
+    const form = new FormData();
+    form.append('file', audioBlob, filename);
+    form.append('model', model);
+    form.append('language', 'vi');
+    const r = await fetch(AUDIO_URL, {
+      method: 'POST',
+      headers: { authorization: `Bearer ${apiKey}` },
+      body: form,
+    });
+    const j = await r.json() as WhisperResp;
+    if (j.error) { console.error('[whisper]', j.error.message); return null; }
+    return j.text?.trim() || null;
+  } catch (e) {
+    console.error('[whisper] fetch error:', e);
+    return null;
+  }
+}
