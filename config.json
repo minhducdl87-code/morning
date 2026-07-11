@@ -22,7 +22,8 @@
       ],
       "rss_feeds": [
         "https://tinhte.vn/rss",
-        "https://genk.vn/rss/home.rss"
+        "https://genk.vn/rss/home.rss",
+        "https://vnexpress.net/rss/so-hoa.rss"
       ],
       "prompt_instruction": "Gadget mới, AI tool đáng thử, review sản phẩm có ảnh hưởng thực tế đến người đi làm 30-40 tuổi. Ưu tiên nguồn VN + tin quốc tế nổi bật. URL chỉ từ Dữ liệu tìm kiếm.",
       "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu\",\"tag\":\"launch|review|ai|deal\",\"tagLabel\":\"🚀 LAUNCH|⭐ REVIEW|🤖 AI|💸 DEAL\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
@@ -43,7 +44,8 @@
       ],
       "rss_feeds": [
         "https://cafef.vn/thi-truong-chung-khoan.rss",
-        "https://vneconomy.vn/tai-chinh.rss"
+        "https://vneconomy.vn/tai-chinh.rss",
+        "https://cafebiz.vn/rss/home.rss"
       ],
       "prompt_instruction": "Chứng khoán VN, crypto, vàng, BĐS, lãi suất — tin có impact người 30-40 tuổi đang tích lũy tài sản. Con số cụ thể (giá, %, biến động). URL chỉ từ Dữ liệu tìm kiếm.",
       "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu, nêu con số\",\"tag\":\"stock|crypto|gold|realestate|rate\",\"tagLabel\":\"📈 CK|₿ CRYPTO|🪙 VÀNG|🏠 BĐS|💵 LÃI SUẤT\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
@@ -61,7 +63,9 @@
         "K-pop concert MV mới {month_year}",
         "V-pop showbiz {month_year} site:kenh14.vn OR site:vietnamnet.vn"
       ],
-      "rss_feeds": [],
+      "rss_feeds": [
+        "https://vnexpress.net/rss/giai-tri.rss"
+      ],
       "prompt_instruction": "Phim/show đáng xem tuần này, MV/album mới, sự kiện có buzz. Bỏ paparazzi drama vụn vặt.",
       "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu\",\"tag\":\"movie|music|show|celeb\",\"tagLabel\":\"🎬 PHIM|🎵 MUSIC|📺 SHOW|⭐ CELEB\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     },
@@ -99,7 +103,7 @@
         "https://vnexpress.net/rss/thoi-su.rss",
         "https://vnexpress.net/rss/kinh-doanh.rss",
         "https://tuoitre.vn/rss/thoi-su.rss",
-        "https://tuoitre.vn/rss/kinh-te.rss"
+        "https://tuoitre.vn/rss/kinh-doanh.rss"
       ],
       "prompt_instruction": "Tin quan trọng trong nước, impact người đi làm VN: chính sách, kinh tế, giao thông, giáo dục, thuế, luật. Bỏ tin lá cải giật tít.",
       "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu, nêu impact\",\"tag\":\"policy|economy|society|traffic|tax\",\"tagLabel\":\"📜 CHÍNH SÁCH|💼 KINH TẾ|🏙️ XÃ HỘI|🚦 GIAO THÔNG|💸 THUẾ\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
@@ -117,7 +121,10 @@
         "quán ăn ngon Hà Nội Sài Gòn review {month_year}",
         "du lịch trong nước ngoài nước {month_year} deal"
       ],
-      "rss_feeds": [],
+      "rss_feeds": [
+        "https://vnexpress.net/rss/suc-khoe.rss",
+        "https://vnexpress.net/rss/du-lich.rss"
+      ],
       "prompt_instruction": "Health tips có evidence, food review, travel deal, wellness/mindfulness. Không quảng cáo trá hình.",
       "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu\",\"tag\":\"health|food|travel|wellness\",\"tagLabel\":\"💪 HEALTH|🍜 FOOD|✈️ TRAVEL|🧘 WELLNESS\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     }
