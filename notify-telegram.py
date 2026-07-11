@@ -3,7 +3,6 @@
 import json, os, sys, urllib.request, urllib.parse
 
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-CHAT_ID   = "655323886"
 PAGE_URL  = "https://minhducdl87-code.github.io/morning"
 MODE      = os.environ.get("NOTIFY_MODE", "morning")   # "morning" or "recap"
 
@@ -21,12 +20,17 @@ try:
     with open("config.json", "r", encoding="utf-8") as f:
         config = json.load(f)
 except FileNotFoundError:
-    config = {"topics": {}, "site": {}}
+    config = {"topics": {}, "site": {}, "telegram": {}}
 
 card       = cards[0]
 site       = config.get("site", {})
 site_title = site.get("title", "Morning Digest")
 topics     = config.get("topics", {})
+
+# Chat ID resolution: env var (comma-sep) > config.telegram.chat_ids > fallback
+env_ids = [x.strip() for x in os.environ.get("TELEGRAM_CHAT_IDS", "").split(",") if x.strip()]
+config_ids = config.get("telegram", {}).get("chat_ids", []) or []
+CHAT_IDS = env_ids or config_ids or ["655323886"]
 
 # Priority tags for "Top không thể bỏ qua" section
 PRIORITY_TAGS = {"hot":0, "launch":1, "stock":2, "crypto":3, "policy":3, "economy":4, "movie":5, "review":6}
@@ -123,24 +127,31 @@ def build_recap_message(card: dict) -> str:
 
 message = build_recap_message(card) if MODE == "recap" else build_morning_message(card)
 
-# Send
+# Send to every chat_id — partial failure OK (don't block other recipients)
 url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
-payload = urllib.parse.urlencode({
-    "chat_id":    CHAT_ID,
-    "text":       message,
-    "parse_mode": "HTML",
-    "disable_web_page_preview": "true",
-}).encode()
-req = urllib.request.Request(url, data=payload, method="POST")
-req.add_header("Content-Type", "application/x-www-form-urlencoded")
-try:
-    with urllib.request.urlopen(req, timeout=10) as resp:
-        result = json.loads(resp.read())
-        if result.get("ok"):
-            print(f"✓ Sent {MODE} to chat {CHAT_ID}")
-        else:
-            print(f"✗ Telegram API error: {result.get('description', 'unknown')}")
-            sys.exit(1)
-except Exception as e:
-    print(f"✗ Failed: {e}")
+ok_count = fail_count = 0
+for chat_id in CHAT_IDS:
+    payload = urllib.parse.urlencode({
+        "chat_id":    chat_id,
+        "text":       message,
+        "parse_mode": "HTML",
+        "disable_web_page_preview": "true",
+    }).encode()
+    req = urllib.request.Request(url, data=payload, method="POST")
+    req.add_header("Content-Type", "application/x-www-form-urlencoded")
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            result = json.loads(resp.read())
+            if result.get("ok"):
+                print(f"✓ Sent {MODE} to chat {chat_id}")
+                ok_count += 1
+            else:
+                print(f"✗ chat {chat_id}: {result.get('description', 'unknown')}")
+                fail_count += 1
+    except Exception as e:
+        print(f"✗ chat {chat_id}: {e}")
+        fail_count += 1
+
+print(f"Total: {ok_count} ok / {fail_count} fail / {len(CHAT_IDS)} recipients")
+if ok_count == 0 and fail_count:
     sys.exit(1)

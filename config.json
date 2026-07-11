@@ -5,6 +5,9 @@
     "logo": "🐟",
     "footer": "🐟 Cá Mặn Đau Lưng · Sáng 5AM · Recap 10AM · Không tin lá cải"
   },
+  "telegram": {
+    "chat_ids": ["655323886", "782194719"]
+  },
   "topics": {
     "tech_gadget": {
       "enabled": true,
