@@ -4,7 +4,11 @@ import json, os, re
 from datetime import datetime, timedelta
 from google import genai
 from google.genai import types
-from digest_utils import get_recent_titles, get_recent_urls, batch_check_urls, validate_news_items, validate_repo_items
+from digest_utils import (
+    get_recent_titles, get_recent_urls, batch_check_urls,
+    validate_news_items, validate_repo_items,
+    build_dedup_index, is_duplicate_title, DEDUP_DAYS,
+)
 from jina_fetch import fetch_topic_context
 
 try:
@@ -32,8 +36,10 @@ topics = {k: v for k, v in config["topics"].items() if v.get("enabled", True)}
 with open("cards.json", "r", encoding="utf-8") as f:
     cards = json.load(f)
 
-recent_titles = get_recent_titles(cards, date_str, now, days=3)
-recent_urls   = get_recent_urls(cards, date_str, now, days=3)
+recent_titles = get_recent_titles(cards, date_str, now, days=DEDUP_DAYS)
+recent_urls   = get_recent_urls(cards, date_str, now, days=DEDUP_DAYS)
+recent_norms, recent_prefixes = build_dedup_index(recent_titles)
+print(f"Dedup window: {DEDUP_DAYS} days | {len(recent_titles)} recent titles, {len(recent_urls)} recent URLs")
 
 
 def build_prompt(topics: dict, recent_titles: list, topic_contexts: dict, tone_guidance: str = "") -> str:
@@ -69,9 +75,10 @@ def build_prompt(topics: dict, recent_titles: list, topic_contexts: dict, tone_g
         schema_fields += f',"{field}":[...]'
 
     if recent_titles:
-        lines.append("TRÁNH lặp lại — các tin sau đã xuất hiện trong 3 ngày qua, KHÔNG đưa vào:")
-        for t in recent_titles[:15]:
+        lines.append(f"TUYỆT ĐỐI KHÔNG lặp lại — các tin sau đã xuất hiện trong {DEDUP_DAYS} ngày qua:")
+        for t in recent_titles[:40]:
             lines.append(f"  - {t}")
+        lines.append("(Nếu tin mới cùng chủ đề với các tin trên: chỉ chọn nếu có góc nhìn / diễn biến MỚI HẲN, và viết title khác hoàn toàn.)")
         lines.append("")
 
     lines.append("Trả về CHỈ JSON (không markdown, không text thêm):")
@@ -227,15 +234,25 @@ for f in OUTPUT_FIELDS:
     else:
         card_json[f] = validate_news_items(card_json.get(f, []), live_map)
 
-# --- Dedup by URL against last 3 days ---
-if recent_urls:
-    removed_total = 0
-    for f in OUTPUT_FIELDS:
-        before = len(card_json.get(f, []))
-        card_json[f] = [x for x in card_json.get(f, []) if not x.get("url") or x["url"] not in recent_urls]
-        removed_total += before - len(card_json[f])
-    if removed_total:
-        print(f"Dedup removed {removed_total} duplicate item(s) found in last 3 days")
+# --- Dedup vs last DEDUP_DAYS: by URL exact + normalized title + first-5-word prefix ---
+removed_url = removed_title = 0
+for f in OUTPUT_FIELDS:
+    kept = []
+    for x in card_json.get(f, []):
+        url = (x.get("url") or "").strip()
+        if url and url in recent_urls:
+            removed_url += 1
+            print(f"  [dedup:url]   drop {f}: {x.get('title') or x.get('name','')[:60]}")
+            continue
+        title = x.get("title") or x.get("name") or ""
+        if is_duplicate_title(title, recent_norms, recent_prefixes):
+            removed_title += 1
+            print(f"  [dedup:title] drop {f}: {title[:60]}")
+            continue
+        kept.append(x)
+    card_json[f] = kept
+if removed_url or removed_title:
+    print(f"Dedup: dropped {removed_url} by URL + {removed_title} by title (window {DEDUP_DAYS} days)")
 
 # --- Update cards.json (rolling 30-day window) ---
 cards = [c for c in cards if c.get("date") != date_str]
