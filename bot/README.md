@@ -1,4 +1,4 @@
-# 🐟 Rau Bot — @caman_bot
+# 🐟 Caman — @caman_bot
 
 AI chatbot cho Cá Mặn Đau Lưng. Cloudflare Worker + Gemini + OpenAI.
 

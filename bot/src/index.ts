@@ -1,4 +1,4 @@
-// Rau Bot — Cloudflare Worker entry.
+// Caman — Cloudflare Worker entry.
 // Handles Telegram webhook POSTs, routes to commands / free-text chat / voice / URL summary.
 
 import type { Env } from './types';

@@ -30,7 +30,7 @@ function fmtItem(it: DigestItem, meta?: { emoji: string }): string {
 export function cmdStart(env: Env): string {
   return `🐟 <b>Cá Mặn Đau Lưng</b>
 
-Em là Rau Bot, trợ lý digest cho anh/chị.
+Em là <b>Caman</b>, trợ lý digest cho anh/chị.
 
 Gõ tin bất kỳ để chat, hoặc:
 /digest — bảng tin hôm nay
