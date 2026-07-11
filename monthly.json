@@ -1,155 +1,73 @@
 [
   {
-    "monthLabel": "Tháng 6/2026",
-    "fromDate": "2026-06-01",
-    "toDate": "2026-06-30",
+    "monthLabel": "Tháng 5/2026",
+    "fromDate": "2026-05-01",
+    "toDate": "2026-05-31",
     "topNews": [],
     "topRepos": [
       {
         "name": "openclaw/openclaw",
         "url": "https://github.com/openclaw/openclaw",
-        "desc": "Trợ lý AI cá nhân của bạn, hoạt động trên mọi hệ điều hành và nền tảng.",
-        "stars": "381.0K+",
+        "desc": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+        "stars": "370.4K+",
         "verdict": "yes",
-        "reason": "Trợ lý AI cá nhân, tiện ích AI."
+        "reason": "Trending Tháng 5/2026"
+      },
+      {
+        "name": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+        "stars": "187.3K+",
+        "verdict": "yes",
+        "reason": "Trending Tháng 5/2026"
       },
       {
         "name": "obra/superpowers",
         "url": "https://github.com/obra/superpowers",
-        "desc": "Một framework kỹ năng agentic và phương pháp phát triển phần mềm hiệu quả.",
-        "stars": "241.5K+",
+        "desc": "An agentic skills framework & software development methodology that works.",
+        "stars": "185.0K+",
         "verdict": "yes",
-        "reason": "Framework kỹ năng agentic, tự động hóa AI."
-      },
-      {
-        "name": "affaan-m/ECC",
-        "url": "https://github.com/affaan-m/ECC",
-        "desc": "Hệ thống tối ưu hóa hiệu suất agent harness cho Claude Code, Codex và hơn thế nữa.",
-        "stars": "223.5K+",
-        "verdict": "yes",
-        "reason": "Công cụ Claude, tự động hóa agent."
-      },
-      {
-        "name": "NousResearch/hermes-agent",
-        "url": "https://github.com/NousResearch/hermes-agent",
-        "desc": "Agent có khả năng phát triển cùng bạn.",
-        "stars": "205.7K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa agent, tiện ích AI."
-      },
-      {
-        "name": "n8n-io/n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa workflow mã nguồn mở với khả năng AI tích hợp.",
-        "stars": "194.5K+",
-        "verdict": "yes",
-        "reason": "Tự động hóa workflow, khả năng AI."
+        "reason": "Trending Tháng 5/2026"
       },
       {
         "name": "Significant-Gravitas/AutoGPT",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "Tầm nhìn về AI dễ tiếp cận cho mọi người, để sử dụng và xây dựng.",
-        "stars": "185.2K+",
+        "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "stars": "184.1K+",
         "verdict": "yes",
-        "reason": "Tiện ích AI, tự động hóa agent."
-      },
-      {
-        "name": "ollama/ollama",
-        "url": "https://github.com/ollama/ollama",
-        "desc": "Dễ dàng chạy các mô hình như Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma.",
-        "stars": "175.2K+",
-        "verdict": "yes",
-        "reason": "Tiện ích AI, hỗ trợ nhiều mô hình."
-      },
-      {
-        "name": "f/prompts.chat",
-        "url": "https://github.com/f/prompts.chat",
-        "desc": "Nền tảng chia sẻ và khám phá các prompt hiệu quả cho AI, hữu ích cho việc tương tác với LLM.",
-        "stars": "164.0K+",
-        "verdict": "yes",
-        "reason": "Nền tảng chia sẻ prompt cho AI, tiện ích AI."
-      }
-    ],
-    "topGaming": []
-  },
-  {
-    "monthLabel": "Tháng 5/2026",
-    "fromDate": "2026-05-01",
-    "toDate": "2026-05-31",
-    "topNews": [
-      {
-        "title": "✨ Claude Pro: Tích Hợp Cơ Sở Tri Thức Tùy Chỉnh",
-        "desc": "Người dùng Claude Pro giờ đây có thể kết nối và sử dụng cơ sở tri thức riêng của mình để Claude truy xuất thông tin. Tính năng này giúp tăng cường độ chính xác và cá nhân hóa phản hồi.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "09/05·Claude Docs",
-        "url": "https://docs.anthropic.com/claude/pro/custom-kb"
-      }
-    ],
-    "topRepos": [
-      {
-        "name": "openclaw/openclaw",
-        "url": "https://github.com/openclaw/openclaw",
-        "desc": "Trợ lý AI cá nhân hoạt động trên mọi hệ điều hành và nền tảng.",
-        "stars": "375.7K+",
-        "verdict": "yes",
-        "reason": "AI utilities, agent automation"
-      },
-      {
-        "name": "affaan-m/ECC",
-        "url": "https://github.com/affaan-m/ECC",
-        "desc": "Hệ thống tối ưu hiệu suất tác nhân cho Claude Code và các mô hình AI khác.",
-        "stars": "199.2K+",
-        "verdict": "yes",
-        "reason": "Claude tools, agent automation"
-      },
-      {
-        "name": "n8n-io/n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "desc": "Nền tảng tự động hóa quy trình làm việc mã nguồn mở với khả năng AI tích hợp.",
-        "stars": "190.4K+",
-        "verdict": "yes",
-        "reason": "Agent automation, AI utilities"
+        "reason": "Trending Tháng 5/2026"
       },
       {
         "name": "affaan-m/everything-claude-code",
         "url": "https://github.com/affaan-m/everything-claude-code",
-        "desc": "Hệ thống tối ưu hóa hiệu suất tác nhân, tập trung vào các công cụ Claude Code và các mô hình AI khác.",
-        "stars": "186.5K+",
+        "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "stars": "177.5K+",
         "verdict": "yes",
-        "reason": "Công cụ Claude, tự động hóa tác nhân."
-      },
-      {
-        "name": "Significant-Gravitas/AutoGPT",
-        "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "desc": "AutoGPT là công cụ AI tiên phong giúp mọi người dễ dàng sử dụng và xây dựng các ứng dụng AI.",
-        "stars": "184.7K+",
-        "verdict": "yes",
-        "reason": "AI utilities, agent automation"
-      },
-      {
-        "name": "NousResearch/hermes-agent",
-        "url": "https://github.com/NousResearch/hermes-agent",
-        "desc": "Một tác nhân AI có khả năng học hỏi và phát triển cùng với người dùng.",
-        "stars": "173.7K+",
-        "verdict": "yes",
-        "reason": "Agent automation"
+        "reason": "Trending Tháng 5/2026"
       },
       {
         "name": "ollama/ollama",
         "url": "https://github.com/ollama/ollama",
-        "desc": "Dễ dàng chạy các mô hình AI như Kimi-K2.5, GLM-5, MiniMax và nhiều mô hình khác.",
-        "stars": "172.7K+",
+        "desc": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "stars": "171.1K+",
         "verdict": "yes",
-        "reason": "AI utilities"
+        "reason": "Trending Tháng 5/2026"
       },
       {
         "name": "f/prompts.chat",
         "url": "https://github.com/f/prompts.chat",
-        "desc": "Nền tảng chia sẻ, khám phá và thu thập các prompt từ cộng đồng, miễn phí và mã nguồn mở.",
-        "stars": "162.6K+",
+        "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "stars": "161.9K+",
         "verdict": "yes",
-        "reason": "Tiện ích AI, quản lý prompt."
+        "reason": "Trending Tháng 5/2026"
+      },
+      {
+        "name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "desc": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+        "stars": "160.4K+",
+        "verdict": "yes",
+        "reason": "Trending Tháng 5/2026"
       }
     ],
     "topGaming": []
@@ -160,76 +78,12 @@
     "toDate": "2026-04-30",
     "topNews": [
       {
-        "title": "⏰ Ngừng Hỗ Trợ Claude Sonnet 4 & Opus 4",
-        "desc": "Anthropic thông báo ngừng hỗ trợ các mô hình Claude Sonnet 4 và Claude Opus 4 vào ngày 15/06/2026, khuyến nghị người dùng di chuyển sang Sonnet 4.6 và Opus 4.7.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "14/04·Anthropic API Docs",
-        "url": "https://docs.anthropic.com/claude/reference/changelog#april-14-2026"
-      },
-      {
-        "title": "⏰ Ngừng Hỗ Trợ Claude 4/Sonnet 4",
-        "desc": "Anthropic thông báo ngừng hỗ trợ các model Claude Sonnet 4 và Claude Opus 4, với lịch trình ngừng hoạt động trên Claude API vào ngày 15 tháng 6 năm 2026. Người dùng được khuyến nghị di chuyển sang Claude Sonnet 4.6 và Claude Opus 4.7.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "14/04·Claude API Docs",
-        "url": "https://docs.anthropic.com/claude/reference/changelog"
-      },
-      {
-        "title": "⏰ Ngừng Hỗ Trợ SDK Python Cũ",
-        "desc": "Anthropic thông báo ngừng hỗ trợ các phiên bản SDK Python trước 0.15.0, khuyến nghị người dùng nâng cấp để đảm bảo tính tương thích và bảo mật.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "23/04·Dev Docs",
-        "url": "https://docs.anthropic.com/claude/docs/sdk-deprecation"
-      },
-      {
-        "title": "⏰ Cảnh Báo: Ngừng Hỗ Trợ Claude 2.1 API Cũ",
-        "desc": "Anthropic thông báo ngừng hỗ trợ API cho Claude 2.1 từ ngày 30/06/2026. Các nhà phát triển được khuyến nghị chuyển sang các phiên bản API mới hơn để đảm bảo tính tương thích và hiệu suất.",
-        "tag": "deprecate",
-        "tagLabel": "⏰ DEADLINE",
-        "source": "29/04·Anthropic Dev",
-        "url": "https://docs.anthropic.com/claude/api/deprecation-notice"
-      },
-      {
-        "title": "✨ Ra Mắt Public Beta Công Cụ Advisor",
-        "desc": "Anthropic đã ra mắt công cụ Advisor ở dạng beta công khai, cho phép kết hợp mô hình executor nhanh hơn với mô hình advisor thông minh hơn để hướng dẫn chiến lược trong quá trình tạo.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "09/04·Anthropic API Docs",
-        "url": "https://docs.anthropic.com/claude/reference/changelog#april-9-2026"
-      },
-      {
-        "title": "✨ Claude Managed Agents Public Beta",
-        "desc": "Anthropic đã ra mắt Claude Managed Agents ở dạng beta công khai, một công cụ quản lý tác nhân hoàn chỉnh để chạy Claude như một tác nhân tự trị với sandboxing an toàn và các công cụ tích hợp.",
-        "tag": "feature",
-        "tagLabel": "✨ FEATURE",
-        "source": "08/04·Anthropic API Docs",
-        "url": "https://docs.anthropic.com/claude/reference/changelog#april-8-2026"
-      },
-      {
         "title": "✨ Claude Code: Hỗ Trợ Worktree",
         "desc": "Claude Code phiên bản 2.1.105 đã thêm tham số đường dẫn vào công cụ EnterWorktree để chuyển sang một worktree hiện có của kho lưu trữ hiện tại. Điều này cải thiện khả năng quản lý dự án và quy trình làm việc cho các nhà phát triển.",
         "tag": "feature",
         "tagLabel": "✨ FEATURE",
         "source": "Gần đây·GitHub",
         "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
-      },
-      {
-        "title": "🔧 API: Gọi Đa Công Cụ Đồng Thời",
-        "desc": "API Tool Use của Claude giờ đây cho phép gọi nhiều công cụ cùng lúc trong một lượt phản hồi, giúp tự động hóa các tác vụ phức tạp hiệu quả hơn.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "23/04·Claude Dev Docs",
-        "url": "https://docs.anthropic.com/claude/docs/multi-tool-use"
-      },
-      {
-        "title": "🔧 API: Ra Mắt Endpoint Xử Lý Ảnh Nâng Cao",
-        "desc": "API mới cho phép các nhà phát triển tích hợp khả năng phân tích và tạo mô tả chi tiết từ hình ảnh trực tiếp vào ứng dụng của họ. Mở rộng tiềm năng ứng dụng thị giác máy tính.",
-        "tag": "api",
-        "tagLabel": "🔧 API",
-        "source": "29/04·Anthropic Dev",
-        "url": "https://docs.anthropic.com/claude/api/image-processing"
       }
     ],
     "topRepos": [

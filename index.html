@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🐡 Morning Digest</title>
+<title>🐟 Cá Mặn Đau Lưng</title>
 <meta name="theme-color" content="#040d0a">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -202,16 +202,21 @@ a.news-title:hover{color:var(--accent);text-decoration:underline}
   white-space:nowrap;flex-shrink:0;
   text-transform:uppercase;letter-spacing:1px;
 }
-.tag-hot{background:rgba(255,71,87,.15);color:var(--red);border:1px solid rgba(255,71,87,.3)}
-.tag-api{background:rgba(0,229,160,.12);color:var(--accent);border:1px solid rgba(0,229,160,.28)}
-.tag-feature{background:rgba(0,229,160,.12);color:var(--green);border:1px solid rgba(0,229,160,.28)}
-.tag-deprecate{background:rgba(255,204,2,.15);color:var(--yellow);border:1px solid rgba(255,204,2,.3)}
-.tag-model{background:rgba(168,142,255,.12);color:var(--pink);border:1px solid rgba(168,142,255,.28)}
-.tag-chart{background:rgba(0,188,212,.12);color:var(--blue);border:1px solid rgba(0,188,212,.28)}
-.tag-monet{background:rgba(255,209,102,.15);color:var(--yellow);border:1px solid rgba(255,209,102,.3)}
-.tag-gameplay{background:rgba(0,229,160,.12);color:var(--green);border:1px solid rgba(0,229,160,.28)}
-.tag-social{background:rgba(168,142,255,.12);color:var(--pink);border:1px solid rgba(168,142,255,.28)}
-.tag-casual{background:rgba(0,188,212,.12);color:var(--blue);border:1px solid rgba(0,188,212,.28)}
+/* Color families reused across new topic tags */
+.tag-red{background:rgba(255,71,87,.15);color:var(--red);border:1px solid rgba(255,71,87,.3)}
+.tag-green{background:rgba(0,229,160,.12);color:var(--green);border:1px solid rgba(0,229,160,.28)}
+.tag-yellow{background:rgba(255,209,102,.15);color:var(--yellow);border:1px solid rgba(255,209,102,.3)}
+.tag-pink{background:rgba(168,142,255,.12);color:var(--pink);border:1px solid rgba(168,142,255,.28)}
+.tag-blue{background:rgba(0,188,212,.12);color:var(--blue);border:1px solid rgba(0,188,212,.28)}
+.tag-orange{background:rgba(255,152,0,.15);color:var(--orange);border:1px solid rgba(255,152,0,.3)}
+
+/* Legacy aliases (kept for historical cards) */
+.tag-hot,.tag-launch,.tag-movie,.tag-event,.tag-policy{background:rgba(255,71,87,.15);color:var(--red);border:1px solid rgba(255,71,87,.3)}
+.tag-api,.tag-feature,.tag-gameplay,.tag-review,.tag-console,.tag-health,.tag-wellness,.tag-realestate{background:rgba(0,229,160,.12);color:var(--accent);border:1px solid rgba(0,229,160,.28)}
+.tag-deprecate,.tag-monet,.tag-deal,.tag-gold,.tag-tax,.tag-food,.tag-traffic{background:rgba(255,209,102,.15);color:var(--yellow);border:1px solid rgba(255,209,102,.3)}
+.tag-model,.tag-ai,.tag-music,.tag-show,.tag-celeb,.tag-crypto,.tag-social,.tag-society{background:rgba(168,142,255,.12);color:var(--pink);border:1px solid rgba(168,142,255,.28)}
+.tag-chart,.tag-stock,.tag-economy,.tag-pc,.tag-mobile,.tag-casual,.tag-travel{background:rgba(0,188,212,.12);color:var(--blue);border:1px solid rgba(0,188,212,.28)}
+.tag-rate{background:rgba(255,152,0,.15);color:var(--orange);border:1px solid rgba(255,152,0,.3)}
 
 .news-desc{font-size:.82rem;color:var(--text2);line-height:1.6}
 .news-source{
@@ -299,10 +304,10 @@ footer{
 <header class="site-header">
   <div class="header-inner">
     <button class="toc-btn" onclick="toggleToc()">☰ Mục lục</button>
-    <div class="header-logo">🐡</div>
+    <div class="header-logo" id="site-logo">🐟</div>
     <div class="header-text">
-      <h1>Morning Digest</h1>
-      <div class="tagline" id="tagline">Claude News · GitHub Hot · 5AM daily</div>
+      <h1 id="site-title">Cá Mặn Đau Lưng</h1>
+      <div class="tagline" id="tagline">Tin cho người 3x · Sáng 5h · Recap 10h</div>
     </div>
     <button class="theme-btn" id="theme-btn" title="Đổi giao diện" onclick="toggleTheme()">☀️</button>
   </div>
@@ -315,7 +320,7 @@ footer{
   </aside>
   <main id="main"><div class="loading">⏳ Đang tải...</div></main>
 </div>
-<footer>🤖 Tự động bởi Lèo · minhducdl87-code/morning · Tháng → Tuần → Ngày</footer>
+<footer id="site-footer">🐟 Cá Mặn Đau Lưng · Sáng 5AM · Recap 10AM · Không tin lá cải</footer>
 <script src="digest.js"></script>
 </body>
 </html>

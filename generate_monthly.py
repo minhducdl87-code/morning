@@ -41,7 +41,12 @@ def month_bounds(year: int, month: int) -> tuple[str, str]:
 
 
 def filter_items_in_month(cards: list, year: int, month: int) -> tuple[list, list, list]:
-    """Pull all news/repos/gaming items from cards within target month, with URL only."""
+    """Pull all items from cards in target month, topic-agnostic.
+    Splits into (news, repos, gaming) heuristically:
+      - has github.com URL → repos
+      - field name contains 'gaming' → gaming
+      - else → news
+    All items include a _date + _field marker for downstream ranking."""
     news, repos, gaming = [], [], []
     for c in cards:
         try:
@@ -50,15 +55,20 @@ def filter_items_in_month(cards: list, year: int, month: int) -> tuple[list, lis
             continue
         if d.year != year or d.month != month:
             continue
-        for n in c.get("news", []) or []:
-            if n.get("url"):
-                news.append({**n, "_date": c["date"]})
-        for r in c.get("repos", []) or []:
-            if r.get("url"):
-                repos.append({**r, "_date": c["date"]})
-        for g in c.get("gamingNews", []) or []:
-            if g.get("url"):
-                gaming.append({**g, "_date": c["date"]})
+        for field, arr in c.items():
+            if not isinstance(arr, list) or field in ("date","dayLabel","dateLabel"):
+                continue
+            for x in arr:
+                if not isinstance(x, dict) or not x.get("url"):
+                    continue
+                item = {**x, "_date": c["date"], "_field": field}
+                url = x["url"]
+                if url.startswith("https://github.com/") and x.get("name"):
+                    repos.append(item)
+                elif "gaming" in field.lower():
+                    gaming.append(item)
+                else:
+                    news.append(item)
     return news, repos, gaming
 
 

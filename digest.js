@@ -1,11 +1,34 @@
 // Morning Digest — single-view rendering driven by ToC + URL hash router
 
-const TAG_MAP = {hot:'tag-hot',api:'tag-api',feature:'tag-feature',deprecate:'tag-deprecate',model:'tag-model'};
-const GAMING_TAG_MAP = {chart:'tag-chart',monet:'tag-monet',gameplay:'tag-gameplay','social-casino':'tag-social',casual:'tag-casual'};
 const VERDICT_MAP = {yes:['verdict-yes','✅ YES'],maybe:['verdict-maybe','🤔 MAYBE'],skip:['verdict-skip','⏭️ SKIP']};
 const MONTHS_VI = ['','Tháng 1','Tháng 2','Tháng 3','Tháng 4','Tháng 5','Tháng 6','Tháng 7','Tháng 8','Tháng 9','Tháng 10','Tháng 11','Tháng 12'];
 
+// Loaded from config.json — see loadConfig()
+let TOPICS = {};   // { output_field: {emoji, label} }
+let CONFIG = {};
+
 let STATE = {views: [], byId: {}, currentWeek: '', monthlyByKey: {}, defaultId: ''};
+
+function tagClass(tag) {
+  // Direct CSS class from tag name (all colors defined in index.html)
+  return 'tag-' + (tag || 'api').split('|')[0].replace(/[^a-z0-9-]/gi,'').toLowerCase();
+}
+
+function sectionMeta(field) {
+  const t = TOPICS[field];
+  if (t) return {emoji: t.emoji || '•', label: t.section_label || field};
+  // Fallback for historical fields
+  const legacy = {
+    news:{emoji:'🤖', label:'Claude News'},
+    repos:{emoji:'🐙', label:'GitHub Hot'},
+    gamingNews:{emoji:'🎮', label:'Mobile Game'},
+    highlights:{emoji:'📰', label:'Nổi bật tuần'},
+    topNews:{emoji:'📰', label:'Tổng kết tháng'},
+    topRepos:{emoji:'🐙', label:'Top Repos'},
+    topGaming:{emoji:'🎮', label:'Top Gaming'},
+  };
+  return legacy[field] || {emoji:'•', label: field.charAt(0).toUpperCase() + field.slice(1)};
+}
 
 // ── Date helpers ──────────────────────────────────────────────────────────────
 
@@ -62,19 +85,14 @@ function toggleToc() {
 // ── Item renderers ────────────────────────────────────────────────────────────
 
 function renderNewsItem(n) {
-  const cls = TAG_MAP[(n.tag||'').split('|')[0]] || 'tag-api';
+  const cls = tagClass(n.tag);
   const title = n.url
-    ? `<a href="${n.url}" target="_blank" rel="noopener" class="news-title">${n.title}</a>`
-    : `<span class="news-title">${n.title}</span>`;
-  return `<div class="news-item"><div class="news-top">${title}<span class="tag ${cls}">${n.tagLabel||''}</span></div><p class="news-desc">${n.desc||''}</p>${n.source?`<div class="news-source">📅 ${n.source}</div>`:''}</div>`;
+    ? `<a href="${n.url}" target="_blank" rel="noopener" class="news-title">${escapeHtml(n.title||'')}</a>`
+    : `<span class="news-title">${escapeHtml(n.title||'')}</span>`;
+  return `<div class="news-item"><div class="news-top">${title}<span class="tag ${cls}">${escapeHtml(n.tagLabel||'')}</span></div><p class="news-desc">${escapeHtml(n.desc||'')}</p>${n.source?`<div class="news-source">📅 ${escapeHtml(n.source)}</div>`:''}</div>`;
 }
-function renderGamingItem(n) {
-  const cls = GAMING_TAG_MAP[(n.tag||'').split('|')[0]] || 'tag-gameplay';
-  const title = n.url
-    ? `<a href="${n.url}" target="_blank" rel="noopener" class="news-title">${n.title}</a>`
-    : `<span class="news-title">${n.title}</span>`;
-  return `<div class="news-item"><div class="news-top">${title}<span class="tag ${cls}">${n.tagLabel||''}</span></div><p class="news-desc">${n.desc||''}</p>${n.source?`<div class="news-source">📅 ${n.source}</div>`:''}</div>`;
-}
+// Alias for legacy calls that used renderGamingItem
+const renderGamingItem = renderNewsItem;
 function renderRepo(r) {
   const [cls,lbl] = VERDICT_MAP[r.verdict] || VERDICT_MAP.maybe;
   return `<div class="repo-card"><div class="repo-top"><a href="${r.url}" target="_blank" rel="noopener" class="repo-name">${r.name}</a><span class="repo-stars">⭐ ${r.stars||''}</span></div><p class="repo-desc">${r.desc||''}</p><div class="repo-verdict"><span class="verdict ${cls}">${lbl}</span><span class="verdict-reason">${r.reason||r.desc||''}</span></div></div>`;
@@ -82,71 +100,63 @@ function renderRepo(r) {
 
 // ── Card variant renderers (always open in single-view mode) ─────────────────
 
+function renderSection(field, arr) {
+  if (!arr || !arr.length) return '';
+  const {emoji, label} = sectionMeta(field);
+  const isRepoField = arr[0] && arr[0].url && arr[0].url.startsWith('https://github.com/') && arr[0].name;
+  const body = isRepoField
+    ? `<div class="repo-grid">${arr.map(renderRepo).join('')}</div>`
+    : arr.map(renderNewsItem).join('');
+  return `<div class="section"><div class="section-title">${emoji} ${escapeHtml(label)}</div>${body}</div>`;
+}
+
+function listFields(card) {
+  return Object.keys(card).filter(k => Array.isArray(card[k]) && !['date','dayLabel','dateLabel'].includes(k));
+}
+
 function dailyCardHtml(c) {
   const isToday = c.date === todayStr();
-  const newsHtml = (c.news||[]).map(renderNewsItem).join('') || '<p class="muted-empty">Không có tin Claude hôm nay 😴</p>';
-  const reposHtml = (c.repos||[]).length
-    ? `<div class="section"><div class="section-title">🐙 GitHub Hot</div><div class="repo-grid">${c.repos.map(renderRepo).join('')}</div></div>`
-    : '';
-  const gamingHtml = (c.gamingNews||[]).length
-    ? `<div class="section"><div class="section-title">🎮 Mobile Game</div>${c.gamingNews.map(renderGamingItem).join('')}</div>`
-    : '';
+  const fields = listFields(c);
+  const sections = fields.map(f => renderSection(f, c[f])).filter(Boolean).join('');
+  const body = sections || '<p class="muted-empty">Không có tin hôm nay 😴</p>';
   return `<div class="card${isToday?' is-today':''}" id="card-${c.date}">
     <div class="card-header">
       <div class="card-date-wrap">
         ${isToday?'<span class="card-badge-today">HÔM NAY</span>':''}
-        <div><div class="card-day">${c.dayLabel||''}</div><div class="card-date-label">${c.dateLabel||c.date}</div></div>
+        <div><div class="card-day">${escapeHtml(c.dayLabel||'')}</div><div class="card-date-label">${escapeHtml(c.dateLabel||c.date)}</div></div>
       </div>
     </div>
-    <div class="card-body open">
-      <div class="section"><div class="section-title">🤖 Claude News</div>${newsHtml}</div>
-      ${reposHtml}
-      ${gamingHtml}
-    </div>
+    <div class="card-body open">${body}</div>
   </div>`;
 }
 
 function weeklyCardHtml(w) {
-  const highlights = (w.highlights||[]).map(renderNewsItem).join('') || '<p class="muted-empty">Chưa có highlight 🌙</p>';
-  const repos = (w.topRepos||[]).length
-    ? `<div class="section"><div class="section-title">🐙 Top Repos</div><div class="repo-grid">${w.topRepos.map(r=>renderRepo({...r,reason:r.desc||''})).join('')}</div></div>`
-    : '';
-  const gaming = (w.topGaming||[]).length
-    ? `<div class="section"><div class="section-title">🎮 Top Gaming</div>${w.topGaming.map(renderGamingItem).join('')}</div>`
-    : '';
+  const fields = listFields(w);
+  const sections = fields.map(f => renderSection(f, w[f])).filter(Boolean).join('');
+  const body = sections || '<p class="muted-empty">Chưa có highlight 🌙</p>';
   return `<div class="card" id="week-${w.fromDate}">
     <div class="card-header">
       <div class="card-date-wrap">
         <span class="card-badge-today card-badge-week">TUẦN</span>
-        <div><div class="card-day">${w.weekLabel||''}</div><div class="card-date-label">${w.fromDate} → ${w.toDate}</div></div>
+        <div><div class="card-day">${escapeHtml(w.weekLabel||'')}</div><div class="card-date-label">${w.fromDate} → ${w.toDate}</div></div>
       </div>
     </div>
-    <div class="card-body open">
-      <div class="section"><div class="section-title">📰 Nổi bật tuần</div>${highlights}</div>
-      ${repos}${gaming}
-    </div>
+    <div class="card-body open">${body}</div>
   </div>`;
 }
 
 function monthlyCardHtml(m) {
-  const news = (m.topNews||[]).map(renderNewsItem).join('') || '<p class="muted-empty">Không có tin nổi bật 🌙</p>';
-  const repos = (m.topRepos||[]).length
-    ? `<div class="section"><div class="section-title">🐙 Top Repos Tháng</div><div class="repo-grid">${m.topRepos.map(r=>renderRepo({...r,reason:r.reason||r.desc||''})).join('')}</div></div>`
-    : '';
-  const gaming = (m.topGaming||[]).length
-    ? `<div class="section"><div class="section-title">🎮 Top Gaming Tháng</div>${m.topGaming.map(renderGamingItem).join('')}</div>`
-    : '';
+  const fields = listFields(m);
+  const sections = fields.map(f => renderSection(f, m[f])).filter(Boolean).join('');
+  const body = sections || '<p class="muted-empty">Không có tin nổi bật 🌙</p>';
   return `<div class="card" id="month-${m.fromDate}">
     <div class="card-header">
       <div class="card-date-wrap">
         <span class="card-badge-today card-badge-month">THÁNG</span>
-        <div><div class="card-day">${m.monthLabel||''}</div><div class="card-date-label">${m.fromDate} → ${m.toDate}</div></div>
+        <div><div class="card-day">${escapeHtml(m.monthLabel||'')}</div><div class="card-date-label">${m.fromDate} → ${m.toDate}</div></div>
       </div>
     </div>
-    <div class="card-body open">
-      <div class="section"><div class="section-title">📰 Tổng kết tháng</div>${news}</div>
-      ${repos}${gaming}
-    </div>
+    <div class="card-body open">${body}</div>
   </div>`;
 }
 
@@ -154,9 +164,9 @@ function monthlyCardHtml(m) {
 function weekgroupHtml(view) {
   const summaryHtml = view.summary ? weeklyCardHtml(view.summary) : '';
   const cards = view.data.map(dailyCardHtml).join('');
-  const hasContent = view.data.some(c => (c.news||[]).length || (c.repos||[]).length || (c.gamingNews||[]).length)
-                  || (view.summary && ((view.summary.highlights||[]).length || (view.summary.topRepos||[]).length));
-  const fallback = hasContent ? '' : renderEmptyFallback(view.monthKey);
+  const cardHasContent = view.data.some(c => listFields(c).some(f => (c[f]||[]).length));
+  const summaryHasContent = view.summary && listFields(view.summary).some(f => (view.summary[f]||[]).length);
+  const fallback = (cardHasContent || summaryHasContent) ? '' : renderEmptyFallback(view.monthKey);
   return summaryHtml + cards + fallback;
 }
 
@@ -298,7 +308,7 @@ function renderActiveView() {
   let body = '';
   if (v.type === 'weekgroup')      body = weekgroupHtml(v);
   else if (v.type === 'daily')     body = dailyCardHtml(v.data) + (
-                                          (v.data.news||[]).length || (v.data.repos||[]).length || (v.data.gamingNews||[]).length
+                                          listFields(v.data).some(f => (v.data[f]||[]).length)
                                           ? '' : renderEmptyFallback(v.monthKey));
   else if (v.type === 'weekly')    body = weeklyCardHtml(v.data);
   else if (v.type === 'monthly')   body = monthlyCardHtml(v.data);
@@ -318,8 +328,32 @@ function renderActiveView() {
 
 // ── Init ──────────────────────────────────────────────────────────────────────
 
+async function loadConfig() {
+  try {
+    const r = await fetch('config.json?v='+Date.now());
+    if (!r.ok) return;
+    CONFIG = await r.json();
+    TOPICS = {};
+    for (const t of Object.values(CONFIG.topics || {})) {
+      if (t.output_field) TOPICS[t.output_field] = t;
+    }
+    // Apply site branding from config
+    const site = CONFIG.site || {};
+    if (site.title) {
+      const stripped = site.title.replace(/^\s*[\p{Emoji_Presentation}\p{Extended_Pictographic}]+\s*/u, '');
+      const t = document.getElementById('site-title'); if (t) t.textContent = stripped || site.title;
+      document.title = site.title;
+    }
+    if (site.logo) { const l = document.getElementById('site-logo'); if (l) l.textContent = site.logo; }
+    if (site.footer) { const f = document.getElementById('site-footer'); if (f) f.textContent = site.footer; }
+  } catch (e) {
+    console.warn('config.json load failed:', e);
+  }
+}
+
 async function init() {
   initTheme();
+  await loadConfig();
   try {
     const [dailyRes, weeklyRes, monthlyRes] = await Promise.all([
       fetch('cards.json?v='+Date.now()),

@@ -36,12 +36,15 @@ recent_titles = get_recent_titles(cards, date_str, now, days=3)
 recent_urls   = get_recent_urls(cards, date_str, now, days=3)
 
 
-def build_prompt(topics: dict, recent_titles: list, topic_contexts: dict) -> str:
+def build_prompt(topics: dict, recent_titles: list, topic_contexts: dict, tone_guidance: str = "") -> str:
     """Build Gemini prompt with pre-fetched context. Hard rules prevent URL hallucination."""
     lines = [
         f"Hôm nay là {day_label}, {date_label}.",
         "Dựa trên dữ liệu tìm kiếm bên dưới, tổng hợp morning digest.\n"
     ]
+    if tone_guidance:
+        lines.append(tone_guidance)
+        lines.append("")
 
     schema_fields = f'"date":"{date_str}","dayLabel":"{day_label}","dateLabel":"{date_label}"'
 
@@ -100,7 +103,7 @@ has_data = bool(all_valid_urls)
 print(f"Fetch done. Total URLs in whitelist: {len(all_valid_urls)}")
 
 # --- Step 2: Build prompt and call Gemini ---
-PROMPT = build_prompt(topics, recent_titles, topic_contexts)
+PROMPT = build_prompt(topics, recent_titles, topic_contexts, config.get("tone_guidance", ""))
 print(f"Step 2: Calling Gemini... (prompt: {len(PROMPT)} chars)")
 
 
@@ -166,13 +169,20 @@ if not text or not has_data:
 all_valid_urls |= citations
 print(f"Final URL whitelist size: {len(all_valid_urls)}")
 
+# Determine output fields from config (dynamic — supports any topic set)
+OUTPUT_FIELDS = [t["output_field"] for t in topics.values() if t.get("output_field")]
+REPO_FIELDS   = [t["output_field"] for t in topics.values() if t.get("data_source") == "github_api"]
+
+def empty_card():
+    c = {"date": date_str, "dayLabel": day_label, "dateLabel": date_label}
+    for f in OUTPUT_FIELDS:
+        c[f] = []
+    return c
+
 # --- Parse JSON response ---
 if not text:
     print("All attempts failed. Using fallback card.")
-    card_json = {
-        "date": date_str, "dayLabel": day_label, "dateLabel": date_label,
-        "news": [], "repos": [], "gamingNews": []
-    }
+    card_json = empty_card()
 else:
     print(f"Raw response preview: {text[:300]}...")
     text = text.strip()
@@ -193,40 +203,39 @@ else:
 
     if not card_json:
         print("Could not parse JSON, using fallback")
-        card_json = {
-            "date": date_str, "dayLabel": day_label, "dateLabel": date_label,
-            "news": [], "repos": [], "gamingNews": []
-        }
+        card_json = empty_card()
 
-# Ensure required date fields exist
+# Ensure required date + all output fields exist
 card_json.setdefault("date", date_str)
 card_json.setdefault("dayLabel", day_label)
 card_json.setdefault("dateLabel", date_label)
+for f in OUTPUT_FIELDS:
+    card_json.setdefault(f, [])
 
 # --- URL validation: HEAD-check all URLs in parallel, drop dead ones ---
 print("Step 3: HEAD-checking URLs...")
-all_urls = (
-    [n.get("url","") for n in card_json.get("news", [])] +
-    [g.get("url","") for g in card_json.get("gamingNews", [])] +
-    [r.get("url","") for r in card_json.get("repos", [])]
-)
+all_urls = []
+for f in OUTPUT_FIELDS:
+    all_urls += [x.get("url","") for x in card_json.get(f, [])]
 live_map = batch_check_urls(all_urls)
 live_count = sum(1 for v in live_map.values() if v)
 print(f"  {live_count}/{len(live_map)} URLs are live")
 
-card_json["news"]       = validate_news_items(card_json.get("news", []),       live_map)
-card_json["gamingNews"] = validate_news_items(card_json.get("gamingNews", []), live_map)
-card_json["repos"]      = validate_repo_items(card_json.get("repos", []),      live_map)
+for f in OUTPUT_FIELDS:
+    if f in REPO_FIELDS:
+        card_json[f] = validate_repo_items(card_json.get(f, []), live_map)
+    else:
+        card_json[f] = validate_news_items(card_json.get(f, []), live_map)
 
-# --- Dedup news by URL against last 3 days ---
+# --- Dedup by URL against last 3 days ---
 if recent_urls:
-    before_news   = len(card_json.get("news", []))
-    before_gaming = len(card_json.get("gamingNews", []))
-    card_json["news"]       = [n for n in card_json.get("news", [])       if not n.get("url") or n["url"] not in recent_urls]
-    card_json["gamingNews"] = [g for g in card_json.get("gamingNews", []) if not g.get("url") or g["url"] not in recent_urls]
-    removed = (before_news - len(card_json["news"])) + (before_gaming - len(card_json["gamingNews"]))
-    if removed:
-        print(f"Dedup removed {removed} duplicate item(s) found in last 3 days")
+    removed_total = 0
+    for f in OUTPUT_FIELDS:
+        before = len(card_json.get(f, []))
+        card_json[f] = [x for x in card_json.get(f, []) if not x.get("url") or x["url"] not in recent_urls]
+        removed_total += before - len(card_json[f])
+    if removed_total:
+        print(f"Dedup removed {removed_total} duplicate item(s) found in last 3 days")
 
 # --- Update cards.json (rolling 30-day window) ---
 cards = [c for c in cards if c.get("date") != date_str]
@@ -237,7 +246,5 @@ cards.insert(0, card_json)
 with open("cards.json", "w", encoding="utf-8") as f:
     json.dump(cards, f, ensure_ascii=False, indent=2)
 
-print(f"Done! {len(cards)} cards | "
-      f"news:{len(card_json.get('news',[]))} "
-      f"repos:{len(card_json.get('repos',[]))} "
-      f"gaming:{len(card_json.get('gamingNews',[]))}")
+summary = " ".join(f"{fld}:{len(card_json.get(fld,[]))}" for fld in OUTPUT_FIELDS)
+print(f"Done! {len(cards)} cards | {summary}")

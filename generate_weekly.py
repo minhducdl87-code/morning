@@ -41,25 +41,24 @@ week_label = f"Tuần {week_num}/{now.year}"
 
 
 def compact_cards(cards: list) -> str:
-    """Build context with URL on every line so Gemini can cite real sources."""
+    """Build context topic-agnostically — every list field with URL becomes a row."""
     rows = []
     for c in cards:
         date = c.get("date", "")
-        for n in c.get("news", []):
-            url = n.get("url", "")
-            if not url:  # weekly skips items without URL — top rule
+        for field, arr in c.items():
+            if not isinstance(arr, list) or field in ("date","dayLabel","dateLabel"):
                 continue
-            rows.append(f"[{date}][news][{n.get('tag','')}] {n.get('title','')} | URL: {url} | {n.get('desc','')[:120]}")
-        for r in c.get("repos", []):
-            url = r.get("url", "")
-            if not url:
-                continue
-            rows.append(f"[{date}][repo:{r.get('verdict','')}] {r.get('name','')} | URL: {url} | ⭐{r.get('stars','')} | {r.get('desc','')[:120]}")
-        for g in c.get("gamingNews", []):
-            url = g.get("url", "")
-            if not url:
-                continue
-            rows.append(f"[{date}][gaming][{g.get('tag','')}] {g.get('title','')} | URL: {url} | {g.get('desc','')[:120]}")
+            for x in arr:
+                if not isinstance(x, dict):
+                    continue
+                url = (x.get("url") or "").strip()
+                if not url:
+                    continue
+                # Repo item has name + stars, news has title
+                if x.get("name"):
+                    rows.append(f"[{date}][{field}] {x['name']} | URL: {url} | ⭐{x.get('stars','')} | {x.get('desc','')[:120]}")
+                else:
+                    rows.append(f"[{date}][{field}][{x.get('tag','')}] {x.get('title','')} | URL: {url} | {x.get('desc','')[:120]}")
     return "\n".join(rows)
 
 

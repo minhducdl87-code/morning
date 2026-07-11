@@ -2,7 +2,8 @@ name: Morning Digest
 
 "on":
   schedule:
-    - cron: '0 22 * * *'   # 5:00 AM Vietnam time (daily)
+    - cron: '0 22 * * *'   # 5:00 AM Vietnam time (daily morning digest)
+    - cron: '0 3 * * *'    # 10:00 AM Vietnam time (recap push to Telegram)
     - cron: '0 22 * * 0'   # 5:00 AM Vietnam time (Sunday — weekly trigger)
     - cron: '0 22 1 * *'   # 5:00 AM Vietnam time (1st of month — monthly trigger)
   workflow_dispatch:
@@ -21,10 +22,26 @@ name: Morning Digest
         default: ''
 
 jobs:
+  # ── 10AM recap: push top 3 items from latest card ──────────────────────────
+  recap-push:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 3 * * *'
+    permissions:
+      contents: read
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      NOTIFY_MODE: recap
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python notify-telegram.py
+
   # ── Daily digest ────────────────────────────────────────────────────────────
   daily-digest:
     runs-on: ubuntu-latest
-    if: github.event.inputs.backfill_month == ''
+    if: github.event.inputs.backfill_month == '' && github.event.schedule != '0 3 * * *'
     permissions:
       contents: write
     env:
@@ -60,6 +77,7 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       always() &&
+      github.event.schedule != '0 3 * * *' &&
       (github.event.schedule == '0 22 * * 0' ||
        github.event.inputs.run_weekly == 'true')
     permissions:
@@ -93,6 +111,7 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       always() &&
+      github.event.schedule != '0 3 * * *' &&
       (github.event.schedule == '0 22 1 * *' ||
        github.event.inputs.run_monthly == 'true' ||
        github.event.inputs.backfill_month != '')

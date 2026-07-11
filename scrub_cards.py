@@ -1,74 +1,56 @@
 #!/usr/bin/env python3
-"""One-time scrub: HEAD-check all URLs in cards.json + weekly.json.
-Clear dead news URLs, drop dead repo items. Removes accumulated fake data
-from before the URL-validation fix."""
+"""Topic-agnostic scrub: HEAD-check all URLs in cards.json + weekly.json + monthly.json.
+Strict-drop dead/no-URL news items. Strict-drop bad-format/dead repo items.
+Works with any topic set (old + new pivot fields alike)."""
 import json
-from digest_utils import batch_check_urls, validate_news_items, validate_repo_items
+from digest_utils import batch_check_urls, validate_news_items, validate_repo_items, GITHUB_REPO_RE
 
 
-def scrub_cards(path: str = "cards.json") -> None:
-    with open(path, "r", encoding="utf-8") as f:
-        cards = json.load(f)
-
-    # Collect all URLs across all cards for one batched check
-    all_urls = []
-    for c in cards:
-        all_urls += [n.get("url","") for n in c.get("news", [])]
-        all_urls += [g.get("url","") for g in c.get("gamingNews", [])]
-        all_urls += [r.get("url","") for r in c.get("repos", [])]
-
-    print(f"Checking {len(set(u for u in all_urls if u))} unique URLs across {len(cards)} cards...")
-    live_map = batch_check_urls(all_urls)
-    live_count = sum(1 for v in live_map.values() if v)
-    print(f"  {live_count}/{len(live_map)} live\n")
-
-    for c in cards:
-        before_news  = len(c.get("news", []))
-        before_gam   = len(c.get("gamingNews", []))
-        before_repos = len(c.get("repos", []))
-
-        c["news"]       = validate_news_items(c.get("news", []),       live_map)
-        c["gamingNews"] = validate_news_items(c.get("gamingNews", []), live_map)
-        c["repos"]      = validate_repo_items(c.get("repos", []),      live_map)
-
-        repo_dropped = before_repos - len(c["repos"])
-        cleared = sum(1 for n in c["news"] if not n.get("url")) + sum(1 for g in c["gamingNews"] if not g.get("url"))
-        print(f"  {c['date']}: news/gaming kept {before_news}+{before_gam}, URLs cleared in {cleared}; repos {before_repos}→{len(c['repos'])} (dropped {repo_dropped})")
-
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(cards, f, ensure_ascii=False, indent=2)
-    print(f"\nWrote {path}")
+def _list_fields(obj: dict) -> list[str]:
+    return [k for k, v in obj.items() if isinstance(v, list)]
 
 
-def scrub_weekly(path: str = "weekly.json") -> None:
-    """Best-effort scrub for weekly digest if it has same URL fields."""
+def _is_repo_field(items: list) -> bool:
+    """Heuristic: field contains github.com/owner/repo URLs → treat as repo field."""
+    if not items:
+        return False
+    sample = items[0]
+    if not isinstance(sample, dict):
+        return False
+    url = (sample.get("url") or "").strip()
+    return bool(GITHUB_REPO_RE.match(url))
+
+
+def scrub_file(path: str) -> None:
     try:
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
     except FileNotFoundError:
+        print(f"{path}: not found, skip")
         return
 
-    # weekly.json structure may differ — only scrub if it has same fields
     items = data if isinstance(data, list) else [data]
-    all_urls = []
-    for it in items:
-        for k in ("news", "gamingNews", "repos", "topNews", "topRepos", "highlights", "topGaming"):
-            for x in it.get(k, []) or []:
-                u = x.get("url", "")
-                if u:
-                    all_urls.append(u)
 
-    print(f"\nChecking {len(set(all_urls))} URLs in {path}...")
+    # Collect all URLs across all fields of all entries
+    all_urls = []
+    for entry in items:
+        for f in _list_fields(entry):
+            for x in entry[f] or []:
+                if isinstance(x, dict) and x.get("url"):
+                    all_urls.append(x["url"])
+
+    print(f"\nChecking {len(set(all_urls))} unique URLs in {path}...")
     live_map = batch_check_urls(all_urls) if all_urls else {}
-    for it in items:
-        # News-like fields: strict drop if no live URL (top rule)
-        for k in ("news", "gamingNews", "topNews", "highlights", "topGaming"):
-            if k in it:
-                it[k] = validate_news_items(it.get(k, []) or [], live_map)
-        # Repo fields: drop bad-format + dead
-        for k in ("repos", "topRepos"):
-            if k in it:
-                it[k] = validate_repo_items(it.get(k, []) or [], live_map)
+
+    for entry in items:
+        for f in _list_fields(entry):
+            arr = entry[f] or []
+            if not arr or not isinstance(arr[0], dict):
+                continue
+            if _is_repo_field(arr):
+                entry[f] = validate_repo_items(arr, live_map)
+            else:
+                entry[f] = validate_news_items(arr, live_map)
 
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
@@ -76,5 +58,6 @@ def scrub_weekly(path: str = "weekly.json") -> None:
 
 
 if __name__ == "__main__":
-    scrub_cards("cards.json")
-    scrub_weekly("weekly.json")
+    scrub_file("cards.json")
+    scrub_file("weekly.json")
+    scrub_file("monthly.json")

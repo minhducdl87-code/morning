@@ -132,9 +132,21 @@ def fetch_github_topic(topic: dict, cutoff_date: str) -> tuple[str, set[str]]:
 # ── Dispatcher ────────────────────────────────────────────────────────────────
 
 def fetch_topic_context(topic: dict, month_year: str) -> tuple[str, set[str]]:
-    """Dispatch to fetcher based on topic.data_source. Returns (text_context, valid_urls)."""
+    """Dispatch by topic.data_source + supplement with RSS feeds if configured.
+    Returns (text_context, valid_urls)."""
     source = topic.get("data_source", "jina")
     if source == "github_api":
         cutoff = (datetime.now() - timedelta(days=14)).strftime("%Y-%m-%d")
-        return fetch_github_topic(topic, cutoff)
-    return fetch_jina_topic(topic, month_year)
+        text, urls = fetch_github_topic(topic, cutoff)
+    else:
+        text, urls = fetch_jina_topic(topic, month_year)
+
+    # Supplement with RSS feeds (VN-specific sources)
+    if topic.get("rss_feeds"):
+        from rss_fetch import fetch_rss_topic
+        rss_text, rss_urls = fetch_rss_topic(topic)
+        if rss_text:
+            text = (text + "\n\n" + rss_text).strip() if text else rss_text
+            urls |= rss_urls
+
+    return text, urls

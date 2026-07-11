@@ -16,8 +16,13 @@ URL_BLACKLIST  = (
 )
 
 
+def _list_fields(card: dict) -> list[str]:
+    """Return keys pointing to a list of items — topic-agnostic (works for any config)."""
+    return [k for k, v in card.items() if isinstance(v, list)]
+
+
 def get_recent_titles(cards: list, date_str: str, now, days: int = 3) -> list:
-    """Extract news/gaming titles from last N days (excluding today) for dedup prompt injection."""
+    """Extract titles from all list-fields in cards of last N days (topic-agnostic)."""
     cutoff = (now - timedelta(days=days)).date()
     titles = []
     for c in cards:
@@ -28,13 +33,13 @@ def get_recent_titles(cards: list, date_str: str, now, days: int = 3) -> list:
         except (ValueError, KeyError):
             continue
         if card_date >= cutoff:
-            titles += [n["title"] for n in c.get("news", [])       if n.get("title")]
-            titles += [g["title"] for g in c.get("gamingNews", []) if g.get("title")]
+            for f in _list_fields(c):
+                titles += [x["title"] for x in c.get(f, []) if isinstance(x, dict) and x.get("title")]
     return titles
 
 
 def get_recent_urls(cards: list, date_str: str, now, days: int = 3) -> set:
-    """Extract news/gaming URLs from last N days for post-processing URL dedup."""
+    """Extract URLs from all list-fields in cards of last N days (topic-agnostic)."""
     cutoff = (now - timedelta(days=days)).date()
     urls = set()
     for c in cards:
@@ -45,8 +50,8 @@ def get_recent_urls(cards: list, date_str: str, now, days: int = 3) -> set:
         except (ValueError, KeyError):
             continue
         if card_date >= cutoff:
-            urls |= {n["url"] for n in c.get("news", [])       if n.get("url")}
-            urls |= {g["url"] for g in c.get("gamingNews", []) if g.get("url")}
+            for f in _list_fields(c):
+                urls |= {x["url"] for x in c.get(f, []) if isinstance(x, dict) and x.get("url")}
     return urls - {""}
 
 
