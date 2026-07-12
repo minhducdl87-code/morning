@@ -5,90 +5,98 @@
     "dateLabel": "12/07/2026",
     "tech": [
       {
-        "title": "💻 Lenovo Xiaoxin Air 13 ra mắt",
-        "desc": "Chiếc laptop mới này có màn hình 120Hz, được mở bán tại Trung Quốc với giá khoảng 869 USD, hứa hẹn là đối thủ của MacBook Neo.",
+        "title": "🎧 Tai nghe AI tích hợp camera",
+        "desc": "Một mẫu tai nghe mở mới tích hợp camera Sony 8MP, AI dịch trực tiếp và nhận diện vật thể, có giá chỉ hơn 2 triệu đồng.",
         "tag": "launch",
         "tagLabel": "🚀 LAUNCH",
-        "source": "12/07·Tinhte.vn",
-        "url": "https://tinhte.vn/thread/lenovo-ra-xiaoxin-air-13-man-120hz-ngon-nha-doi-thu-cua-macbook-neo-day-roi.4159881/"
-      },
-      {
-        "title": "🎧 Tai nghe mở tích hợp AI",
-        "desc": "Thiết bị mới này có camera Sony 8MP, khả năng AI dịch trực tiếp và nhận diện vật thể, với mức giá chỉ hơn 2 triệu đồng.",
-        "tag": "launch",
-        "tagLabel": "🚀 LAUNCH",
-        "source": "11/07·Genk.vn",
+        "source": "12/07·GenK",
         "url": "https://genk.vn/tai-nghe-mo-nay-co-san-camera-sony-8mp-ai-dich-truc-tiep-va-nhan-dien-vat-the-gia-chi-hon-2-trieu-dong-16526071200312738.chn"
       },
       {
+        "title": "💻 Lenovo Xiaoxin Air 13",
+        "desc": "Lenovo vừa ra mắt Xiaoxin Air 13 tại Trung Quốc với màn hình 120Hz, giá khoảng 869 USD, được xem là đối thủ của MacBook Neo.",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "12/07·Tinhte",
+        "url": "https://tinhte.vn/thread/lenovo-ra-xiaoxin-air-13-man-120hz-ngon-nha-doi-thu-cua-macbook-neo-day-roi.4159881/"
+      },
+      {
         "title": "🤖 OpenAI đáp trả Apple",
-        "desc": "OpenAI đã chính thức lên tiếng về vụ kiện của Apple, cáo buộc công ty này ăn cắp bí mật thương mại của iPhone.",
+        "desc": "OpenAI đã chính thức lên tiếng về vụ kiện của Apple cáo buộc công ty này ăn cắp bí mật thương mại của iPhone.",
         "tag": "ai",
         "tagLabel": "🤖 AI",
-        "source": "12/07·Tinhte.vn",
+        "source": "12/07·Tinhte",
         "url": "https://tinhte.vn/thread/openai-len-tieng-dap-tra-apple-vu-an-cap-bi-mat-thuong-mai-ne.4159876/"
       },
       {
-        "title": "📺 Màn hình Hisense MiniLED tại World Cup",
-        "desc": "Màn hình RGB MiniLED của Hisense đang được sử dụng trong phòng VAR của FIFA World Cup 2026, cho thấy chất lượng hiển thị ấn tượng.",
+        "title": "📱 Google Photos đổi giao diện",
+        "desc": "Google Photos phiên bản 7.82 trên Android vừa cập nhật giao diện thanh điều khiển dạng nổi mới, mang lại trải nghiệm khác biệt.",
         "tag": "review",
         "tagLabel": "⭐ REVIEW",
-        "source": "12/07·Tinhte.vn",
-        "url": "https://tinhte.vn/thread/man-hisense-rgb-miniled-trong-phong-var-world-cup-2026-ne.4159883/"
+        "source": "12/07·Tinhte",
+        "url": "https://tinhte.vn/thread/google-photos-tren-android-vua-doi-giao-dien-thanh-dieu-khien-dang-noi-ne-anh-em.4159878/"
       }
     ],
     "finance": [
       {
         "title": "🪙 Giá vàng hôm nay: Người mua lỗ 'kép'",
-        "desc": "Sáng nay, giá vàng tiếp tục đi ngang sau nhiều phiên điều chỉnh. Người mua vàng miếng và vàng nhẫn đã thiệt tới 6 triệu đồng/lượng chỉ trong một tuần.",
+        "desc": "Sáng nay, giá vàng tiếp tục đi ngang sau nhiều phiên điều chỉnh, khiến người mua lỗ từ 2,2 triệu – 6 triệu đồng/lượng trong một tuần.",
         "tag": "gold",
         "tagLabel": "🪙 VÀNG",
-        "source": "12/07·Cafef.vn",
+        "source": "12/07·CafeF",
         "url": "https://cafef.vn/gia-vang-hom-nay-12-7-nguoi-mua-lo-kep-sau-mot-tuan-188260712100320973.chn"
       },
       {
-        "title": "📈 Cổ phiếu LTG của Lộc Trời bị cảnh báo",
-        "desc": "Cổ phiếu LTG sẽ vào diện cảnh báo từ ngày 14/7/2026 do Lộc Trời không công bố báo cáo tài chính kiểm toán năm 2025 đúng hạn.",
+        "title": "📈 Cổ phiếu Lộc Trời bị cảnh báo",
+        "desc": "Cổ phiếu LTG của Lộc Trời sẽ vào diện cảnh báo từ ngày 14/7/2026 do công ty chưa nộp báo cáo tài chính kiểm toán năm 2025.",
         "tag": "stock",
         "tagLabel": "📈 CK",
-        "source": "12/07·Cafef.vn",
+        "source": "12/07·CafeF",
         "url": "https://cafef.vn/co-phieu-ltg-cua-loc-troi-vao-dien-canh-bao-tu-ngay-14-7-2026-188260712100705311.chn"
       },
       {
-        "title": "💵 Trả góp 0% lãi suất với thẻ tín dụng ACB",
-        "desc": "ACB hỗ trợ chuyển đổi giao dịch mua sắm và rút tiền mặt sang trả góp với lãi suất 0%, mang đến sự linh hoạt tài chính cho khách hàng.",
+        "title": "💵 EU đầu tư 1,5 tỷ Euro vào ngành pin",
+        "desc": "Ủy ban EU sẽ đầu tư 1,5 tỷ Euro vào ngành công nghiệp pin, lần đầu áp dụng cơ chế cho vay không lãi suất để thúc đẩy phát triển.",
         "tag": "rate",
         "tagLabel": "💵 LÃI SUẤT",
-        "source": "12/07·Vneconomy.vn",
-        "url": "https://vneconomy.vn/tra-gop-voi-lai-suat-0-bang-the-tin-dung-acb.htm"
+        "source": "12/07·CafeBiz",
+        "url": "https://cafebiz.vn/uy-ban-eu-dau-tu-15-ty-euro-vao-nganh-cong-nghiep-pin-lan-dau-ap-dung-co-che-cho-vay-khong-lai-suat-176260712113709223.chn"
       },
       {
-        "title": "🏠 Dự án mở rộng đường Nguyễn Tuân sắp về đích",
-        "desc": "Đoạn đường Nguyễn Tuân (Hà Nội) đang hoàn thiện, hứa hẹn cải thiện giao thông và giá trị bất động sản khu vực này.",
-        "tag": "realestate",
-        "tagLabel": "🏠 BĐS",
-        "source": "12/07·Cafebiz.vn",
-        "url": "https://cafebiz.vn/du-an-mo-rong-duong-nguyen-tuan-het-canh-ngon-ngang-chuan-bi-ve-dich-176260712110900064.chn"
+        "title": "💵 ACB hỗ trợ trả góp 0% lãi suất",
+        "desc": "ACB cung cấp chương trình trả góp 0% lãi suất bằng thẻ tín dụng, bao gồm cả chuyển đổi giao dịch rút tiền mặt sang trả góp.",
+        "tag": "rate",
+        "tagLabel": "💵 LÃI SUẤT",
+        "source": "12/07·VnEconomy",
+        "url": "https://vneconomy.vn/tra-gop-voi-lai-suat-0-bang-the-tin-dung-acb.htm"
       }
     ],
     "entertainment": [],
     "gaming": [],
     "vietnam": [
       {
-        "title": "⚠️ Cảnh báo thu hồi số điện thoại VNeID",
-        "desc": "Chỉ còn 1 tháng, người dân không thực hiện việc xác thực thông tin trên VNeID sẽ bị khóa hai chiều từ 15/8 và thu hồi số điện thoại từ 20/8.",
-        "tag": "policy",
-        "tagLabel": "📜 CHÍNH SÁCH",
-        "source": "12/07·Genk.vn",
-        "url": "https://genk.vn/chi-con-1-thang-nguoi-dan-khong-thuc-hien-ngay-viec-nay-tren-vneid-se-bi-thu-hoi-so-dien-thoai-lien-lac-165260712003014162.chn"
+        "title": "💸 Giảm trừ chi phí giáo dục cần hóa đơn",
+        "desc": "Theo quy định mới, người lao động muốn giảm trừ chi phí giáo dục, y tế phải tự quyết toán thuế và có hóa đơn, chứng từ đầy đủ.",
+        "tag": "tax",
+        "tagLabel": "💸 THUẾ",
+        "source": "12/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/giam-tru-chi-phi-giao-duc-khong-co-hoa-don-nguoi-lao-dong-co-mat-quyen-loi-100260712120332406.htm"
       },
       {
         "title": "💼 Bán hàng online tìm đường 'sống' mới",
-        "desc": "Các doanh nghiệp bán hàng online đang chuyển hướng sang video ngắn, livestream và tương tác cộng đồng để giải bài toán chi phí tiếp cận khách hàng.",
+        "desc": "Thời kỳ 'đốt tiền' quảng cáo đã qua, các nhà bán hàng online đang chuyển hướng sang video ngắn, livestream và tương tác cộng đồng để giảm chi phí.",
         "tag": "economy",
         "tagLabel": "💼 KINH TẾ",
-        "source": "12/07·TuoiTre.vn",
+        "source": "12/07·Tuổi Trẻ",
         "url": "https://tuoitre.vn/qua-thoi-dot-tien-quang-cao-ban-hang-online-tim-duong-song-moi-100260712071400381.htm"
+      },
+      {
+        "title": "🚦 Tăng tốc kết nối sân bay Long Thành",
+        "desc": "Tiến độ mở rộng cao tốc kết nối sân bay Long Thành đang thay đổi từng ngày, hứa hẹn cải thiện hạ tầng giao thông khu vực.",
+        "tag": "traffic",
+        "tagLabel": "🚦 GIAO THÔNG",
+        "source": "11/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/tang-toc-ket-noi-san-bay-long-thanh-tien-do-mo-rong-cao-toc-thay-doi-tung-ngay-100260711154742968.htm"
       }
     ],
     "lifestyle": []
