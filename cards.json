@@ -1,5 +1,83 @@
 [
   {
+    "date": "2026-07-13",
+    "dayLabel": "Thứ Hai",
+    "dateLabel": "13/07/2026",
+    "tech": [
+      {
+        "title": "🤖 DeepSeek tự làm chip AI",
+        "desc": "Hãng AI này đang tự phát triển chip riêng, một bước đi quan trọng trong bối cảnh Trung Quốc bị hạn chế tiếp cận chip.",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
+        "source": "13/07·Tinhte",
+        "url": "https://tinhte.vn/thread/deepseek-tu-lam-chip-ai-rieng-minh-nghi-day-la-buoc-di-ma-ai-theo-doi-cuoc-dua-my-trung-cung-nen.4160043/"
+      },
+      {
+        "title": "📱 Hisense A10: Điện thoại màn hình kép độc đáo",
+        "desc": "Hisense A10 gây chú ý với màn hình chính như máy đọc sách và màn hình LCD phụ có thể tháo rời từ tính ở mặt sau.",
+        "tag": "review",
+        "tagLabel": "⭐ REVIEW",
+        "source": "13/07·Genk",
+        "url": "https://genk.vn/can-canh-hisense-a10-dien-thoai-so-huu-man-hinh-nhu-may-doc-sach-nhung-co-ca-man-hinh-lcd-phia-sau-co-the-thao-roi-tu-tinh-cuc-doc-dao-16526071220120986.chn"
+      },
+      {
+        "title": "🎧 Beyerdynamic DT 30 IE: Tai nghe IEM chuyên nghiệp",
+        "desc": "Mẫu tai nghe In-ear Monitor chuyên nghiệp mới của Beyerdynamic, giá $149, được tinh chỉnh cho nhạc sĩ và người làm âm thanh.",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "13/07·Tinhte",
+        "url": "https://tinhte.vn/thread/beyerdynamic-dt-30-ie-tai-nghe-in-ear-monitor-chuyen-nghiep-phan-khuc-tam-trung-gia-149.4159990/"
+      }
+    ],
+    "finance": [
+      {
+        "title": "📈 Cổ phiếu PNJ 'thủng' đáy 15 tháng",
+        "desc": "Cổ phiếu PNJ đã giảm xuống mức thấp nhất trong 15 tháng qua, bất chấp lực cầu bắt đáy xuất hiện gần đây.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "13/07·Cafef",
+        "url": "https://cafef.vn/co-phieu-pnj-thung-day-xuong-thap-nhat-15-thang-188260713114808424.chn"
+      },
+      {
+        "title": "🪙 Giá vàng sụt mạnh do căng thẳng Mỹ-Iran",
+        "desc": "Giá vàng thế giới sụt mạnh hơn 50 USD/ounce sáng nay do căng thẳng giữa Mỹ và Iran ở eo biển Hormuz.",
+        "tag": "gold",
+        "tagLabel": "🪙 VÀNG",
+        "source": "13/07·Vneconomy",
+        "url": "https://vneconomy.vn/gia-vang-sut-manh-khi-my-va-iran-cang-thang-o-eo-bien-hormuz.htm"
+      },
+      {
+        "title": "📈 Hoa Sen hoàn thành 114% kế hoạch lợi nhuận",
+        "desc": "Tập đoàn Hoa Sen ước tính hoàn thành 114% kế hoạch lợi nhuận niên độ tài chính 2025-2026 chỉ sau 9 tháng.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "13/07·Cafef",
+        "url": "https://cafef.vn/hoa-sen-uoc-tinh-hoan-thanh-114-ke-hoach-loi-nhuan-nien-do-tai-chinh-2025-2026-sau-9-thang-188260713090147692.chn"
+      }
+    ],
+    "entertainment": [],
+    "gaming": [],
+    "vietnam": [
+      {
+        "title": "🏙️ Khởi tố nhiều đối tượng bán hàng đa cấp, 88.000 người bị hại",
+        "desc": "Ủy ban Cạnh tranh Quốc gia thông tin đã khởi tố nhiều đối tượng bán hàng đa cấp, với hơn 88.000 người bị hại và tổng số tiền lên tới 13.000 tỷ đồng.",
+        "tag": "society",
+        "tagLabel": "🏙️ XÃ HỘI",
+        "source": "13/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/khoi-to-nhieu-doi-tuong-ban-hang-da-cap-hon-88000-nguoi-bi-hai-voi-tong-so-tien-13000-ti-dong-1002607130953386.htm"
+      },
+      {
+        "title": "💼 Cước tàu đi Mỹ tăng gần 9.000 USD/container",
+        "desc": "Cước vận chuyển từ TP.HCM đi Bờ Đông Mỹ đã tăng gần 17% chỉ trong một tuần, đạt 8.849 USD/container 40 feet.",
+        "tag": "economy",
+        "tagLabel": "💼 KINH TẾ",
+        "source": "13/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/cuoc-tau-di-my-tang-len-gan-9000-usd-container-100260713075328739.htm"
+      }
+    ],
+    "lifestyle": []
+  },
+  {
     "date": "2026-07-12",
     "dayLabel": "Chủ Nhật",
     "dateLabel": "12/07/2026",
