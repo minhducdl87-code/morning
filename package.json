@@ -1,0 +1,13 @@
+{
+  "name": "ca-man-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Vite dev server for the Cá Mặn Đau Lưng static site (serve + hot reload). Deployment is unchanged — GitHub Pages serves the raw files; Vite is dev-only.",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
