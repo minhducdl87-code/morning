@@ -214,12 +214,12 @@ body.light a.news-title{text-decoration-color:rgba(0,140,85,0.45);}
 .tag-orange{background:rgba(255,152,0,.15);color:var(--orange);border:1px solid rgba(255,152,0,.3)}
 
 /* Legacy aliases (kept for historical cards) */
-.tag-hot,.tag-launch,.tag-movie,.tag-event,.tag-policy{background:rgba(255,71,87,.15);color:var(--red);border:1px solid rgba(255,71,87,.3)}
+.tag-hot,.tag-launch,.tag-movie,.tag-event,.tag-policy,.tag-viral{background:rgba(255,71,87,.15);color:var(--red);border:1px solid rgba(255,71,87,.3)}
 .tag-api,.tag-feature,.tag-gameplay,.tag-review,.tag-console,.tag-health,.tag-wellness,.tag-realestate{background:rgba(0,229,160,.12);color:var(--accent);border:1px solid rgba(0,229,160,.28)}
-.tag-deprecate,.tag-monet,.tag-deal,.tag-gold,.tag-tax,.tag-food,.tag-traffic{background:rgba(255,209,102,.15);color:var(--yellow);border:1px solid rgba(255,209,102,.3)}
+.tag-deprecate,.tag-monet,.tag-deal,.tag-gold,.tag-tax,.tag-food,.tag-traffic,.tag-meme{background:rgba(255,209,102,.15);color:var(--yellow);border:1px solid rgba(255,209,102,.3)}
 .tag-model,.tag-ai,.tag-music,.tag-show,.tag-celeb,.tag-crypto,.tag-social,.tag-society{background:rgba(168,142,255,.12);color:var(--pink);border:1px solid rgba(168,142,255,.28)}
-.tag-chart,.tag-stock,.tag-economy,.tag-pc,.tag-mobile,.tag-casual,.tag-travel{background:rgba(0,188,212,.12);color:var(--blue);border:1px solid rgba(0,188,212,.28)}
-.tag-rate{background:rgba(255,152,0,.15);color:var(--orange);border:1px solid rgba(255,152,0,.3)}
+.tag-chart,.tag-stock,.tag-economy,.tag-pc,.tag-mobile,.tag-casual,.tag-travel,.tag-tiktok{background:rgba(0,188,212,.12);color:var(--blue);border:1px solid rgba(0,188,212,.28)}
+.tag-rate,.tag-challenge{background:rgba(255,152,0,.15);color:var(--orange);border:1px solid rgba(255,152,0,.3)}
 
 .news-desc{font-size:.82rem;color:var(--text2);line-height:1.6}
 .news-source{
