@@ -23,11 +23,11 @@ body.light {
   /* FIX contrast: puffer's body.light does NOT override these text/color tokens,
      so they kept dark-theme values (unreadable grey on light bg). Re-declare with
      AA-compliant values (all >=4.5:1 on white / light card bg). */
-  --sub: #2d5c44;      /* body copy (.news-desc) */
+  --sub: #183524;      /* body copy (.news-desc) */
   --muted: #34694e;    /* meta (.news-source/.card-day/footer) */
   /* aliases are baked at :root from the DARK --sub/--muted (html has no .light),
      so override them directly here too — this is what .news-desc/.news-source use */
-  --text2: #2d5c44;
+  --text2: #183524;
   --text3: #34694e;
   --purple: #6a3fa0;   /* tag pink/purple */
   --pink: #6a3fa0;
