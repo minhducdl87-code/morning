@@ -3,79 +3,202 @@
     "date": "2026-07-14",
     "dayLabel": "Thứ Ba",
     "dateLabel": "14/07/2026",
-    "tech": [
+    "entertainment": [
       {
-        "title": "📱 Ốp lưng iPhone E Ink",
-        "desc": "Ốp lưng mới cho iPhone tích hợp màn hình E Ink, cho phép hiển thị ảnh tùy thích mà không cần pin riêng, giá từ 1,9 triệu đồng.",
-        "tag": "launch",
-        "tagLabel": "🚀 LAUNCH",
-        "source": "14/07·GenK",
-        "url": "https://genk.vn/op-lung-iphone-tich-hop-man-hinh-e-ink-co-the-hien-thi-anh-theo-y-thich-khong-can-pin-rieng-gia-tu-19-trieu-dong-165260714105210377.chn"
+        "title": "🎬 Tom Cruise 'lột xác' bụng bự trong phim mới",
+        "desc": "Tài tử Tom Cruise gây bất ngờ với tạo hình bụng bự, khác hẳn hình tượng quen thuộc trong dự án phim mới nhất của mình. Bạn có hóng màn hóa thân này không?",
+        "tag": "movie",
+        "tagLabel": "🎬 PHIM",
+        "source": "14/07·VnExpress",
+        "url": "https://vnexpress.net/tom-cruise-lot-xac-trong-phim-moi-5097124.html"
       },
       {
-        "title": "💰 iPhone 18 Pro Max rò rỉ giá",
-        "desc": "Mức giá của iPhone 18 Pro Max được cho là sẽ có những thay đổi đáng chú ý, khiến nhiều người bất ngờ.",
-        "tag": "launch",
-        "tagLabel": "🚀 LAUNCH",
-        "source": "14/07·GenK",
-        "url": "https://genk.vn/iphone-18-pro-max-lo-muc-gia-kho-tin-165260714021517635.chn"
+        "title": "⭐ Con nuôi Brad Pitt đồng loạt bỏ họ bố",
+        "desc": "Maddox và Zahara, hai trong số các con nuôi của Brad Pitt, đã chính thức đăng thông báo bỏ họ của nam tài tử. Drama gia đình Hollywood vẫn chưa có hồi kết!",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "14/07·VnExpress",
+        "url": "https://vnexpress.net/cac-con-dang-thong-bao-bo-ho-brad-pitt-5097079.html"
+      },
+      {
+        "title": "⭐ Song Joong Ki xuống sắc giữa tin ly hôn?",
+        "desc": "Hình ảnh Song Joong Ki trông già đi 10 tuổi, diện mạo xuống cấp trầm trọng đang gây xôn xao mạng xã hội. Liệu có phải do tin đồn ly hôn vợ Tây?",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "14/07·Kenh14",
+        "url": "https://kenh14.vn/xon-xao-hinh-anh-song-joong-ki-nhu-gia-di-10-tuoi-dien-mao-xuong-cap-tram-trong-giua-tin-ly-hon-vo-tay-215260714103448051.chn"
+      },
+      {
+        "title": "⭐ Tăng Thanh Hà tái xuất showbiz: Louis Nguyễn nói gì?",
+        "desc": "Tăng Thanh Hà quyết tâm trở lại showbiz, và những chi tiết về thái độ của ông xã Louis Nguyễn đang được dân tình mổ xẻ. Liệu 'ngọc nữ' có được chồng ủng hộ hết mình?",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "14/07·Kenh14",
+        "url": "https://kenh14.vn/chi-tiet-lo-ro-thai-do-cua-louis-nguyen-khi-tang-thanh-ha-quyet-tam-tai-xuat-showbiz-215260714105529391.chn"
+      },
+      {
+        "title": "🎬 Phim Hàn mới rating tăng vù vù dù nam chính chỉ mặc 1 bộ đồ",
+        "desc": "Một bộ phim Hàn Quốc mới ra mắt đang gây sốt với rating tăng chóng mặt, dù nam chính chỉ diện duy nhất một bộ đồ trong 4 tập đầu. Đúng là 'visual' cân tất!",
+        "tag": "movie",
+        "tagLabel": "🎬 PHIM",
+        "source": "14/07·Kenh14",
+        "url": "https://kenh14.vn/khong-can-noi-phim-han-moi-chieu-ma-rating-tang-vu-vu-nam-chinh-4-tap-chi-mac-1-bo-do-van-qua-ben-215260714033241533.chn"
+      },
+      {
+        "title": "🎵 Những Thành Phố Mơ Màng xin lỗi sau 'bão' tổ chức show",
+        "desc": "Ban tổ chức Những Thành Phố Mơ Màng đã chính thức lên tiếng xin lỗi sau hàng loạt phẫn nộ về khâu tổ chức show diễn ngày 12/7. Hy vọng khán giả sẽ được đền bù xứng đáng!",
+        "tag": "music",
+        "tagLabel": "🎵 MUSIC",
+        "source": "13/07·Kenh14",
+        "url": "https://kenh14.vn/nhung-thanh-pho-mo-mang-xin-loi-215260713223203741.chn"
       }
     ],
-    "finance": [
+    "gaming": [
       {
-        "title": "🪙 Giá vàng trong nước giảm mạnh",
-        "desc": "Giá vàng miếng giảm 1,3 - 2 triệu đồng/lượng, neo ở mức 144,1 – 147,1 triệu đồng/lượng; vàng nhẫn giảm 700 nghìn – 1,3 triệu đồng/lượng.",
-        "tag": "gold",
-        "tagLabel": "🪙 VÀNG",
-        "source": "14/07·VnEconomy",
-        "url": "https://vneconomy.vn/gia-vang-trong-nuoc-nguoc-chieu-gia-the-gioi.htm"
+        "title": "🎪 Prompt To Play 2026: 24 giờ tạo game bằng AI",
+        "desc": "Cuộc thi phát triển game giải đố ứng dụng AI đầu tiên tại Việt Nam - “Prompt To Play” 2026 - đã tìm ra những cái tên xuất sắc nhất sau 24 giờ tranh tài liên tục tại VNG Campus.",
+        "tag": "event",
+        "tagLabel": "🎪 EVENT",
+        "source": "13/07·cl44.cnnd.vn",
+        "url": "https://cl44.cnnd.vn/24-gio-tao-game-bang-ai-dau-la-nhung-cai-ten-xuat-sac-xuat-sac-nhat-prompt-to-play-2026-178260713204410278.chn"
       },
       {
-        "title": "📈 LPBS nộp hồ sơ niêm yết HoSE",
-        "desc": "Sở Giao dịch Chứng khoán TP.HCM (HoSE) đã nhận hồ sơ đăng ký niêm yết của Công ty Chứng khoán LPBS vào ngày 9/7.",
-        "tag": "stock",
-        "tagLabel": "📈 CK",
-        "source": "14/07·CafeF",
-        "url": "https://cafef.vn/lpbs-da-nop-ho-so-niem-dang-ky-niem-yet-len-hose-188260714101421938.chn"
+        "title": "💻 Game thủ PC nhanh tay nhận miễn phí ngay một tựa game vĩnh viễn",
+        "desc": "Cơ hội vàng cho các game thủ PC đây! Một tựa game hấp dẫn đang được tặng miễn phí vĩnh viễn, nhưng thời gian khuyến mại không kéo dài lâu đâu nhé.",
+        "tag": "pc",
+        "tagLabel": "💻 PC",
+        "source": "14/07·cl44.cnnd.vn",
+        "url": "https://cl44.cnnd.vn/game-thu-pc-nhanh-tay-nhan-mien-phi-ngay-mot-tua-game-vinh-vien-thao-tac-don-gian-178260714092203333.chn"
       },
       {
-        "title": "💵 Lợi suất trái phiếu Chính phủ tăng",
-        "desc": "Áp lực phát hành lớn và biến động tiền tệ đang đẩy lợi suất trái phiếu Chính phủ lên cao hơn, với lãi suất bình quân tháng 6 là 4,25%/năm.",
-        "tag": "rate",
-        "tagLabel": "💵 LÃI SUẤT",
-        "source": "14/07·VnEconomy",
-        "url": "https://vneconomy.vn/loi-suat-trai-phieu-chinh-phu-con-du-dia-tang-duoi-suc-ep-da-chieu.htm"
-      },
-      {
-        "title": "💸 Amazon dừng hoạt động tại ĐNÁ",
-        "desc": "Amazon đã dừng nhiều hoạt động tại một quốc gia Đông Nam Á sau 9 năm gia nhập thị trường, được xem là một thất bại đáng tiếc.",
-        "tag": "economy",
-        "tagLabel": "💼 KINH TẾ",
-        "source": "14/07·CafeF",
-        "url": "https://cafef.vn/nong-amazon-dung-nhieu-hoat-dong-tai-mot-quoc-gia-dna-that-bai-cay-dang-sau-9-nam-gia-nhap-thi-truong-188260714091913923.chn"
+        "title": "📱 Code FC Mobile mới nhất 14/07/2026: Nhận quà TOTY cực khủng",
+        "desc": "Các game thủ FC Mobile đừng bỏ lỡ cơ hội nhận quà TOTY cực khủng với bộ code mới nhất hôm nay 14/07/2026. Nhanh tay nhập code để nâng cấp đội hình nhé!",
+        "tag": "mobile",
+        "tagLabel": "📱 MOBILE",
+        "source": "14/07·Quantrimang.com",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE45M25fYnE4YnFOMFBQcmNyLTJVUjR1WmIyRHhPNzZmdU1WZXFtY3poZUtVNFBPOWNpSlVpUzBNeWQ3LW5aYnk4eWY4b052WDA4S25HSGFxeDdKb3hCejU5b2NQRlJGdw?oc=5"
       }
     ],
-    "entertainment": [],
-    "gaming": [],
+    "lifestyle": [
+      {
+        "title": "💪 Ăn tiết canh lợn, người đàn ông 45 tuổi phù não",
+        "desc": "Một người đàn ông 45 tuổi đã phải nhập viện với tình trạng sốt cao, phù não chỉ sau hai ngày ăn tiết canh lợn. Anh chị em nhớ cẩn trọng với món ăn này nhé!",
+        "tag": "health",
+        "tagLabel": "💪 HEALTH",
+        "source": "14/07·VnExpress",
+        "url": "https://vnexpress.net/phu-nao-sau-hai-ngay-an-tiet-canh-lon-5097243.html"
+      },
+      {
+        "title": "💪 5 vấn đề sức khỏe phụ nữ dễ mắc sau tuổi 30",
+        "desc": "Phụ nữ sau tuổi 30 cần đặc biệt chú ý đến 5 vấn đề sức khỏe phổ biến như rối loạn tuyến giáp, tiểu đường type 2 hay tăng huyết áp. Chủ động phòng ngừa là cách tốt nhất!",
+        "tag": "health",
+        "tagLabel": "💪 HEALTH",
+        "source": "13/07·VnExpress",
+        "url": "https://vnexpress.net/5-van-de-suc-khoe-phu-nu-de-mac-sau-30-tuoi-5096911.html"
+      },
+      {
+        "title": "✈️ Thêm tuyến bay thẳng nối Hải Phòng - Phú Quốc và TP HCM",
+        "desc": "Từ 25/7, sẽ có thêm các tuyến bay thẳng nối Hải Phòng với Phú Quốc và TP HCM, giúp việc di chuyển giữa các điểm du lịch này trở nên dễ dàng và thuận tiện hơn. Lên kế hoạch vi vu thôi!",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "13/07·VnExpress",
+        "url": "https://vnexpress.net/them-tuyen-bay-thang-noi-hai-phong-phu-quoc-va-tp-hcm-5096790.html"
+      },
+      {
+        "title": "🍜 Quán phở 30 năm giữ chân thực khách nhờ hương vị xưa",
+        "desc": "Một quán phở trên phố Huỳnh Thúc Kháng đã tồn tại 30 năm, vẫn giữ được hương vị truyền thống và là điểm đến yêu thích của nhiều thực khách. Nghe thôi đã thấy thèm rồi!",
+        "tag": "food",
+        "tagLabel": "🍜 FOOD",
+        "source": "01/07·VnExpress",
+        "url": "https://vnexpress.net/quan-pho-30-nam-giu-chan-thuc-khach-nho-huong-vi-xua-5091972.html"
+      }
+    ],
     "vietnam": [
       {
-        "title": "💼 GDP 6 tháng đầu năm tăng 8,18%",
-        "desc": "Theo Bộ Tài chính, GDP 6 tháng đầu năm 2026 ước tăng 8,18%, mức cao nhất trong 15 năm qua, cho thấy sự phục hồi kinh tế mạnh mẽ.",
+        "title": "📜 Thủ tướng chỉ đạo điều tra vụ 140 điểm 10 toán ở Tuyên Quang",
+        "desc": "Thủ tướng sẽ trực tiếp làm việc với lãnh đạo tỉnh Tuyên Quang để chỉ đạo xử lý vụ hơn 140 điểm 10 môn Toán bất thường. Đồng thời, đề xuất tách riêng kỳ thi THPT và tuyển sinh đại học.",
+        "tag": "policy",
+        "tagLabel": "📜 CHÍNH SÁCH",
+        "source": "14/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/thu-tuong-se-lam-viec-voi-tuyen-quang-vu-140-diem-10-toan-de-xuat-tach-rieng-2-ky-thi-thpt-va-tuyen-sinh-dai-hoc-100260714110830686.htm"
+      },
+      {
+        "title": "💼 GDP 6 tháng đầu năm tăng 8,18%, cao nhất 15 năm qua",
+        "desc": "Theo Bộ Tài chính, GDP 6 tháng đầu năm 2026 ước tăng 8,18%, đạt mức cao nhất trong vòng 15 năm qua. Đây là tín hiệu tích cực cho nền kinh tế Việt Nam!",
         "tag": "economy",
         "tagLabel": "💼 KINH TẾ",
         "source": "14/07·Tuổi Trẻ",
         "url": "https://tuoitre.vn/gdp-6-thang-dau-nam-uoc-tang-818-cao-nhat-trong-15-nam-qua-100260714103054185.htm"
       },
       {
-        "title": "📜 Thủ tướng chỉ đạo vụ 140 điểm 10 Toán",
-        "desc": "Thủ tướng sẽ trực tiếp làm việc với lãnh đạo tỉnh Tuyên Quang để chỉ đạo xử lý vụ điểm thi Toán bất thường, đồng thời đề xuất tách riêng 2 kỳ thi THPT và tuyển sinh đại học.",
+        "title": "🚦 Thu phí 5 đoạn cao tốc Bắc Nam qua miền Trung từ 15/7",
+        "desc": "Từ ngày 15/7, 5 đoạn cao tốc Bắc Nam qua Bắc Trung Bộ sẽ chính thức thu phí. Các bác tài chú ý cập nhật thông tin để có lộ trình di chuyển thuận tiện nhất nhé!",
+        "tag": "traffic",
+        "tagLabel": "🚦 GIAO THÔNG",
+        "source": "14/07·VnExpress",
+        "url": "https://vnexpress.net/thu-phi-5-doan-cao-toc-bac-nam-qua-mien-trung-tu-15-7-5097255.html"
+      },
+      {
+        "title": "📜 Hà Nội công bố 54 tiêu chí xã, phường xã hội chủ nghĩa",
+        "desc": "UBND TP Hà Nội vừa ban hành đề án thí điểm mô hình xã, phường xã hội chủ nghĩa với 54 tiêu chí đánh giá. Một bước tiến mới trong việc xây dựng Thủ đô văn minh, hiện đại.",
         "tag": "policy",
         "tagLabel": "📜 CHÍNH SÁCH",
         "source": "14/07·Tuổi Trẻ",
-        "url": "https://tuoitre.vn/thu-tuong-se-lam-viec-voi-tuyen-quang-vu-140-diem-10-toan-de-xuat-tach-rieng-2-ky-thi-thpt-va-tuyen-sinh-dai-hoc-100260714110830686.htm"
+        "url": "https://tuoitre.vn/ha-noi-cong-bo-54-tieu-chi-de-tro-thanh-xa-phuong-xa-hoi-chu-nghia-1002607141032373.htm"
       }
     ],
-    "lifestyle": []
+    "tech": [
+      {
+        "title": "🤖 Siri AI trên iOS 27 Public Beta: Trợ lý đúng nghĩa?",
+        "desc": "iOS 27 Public Beta đã ra mắt với Siri AI được nâng cấp đáng kể, hứa hẹn trở thành trợ lý AI đúng nghĩa. Bạn đã sẵn sàng trải nghiệm những tính năng thông minh này chưa?",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
+        "source": "14/07·GenK",
+        "url": "https://genk.vn/nhung-tinh-nang-dang-chu-y-nhat-tren-ios-27-public-beta-siri-ai-cuoi-cung-da-tro-thanh-tro-ly-ai-dung-nghia-165260714120312582.chn"
+      },
+      {
+        "title": "🚀 Smartphone AI Agentic đầu tiên thế giới ra mắt tại Trung Quốc",
+        "desc": "Một công ty AI Trung Quốc vừa trình làng smartphone AI Agentic đầu tiên thế giới, có khả năng tự hoàn thành các tác vụ phức tạp mà không cần người dùng thao tác từng bước. Tương lai đã đến rồi!",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "14/07·GenK",
+        "url": "https://genk.vn/cong-ty-ai-trung-quoc-ra-mat-smartphone-ai-agentic-dau-tien-the-gioi-co-the-tu-hoan-thanh-tac-vu-phuc-tap-ma-khong-can-nguoi-dung-thao-tac-tung-buoc-165260714105521387.chn"
+      },
+      {
+        "title": "⭐ Ốp lưng iPhone tích hợp màn hình E Ink giá từ 1,9 triệu đồng",
+        "desc": "Ốp lưng iPhone Xtrem Ink mới có màn hình E Ink, cho phép hiển thị ảnh tùy thích mà không cần pin riêng, với giá từ 1,9 triệu đồng. Độc đáo và tiện lợi cho dân mê công nghệ!",
+        "tag": "review",
+        "tagLabel": "⭐ REVIEW",
+        "source": "14/07·GenK",
+        "url": "https://genk.vn/op-lung-iphone-tich-hop-man-hinh-e-ink-co-the-hien-thi-anh-theo-y-thich-khong-can-pin-rieng-gia-tu-19-trieu-dong-165260714105210377.chn"
+      }
+    ],
+    "finance": [
+      {
+        "title": "📈 Công ty chứng khoán lướt sóng cổ phiếu thép, lãi 11% sau 1 tuần",
+        "desc": "Một công ty chứng khoán đã nhanh chóng lướt sóng cổ phiếu thép và ước tính lãi 11% chỉ sau hơn một tuần giao dịch. Thị trường đang có những cơ hội bất ngờ!",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "14/07·CafeF",
+        "url": "https://cafef.vn/mot-cong-ty-chung-khoan-luot-song-co-phieu-thep-uoc-lai-11-chi-sau-hon-1-tuan-188260714131708698.chn"
+      },
+      {
+        "title": "🪙 Giá vàng trong nước giảm hơn 1 triệu đồng, thế giới rời mốc 4.000 USD",
+        "desc": "Giá vàng miếng trong nước giảm 1,3 triệu đồng/lượng, neo ở mức 144,1 – 147,1 triệu đồng/lượng. Giá vàng thế giới cũng rời mốc 4.000 USD/ounce, trong khi dầu thô tăng gần 10%.",
+        "tag": "gold",
+        "tagLabel": "🪙 VÀNG",
+        "source": "14/07·VnExpress",
+        "url": "https://vnexpress.net/gia-vang-the-gioi-roi-moc-4-000-usd-dau-tho-tang-gan-10-5097086.html"
+      },
+      {
+        "title": "💼 Thu nhập dược sĩ Long Châu: Có người thưởng Tết đến 127 triệu đồng",
+        "desc": "Thu nhập của dược sĩ Long Châu đang được hé lộ, với mức thưởng Tết cao nhất lên đến 127 triệu đồng. Một con số đáng mơ ước cho nhiều người lao động!",
+        "tag": "economy",
+        "tagLabel": "💼 KINH TẾ",
+        "source": "14/07·CafeF",
+        "url": "https://cafef.vn/he-lo-thu-nhap-cua-duoc-sy-long-chau-co-nguoi-duoc-thuong-tet-den-127-trieu-dong-188260714102502206.chn"
+      }
+    ]
   },
   {
     "date": "2026-07-13",
