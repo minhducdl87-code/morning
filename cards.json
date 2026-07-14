@@ -5,198 +5,232 @@
     "dateLabel": "14/07/2026",
     "entertainment": [
       {
-        "title": "🎬 Tom Cruise 'lột xác' bụng bự trong phim mới",
-        "desc": "Tài tử Tom Cruise gây bất ngờ với tạo hình bụng bự, khác hẳn hình tượng quen thuộc trong dự án phim mới nhất của mình. Bạn có hóng màn hóa thân này không?",
+        "title": "💖 Katy Perry và cựu Thủ tướng Canada hẹn hò 1 năm?",
+        "desc": "Tin đồn tình cảm giữa Katy Perry và cựu Thủ tướng Canada Justin Trudeau đang gây xôn xao, cả hai được cho là đã bên nhau một năm.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "13/07·vnexpress.net",
+        "url": "https://vnexpress.net/mot-nam-ben-nhau-cua-katy-perry-va-cuu-thu-tuong-canada-5096842.html"
+      },
+      {
+        "title": "🎬 Tom Cruise 'lột xác' trong phim mới",
+        "desc": "Tài tử Tom Cruise gây bất ngờ với tạo hình bụng bự, khác hẳn vẻ ngoài phong độ thường thấy trong dự án phim mới của mình.",
         "tag": "movie",
         "tagLabel": "🎬 PHIM",
-        "source": "14/07·VnExpress",
+        "source": "14/07·vnexpress.net",
         "url": "https://vnexpress.net/tom-cruise-lot-xac-trong-phim-moi-5097124.html"
       },
       {
-        "title": "⭐ Con nuôi Brad Pitt đồng loạt bỏ họ bố",
-        "desc": "Maddox và Zahara, hai trong số các con nuôi của Brad Pitt, đã chính thức đăng thông báo bỏ họ của nam tài tử. Drama gia đình Hollywood vẫn chưa có hồi kết!",
+        "title": "💔 Con nuôi Brad Pitt bỏ họ bố",
+        "desc": "Maddox và Zahara, hai trong số các con nuôi của Angelina Jolie và Brad Pitt, đã chính thức đăng thông báo bỏ họ của tài tử này.",
         "tag": "celeb",
         "tagLabel": "⭐ CELEB",
-        "source": "14/07·VnExpress",
+        "source": "14/07·vnexpress.net",
         "url": "https://vnexpress.net/cac-con-dang-thong-bao-bo-ho-brad-pitt-5097079.html"
       },
       {
-        "title": "⭐ Song Joong Ki xuống sắc giữa tin ly hôn?",
-        "desc": "Hình ảnh Song Joong Ki trông già đi 10 tuổi, diện mạo xuống cấp trầm trọng đang gây xôn xao mạng xã hội. Liệu có phải do tin đồn ly hôn vợ Tây?",
+        "title": "⚽ Victoria Beckham gây bão vì không ăn mừng bàn thắng tuyển Anh",
+        "desc": "Victoria Beckham trở thành tâm điểm chú ý khi giữ thái độ lạnh lùng, không ăn mừng bàn thắng của tuyển Anh, khiến cộng đồng mạng tranh cãi.",
         "tag": "celeb",
         "tagLabel": "⭐ CELEB",
-        "source": "14/07·Kenh14",
-        "url": "https://kenh14.vn/xon-xao-hinh-anh-song-joong-ki-nhu-gia-di-10-tuoi-dien-mao-xuong-cap-tram-trong-giua-tin-ly-hon-vo-tay-215260714103448051.chn"
+        "source": "14/07·vnexpress.net",
+        "url": "https://vnexpress.net/victoria-beckham-gay-bao-vi-khong-an-mung-ban-thang-tuyen-anh-5097068.html"
       },
       {
-        "title": "⭐ Tăng Thanh Hà tái xuất showbiz: Louis Nguyễn nói gì?",
-        "desc": "Tăng Thanh Hà quyết tâm trở lại showbiz, và những chi tiết về thái độ của ông xã Louis Nguyễn đang được dân tình mổ xẻ. Liệu 'ngọc nữ' có được chồng ủng hộ hết mình?",
-        "tag": "celeb",
-        "tagLabel": "⭐ CELEB",
-        "source": "14/07·Kenh14",
-        "url": "https://kenh14.vn/chi-tiet-lo-ro-thai-do-cua-louis-nguyen-khi-tang-thanh-ha-quyet-tam-tai-xuat-showbiz-215260714105529391.chn"
-      },
-      {
-        "title": "🎬 Phim Hàn mới rating tăng vù vù dù nam chính chỉ mặc 1 bộ đồ",
-        "desc": "Một bộ phim Hàn Quốc mới ra mắt đang gây sốt với rating tăng chóng mặt, dù nam chính chỉ diện duy nhất một bộ đồ trong 4 tập đầu. Đúng là 'visual' cân tất!",
-        "tag": "movie",
-        "tagLabel": "🎬 PHIM",
-        "source": "14/07·Kenh14",
+        "title": "📺 Phim Hàn mới rating tăng vù vù dù nam chính chỉ mặc 1 bộ đồ",
+        "desc": "Một bộ phim Hàn Quốc mới ra mắt đang gây sốt với rating tăng chóng mặt, dù nam chính chỉ diện duy nhất một bộ đồ trong 4 tập đầu.",
+        "tag": "show",
+        "tagLabel": "📺 SHOW",
+        "source": "14/07·kenh14.vn",
         "url": "https://kenh14.vn/khong-can-noi-phim-han-moi-chieu-ma-rating-tang-vu-vu-nam-chinh-4-tap-chi-mac-1-bo-do-van-qua-ben-215260714033241533.chn"
       },
       {
-        "title": "🎵 Những Thành Phố Mơ Màng xin lỗi sau 'bão' tổ chức show",
-        "desc": "Ban tổ chức Những Thành Phố Mơ Màng đã chính thức lên tiếng xin lỗi sau hàng loạt phẫn nộ về khâu tổ chức show diễn ngày 12/7. Hy vọng khán giả sẽ được đền bù xứng đáng!",
+        "title": "🎵 Sơn Tùng M-TP đối đầu 50 nghệ sĩ trong show mới",
+        "desc": "Sơn Tùng M-TP sẽ có màn 'đối đầu' với 50 nghệ sĩ khác trong một show âm nhạc mới, hứa hẹn tạo nên những màn trình diễn bùng nổ.",
         "tag": "music",
         "tagLabel": "🎵 MUSIC",
-        "source": "13/07·Kenh14",
-        "url": "https://kenh14.vn/nhung-thanh-pho-mo-mang-xin-loi-215260713223203741.chn"
+        "source": "13/07·kenh14.vn",
+        "url": "https://kenh14.vn/son-tung-dau-50-nghe-si-21526071317203428.chn"
+      }
+    ],
+    "trending": [
+      {
+        "title": "🇻🇳 “Vietnam is calling” viral khắp MXH",
+        "desc": "Trào lưu “Vietnam is calling” đang khiến Việt Nam trở thành điểm đến hot trên mạng xã hội, thu hút sự chú ý của bạn bè quốc tế.",
+        "tag": "viral",
+        "tagLabel": "🔥 VIRAL",
+        "source": "14/07·Vietcetera",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQWUFFbnhYdXdHWEZ1REIxNjVySDJ0dkZza0hLa25TLXBhNlN4X0J4d2hmS3YyUGY3MGs4Vmx5XzBLUXNkaHZEWGs1SnoycExpb0k5UXFtYWR3X2hmd2xvR29YbEdzWkk1VVdtSDJTZGZXS0RaYWRXSDF6NVhVSHdQZUhIWHBqYnVDR1UyUlFUdXUxSHlBeXBiRDZkejNUUQ?oc=5"
+      },
+      {
+        "title": "🇰🇷 Tổng thống Hàn Quốc đăng video thăm Việt Nam lên TikTok",
+        "desc": "Tổng thống Hàn Quốc gây sốt khi chia sẻ video chuyến thăm Việt Nam trên TikTok, với những góc quay ấn tượng về dải đất hình chữ S.",
+        "tag": "tiktok",
+        "tagLabel": "📱 TIKTOK",
+        "source": "14/07·Kenh14.vn",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNnhFLTc5MWY4UVRlLWVreF9FNnVURVRiNTdXb3dkVnFHQTlMZ2RvRXM5aFZXa2ZJUmdtOWVtZjBpLWtoMUN0Tk81N0xSMTd1eWd6ekJ2MEFBWnZtcXl0ZnRfdkZ1dDlOMnZ2TU13a29rcWM0clpEaWF3cndKZ0pIekYtbnNwaXFTOVFscUtLc2lyQkV2b3BNWl95YWNFdEdxU3B1aEJzZWFreEQ4ckRnUWZ6c0lOMW9MWWFnX3pEN1MtNjIyVXh2ZW5oU090TGYyTjEwVHQwOF9IeHlkYkE?oc=5"
+      },
+      {
+        "title": "😂 Trend “Thế mà lại hay” phủ sóng TikTok, Facebook",
+        "desc": "Cụm từ “Thế mà lại hay” đang trở thành hot trend trên các nền tảng mạng xã hội, dùng để diễn tả sự bất ngờ trước một điều tưởng chừng không tốt nhưng lại mang đến kết quả tích cực.",
+        "tag": "meme",
+        "tagLabel": "😂 MEME",
+        "source": "14/07·FPT Shop",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5fUGlfSDlkYV9GMDQ0ZU9sUVNhRU44cW9ORWY4LVhYeVZBS2s0cV9vQVpLZU1jUzh3ZGdldFFULVdPUTZVckdhaXY4SzlMWnJRTG9sUFhIdnhKNHFXQnJTODk1QmdwV2hXZ2VlVVgtV24?oc=5"
+      },
+      {
+        "title": "⚽ Haaland trở thành chất liệu viral của loạt thương hiệu",
+        "desc": "Tiền đạo Erling Haaland đang là gương mặt được nhiều thương hiệu lớn như hãng hàng không, KFC, Crocs tận dụng để tạo nội dung viral trên mạng xã hội.",
+        "tag": "viral",
+        "tagLabel": "🔥 VIRAL",
+        "source": "14/07·CafeF",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxONzVuWFA3M01fSzA0RW9JN2ZIdzZnQlYwS0Q3SDVzTTd3Wk5NMmhNWGhRU0praFJzdzViTlQ5aHRpbUZRMXBmbElIeWE5ZWF2M21xNE5BZThnc1o1TW50RnRGUWI5WDBUeUhmdGVHSERZSWMybXU1TTcySnVtbXdKUWZtdDRsWjliOFBLSmhNeW02SS16RlRVb19WMHZPMk9QalZUTWlEN09Mem5nS3hOTWNSTlpDUzJEWlhpWWRpemNHZHZYQmlTOHdPUXY1eVE1eWlGdDE4SWtwYlM4?oc=5"
       }
     ],
     "gaming": [
       {
-        "title": "🎪 Prompt To Play 2026: 24 giờ tạo game bằng AI",
-        "desc": "Cuộc thi phát triển game giải đố ứng dụng AI đầu tiên tại Việt Nam - “Prompt To Play” 2026 - đã tìm ra những cái tên xuất sắc nhất sau 24 giờ tranh tài liên tục tại VNG Campus.",
+        "title": "🤖 Prompt To Play 2026: 24 giờ tạo game bằng AI",
+        "desc": "Cuộc thi phát triển game giải đố ứng dụng AI đầu tiên tại Việt Nam đã tìm ra những cái tên xuất sắc nhất sau 24 giờ tranh tài liên tục.",
         "tag": "event",
         "tagLabel": "🎪 EVENT",
         "source": "13/07·cl44.cnnd.vn",
         "url": "https://cl44.cnnd.vn/24-gio-tao-game-bang-ai-dau-la-nhung-cai-ten-xuat-sac-xuat-sac-nhat-prompt-to-play-2026-178260713204410278.chn"
       },
       {
-        "title": "💻 Game thủ PC nhanh tay nhận miễn phí ngay một tựa game vĩnh viễn",
-        "desc": "Cơ hội vàng cho các game thủ PC đây! Một tựa game hấp dẫn đang được tặng miễn phí vĩnh viễn, nhưng thời gian khuyến mại không kéo dài lâu đâu nhé.",
+        "title": "🎁 Game thủ PC nhanh tay nhận miễn phí ngay một tựa game vĩnh viễn",
+        "desc": "Cơ hội vàng cho anh em game thủ PC: một tựa game hấp dẫn đang được tặng miễn phí vĩnh viễn, nhanh tay nhận trước khi hết hạn nhé!",
         "tag": "pc",
         "tagLabel": "💻 PC",
         "source": "14/07·cl44.cnnd.vn",
         "url": "https://cl44.cnnd.vn/game-thu-pc-nhanh-tay-nhan-mien-phi-ngay-mot-tua-game-vinh-vien-thao-tac-don-gian-178260714092203333.chn"
       },
       {
-        "title": "📱 Code FC Mobile mới nhất 14/07/2026: Nhận quà TOTY cực khủng",
-        "desc": "Các game thủ FC Mobile đừng bỏ lỡ cơ hội nhận quà TOTY cực khủng với bộ code mới nhất hôm nay 14/07/2026. Nhanh tay nhập code để nâng cấp đội hình nhé!",
+        "title": "📱 Code FC Mobile mới nhất hôm nay 14/07/2026",
+        "desc": "Anh em FC Mobile đừng bỏ lỡ cơ hội nhận quà TOTY cực khủng với các mã code mới nhất được cập nhật hôm nay 14/07/2026.",
         "tag": "mobile",
         "tagLabel": "📱 MOBILE",
         "source": "14/07·Quantrimang.com",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE45M25fYnE4YnFOMFBQcmNyLTJVUjR1WmIyRHhPNzZmdU1WZXFtY3poZUtVNFBPOWNpSlVpUzBNeWQ3LW5aYnk4eWY4b052WDA4S25HSGFxeDdKb3hCejU5b2NQRlJGdw?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE45M25fYnE4YmFOMFBQcmNyLTJVUjR1WmIyRHhPNzZmdU1WZXFtY3poZUtVNFBPOWNpSlVpUzBNeWQ3LW5aYnk4eWY4b052WDA4S25HSGFxeDdKb3hCejU5b2NQRlJGdw?oc=5"
       }
     ],
     "lifestyle": [
       {
-        "title": "💪 Ăn tiết canh lợn, người đàn ông 45 tuổi phù não",
-        "desc": "Một người đàn ông 45 tuổi đã phải nhập viện với tình trạng sốt cao, phù não chỉ sau hai ngày ăn tiết canh lợn. Anh chị em nhớ cẩn trọng với món ăn này nhé!",
+        "title": "⚠️ Phù não sau hai ngày ăn tiết canh lợn",
+        "desc": "Một người đàn ông 45 tuổi bị sốt cao và phù não nghiêm trọng chỉ hai ngày sau khi ăn tiết canh lợn, là lời cảnh báo về món ăn này.",
         "tag": "health",
         "tagLabel": "💪 HEALTH",
-        "source": "14/07·VnExpress",
+        "source": "14/07·vnexpress.net",
         "url": "https://vnexpress.net/phu-nao-sau-hai-ngay-an-tiet-canh-lon-5097243.html"
       },
       {
-        "title": "💪 5 vấn đề sức khỏe phụ nữ dễ mắc sau tuổi 30",
-        "desc": "Phụ nữ sau tuổi 30 cần đặc biệt chú ý đến 5 vấn đề sức khỏe phổ biến như rối loạn tuyến giáp, tiểu đường type 2 hay tăng huyết áp. Chủ động phòng ngừa là cách tốt nhất!",
-        "tag": "health",
-        "tagLabel": "💪 HEALTH",
-        "source": "13/07·VnExpress",
-        "url": "https://vnexpress.net/5-van-de-suc-khoe-phu-nu-de-mac-sau-30-tuoi-5096911.html"
-      },
-      {
-        "title": "✈️ Thêm tuyến bay thẳng nối Hải Phòng - Phú Quốc và TP HCM",
-        "desc": "Từ 25/7, sẽ có thêm các tuyến bay thẳng nối Hải Phòng với Phú Quốc và TP HCM, giúp việc di chuyển giữa các điểm du lịch này trở nên dễ dàng và thuận tiện hơn. Lên kế hoạch vi vu thôi!",
+        "title": "✈️ Nơi tệ nhất để đặt vali trong phòng khách sạn",
+        "desc": "Giường là một trong những nơi bạn nên tránh đặt vali trong phòng khách sạn để hạn chế nguy cơ mang theo rệp giường về nhà.",
         "tag": "travel",
         "tagLabel": "✈️ TRAVEL",
-        "source": "13/07·VnExpress",
-        "url": "https://vnexpress.net/them-tuyen-bay-thang-noi-hai-phong-phu-quoc-va-tp-hcm-5096790.html"
+        "source": "14/07·vnexpress.net",
+        "url": "https://vnexpress.net/noi-te-nhat-de-dat-vali-trong-phong-khach-san-5097260.html"
       },
       {
         "title": "🍜 Quán phở 30 năm giữ chân thực khách nhờ hương vị xưa",
-        "desc": "Một quán phở trên phố Huỳnh Thúc Kháng đã tồn tại 30 năm, vẫn giữ được hương vị truyền thống và là điểm đến yêu thích của nhiều thực khách. Nghe thôi đã thấy thèm rồi!",
+        "desc": "Một quán phở trên phố Huỳnh Thúc Kháng đã tồn tại 30 năm, vẫn giữ được lượng khách đông đảo nhờ hương vị truyền thống đặc trưng.",
         "tag": "food",
         "tagLabel": "🍜 FOOD",
-        "source": "01/07·VnExpress",
+        "source": "01/07·vnexpress.net",
         "url": "https://vnexpress.net/quan-pho-30-nam-giu-chan-thuc-khach-nho-huong-vi-xua-5091972.html"
+      },
+      {
+        "title": "✈️ Thêm tuyến bay thẳng nối Hải Phòng - Phú Quốc và TP HCM",
+        "desc": "Từ ngày 25/7, sẽ có thêm các tuyến bay thẳng mới nối Hải Phòng với Phú Quốc và TP HCM, giúp việc di chuyển thuận tiện hơn.",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "13/07·vnexpress.net",
+        "url": "https://vnexpress.net/them-tuyen-bay-thang-noi-hai-phong-phu-quoc-va-tp-hcm-5096790.html"
       }
     ],
     "vietnam": [
       {
-        "title": "📜 Thủ tướng chỉ đạo điều tra vụ 140 điểm 10 toán ở Tuyên Quang",
-        "desc": "Thủ tướng sẽ trực tiếp làm việc với lãnh đạo tỉnh Tuyên Quang để chỉ đạo xử lý vụ hơn 140 điểm 10 môn Toán bất thường. Đồng thời, đề xuất tách riêng kỳ thi THPT và tuyển sinh đại học.",
-        "tag": "policy",
-        "tagLabel": "📜 CHÍNH SÁCH",
-        "source": "14/07·Tuổi Trẻ",
-        "url": "https://tuoitre.vn/thu-tuong-se-lam-viec-voi-tuyen-quang-vu-140-diem-10-toan-de-xuat-tach-rieng-2-ky-thi-thpt-va-tuyen-sinh-dai-hoc-100260714110830686.htm"
-      },
-      {
-        "title": "💼 GDP 6 tháng đầu năm tăng 8,18%, cao nhất 15 năm qua",
-        "desc": "Theo Bộ Tài chính, GDP 6 tháng đầu năm 2026 ước tăng 8,18%, đạt mức cao nhất trong vòng 15 năm qua. Đây là tín hiệu tích cực cho nền kinh tế Việt Nam!",
-        "tag": "economy",
-        "tagLabel": "💼 KINH TẾ",
-        "source": "14/07·Tuổi Trẻ",
-        "url": "https://tuoitre.vn/gdp-6-thang-dau-nam-uoc-tang-818-cao-nhat-trong-15-nam-qua-100260714103054185.htm"
-      },
-      {
-        "title": "🚦 Thu phí 5 đoạn cao tốc Bắc Nam qua miền Trung từ 15/7",
-        "desc": "Từ ngày 15/7, 5 đoạn cao tốc Bắc Nam qua Bắc Trung Bộ sẽ chính thức thu phí. Các bác tài chú ý cập nhật thông tin để có lộ trình di chuyển thuận tiện nhất nhé!",
+        "title": "📜 Thu phí 5 đoạn cao tốc Bắc Nam qua miền Trung từ 15/7",
+        "desc": "Từ ngày 15/7, 5 đoạn cao tốc Bắc Nam đi qua Bắc Trung Bộ sẽ chính thức thu phí, ảnh hưởng đến chi phí di chuyển của nhiều người.",
         "tag": "traffic",
         "tagLabel": "🚦 GIAO THÔNG",
-        "source": "14/07·VnExpress",
+        "source": "14/07·vnexpress.net",
         "url": "https://vnexpress.net/thu-phi-5-doan-cao-toc-bac-nam-qua-mien-trung-tu-15-7-5097255.html"
       },
       {
-        "title": "📜 Hà Nội công bố 54 tiêu chí xã, phường xã hội chủ nghĩa",
-        "desc": "UBND TP Hà Nội vừa ban hành đề án thí điểm mô hình xã, phường xã hội chủ nghĩa với 54 tiêu chí đánh giá. Một bước tiến mới trong việc xây dựng Thủ đô văn minh, hiện đại.",
+        "title": "📚 'Kỳ thi hai trong một đang bộc lộ nhiều bất cập'",
+        "desc": "Chủ nhiệm Ủy ban Văn hóa và Xã hội nhận định kỳ thi tốt nghiệp THPT và tuyển sinh đại học 'hai trong một' đang gặp nhiều vấn đề cần xem xét lại.",
+        "tag": "society",
+        "tagLabel": "🏙️ XÃ HỘI",
+        "source": "14/07·vnexpress.net",
+        "url": "https://vnexpress.net/ky-thi-hai-trong-mot-dang-boc-lo-nhieu-bat-cap-5097215.html"
+      },
+      {
+        "title": "📜 Thủ tướng sẽ làm việc với Tuyên Quang vụ hơn 140 điểm 10 toán",
+        "desc": "Thủ tướng sẽ trực tiếp chỉ đạo xử lý vụ việc hơn 140 điểm 10 môn Toán tại Tuyên Quang, đồng thời đề xuất tách riêng hai kỳ thi THPT và tuyển sinh đại học.",
         "tag": "policy",
         "tagLabel": "📜 CHÍNH SÁCH",
-        "source": "14/07·Tuổi Trẻ",
-        "url": "https://tuoitre.vn/ha-noi-cong-bo-54-tieu-chi-de-tro-thanh-xa-phuong-xa-hoi-chu-nghia-1002607141032373.htm"
+        "source": "14/07·tuoitre.vn",
+        "url": "https://tuoitre.vn/thu-tuong-se-lam-viec-voi-tuyen-quang-vu-140-diem-10-toan-de-xuat-tach-rieng-2-ky-thi-thpt-va-tuyen-sinh-dai-hoc-100260714110830686.htm"
+      },
+      {
+        "title": "💼 Trung Quốc vượt Mỹ, thành nước nhập khẩu thuỷ sản Việt Nam nhiều nhất",
+        "desc": "Trung Quốc đã vượt qua Mỹ để trở thành thị trường nhập khẩu thủy sản lớn nhất của Việt Nam, nhập gần 1,4 tỷ USD trong 6 tháng đầu năm.",
+        "tag": "economy",
+        "tagLabel": "💼 KINH TẾ",
+        "source": "13/07·vnexpress.net",
+        "url": "https://vnexpress.net/vuot-my-trung-quoc-thanh-nuoc-nhap-khau-thuy-san-viet-nam-nhieu-nhat-5096914.html"
       }
     ],
     "tech": [
       {
-        "title": "🤖 Siri AI trên iOS 27 Public Beta: Trợ lý đúng nghĩa?",
-        "desc": "iOS 27 Public Beta đã ra mắt với Siri AI được nâng cấp đáng kể, hứa hẹn trở thành trợ lý AI đúng nghĩa. Bạn đã sẵn sàng trải nghiệm những tính năng thông minh này chưa?",
-        "tag": "ai",
-        "tagLabel": "🤖 AI",
-        "source": "14/07·GenK",
-        "url": "https://genk.vn/nhung-tinh-nang-dang-chu-y-nhat-tren-ios-27-public-beta-siri-ai-cuoi-cung-da-tro-thanh-tro-ly-ai-dung-nghia-165260714120312582.chn"
-      },
-      {
-        "title": "🚀 Smartphone AI Agentic đầu tiên thế giới ra mắt tại Trung Quốc",
-        "desc": "Một công ty AI Trung Quốc vừa trình làng smartphone AI Agentic đầu tiên thế giới, có khả năng tự hoàn thành các tác vụ phức tạp mà không cần người dùng thao tác từng bước. Tương lai đã đến rồi!",
-        "tag": "launch",
-        "tagLabel": "🚀 LAUNCH",
-        "source": "14/07·GenK",
-        "url": "https://genk.vn/cong-ty-ai-trung-quoc-ra-mat-smartphone-ai-agentic-dau-tien-the-gioi-co-the-tu-hoan-thanh-tac-vu-phuc-tap-ma-khong-can-nguoi-dung-thao-tac-tung-buoc-165260714105521387.chn"
-      },
-      {
-        "title": "⭐ Ốp lưng iPhone tích hợp màn hình E Ink giá từ 1,9 triệu đồng",
-        "desc": "Ốp lưng iPhone Xtrem Ink mới có màn hình E Ink, cho phép hiển thị ảnh tùy thích mà không cần pin riêng, với giá từ 1,9 triệu đồng. Độc đáo và tiện lợi cho dân mê công nghệ!",
+        "title": "💻 Windows 11 có Search box mới, bỏ quảng cáo và Bing",
+        "desc": "Microsoft vừa ra mắt Search box mới trên Windows 11, loại bỏ quảng cáo và tích hợp Bing, mang lại trải nghiệm tìm kiếm sạch sẽ hơn.",
         "tag": "review",
         "tagLabel": "⭐ REVIEW",
-        "source": "14/07·GenK",
-        "url": "https://genk.vn/op-lung-iphone-tich-hop-man-hinh-e-ink-co-the-hien-thi-anh-theo-y-thich-khong-can-pin-rieng-gia-tu-19-trieu-dong-165260714105210377.chn"
+        "source": "14/07·tinhte.vn",
+        "url": "https://tinhte.vn/thread/day-la-search-box-moi-tren-windows-11-bo-quang-cao-bo-bing-roi-anh-em-oi.4160303/"
+      },
+      {
+        "title": "🚀 Apple ra mắt macOS 27 Golden Gate Public Beta",
+        "desc": "Apple đã chính thức phát hành macOS 27 Golden Gate Public Beta, cho phép người dùng trải nghiệm các tính năng mới trước khi ra mắt chính thức.",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "14/07·tinhte.vn",
+        "url": "https://tinhte.vn/thread/apple-hom-nay-chinh-thuc-ra-mat-macos-27-golden-gate-public-beta-roi-anh-em-co-cap-nhat-chua.4160304/"
+      },
+      {
+        "title": "🤖 iOS 27 tích hợp Siri AI có bản dùng thử đầu tiên",
+        "desc": "Apple đã tung ra bản Public Beta của iOS 27, với điểm nhấn là Siri AI được nâng cấp đáng kể, hứa hẹn trở thành trợ lý thông minh đúng nghĩa.",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
+        "source": "14/07·vnexpress.net",
+        "url": "https://vnexpress.net/ios-27-tich-hop-siri-ai-co-ban-dung-thu-dau-tien-5097071.html"
       }
     ],
     "finance": [
       {
-        "title": "📈 Công ty chứng khoán lướt sóng cổ phiếu thép, lãi 11% sau 1 tuần",
-        "desc": "Một công ty chứng khoán đã nhanh chóng lướt sóng cổ phiếu thép và ước tính lãi 11% chỉ sau hơn một tuần giao dịch. Thị trường đang có những cơ hội bất ngờ!",
-        "tag": "stock",
-        "tagLabel": "📈 CK",
-        "source": "14/07·CafeF",
-        "url": "https://cafef.vn/mot-cong-ty-chung-khoan-luot-song-co-phieu-thep-uoc-lai-11-chi-sau-hon-1-tuan-188260714131708698.chn"
-      },
-      {
-        "title": "🪙 Giá vàng trong nước giảm hơn 1 triệu đồng, thế giới rời mốc 4.000 USD",
-        "desc": "Giá vàng miếng trong nước giảm 1,3 triệu đồng/lượng, neo ở mức 144,1 – 147,1 triệu đồng/lượng. Giá vàng thế giới cũng rời mốc 4.000 USD/ounce, trong khi dầu thô tăng gần 10%.",
+        "title": "🪙 Giá vàng trong nước giảm hơn 1 triệu đồng, ngược chiều thế giới",
+        "desc": "Giá vàng miếng trong nước giảm 1,3 triệu đồng/lượng, neo ở mức 144,1 – 147,1 triệu đồng/lượng, trong khi vàng nhẫn giảm 700 nghìn – 1,3 triệu đồng/lượng, ngược với đà tăng của giá vàng thế giới.",
         "tag": "gold",
         "tagLabel": "🪙 VÀNG",
-        "source": "14/07·VnExpress",
-        "url": "https://vnexpress.net/gia-vang-the-gioi-roi-moc-4-000-usd-dau-tho-tang-gan-10-5097086.html"
+        "source": "14/07·vneconomy.vn",
+        "url": "https://vneconomy.vn/gia-vang-trong-nuoc-nguoc-chieu-gia-the-gioi.htm"
       },
       {
-        "title": "💼 Thu nhập dược sĩ Long Châu: Có người thưởng Tết đến 127 triệu đồng",
-        "desc": "Thu nhập của dược sĩ Long Châu đang được hé lộ, với mức thưởng Tết cao nhất lên đến 127 triệu đồng. Một con số đáng mơ ước cho nhiều người lao động!",
-        "tag": "economy",
-        "tagLabel": "💼 KINH TẾ",
-        "source": "14/07·CafeF",
-        "url": "https://cafef.vn/he-lo-thu-nhap-cua-duoc-sy-long-chau-co-nguoi-duoc-thuong-tet-den-127-trieu-dong-188260714102502206.chn"
+        "title": "📈 Cổ phiếu PNJ bất ngờ tăng vọt sau khi chạm đáy 15 tháng",
+        "desc": "Cổ phiếu PNJ bất ngờ tăng mạnh, đánh dấu nhịp hồi phục sau khi thị giá rơi xuống vùng thấp nhất trong khoảng 15 tháng qua.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "14/07·cafef.vn",
+        "url": "https://cafef.vn/co-phieu-pnj-bat-ngo-tang-vot-188260714124803464.chn"
+      },
+      {
+        "title": "🏠 Đề xuất quy định quan trọng nhất cho người mua chung cư",
+        "desc": "Dự thảo Luật Nhà ở sửa đổi đang đề xuất những quy định quan trọng, ảnh hưởng trực tiếp đến quyền lợi của người dân đã, đang và sắp mua chung cư.",
+        "tag": "realestate",
+        "tagLabel": "🏠 BĐS",
+        "source": "14/07·cafebiz.vn",
+        "url": "https://cafebiz.vn/tat-ca-nguoi-dan-da-dang-va-sap-mua-chung-cu-chu-y-de-xuat-quy-dinh-quan-trong-nhat-176260714134050189.chn"
       }
     ]
   },
