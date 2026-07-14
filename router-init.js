@@ -42,6 +42,14 @@ async function init() {
   // ToC drawer toggle triggers (was inline onclick="toggleToc()" in markup)
   document.querySelectorAll('[data-toggle-toc]').forEach(el => el.addEventListener('click', toggleToc));
 
+  // Keep <meta theme-color> in sync with the external light/dark toggle (puffer-theme.js)
+  const syncThemeColor = () => {
+    const m = document.querySelector('meta[name="theme-color"]');
+    if (m) m.content = document.body.classList.contains('light') ? '#f0f7f4' : '#040d0a';
+  };
+  new MutationObserver(syncThemeColor).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+  syncThemeColor();
+
   await loadConfig();
   try {
     const [dailyRes, weeklyRes, monthlyRes] = await Promise.all([

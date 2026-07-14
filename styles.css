@@ -11,10 +11,34 @@
   --border2: rgba(0,229,160,0.25);
   --display: 'Sora', system-ui, sans-serif;
   --body: 'DM Sans', system-ui, sans-serif;
+  /* Neon glow (dark) — disabled in body.light below */
+  --glow-accent: 0 0 20px -4px rgba(0,229,160,.6);
+  --glow-soft: 0 0 0 1px rgba(0,229,160,.14), 0 6px 28px -10px rgba(0,229,160,.28);
+  color-scheme: dark;
 }
 body.light {
   --bg3: #ffffff;
   --border2: rgba(0,140,85,0.35);
+  color-scheme: light;
+  /* FIX contrast: puffer's body.light does NOT override these text/color tokens,
+     so they kept dark-theme values (unreadable grey on light bg). Re-declare with
+     AA-compliant values (all >=4.5:1 on white / light card bg). */
+  --sub: #2d5c44;      /* body copy (.news-desc) */
+  --muted: #34694e;    /* meta (.news-source/.card-day/footer) */
+  /* aliases are baked at :root from the DARK --sub/--muted (html has no .light),
+     so override them directly here too — this is what .news-desc/.news-source use */
+  --text2: #2d5c44;
+  --text3: #34694e;
+  --purple: #6a3fa0;   /* tag pink/purple */
+  --pink: #6a3fa0;
+  --warn: #8a5a00;   --yellow: #8a5a00;
+  --up: #1a7a45;     --green: #1a7a45;
+  --red: #c0202e;
+  --blue: #00647f;
+  --orange: #9a4d00;
+  /* neon off in light */
+  --glow-accent: none;
+  --glow-soft: 0 2px 14px -8px rgba(0,0,0,.18);
 }
 
 /* Reset margins/padding on body (puffer sets 32px padding — we manage layout ourselves) */
@@ -44,7 +68,7 @@ html { scroll-behavior: smooth; }
   background:var(--surface);border:1px solid var(--border);
   border-radius:24px;padding:6px 12px;
   font-family:var(--mono);font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;
-  cursor:pointer;transition:all .15s;
+  cursor:pointer;transition:border-color .15s,color .15s;
   flex-shrink:0;color:var(--sub);
 }
 .toc-btn:hover{border-color:var(--accent);color:var(--accent)}
@@ -86,7 +110,7 @@ html { scroll-behavior: smooth; }
 .toc-link{
   display:block;color:var(--text2);text-decoration:none;
   padding:4px 10px 4px 22px;border-left:2px solid var(--border);
-  font-size:.72rem;letter-spacing:0.3px;transition:all .15s;
+  font-size:.72rem;letter-spacing:0.3px;transition:color .15s,border-left-color .15s,background .15s;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
 .toc-link:hover{color:var(--text);border-left-color:var(--text3)}
@@ -143,7 +167,7 @@ main{min-width:0}
   border-radius:8px;width:30px;height:30px;
   display:flex;align-items:center;justify-content:center;
   color:var(--text3);font-size:.7rem;flex-shrink:0;
-  transition:all .15s;cursor:pointer;
+  transition:border-color .15s,color .15s;cursor:pointer;
 }
 .card-toggle-btn:hover{border-color:var(--accent);color:var(--accent)}
 .card-body{display:none}
@@ -300,4 +324,38 @@ footer{
   .header-text h1{font-size:1.1rem}
   .month-section-title{font-size:1.15rem}
   .card-date-label{font-size:.92rem}
+}
+
+/* ═══ Neon tech glow — green (P2/P4). All neon disabled in body.light. ═══ */
+.card:hover{box-shadow:var(--glow-soft)}
+.card.is-today{border-color:var(--accent);box-shadow:var(--glow-soft),0 0 0 1px rgba(0,229,160,.12)}
+.card-badge-today{box-shadow:var(--glow-accent)}
+.section-title{text-shadow:0 0 14px rgba(0,229,160,.35)}
+.header-text .tagline{text-shadow:0 0 12px rgba(0,229,160,.3)}
+a.news-title:hover{text-shadow:0 0 12px rgba(0,229,160,.4)}
+.news-item:hover{box-shadow:0 0 18px -10px rgba(0,229,160,.5)}
+body.light .section-title,
+body.light .header-text .tagline,
+body.light a.news-title:hover{text-shadow:none}
+body.light .news-item:hover{box-shadow:none}
+/* faint neon aura behind content (dark only) */
+body:not(.light)::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background:
+    radial-gradient(65% 45% at 50% -8%, rgba(0,229,160,.10), transparent 70%),
+    radial-gradient(45% 35% at 88% 8%, rgba(0,188,212,.06), transparent 70%);
+}
+
+/* ═══ Accessibility (P3) ═══ */
+a:focus-visible,button:focus-visible,[data-toggle-toc]:focus-visible{
+  outline:2px solid var(--accent);outline-offset:2px;border-radius:6px;
+}
+a,button{-webkit-tap-highlight-color:transparent}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms!important;animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+  body:not(.light)::before{display:none}
 }
