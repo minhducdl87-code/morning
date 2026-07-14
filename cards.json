@@ -1,5 +1,83 @@
 [
   {
+    "date": "2026-07-14",
+    "dayLabel": "Thứ Ba",
+    "dateLabel": "14/07/2026",
+    "tech": [
+      {
+        "title": "📱 Ốp lưng iPhone E Ink",
+        "desc": "Ốp lưng mới cho iPhone tích hợp màn hình E Ink, cho phép hiển thị ảnh tùy thích mà không cần pin riêng, giá từ 1,9 triệu đồng.",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "14/07·GenK",
+        "url": "https://genk.vn/op-lung-iphone-tich-hop-man-hinh-e-ink-co-the-hien-thi-anh-theo-y-thich-khong-can-pin-rieng-gia-tu-19-trieu-dong-165260714105210377.chn"
+      },
+      {
+        "title": "💰 iPhone 18 Pro Max rò rỉ giá",
+        "desc": "Mức giá của iPhone 18 Pro Max được cho là sẽ có những thay đổi đáng chú ý, khiến nhiều người bất ngờ.",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "14/07·GenK",
+        "url": "https://genk.vn/iphone-18-pro-max-lo-muc-gia-kho-tin-165260714021517635.chn"
+      }
+    ],
+    "finance": [
+      {
+        "title": "🪙 Giá vàng trong nước giảm mạnh",
+        "desc": "Giá vàng miếng giảm 1,3 - 2 triệu đồng/lượng, neo ở mức 144,1 – 147,1 triệu đồng/lượng; vàng nhẫn giảm 700 nghìn – 1,3 triệu đồng/lượng.",
+        "tag": "gold",
+        "tagLabel": "🪙 VÀNG",
+        "source": "14/07·VnEconomy",
+        "url": "https://vneconomy.vn/gia-vang-trong-nuoc-nguoc-chieu-gia-the-gioi.htm"
+      },
+      {
+        "title": "📈 LPBS nộp hồ sơ niêm yết HoSE",
+        "desc": "Sở Giao dịch Chứng khoán TP.HCM (HoSE) đã nhận hồ sơ đăng ký niêm yết của Công ty Chứng khoán LPBS vào ngày 9/7.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "14/07·CafeF",
+        "url": "https://cafef.vn/lpbs-da-nop-ho-so-niem-dang-ky-niem-yet-len-hose-188260714101421938.chn"
+      },
+      {
+        "title": "💵 Lợi suất trái phiếu Chính phủ tăng",
+        "desc": "Áp lực phát hành lớn và biến động tiền tệ đang đẩy lợi suất trái phiếu Chính phủ lên cao hơn, với lãi suất bình quân tháng 6 là 4,25%/năm.",
+        "tag": "rate",
+        "tagLabel": "💵 LÃI SUẤT",
+        "source": "14/07·VnEconomy",
+        "url": "https://vneconomy.vn/loi-suat-trai-phieu-chinh-phu-con-du-dia-tang-duoi-suc-ep-da-chieu.htm"
+      },
+      {
+        "title": "💸 Amazon dừng hoạt động tại ĐNÁ",
+        "desc": "Amazon đã dừng nhiều hoạt động tại một quốc gia Đông Nam Á sau 9 năm gia nhập thị trường, được xem là một thất bại đáng tiếc.",
+        "tag": "economy",
+        "tagLabel": "💼 KINH TẾ",
+        "source": "14/07·CafeF",
+        "url": "https://cafef.vn/nong-amazon-dung-nhieu-hoat-dong-tai-mot-quoc-gia-dna-that-bai-cay-dang-sau-9-nam-gia-nhap-thi-truong-188260714091913923.chn"
+      }
+    ],
+    "entertainment": [],
+    "gaming": [],
+    "vietnam": [
+      {
+        "title": "💼 GDP 6 tháng đầu năm tăng 8,18%",
+        "desc": "Theo Bộ Tài chính, GDP 6 tháng đầu năm 2026 ước tăng 8,18%, mức cao nhất trong 15 năm qua, cho thấy sự phục hồi kinh tế mạnh mẽ.",
+        "tag": "economy",
+        "tagLabel": "💼 KINH TẾ",
+        "source": "14/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/gdp-6-thang-dau-nam-uoc-tang-818-cao-nhat-trong-15-nam-qua-100260714103054185.htm"
+      },
+      {
+        "title": "📜 Thủ tướng chỉ đạo vụ 140 điểm 10 Toán",
+        "desc": "Thủ tướng sẽ trực tiếp làm việc với lãnh đạo tỉnh Tuyên Quang để chỉ đạo xử lý vụ điểm thi Toán bất thường, đồng thời đề xuất tách riêng 2 kỳ thi THPT và tuyển sinh đại học.",
+        "tag": "policy",
+        "tagLabel": "📜 CHÍNH SÁCH",
+        "source": "14/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/thu-tuong-se-lam-viec-voi-tuyen-quang-vu-140-diem-10-toan-de-xuat-tach-rieng-2-ky-thi-thpt-va-tuyen-sinh-dai-hoc-100260714110830686.htm"
+      }
+    ],
+    "lifestyle": []
+  },
+  {
     "date": "2026-07-13",
     "dayLabel": "Thứ Hai",
     "dateLabel": "13/07/2026",
