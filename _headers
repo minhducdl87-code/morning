@@ -1,6 +1,6 @@
 # Cloudflare Pages headers — https://developers.cloudflare.com/pages/configuration/headers/
 
-# Data files: no cache (freshly regenerated 5AM / 10AM VN daily)
+# Data files: no cache (freshly regenerated 9AM / 10AM VN daily)
 /cards.json
   Cache-Control: public, max-age=60, must-revalidate
 
@@ -19,6 +19,10 @@
 
 # JS: content-hashed later but for now short cache
 /*.js
+  Cache-Control: public, max-age=300
+
+# CSS: same short-cache policy as JS (no bundler / no hashed filenames yet)
+/*.css
   Cache-Control: public, max-age=300
 
 # Security headers

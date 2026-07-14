@@ -9,312 +9,7 @@
 <!-- Puffer Theme v1 (external — auto-updates when Hub deploys new version) -->
 <link rel="stylesheet" href="https://puffer.zingplay.dev/static/puffer-theme/v1/theme.css">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-/* ═══ App-specific styles on top of pufferfish_report_theme v1 ═══ */
-
-/* Compat aliases — legacy var names used by app CSS below */
-:root {
-  --bg3: #0a1e18;
-  --text2: var(--sub);
-  --text3: var(--muted);
-  --pink: var(--purple);
-  --yellow: var(--warn);
-  --green: var(--up);
-  --border2: rgba(0,229,160,0.25);
-  --display: 'Sora', system-ui, sans-serif;
-  --body: 'DM Sans', system-ui, sans-serif;
-}
-body.light {
-  --bg3: #ffffff;
-  --border2: rgba(0,140,85,0.35);
-}
-
-/* Reset margins/padding on body (puffer sets 32px padding — we manage layout ourselves) */
-body { padding: 0; }
-html { scroll-behavior: smooth; }
-
-/* ── Header ── */
-.site-header{
-  background:var(--bg2);border-bottom:1px solid var(--border);
-  padding:18px 20px;position:sticky;top:0;z-index:100;
-  backdrop-filter:blur(8px);
-}
-.header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:14px;border-left:3px solid var(--accent);padding-left:16px}
-.header-logo{font-size:1.8rem;line-height:1}
-.header-text{flex:1;min-width:0}
-.header-text h1{
-  font-family:var(--display);font-size:1.3rem;font-weight:800;
-  color:var(--text);letter-spacing:-0.3px;
-}
-.header-text .tagline{
-  font-family:var(--mono);font-size:.68rem;color:var(--accent);
-  margin-top:3px;text-transform:uppercase;letter-spacing:2px;font-weight:600;
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-}
-.toc-btn{
-  display:none;
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:24px;padding:6px 12px;
-  font-family:var(--mono);font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;
-  cursor:pointer;transition:all .15s;
-  flex-shrink:0;color:var(--sub);
-}
-.toc-btn:hover{border-color:var(--accent);color:var(--accent)}
-
-/* Puffer theme-toggle floats top-right; header itself has no toggle button */
-
-/* ── Layout: ToC sidebar + main ── */
-.layout{
-  max-width:1200px;margin:0 auto;padding:24px 20px 48px;
-  display:grid;grid-template-columns:240px 1fr;gap:32px;
-  align-items:start;
-}
-
-/* ── ToC ── */
-.toc{
-  position:sticky;top:90px;
-  max-height:calc(100vh - 110px);overflow-y:auto;
-  font-family:var(--mono);font-size:.78rem;
-  scrollbar-width:thin;scrollbar-color:var(--border) transparent;
-}
-.toc::-webkit-scrollbar{width:4px}
-.toc::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-.toc-title{
-  font-size:.62rem;font-weight:700;color:var(--accent);
-  text-transform:uppercase;letter-spacing:2.5px;
-  padding:0 0 12px;border-bottom:1px solid var(--border);margin-bottom:12px;
-}
-.toc-month{margin-bottom:14px}
-.toc-month-label{
-  display:block;color:var(--text);font-weight:700;font-size:.78rem;
-  padding:6px 10px;border-radius:6px;text-decoration:none;
-  border-left:2px solid var(--accent);
-  background:rgba(0,229,160,0.06);
-  margin-bottom:6px;
-}
-.toc-month-label:hover{background:rgba(0,229,160,0.12)}
-.toc-items{list-style:none;padding-left:0;margin:0}
-.toc-items li{margin:0}
-.toc-link{
-  display:block;color:var(--text2);text-decoration:none;
-  padding:4px 10px 4px 22px;border-left:2px solid var(--border);
-  font-size:.72rem;letter-spacing:0.3px;transition:all .15s;
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-}
-.toc-link:hover{color:var(--text);border-left-color:var(--text3)}
-.toc-link.active{color:var(--accent);border-left-color:var(--accent);background:rgba(0,229,160,0.08);font-weight:700}
-
-/* ── Main content ── */
-main{min-width:0}
-.month-section{margin-bottom:48px}
-.month-section:first-child{margin-top:4px}
-.month-section-title{
-  font-family:var(--display);font-size:1.4rem;font-weight:800;
-  color:var(--text);letter-spacing:-0.3px;
-  padding:0 0 12px;border-bottom:1px solid var(--border);margin-bottom:20px;
-  display:flex;align-items:center;gap:10px;
-}
-.month-section-title .meta{
-  font-family:var(--mono);font-size:.7rem;font-weight:600;
-  color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;
-}
-
-.loading,.empty,.error{
-  text-align:center;padding:60px 20px;
-  color:var(--text3);font-family:var(--mono);font-size:.9rem;letter-spacing:1px;
-}
-
-/* ── Cards ── */
-.card{
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:12px;margin-bottom:16px;overflow:hidden;
-  transition:border-color .2s;scroll-margin-top:90px;
-}
-.card:hover{border-color:var(--border2)}
-.card.is-today{border-color:var(--border2);box-shadow:0 0 0 1px rgba(0,229,160,0.1)}
-.card-header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;cursor:pointer;user-select:none;gap:12px}
-.card-header:hover{background:var(--surface2)}
-.card-date-wrap{display:flex;align-items:center;gap:10px}
-.card-badge-today{
-  background:var(--accent);color:var(--bg);
-  font-family:var(--mono);font-size:.6rem;font-weight:800;
-  padding:3px 9px;border-radius:20px;letter-spacing:1.2px;text-transform:uppercase;
-}
-.card-badge-week{background:var(--accent2);color:var(--bg)}
-.card-badge-month{background:var(--pink);color:var(--bg)}
-.card-day{
-  font-family:var(--mono);font-size:.65rem;color:var(--text3);
-  font-weight:600;text-transform:uppercase;letter-spacing:1.5px;
-}
-.card-date-label{
-  font-family:var(--display);font-size:1rem;font-weight:700;
-  color:var(--text);margin-top:2px;
-}
-.card-toggle-btn{
-  background:var(--bg2);border:1px solid var(--border);
-  border-radius:8px;width:30px;height:30px;
-  display:flex;align-items:center;justify-content:center;
-  color:var(--text3);font-size:.7rem;flex-shrink:0;
-  transition:all .15s;cursor:pointer;
-}
-.card-toggle-btn:hover{border-color:var(--accent);color:var(--accent)}
-.card-body{display:none}
-.card-body.open{display:block}
-
-/* ── Sections inside card ── */
-.section{border-top:1px solid var(--border);padding:16px 18px}
-.section-title{
-  font-family:var(--mono);font-size:.65rem;font-weight:700;
-  color:var(--accent);text-transform:uppercase;letter-spacing:2.5px;
-  margin-bottom:12px;display:flex;align-items:center;gap:10px;
-}
-.section-title::after{content:'';flex:1;height:1px;background:var(--border)}
-
-/* ── News items ── */
-.news-item{
-  background:var(--bg2);border:1px solid var(--border);
-  border-radius:10px;padding:12px 14px;margin-bottom:8px;
-  transition:border-color .15s;
-}
-.news-item:last-child{margin-bottom:0}
-.news-item:hover{border-color:var(--border2)}
-.news-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:6px}
-.news-title{font-size:.88rem;font-weight:700;color:var(--text);line-height:1.45;flex:1}
-a.news-title{
-  color:var(--accent);
-  text-decoration:underline;
-  text-decoration-color:rgba(0,229,160,0.35);
-  text-decoration-thickness:1px;
-  text-underline-offset:3px;
-  transition:color .15s, text-decoration-color .15s;
-  cursor:pointer;
-}
-a.news-title::after{
-  content:' ↗';
-  display:inline-block;
-  margin-left:2px;
-  font-size:.75em;
-  color:var(--accent);
-  opacity:.6;
-  text-decoration:none;
-  transform:translateY(-1px);
-  transition:opacity .15s, transform .15s;
-}
-a.news-title:hover{
-  color:var(--accent);
-  text-decoration-color:var(--accent);
-}
-a.news-title:hover::after{
-  opacity:1;
-  transform:translate(2px,-2px);
-}
-body.light a.news-title{text-decoration-color:rgba(0,140,85,0.45);}
-
-/* ── Tags ── */
-.tag{
-  display:inline-block;font-family:var(--mono);font-size:.58rem;
-  padding:3px 8px;border-radius:20px;font-weight:700;
-  white-space:nowrap;flex-shrink:0;
-  text-transform:uppercase;letter-spacing:1px;
-}
-/* Color families reused across new topic tags */
-.tag-red{background:rgba(255,71,87,.15);color:var(--red);border:1px solid rgba(255,71,87,.3)}
-.tag-green{background:rgba(0,229,160,.12);color:var(--green);border:1px solid rgba(0,229,160,.28)}
-.tag-yellow{background:rgba(255,209,102,.15);color:var(--yellow);border:1px solid rgba(255,209,102,.3)}
-.tag-pink{background:rgba(168,142,255,.12);color:var(--pink);border:1px solid rgba(168,142,255,.28)}
-.tag-blue{background:rgba(0,188,212,.12);color:var(--blue);border:1px solid rgba(0,188,212,.28)}
-.tag-orange{background:rgba(255,152,0,.15);color:var(--orange);border:1px solid rgba(255,152,0,.3)}
-
-/* Legacy aliases (kept for historical cards) */
-.tag-hot,.tag-launch,.tag-movie,.tag-event,.tag-policy{background:rgba(255,71,87,.15);color:var(--red);border:1px solid rgba(255,71,87,.3)}
-.tag-api,.tag-feature,.tag-gameplay,.tag-review,.tag-console,.tag-health,.tag-wellness,.tag-realestate{background:rgba(0,229,160,.12);color:var(--accent);border:1px solid rgba(0,229,160,.28)}
-.tag-deprecate,.tag-monet,.tag-deal,.tag-gold,.tag-tax,.tag-food,.tag-traffic{background:rgba(255,209,102,.15);color:var(--yellow);border:1px solid rgba(255,209,102,.3)}
-.tag-model,.tag-ai,.tag-music,.tag-show,.tag-celeb,.tag-crypto,.tag-social,.tag-society{background:rgba(168,142,255,.12);color:var(--pink);border:1px solid rgba(168,142,255,.28)}
-.tag-chart,.tag-stock,.tag-economy,.tag-pc,.tag-mobile,.tag-casual,.tag-travel{background:rgba(0,188,212,.12);color:var(--blue);border:1px solid rgba(0,188,212,.28)}
-.tag-rate{background:rgba(255,152,0,.15);color:var(--orange);border:1px solid rgba(255,152,0,.3)}
-
-.news-desc{font-size:.82rem;color:var(--text2);line-height:1.6}
-.news-source{
-  font-family:var(--mono);font-size:.65rem;color:var(--text3);
-  margin-top:6px;letter-spacing:0.5px;
-}
-
-/* ── Repo grid ── */
-.repo-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-@media(max-width:600px){.repo-grid{grid-template-columns:1fr}}
-.repo-card{
-  background:var(--bg2);border:1px solid var(--border);
-  border-radius:10px;padding:12px 14px;
-  display:flex;flex-direction:column;gap:8px;
-  transition:border-color .15s,transform .12s;
-}
-.repo-card:hover{border-color:var(--border2);transform:translateY(-1px)}
-.repo-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
-.repo-name{
-  font-family:var(--mono);font-size:.78rem;font-weight:700;
-  color:var(--accent);word-break:break-all;line-height:1.3;flex:1;
-  text-decoration:none;
-}
-.repo-name:hover{color:var(--accent2);text-decoration:underline}
-.repo-stars{
-  font-family:var(--mono);font-size:.7rem;color:var(--yellow);
-  font-weight:700;white-space:nowrap;
-}
-.repo-desc{font-size:.8rem;color:var(--text2);line-height:1.55;flex:1}
-.repo-verdict{display:flex;align-items:flex-start;gap:8px;margin-top:2px}
-.verdict{
-  font-family:var(--mono);font-size:.6rem;font-weight:700;
-  padding:3px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0;
-  text-transform:uppercase;letter-spacing:0.8px;
-}
-.verdict-yes{background:rgba(0,229,160,.15);color:var(--green);border:1px solid rgba(0,229,160,.3)}
-.verdict-maybe{background:rgba(255,209,102,.15);color:var(--yellow);border:1px solid rgba(255,209,102,.3)}
-.verdict-skip{background:rgba(106,173,160,.15);color:var(--text3);border:1px solid rgba(106,173,160,.3)}
-.verdict-reason{font-size:.75rem;color:var(--text3);line-height:1.45}
-
-/* ── Empty fallback banner ── */
-.fallback-banner{
-  background:rgba(0,188,212,0.06);border:1px solid rgba(0,188,212,0.2);
-  border-radius:8px;padding:10px 14px;margin-bottom:14px;
-  font-family:var(--mono);font-size:.72rem;color:var(--blue);
-  letter-spacing:0.5px;
-}
-.muted-empty{color:var(--text3);font-size:.82rem;font-style:italic}
-
-/* ── Footer ── */
-footer{
-  text-align:center;padding:32px 20px 24px;
-  color:var(--text3);font-family:var(--mono);font-size:.66rem;
-  border-top:1px solid var(--border);max-width:1200px;margin:16px auto 0;
-  letter-spacing:1px;text-transform:uppercase;
-}
-
-/* ── Responsive: ToC drawer < 900px ── */
-@media(max-width:900px){
-  .layout{grid-template-columns:1fr;gap:16px;padding:18px 16px 48px}
-  .toc-btn{display:inline-block}
-  .toc{
-    position:fixed;top:0;left:-280px;
-    width:260px;height:100vh;max-height:none;
-    background:var(--bg2);border-right:1px solid var(--border);
-    padding:18px 16px;z-index:200;
-    transition:left .25s ease;
-    overflow-y:auto;
-  }
-  .toc.open{left:0;box-shadow:8px 0 32px var(--shadow)}
-  .toc-backdrop{
-    display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:150;
-  }
-  .toc-backdrop.show{display:block}
-}
-@media(max-width:640px){
-  body{font-size:14px}
-  .header-text h1{font-size:1.1rem}
-  .month-section-title{font-size:1.15rem}
-  .card-date-label{font-size:.92rem}
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <!-- Puffer theme toggle (floating top-right, controlled by external theme.js) -->
@@ -322,15 +17,15 @@ footer{
 
 <header class="site-header">
   <div class="header-inner">
-    <button class="toc-btn" onclick="toggleToc()">☰ Mục lục</button>
+    <button class="toc-btn" data-toggle-toc>☰ Mục lục</button>
     <div class="header-logo" id="site-logo">🐟</div>
     <div class="header-text">
       <h1 id="site-title">Cá Mặn Đau Lưng</h1>
-      <div class="tagline" id="tagline">Tin cho người 3x · Sáng 5h · Recap 10h</div>
+      <div class="tagline" id="tagline">Tin cho người 3x · Sáng 9h · Recap 10h</div>
     </div>
   </div>
 </header>
-<div class="toc-backdrop" id="toc-backdrop" onclick="toggleToc()"></div>
+<div class="toc-backdrop" id="toc-backdrop" data-toggle-toc></div>
 <div class="layout">
   <aside class="toc" id="toc">
     <div class="toc-title">📑 Mục lục</div>
@@ -338,8 +33,11 @@ footer{
   </aside>
   <main id="main"><div class="loading">⏳ Đang tải...</div></main>
 </div>
-<footer id="site-footer">🐟 Cá Mặn Đau Lưng · Sáng 5AM · Recap 10AM · Không tin lá cải</footer>
-<script src="digest.js"></script>
+<footer id="site-footer">🐟 Cá Mặn Đau Lưng · Sáng 9AM · Recap 10AM · Không tin lá cải</footer>
+<script src="date-week-utils.js"></script>
+<script src="renderers.js"></script>
+<script src="view-builder.js"></script>
+<script src="router-init.js"></script>
 <script src="https://puffer.zingplay.dev/static/puffer-theme/v1/theme.js"></script>
 </body>
 </html>
