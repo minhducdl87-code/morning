@@ -31,6 +31,27 @@
       "prompt_instruction": "Showbiz, phim hot, nhạc mới, chuyện sao Việt/Hàn/Hoa đang gây bàn tán, trend mạng xã hội — viết hấp dẫn, bắt trend, đọc là muốn buôn chuyện với đồng nghiệp. Vẫn chọn tin có nguồn đàng hoàng, không tin rác/giật tít câu view trắng trợn.",
       "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu\",\"tag\":\"movie|music|show|celeb\",\"tagLabel\":\"🎬 PHIM|🎵 MUSIC|📺 SHOW|⭐ CELEB\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     },
+    "trending": {
+      "enabled": true,
+      "data_source": "jina",
+      "output_field": "trending",
+      "emoji": "🔥",
+      "section_label": "Trending / Viral",
+      "min_items": 3,
+      "max_items": 5,
+      "search_queries": [
+        "TikTok trend viral Việt Nam {month_year}",
+        "hot trend giới trẻ mạng xã hội TikTok {month_year}",
+        "clip meme trào lưu viral {month_year}"
+      ],
+      "rss_feeds": [
+        "https://news.google.com/rss/search?q=TikTok+trend+viral+Vi%E1%BB%87t+Nam&hl=vi&gl=VN&ceid=VN:vi",
+        "https://news.google.com/rss/search?q=hot+trend+gi%E1%BB%9Bi+tr%E1%BA%BB+TikTok&hl=vi&gl=VN&ceid=VN:vi",
+        "https://news.google.com/rss/search?q=viral+trend+m%E1%BA%A1ng+x%C3%A3+h%E1%BB%99i&hl=vi&gl=VN&ceid=VN:vi"
+      ],
+      "prompt_instruction": "Trend đang viral trên TikTok/mạng xã hội VN tuần này: clip hot, meme, trào lưu, thử thách, câu nói/điệu nhảy/bài hát viral, nhân vật hiện tượng mạng đang được bàn tán. Giải thích ngắn gọn trend là gì để người 3x không bị lạc hậu. Bỏ tin drama độc hại, lừa đảo, tiêu cực.",
+      "schema": "{\"title\":\"emoji+tên trend\",\"desc\":\"tiếng Việt max 2 câu, giải thích trend là gì\",\"tag\":\"tiktok|meme|challenge|music|viral\",\"tagLabel\":\"📱 TIKTOK|😂 MEME|🎯 CHALLENGE|🎵 NHẠC|🔥 VIRAL\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
+    },
     "gaming": {
       "enabled": true,
       "data_source": "jina",
