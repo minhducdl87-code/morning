@@ -13,8 +13,11 @@ export async function getHistory(kv: KVNamespace, userId: number | string): Prom
   return Array.isArray(raw) ? (raw as Msg[]) : [];
 }
 
-export async function appendHistory(kv: KVNamespace, userId: number | string, userText: string, botText: string): Promise<void> {
-  const cur = await getHistory(kv, userId);
+// `history` optional: pass an already-fetched history to skip a redundant KV read.
+export async function appendHistory(
+  kv: KVNamespace, userId: number | string, userText: string, botText: string, history?: Msg[],
+): Promise<void> {
+  const cur = history ? [...history] : await getHistory(kv, userId);
   cur.push({ role: 'user', text: userText });
   cur.push({ role: 'assistant', text: botText });
   const trimmed = cur.slice(-HISTORY_MAX_MSGS);

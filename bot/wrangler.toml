@@ -5,25 +5,30 @@ compatibility_flags = ["nodejs_compat"]
 
 # KV binding for per-user state (memory + rate limit + cache)
 # Create: wrangler kv namespace create STATE
-# Then paste id below.
+# Repo is public — do NOT commit the real namespace id here.
+# Local dev/deploy: replace the placeholder below with your real id, but
+# revert before committing (e.g. `git checkout -- wrangler.toml` after testing).
+# CI deploy: injected from the CF_KV_NAMESPACE_ID GitHub secret (see
+# .github/workflows/deploy-bot.yml + bot/README.md "Secrets & KV" section).
 [[kv_namespaces]]
 binding = "STATE"
-id = "2c1835f957724aa1855d15732ae787bb"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
 
-# Public env (safe to commit)
+# Public env (safe to commit — no secrets, no user-identifying data here)
 [vars]
 BOT_USERNAME       = "caman_bot"
 SITE_BASE_URL      = "https://minhducdl87-code.github.io/morning"
-ALLOWED_CHAT_IDS   = "655323886,782194719"
 GEMINI_MODEL       = "gemini-2.5-flash"
 OPENAI_CHAT_MODEL  = "gpt-4o-mini"
 OPENAI_DEEP_MODEL  = "gpt-4o"
 OPENAI_IMAGE_MODEL = "gpt-image-1"
 OPENAI_STT_MODEL   = "whisper-1"
 
-# Secrets (set via: wrangler secret put NAME)
+# Secrets (set via: wrangler secret put NAME) — never commit real values
 #   TELEGRAM_BOT_TOKEN
 #   TELEGRAM_WEBHOOK_SECRET   (random string, also set in Telegram setWebhook)
 #   GEMINI_API_KEY
 #   OPENAI_API_KEY
+#   ALLOWED_CHAT_IDS          (comma-separated whitelist chat IDs — moved out of
+#                              [vars] since this repo is public)
 #   JINA_API_KEY              (optional, for URL summary)

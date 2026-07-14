@@ -21,8 +21,9 @@ jobs:
         env:
           HAS_TOKEN:   ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
           HAS_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+          HAS_KV_ID:   ${{ secrets.CF_KV_NAMESPACE_ID != '' }}
         run: |
-          if [ "$HAS_TOKEN" = "true" ] && [ "$HAS_ACCOUNT" = "true" ]; then
+          if [ "$HAS_TOKEN" = "true" ] && [ "$HAS_ACCOUNT" = "true" ] && [ "$HAS_KV_ID" = "true" ]; then
             echo "ready=true" >> "$GITHUB_OUTPUT"
           else
             echo "ready=false" >> "$GITHUB_OUTPUT"
@@ -41,6 +42,11 @@ jobs:
       - name: Install deps
         working-directory: bot
         run: npm install
+      - name: Inject KV namespace id
+        working-directory: bot
+        env:
+          KV_ID: ${{ secrets.CF_KV_NAMESPACE_ID }}
+        run: sed -i "s/REPLACE_WITH_KV_NAMESPACE_ID/$KV_ID/" wrangler.toml
       - name: Deploy Worker + sync secrets
         uses: cloudflare/wrangler-action@v3
         with:
@@ -53,12 +59,14 @@ jobs:
             TELEGRAM_WEBHOOK_SECRET
             GEMINI_API_KEY
             OPENAI_API_KEY
+            ALLOWED_CHAT_IDS
             JINA_API_KEY
         env:
           TELEGRAM_BOT_TOKEN:       ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_WEBHOOK_SECRET:  ${{ secrets.TELEGRAM_WEBHOOK_SECRET }}
           GEMINI_API_KEY:           ${{ secrets.GEMINI_API_KEY }}
           OPENAI_API_KEY:           ${{ secrets.OPENAI_API_KEY }}
+          ALLOWED_CHAT_IDS:         ${{ secrets.ALLOWED_CHAT_IDS }}
           JINA_API_KEY:             ${{ secrets.JINA_API_KEY }}
 
       - name: Register Telegram webhook

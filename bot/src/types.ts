@@ -7,18 +7,19 @@ export interface Env {
   // Public vars (wrangler.toml [vars])
   BOT_USERNAME: string;
   SITE_BASE_URL: string;
-  ALLOWED_CHAT_IDS: string;
   GEMINI_MODEL: string;
   OPENAI_CHAT_MODEL: string;
   OPENAI_DEEP_MODEL: string;
   OPENAI_IMAGE_MODEL: string;
   OPENAI_STT_MODEL: string;
 
-  // Secrets (wrangler secret put NAME)
+  // Secrets (wrangler secret put NAME) — repo is public, so anything
+  // identifying/sensitive lives here instead of [vars] in wrangler.toml.
   TELEGRAM_BOT_TOKEN: string;
   TELEGRAM_WEBHOOK_SECRET: string;
   GEMINI_API_KEY: string;
   OPENAI_API_KEY: string;
+  ALLOWED_CHAT_IDS: string;
   JINA_API_KEY?: string;
 }
 

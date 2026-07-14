@@ -139,10 +139,11 @@ export async function cmdDeep(env: Env, data: DigestData, question: string): Pro
 
 // ── /img <prompt> — OpenAI image ─────────────────────────────────────────────
 
-export async function cmdImg(env: Env, prompt: string): Promise<{ imageUrl?: string; error?: string }> {
+export async function cmdImg(env: Env, prompt: string): Promise<{ imageUrl?: string; imageBytes?: Uint8Array; error?: string }> {
   if (!prompt.trim()) return { error: 'Cú pháp: /img mô tả ảnh muốn sinh' };
-  const url = await openaiImage(env.OPENAI_API_KEY, env.OPENAI_IMAGE_MODEL, prompt);
-  return url ? { imageUrl: url } : { error: '😅 Sinh ảnh thất bại, thử lại sau ạ.' };
+  const result = await openaiImage(env.OPENAI_API_KEY, env.OPENAI_IMAGE_MODEL, prompt);
+  if (!result) return { error: '😅 Sinh ảnh thất bại, thử lại sau ạ.' };
+  return { imageUrl: result.url, imageBytes: result.bytes };
 }
 
 // ── /clear ───────────────────────────────────────────────────────────────────

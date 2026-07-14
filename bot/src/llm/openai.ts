@@ -1,25 +1,32 @@
 // OpenAI wrapper: chat (fallback + /deep), whisper (voice), image gen
 import type { Msg } from '../types';
+import { fetchWithTimeout } from '../http';
+import { base64ToBytes } from '../binary';
 
 const CHAT_URL   = 'https://api.openai.com/v1/chat/completions';
 const IMAGE_URL  = 'https://api.openai.com/v1/images/generations';
 const AUDIO_URL  = 'https://api.openai.com/v1/audio/transcriptions';
 
+const CHAT_TIMEOUT_MS  = 20000;
+const IMAGE_TIMEOUT_MS = 30000; // image gen is slower than chat
+const AUDIO_TIMEOUT_MS = 20000;
+
+interface ChatMessage { role: string; content: string; }
 interface ChatResp { choices?: { message?: { content?: string } }[]; error?: { message: string }; }
 
 export async function openaiChat(
   apiKey: string, model: string, system: string, history: Msg[], userText: string,
 ): Promise<string | null> {
-  const messages: any[] = [{ role: 'system', content: system }];
+  const messages: ChatMessage[] = [{ role: 'system', content: system }];
   for (const m of history) messages.push({ role: m.role, content: m.text });
   messages.push({ role: 'user', content: userText });
 
   try {
-    const r = await fetch(CHAT_URL, {
+    const r = await fetchWithTimeout(CHAT_URL, {
       method: 'POST',
       headers: { 'content-type': 'application/json', authorization: `Bearer ${apiKey}` },
       body: JSON.stringify({ model, messages, temperature: 0.5, max_tokens: 1024 }),
-    });
+    }, CHAT_TIMEOUT_MS);
     const j = await r.json() as ChatResp;
     if (j.error) { console.error('[openai chat]', j.error.message); return null; }
     return j.choices?.[0]?.message?.content?.trim() || null;
@@ -34,19 +41,22 @@ interface ImageResp {
   error?: { message: string };
 }
 
-// Returns first image URL, or data: URI if API returns b64
-export async function openaiImage(apiKey: string, model: string, prompt: string): Promise<string | null> {
+export interface ImageResult { url?: string; bytes?: Uint8Array; }
+
+// gpt-image-1 only returns b64_json (no url) — decode to raw bytes so the
+// caller can upload via multipart sendPhoto instead of a (unsupported) data URI.
+export async function openaiImage(apiKey: string, model: string, prompt: string): Promise<ImageResult | null> {
   try {
-    const r = await fetch(IMAGE_URL, {
+    const r = await fetchWithTimeout(IMAGE_URL, {
       method: 'POST',
       headers: { 'content-type': 'application/json', authorization: `Bearer ${apiKey}` },
       body: JSON.stringify({ model, prompt, n: 1, size: '1024x1024' }),
-    });
+    }, IMAGE_TIMEOUT_MS);
     const j = await r.json() as ImageResp;
     if (j.error) { console.error('[openai image]', j.error.message); return null; }
     const d = j.data?.[0];
-    if (d?.url) return d.url;
-    if (d?.b64_json) return `data:image/png;base64,${d.b64_json}`;
+    if (d?.url) return { url: d.url };
+    if (d?.b64_json) return { bytes: base64ToBytes(d.b64_json) };
     return null;
   } catch (e) {
     console.error('[openai image] fetch error:', e);
@@ -65,11 +75,11 @@ export async function openaiTranscribe(
     form.append('file', audioBlob, filename);
     form.append('model', model);
     form.append('language', 'vi');
-    const r = await fetch(AUDIO_URL, {
+    const r = await fetchWithTimeout(AUDIO_URL, {
       method: 'POST',
       headers: { authorization: `Bearer ${apiKey}` },
       body: form,
-    });
+    }, AUDIO_TIMEOUT_MS);
     const j = await r.json() as WhisperResp;
     if (j.error) { console.error('[whisper]', j.error.message); return null; }
     return j.text?.trim() || null;

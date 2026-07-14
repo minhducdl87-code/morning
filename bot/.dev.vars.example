@@ -1,0 +1,16 @@
+# Local dev secrets for `wrangler dev`.
+# Copy this file to `.dev.vars` then fill in real values.
+# `.dev.vars` is gitignored — NEVER commit real secrets.
+#
+#   cp .dev.vars.example .dev.vars   (rồi mở .dev.vars điền giá trị thật)
+
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_WEBHOOK_SECRET=
+GEMINI_API_KEY=
+OPENAI_API_KEY=
+
+# Not secret (already public in config.json) — pre-filled:
+ALLOWED_CHAT_IDS=655323886,782194719
+
+# Optional — only if you have a paid Jina key (URL summary):
+JINA_API_KEY=

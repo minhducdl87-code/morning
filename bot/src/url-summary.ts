@@ -1,9 +1,11 @@
 // URL summarization via Jina Reader → Gemini
 import { geminiChat } from './llm/gemini';
+import { fetchWithTimeout } from './http';
 
 const URL_RE = /\bhttps?:\/\/[^\s<>()]+/i;
 const READER_URL = 'https://r.jina.ai/';
 const MAX_CONTENT = 6000;
+const JINA_TIMEOUT_MS = 10000;
 
 export function extractFirstUrl(text: string): string | null {
   const m = text.match(URL_RE);
@@ -14,7 +16,11 @@ async function fetchReadable(url: string, jinaKey?: string): Promise<string | nu
   const headers: Record<string, string> = { Accept: 'text/plain', 'X-Return-Format': 'markdown' };
   if (jinaKey) headers.Authorization = `Bearer ${jinaKey}`;
   try {
-    const r = await fetch(READER_URL + url, { headers, cf: { cacheEverything: true, cacheTtl: 600 } as any });
+    const r = await fetchWithTimeout(
+      READER_URL + url,
+      { headers, cf: { cacheEverything: true, cacheTtl: 600 } },
+      JINA_TIMEOUT_MS,
+    );
     if (!r.ok) return null;
     const text = await r.text();
     return text.slice(0, MAX_CONTENT);
