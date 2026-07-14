@@ -9,67 +9,26 @@
     "chat_ids": ["655323886", "782194719"]
   },
   "topics": {
-    "tech_gadget": {
-      "enabled": true,
-      "data_source": "jina",
-      "output_field": "tech",
-      "emoji": "📱",
-      "section_label": "Tech & Gadget",
-      "min_items": 3,
-      "max_items": 5,
-      "search_queries": [
-        "gadget mới ra mắt {month_year} smartphone laptop AI",
-        "AI app tool trending {month_year}",
-        "iPhone Android review {month_year} site:tinhte.vn OR site:genk.vn OR site:vnreview.vn",
-        "top AI product launch {month_year} english site:techcrunch.com OR site:theverge.com"
-      ],
-      "rss_feeds": [
-        "https://tinhte.vn/rss",
-        "https://genk.vn/rss/home.rss",
-        "https://vnexpress.net/rss/so-hoa.rss"
-      ],
-      "prompt_instruction": "Gadget mới, AI tool đáng thử, review sản phẩm có ảnh hưởng thực tế đến người đi làm 30-40 tuổi. Ưu tiên nguồn VN + tin quốc tế nổi bật. URL chỉ từ Dữ liệu tìm kiếm.",
-      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu\",\"tag\":\"launch|review|ai|deal\",\"tagLabel\":\"🚀 LAUNCH|⭐ REVIEW|🤖 AI|💸 DEAL\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
-    },
-    "finance_market": {
-      "enabled": true,
-      "data_source": "jina",
-      "output_field": "finance",
-      "emoji": "💰",
-      "section_label": "Tài chính",
-      "min_items": 3,
-      "max_items": 5,
-      "search_queries": [
-        "chứng khoán VN-Index {month_year} site:cafef.vn OR site:vietstock.vn",
-        "crypto bitcoin ethereum {month_year} tin tức",
-        "vàng SJC giá bất động sản {month_year} site:cafebiz.vn OR site:vneconomy.vn",
-        "lãi suất ngân hàng VN {month_year}"
-      ],
-      "rss_feeds": [
-        "https://cafef.vn/thi-truong-chung-khoan.rss",
-        "https://vneconomy.vn/tai-chinh.rss",
-        "https://cafebiz.vn/rss/home.rss"
-      ],
-      "prompt_instruction": "Chứng khoán VN, crypto, vàng, BĐS, lãi suất — tin có impact người 30-40 tuổi đang tích lũy tài sản. Con số cụ thể (giá, %, biến động). URL chỉ từ Dữ liệu tìm kiếm.",
-      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu, nêu con số\",\"tag\":\"stock|crypto|gold|realestate|rate\",\"tagLabel\":\"📈 CK|₿ CRYPTO|🪙 VÀNG|🏠 BĐS|💵 LÃI SUẤT\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
-    },
     "entertainment": {
       "enabled": true,
       "data_source": "jina",
       "output_field": "entertainment",
       "emoji": "🎬",
       "section_label": "Giải trí",
-      "min_items": 2,
-      "max_items": 4,
+      "min_items": 4,
+      "max_items": 6,
       "search_queries": [
         "phim mới ra rạp {month_year} Netflix Disney+ review",
         "K-pop concert MV mới {month_year}",
-        "V-pop showbiz {month_year} site:kenh14.vn OR site:vietnamnet.vn"
+        "V-pop showbiz sao Việt {month_year} site:kenh14.vn OR site:vietnamnet.vn"
       ],
       "rss_feeds": [
-        "https://vnexpress.net/rss/giai-tri.rss"
+        "https://vnexpress.net/rss/giai-tri.rss",
+        "https://kenh14.vn/star.rss",
+        "https://kenh14.vn/cine.rss",
+        "https://kenh14.vn/musik.rss"
       ],
-      "prompt_instruction": "Phim/show đáng xem tuần này, MV/album mới, sự kiện có buzz. Bỏ paparazzi drama vụn vặt.",
+      "prompt_instruction": "Showbiz, phim hot, nhạc mới, chuyện sao Việt/Hàn/Hoa đang gây bàn tán, trend mạng xã hội — viết hấp dẫn, bắt trend, đọc là muốn buôn chuyện với đồng nghiệp. Vẫn chọn tin có nguồn đàng hoàng, không tin rác/giật tít câu view trắng trợn.",
       "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu\",\"tag\":\"movie|music|show|celeb\",\"tagLabel\":\"🎬 PHIM|🎵 MUSIC|📺 SHOW|⭐ CELEB\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     },
     "gaming": {
@@ -78,16 +37,39 @@
       "output_field": "gaming",
       "emoji": "🎮",
       "section_label": "Gaming",
-      "min_items": 2,
-      "max_items": 4,
+      "min_items": 3,
+      "max_items": 5,
       "search_queries": [
         "Steam trending game {month_year} review",
         "mobile game hot {month_year} Việt Nam",
         "PS5 Xbox Nintendo Switch game mới {month_year}"
       ],
-      "rss_feeds": [],
-      "prompt_instruction": "Game mới đáng chơi, event/patch lớn, mobile game viral VN. Bao gồm Steam + console + mobile.",
+      "rss_feeds": [
+        "https://gamek.vn/home.rss",
+        "https://news.google.com/rss/search?q=game+mobile+PC+m%E1%BB%9Bi+VN&hl=vi&gl=VN&ceid=VN:vi"
+      ],
+      "prompt_instruction": "Game hot đang được bàn tán, event/patch/update lớn, mobile game viral VN, top Steam/console. Viết bắt trend, hấp dẫn dân chơi game từ mobile đến console.",
       "schema": "{\"title\":\"emoji+tên game\",\"desc\":\"tiếng Việt max 2 câu, nêu điểm hấp dẫn\",\"tag\":\"pc|mobile|console|event\",\"tagLabel\":\"💻 PC|📱 MOBILE|🎮 CONSOLE|🎪 EVENT\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
+    },
+    "lifestyle_wellness": {
+      "enabled": true,
+      "data_source": "jina",
+      "output_field": "lifestyle",
+      "emoji": "🌿",
+      "section_label": "Lifestyle & Wellness",
+      "min_items": 3,
+      "max_items": 5,
+      "search_queries": [
+        "sức khỏe wellness tips {month_year} nghiên cứu mới",
+        "quán ăn ngon Hà Nội Sài Gòn review {month_year}",
+        "du lịch trong nước ngoài nước {month_year} deal"
+      ],
+      "rss_feeds": [
+        "https://vnexpress.net/rss/suc-khoe.rss",
+        "https://vnexpress.net/rss/du-lich.rss"
+      ],
+      "prompt_instruction": "Health tips có evidence, food review ngon-bổ-rẻ, travel deal/điểm đến hot, wellness/mindfulness. Viết đời hơn, gần gũi, không quảng cáo trá hình.",
+      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu\",\"tag\":\"health|food|travel|wellness\",\"tagLabel\":\"💪 HEALTH|🍜 FOOD|✈️ TRAVEL|🧘 WELLNESS\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     },
     "vietnam_news": {
       "enabled": true,
@@ -111,26 +93,50 @@
       "prompt_instruction": "Tin quan trọng trong nước, impact người đi làm VN: chính sách, kinh tế, giao thông, giáo dục, thuế, luật. Bỏ tin lá cải giật tít.",
       "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu, nêu impact\",\"tag\":\"policy|economy|society|traffic|tax\",\"tagLabel\":\"📜 CHÍNH SÁCH|💼 KINH TẾ|🏙️ XÃ HỘI|🚦 GIAO THÔNG|💸 THUẾ\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     },
-    "lifestyle_wellness": {
+    "tech_gadget": {
       "enabled": true,
       "data_source": "jina",
-      "output_field": "lifestyle",
-      "emoji": "🌿",
-      "section_label": "Lifestyle & Wellness",
-      "min_items": 2,
-      "max_items": 4,
+      "output_field": "tech",
+      "emoji": "📱",
+      "section_label": "Tech & Gadget",
+      "min_items": 3,
+      "max_items": 3,
       "search_queries": [
-        "sức khỏe wellness tips {month_year} nghiên cứu mới",
-        "quán ăn ngon Hà Nội Sài Gòn review {month_year}",
-        "du lịch trong nước ngoài nước {month_year} deal"
+        "gadget mới ra mắt {month_year} smartphone laptop AI",
+        "AI app tool trending {month_year}",
+        "iPhone Android review {month_year} site:tinhte.vn OR site:genk.vn OR site:vnreview.vn",
+        "top AI product launch {month_year} english site:techcrunch.com OR site:theverge.com"
       ],
       "rss_feeds": [
-        "https://vnexpress.net/rss/suc-khoe.rss",
-        "https://vnexpress.net/rss/du-lich.rss"
+        "https://tinhte.vn/rss",
+        "https://genk.vn/rss/home.rss",
+        "https://vnexpress.net/rss/so-hoa.rss"
       ],
-      "prompt_instruction": "Health tips có evidence, food review, travel deal, wellness/mindfulness. Không quảng cáo trá hình.",
-      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu\",\"tag\":\"health|food|travel|wellness\",\"tagLabel\":\"💪 HEALTH|🍜 FOOD|✈️ TRAVEL|🧘 WELLNESS\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
+      "prompt_instruction": "Gadget mới, AI tool đáng thử, review sản phẩm có ảnh hưởng thực tế đến người đi làm 30-40 tuổi. Ưu tiên nguồn VN + tin quốc tế nổi bật. URL chỉ từ Dữ liệu tìm kiếm.",
+      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu\",\"tag\":\"launch|review|ai|deal\",\"tagLabel\":\"🚀 LAUNCH|⭐ REVIEW|🤖 AI|💸 DEAL\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
+    },
+    "finance_market": {
+      "enabled": true,
+      "data_source": "jina",
+      "output_field": "finance",
+      "emoji": "💰",
+      "section_label": "Tài chính",
+      "min_items": 3,
+      "max_items": 3,
+      "search_queries": [
+        "chứng khoán VN-Index {month_year} site:cafef.vn OR site:vietstock.vn",
+        "crypto bitcoin ethereum {month_year} tin tức",
+        "vàng SJC giá bất động sản {month_year} site:cafebiz.vn OR site:vneconomy.vn",
+        "lãi suất ngân hàng VN {month_year}"
+      ],
+      "rss_feeds": [
+        "https://cafef.vn/thi-truong-chung-khoan.rss",
+        "https://vneconomy.vn/tai-chinh.rss",
+        "https://cafebiz.vn/rss/home.rss"
+      ],
+      "prompt_instruction": "Chứng khoán VN, crypto, vàng, BĐS, lãi suất — tin có impact người 30-40 tuổi đang tích lũy tài sản. Con số cụ thể (giá, %, biến động). URL chỉ từ Dữ liệu tìm kiếm.",
+      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu, nêu con số\",\"tag\":\"stock|crypto|gold|realestate|rate\",\"tagLabel\":\"📈 CK|₿ CRYPTO|🪙 VÀNG|🏠 BĐS|💵 LÃI SUẤT\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     }
   },
-  "tone_guidance": "TONE: người viết 30-40 tuổi VN, chuyên nghiệp thân thiện. Xưng 'bạn' hoặc 'anh chị'. Tránh teen slang, tránh CAPS, tránh 'wow'/'trend'/'ơi'. 1 emoji đầu title, tối đa 1 emoji trong desc. Câu ngắn, thông tin đậm, có con số cụ thể khi có. Ngôn ngữ: chủ yếu Việt Nam, cho phép mix Anh khi giữ tên riêng/thuật ngữ."
+  "tone_guidance": "TONE: người viết 30-40 tuổi VN, vui vẻ, đời, chuyên nghiệp nhưng không cứng nhắc. Xưng 'bạn' hoặc 'anh chị'. Tránh teen slang quá đà và CAPS. Cho phép tin showbiz/phim/nhạc/trending/gaming hấp dẫn, viết bắt trend miễn có nguồn đàng hoàng — không chọn tin rác/clickbait trắng trợn. 1 emoji đầu title, tối đa 1 emoji trong desc. Câu ngắn, thông tin đậm, có con số cụ thể khi có. Ngôn ngữ: chủ yếu Việt Nam, cho phép mix Anh khi giữ tên riêng/thuật ngữ."
 }
