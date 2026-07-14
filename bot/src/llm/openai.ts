@@ -41,11 +41,13 @@ interface ImageResp {
   error?: { message: string };
 }
 
-export interface ImageResult { url?: string; bytes?: Uint8Array; }
+// error carries the OpenAI failure reason so the caller can surface it
+// (private bot → owners want to see why, not a generic message).
+export interface ImageResult { url?: string; bytes?: Uint8Array; error?: string; }
 
-// gpt-image-1 only returns b64_json (no url) — decode to raw bytes so the
-// caller can upload via multipart sendPhoto instead of a (unsupported) data URI.
-export async function openaiImage(apiKey: string, model: string, prompt: string): Promise<ImageResult | null> {
+// dall-e-3 returns a url; gpt-image-1 returns b64_json only — decode to raw
+// bytes so the caller can upload via multipart sendPhoto (data URIs unsupported).
+export async function openaiImage(apiKey: string, model: string, prompt: string): Promise<ImageResult> {
   try {
     const r = await fetchWithTimeout(IMAGE_URL, {
       method: 'POST',
@@ -53,14 +55,15 @@ export async function openaiImage(apiKey: string, model: string, prompt: string)
       body: JSON.stringify({ model, prompt, n: 1, size: '1024x1024' }),
     }, IMAGE_TIMEOUT_MS);
     const j = await r.json() as ImageResp;
-    if (j.error) { console.error('[openai image]', j.error.message); return null; }
+    if (j.error) { console.error('[openai image]', j.error.message); return { error: j.error.message }; }
     const d = j.data?.[0];
     if (d?.url) return { url: d.url };
     if (d?.b64_json) return { bytes: base64ToBytes(d.b64_json) };
-    return null;
+    return { error: 'OpenAI trả về rỗng (không có url/b64)' };
   } catch (e) {
     console.error('[openai image] fetch error:', e);
-    return null;
+    const isAbort = e instanceof Error && e.name === 'AbortError';
+    return { error: isAbort ? 'timeout (>30s)' : (e instanceof Error ? e.message : String(e)) };
   }
 }
 
