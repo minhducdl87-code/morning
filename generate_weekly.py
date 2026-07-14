@@ -1,43 +1,36 @@
 #!/usr/bin/env python3
 """Weekly digest generator — runs every Sunday, summarises last 7 daily cards via Gemini.
-TOP RULE: every news/gaming item MUST have a real, HEAD-validated URL — no exceptions."""
-import json, os, re
+TOP RULE: every news/gaming item MUST have a real, HEAD-validated URL — no exceptions.
+CI (morning.yml) calls this file directly — keep entry name."""
+import json
 from datetime import datetime, timedelta
-from google import genai
-from google.genai import types
-from digest_utils import batch_check_urls, GITHUB_REPO_RE
 
-try:
-    import zoneinfo
-    tz = zoneinfo.ZoneInfo("Asia/Ho_Chi_Minh")
-except ImportError:
-    from datetime import timezone
-    tz = timezone.utc
+from digest_utils import batch_check_urls, GITHUB_REPO_RE, list_item_fields
+from gemini_client import call_gemini
+from json_extract import parse_llm_json
+from time_utils import now_vn
 
 MIN_CARDS  = 3   # skip generation if fewer cards available
 MAX_WEEKS  = 12  # rolling window for weekly.json
 
-client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-now    = datetime.now(tz)
 
-# --- Load last 7 days of cards ---
-with open("cards.json", "r", encoding="utf-8") as f:
-    all_cards = json.load(f)
-
-cutoff = now - timedelta(days=7)
-week_cards = [
-    c for c in all_cards
-    if datetime.strptime(c["date"], "%Y-%m-%d") >= cutoff.replace(tzinfo=None)
-]
-
-if len(week_cards) < MIN_CARDS:
-    print(f"Only {len(week_cards)} cards this week (min {MIN_CARDS}) — skipping weekly digest")
-    raise SystemExit(0)
-
-from_date  = week_cards[-1]["date"]
-to_date    = week_cards[0]["date"]
-week_num   = now.isocalendar()[1]
-week_label = f"Tuần {week_num}/{now.year}"
+def load_week_cards(now: datetime, path: str = "cards.json") -> list:
+    """Cards from last 7 days. M6 guard: skip cards with missing/malformed date."""
+    with open(path, "r", encoding="utf-8") as f:
+        all_cards = json.load(f)
+    cutoff = now - timedelta(days=7)
+    week_cards = []
+    for c in all_cards:
+        d = c.get("date")
+        if not d:
+            continue
+        try:
+            card_date = datetime.strptime(d, "%Y-%m-%d")
+        except ValueError:
+            continue
+        if card_date >= cutoff.replace(tzinfo=None):
+            week_cards.append(c)
+    return week_cards
 
 
 def compact_cards(cards: list) -> str:
@@ -45,10 +38,8 @@ def compact_cards(cards: list) -> str:
     rows = []
     for c in cards:
         date = c.get("date", "")
-        for field, arr in c.items():
-            if not isinstance(arr, list) or field in ("date","dayLabel","dateLabel"):
-                continue
-            for x in arr:
+        for field in list_item_fields(c):
+            for x in c.get(field, []):
                 if not isinstance(x, dict):
                     continue
                 url = (x.get("url") or "").strip()
@@ -62,12 +53,8 @@ def compact_cards(cards: list) -> str:
     return "\n".join(rows)
 
 
-context = compact_cards(week_cards)
-if not context.strip():
-    print("No items with URLs in week — skipping weekly digest")
-    raise SystemExit(0)
-
-PROMPT = f"""Dưới đây là dữ liệu Morning Digest từ {from_date} đến {to_date} (chỉ items có URL thật):
+def build_weekly_prompt(context: str, week_label: str, from_date: str, to_date: str) -> str:
+    return f"""Dưới đây là dữ liệu Morning Digest từ {from_date} đến {to_date} (chỉ items có URL thật):
 
 {context}
 
@@ -95,63 +82,6 @@ HARD RULES (TOP PRIORITY — KHÔNG VI PHẠM):
 5. Thà ít mà thật, đừng cố nhồi đủ số lượng. Tiếng Việt ngắn gọn."""
 
 
-def call_gemini(prompt: str, retries: int = 2) -> str | None:
-    """Call Gemini, extract non-thought text parts, with retry."""
-    for attempt in range(retries + 1):
-        try:
-            response = client.models.generate_content(
-                model="gemini-2.5-flash",
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    temperature=0.3,
-                    max_output_tokens=2048,
-                    thinking_config=types.ThinkingConfig(thinking_budget=0),
-                )
-            )
-            text_parts = []
-            if response.candidates:
-                for part in (response.candidates[0].content.parts or []):
-                    if hasattr(part, "thought") and part.thought:
-                        continue
-                    if hasattr(part, "text") and part.text:
-                        text_parts.append(part.text)
-            text = "\n".join(text_parts).strip()
-            if text:
-                print(f"Attempt {attempt+1}: got {len(text)} chars")
-                return text
-            print(f"Attempt {attempt+1}: empty response")
-        except Exception as e:
-            print(f"Attempt {attempt+1} error: {e}")
-    return None
-
-
-print(f"Generating weekly digest: {week_label} ({from_date} → {to_date}) from {len(week_cards)} cards...")
-
-text = call_gemini(PROMPT)
-if not text:
-    print("All attempts failed — skipping weekly digest")
-    raise SystemExit(1)
-
-# --- Parse response ---
-text = re.sub(r"^```[a-z]*\n?", "", text)
-text = re.sub(r"\n?```$", "", text).strip()
-
-weekly_card = None
-try:
-    weekly_card = json.loads(text)
-except Exception as e1:
-    print(f"Direct JSON parse failed: {e1}")
-    m = re.search(r"\{[\s\S]+\}", text)
-    if m:
-        try: weekly_card = json.loads(m.group())
-        except Exception as e2: print(f"Regex parse also failed: {e2}")
-
-if not weekly_card:
-    print("Could not parse weekly JSON — skipping")
-    raise SystemExit(1)
-
-
-# --- STRICT validation: every news/gaming item must have live URL; repos must match github.com format + live ---
 def strict_filter(items: list, live_map: dict, require_github: bool = False) -> list:
     """Drop any item whose URL is missing/dead. For repos, also require github.com/owner/repo format."""
     cleaned = []
@@ -170,34 +100,79 @@ def strict_filter(items: list, live_map: dict, require_github: bool = False) -> 
     return cleaned
 
 
-print("Validating URLs (HEAD-check)...")
-all_urls = (
-    [it.get("url","") for it in weekly_card.get("highlights", [])] +
-    [it.get("url","") for it in weekly_card.get("topRepos", [])] +
-    [it.get("url","") for it in weekly_card.get("topGaming", [])]
-)
-live_map = batch_check_urls(all_urls)
-print(f"  {sum(live_map.values())}/{len(live_map)} URLs are live")
+def validate_weekly_card(weekly_card: dict) -> dict:
+    """STRICT validation: every news/gaming item must have live URL; repos must match github.com format + live."""
+    print("Validating URLs (HEAD-check)...")
+    all_urls = (
+        [it.get("url", "") for it in weekly_card.get("highlights", [])] +
+        [it.get("url", "") for it in weekly_card.get("topRepos", [])] +
+        [it.get("url", "") for it in weekly_card.get("topGaming", [])]
+    )
+    live_map = batch_check_urls(all_urls)
+    print(f"  {sum(live_map.values())}/{len(live_map)} URLs are live")
 
-weekly_card["highlights"] = strict_filter(weekly_card.get("highlights", []), live_map)
-weekly_card["topRepos"]   = strict_filter(weekly_card.get("topRepos", []),   live_map, require_github=True)
-weekly_card["topGaming"]  = strict_filter(weekly_card.get("topGaming", []),  live_map)
+    weekly_card["highlights"] = strict_filter(weekly_card.get("highlights", []), live_map)
+    weekly_card["topRepos"]   = strict_filter(weekly_card.get("topRepos", []),   live_map, require_github=True)
+    weekly_card["topGaming"]  = strict_filter(weekly_card.get("topGaming", []),  live_map)
+    return weekly_card
 
-# --- Update weekly.json (rolling MAX_WEEKS window) ---
-try:
-    with open("weekly.json", "r", encoding="utf-8") as f:
-        weeklies = json.load(f)
-except (FileNotFoundError, json.JSONDecodeError):
-    weeklies = []
 
-weeklies = [w for w in weeklies if w.get("weekLabel") != week_label]
-weeklies.insert(0, weekly_card)
-weeklies = weeklies[:MAX_WEEKS]
+def update_weekly_file(weekly_card: dict, week_label: str, path: str = "weekly.json") -> list:
+    """Rolling MAX_WEEKS window; replace this week's entry if already present."""
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            weeklies = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        weeklies = []
 
-with open("weekly.json", "w", encoding="utf-8") as f:
-    json.dump(weeklies, f, ensure_ascii=False, indent=2)
+    weeklies = [w for w in weeklies if w.get("weekLabel") != week_label]
+    weeklies.insert(0, weekly_card)
+    weeklies = weeklies[:MAX_WEEKS]
 
-print(f"Done! {len(weeklies)} weekly digests | "
-      f"highlights:{len(weekly_card.get('highlights',[]))} "
-      f"repos:{len(weekly_card.get('topRepos',[]))} "
-      f"gaming:{len(weekly_card.get('topGaming',[]))}")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(weeklies, f, ensure_ascii=False, indent=2)
+    return weeklies
+
+
+def main():
+    now = now_vn()
+    week_cards = load_week_cards(now)
+
+    if len(week_cards) < MIN_CARDS:
+        print(f"Only {len(week_cards)} cards this week (min {MIN_CARDS}) — skipping weekly digest")
+        raise SystemExit(0)
+
+    from_date  = week_cards[-1]["date"]
+    to_date    = week_cards[0]["date"]
+    week_num   = now.isocalendar()[1]
+    week_label = f"Tuần {week_num}/{now.year}"
+
+    context = compact_cards(week_cards)
+    if not context.strip():
+        print("No items with URLs in week — skipping weekly digest")
+        raise SystemExit(0)
+
+    prompt = build_weekly_prompt(context, week_label, from_date, to_date)
+    print(f"Generating weekly digest: {week_label} ({from_date} → {to_date}) from {len(week_cards)} cards...")
+
+    text, _ = call_gemini(prompt, use_search=False, thinking_budget=0, max_output_tokens=2048)
+    if not text:
+        print("All attempts failed — skipping weekly digest")
+        raise SystemExit(1)
+
+    weekly_card = parse_llm_json(text)
+    if not weekly_card:
+        print("Could not parse weekly JSON — skipping")
+        raise SystemExit(1)
+
+    weekly_card = validate_weekly_card(weekly_card)
+    weeklies = update_weekly_file(weekly_card, week_label)
+
+    print(f"Done! {len(weeklies)} weekly digests | "
+          f"highlights:{len(weekly_card.get('highlights',[]))} "
+          f"repos:{len(weekly_card.get('topRepos',[]))} "
+          f"gaming:{len(weekly_card.get('topGaming',[]))}")
+
+
+if __name__ == "__main__":
+    main()

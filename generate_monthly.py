@@ -1,28 +1,23 @@
 #!/usr/bin/env python3
-"""Monthly digest generator.
+"""Monthly digest generator — aggregate-only, NO Gemini/LLM by design (decision:
+monthly stays deterministic aggregation over already-validated daily data, unlike
+daily/weekly which call Gemini — lower fake-news risk, no extra API cost).
 
 Two modes:
-  --backfill YYYY-MM   Aggregate-only (no LLM): build monthly from cards.json items
-                       in that month with real URLs. Dedupes by URL. Safe — no
-                       fake-news risk because items are copies of validated daily data.
-  default              Roll up PREVIOUS month at start of new month: read weekly.json
-                       entries that fall in prev month, summarise via Gemini if key
-                       available, otherwise aggregate-only fallback.
+  --backfill YYYY-MM   Build monthly from cards.json items in that month with real
+                       URLs. Dedupes by URL. Safe — no fake-news risk because items
+                       are copies of validated daily data.
+  default              Roll up PREVIOUS month at start of new month: same aggregate
+                       logic over cards.json (no LLM summarisation in either mode).
 
 TOP RULE: every news item MUST have a real, HEAD-validated URL.
 """
-import json, os, sys, argparse
-from collections import OrderedDict
+import json, argparse
 from datetime import datetime, timedelta
-from digest_utils import batch_check_urls, GITHUB_REPO_RE
+from digest_utils import batch_check_urls, GITHUB_REPO_RE, list_item_fields
 from jina_fetch import github_search
-
-try:
-    import zoneinfo
-    tz = zoneinfo.ZoneInfo("Asia/Ho_Chi_Minh")
-except ImportError:
-    from datetime import timezone
-    tz = timezone.utc
+from time_utils import now_vn
+from monthly_ranking import dedupe_by_url, rank_news, rank_repos
 
 MAX_MONTHS = 12  # rolling window
 MONTHS_VI  = ["", "Tháng 1","Tháng 2","Tháng 3","Tháng 4","Tháng 5","Tháng 6",
@@ -55,10 +50,8 @@ def filter_items_in_month(cards: list, year: int, month: int) -> tuple[list, lis
             continue
         if d.year != year or d.month != month:
             continue
-        for field, arr in c.items():
-            if not isinstance(arr, list) or field in ("date","dayLabel","dateLabel"):
-                continue
-            for x in arr:
+        for field in list_item_fields(c):
+            for x in c.get(field, []):
                 if not isinstance(x, dict) or not x.get("url"):
                     continue
                 item = {**x, "_date": c["date"], "_field": field}
@@ -70,45 +63,6 @@ def filter_items_in_month(cards: list, year: int, month: int) -> tuple[list, lis
                 else:
                     news.append(item)
     return news, repos, gaming
-
-
-def dedupe_by_url(items: list) -> list:
-    """Keep first occurrence per URL (chronologically earliest)."""
-    seen = OrderedDict()
-    for it in items:
-        url = it.get("url", "")
-        if url and url not in seen:
-            seen[url] = it
-    return list(seen.values())
-
-
-def rank_news(items: list, top_n: int = 10) -> list:
-    """Rank: prioritise hot/model/deprecate tags, then by recency. Drop _date helper field."""
-    priority = {"hot": 0, "model": 1, "deprecate": 2, "feature": 3, "api": 4}
-    items = sorted(items, key=lambda x: (priority.get(x.get("tag",""), 9), x.get("_date","")), reverse=False)
-    out = []
-    for it in items[:top_n]:
-        clean = {k: v for k, v in it.items() if not k.startswith("_")}
-        out.append(clean)
-    return out
-
-
-def rank_repos(items: list, top_n: int = 8) -> list:
-    """Rank repos: verdict=yes first, then by stars (parsed from '12K+' format)."""
-    def stars_num(s: str) -> float:
-        s = (s or "").rstrip("+").upper()
-        try:
-            if "K" in s: return float(s.replace("K","")) * 1000
-            return float(s)
-        except ValueError:
-            return 0
-    verdict_rank = {"yes": 0, "maybe": 1, "skip": 2}
-    items = sorted(items, key=lambda x: (verdict_rank.get(x.get("verdict","skip"), 3), -stars_num(x.get("stars",""))))
-    out = []
-    for it in items[:top_n]:
-        clean = {k: v for k, v in it.items() if not k.startswith("_")}
-        out.append(clean)
-    return out
 
 
 def fetch_live_github_for_month(year: int, month: int) -> list:
@@ -198,7 +152,7 @@ def main():
     with open("cards.json", "r", encoding="utf-8") as f:
         cards = json.load(f)
 
-    now = datetime.now(tz)
+    now = now_vn()
 
     if args.backfill:
         year, month = map(int, args.backfill.split("-"))

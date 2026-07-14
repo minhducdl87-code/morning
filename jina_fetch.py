@@ -131,9 +131,12 @@ def fetch_github_topic(topic: dict, cutoff_date: str) -> tuple[str, set[str]]:
 
 # ── Dispatcher ────────────────────────────────────────────────────────────────
 
-def fetch_topic_context(topic: dict, month_year: str) -> tuple[str, set[str]]:
+def fetch_topic_context(topic: dict, month_year: str) -> tuple[str, bool]:
     """Dispatch by topic.data_source + supplement with RSS feeds if configured.
-    Returns (text_context, valid_urls)."""
+    Returns (text_context, has_urls). M3: caller (generate_card.py) only needs a bool
+    signal to decide Google Search fallback — final URL validity is always
+    re-verified via HEAD-check downstream, so carrying the full whitelist set was
+    over-engineering (dead state, only ever used as bool + print)."""
     source = topic.get("data_source", "jina")
     if source == "github_api":
         cutoff = (datetime.now() - timedelta(days=14)).strftime("%Y-%m-%d")
@@ -149,4 +152,4 @@ def fetch_topic_context(topic: dict, month_year: str) -> tuple[str, set[str]]:
             text = (text + "\n\n" + rss_text).strip() if text else rss_text
             urls |= rss_urls
 
-    return text, urls
+    return text, bool(urls)

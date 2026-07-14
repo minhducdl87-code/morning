@@ -3,11 +3,10 @@
 Strict-drop dead/no-URL news items. Strict-drop bad-format/dead repo items.
 Works with any topic set (old + new pivot fields alike)."""
 import json
-from digest_utils import batch_check_urls, validate_news_items, validate_repo_items, GITHUB_REPO_RE
-
-
-def _list_fields(obj: dict) -> list[str]:
-    return [k for k, v in obj.items() if isinstance(v, list)]
+from digest_utils import (
+    batch_check_urls, validate_news_items, validate_repo_items,
+    GITHUB_REPO_RE, list_item_fields,
+)
 
 
 def _is_repo_field(items: list) -> bool:
@@ -34,7 +33,7 @@ def scrub_file(path: str) -> None:
     # Collect all URLs across all fields of all entries
     all_urls = []
     for entry in items:
-        for f in _list_fields(entry):
+        for f in list_item_fields(entry):
             for x in entry[f] or []:
                 if isinstance(x, dict) and x.get("url"):
                     all_urls.append(x["url"])
@@ -43,7 +42,7 @@ def scrub_file(path: str) -> None:
     live_map = batch_check_urls(all_urls) if all_urls else {}
 
     for entry in items:
-        for f in _list_fields(entry):
+        for f in list_item_fields(entry):
             arr = entry[f] or []
             if not arr or not isinstance(arr[0], dict):
                 continue
