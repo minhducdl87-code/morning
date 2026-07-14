@@ -47,7 +47,20 @@ jobs:
         env:
           KV_ID: ${{ secrets.CF_KV_NAMESPACE_ID }}
         run: sed -i "s/REPLACE_WITH_KV_NAMESPACE_ID/$KV_ID/" wrangler.toml
-      - name: Deploy Worker + sync secrets
+      # Deploy new code FIRST so the new wrangler.toml (which no longer lists
+      # ALLOWED_CHAT_IDS under [vars]) clears the stale plaintext var binding.
+      # Otherwise `secret bulk` collides: a name can't be both var + secret (code 10053).
+      - name: Deploy Worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: bot
+          command: deploy
+
+      # Now that the var is gone, upload secrets, then redeploy so the running
+      # code has them. Idempotent on subsequent runs (name is already a secret).
+      - name: Sync secrets + redeploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
