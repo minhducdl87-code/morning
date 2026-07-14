@@ -29,17 +29,19 @@ def load_cards(path: str = "cards.json") -> list:
         return json.load(f)
 
 
-def fetch_contexts(topics: dict, month_year: str) -> tuple[dict, bool]:
-    """Fetch pre-search web context per topic. Returns (topic_contexts, has_data).
-    M3: only the bool signal matters here — final URL validity is always re-verified
-    via HEAD-check downstream (batch_check_urls), so we don't carry a URL whitelist."""
+def fetch_contexts(topics: dict, month_year: str) -> tuple[dict, set[str]]:
+    """Fetch pre-search web context per topic. Returns (topic_contexts, trusted_urls).
+    trusted_urls = union of REAL URLs from RSS/Jina/GitHub fetch layer across all
+    topics — passed downstream to validate_card so known-real URLs skip the
+    HEAD-check (some sites like vnexpress.net block bot HEAD/GET and would otherwise
+    be false-negative "dropped as dead")."""
     topic_contexts = {}
-    has_data = False
+    trusted_urls: set[str] = set()
     for key, topic in topics.items():
-        ctx, has_urls = fetch_topic_context(topic, month_year)
+        ctx, urls = fetch_topic_context(topic, month_year)
         topic_contexts[key] = ctx
-        has_data = has_data or has_urls
-    return topic_contexts, has_data
+        trusted_urls |= urls
+    return topic_contexts, trusted_urls
 
 
 def empty_card(date_str: str, day_label: str, date_label: str, output_fields: list) -> dict:
@@ -77,21 +79,26 @@ def generate_card_json(prompt: str, has_data: bool, date_str: str, day_label: st
     return card_json
 
 
-def validate_card(card_json: dict, output_fields: list, repo_fields: list) -> dict:
-    """HEAD-check all URLs in parallel, drop dead/invalid items."""
+def validate_card(card_json: dict, output_fields: list, repo_fields: list,
+                   trusted_urls: set) -> dict:
+    """HEAD-check URLs in parallel, drop dead/invalid items. URLs already known real
+    (trusted_urls, sourced directly from RSS/Jina/GitHub fetch layer) skip HEAD-check
+    entirely — avoids false-negative drops + saves requests."""
     print("Step 3: HEAD-checking URLs...")
     all_urls = []
     for f in output_fields:
         all_urls += [x.get("url", "") for x in card_json.get(f, [])]
-    live_map = batch_check_urls(all_urls)
+    untrusted_urls = [u for u in all_urls if u and u not in trusted_urls]
+    live_map = batch_check_urls(untrusted_urls)
     live_count = sum(1 for v in live_map.values() if v)
-    print(f"  {live_count}/{len(live_map)} URLs are live")
+    print(f"  {live_count}/{len(live_map)} untrusted URLs are live "
+          f"({len(trusted_urls)} trusted URLs skip-checked)")
 
     for f in output_fields:
         if f in repo_fields:
             card_json[f] = validate_repo_items(card_json.get(f, []), live_map)
         else:
-            card_json[f] = validate_news_items(card_json.get(f, []), live_map)
+            card_json[f] = validate_news_items(card_json.get(f, []), live_map, trusted_urls)
     return card_json
 
 
@@ -161,8 +168,9 @@ def main():
 
     print(f"Generating card for {date_str} | topics: {list(topics.keys())}...")
     print("Step 1: Fetching web content...")
-    topic_contexts, has_data = fetch_contexts(topics, month_year)
-    print(f"Fetch done. has_data={has_data}")
+    topic_contexts, trusted_urls = fetch_contexts(topics, month_year)
+    has_data = bool(trusted_urls)
+    print(f"Fetch done. has_data={has_data} trusted_urls={len(trusted_urls)}")
 
     output_fields = [t["output_field"] for t in topics.values() if t.get("output_field")]
     repo_fields   = [t["output_field"] for t in topics.values() if t.get("data_source") == "github_api"]
@@ -175,7 +183,7 @@ def main():
     print(f"Step 2: Calling Gemini... (prompt: {len(prompt)} chars)")
 
     card_json = generate_card_json(prompt, has_data, date_str, day_label, date_label, output_fields)
-    card_json = validate_card(card_json, output_fields, repo_fields)
+    card_json = validate_card(card_json, output_fields, repo_fields, trusted_urls)
     card_json = dedup_card(card_json, output_fields, recent_urls, recent_norms, recent_tokens)
 
     cards = update_cards_file(cards, card_json, date_str, now)

@@ -4,6 +4,7 @@ dedup_utils.py — digest_utils.py re-exports both as a thin facade)."""
 import urllib.request
 import urllib.error
 import re
+import socket
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 GITHUB_REPO_RE = re.compile(r"^https://github\.com/[^/\s]+/[^/\s]+/?$")
@@ -18,7 +19,13 @@ URL_BLACKLIST  = (
 
 
 def is_url_live(url: str) -> bool:
-    """Return True if URL responds 2xx/3xx within timeout. Used to drop 404 fake links."""
+    """Return True unless URL is CONFIRMED dead. Benefit-of-doubt policy: many real
+    news sites (vnexpress.net etc.) block bot HEAD/GET requests from datacenter IPs
+    (e.g. GitHub Actions runners) with 403/405/429 or a timeout — that's a bot-block,
+    NOT proof the article is gone, and previously caused false-negative drops of real
+    RSS items (entertainment/lifestyle sections wiped to zero). Only treat as dead:
+    404/410 (resource confirmed gone) and DNS failure/connection refused (host does
+    not exist / nothing listening) — everything else gets the benefit of the doubt."""
     if not url or not url.startswith("http"):
         return False
     if " " in url:
@@ -31,17 +38,18 @@ def is_url_live(url: str) -> bool:
         with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
             return 200 <= resp.status < 400
     except urllib.error.HTTPError as e:
-        # Some servers return 405 for HEAD but URL is fine — try GET range
-        if e.code in (403, 405, 429):
-            try:
-                req = urllib.request.Request(url, method="GET")
-                req.add_header("User-Agent", "Mozilla/5.0 morning-digest")
-                req.add_header("Range", "bytes=0-0")
-                with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
-                    return 200 <= resp.status < 400
-            except Exception:
-                return False
-        return False
+        if e.code in (404, 410):
+            return False
+        return True  # 403/405/429/5xx — ambiguous (bot-block/server hiccup), keep it
+    except urllib.error.URLError as e:
+        reason = e.reason
+        if isinstance(reason, socket.gaierror):
+            return False  # DNS resolution failed — host doesn't exist
+        if isinstance(reason, ConnectionRefusedError):
+            return False  # connection actively refused — nothing listening
+        return True  # timeout or other transient network error — benefit of doubt
+    except TimeoutError:
+        return True
     except Exception:
         return False
 
@@ -65,13 +73,20 @@ def batch_check_urls(urls: list[str]) -> dict[str, bool]:
 
 # ── Validation: clear bad news URLs, drop bad repo items ──────────────────────
 
-def validate_news_items(items: list, live_map: dict) -> list:
-    """STRICT: drop news items without live URL. Top rule — news must have real source."""
+def validate_news_items(items: list, live_map: dict, trusted_urls: set | None = None) -> list:
+    """STRICT: drop news items without live URL. Top rule — news must have real source.
+    trusted_urls: real URLs sourced directly from RSS/Jina/GitHub fetch layer (not
+    LLM-generated) — these bypass the HEAD-check live_map entirely since we already
+    know they're real, avoiding false-negative drops when a source blocks bot checks."""
+    trusted_urls = trusted_urls or set()
     cleaned = []
     for n in items:
         url = (n.get("url") or "").strip()
         if not url:
             print(f"  [validate] dropped news (no URL): {n.get('title','')[:60]}")
+            continue
+        if url in trusted_urls:
+            cleaned.append(n)
             continue
         if not live_map.get(url, False):
             print(f"  [validate] dropped news (dead URL): {url}")

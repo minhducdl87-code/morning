@@ -131,12 +131,14 @@ def fetch_github_topic(topic: dict, cutoff_date: str) -> tuple[str, set[str]]:
 
 # ── Dispatcher ────────────────────────────────────────────────────────────────
 
-def fetch_topic_context(topic: dict, month_year: str) -> tuple[str, bool]:
+def fetch_topic_context(topic: dict, month_year: str) -> tuple[str, set[str]]:
     """Dispatch by topic.data_source + supplement with RSS feeds if configured.
-    Returns (text_context, has_urls). M3: caller (generate_card.py) only needs a bool
-    signal to decide Google Search fallback — final URL validity is always
-    re-verified via HEAD-check downstream, so carrying the full whitelist set was
-    over-engineering (dead state, only ever used as bool + print)."""
+    Returns (text_context, trusted_urls) — trusted_urls is the set of REAL URLs
+    sourced directly from RSS/Jina/GitHub (not LLM-generated). Caller aggregates
+    these across topics into a whitelist so the downstream HEAD-check can trust them
+    outright, instead of re-verifying with a HEAD request that some sites (e.g.
+    vnexpress.net) block from bot/datacenter IPs — which previously caused real items
+    to be dropped as false-negative "dead URLs"."""
     source = topic.get("data_source", "jina")
     if source == "github_api":
         cutoff = (datetime.now() - timedelta(days=14)).strftime("%Y-%m-%d")
@@ -152,4 +154,4 @@ def fetch_topic_context(topic: dict, month_year: str) -> tuple[str, bool]:
             text = (text + "\n\n" + rss_text).strip() if text else rss_text
             urls |= rss_urls
 
-    return text, bool(urls)
+    return text, urls

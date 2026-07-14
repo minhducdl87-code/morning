@@ -1,7 +1,12 @@
-"""Test url_check — GitHub regex, item validation (mock live checks)."""
+"""Test url_check — GitHub regex, item validation (mock live checks), liveness policy."""
+import socket
+import urllib.error
+from unittest.mock import patch
+
 import pytest
 from url_check import (
     GITHUB_REPO_RE,
+    is_url_live,
     validate_news_items,
     validate_repo_items,
 )
@@ -130,6 +135,116 @@ class TestValidateNewsItems:
         live_map = {}
         result = validate_news_items(items, live_map)
         assert len(result) == 0
+
+    def test_trusted_url_bypasses_dead_live_map(self):
+        """URL in trusted_urls is kept even if live_map marks it dead (false-negative
+        HEAD-check, e.g. vnexpress blocking bot requests) — whitelist-trust fix."""
+        items = [{"title": "News", "url": "https://vnexpress.net/rss/giai-tri/1.html"}]
+        live_map = {"https://vnexpress.net/rss/giai-tri/1.html": False}
+        trusted_urls = {"https://vnexpress.net/rss/giai-tri/1.html"}
+        result = validate_news_items(items, live_map, trusted_urls)
+        assert len(result) == 1
+
+    def test_trusted_url_bypasses_missing_live_map_entry(self):
+        """URL in trusted_urls is kept even if never HEAD-checked at all."""
+        items = [{"title": "News", "url": "https://trusted.example.com/a"}]
+        result = validate_news_items(items, {}, {"https://trusted.example.com/a"})
+        assert len(result) == 1
+
+    def test_untrusted_url_still_uses_live_map(self):
+        """URL not in trusted_urls still follows normal live_map validation."""
+        items = [
+            {"title": "News 1", "url": "https://untrusted.com/dead"},
+            {"title": "News 2", "url": "https://trusted.com/real"},
+        ]
+        live_map = {"https://untrusted.com/dead": False, "https://trusted.com/real": False}
+        trusted_urls = {"https://trusted.com/real"}
+        result = validate_news_items(items, live_map, trusted_urls)
+        assert len(result) == 1
+        assert result[0]["url"] == "https://trusted.com/real"
+
+    def test_default_trusted_urls_is_backward_compatible(self):
+        """Omitting trusted_urls (2-arg call) behaves exactly like before."""
+        items = [{"title": "News", "url": "https://example.com"}]
+        result = validate_news_items(items, {"https://example.com": False})
+        assert len(result) == 0
+
+
+class TestIsUrlLive:
+    """is_url_live: benefit-of-doubt policy — only 404/410/DNS-fail/conn-refused are dead."""
+
+    def test_empty_url(self):
+        assert is_url_live("") is False
+
+    def test_non_http_url(self):
+        assert is_url_live("ftp://example.com") is False
+
+    def test_url_with_space(self):
+        assert is_url_live("https://example.com/a b") is False
+
+    def test_blacklisted_domain(self):
+        assert is_url_live("https://vertexaisearch.cloud.google.com/x") is False
+
+    @patch("url_check.urllib.request.urlopen")
+    def test_200_is_live(self, mock_urlopen):
+        mock_urlopen.return_value.__enter__.return_value.status = 200
+        assert is_url_live("https://example.com") is True
+
+    @patch("url_check.urllib.request.urlopen")
+    def test_404_is_dead(self, mock_urlopen):
+        mock_urlopen.side_effect = urllib.error.HTTPError(
+            "https://example.com", 404, "Not Found", {}, None
+        )
+        assert is_url_live("https://example.com") is False
+
+    @patch("url_check.urllib.request.urlopen")
+    def test_410_is_dead(self, mock_urlopen):
+        mock_urlopen.side_effect = urllib.error.HTTPError(
+            "https://example.com", 410, "Gone", {}, None
+        )
+        assert is_url_live("https://example.com") is False
+
+    @patch("url_check.urllib.request.urlopen")
+    def test_403_is_benefit_of_doubt(self, mock_urlopen):
+        """403 (bot-block, e.g. vnexpress from CI IP) is NOT proof of dead — kept live."""
+        mock_urlopen.side_effect = urllib.error.HTTPError(
+            "https://example.com", 403, "Forbidden", {}, None
+        )
+        assert is_url_live("https://example.com") is True
+
+    @patch("url_check.urllib.request.urlopen")
+    def test_405_is_benefit_of_doubt(self, mock_urlopen):
+        mock_urlopen.side_effect = urllib.error.HTTPError(
+            "https://example.com", 405, "Method Not Allowed", {}, None
+        )
+        assert is_url_live("https://example.com") is True
+
+    @patch("url_check.urllib.request.urlopen")
+    def test_429_is_benefit_of_doubt(self, mock_urlopen):
+        mock_urlopen.side_effect = urllib.error.HTTPError(
+            "https://example.com", 429, "Too Many Requests", {}, None
+        )
+        assert is_url_live("https://example.com") is True
+
+    @patch("url_check.urllib.request.urlopen")
+    def test_dns_failure_is_dead(self, mock_urlopen):
+        mock_urlopen.side_effect = urllib.error.URLError(socket.gaierror("nodename not found"))
+        assert is_url_live("https://nonexistent-domain.invalid") is False
+
+    @patch("url_check.urllib.request.urlopen")
+    def test_connection_refused_is_dead(self, mock_urlopen):
+        mock_urlopen.side_effect = urllib.error.URLError(ConnectionRefusedError())
+        assert is_url_live("https://example.com") is False
+
+    @patch("url_check.urllib.request.urlopen")
+    def test_timeout_is_benefit_of_doubt(self, mock_urlopen):
+        mock_urlopen.side_effect = TimeoutError("timed out")
+        assert is_url_live("https://example.com") is True
+
+    @patch("url_check.urllib.request.urlopen")
+    def test_generic_urlerror_is_benefit_of_doubt(self, mock_urlopen):
+        mock_urlopen.side_effect = urllib.error.URLError("some transient network error")
+        assert is_url_live("https://example.com") is True
 
 
 class TestValidateRepoItems:
