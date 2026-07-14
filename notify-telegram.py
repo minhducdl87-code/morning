@@ -93,7 +93,7 @@ def build_morning_message(card: dict) -> str:
             continue
         emoji, label = section_meta(field)
         lines.append(f"{emoji} <b>{html_escape(label)}:</b>")
-        for x in arr[:3]:
+        for x in arr:
             title = html_escape(x.get("title") or x.get("name",""))
             url = x.get("url","")
             if url:
@@ -129,27 +129,54 @@ def build_recap_message(card: dict) -> str:
 
 message = build_recap_message(card) if MODE == "recap" else build_morning_message(card)
 
-# Send to every chat_id — partial failure OK (don't block other recipients)
-url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
-ok_count = fail_count = 0
-for chat_id in CHAT_IDS:
+url      = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+TG_LIMIT = 4000   # safety margin under Telegram's 4096-char hard cap per message
+
+
+def split_message(text: str, limit: int = TG_LIMIT) -> list[str]:
+    """Split into <=limit chunks at line boundaries so the full digest never
+    exceeds Telegram's 4096 limit (a single oversized sendMessage would fail)."""
+    if len(text) <= limit:
+        return [text]
+    chunks, cur = [], ""
+    for line in text.split("\n"):
+        while len(line) > limit:            # single over-long line → hard split
+            if cur:
+                chunks.append(cur); cur = ""
+            chunks.append(line[:limit]); line = line[limit:]
+        if cur and len(cur) + len(line) + 1 > limit:
+            chunks.append(cur); cur = line
+        else:
+            cur = f"{cur}\n{line}" if cur else line
+    if cur:
+        chunks.append(cur)
+    return chunks
+
+
+def send_chunk(chat_id: str, text: str) -> bool:
     payload = urllib.parse.urlencode({
         "chat_id":    chat_id,
-        "text":       message,
+        "text":       text,
         "parse_mode": "HTML",
         "disable_web_page_preview": "true",
     }).encode()
     req = urllib.request.Request(url, data=payload, method="POST")
     req.add_header("Content-Type", "application/x-www-form-urlencoded")
+    with urllib.request.urlopen(req, timeout=10) as resp:
+        return bool(json.loads(resp.read()).get("ok"))
+
+
+# Send to every chat_id — split long digests into multiple messages, partial failure OK
+chunks = split_message(message)
+ok_count = fail_count = 0
+for chat_id in CHAT_IDS:
     try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            result = json.loads(resp.read())
-            if result.get("ok"):
-                print(f"✓ Sent {MODE} to chat {chat_id}")
-                ok_count += 1
-            else:
-                print(f"✗ chat {chat_id}: {result.get('description', 'unknown')}")
-                fail_count += 1
+        if all(send_chunk(chat_id, c) for c in chunks):
+            print(f"✓ Sent {MODE} to chat {chat_id} ({len(chunks)} msg)")
+            ok_count += 1
+        else:
+            print(f"✗ chat {chat_id}: Telegram returned not-ok")
+            fail_count += 1
     except Exception as e:
         print(f"✗ chat {chat_id}: {e}")
         fail_count += 1
