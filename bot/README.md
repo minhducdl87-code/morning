@@ -15,7 +15,7 @@ Private bot (whitelist chat IDs): 655323886, 782194719.
 | `/week` | Latest weekly card | — |
 | `/month` | Latest monthly card | — |
 | `/deep <question>` | Hard question | OpenAI gpt-4o |
-| `/img <prompt>` | Image gen (uploaded via multipart, gpt-image-1 only returns base64) | OpenAI gpt-image-1 |
+| `/img <prompt>` | Image gen (returns URL; code also handles base64 for gpt-image-1) | OpenAI dall-e-3 |
 | `/clear` | Wipe history | — |
 | Voice message | STT → chat | OpenAI whisper-1 |
 | Photo | Describe/OCR content (caption becomes the question) | Gemini 2.5 flash vision |
