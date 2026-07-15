@@ -1,5 +1,216 @@
 [
   {
+    "date": "2026-07-15",
+    "dayLabel": "Thứ Tư",
+    "dateLabel": "15/07/2026",
+    "entertainment": [
+      {
+        "title": "🎬 Tom Cruise và dàn sao đổ bộ bế mạc World Cup 2026",
+        "desc": "Lễ bế mạc World Cup 2026 hứa hẹn bùng nổ với màn trình diễn của tài tử Tom Cruise cùng dàn nghệ sĩ hạng A, kéo dài 30 phút.",
+        "tag": "show",
+        "tagLabel": "📺 SHOW",
+        "source": "15/07·VnExpress",
+        "url": "https://vnexpress.net/tom-cruise-se-co-man-trinh-dien-be-mac-world-cup-2026-5097533.html"
+      },
+      {
+        "title": "🎵 Golden Disc Awards 41 sẽ tổ chức ở Việt Nam",
+        "desc": "Lễ trao giải âm nhạc hàng đầu Kpop - Golden Disc Awards lần thứ 41 - xác nhận sẽ đổ bộ Việt Nam, hứa hẹn một đêm nhạc bùng nổ.",
+        "tag": "music",
+        "tagLabel": "🎵 MUSIC",
+        "source": "15/07·Kenh14",
+        "url": "https://kenh14.vn/le-trao-giai-thuong-am-nhac-hang-dau-cua-kpop-golden-disc-awards-lan-thu-41-se-to-chuc-o-viet-nam-215260715093423381.chn"
+      },
+      {
+        "title": "⭐ Kim Soo Hyun tái xuất sau scandal chấn động",
+        "desc": "Sau 1 năm rưỡi 'biến mất' vì scandal hẹn hò trẻ vị thành niên, Kim Soo Hyun lộ diện với visual gây sốc, khiến MXH dậy sóng.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "15/07·Kenh14",
+        "url": "https://kenh14.vn/kim-soo-hyun-lo-dien-sau-1-nam-ruoi-bien-mat-vi-scandal-hen-ho-tre-vi-thanh-nien-visual-hien-tai-khien-ca-mxh-soc-nang-215260715091516209.chn"
+      },
+      {
+        "title": "🎬 Phim Trung Quốc quay tại Việt Nam gây sốt MXH",
+        "desc": "Bộ phim Trung Quốc với những cảnh quay đẹp nức nở tại Việt Nam đang 'gây bão' MXH, nữ chính cũng là gương mặt hot nhất 'Chị Đẹp 2026'.",
+        "tag": "movie",
+        "tagLabel": "🎬 PHIM",
+        "source": "15/07·Kenh14",
+        "url": "https://kenh14.vn/ca-mxh-me-met-phim-trung-quoc-quay-tai-viet-nam-canh-nao-cung-dep-nuc-no-nu-chinh-hot-nhat-chi-dep-2026-215260715031251359.chn"
+      },
+      {
+        "title": "⭐ Haaland và bạn gái 'đốt cháy' sàn diễn Dolce & Gabbana",
+        "desc": "Tiền đạo Erling Haaland và bạn gái Isabel Johansen gây chú ý khi sánh đôi tại show diễn Dolce & Gabbana, thu hút mọi ánh nhìn.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "15/07·VnExpress",
+        "url": "https://vnexpress.net/erling-haaland-sanh-doi-ban-gai-o-show-dolce-gabbana-5097629.html"
+      }
+    ],
+    "trending": [
+      {
+        "title": "📱 Trào lưu 'Michelin Boy' khuấy đảo giới trẻ",
+        "desc": "Michelin Boy là từ dùng để chỉ những chàng trai có thân hình mũm mĩm, đáng yêu, được giới trẻ quan tâm và tạo trend trên mạng xã hội.",
+        "tag": "tiktok",
+        "tagLabel": "📱 TIKTOK",
+        "source": "15/07·VOH",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPc1FhM2RwUlRfbzZvVEUwUHYzRG5jMkdsRkpwdnRpbldKcG1WTlNLN3dtVkhVZ3ZLeXdJQTJWcThFQzI1SHR5Sm1KRzN6eDByRVZaTkF2ZXhiZlUzM2RqdXhiMHNGMFg0aWlzSVlldTFacHdvZU9fcnphZ25vakdqeHNNQ0otdkpYSHgwY05lMHctV1NaZXJ6RDhZSWh5Q0hReUgxdGZLYjUtbnUyRDFDbmZR?oc=5"
+      },
+      {
+        "title": "🎵 Ca khúc viral 'cả năm chưa làm được gì nên hồn'",
+        "desc": "Một ca khúc đang cực kỳ viral trên TikTok, đặc biệt dành cho những ai cảm thấy mình 'cả năm nay chưa làm được gì nên hồn', tạo động lực vui vẻ cho cộng đồng mạng.",
+        "tag": "music",
+        "tagLabel": "🎵 NHẠC",
+        "source": "15/07·Kenh14",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQM3I4T0QwOG11Q2szZVBPaDBNc1JwQ0g2U0xhX0hIOXIza2txSmtXUjJqSk1NbTFRRTlQOXNhbktOazVweDEybUZrLXNUbEo1bEtYcjZ6ci1QV21kR0VwdGx3UUFLdjJtVXJjcTlGSUxqRVJENGowQWExd25jQTlqb012c2ZaaExMUlNCRGlnTURFcVRKWEQta0RYLWZkR1pXdzBtWHRCMEs2anVfa0VhdVR0Z1lNMEs0VXlNX0lNWG5WbWFRTmxGcS1Ncw?oc=5"
+      }
+    ],
+    "gaming": [
+      {
+        "title": "💻 Game thủ PC nhận miễn phí game kinh dị chất lượng",
+        "desc": "Cộng đồng game thủ PC đang có cơ hội nhận miễn phí một tựa game kinh dị chất lượng, đừng bỏ lỡ để làm dày thêm thư viện game của mình.",
+        "tag": "pc",
+        "tagLabel": "💻 PC",
+        "source": "15/07·cl44.cnnd.vn",
+        "url": "https://cl44.cnnd.vn/game-thu-pc-tiep-tuc-co-qua-free-nhanh-tay-nhan-mien-phi-ngay-mot-tro-choi-kinh-di-day-chat-luong-178260715094956397.chn"
+      },
+      {
+        "title": "📱 FC Mobile phát Code TOTY cực khủng hôm nay",
+        "desc": "Game thủ FC Mobile có thể nhận quà TOTY cực khủng với Code mới nhất hôm nay 15/07/2026. Nhanh tay nhập code để không bỏ lỡ phần thưởng giá trị!",
+        "tag": "mobile",
+        "tagLabel": "📱 MOBILE",
+        "source": "15/07·Quantrimang.com",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE45M25fYnE4YnFOMFBQcmNyLTJVUjR1WmIyRHhPNzZmdU1WZXFtY3poZUtVNFBPOWNpSlVpUzBNeWQ3LW5aYnk4eWY4b052WDA4S25HSGFxeDdKb3hCejU5b2NQRlJGdw?oc=5"
+      },
+      {
+        "title": "💻 Steam phát hành miễn phí 4 game mới, có cả RPG 'siêu đỉnh'",
+        "desc": "Steam bất ngờ tung ra 4 tựa game miễn phí mới, trong đó có một dự án nhập vai được cộng đồng khen ngợi là 'siêu đỉnh'.",
+        "tag": "pc",
+        "tagLabel": "💻 PC",
+        "source": "14/07·cl44.cnnd.vn",
+        "url": "https://cl44.cnnd.vn/steam-bat-ngo-phat-hanh-mien-phi-4-tua-game-moi-noi-bat-co-ca-mot-du-an-nhap-vai-duoc-khen-sieu-dinh-178260714090156593.chn"
+      }
+    ],
+    "lifestyle": [
+      {
+        "title": "💪 Tuyển Anh phục hồi cơ bắp bằng gia vị bình dân",
+        "desc": "Các ngôi sao đội tuyển Anh đang sử dụng một loại gia vị bình dân để phục hồi cơ bắp, bí quyết đơn giản mà hiệu quả không ngờ.",
+        "tag": "health",
+        "tagLabel": "💪 HEALTH",
+        "source": "15/07·VnExpress",
+        "url": "https://vnexpress.net/dan-sao-doi-tuyen-anh-phuc-hoi-co-bap-bang-loai-gia-vi-binh-dan-5097592.html"
+      },
+      {
+        "title": "✈️ Du lịch Mỹ bùng nổ khi World Cup vào bán kết",
+        "desc": "Khi World Cup 2026 bước vào bán kết, du lịch Mỹ chứng kiến sự bùng nổ mạnh mẽ, đặc biệt là tâm lý chờ đợi kết quả của cổ động viên.",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "15/07·VnExpress",
+        "url": "https://vnexpress.net/du-lich-my-bung-no-khi-world-cup-vao-ban-ket-5097508.html"
+      },
+      {
+        "title": "🍜 Món cà chua xào trứng giá 75 USD gây tranh cãi",
+        "desc": "Một nhà hàng ở Trung Quốc đang gây tranh cãi khi bán món cà chua xào trứng với giá lên tới 75 USD, khiến nhiều người bất ngờ.",
+        "tag": "food",
+        "tagLabel": "🍜 FOOD",
+        "source": "14/07·VnExpress",
+        "url": "https://vnexpress.net/mon-ca-chua-xao-trung-gia-75-usd-gay-tranh-cai-o-trung-quoc-5097282.html"
+      },
+      {
+        "title": "✈️ Đảo Bé Lý Sơn: 'Maldives của Việt Nam'",
+        "desc": "Đảo Bé ở Lý Sơn được mệnh danh là 'Maldives của Việt Nam' với vẻ đẹp hoang sơ, bờ cát trắng mịn và nước biển trong xanh.",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "14/07·VnExpress",
+        "url": "https://vnexpress.net/hon-dao-duoc-menh-danh-maldives-cua-viet-nam-5097138.html"
+      }
+    ],
+    "vietnam": [
+      {
+        "title": "📜 Chủ tịch UBND xã được tăng quyền xử phạt đất đai gấp 50 lần",
+        "desc": "Chính phủ ban hành Nghị định 281, tăng quyền xử phạt vi phạm hành chính về đất đai cho Chủ tịch UBND xã lên gấp 50 lần, từ 1 triệu lên 50 triệu đồng.",
+        "tag": "policy",
+        "tagLabel": "📜 CHÍNH SÁCH",
+        "source": "15/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/chu-tich-ubnd-xa-duoc-xu-phat-vi-pham-hanh-chinh-ve-dat-dai-gap-50-lan-so-voi-truoc-100260715094217618.htm"
+      },
+      {
+        "title": "🏙️ TP.HCM đề xuất chuyển nhà tái định cư bỏ hoang thành nhà ở xã hội",
+        "desc": "Sở Xây dựng TP.HCM đề xuất chuyển đổi các dự án nhà ở tái định cư chưa sử dụng sang nhà ở xã hội, nhằm giải quyết tình trạng lãng phí và thiếu nhà ở cho người dân.",
+        "tag": "society",
+        "tagLabel": "🏙️ XÃ HỘI",
+        "source": "15/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/tphcm-de-xuat-dua-nha-tai-dinh-cu-bo-hoang-thanh-nha-o-xa-hoi-100260715105536618.htm"
+      },
+      {
+        "title": "🚦 Nút giao An Phú trễ hẹn, nguy cơ ùn tắc cửa ngõ TP HCM",
+        "desc": "Nút giao An Phú (TP HCM) trễ hẹn hoàn thành, gây nguy cơ ùn tắc giao thông nghiêm trọng tại cửa ngõ ra sân bay Long Thành.",
+        "tag": "traffic",
+        "tagLabel": "🚦 GIAO THÔNG",
+        "source": "14/07·VnExpress",
+        "url": "https://vnexpress.net/nut-giao-an-phu-tre-hen-cua-ngo-tp-hcm-ra-san-bay-long-thanh-nguy-co-un-tac-5097480.html"
+      },
+      {
+        "title": "💼 Startup cà phê Việt gọi vốn thành công 8 triệu USD",
+        "desc": "Every Half Coffee Roasters, một startup cà phê Việt, vừa hoàn tất vòng gọi vốn Series A trị giá 8 triệu USD, đánh dấu bước phát triển mạnh mẽ.",
+        "tag": "economy",
+        "tagLabel": "💼 KINH TẾ",
+        "source": "15/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/mot-startup-ca-phe-viet-goi-von-thanh-cong-8-trieu-usd-100260715102254668.htm"
+      }
+    ],
+    "tech": [
+      {
+        "title": "🚀 Galaxy Z Fold8 và Watch9 lộ diện thiết kế cực đẹp",
+        "desc": "Loạt ảnh render chính thức của Galaxy Z Fold8, Z Fold8 Wide và Galaxy Watch9 vừa bị rò rỉ, cho thấy thiết kế đẹp mắt và màn hình 'gần như không nếp gấp'.",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "15/07·Tinhte & VnExpress",
+        "url": "https://tinhte.vn/thread/dep-qua-galaxy-z-fold8-va-z-fold8-wide-watch9.4160583/"
+      },
+      {
+        "title": "⭐ Xiaomi Watch 5: Khung thép đẹp, Wear OS mượt, pin 3 ngày",
+        "desc": "Xiaomi Watch 5 với khung thép sang trọng, hệ điều hành Wear OS mượt mà và thời lượng pin 3 ngày đang là lựa chọn hấp dẫn cho người dùng smartwatch.",
+        "tag": "review",
+        "tagLabel": "⭐ REVIEW",
+        "source": "15/07·Tinhte",
+        "url": "https://tinhte.vn/thread/mo-hop-tren-tay-xiaomi-watch-5-khung-thep-rat-dep-wear-os-muot-cu-chi-tien-loi-pin-dung-3-ngay.4159835/"
+      },
+      {
+        "title": "🤖 Nhà sáng lập 12 tuổi tự phát triển lễ tân AI",
+        "desc": "Một nhà sáng lập 12 tuổi đã tự phát triển lễ tân AI cho công ty của bố mình, chứng minh tiềm năng công nghệ từ rất sớm.",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
+        "source": "14/07·VnExpress",
+        "url": "https://vnexpress.net/nha-sang-lap-12-tuoi-tu-phat-trien-le-tan-ai-5097466.html"
+      }
+    ],
+    "finance": [
+      {
+        "title": "🪙 Giá vàng SJC bật tăng mạnh, vàng nhẫn trái chiều",
+        "desc": "Sáng 15/7, giá vàng miếng SJC tăng phổ biến 1 triệu đồng/lượng, trong khi vàng nhẫn 9999 có diễn biến trái chiều, một số nơi giảm giá.",
+        "tag": "gold",
+        "tagLabel": "🪙 VÀNG",
+        "source": "15/07·VnEconomy",
+        "url": "https://vneconomy.vn/gia-vang-mieng-sjc-bat-tang-manh-gia-vang-nhan-9999-dien-bien-trai-chieu.htm"
+      },
+      {
+        "title": "📈 IBM mất 68 tỷ USD sau một đêm, ngày đen tối nhất lịch sử",
+        "desc": "IBM vừa trải qua ngày đen tối nhất trong lịch sử 115 năm khi mất 68 tỷ USD giá trị thị trường chỉ sau một đêm, CEO đưa ra cảnh báo bất thường.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "15/07·CafeF",
+        "url": "https://cafef.vn/mat-68-ty-usd-sau-mot-dem-ibm-vua-trai-qua-ngay-den-toi-nhat-trong-lich-su-115-nam-188260715103654038.chn"
+      },
+      {
+        "title": "🏠 Hà Nội cải tạo tập thể Trương Định thành 2 tòa chung cư 30 tầng",
+        "desc": "10 tòa nhà khu tập thể Trương Định sẽ được cải tạo thành 2 tòa chung cư cao 30 tầng, hứa hẹn thay đổi diện mạo khu vực này.",
+        "tag": "realestate",
+        "tagLabel": "🏠 BĐS",
+        "source": "15/07·CafeBiz",
+        "url": "https://cafebiz.vn/ha-noi-cai-tao-tap-the-truong-dinh-thanh-2-toa-chung-cu-30-tang-176260715103651892.chn"
+      }
+    ]
+  },
+  {
     "date": "2026-07-14",
     "dayLabel": "Thứ Ba",
     "dateLabel": "14/07/2026",
