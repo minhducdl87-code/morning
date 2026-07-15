@@ -23,6 +23,14 @@ OPENAI_CHAT_MODEL  = "gpt-4o-mini"
 OPENAI_DEEP_MODEL  = "gpt-4o"
 OPENAI_IMAGE_MODEL = "dall-e-3"
 OPENAI_STT_MODEL   = "whisper-1"
+GH_REPO            = "minhducdl87-code/morning"
+
+# Cron triggers (Kiểu A): Worker wakes up at these times and dispatches the
+# morning.yml GitHub Actions workflow (via GH_DISPATCH_TOKEN) instead of doing
+# the generation work itself — GitHub Actions cron stays the source of truth
+# (backup), this is just a more reliable wake-up call.
+[triggers]
+crons = ["0 2 * * *", "0 15 * * *"]
 
 # Secrets (set via: wrangler secret put NAME) — never commit real values
 #   TELEGRAM_BOT_TOKEN
@@ -32,3 +40,7 @@ OPENAI_STT_MODEL   = "whisper-1"
 #   ALLOWED_CHAT_IDS          (comma-separated whitelist chat IDs — moved out of
 #                              [vars] since this repo is public)
 #   JINA_API_KEY              (optional, for URL summary)
+#   GH_DISPATCH_TOKEN         (optional — GitHub fine-grained PAT with Actions
+#                              read/write, used by the cron trigger to dispatch
+#                              morning.yml. Missing → cron logs an error and
+#                              no-ops, webhook path is unaffected.)

@@ -1,6 +1,6 @@
 # 🐟 Cá Mặn Đau Lưng
 
-> **Tin cho người 3x · Sáng 9h · Recap 10h**
+> **Tin cho người 3x · Sáng 9h · Cập nhật tối 22h**
 
 Hệ thống bản tin tự động hàng ngày (Morning Digest) + chatbot Telegram thông minh, dành cho đối tượng người 30-40 tuổi Việt Nam. Chạy 100% serverless trên GitHub Actions + Cloudflare.
 
@@ -9,7 +9,7 @@ Hệ thống bản tin tự động hàng ngày (Morning Digest) + chatbot Teleg
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                     GitHub Actions (cron)                   │
-│  9h sáng (daily) | 10h recap | CN (weekly) | ngày 1 (tháng)│
+│ 9h sáng (morning) | 22h tối (evening) | CN (weekly) | ngày 1 (tháng) │
 └──────────────────────┬──────────────────────────────────────┘
                        │
         ┌──────────────┼──────────────┐
@@ -48,7 +48,8 @@ Hệ thống bản tin tự động hàng ngày (Morning Digest) + chatbot Teleg
 - **Generate**: `generate_card.py` gọi Gemini 2.5 flash → parse JSON → HEAD-check URL → dedup Jaccard 55% → ghi `cards.json` (rolling 30 ngày).
 - **Rollup**: `generate_weekly.py` (Chủ Nhật) + `generate_monthly.py` (ngày 1 tháng) → tổng hợp từ `cards.json` → ghi `weekly.json` / `monthly.json`.
 - **Chống bịa**: Gemini chỉ dùng URL từ dữ liệu đã fetch; sau đó HEAD-check loại link chết; tin không URL sống bị drop.
-- **Notify**: `notify-telegram.py` đẩy Telegram lúc 9h (daily) + 10h (recap 3 tin top).
+- **Notify**: `notify-telegram.py` đẩy Telegram lúc 9h (morning, digest đầy đủ) + 22h (evening, chỉ tin mới thêm buổi tối).
+- **Cron backup kép**: GitHub Actions cron (nguồn chính) + Cloudflare Worker cron (`bot/src/dispatch.ts`, Kiểu A — wake-up call dự phòng, dispatch `workflow_dispatch` tới `morning.yml`).
 
 ### 2. **Chatbot "Caman"** (Cloudflare Worker + TypeScript)
 - **Repo**: `bot/` folder — chi tiết xem `bot/README.md`.
@@ -120,11 +121,12 @@ Xem chi tiết tại `bot/README.md` (wrangler dev, secret setup, etc).
 
 | Trigger | Schedule (Giờ VN) | Công việc | File |
 |---|---|---|---|
-| Daily | 9:00 AM | Sinh card | `generate_card.py` + push `cards.json` |
-| Recap | 10:00 AM | Push 3 tin top Telegram | `notify-telegram.py` |
+| Morning | 9:00 AM | Sinh card mới cho hôm nay + push Telegram (digest đầy đủ) | `generate_card.py` (RUN_MODE=morning) + `notify-telegram.py` |
+| Evening | 22:00 PM | Bổ sung tin mới vào card hôm nay (`addedEvening`) + push Telegram (chỉ tin mới) | `generate_card.py` (RUN_MODE=evening) + `notify-telegram.py` |
 | Weekly | Chủ Nhật 9:00 AM | Tổng kết tuần | `generate_weekly.py` + push `weekly.json` |
 | Monthly | 1st 9:00 AM | Tổng kết tháng | `generate_monthly.py` + push `monthly.json` |
-| Manual | On demand (workflow_dispatch) | `run_weekly=true` / `run_monthly=true` / `backfill_month=YYYY-MM` | — |
+| Manual | On demand (workflow_dispatch) | `run_mode=morning\|evening` / `run_weekly=true` / `run_monthly=true` / `backfill_month=YYYY-MM` | — |
+| Cron backup | 9h + 22h VN | Cloudflare Worker cron gọi lại `workflow_dispatch` (Kiểu A, dự phòng nếu GitHub cron trễ) | `bot/src/dispatch.ts` |
 
 ## Workflows & Deploy
 

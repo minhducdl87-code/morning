@@ -74,6 +74,7 @@ jobs:
             OPENAI_API_KEY
             ALLOWED_CHAT_IDS
             JINA_API_KEY
+            GH_DISPATCH_TOKEN
         env:
           TELEGRAM_BOT_TOKEN:       ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_WEBHOOK_SECRET:  ${{ secrets.TELEGRAM_WEBHOOK_SECRET }}
@@ -81,6 +82,7 @@ jobs:
           OPENAI_API_KEY:           ${{ secrets.OPENAI_API_KEY }}
           ALLOWED_CHAT_IDS:         ${{ secrets.ALLOWED_CHAT_IDS }}
           JINA_API_KEY:             ${{ secrets.JINA_API_KEY }}
+          GH_DISPATCH_TOKEN:        ${{ secrets.GH_DISPATCH_TOKEN }}
 
       - name: Register Telegram webhook
         env:

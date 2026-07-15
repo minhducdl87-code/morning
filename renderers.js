@@ -33,9 +33,10 @@ function escapeHtml(s) {
 
 function renderNewsItem(n) {
   const cls = tagClass(n.tag);
+  const newBadge = n.addedEvening ? '<span class="badge-new" title="Cập nhật tối">🆕</span>' : '';
   const title = n.url
-    ? `<a href="${n.url}" target="_blank" rel="noopener" class="news-title">${escapeHtml(n.title||'')}</a>`
-    : `<span class="news-title">${escapeHtml(n.title||'')}</span>`;
+    ? `<a href="${n.url}" target="_blank" rel="noopener" class="news-title">${escapeHtml(n.title||'')}</a>${newBadge}`
+    : `<span class="news-title">${escapeHtml(n.title||'')}</span>${newBadge}`;
   return `<div class="news-item"><div class="news-top">${title}<span class="tag ${cls}">${escapeHtml(n.tagLabel||'')}</span></div><p class="news-desc">${escapeHtml(n.desc||'')}</p>${n.source?`<div class="news-source">📅 ${escapeHtml(n.source)}</div>`:''}</div>`;
 }
 // Alias for legacy calls that used renderGamingItem

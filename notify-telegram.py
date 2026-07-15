@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Push daily/recap digest to Telegram channel. Topic-agnostic — reads config.json for section labels."""
+"""Push morning/evening digest to Telegram channel. Topic-agnostic — reads config.json for section labels."""
 import json, os, sys, urllib.request, urllib.parse
 from digest_utils import list_item_fields
 
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 PAGE_URL  = "https://minhducdl87-code.github.io/morning"
-MODE      = os.environ.get("NOTIFY_MODE", "morning")   # "morning" or "recap"
+MODE      = os.environ.get("RUN_MODE", "morning")   # "morning" or "evening"
 
 if not BOT_TOKEN:
     print("TELEGRAM_BOT_TOKEN not set — skipping notification")
@@ -106,28 +106,50 @@ def build_morning_message(card: dict) -> str:
     return "\n".join(lines)
 
 
-def build_recap_message(card: dict) -> str:
-    """Shorter 10AM recap — first N items gộp từ các topic (no priority ranking, see first_items)."""
-    lines = [f"☕ Recap — <b>{card.get('dateLabel','')}</b>", ""]
-    top_picks = first_items(collect_items(card), n=3)
-    if not top_picks:
-        lines.append("Hôm nay chưa có tin đáng chú ý 😴")
-    else:
-        for field, x in top_picks:
-            emoji, _ = section_meta(field)
-            url = x["url"]
-            domain = url.split("/")[2] if "//" in url else url
-            lines.append(f"{emoji} <a href=\"{url}\"><b>{html_escape(x['title'])}</b></a>")
-            desc = html_escape(x.get("desc",""))[:180]
-            if desc:
-                lines.append(f"   {desc}")
-            lines.append(f"   <i>({domain})</i>")
-            lines.append("")
+def collect_evening_items(card: dict) -> list[tuple[str, dict]]:
+    """Return [(field, item), ...] for items added by the evening update only
+    (addedEvening=true), in topic/config order."""
+    out = []
+    for field in list_item_fields(card):
+        for x in card.get(field, []):
+            if isinstance(x, dict) and x.get("addedEvening") and x.get("title") and x.get("url"):
+                out.append((field, x))
+    return out
+
+
+def build_evening_message(card: dict) -> str | None:
+    """22h evening update — only items added since this morning, grouped by topic.
+    Returns None when there's nothing new (caller skips sending to avoid spam)."""
+    evening_items = collect_evening_items(card)
+    if not evening_items:
+        return None
+
+    by_field: dict[str, list] = {}
+    for field, x in evening_items:
+        by_field.setdefault(field, []).append(x)
+
+    lines = [f"🌙 <b>Cập nhật tối</b> — tin mới từ sáng — <b>{card.get('dateLabel','')}</b>", ""]
+    for field in list_item_fields(card):
+        arr = by_field.get(field)
+        if not arr:
+            continue
+        emoji, label = section_meta(field)
+        lines.append(f"{emoji} <b>{html_escape(label)}:</b>")
+        for x in arr:
+            title = html_escape(x.get("title") or x.get("name",""))
+            lines.append(f"• <a href=\"{x['url']}\">{title}</a>")
+        lines.append("")
     lines.append(f"🔗 {PAGE_URL}")
     return "\n".join(lines)
 
 
-message = build_recap_message(card) if MODE == "recap" else build_morning_message(card)
+if MODE == "evening":
+    message = build_evening_message(card)
+    if message is None:
+        print("No new evening items — skipping notification (avoid spam)")
+        sys.exit(0)
+else:
+    message = build_morning_message(card)
 
 url      = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 TG_LIMIT = 4000   # safety margin under Telegram's 4096-char hard cap per message

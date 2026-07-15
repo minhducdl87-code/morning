@@ -2,12 +2,17 @@ name: Morning Digest
 
 "on":
   schedule:
-    - cron: '0 2 * * *'    # 9:00 AM Vietnam time (daily morning digest)
-    - cron: '0 3 * * *'    # 10:00 AM Vietnam time (recap push to Telegram)
+    - cron: '0 2 * * *'    # 9:00 AM Vietnam time (morning digest)
+    - cron: '0 15 * * *'   # 10:00 PM Vietnam time (evening update)
     - cron: '0 2 * * 0'    # 9:00 AM Vietnam time (Sunday — weekly trigger)
     - cron: '0 2 1 * *'    # 9:00 AM Vietnam time (1st of month — monthly trigger)
   workflow_dispatch:
     inputs:
+      run_mode:
+        description: 'Manual run mode'
+        type: choice
+        options: ['morning', 'evening']
+        default: 'morning'
       run_weekly:
         description: 'Also run weekly digest'
         type: boolean
@@ -22,30 +27,19 @@ name: Morning Digest
         default: ''
 
 jobs:
-  # ── 10AM recap: push top 3 items from latest card ──────────────────────────
-  recap-push:
+  # ── 9AM morning digest — new card for today ─────────────────────────────────
+  morning-digest:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 3 * * *'
-    permissions:
-      contents: read
-    env:
-      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      NOTIFY_MODE: recap
-    steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - run: python notify-telegram.py
-
-  # ── Daily digest ────────────────────────────────────────────────────────────
-  daily-digest:
-    runs-on: ubuntu-latest
-    if: github.event.inputs.backfill_month == '' && github.event.schedule != '0 3 * * *'
+    if: |
+      github.event.inputs.backfill_month == '' &&
+      (github.event.schedule == '0 2 * * *' ||
+       (github.event_name == 'workflow_dispatch' &&
+        (github.event.inputs.run_mode == 'morning' || github.event.inputs.run_mode == '')))
     permissions:
       contents: write
     env:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      RUN_MODE: morning
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v5
@@ -53,7 +47,69 @@ jobs:
           python-version: '3.11'
       - run: pip install google-genai
 
-      - name: Generate daily card
+      # Backup guard vs GitHub's own duplicate-trigger cases (schedule + manual
+      # dispatch racing): if today's card already exists, skip generate/notify.
+      - name: Guard — skip if today's card already exists
+        id: guard
+        run: |
+          SKIP=$(python <<'PY'
+          import json
+          from time_utils import now_vn
+          today = now_vn().strftime("%Y-%m-%d")
+          try:
+              with open("cards.json", encoding="utf-8") as f:
+                  cards = json.load(f)
+          except FileNotFoundError:
+              cards = []
+          skip = bool(cards) and cards[0].get("date") == today
+          print("true" if skip else "false")
+          PY
+          )
+          echo "today's card already exists: $SKIP"
+          echo "skip=$SKIP" >> "$GITHUB_OUTPUT"
+
+      - name: Generate morning card
+        if: steps.guard.outputs.skip != 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+        run: python generate_card.py
+
+      - name: Notify Telegram
+        if: steps.guard.outputs.skip != 'true' && env.TELEGRAM_BOT_TOKEN != ''
+        run: python notify-telegram.py
+
+      - name: Commit and push
+        if: steps.guard.outputs.skip != 'true'
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add cards.json
+          git diff --staged --quiet || git commit -m "morning $(TZ='Asia/Ho_Chi_Minh' date '+%Y-%m-%d')"
+          git push
+
+  # ── 22h evening update — append new items to today's existing card ─────────
+  evening-update:
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 15 * * *' ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.run_mode == 'evening')
+    permissions:
+      contents: write
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      RUN_MODE: evening
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install google-genai
+
+      # generate_card.py (evening mode) self-guards: no-op if today's morning
+      # card doesn't exist yet, or eveningDone is already true — safe even if
+      # this job races or the cron fires late across a day boundary.
+      - name: Generate evening update
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
@@ -68,16 +124,15 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           git add cards.json
-          git diff --staged --quiet || git commit -m "morning $(TZ='Asia/Ho_Chi_Minh' date '+%Y-%m-%d')"
+          git diff --staged --quiet || git commit -m "evening $(TZ='Asia/Ho_Chi_Minh' date '+%Y-%m-%d')"
           git push
 
   # ── Weekly digest (Sunday or manual) ───────────────────────────────────────
   weekly-digest:
-    needs: daily-digest
+    needs: morning-digest
     runs-on: ubuntu-latest
     if: |
       always() &&
-      github.event.schedule != '0 3 * * *' &&
       (github.event.schedule == '0 2 * * 0' ||
        github.event.inputs.run_weekly == 'true')
     permissions:
@@ -107,11 +162,10 @@ jobs:
 
   # ── Monthly rollup (1st of month or manual) ────────────────────────────────
   monthly-digest:
-    needs: [daily-digest, weekly-digest]
+    needs: [morning-digest, weekly-digest]
     runs-on: ubuntu-latest
     if: |
       always() &&
-      github.event.schedule != '0 3 * * *' &&
       (github.event.schedule == '0 2 1 * *' ||
        github.event.inputs.run_monthly == 'true' ||
        github.event.inputs.backfill_month != '')

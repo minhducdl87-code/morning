@@ -222,6 +222,14 @@ a.news-title:hover::after{
 }
 body.light a.news-title{text-decoration-color:rgba(0,140,85,0.45);}
 
+/* ── Evening-update badge (🆕) ── */
+.badge-new{
+  display:inline-block;margin-left:4px;font-size:.72em;
+  filter:drop-shadow(0 0 2px rgba(0,229,160,.5));
+  vertical-align:middle;
+}
+body.light .badge-new{filter:none}
+
 /* ── Tags ── */
 .tag{
   display:inline-block;font-family:var(--mono);font-size:.58rem;

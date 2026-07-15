@@ -21,6 +21,12 @@ export interface Env {
   OPENAI_API_KEY: string;
   ALLOWED_CHAT_IDS: string;
   JINA_API_KEY?: string;
+
+  // GitHub Actions dispatch (cron trigger → morning.yml), see dispatch.ts.
+  // GH_REPO is a public var; GH_DISPATCH_TOKEN is optional so the webhook
+  // request path (assertEnv) never requires it — only the cron path uses it.
+  GH_REPO: string;
+  GH_DISPATCH_TOKEN?: string;
 }
 
 export interface Msg {

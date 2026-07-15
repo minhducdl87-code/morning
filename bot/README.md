@@ -78,6 +78,7 @@ npx wrangler secret put GEMINI_API_KEY
 npx wrangler secret put OPENAI_API_KEY
 npx wrangler secret put ALLOWED_CHAT_IDS          # comma-separated whitelist chat IDs, e.g. "655323886,782194719"
 npx wrangler secret put JINA_API_KEY              # optional, only if you have paid Jina
+npx wrangler secret put GH_DISPATCH_TOKEN         # optional — see "Cron trigger" section below
 ```
 
 `ALLOWED_CHAT_IDS` used to live in `wrangler.toml` `[vars]` (safe when the
@@ -114,6 +115,25 @@ Message the bot on Telegram:
 - Send a URL → summarize
 - Send voice → STT + reply
 
+## Cron trigger (Kiểu A — Worker wakes GitHub Actions)
+
+`wrangler.toml` `[triggers]` schedules the Worker's `scheduled()` handler at
+`0 2 * * *` (9h VN, morning) and `0 15 * * *` (22h VN, evening). Instead of
+doing the digest generation itself, the Worker just calls
+`dispatchWorkflow()` (`src/dispatch.ts`) which POSTs a
+`workflow_dispatch` event to `morning.yml` with `inputs.run_mode` set to
+`morning`/`evening` accordingly. GitHub Actions' own cron (`.github/workflows/morning.yml`)
+stays the primary schedule/source of truth; the Worker cron is a second,
+independent wake-up call in case the GitHub Actions cron is delayed —
+`generate_card.py`'s own guards (today's-card-exists / eveningDone) make
+double-triggering harmless.
+
+Requires secret `GH_DISPATCH_TOKEN` — a GitHub **fine-grained PAT** scoped to
+this repo with **Actions: Read and write** permission (Settings → Developer
+settings → Fine-grained tokens). Optional: if unset, the cron handler logs an
+error and no-ops (webhook/chat path is unaffected — `GH_DISPATCH_TOKEN` is
+NOT in `env-guard.ts`'s required keys).
+
 ## Auto-deploy on push
 
 `.github/workflows/deploy-bot.yml` triggers wrangler deploy on push to `main` when `bot/**` files change. Set repo secrets:
@@ -122,6 +142,7 @@ Message the bot on Telegram:
 - `CF_KV_NAMESPACE_ID` — real STATE KV namespace id (injected into `wrangler.toml` placeholder at deploy time)
 - `TELEGRAM_BOT_TOKEN`, `TELEGRAM_WEBHOOK_SECRET`, `GEMINI_API_KEY`, `OPENAI_API_KEY`, `ALLOWED_CHAT_IDS` — synced to the Worker as `wrangler secret`
 - `JINA_API_KEY` — optional
+- `GH_DISPATCH_TOKEN` — optional, powers the cron → GitHub Actions dispatch above
 
 ## Local dev
 
@@ -157,6 +178,7 @@ bot/
     ├── types.ts            # Env + DigestData interfaces
     ├── access.ts           # whitelist gate
     ├── env-guard.ts         # assertEnv() — validates required env/secrets at request start
+    ├── dispatch.ts           # cron trigger → dispatchWorkflow() POSTs morning.yml workflow_dispatch
     ├── http.ts              # fetchWithTimeout / fetchJson — used by every external call
     ├── binary.ts             # base64 <-> bytes helpers
     ├── telegram.ts          # Telegram API wrapper (sendMessage/sendLongMessage/sendPhotoBlob)
