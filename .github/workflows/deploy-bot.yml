@@ -74,7 +74,6 @@ jobs:
             OPENAI_API_KEY
             ALLOWED_CHAT_IDS
             JINA_API_KEY
-            GH_DISPATCH_TOKEN
         env:
           TELEGRAM_BOT_TOKEN:       ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_WEBHOOK_SECRET:  ${{ secrets.TELEGRAM_WEBHOOK_SECRET }}
@@ -82,7 +81,23 @@ jobs:
           OPENAI_API_KEY:           ${{ secrets.OPENAI_API_KEY }}
           ALLOWED_CHAT_IDS:         ${{ secrets.ALLOWED_CHAT_IDS }}
           JINA_API_KEY:             ${{ secrets.JINA_API_KEY }}
-          GH_DISPATCH_TOKEN:        ${{ secrets.GH_DISPATCH_TOKEN }}
+
+      # Optional — only synced when the repo secret exists, so the deploy stays
+      # green before you create the PAT. Cloudflare cron dispatch is a no-op
+      # (dispatch.ts guards) until this is set.
+      - name: Set GH_DISPATCH_TOKEN (optional — enables Cloudflare cron dispatch)
+        working-directory: bot
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          GH_DISPATCH_TOKEN: ${{ secrets.GH_DISPATCH_TOKEN }}
+        run: |
+          if [ -n "$GH_DISPATCH_TOKEN" ]; then
+            printf '%s' "$GH_DISPATCH_TOKEN" | npx wrangler secret put GH_DISPATCH_TOKEN
+            echo "GH_DISPATCH_TOKEN synced — Cloudflare cron dispatch enabled."
+          else
+            echo "::notice::GH_DISPATCH_TOKEN not set — Cloudflare cron dispatch disabled until you add the repo secret."
+          fi
 
       - name: Register Telegram webhook
         env:
