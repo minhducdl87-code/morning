@@ -3,13 +3,204 @@
     "date": "2026-07-16",
     "dayLabel": "Thứ Năm",
     "dateLabel": "16/07/2026",
-    "entertainment": [],
-    "trending": [],
-    "gaming": [],
-    "lifestyle": [],
-    "vietnam": [],
-    "tech": [],
-    "finance": []
+    "entertainment": [
+      {
+        "title": "⚽ Vợ con Messi vỡ òa khi Argentina vào chung kết",
+        "desc": "Gia đình Messi không giấu nổi niềm hạnh phúc khi Argentina giành vé vào chung kết World Cup 2026, khoảnh khắc xúc động lan tỏa khắp mạng xã hội.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "16/07·VnExpress",
+        "url": "https://vnexpress.net/vo-con-messi-vo-oa-khi-argentina-vao-chung-ket-5097943.html"
+      },
+      {
+        "title": "👰 Quân A.P và Lê Khanh 'trượt tay' lộ ảnh cưới tại Ý",
+        "desc": "Cặp đôi Quân A.P và Lê Khanh khiến fan đứng ngồi không yên khi vô tình để lộ loạt ảnh cưới lãng mạn chụp tại Ý, báo hiệu tin vui sắp về chung một nhà.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "16/07·Kenh14",
+        "url": "https://kenh14.vn/hot-quan-ap-va-le-khanh-truot-tay-lo-anh-cuoi-chup-tai-y-215260716003458492.chn"
+      },
+      {
+        "title": "💎 Người đẹp Vbiz sở hữu 2 viên kim cương hơn 1000 tỷ đồng là ai?",
+        "desc": "Danh tính mỹ nhân Việt gây choáng váng khi được tiết lộ sở hữu bộ sưu tập kim cương trị giá hơn 1000 tỷ đồng, khiến cộng đồng mạng xôn xao bàn tán.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "15/07·Kenh14",
+        "url": "https://kenh14.vn/nguoi-dep-vbiz-so-huu-2-vien-kim-cuong-hon-1000-ty-dong-la-ai-215260715230835777.chn"
+      },
+      {
+        "title": "🎬 'The Odyssey' gây sốt MXH: Kỹ xảo đỉnh cao, bối cảnh hoành tráng",
+        "desc": "Bộ phim 'The Odyssey' đang làm mưa làm gió mạng xã hội với những lời khen 'có cánh' về kỹ xảo mãn nhãn và bối cảnh hùng vĩ, khiến người xem 'nổi da gà'.",
+        "tag": "movie",
+        "tagLabel": "🎬 PHIM",
+        "source": "16/07·Kenh14",
+        "url": "https://kenh14.vn/mxh-phat-cuong-vi-the-odyssey-khuc-bi-trang-bung-no-moi-giac-quan-noi-da-ga-tu-boi-canh-den-ky-xao-215260716014942841.chn"
+      },
+      {
+        "title": "🎤 3 ngôi sao '10 năm không chạy show' vẫn làm Hà Nội 'nóng' gấp 4 lần",
+        "desc": "Lượng tìm kiếm về Hà Nội tăng gấp 4 lần nhờ 3 ngôi sao đình đám tổ chức concert, chứng tỏ sức hút 'khủng' dù đã lâu không xuất hiện trên sân khấu.",
+        "tag": "music",
+        "tagLabel": "🎵 MUSIC",
+        "source": "15/07·Kenh14",
+        "url": "https://kenh14.vn/3-ngoi-sao-khien-luong-tim-kiem-ha-noi-tang-gap-4-lan-ca-nuoc-di-xem-concert-10-nam-khong-chay-show-van-chua-het-thoi-215260715223018592.chn"
+      }
+    ],
+    "trending": [
+      {
+        "title": "🎙️ BLV viral với câu nói về Argentina là ai?",
+        "desc": "Một bình luận viên bất ngờ trở thành hiện tượng mạng xã hội với câu nói 'đi vào lòng người' về đội tuyển Argentina, khiến fan bóng đá thích thú truy lùng danh tính.",
+        "tag": "viral",
+        "tagLabel": "🔥 VIRAL",
+        "source": "16/07·Znews",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQmQ2YXdPSjZsRzFIRjhTQVZiaDF3dmxkajJINFFSNEc3RHdWelhZenNLdlMySGppY1FXaTRwbGwxczdNUVlpZ2F1RTl2eXFfWXJUd0tLSG4ycWc4MlRqRVRrVThFekpZTlRxQ28wa2dCREc1bkVXbUZtQ2dFbUIxMDVoZWN6M1RkdVFlWldWRUI?oc=5"
+      }
+    ],
+    "gaming": [
+      {
+        "title": "🎮 T1 bị chỉ trích vì đội hình tiêu biểu MSI 2026",
+        "desc": "Hai tuyển thủ T1 gây tranh cãi dữ dội khi xuất hiện trong đội hình tiêu biểu MSI 2026 do fan bình chọn, khiến cộng đồng game thủ dậy sóng.",
+        "tag": "event",
+        "tagLabel": "🎪 EVENT",
+        "source": "15/07·cl44.cnnd.vn",
+        "url": "https://cl44.cnnd.vn/doi-hinh-tieu-bieu-fan-binh-chon-cho-msi-2026-khien-cap-sao-t1-bi-chi-trich-178260715172713746.chn"
+      },
+      {
+        "title": "🐉 Dragon Ball hé lộ tạo hình Super Saiyan Gohan hiếm có sau 32 năm",
+        "desc": "Một bản phác thảo hiếm của Akira Toriyama vừa được hé lộ sau hơn 32 năm, đưa Super Saiyan Gohan trở lại tâm điểm chú ý của fan Dragon Ball.",
+        "tag": "console",
+        "tagLabel": "🎮 CONSOLE",
+        "source": "15/07·cl44.cnnd.vn",
+        "url": "https://cl44.cnnd.vn/dragon-ball-he-lo-tao-hinh-super-saiyan-gohan-hiem-co-sau-32-nam-178260715170526153.chn"
+      },
+      {
+        "title": "🎁 Code Arknights: Endfield VN mới nhất 07/2026",
+        "desc": "Game thủ Arknights: Endfield Việt Nam đừng bỏ lỡ cơ hội nhận quà khủng với loạt Code mới nhất tháng 07/2026 vừa được phát hành.",
+        "tag": "mobile",
+        "tagLabel": "📱 MOBILE",
+        "source": "15/07·Thể Thao 247",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdWJVY0JyNFViaUxXSWxVOWJQVkdrVFdsMUVQSzA1ci0yb3l6VkUxdlZpcWVCbFZ1OC1CY043ekNkOGlPY1h5d1ZPdHhqTWdKeUtIWUlqUGRha3RoNG5EQVBKVGNJaGRyMDNrLXRyby1SclZOTlp5dXVqeTBqRHR3WVAxN2hINmtqRjFCd19XeVI?oc=5"
+      }
+    ],
+    "lifestyle": [
+      {
+        "title": "🍎 Chuyên gia Nhật Bản cảnh báo 5 sai lầm khi ăn táo",
+        "desc": "Dù táo rất tốt cho sức khỏe, chuyên gia Nhật Bản chỉ ra 5 sai lầm phổ biến khi ăn táo có thể gây hại, bạn nên lưu ý để tránh mắc phải.",
+        "tag": "health",
+        "tagLabel": "💪 HEALTH",
+        "source": "15/07·VnExpress",
+        "url": "https://vnexpress.net/chuyen-gia-nhat-ban-canh-bao-5-sai-lam-an-tao-co-the-hai-suc-khoe-5097794.html"
+      },
+      {
+        "title": "🤯 Nín thở vì tin nhắn công việc: Stress bào mòn dân văn phòng",
+        "desc": "Áp lực từ tin nhắn công việc ngoài giờ đang trở thành một loại stress 'vô hình', bào mòn sức khỏe tinh thần của rất nhiều dân văn phòng.",
+        "tag": "wellness",
+        "tagLabel": "🧘 WELLNESS",
+        "source": "13/07·VnExpress",
+        "url": "https://vnexpress.net/nin-tho-vi-tin-nhan-cong-viec-loai-stress-bao-mon-suc-khoe-dan-van-phong-5097042.html"
+      },
+      {
+        "title": "✈️ Hà Nội thời 'bia hơi 2.000 đồng' trong mắt khách Tây",
+        "desc": "Một du khách Đức chia sẻ những cảm nhận thú vị về Hà Nội giai đoạn 'bia hơi 2.000 đồng', mang đến góc nhìn hoài niệm và độc đáo về thủ đô.",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "15/07·VnExpress",
+        "url": "https://vnexpress.net/ha-noi-thoi-bia-hoi-2-000-dong-trong-mat-khach-tay-5097209.html"
+      },
+      {
+        "title": "🍜 CoCo Dining ra mắt menu tôn vinh ẩm thực Việt",
+        "desc": "Nhà hàng CoCo Dining vừa giới thiệu thực đơn mới 'Lưu Tích - The Living Archive', khai thác và tôn vinh những giá trị di sản ẩm thực Việt Nam.",
+        "tag": "food",
+        "tagLabel": "🍜 FOOD",
+        "source": "15/07·VnExpress",
+        "url": "https://vnexpress.net/coco-dining-ra-mat-menu-ton-vinh-di-san-am-thuc-viet-5097461.html"
+      }
+    ],
+    "vietnam": [
+      {
+        "title": "🚧 Dỡ hàng loạt nhà mặt tiền mở rộng cửa ngõ phía tây TP HCM",
+        "desc": "Nhiều nhà dân và cửa hàng ở cửa ngõ phía tây TP HCM đang được tháo dỡ để mở rộng đường, hứa hẹn giảm ùn tắc và cải thiện giao thông khu vực.",
+        "tag": "traffic",
+        "tagLabel": "🚦 GIAO THÔNG",
+        "source": "14/07·VnExpress",
+        "url": "https://vnexpress.net/do-hang-loat-nha-mat-tien-mo-rong-cua-ngo-phia-tay-tp-hcm-5097117.html"
+      },
+      {
+        "title": "💸 Tài xế bị phạt 19 triệu đồng vì định vượt gác chắn tàu",
+        "desc": "Một tài xế đã bị phạt nặng 19 triệu đồng vì hành vi cố tình vượt gác chắn khi tàu sắp qua, là lời cảnh tỉnh về an toàn giao thông đường sắt.",
+        "tag": "traffic",
+        "tagLabel": "🚦 GIAO THÔNG",
+        "source": "15/07·VnExpress",
+        "url": "https://vnexpress.net/tai-xe-bi-phat-19-trieu-dong-vi-dinh-vuot-gac-chan-khi-tau-sap-qua-5097908.html"
+      },
+      {
+        "title": "📈 Cổ phiếu Masan Consumer, TCBS vào rổ VN30 từ đầu tháng 8",
+        "desc": "Cổ phiếu MCH của Masan Consumer và TCBS sẽ chính thức gia nhập rổ VN30 từ tháng 8, mở ra cơ hội thu hút dòng tiền lớn từ các quỹ đầu tư.",
+        "tag": "economy",
+        "tagLabel": "💼 KINH TẾ",
+        "source": "16/07·VnExpress",
+        "url": "https://vnexpress.net/co-phieu-masan-consumer-tcbs-vao-ro-vn30-tu-dau-thang-8-5097858.html"
+      },
+      {
+        "title": "🌧️ Sở Xây dựng Hà Nội: 'Nước dâng 30 cm và quá 30 phút mới gọi là ngập úng'",
+        "desc": "Giám đốc Sở Xây dựng Hà Nội đưa ra định nghĩa mới về 'ngập úng' gây tranh cãi, cho rằng chỉ khi nước dâng 30 cm và kéo dài hơn 30 phút mới tính.",
+        "tag": "society",
+        "tagLabel": "🏙️ XÃ HỘI",
+        "source": "15/07·VnExpress",
+        "url": "https://vnexpress.net/so-xay-dung-ha-noi-nuoc-dang-30-cm-va-qua-30-phut-moi-goi-la-ngap-ung-5097729.html"
+      },
+      {
+        "title": "🛣️ Thủ tướng đồng ý đầu tư cao tốc Tuyên Quang - Hà Giang lên 4 làn",
+        "desc": "Thủ tướng đã đồng ý nâng quy mô giai đoạn 1 cao tốc Tuyên Quang - Hà Giang lên 4 làn xe, thúc đẩy phát triển kinh tế xã hội khu vực miền núi phía Bắc.",
+        "tag": "policy",
+        "tagLabel": "📜 CHÍNH SÁCH",
+        "source": "15/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/thu-tuong-dong-y-dau-tu-cao-toc-tuyen-quang-ha-giang-giai-doan-1-len-quy-mo-4-lan-100260715223315397.htm"
+      }
+    ],
+    "tech": [
+      {
+        "title": "🚀 SpaceX phóng Starship lần thứ 13, mang Starlink thế hệ mới",
+        "desc": "SpaceX chuẩn bị phóng Starship lần thứ 13 vào ngày 16/7, đánh dấu lần đầu tiên mang theo vệ tinh Starlink thế hệ mới, mở ra kỷ nguyên mới cho internet vệ tinh.",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "16/07·Tinhte",
+        "url": "https://tinhte.vn/thread/spacex-chuan-bi-phong-starship-lan-thu-13-lan-dau-tien-mang-theo-ve-tinh-starlink-the-he-moi.4160875/"
+      },
+      {
+        "title": "📱 Xiaomi 17 Ultra đã lên Android 17, mời anh em cập nhật",
+        "desc": "Người dùng Xiaomi 17 Ultra đã có thể cập nhật lên Android 17 với bản vá hơn 9GB, hứa hẹn nhiều cải tiến về hiệu năng và tính năng mới.",
+        "tag": "review",
+        "tagLabel": "⭐ REVIEW",
+        "source": "16/07·Tinhte",
+        "url": "https://tinhte.vn/thread/xiaomi-17-ultra-cua-minh-da-len-android-17-moi-anh-em-cap-nhat.4160833/"
+      }
+    ],
+    "finance": [
+      {
+        "title": "🪙 Quỹ vàng lớn nhất thế giới 'xả' hàng tấn vàng",
+        "desc": "Quỹ vàng lớn nhất thế giới SPDR Gold Trust bất ngờ quay đầu bán ròng hàng tấn vàng, diễn ra trong bối cảnh giá vàng vẫn giữ ngưỡng tâm lý quan trọng.",
+        "tag": "gold",
+        "tagLabel": "🪙 VÀNG",
+        "source": "16/07·CafeF",
+        "url": "https://cafef.vn/quy-vang-lon-nhat-the-gioi-quay-dau-xa-hang-tan-vang-188260716091138403.chn"
+      },
+      {
+        "title": "📈 Chứng khoán Argentina tăng 'vô địch' thế giới",
+        "desc": "Chỉ số chứng khoán của Argentina tăng 'vô địch' thế giới, nhưng lại đi kèm với những 'cơn đau đầu' cho hàng chục triệu người dân nước này.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "15/07·CafeF",
+        "url": "https://cafef.vn/que-huong-argentina-cua-messi-chi-so-chung-khoan-tang-vo-dich-the-gioi-nhung-lai-khien-hang-chuc-trieu-nguoi-dau-dau-188260715230245928.chn"
+      },
+      {
+        "title": "🏠 Biệt thự, liền kề Hà Nội hạ nhiệt: Giá sơ cấp còn 210 triệu/m2",
+        "desc": "Thị trường biệt thự, liền kề Hà Nội có dấu hiệu hạ nhiệt, giá bán sơ cấp chỉ còn 210 triệu đồng/m2 đất, phân khúc trên 17 tỷ đồng/căn khó bán.",
+        "tag": "realestate",
+        "tagLabel": "🏠 BĐS",
+        "source": "16/07·CafeBiz",
+        "url": "https://cafebiz.vn/biet-thu-lien-ke-ha-noi-xuat-hien-dau-hieu-ha-nhiet-gia-ban-so-cap-con-210-trieu-dong-m2-dat-phan-khuc-tren-17-ty-dong-can-kho-ban-176260716085119988.chn"
+      }
+    ]
   },
   {
     "date": "2026-07-15",
