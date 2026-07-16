@@ -36,24 +36,33 @@ def empty_card(date_str: str, day_label: str, date_label: str, output_fields: li
     return c
 
 
+def _count_items(card: dict | None, output_fields: list) -> int:
+    if not card:
+        return 0
+    return sum(len(card.get(f, []) or []) for f in output_fields)
+
+
 def generate_card_json(prompt: str, has_data: bool, date_str: str, day_label: str,
                         date_label: str, output_fields: list) -> dict:
-    """Call Gemini (pre-fetched context first, fallback Google Search grounding), parse JSON."""
+    """Call Gemini (pre-fetched context), parse JSON. Retry with Google Search
+    grounding when the response is missing/unparseable/empty (0 items) — a
+    truncated or malformed JSON must NOT silently produce an empty digest."""
     text, _ = call_gemini(prompt, use_search=False)
-    if not text or not has_data:
-        print("Falling back to Gemini + Google Search grounding...")
+    if text:
+        print(f"Raw response preview: {text[:300]}...")
+    card_json = parse_llm_json(text) if text else None
+    total = _count_items(card_json, output_fields)
+
+    # Fallback when nothing usable came back (empty text, parse failure, or 0 items).
+    if total == 0 or not has_data:
+        print(f"Primary attempt yielded {total} items — falling back to Gemini + Google Search grounding...")
         text2, _ = call_gemini(prompt, retries=1, use_search=True)
-        if text2:
-            text = text2
+        card2 = parse_llm_json(text2) if text2 else None
+        if _count_items(card2, output_fields) > 0:
+            card_json = card2
 
-    if not text:
-        print("All attempts failed. Using fallback card.")
-        return empty_card(date_str, day_label, date_label, output_fields)
-
-    print(f"Raw response preview: {text[:300]}...")
-    card_json = parse_llm_json(text)
     if not card_json:
-        print("Could not parse JSON, using fallback")
+        print("All attempts failed / unparseable. Using empty card.")
         card_json = empty_card(date_str, day_label, date_label, output_fields)
 
     card_json.setdefault("date", date_str)

@@ -20,7 +20,7 @@ def call_gemini(
     prompt: str,
     use_search: bool = False,
     thinking_budget: int = 2048,
-    max_output_tokens: int = 8192,
+    max_output_tokens: int = 32768,   # 8192 truncated the 7-topic JSON mid-way → parse fail → empty card
     temperature: float = 0.3,
     retries: int = 2,
     model: str = "gemini-2.5-flash",

@@ -149,6 +149,9 @@ if MODE == "evening":
         print("No new evening items — skipping notification (avoid spam)")
         sys.exit(0)
 else:
+    if not collect_items(card):
+        print("Morning card has no items — skipping notification (avoid empty digest)")
+        sys.exit(0)
     message = build_morning_message(card)
 
 url      = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"

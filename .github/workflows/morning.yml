@@ -61,7 +61,8 @@ jobs:
                   cards = json.load(f)
           except FileNotFoundError:
               cards = []
-          skip = bool(cards) and cards[0].get("date") == today
+          has_items = bool(cards) and any(isinstance(v, list) and v for v in cards[0].values())
+          skip = bool(cards) and cards[0].get("date") == today and has_items
           print("true" if skip else "false")
           PY
           )
