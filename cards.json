@@ -43,6 +43,60 @@
         "tagLabel": "🎵 MUSIC",
         "source": "15/07·Kenh14",
         "url": "https://kenh14.vn/3-ngoi-sao-khien-luong-tim-kiem-ha-noi-tang-gap-4-lan-ca-nuoc-di-xem-concert-10-nam-khong-chay-show-van-chua-het-thoi-215260715223018592.chn"
+      },
+      {
+        "title": "⭐ Haaland ăn tối cùng Spider-Man!",
+        "desc": "Cầu thủ Erling Haaland gây sốt khi nhận lời mời ăn tối từ Tom Holland, nghe là muốn buôn chuyện với đồng nghiệp rồi!",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "16/07·vnexpress.net",
+        "url": "https://vnexpress.net/erling-haaland-gay-sot-khi-nhan-loi-moi-an-toi-cua-tom-holland-5098219.html",
+        "addedEvening": true
+      },
+      {
+        "title": "⭐ Việt Anh - Quỳnh Nga sắp cưới?",
+        "desc": "Sau 7 năm vướng tin đồn, diễn viên Việt Anh xác nhận hẹn hò Quỳnh Nga và nhiều người đang chờ một cái kết đẹp cho cặp đôi này.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "16/07·kenh14.vn",
+        "url": "https://kenh14.vn/viet-anh-va-quynh-nga-sap-cuoi-215260716155538999.chn",
+        "addedEvening": true
+      },
+      {
+        "title": "⭐ Sao Việt mừng Argentina vào chung kết",
+        "desc": "Mỹ Tâm, Lê Minh cùng nhiều sao Việt khác đã không giấu được niềm vui khi Argentina giành vé vào chung kết World Cup.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "16/07·vnexpress.net",
+        "url": "https://vnexpress.net/sao-viet-vui-mung-khi-argentina-vao-chung-ket-world-cup-5098094.html",
+        "addedEvening": true
+      },
+      {
+        "title": "⭐ Cặp đôi đình đám Vbiz ly hôn trước cưới",
+        "desc": "Một cặp đôi đình đám showbiz Việt bất ngờ ly hôn ngay trước thềm đám cưới, khiến fan không khỏi tiếc nuối và bàn tán.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "16/07·kenh14.vn",
+        "url": "https://kenh14.vn/cang-cap-doi-dinh-dam-showbiz-vua-ly-hon-ngay-truoc-ngay-cuoi-215260716151439114.chn",
+        "addedEvening": true
+      },
+      {
+        "title": "⭐ Huỳnh Nhật Hoa khóc nhớ vợ",
+        "desc": "Diễn viên gạo cội Huỳnh Nhật Hoa, người từng đóng vai Quách Tĩnh, xúc động chia sẻ về người vợ quá cố, khiến nhiều fan thương cảm.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "16/07·vnexpress.net",
+        "url": "https://vnexpress.net/quach-tinh-huynh-nhat-hoa-khoc-nho-vo-5098173.html",
+        "addedEvening": true
+      },
+      {
+        "title": "🎵 Nam nghệ sĩ “quái vật streaming” nhạc Việt",
+        "desc": "Một nam nghệ sĩ lặng lẽ lên top 1, trở thành “quái vật streaming” nhạc Việt dù tưởng chừng bị MCK cướp spotlight.",
+        "tag": "music",
+        "tagLabel": "🎵 MUSIC",
+        "source": "16/07·kenh14.vn",
+        "url": "https://kenh14.vn/nam-nghe-si-bi-mck-cuop-spotlight-lang-le-len-top-1-tam-ngam-tam-ngam-ma-thanh-quai-vat-streaming-nhac-viet-215260716190335745.chn",
+        "addedEvening": true
       }
     ],
     "trending": [
@@ -53,6 +107,15 @@
         "tagLabel": "🔥 VIRAL",
         "source": "16/07·Znews",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQmQ2YXdPSjZsRzFIRjhTQVZiaDF3dmxkajJINFFSNEc3RHdWelhZenNLdlMySGppY1FXaTRwbGwxczdNUVlpZ2F1RTl2eXFfWXJUd0tLSG4ycWc4MlRqRVRrVThFekpZTlRxQ28wa2dCREc1bkVXbUZtQ2dFbUIxMDVoZWN6M1RkdVFlWldWRUI?oc=5"
+      },
+      {
+        "title": "📱 Vietnam Airlines “đu trend” tổng tài",
+        "desc": "Vietnam Airlines gây sốt với clip “tổng tài - nữ chính phim mì ăn liền” trên TikTok, nửa đầu rung động, nửa sau tỉnh mộng.",
+        "tag": "tiktok",
+        "tagLabel": "📱 TIKTOK",
+        "source": "16/07·CafeF",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPWEM2ZDg5WmdORENGcHVHVENMbzJpbHg0cENrUDZrdWwzSTBneXc2dzFkQWVtTWd4VmE1RHQ0NzhBanhrTmVxcndPa3JGS0dkZlpOMVpxOHE5TE43UkpCaDRFSFJfU2ZDeExVSjNrSVJRb1RUQ2R5c0tFOENEX05pbjRTeG13MFVZNTIwZmVfckt6QVNtRThuRTJnM3FLOF9hTkZvT3BhdGZtZ18wSUlQLWpSQkpwWkdCQ3k5TXZkbGVQUUZzTGowVXkzOWRvRm9V?oc=5",
+        "addedEvening": true
       }
     ],
     "gaming": [
@@ -79,6 +142,33 @@
         "tagLabel": "📱 MOBILE",
         "source": "15/07·Thể Thao 247",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdWJVY0JyNFViaUxXSWxVOWJQVkdrVFdsMUVQSzA1ci0yb3l6VkUxdlZpcWVCbFZ1OC1CY043ekNkOGlPY1h5d1ZPdHhqTWdKeUtIWUlqUGRha3RoNG5EQVBKVGNJaGRyMDNrLXRyby1SclZOTlp5dXVqeTBqRHR3WVAxN2hINmtqRjFCd19XeVI?oc=5"
+      },
+      {
+        "title": "💻 Gunbound Legend đổ bộ Mobile & PC",
+        "desc": "Tựa game Vua Tọa Độ huyền thoại Gunbound Legend đã trở lại với diện mạo mới, đổ bộ cả Mobile và PC, hứa hẹn bùng nổ.",
+        "tag": "pc",
+        "tagLabel": "💻 PC",
+        "source": "16/07·m.gamek.vn",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSVRXLTZqZHZVQXZCSGFDa0x4ZGhKV2dEV2xXdE9mVy1vaEc2SGpWcWVEYWlVSUc4bmFaeENjU0prVTF2RVN4SGpLSU5pLUgyNVhPR3FoclQ0UEFQX1Rrc0tVSldZUjR3T1dLa2NKSGFFbjJzOUNKR3J5dmN1Tk94TVpqNFpST0x4d3NmZ2VTc3BlR1hHaENNaGgyYmMwY1VyWE5ubWZWSEItNTg?oc=5",
+        "addedEvening": true
+      },
+      {
+        "title": "🎮 Manga hay nhất 2026: One Piece chỉ thứ 7",
+        "desc": "Bảng xếp hạng manga được yêu thích nhất năm 2026 tại Nhật Bản vừa công bố, với ngôi vương thuộc về một cái tên đầy bất ngờ.",
+        "tag": "console",
+        "tagLabel": "🎮 CONSOLE",
+        "source": "16/07·cl44.cnnd.vn",
+        "url": "https://cl44.cnnd.vn/nhat-ban-cong-bo-manga-hay-nhat-nam-2026-one-piece-chi-dung-thu-7-ngoi-vuong-thuoc-ve-cai-ten-day-bat-ngo-178260716153441444.chn",
+        "addedEvening": true
+      },
+      {
+        "title": "💻 Top game Tam Quốc đáng chơi nhất",
+        "desc": "Nếu bạn là fan của Tam Quốc, đừng bỏ qua top 6 game đáng chơi nhất hiện nay trên cả Mobile, PC và Steam.",
+        "tag": "pc",
+        "tagLabel": "💻 PC",
+        "source": "16/07·m.gamek.vn",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaGtJVDVJLWtzX3U4S0lDY2l5Zm00NkZBRUxuZ3hITmM3RFlGYmsyMWkyU0wzYllRRkc3YlpkVm01STRmaUszRVYzNWpBTFJRdmljTHg2RW1COWo5RzMtamJJajQzc20wV0JXMXZ3emZtekNIQ0hBZ1ZmVWRvMUtySjBlczVvaDlDZWF1eVVTd2V3NkVoM21maTJBNXAyZ3h4?oc=5",
+        "addedEvening": true
       }
     ],
     "lifestyle": [
@@ -113,6 +203,51 @@
         "tagLabel": "🍜 FOOD",
         "source": "15/07·VnExpress",
         "url": "https://vnexpress.net/coco-dining-ra-mat-menu-ton-vinh-di-san-am-thuc-viet-5097461.html"
+      },
+      {
+        "title": "💪 Nguy kịch vì thuốc chứa chất cấm",
+        "desc": "Một người đã nguy kịch sau khi uống 5 lọ thuốc chứa Phenylbutazone, một hoạt chất bị cấm, cảnh báo về việc sử dụng thuốc không rõ nguồn gốc.",
+        "tag": "health",
+        "tagLabel": "💪 HEALTH",
+        "source": "16/07·vnexpress.net",
+        "url": "https://vnexpress.net/nguy-kich-sau-uong-5-lo-thuoc-chua-chat-cam-5098315.html",
+        "addedEvening": true
+      },
+      {
+        "title": "🍜 3 món bánh gây hại thận nếu ăn sai",
+        "desc": "Bác sĩ chỉ ra 3 món bánh có nhân như sủi cảo, tiểu long bao có thể gây hại thận nếu ăn sai cách, bạn nên cẩn trọng nhé.",
+        "tag": "food",
+        "tagLabel": "🍜 FOOD",
+        "source": "16/07·vnexpress.net",
+        "url": "https://vnexpress.net/bac-si-chi-ra-3-mon-banh-co-nhan-gay-hai-than-neu-an-sai-cach-5098209.html",
+        "addedEvening": true
+      },
+      {
+        "title": "✈️ Phú Quốc đăng cai lễ hội sáo quốc tế",
+        "desc": "Phú Quốc lần đầu tiên đăng cai Vietnam International Flute Festival 2026, hứa hẹn mang đến những trải nghiệm văn hóa độc đáo.",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "16/07·vnexpress.net",
+        "url": "https://vnexpress.net/phu-quoc-lan-dau-dang-cai-le-hoi-sao-quoc-te-viff-2026-5098223.html",
+        "addedEvening": true
+      },
+      {
+        "title": "💪 Triệu phú Mỹ chi 2,6 triệu USD thí nghiệm trường thọ",
+        "desc": "Bạn gái của một triệu phú Mỹ chấp nhận chu trình kiểm tra nghiêm ngặt, chi 2,6 triệu USD để thí nghiệm trường thọ trên cơ thể mình.",
+        "tag": "wellness",
+        "tagLabel": "🧘 WELLNESS",
+        "source": "16/07·vnexpress.net",
+        "url": "https://vnexpress.net/ban-gai-trieu-phu-my-chi-2-6-trieu-usd-thi-nghiem-truong-tho-tren-co-the-5098154.html",
+        "addedEvening": true
+      },
+      {
+        "title": "✈️ Regent Phú Quốc vào Top 100 khách sạn thế giới",
+        "desc": "Regent Phú Quốc là đại diện duy nhất của Việt Nam lọt vào Top 100 khách sạn tốt nhất thế giới, khẳng định đẳng cấp du lịch Việt.",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "16/07·vnexpress.net",
+        "url": "https://vnexpress.net/regent-phu-quoc-vao-top-100-khach-san-tot-nhat-the-gioi-5098089.html",
+        "addedEvening": true
       }
     ],
     "vietnam": [
@@ -155,6 +290,51 @@
         "tagLabel": "📜 CHÍNH SÁCH",
         "source": "15/07·Tuổi Trẻ",
         "url": "https://tuoitre.vn/thu-tuong-dong-y-dau-tu-cao-toc-tuyen-quang-ha-giang-giai-doan-1-len-quy-mo-4-lan-100260715223315397.htm"
+      },
+      {
+        "title": "📜 Lương tối thiểu vùng dự kiến tăng 390.000 đồng",
+        "desc": "Hội đồng Tiền lương quốc gia thống nhất đề xuất tăng lương tối thiểu vùng cao nhất 390.000 đồng, ảnh hưởng trực tiếp đến thu nhập người lao động.",
+        "tag": "policy",
+        "tagLabel": "📜 CHÍNH SÁCH",
+        "source": "16/07·vnexpress.net",
+        "url": "https://vnexpress.net/luong-toi-thieu-vung-du-kien-tang-cao-nhat-390-000-dong-5098028.html",
+        "addedEvening": true
+      },
+      {
+        "title": "🚦 Mở rộng cao tốc TP.HCM - Trung Lương - Mỹ Thuận 27.000 tỉ đồng",
+        "desc": "Dự án mở rộng cao tốc TP.HCM - Trung Lương - Mỹ Thuận với hợp đồng tín dụng hơn 27.000 tỉ đồng, hứa hẹn giảm ùn tắc giao thông khu vực.",
+        "tag": "traffic",
+        "tagLabel": "🚦 GIAO THÔNG",
+        "source": "16/07·tuoitre.vn",
+        "url": "https://tuoitre.vn/ky-hop-dong-tin-dung-hon-27000-ti-dong-de-mo-rong-cao-toc-tphcm-trung-luong-my-thuan-10026071617275034.htm",
+        "addedEvening": true
+      },
+      {
+        "title": "🏙️ Phú Quốc cắt nước 3.000 hộ dân",
+        "desc": "Hàng nghìn hộ dân Phú Quốc bị cắt nước nhiều ngày do vỡ đường ống, ảnh hưởng lớn đến sinh hoạt của người dân.",
+        "tag": "society",
+        "tagLabel": "🏙️ XÃ HỘI",
+        "source": "16/07·vnexpress.net",
+        "url": "https://vnexpress.net/3-000-ho-dan-phu-quoc-bi-cat-nuoc-nhieu-ngay-do-vo-duong-ong-5098127.html",
+        "addedEvening": true
+      },
+      {
+        "title": "💼 FPT thắng thầu 14 dự án hơn 3.600 tỷ đồng",
+        "desc": "FPT vừa thắng thầu 14 dự án trị giá ít nhất hơn 3.600 tỷ đồng, cho thấy sự phát triển mạnh mẽ của tập đoàn công nghệ này.",
+        "tag": "economy",
+        "tagLabel": "💼 KINH TẾ",
+        "source": "16/07·cafef.vn",
+        "url": "https://cafef.vn/fpt-thang-thau-14-du-an-tri-gia-it-nhat-hon-3600-ty-dong-188260716201654253.chn",
+        "addedEvening": true
+      },
+      {
+        "title": "📜 Lần đầu trình Quốc hội luật chống vũ khí hủy diệt",
+        "desc": "Chính phủ lần đầu trình Quốc hội Luật phòng, chống phổ biến vũ khí hủy diệt hàng loạt, thể hiện cam kết của Việt Nam với an ninh toàn cầu.",
+        "tag": "policy",
+        "tagLabel": "📜 CHÍNH SÁCH",
+        "source": "16/07·vnexpress.net",
+        "url": "https://vnexpress.net/lan-dau-trinh-quoc-hoi-luat-chong-pho-bien-vu-khi-huy-diet-hang-loat-5098130.html",
+        "addedEvening": true
       }
     ],
     "tech": [
@@ -173,6 +353,33 @@
         "tagLabel": "⭐ REVIEW",
         "source": "16/07·Tinhte",
         "url": "https://tinhte.vn/thread/xiaomi-17-ultra-cua-minh-da-len-android-17-moi-anh-em-cap-nhat.4160833/"
+      },
+      {
+        "title": "🚀 OpenAI ra mắt bàn phím Codex Micro",
+        "desc": "OpenAI giới thiệu sản phẩm phần cứng đầu tiên là bàn phím custom Codex Micro để điều khiển trực tiếp ứng dụng Codex, hợp tác cùng Worker Louder.",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "16/07·tinhte.vn",
+        "url": "https://tinhte.vn/thread/openai-gioi-thieu-codex-micro-ban-phim-custom-dieu-khien-codex.4160891/",
+        "addedEvening": true
+      },
+      {
+        "title": "⭐ Xiaomi Smart Band 10 Pro: Pin 21 ngày",
+        "desc": "Xiaomi Smart Band 10 Pro ra mắt với màn hình lớn 1.74 inch và thời lượng pin ấn tượng lên đến 21 ngày, rất tiện lợi cho người dùng bận rộn.",
+        "tag": "review",
+        "tagLabel": "⭐ REVIEW",
+        "source": "16/07·tinhte.vn",
+        "url": "https://tinhte.vn/thread/mo-hop-tren-tay-xiaomi-smart-band-10-pro-man-hinh-lon-1-74-inch-pin-len-den-21-ngay.4159650/",
+        "addedEvening": true
+      },
+      {
+        "title": "🤖 Trung Quốc cấy chip não - máy tính thương mại đầu tiên",
+        "desc": "Trung Quốc đã hoàn thành ca cấy chip não - máy tính thương mại đầu tiên, mở ra kỷ nguyên mới cho công nghệ giao diện não bộ.",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
+        "source": "16/07·vnexpress.net",
+        "url": "https://vnexpress.net/trung-quoc-hoan-thanh-ca-cay-chip-nao-may-tinh-thuong-mai-dau-tien-5098075.html",
+        "addedEvening": true
       }
     ],
     "finance": [
@@ -199,8 +406,27 @@
         "tagLabel": "🏠 BĐS",
         "source": "16/07·CafeBiz",
         "url": "https://cafebiz.vn/biet-thu-lien-ke-ha-noi-xuat-hien-dau-hieu-ha-nhiet-gia-ban-so-cap-con-210-trieu-dong-m2-dat-phan-khuc-tren-17-ty-dong-can-kho-ban-176260716085119988.chn"
+      },
+      {
+        "title": "🪙 Giá vàng nhẫn 9999 sụt 2,5 triệu đồng/lượng",
+        "desc": "Giá mua, bán vàng nhẫn 9999 sụt mạnh tới 2,5 triệu đồng/lượng trong phiên sáng 16/7, kéo chênh lệch với vàng miếng SJC lên 16 triệu đồng.",
+        "tag": "gold",
+        "tagLabel": "🪙 VÀNG",
+        "source": "16/07·vneconomy.vn",
+        "url": "https://vneconomy.vn/gia-mua-ban-vang-nhan-9999-sut-manh-toi-25-trieu-dongluong.htm",
+        "addedEvening": true
+      },
+      {
+        "title": "💵 Lãi suất ngân hàng 16/7",
+        "desc": "Lãi suất huy động tại các ngân hàng lớn như Agribank, Vietcombank, BIDV, VietinBank, MB, Sacombank, HDBank được cập nhật mới nhất ngày 16/7.",
+        "tag": "rate",
+        "tagLabel": "💵 LÃI SUẤT",
+        "source": "16/07·cafebiz.vn",
+        "url": "https://cafebiz.vn/lai-suat-ngan-hang-16-7-tai-agribank-vietcombank-bidv-vietinbank-mb-sacombank-hdbank-176260716180507389.chn",
+        "addedEvening": true
       }
-    ]
+    ],
+    "eveningDone": true
   },
   {
     "date": "2026-07-15",
