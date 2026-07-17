@@ -60,5 +60,6 @@ def build_daily_prompt(
     lines.append("3. Nếu không chắc URL → set \"url\":\"\" (chuỗi rỗng) hơn là đoán. Item vẫn hiển thị với title+desc.")
     lines.append("4. Repo: name + url + stars phải khớp DỮ LIỆU GITHUB nguyên văn. KHÔNG tạo repo mới.")
     lines.append("5. Tiếng Việt ngắn gọn dễ hiểu. Trả về ĐẦY ĐỦ tất cả các field. Min_items là goal, không phải buộc — thà ít mà đúng.")
+    lines.append("6. Mỗi item phải có desc 1-2 câu để quét nhanh và detail 3-5 câu để đọc trong reader. detail phải bổ sung bối cảnh/impact, không lặp nguyên văn desc và không chép toàn văn bài nguồn.")
 
     return "\n".join(lines)

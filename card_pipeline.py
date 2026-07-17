@@ -4,6 +4,8 @@ context, call Gemini + parse, HEAD-check/validate URLs, dedup vs recent
 window, write cards.json. Split out so evening_update.py doesn't need to
 import the __main__ script module — see H1-style convention."""
 import json
+import re
+import unicodedata
 
 from digest_utils import (
     batch_check_urls, validate_news_items, validate_repo_items,
@@ -12,6 +14,40 @@ from digest_utils import (
 from jina_fetch import fetch_topic_context
 from gemini_client import call_gemini
 from json_extract import parse_llm_json
+
+
+def sanitize_reader_detail(item: dict) -> dict:
+    """Discard unusable reader detail while preserving backward compatibility.
+
+    Missing detail is allowed for historical cards. New LLM output that merely
+    repeats desc is cleared so the UI can label it honestly as a summary fallback.
+    """
+    desc = str(item.get("desc") or "").strip()
+    detail = str(item.get("detail") or "").strip()
+    if not detail:
+        item.pop("detail", None)
+        return item
+
+    def tokens(value: str) -> set[str]:
+        folded = unicodedata.normalize("NFD", value.casefold())
+        folded = "".join(char for char in folded if unicodedata.category(char) != "Mn")
+        return set(re.findall(r"\w+", folded, flags=re.UNICODE))
+
+    if desc and detail.casefold().startswith(desc.casefold()):
+        detail = detail[len(desc):].lstrip(" .,:;–—-")
+
+    sentence_count = len([part for part in re.split(r"[.!?]+(?:\s|$)", detail) if part.strip()])
+    if sentence_count < 3 or sentence_count > 5:
+        item.pop("detail", None)
+        return item
+
+    desc_tokens, detail_tokens = tokens(desc), tokens(detail)
+    overlap = len(desc_tokens & detail_tokens) / max(1, len(desc_tokens | detail_tokens))
+    if detail.casefold() == desc.casefold() or overlap >= 0.85:
+        item.pop("detail", None)
+    else:
+        item["detail"] = detail
+    return item
 
 
 def fetch_contexts(topics: dict, month_year: str) -> tuple[dict, set[str]]:
@@ -92,7 +128,8 @@ def validate_card(card_json: dict, output_fields: list, repo_fields: list,
         if f in repo_fields:
             card_json[f] = validate_repo_items(card_json.get(f, []), live_map)
         else:
-            card_json[f] = validate_news_items(card_json.get(f, []), live_map, trusted_urls)
+            items = validate_news_items(card_json.get(f, []), live_map, trusted_urls)
+            card_json[f] = [sanitize_reader_detail(item) for item in items]
     return card_json
 
 

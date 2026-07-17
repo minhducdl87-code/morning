@@ -29,7 +29,7 @@
         "https://kenh14.vn/musik.rss"
       ],
       "prompt_instruction": "Showbiz, phim hot, nhạc mới, chuyện sao Việt/Hàn/Hoa đang gây bàn tán, trend mạng xã hội — viết hấp dẫn, bắt trend, đọc là muốn buôn chuyện với đồng nghiệp. Vẫn chọn tin có nguồn đàng hoàng, không tin rác/giật tít câu view trắng trợn.",
-      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu\",\"tag\":\"movie|music|show|celeb\",\"tagLabel\":\"🎬 PHIM|🎵 MUSIC|📺 SHOW|⭐ CELEB\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
+      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt 1-2 câu để quét nhanh\",\"detail\":\"tiếng Việt 3-5 câu bổ sung bối cảnh và impact, không lặp desc\",\"tag\":\"movie|music|show|celeb\",\"tagLabel\":\"🎬 PHIM|🎵 MUSIC|📺 SHOW|⭐ CELEB\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     },
     "trending": {
       "enabled": true,
@@ -50,7 +50,7 @@
         "https://news.google.com/rss/search?q=viral+trend+m%E1%BA%A1ng+x%C3%A3+h%E1%BB%99i&hl=vi&gl=VN&ceid=VN:vi"
       ],
       "prompt_instruction": "Trend đang viral trên TikTok/mạng xã hội VN tuần này: clip hot, meme, trào lưu, thử thách, câu nói/điệu nhảy/bài hát viral, nhân vật hiện tượng mạng đang được bàn tán. Giải thích ngắn gọn trend là gì để người 3x không bị lạc hậu. Bỏ tin drama độc hại, lừa đảo, tiêu cực.",
-      "schema": "{\"title\":\"emoji+tên trend\",\"desc\":\"tiếng Việt max 2 câu, giải thích trend là gì\",\"tag\":\"tiktok|meme|challenge|music|viral\",\"tagLabel\":\"📱 TIKTOK|😂 MEME|🎯 CHALLENGE|🎵 NHẠC|🔥 VIRAL\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
+      "schema": "{\"title\":\"emoji+tên trend\",\"desc\":\"tiếng Việt 1-2 câu để quét nhanh\",\"detail\":\"tiếng Việt 3-5 câu giải thích trend, bối cảnh và impact, không lặp desc\",\"tag\":\"tiktok|meme|challenge|music|viral\",\"tagLabel\":\"📱 TIKTOK|😂 MEME|🎯 CHALLENGE|🎵 NHẠC|🔥 VIRAL\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     },
     "gaming": {
       "enabled": true,
@@ -70,7 +70,7 @@
         "https://news.google.com/rss/search?q=game+mobile+PC+m%E1%BB%9Bi+VN&hl=vi&gl=VN&ceid=VN:vi"
       ],
       "prompt_instruction": "Game hot đang được bàn tán, event/patch/update lớn, mobile game viral VN, top Steam/console. Viết bắt trend, hấp dẫn dân chơi game từ mobile đến console.",
-      "schema": "{\"title\":\"emoji+tên game\",\"desc\":\"tiếng Việt max 2 câu, nêu điểm hấp dẫn\",\"tag\":\"pc|mobile|console|event\",\"tagLabel\":\"💻 PC|📱 MOBILE|🎮 CONSOLE|🎪 EVENT\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
+      "schema": "{\"title\":\"emoji+tên game\",\"desc\":\"tiếng Việt 1-2 câu nêu điểm hấp dẫn\",\"detail\":\"tiếng Việt 3-5 câu bổ sung bối cảnh, thay đổi và impact, không lặp desc\",\"tag\":\"pc|mobile|console|event\",\"tagLabel\":\"💻 PC|📱 MOBILE|🎮 CONSOLE|🎪 EVENT\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     },
     "lifestyle_wellness": {
       "enabled": true,
@@ -90,7 +90,7 @@
         "https://vnexpress.net/rss/du-lich.rss"
       ],
       "prompt_instruction": "Health tips có evidence, food review ngon-bổ-rẻ, travel deal/điểm đến hot, wellness/mindfulness. Viết đời hơn, gần gũi, không quảng cáo trá hình.",
-      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu\",\"tag\":\"health|food|travel|wellness\",\"tagLabel\":\"💪 HEALTH|🍜 FOOD|✈️ TRAVEL|🧘 WELLNESS\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
+      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt 1-2 câu để quét nhanh\",\"detail\":\"tiếng Việt 3-5 câu bổ sung bối cảnh và lưu ý thực tế, không lặp desc\",\"tag\":\"health|food|travel|wellness\",\"tagLabel\":\"💪 HEALTH|🍜 FOOD|✈️ TRAVEL|🧘 WELLNESS\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     },
     "vietnam_news": {
       "enabled": true,
@@ -112,7 +112,7 @@
         "https://tuoitre.vn/rss/kinh-doanh.rss"
       ],
       "prompt_instruction": "Tin quan trọng trong nước, impact người đi làm VN: chính sách, kinh tế, giao thông, giáo dục, thuế, luật. Bỏ tin lá cải giật tít.",
-      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu, nêu impact\",\"tag\":\"policy|economy|society|traffic|tax\",\"tagLabel\":\"📜 CHÍNH SÁCH|💼 KINH TẾ|🏙️ XÃ HỘI|🚦 GIAO THÔNG|💸 THUẾ\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
+      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt 1-2 câu nêu impact\",\"detail\":\"tiếng Việt 3-5 câu bổ sung bối cảnh, đối tượng chịu ảnh hưởng và impact, không lặp desc\",\"tag\":\"policy|economy|society|traffic|tax\",\"tagLabel\":\"📜 CHÍNH SÁCH|💼 KINH TẾ|🏙️ XÃ HỘI|🚦 GIAO THÔNG|💸 THUẾ\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     },
     "tech_gadget": {
       "enabled": true,
@@ -134,7 +134,7 @@
         "https://vnexpress.net/rss/so-hoa.rss"
       ],
       "prompt_instruction": "Gadget mới, AI tool đáng thử, review sản phẩm có ảnh hưởng thực tế đến người đi làm 30-40 tuổi. Ưu tiên nguồn VN + tin quốc tế nổi bật. URL chỉ từ Dữ liệu tìm kiếm.",
-      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu\",\"tag\":\"launch|review|ai|deal\",\"tagLabel\":\"🚀 LAUNCH|⭐ REVIEW|🤖 AI|💸 DEAL\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
+      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt 1-2 câu để quét nhanh\",\"detail\":\"tiếng Việt 3-5 câu bổ sung bối cảnh, tính năng và impact thực tế, không lặp desc\",\"tag\":\"launch|review|ai|deal\",\"tagLabel\":\"🚀 LAUNCH|⭐ REVIEW|🤖 AI|💸 DEAL\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     },
     "finance_market": {
       "enabled": true,
@@ -156,7 +156,7 @@
         "https://cafebiz.vn/rss/home.rss"
       ],
       "prompt_instruction": "Chứng khoán VN, crypto, vàng, BĐS, lãi suất — tin có impact người 30-40 tuổi đang tích lũy tài sản. Con số cụ thể (giá, %, biến động). URL chỉ từ Dữ liệu tìm kiếm.",
-      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu, nêu con số\",\"tag\":\"stock|crypto|gold|realestate|rate\",\"tagLabel\":\"📈 CK|₿ CRYPTO|🪙 VÀNG|🏠 BĐS|💵 LÃI SUẤT\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
+      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt 1-2 câu nêu con số\",\"detail\":\"tiếng Việt 3-5 câu bổ sung bối cảnh, số liệu và impact tài chính, không lặp desc\",\"tag\":\"stock|crypto|gold|realestate|rate\",\"tagLabel\":\"📈 CK|₿ CRYPTO|🪙 VÀNG|🏠 BĐS|💵 LÃI SUẤT\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     }
   },
   "tone_guidance": "TONE: người viết 30-40 tuổi VN, vui vẻ, đời, chuyên nghiệp nhưng không cứng nhắc. Xưng 'bạn' hoặc 'anh chị'. Tránh teen slang quá đà và CAPS. Cho phép tin showbiz/phim/nhạc/trending/gaming hấp dẫn, viết bắt trend miễn có nguồn đàng hoàng — không chọn tin rác/clickbait trắng trợn. 1 emoji đầu title, tối đa 1 emoji trong desc. Câu ngắn, thông tin đậm, có con số cụ thể khi có. Ngôn ngữ: chủ yếu Việt Nam, cho phép mix Anh khi giữ tên riêng/thuật ngữ."
