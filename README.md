@@ -113,6 +113,32 @@ python generate_monthly.py
 python notify-telegram.py
 ```
 
+### Local web dev & UI tests
+
+Vite and Playwright are development dependencies. Use `--include=dev` so setup also works when the shell or CI environment has `NODE_ENV=production`.
+
+```bash
+# Install the locked dependency tree, including dev dependencies
+npm ci --include=dev
+
+# Install the local Playwright browser used by UI tests
+npx playwright install chromium
+
+# Start Vite at http://localhost:5180
+npm run dev
+
+# Build the production bundle
+npm run build
+
+# Run UI tests against the Vite dev server
+npm run test:ui
+
+# Build, serve, and smoke-test the production bundle
+npm run test:dist
+```
+
+Run `npm run test:ui` while developing responsive behavior. Before handoff or deployment, run `npm run test:dist` to validate the production output rather than only the dev server.
+
 ### Local bot dev (Cloudflare Worker)
 
 Xem chi tiết tại `bot/README.md` (wrangler dev, secret setup, etc).

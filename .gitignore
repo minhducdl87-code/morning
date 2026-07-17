@@ -2,3 +2,7 @@ __pycache__/
 node_modules/
 dist/
 .vite/
+playwright-report/
+test-results/
+.qa-*.png
+.vite-*.log

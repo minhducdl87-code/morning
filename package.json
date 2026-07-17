@@ -4,10 +4,14 @@
   "private": true,
   "description": "Local Vite dev server for the Cá Mặn Đau Lưng static site (serve + hot reload). Deployment is unchanged — GitHub Pages serves the raw files; Vite is dev-only.",
   "scripts": {
+    "build": "vite build",
     "dev": "vite",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:ui": "playwright test",
+    "test:dist": "npm run build && playwright test --config=playwright.preview.config.js"
   },
   "devDependencies": {
+    "@playwright/test": "^1.55.1",
     "vite": "^5.4.11"
   }
 }

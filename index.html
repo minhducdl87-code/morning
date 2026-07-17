@@ -1,47 +1,98 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🐟 Cá Mặn Đau Lưng</title>
-<meta name="theme-color" content="#040d0a">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://puffer.zingplay.dev">
-
-<!-- Puffer Theme v1 (external — auto-updates when Hub deploys new version) -->
-<link rel="stylesheet" href="https://puffer.zingplay.dev/static/puffer-theme/v1/theme.css">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=260715a">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cá Mặn Đau Lưng</title>
+  <meta name="theme-color" content="#f4f7f5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=260717c">
 </head>
 <body>
-<!-- Puffer theme toggle (floating top-right, controlled by external theme.js) -->
-<button class="theme-toggle" id="themeToggle" type="button" aria-label="Đổi giao diện sáng/tối" title="Đổi giao diện"><span id="themeIcon" aria-hidden="true">🌙</span></button>
-
-<header class="site-header">
-  <div class="header-inner">
-    <button class="toc-btn" data-toggle-toc>☰ Mục lục</button>
-    <div class="header-logo" id="site-logo">🐟</div>
-    <div class="header-text">
-      <h1 id="site-title">Cá Mặn Đau Lưng</h1>
-      <div class="tagline" id="tagline">Tin cho người 3x · Sáng 9h · Cập nhật tối 22h</div>
+  <header class="topbar">
+    <div class="brand">
+      <button class="icon-button nav-toggle" id="nav-toggle" type="button" aria-label="Mở kho bản tin" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="brand-mark" aria-hidden="true">C</div>
+      <div class="brand-copy">
+        <strong id="site-title">Cá Mặn Đau Lưng</strong>
+        <span id="today-label">Bản tin hôm nay</span>
+      </div>
     </div>
+
+    <label class="global-search" for="search-input">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <span class="sr-only">Tìm trong bản tin</span>
+      <input id="search-input" type="search" placeholder="Tìm tin, nguồn hoặc chủ đề..." autocomplete="off">
+      <kbd>/</kbd>
+    </label>
+
+    <div class="topbar-actions">
+      <button class="text-button" id="mark-all-read" type="button">Đánh dấu đã đọc</button>
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Đổi giao diện sáng tối" aria-pressed="false">
+        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <div class="nav-backdrop" id="nav-backdrop"></div>
+    <div class="reader-backdrop" id="reader-backdrop"></div>
+    <aside class="archive-pane" id="archive-pane" aria-label="Kho bản tin">
+      <div class="pane-heading">
+        <span class="eyebrow">Kho bản tin</span>
+        <button class="icon-button pane-close" id="nav-close" type="button" aria-label="Đóng kho bản tin">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <nav id="archive-nav" aria-busy="true">
+        <div class="loading-list" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <span class="sr-only" role="status" aria-live="polite">Đang tải kho bản tin</span>
+      </nav>
+      <div class="archive-note">
+        <span class="status-dot"></span>
+        <span>Cập nhật 9:00 &amp; 22:00</span>
+      </div>
+    </aside>
+
+    <main class="feed-pane" id="feed-pane">
+      <header class="feed-header">
+        <div>
+          <span class="eyebrow" id="feed-kicker">Hôm nay</span>
+          <h1 id="feed-title">Bản tin đang tải</h1>
+          <p id="feed-summary">Đang chuẩn bị danh sách tin đã chọn.</p>
+        </div>
+        <span class="count-badge" id="feed-count">—</span>
+      </header>
+      <div class="topic-strip" id="topic-strip" role="group" aria-label="Lọc theo chủ đề"></div>
+      <div class="feed-list" id="feed-list" aria-label="Bảng tin buổi sáng" aria-busy="true">
+        <div class="loading-dashboard" aria-hidden="true">
+          <span class="loading-hero"></span>
+          <span class="loading-card"></span>
+          <span class="loading-card"></span>
+        </div>
+        <span class="sr-only" role="status" aria-live="polite">Đang dựng bảng tin buổi sáng</span>
+      </div>
+    </main>
+
+    <article class="reader-pane" id="reader-pane" aria-label="Chi tiết tin" tabindex="-1">
+      <div id="reader-content" class="reader-content">
+        <div class="reader-empty">
+          <span class="eyebrow">Morning desk</span>
+          <h2>Chọn một tin để đọc nhanh</h2>
+          <p>Tóm tắt, chi tiết bản tin và đường dẫn nguồn sẽ xuất hiện tại đây.</p>
+        </div>
+      </div>
+    </article>
   </div>
-</header>
-<div class="toc-backdrop" id="toc-backdrop" data-toggle-toc></div>
-<div class="layout">
-  <aside class="toc" id="toc">
-    <div class="toc-title">📑 Mục lục</div>
-    <div id="toc-body"><div class="loading">⏳</div></div>
-  </aside>
-  <main id="main"><div class="loading">⏳ Đang tải...</div></main>
-</div>
-<footer id="site-footer">🐟 Cá Mặn Đau Lưng · Sáng 9AM · Recap 10AM · Không tin lá cải</footer>
-<script src="date-week-utils.js"></script>
-<script src="renderers.js"></script>
-<script src="view-builder.js"></script>
-<script src="router-init.js"></script>
-<script src="https://puffer.zingplay.dev/static/puffer-theme/v1/theme.js"></script>
+
+  <div class="live-region sr-only" id="live-region" aria-live="polite"></div>
+  <script src="date-week-utils.js?v=260717a"></script>
+  <script src="renderers.js?v=260717b"></script>
+  <script src="view-builder.js?v=260717b"></script>
+  <script src="router-init.js?v=260717b"></script>
 </body>
 </html>
