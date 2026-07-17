@@ -43,9 +43,73 @@
         "tagLabel": "⭐ CELEB",
         "source": "16/07·Kenh14",
         "url": "https://kenh14.vn/bich-phuong-lai-bien-mat-bi-an-215260716125548093.chn"
+      },
+      {
+        "title": "👗 Harper Beckham 'lên đồ' cực chất tại World Cup",
+        "desc": "Con gái út nhà Beckham gây sốt với phong cách thời trang sành điệu trên khán đài World Cup 2026.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/harper-beckham-duoc-khen-mac-dep-tren-khan-dai-world-cup-5098647.html",
+        "addedEvening": true
+      },
+      {
+        "title": "🎬 Bom tấn Việt 'càn quét' phòng vé, thu 13 tỷ trước chiếu",
+        "desc": "Một siêu phẩm điện ảnh Việt vừa ra mắt đã gây chấn động phòng vé, thu về 13 tỷ đồng chỉ sau 3 tiếng công chiếu.",
+        "tag": "movie",
+        "tagLabel": "🎬 PHIM",
+        "source": "17/07·Kenh14",
+        "url": "https://kenh14.vn/qua-so-bom-tan-chua-chieu-da-thu-ve-13-ty-o-viet-nam-do-den-may-van-chay-ve-khong-can-noi-21526071718374029.chn",
+        "addedEvening": true
+      },
+      {
+        "title": "🎤 Halftime Show World Cup 2026: Dàn sao khủng đổ bộ",
+        "desc": "Những hình ảnh đầu tiên về Halftime Show World Cup 2026 đã hé lộ sự góp mặt của Justin Bieber, Madonna, Shakira và BTS.",
+        "tag": "show",
+        "tagLabel": "📺 SHOW",
+        "source": "17/07·Kenh14",
+        "url": "https://kenh14.vn/lo-dien-hinh-anh-dau-tien-ve-halftime-show-world-cup-justin-bieber-madonna-shakira-va-bts-lan-luot-diem-danh-215260717202230003.chn",
+        "addedEvening": true
+      },
+      {
+        "title": "⭐ 'Nàng Dae Jang Geum' Lee Young Ae khoe ảnh bên chồng",
+        "desc": "Minh tinh Lee Young Ae gây chú ý khi xuất hiện bên chồng, nhan sắc vẫn trẻ trung dù đã ở tuổi U60.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/anh-lee-young-ae-ben-chong-gay-chu-y-voi-khan-gia-5098395.html",
+        "addedEvening": true
+      },
+      {
+        "title": "🎬 Phim Hàn đắt giá nhất 2026 của Netflix gây bất ngờ",
+        "desc": "Bom tấn Hàn Quốc được Netflix đầu tư mạnh nhất năm 2026 đang khiến khán giả choáng váng với dàn diễn viên và chất lượng sản xuất.",
+        "tag": "movie",
+        "tagLabel": "🎬 PHIM",
+        "source": "17/07·Kenh14",
+        "url": "https://kenh14.vn/xem-phim-han-dat-gia-nhat-2026-nhu-dat-vang-len-mat-qua-bat-ngo-voi-nam-chinh-nuoc-co-kho-luong-tu-netflix-215260717202832403.chn",
+        "addedEvening": true
+      },
+      {
+        "title": "⭐ Diva Hồng Nhung: 'Cuộc đời cần nhất hy vọng' sau biến cố",
+        "desc": "Diva Hồng Nhung lần đầu chia sẻ về hành trình vượt qua căn bệnh ung thư vú, khẳng định niềm tin vào hy vọng.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/hong-nhung-cuoc-doi-can-nhat-hy-vong-5097672.html",
+        "addedEvening": true
       }
     ],
-    "trending": [],
+    "trending": [
+      {
+        "title": "🎯 Trend 'Nhiệm vụ hệ thống' là gì mà hot rần rần?",
+        "desc": "Trào lưu 'Nhiệm vụ hệ thống' đang làm mưa làm gió trên mạng xã hội, khiến nhiều người tò mò về ý nghĩa của nó.",
+        "tag": "challenge",
+        "tagLabel": "🎯 CHALLENGE",
+        "source": "17/07·Kenh14",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWjF3Qy1Rc053VmRHLVdxUnY0UVVJaTBWbVpYbGxpbUJxY0ZBQS1ONDZiTjlPZ0xVZ0NtSXZDaVFKTjFUeHZGeE9reWNlLTVSWi1iODZVNXExSFRTNERjeHkzdVBxSkZRWTZoUmNjUnJpSVMyTFpKNUJJb2tLNWxFNTJCQUY1bVFDQ2hUM1BYclV6QjlwQlQ4LXlQN1FvRnc?oc=5",
+        "addedEvening": true
+      }
+    ],
     "gaming": [
       {
         "title": "💰 Cựu vương CKTG DK nợ lương tuyển thủ, đối mặt nguy cơ mất thương hiệu",
@@ -62,6 +126,25 @@
         "tagLabel": "🎪 EVENT",
         "source": "16/07·cl44.cnnd.vn",
         "url": "https://cl44.cnnd.vn/gumayusi-lan-dau-noi-ve-danh-hieu-gianh-duoc-sau-khi-roi-xa-faker-178260716210040413.chn"
+      },
+      {
+        "title": "🎮 Meta LMHT hiện tại: Cộng đồng game thủ chán ngán",
+        "desc": "Meta game Liên Minh Huyền Thoại đang thịnh hành ở các giải đấu quốc tế khiến nhiều game thủ cảm thấy nhàm chán.",
+        "detail": "Tình hình meta hiện tại của LMHT đang gây ra nhiều tranh cãi trong cộng đồng. Việc một số tướng hoặc chiến thuật quá mạnh, dẫn đến sự lặp lại trong các trận đấu chuyên nghiệp, làm giảm đi tính bất ngờ và hấp dẫn. Nhiều người chơi mong muốn Riot Games sẽ có những điều chỉnh để đa dạng hóa lối chơi hơn.",
+        "tag": "pc",
+        "tagLabel": "💻 PC",
+        "source": "17/07·cl44.cnnd.vn",
+        "url": "https://cl44.cnnd.vn/meta-hien-tai-cua-lmht-khien-cong-dong-chan-ngan-178260717151820305.chn",
+        "addedEvening": true
+      },
+      {
+        "title": "💻 Võ Lâm Truyền Kỳ: 20 năm vẫn là 'mái nhà chung' của game thủ",
+        "desc": "Sau 20 năm phát hành, Võ Lâm Truyền Kỳ vẫn giữ vững vị thế, là tựa game gắn kết hàng triệu game thủ Việt.",
+        "tag": "pc",
+        "tagLabel": "💻 PC",
+        "source": "17/07·tgs.vn",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcTREZUdXWVZwZXliTUo5RTlYcVoyOWV6MUo3VWlZaFN1WkptYllFRUFKYXRZQk1zRnFYMS1LTkg3QnRzUjk5b1llS0RpbjdZbUtlSTNRVjVUaU1nWkNTZmJHZEFJeGc1dlpuZGdlZ0VvSHMxWHJ5bmtXZXFqVV9xVXhlZzhpUGNIQWE4bkxhVmpkMl8wc2tmLTFyUmpnVWZrempTd0pXcGZ0Wks1Tk5z?oc=5",
+        "addedEvening": true
       }
     ],
     "lifestyle": [
@@ -96,6 +179,42 @@
         "tagLabel": "🧘 WELLNESS",
         "source": "16/07·VnExpress",
         "url": "https://vnexpress.net/gap-vo-tuong-lai-nho-tran-anh-dau-argentina-tai-world-cup-1986-5098237.html"
+      },
+      {
+        "title": "💪 5 việc nên làm mỗi tối để có giấc ngủ ngon",
+        "desc": "Dành 30 phút thư giãn trước khi ngủ với 5 thói quen đơn giản giúp bạn có giấc ngủ sâu và chất lượng hơn.",
+        "tag": "wellness",
+        "tagLabel": "🧘 WELLNESS",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/5-viec-nen-lam-moi-toi-giup-ngu-ngon-5098612.html",
+        "addedEvening": true
+      },
+      {
+        "title": "🍜 Cơm gà sốt đậu phộng: Món ăn tiếp sức 'thần đồng' Yamal",
+        "desc": "Món cơm gà sốt đậu phộng của mẹ là bí quyết giúp cầu thủ trẻ Lamine Yamal có đủ năng lượng thi đấu tại World Cup.",
+        "tag": "food",
+        "tagLabel": "🍜 FOOD",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/mon-com-ga-sot-dau-phong-cua-me-tiep-suc-cho-than-dong-yamal-5098400.html",
+        "addedEvening": true
+      },
+      {
+        "title": "✈️ World Cup 2026 tạo 'cơn sốt' du lịch cho Mỹ và Cape Verde",
+        "desc": "World Cup 2026 không chỉ là sự kiện thể thao mà còn là động lực lớn thúc đẩy du lịch, đặc biệt tại Mỹ và Cape Verde.",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/haaland-cape-verde-va-cach-world-cup-tao-con-sot-du-lich-5098402.html",
+        "addedEvening": true
+      },
+      {
+        "title": "✈️ Mẹ cùng con 13 tuổi đi bộ từ Hà Nội vào Huế trong 50 ngày",
+        "desc": "Một người mẹ đã cùng con trai 13 tuổi thực hiện hành trình đi bộ đầy ý nghĩa từ Hà Nội vào Huế trong 50 ngày.",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/me-cung-con-13-tuoi-di-bo-tu-ha-noi-vao-hue-5097436.html",
+        "addedEvening": true
       }
     ],
     "vietnam": [
@@ -130,6 +249,43 @@
         "tagLabel": "🏙️ XÃ HỘI",
         "source": "16/07·VnExpress",
         "url": "https://vnexpress.net/lap-ho-so-di-san-cho-quan-the-vooc-mong-trang-cuoi-cung-the-gioi-5098305.html"
+      },
+      {
+        "title": "📜 Xử phạt tới 200 triệu đồng với vi phạm tài sản mã hóa",
+        "desc": "Chính phủ vừa ban hành Nghị định 284, quy định mức phạt lên đến 200 triệu đồng cho các vi phạm về giao dịch tài sản mã hóa.",
+        "tag": "policy",
+        "tagLabel": "📜 CHÍNH SÁCH",
+        "source": "17/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/xu-phat-toi-200-trieu-dong-voi-vi-pham-ve-giao-dich-tai-san-ma-hoa-100260717193722873.htm",
+        "addedEvening": true
+      },
+      {
+        "title": "💼 TP.HCM cần thêm 3,5 tỷ USD FDI để đạt mục tiêu năm",
+        "desc": "TP.HCM đặt mục tiêu thu hút thêm 3,5 tỷ USD vốn FDI trong 6 tháng cuối năm, chuyển hướng cạnh tranh bằng môi trường đầu tư.",
+        "detail": "Trong nửa đầu năm 2026, TP.HCM đã thu hút gần 7,5 tỷ USD FDI. Để đạt mục tiêu cả năm, thành phố sẽ tập trung cải thiện môi trường kinh doanh, nâng cao năng lực cạnh tranh thay vì chỉ dựa vào ưu đãi. Điều này hứa hẹn tạo ra nhiều cơ hội việc làm và thúc đẩy tăng trưởng kinh tế bền vững.",
+        "tag": "economy",
+        "tagLabel": "💼 KINH TẾ",
+        "source": "17/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/tphcm-can-them-35-ti-usd-fdi-de-dat-muc-tieu-nam-100260717182021724.htm",
+        "addedEvening": true
+      },
+      {
+        "title": "🚦 Tài xế ô tô cản trở xe cứu thương chở bệnh nhân nguy kịch bị phạt",
+        "desc": "Một tài xế ô tô 7 chỗ đã bị phạt nặng vì hành vi cố tình cản trở xe cứu thương đang chở bệnh nhân nguy kịch.",
+        "tag": "traffic",
+        "tagLabel": "🚦 GIAO THÔNG",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/phat-tien-tai-xe-oto-can-tro-xe-cuu-thuong-cho-benh-nhan-nguy-kich-5098750.html",
+        "addedEvening": true
+      },
+      {
+        "title": "🏙️ TP.HCM bắt đầu lộ trình đưa người Việt làm chủ công nghệ metro",
+        "desc": "TP.HCM ký kết hợp tác nghiên cứu, tiếp nhận và chuyển giao công nghệ, hướng tới việc người Việt làm chủ công nghệ metro.",
+        "tag": "society",
+        "tagLabel": "🏙️ XÃ HỘI",
+        "source": "17/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/tphcm-bat-dau-lo-trinh-dua-nguoi-viet-lam-chu-cong-nghe-metro-10026071716465101.htm",
+        "addedEvening": true
       }
     ],
     "tech": [
@@ -156,6 +312,33 @@
         "tagLabel": "🤖 AI",
         "source": "16/07·Tinhte.vn",
         "url": "https://tinhte.vn/thread/samsung-he-lo-concept-fluid-ai-design-system-le-nao-day-la-giao-dien-cua-one-ui-10.4161037/"
+      },
+      {
+        "title": "🤖 AI Trung Quốc lần đầu đứng đầu benchmark lập trình giao diện",
+        "desc": "Một mô hình AI của Trung Quốc đã vượt qua Claude Fable 5, lần đầu tiên dẫn đầu benchmark lập trình giao diện.",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
+        "source": "17/07·GenK",
+        "url": "https://genk.vn/lan-dau-tien-trong-lich-su-model-ai-trung-quoc-dung-dau-benchmark-lap-trinh-giao-dien-vuot-mat-claude-fable-5-165260717212727369.chn",
+        "addedEvening": true
+      },
+      {
+        "title": "📱 Điện thoại gập: Từ màn to, thiếu app đến việc Apple 'nhảy vào'",
+        "desc": "Điện thoại gập đang thu hút sự chú ý mạnh mẽ với nhiều cải tiến và tin đồn Apple sắp ra mắt mẫu mới.",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "17/07·Tinhte.vn",
+        "url": "https://tinhte.vn/thread/dien-thoai-gap-tu-2011-toi-nay-man-to-thieu-app-va-vi-sao-apple-nhay-vao.4161223/",
+        "addedEvening": true
+      },
+      {
+        "title": "🤖 EU ép Google mở cửa Android cho AI bên thứ ba",
+        "desc": "Liên minh Châu Âu tiếp tục gây áp lực, yêu cầu Google phải cấp quyền truy cập tính năng hệ thống Android cho các dịch vụ AI bên thứ ba.",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
+        "source": "17/07·Tinhte.vn",
+        "url": "https://tinhte.vn/thread/lien-minh-chau-au-lai-ep-google-mo-cua-android-cho-ai-ben-thu-ba-roi-anh-em.4161340/",
+        "addedEvening": true
       }
     ],
     "finance": [
@@ -182,8 +365,28 @@
         "tagLabel": "💵 LÃI SUẤT",
         "source": "16/07·VnEconomy",
         "url": "https://vneconomy.vn/ty-gia-trung-tam-tang-toc-usd-ngan-hang-van-duoi-tran-cho-phep.htm"
+      },
+      {
+        "title": "📈 VPBankS báo lãi quý 2 gấp 4 lần cùng kỳ, vượt TCBS",
+        "desc": "Trong quý 2/2026, Chứng khoán VPBankS ghi nhận lợi nhuận trước thuế kỷ lục 2.159 tỷ đồng, gấp 4 lần cùng kỳ 2025.",
+        "detail": "Nhờ doanh thu tăng mạnh ở nhiều mảng kinh doanh, VPBankS đã có một quý kinh doanh bùng nổ, vượt qua cả đối thủ lớn TCBS. Lũy kế nửa đầu năm, lợi nhuận đạt 2.673 tỷ đồng, củng cố vị thế của công ty trong ngành chứng khoán. Đây là tin vui cho các nhà đầu tư và cổ đông của VPBankS.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "17/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/vpbanks-bao-lai-quy-2-gap-4-lan-cung-ky-vuot-tcbs-100260717170520303.htm",
+        "addedEvening": true
+      },
+      {
+        "title": "🏠 TP.HCM yêu cầu đẩy nhanh kiểm định, xây lại chung cư cũ",
+        "desc": "TP.HCM đang thúc đẩy công tác kiểm định và xây dựng lại các chung cư cũ, nhằm đảm bảo an toàn và nâng cao chất lượng sống cho cư dân.",
+        "tag": "realestate",
+        "tagLabel": "🏠 BĐS",
+        "source": "17/07·Cafebiz",
+        "url": "https://cafebiz.vn/tp-ho-chi-minh-yeu-cau-day-nhanh-cong-tac-kiem-dinh-xay-dung-lai-chung-cu-cu-176260717185318986.chn",
+        "addedEvening": true
       }
-    ]
+    ],
+    "eveningDone": true
   },
   {
     "date": "2026-07-16",
