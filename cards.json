@@ -1,5 +1,191 @@
 [
   {
+    "date": "2026-07-17",
+    "dayLabel": "Thứ Sáu",
+    "dateLabel": "17/07/2026",
+    "entertainment": [
+      {
+        "title": "🚨 Nam ca sĩ YG bị kết án 1 năm 6 tháng tù",
+        "desc": "Fan Kpop đang xôn xao trước thông tin một nam ca sĩ từ YG Entertainment bị kết án tù giam 1 năm 6 tháng. Ai mà lại dính phốt lớn vậy nhỉ?",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "16/07·Kenh14",
+        "url": "https://kenh14.vn/hoang-hot-khong-nhan-ra-nam-ca-si-yg-bi-ket-an-1-nam-6-thang-tu-giam-215260716222729057.chn"
+      },
+      {
+        "title": "💍 NSƯT đình đám cưới lần 3 với nữ diễn viên nóng bỏng",
+        "desc": "Showbiz Việt lại có tin vui! Một NSƯT gạo cội vừa xác nhận kết hôn lần 3 với nữ diễn viên trẻ đẹp sau 1 năm hẹn hò kín tiếng.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "17/07·Kenh14",
+        "url": "https://kenh14.vn/nam-nsut-dinh-dam-cuoi-lan-3-vo-moi-la-nu-dien-vien-nong-bong-da-yeu-1-nam-215260717004221196.chn"
+      },
+      {
+        "title": "🎬 Phim Victor Vũ và Trương Ngọc Ánh không bao giờ lên sóng",
+        "desc": "Bạn có tò mò về bộ phim của đạo diễn Victor Vũ và Trương Ngọc Ánh từng bị 'đắp chiếu' không? Đằng sau đó là cả một câu chuyện dài đấy!",
+        "tag": "movie",
+        "tagLabel": "🎬 PHIM",
+        "source": "17/07·Kenh14",
+        "url": "https://kenh14.vn/bo-phim-khong-bao-gio-duoc-len-song-cua-victor-vu-va-truong-ngoc-anh-215260717003959267.chn"
+      },
+      {
+        "title": "🎵 Nhóm nhạc Việt làm miniconcert ở chợ chỉ có 11 người xem",
+        "desc": "Câu chuyện về nhóm nhạc Việt Nam làm miniconcert miễn phí ở chợ Bình Tây mà chỉ có 11 khán giả đang khiến nhiều người vừa thương vừa nể phục.",
+        "tag": "music",
+        "tagLabel": "🎵 MUSIC",
+        "source": "17/07·Kenh14",
+        "url": "https://kenh14.vn/nhom-nhac-kho-nhat-viet-nam-lam-miniconcert-mien-phi-o-cho-binh-tay-chi-co-11-nguoi-xem-ra-mat-tung-buoc-chat-vat-215260717080225555.chn"
+      },
+      {
+        "title": "⭐ Bích Phương lại 'biến mất bí ẩn' sau hit Em Xinh Say Hi",
+        "desc": "Sau một năm khuấy đảo với Em Xinh Say Hi, Bích Phương lại khiến fan tò mò khi 'biến mất' khỏi showbiz. Chắc lại ấp ủ dự án gì đây!",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "16/07·Kenh14",
+        "url": "https://kenh14.vn/bich-phuong-lai-bien-mat-bi-an-215260716125548093.chn"
+      }
+    ],
+    "trending": [],
+    "gaming": [
+      {
+        "title": "💰 Cựu vương CKTG DK nợ lương tuyển thủ, đối mặt nguy cơ mất thương hiệu",
+        "desc": "Tình cảnh của đội tuyển DK, từng là nhà vô địch CKTG, đang khiến cộng đồng game thủ bất ngờ và xót xa khi bị phát hiện nợ lương tuyển thủ.",
+        "tag": "event",
+        "tagLabel": "🎪 EVENT",
+        "source": "17/07·cl44.cnnd.vn",
+        "url": "https://cl44.cnnd.vn/cuu-vuong-cktg-mot-thoi-bi-phat-hien-no-luong-tuyen-thu-co-the-mat-ca-thuong-hieu-178260717001822776.chn"
+      },
+      {
+        "title": "🏆 Gumayusi lần đầu chia sẻ về chức vô địch MSI 2026 không có Faker",
+        "desc": "Tuyển thủ Gumayusi đã có những chia sẻ về danh hiệu quốc tế lớn đầu tiên của mình tại MSI 2026, khi không còn đồng hành cùng huyền thoại Faker.",
+        "tag": "event",
+        "tagLabel": "🎪 EVENT",
+        "source": "16/07·cl44.cnnd.vn",
+        "url": "https://cl44.cnnd.vn/gumayusi-lan-dau-noi-ve-danh-hieu-gianh-duoc-sau-khi-roi-xa-faker-178260716210040413.chn"
+      }
+    ],
+    "lifestyle": [
+      {
+        "title": "🤰 Sản phụ loạn thần sau sinh: Dấu hiệu và cách phòng tránh",
+        "desc": "Một sản phụ 26 tuổi đã mất ngủ, hoảng loạn và bỏ ăn sau sinh, cho thấy tình trạng loạn thần sau sinh cần được quan tâm và hỗ trợ kịp thời.",
+        "tag": "health",
+        "tagLabel": "💪 HEALTH",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/san-phu-loan-than-sau-sinh-5098378.html"
+      },
+      {
+        "title": "✈️ Khách Mỹ chi 200 triệu đồng xuyên Việt thưởng thức món ngon",
+        "desc": "Một du khách Mỹ đã chi tới 200 triệu đồng cho hành trình xuyên Việt để khám phá và thưởng thức ẩm thực, từ Hà Nội đến TP.HCM.",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "15/07·VnExpress",
+        "url": "https://vnexpress.net/khach-my-chi-200-trieu-dong-xuyen-viet-thuong-thuc-mon-ngon-5097782.html"
+      },
+      {
+        "title": "💎 Thị trấn 'dát' 72.000 tấn kim cương ở Đức",
+        "desc": "Thị trấn Nördlingen ở Đức nổi tiếng với việc được 'dát' tới 72.000 tấn kim cương siêu nhỏ, tạo nên vẻ đẹp độc đáo và thu hút khách du lịch.",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "16/07·VnExpress",
+        "url": "https://vnexpress.net/thi-tran-dat-72-000-tan-kim-cuong-5094622.html"
+      },
+      {
+        "title": "⚽ Gặp vợ tương lai nhờ trận Anh đấu Argentina tại World Cup 1986",
+        "desc": "Một câu chuyện tình yêu lãng mạn bắt đầu từ trận đấu lịch sử giữa Anh và Argentina tại World Cup 1986, chứng minh bóng đá có thể kết nối mọi người.",
+        "tag": "wellness",
+        "tagLabel": "🧘 WELLNESS",
+        "source": "16/07·VnExpress",
+        "url": "https://vnexpress.net/gap-vo-tuong-lai-nho-tran-anh-dau-argentina-tai-world-cup-1986-5098237.html"
+      }
+    ],
+    "vietnam": [
+      {
+        "title": "🚨 Xe khách lao khỏi cao tốc Pháp Vân - Cầu Giẽ, 4 người tử vong",
+        "desc": "Một vụ tai nạn nghiêm trọng xảy ra trên cao tốc Pháp Vân - Cầu Giẽ khiến 4 người chết và nhiều người bị thương khi xe khách chở 32 người lao xuống đường gom.",
+        "tag": "traffic",
+        "tagLabel": "🚦 GIAO THÔNG",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/xe-khach-lao-khoi-cao-toc-phap-van-cau-gie-4-nguoi-chet-5098380.html"
+      },
+      {
+        "title": "💸 Nâng hạn mức bảo hiểm tiền gửi lên 350 triệu đồng",
+        "desc": "Ngân hàng Nhà nước vừa tăng hạn mức chi trả bảo hiểm tiền gửi từ 125 triệu đồng lên 350 triệu đồng, giúp người dân yên tâm hơn khi gửi tiền.",
+        "tag": "policy",
+        "tagLabel": "📜 CHÍNH SÁCH",
+        "source": "16/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/nang-han-muc-bao-hiem-tien-gui-len-350-trieu-dong-215260716231403573.htm"
+      },
+      {
+        "title": "✈️ FLC muốn đầu tư hai sân bay Pleiku và Phù Cát",
+        "desc": "FLC đề xuất Bộ Xây dựng và Cục Hàng không Việt Nam tạo điều kiện để nghiên cứu đầu tư, nâng cấp sân bay Pleiku và Phù Cát theo hình thức PPP.",
+        "tag": "economy",
+        "tagLabel": "💼 KINH TẾ",
+        "source": "16/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/flc-muon-dau-tu-hai-san-bay-pleiku-va-phu-cat-100260716230706245.htm"
+      },
+      {
+        "title": "🌳 Lập hồ sơ di sản cho quần thể voọc mông trắng cuối cùng thế giới",
+        "desc": "Tỉnh Ninh Bình đang tiến hành lập hồ sơ di sản cho quần thể voọc mông trắng, loài linh trưởng quý hiếm cuối cùng trên thế giới, nhằm bảo tồn.",
+        "tag": "society",
+        "tagLabel": "🏙️ XÃ HỘI",
+        "source": "16/07·VnExpress",
+        "url": "https://vnexpress.net/lap-ho-so-di-san-cho-quan-the-vooc-mong-trang-cuoi-cung-the-gioi-5098305.html"
+      }
+    ],
+    "tech": [
+      {
+        "title": "🤖 Apple Intelligence chính thức được Trung Quốc 'gật đầu'",
+        "desc": "Sau thời gian dài chờ đợi, Apple Intelligence đã nhận được sự chấp thuận từ cơ quan quản lý không gian mạng Trung Quốc, mở ra thị trường lớn cho AI của Apple.",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
+        "source": "16/07·Tinhte.vn",
+        "url": "https://tinhte.vn/thread/apple-intelligence-chinh-thuc-duoc-trung-quoc-gat-dau.4161136/"
+      },
+      {
+        "title": "⌚ Apple Watch Series 12 có thể đổi chip lần đầu sau 3 năm",
+        "desc": "Apple Watch Series 12 được đồn đoán sẽ có nâng cấp chip xử lý đáng kể, đánh dấu lần đầu tiên sau 3 năm 'Táo khuyết' thực sự cải tiến hiệu năng cho dòng đồng hồ thông minh này.",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "16/07·Tinhte.vn",
+        "url": "https://tinhte.vn/thread/apple-watch-series-12-co-the-doi-chip-lan-dau-sau-ba-nam-nha-anh-em.4161140/"
+      },
+      {
+        "title": "💡 Samsung hé lộ concept Fluid AI Design System cho One UI 10?",
+        "desc": "Samsung vừa chia sẻ concept Fluid AI Design System, khiến nhiều người đồn đoán đây chính là giao diện mới của One UI 10, hứa hẹn trải nghiệm AI mượt mà hơn.",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
+        "source": "16/07·Tinhte.vn",
+        "url": "https://tinhte.vn/thread/samsung-he-lo-concept-fluid-ai-design-system-le-nao-day-la-giao-dien-cua-one-ui-10.4161037/"
+      }
+    ],
+    "finance": [
+      {
+        "title": "📈 Vinacapital: Nên phân bổ 2/3 tài sản vào chứng khoán",
+        "desc": "Giám đốc Đầu tư Vinacapital khuyến nghị người Việt nên cân nhắc phân bổ khoảng 2/3 tài sản vào chứng khoán, cho rằng cơ hội giải ngân cổ phiếu đã xuất hiện.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "16/07·CafeF",
+        "url": "https://cafef.vn/giam-doc-dau-tu-vinacapital-nguoi-viet-nen-can-nhac-phan-bo-khoang-2-3-tai-san-vao-chung-khoan-188260716223221378.chn"
+      },
+      {
+        "title": "🪙 Giá vàng thế giới giảm mạnh về 3.997 USD/ounce",
+        "desc": "Giá vàng thế giới đã giảm tới 64,5 USD/ounce trong phiên 16/7, chính thức rơi khỏi ngưỡng 4.000 USD/ounce và xuống mức thấp nhất trong hơn 2 tuần.",
+        "tag": "gold",
+        "tagLabel": "🪙 VÀNG",
+        "source": "16/07·VnEconomy",
+        "url": "https://vneconomy.vn/gia-vang-giam-manh-vi-loi-suat-trai-phieu-tang-theo-cang-thang-o-trung-dong.htm"
+      },
+      {
+        "title": "💸 Tỷ giá trung tâm tăng 10 đồng, USD ngân hàng vẫn dưới trần",
+        "desc": "Ngân hàng Nhà nước tiếp tục nâng tỷ giá trung tâm thêm 10 đồng lên 25.243 VND/USD, đánh dấu phiên tăng thứ 7 liên tiếp, nhưng giá bán USD tại các ngân hàng vẫn thấp hơn tỷ giá trần.",
+        "tag": "rate",
+        "tagLabel": "💵 LÃI SUẤT",
+        "source": "16/07·VnEconomy",
+        "url": "https://vneconomy.vn/ty-gia-trung-tam-tang-toc-usd-ngan-hang-van-duoi-tran-cho-phep.htm"
+      }
+    ]
+  },
+  {
     "date": "2026-07-16",
     "dayLabel": "Thứ Năm",
     "dateLabel": "16/07/2026",
