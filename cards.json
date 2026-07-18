@@ -1,5 +1,203 @@
 [
   {
+    "date": "2026-07-18",
+    "dayLabel": "Thứ Bảy",
+    "dateLabel": "18/07/2026",
+    "entertainment": [
+      {
+        "title": "🎬 Châu Tinh Trì trở lại, khuấy đảo phòng vé!",
+        "desc": "Đạo diễn Châu Tinh Trì tái xuất với 'Kungfu nữ túc' và nhanh chóng tạo nên cơn sốt phòng vé, chứng tỏ sức hút không hề giảm.",
+        "tag": "movie",
+        "tagLabel": "🎬 PHIM",
+        "source": "18/07·VnExpress",
+        "url": "https://vnexpress.net/phim-chau-tinh-tri-khuay-dong-phong-ve-5098782.html"
+      },
+      {
+        "title": "🎵 Xuân Mai, Xuân Nghi tái hợp cổ vũ yêu đời",
+        "desc": "Hai sao nhí đình đám một thời là Xuân Mai và Xuân Nghi bất ngờ kết hợp, ra mắt ca khúc mới với thông điệp tích cực.",
+        "tag": "music",
+        "tagLabel": "🎵 MUSIC",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/be-xuan-mai-xuan-nghi-hat-co-vu-song-yeu-doi-5098490.html"
+      },
+      {
+        "title": "⭐ Lee Dong Wook gặp chuyện 'không tin nổi'",
+        "desc": "Nam tài tử Lee Dong Wook vừa bất ngờ lộ bộ mặt khác lạ, khiến fan hâm mộ không khỏi xôn xao bàn tán.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "18/07·Kenh14",
+        "url": "https://kenh14.vn/chuyen-khong-tin-noi-xay-ra-voi-lee-dong-wook-215260718074513646.chn"
+      },
+      {
+        "title": "⭐ Ngọc nữ showbiz ly hôn đại gia sau 10 năm",
+        "desc": "Một ngọc nữ đình đám của showbiz Việt vừa xác nhận ly hôn đại gia sau 10 năm chung sống, hé lộ những góc khuất hôn nhân.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "18/07·Kenh14",
+        "url": "https://kenh14.vn/ngoc-nu-showbiz-ly-hon-dai-gia-sau-10-nam-cuoi-hon-2-gio-sang-toi-da-phai-thuc-day-de-trong-con-215260718074923313.chn"
+      },
+      {
+        "title": "🎬 Phim Nhà nước đầu tiên chiếu thương mại",
+        "desc": "Lần đầu tiên, một bộ phim điện ảnh do Nhà nước sản xuất được phát hành thương mại, mở ra hướng đi mới cho điện ảnh Việt.",
+        "tag": "movie",
+        "tagLabel": "🎬 PHIM",
+        "source": "17/07·Kenh14",
+        "url": "https://kenh14.vn/phim-dien-anh-nha-nuoc-dau-tien-duoc-chieu-thuong-mai-215260717124407214.chn"
+      },
+      {
+        "title": "🎵 BTS: 'Không bình thường' theo cách riêng",
+        "desc": "Nhóm nhạc toàn cầu BTS lại khiến fan 'đứng hình' với những hành động khó hiểu, chứng tỏ phong cách độc đáo của mình.",
+        "tag": "music",
+        "tagLabel": "🎵 MUSIC",
+        "source": "17/07·Kenh14",
+        "url": "https://kenh14.vn/bts-khong-binh-thuong-2152607171418021.chn"
+      }
+    ],
+    "trending": [
+      {
+        "title": "📱 Michelin Boy: Trend mới của giới trẻ",
+        "desc": "Cụm từ 'Michelin Boy' đang gây sốt trên mạng xã hội, trở thành một trào lưu được giới trẻ quan tâm và bàn tán sôi nổi.",
+        "tag": "tiktok",
+        "tagLabel": "📱 TIKTOK",
+        "source": "17/07·VOH",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPc1FhM2RwUlRfbzZvVEUwUHYzRG5jMkdsRkpwdnRpbldKcG1WTlNLN3dtVkhVZ3ZLeXdJQTJWcThFQzI1SHR5Sm1KRzN6dDByRVZaTkF2ZXhiZlUzM2RqdXhiMHNGMFg0aWlzSVlldTFacHdvZU9fcnphZ25vakdqeHNNQ0otdkpYSHgwY05lMHctV1NaZXJ6RDhZSWh5Q0hReUgxdGZLYjUtbnUyRDFDbmZR?oc=5"
+      }
+    ],
+    "gaming": [
+      {
+        "title": "🎪 T1 vs HLE tại EWC 2026: Áp lực đè nặng",
+        "desc": "Trận đấu giữa T1 và HLE tại EWC 2026 đang chứng kiến một tuyển thủ đặc biệt chịu áp lực lớn, thu hút sự chú ý của fan.",
+        "tag": "event",
+        "tagLabel": "🎪 EVENT",
+        "source": "17/07·cl44.cnnd.vn",
+        "url": "https://cl44.cnnd.vn/mot-tuyen-thu-dac-biet-chiu-ap-luc-trong-tran-dau-t1-hle-thuoc-ewc-2026-178260717010551264.chn"
+      }
+    ],
+    "lifestyle": [
+      {
+        "title": "💪 Huyết áp cao tuổi 29: Cảnh báo từ thói quen",
+        "desc": "Một chàng trai 29 tuổi bị huyết áp cao do thói quen ăn đồ ăn nhanh và bỏ bữa sáng, là lời cảnh tỉnh cho nhiều người trẻ.",
+        "detail": "Câu chuyện của chàng trai 29 tuổi này là minh chứng rõ ràng cho tác động tiêu cực của lối sống thiếu lành mạnh. Việc thường xuyên ăn đồ ăn nhanh, bỏ bữa sáng và ít vận động có thể dẫn đến các vấn đề sức khỏe nghiêm trọng, đặc biệt là tăng huyết áp ở độ tuổi còn rất trẻ. Hãy chú ý hơn đến chế độ ăn uống và sinh hoạt để bảo vệ sức khỏe của mình nhé!",
+        "tag": "health",
+        "tagLabel": "💪 HEALTH",
+        "source": "16/07·VnExpress",
+        "url": "https://vnexpress.net/huyet-ap-cao-tuoi-29-tu-thoi-an-do-an-nhanh-bo-bua-sang-5098211.html"
+      },
+      {
+        "title": "✈️ Sốc ẩm thực của du khách đi Mỹ xem World Cup",
+        "desc": "Nhiều du khách đến Mỹ xem World Cup 2026 đã trải qua những cú sốc ẩm thực bất ngờ với đồ ăn tại đây.",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "18/07·VnExpress",
+        "url": "https://vnexpress.net/nhung-cu-soc-am-thuc-cua-du-khach-di-my-xem-world-cup-5098135.html"
+      },
+      {
+        "title": "🍜 Bàn salad lớn nhất VN từ thực phẩm Tick xanh",
+        "desc": "MM Mega Market Việt Nam vừa xác lập kỷ lục với 'Bàn salad lớn nhất Việt Nam', chế biến từ nguyên liệu đạt chứng nhận Tick xanh.",
+        "tag": "food",
+        "tagLabel": "🍜 FOOD",
+        "source": "17/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/ban-salad-lon-nhat-viet-nam-xac-lap-ky-luc-tu-thuc-pham-tick-xanh-100260717213144601.htm"
+      },
+      {
+        "title": "✈️ 8 trải nghiệm không thể bỏ lỡ ở Lý Sơn",
+        "desc": "Đảo Lý Sơn (Quảng Ngãi) đang là điểm đến hot mùa hè với 8 trải nghiệm độc đáo mà bạn không nên bỏ lỡ.",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/8-trai-nghiem-khong-the-bo-lo-o-ly-son-mua-he-5097167.html"
+      }
+    ],
+    "vietnam": [
+      {
+        "title": "🌧️ Miền Bắc mưa lớn, nguy cơ sạt lở, lũ quét",
+        "desc": "Miền Bắc tiếp tục đối mặt với mưa lớn, hàng trăm xã vùng núi nguy cơ cao sạt lở đất và lũ quét, cần đề phòng.",
+        "detail": "Dự báo thời tiết cho thấy Bắc Bộ sẽ tiếp tục có mưa to đến rất to trong những ngày tới, đặc biệt là các tỉnh vùng núi. Tình hình này tiềm ẩn nguy cơ cao về sạt lở đất và lũ quét, đe dọa an toàn tính mạng và tài sản của người dân. Các địa phương đang khẩn trương triển khai biện pháp phòng chống, kêu gọi người dân nâng cao cảnh giác.",
+        "tag": "society",
+        "tagLabel": "🏙️ XÃ HỘI",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/mien-bac-tiep-tuc-mua-lon-hang-tram-xa-nguy-co-sat-lo-dat-lu-quet-5098754.html"
+      },
+      {
+        "title": "🚦 Quốc lộ 51 dày đặc 'bẫy' sau sửa chữa",
+        "desc": "Quốc lộ 51 (Đồng Nai) sau nhiều tháng sửa chữa vẫn còn nhiều 'bẫy' nguy hiểm, gây mất an toàn giao thông.",
+        "tag": "traffic",
+        "tagLabel": "🚦 GIAO THÔNG",
+        "source": "16/07·VnExpress",
+        "url": "https://vnexpress.net/quoc-lo-51-day-dac-bay-sau-nhieu-thang-sua-chua-5098114.html"
+      },
+      {
+        "title": "💼 VPBank lãi kỷ lục gần 11.000 tỷ đồng",
+        "desc": "VPBank báo lãi trước thuế quý II kỷ lục 10.929 tỷ đồng, vượt qua biến động vĩ mô và củng cố vị thế ngân hàng hàng đầu.",
+        "tag": "economy",
+        "tagLabel": "💼 KINH TẾ",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/vpbank-lai-ky-luc-gan-11-000-ty-dong-5098551.html"
+      },
+      {
+        "title": "💸 Doanh nghiệp trốn thuế 200 tỷ đồng bị bắt",
+        "desc": "Một doanh nghiệp thu mua mủ cao su với doanh thu 200 tỷ đồng đã bị bắt vì không đăng ký kinh doanh và trốn thuế.",
+        "tag": "tax",
+        "tagLabel": "💸 THUẾ",
+        "source": "18/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/thu-mua-mu-cao-su-ban-doanh-thu-phat-sinh-200-ti-nhung-tron-thue-100260718071459841.htm"
+      }
+    ],
+    "tech": [
+      {
+        "title": "🚀 Samsung Flex Titanium: Màn hình gập cứng hơn",
+        "desc": "Samsung vừa giới thiệu công nghệ màn hình gập Flex Titanium mới, hứa hẹn độ bền cao hơn và giảm thiểu nếp gấp.",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "17/07·Tinhte.vn",
+        "url": "https://tinhte.vn/thread/samsung-moi-gioi-thieu-man-hinh-gap-flex-titanium-hay-lam-anh-em-cung-hon-do-lo-nep-gap.4161375/"
+      },
+      {
+        "title": "🤖 Netflix dùng AI cho phim tài liệu: Nhanh gấp đôi, chi phí giảm nửa",
+        "desc": "Netflix thừa nhận đã sử dụng AI cho 17 phút phim tài liệu, giúp tăng tốc độ sản xuất và giảm chi phí đáng kể.",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
+        "source": "17/07·Genk",
+        "url": "https://genk.vn/netflix-thua-nhan-da-dung-ai-cho-17-phut-phim-tai-lieu-nhanh-gap-doi-chi-phi-giam-mot-nua-khi-ngan-sach-tien-sat-20-ty-usd-165261807004229605.chn"
+      },
+      {
+        "title": "💻 Dân văn phòng cần màn phụ: Vì sao?",
+        "desc": "Ngày càng nhiều dân văn phòng cần thêm màn hình phụ khi làm việc, không chỉ để tăng năng suất mà còn vì nhiều lý do khác.",
+        "tag": "review",
+        "tagLabel": "⭐ REVIEW",
+        "source": "17/07·Genk",
+        "url": "https://genk.vn/vi-sao-dan-van-phong-bat-dau-can-them-man-phu-khi-lam-viec-165260717205109837.chn"
+      }
+    ],
+    "finance": [
+      {
+        "title": "📈 Khối ngoại bán ròng 2.100 tỷ khi VN-Index mất 40 điểm",
+        "desc": "Trong tuần VN-Index giảm 40 điểm, khối ngoại đã bán ròng gần 2.100 tỷ đồng, gây áp lực lớn lên thị trường chứng khoán.",
+        "detail": "Lũy kế sau 5 phiên giao dịch, khối ngoại đã bán ròng mạnh mẽ, góp phần vào đà giảm của VN-Index. Hành động này cho thấy tâm lý thận trọng của nhà đầu tư nước ngoài trước những biến động của thị trường. Các nhà đầu tư trong nước cần theo dõi sát sao động thái này để đưa ra quyết định phù hợp cho danh mục của mình.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "18/07·CafeF",
+        "url": "https://cafef.vn/ban-rong-gan-2100-ty-dong-trong-tuan-index-mat-40-diem-khoi-ngoai-dang-xa-ma-nao-188260718000826322.chn"
+      },
+      {
+        "title": "🪙 Giá vàng nhẫn thấp hơn SJC tới 17 triệu đồng/lượng",
+        "desc": "Giá vàng nhẫn 9999 bất ngờ neo thấp hơn vàng miếng SJC tới 17,1 triệu đồng/lượng, tạo ra chênh lệch lớn.",
+        "tag": "gold",
+        "tagLabel": "🪙 VÀNG",
+        "source": "17/07·VnEconomy",
+        "url": "https://vneconomy.vn/gia-vang-nhan-9999-bat-ngo-neo-thap-hon-sjc-toi-17-trieu-dongluong.htm"
+      },
+      {
+        "title": "💵 VietinBank 15 năm liên tiếp trong Forbes Global 2000",
+        "desc": "VietinBank tiếp tục là ngân hàng Việt Nam duy nhất 15 năm liền góp mặt trong danh sách 2000 doanh nghiệp lớn nhất thế giới của Forbes.",
+        "tag": "rate",
+        "tagLabel": "💵 LÃI SUẤT",
+        "source": "17/07·VnEconomy",
+        "url": "https://vneconomy.vn/vietinbank-ngan-hang-viet-nam-duy-nhat-15-nam-lien-tiep-ghi-danh-trong-forbes-global-2000.htm"
+      }
+    ]
+  },
+  {
     "date": "2026-07-17",
     "dayLabel": "Thứ Sáu",
     "dateLabel": "17/07/2026",
