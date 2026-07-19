@@ -1,5 +1,71 @@
 [
   {
+    "weekLabel": "Tuần 29/2026",
+    "fromDate": "2026-07-13",
+    "toDate": "2026-07-18",
+    "highlights": [
+      {
+        "title": "🎬 Châu Tinh Trì trở lại, khuấy đảo phòng vé!",
+        "desc": "Đạo diễn Châu Tinh Trì tái xuất với 'Kungfu nữ túc' và nhanh chóng tạo nên cơn sốt phòng vé. Tuy nhiên, phim cũng gây tranh cãi tại Hàn Quốc vì bị cho là chế giễu đội bóng nước này.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "url": "https://vnexpress.net/phim-chau-tinh-tri-khuay-dong-phong-ve-5098782.html"
+      },
+      {
+        "title": "💸 VPBank lãi kỷ lục gần 11.000 tỷ đồng",
+        "desc": "VPBank báo lãi trước thuế quý II kỷ lục 10.929 tỷ đồng, vượt qua biến động vĩ mô và củng cố vị thế ngân hàng hàng đầu. Nhiều ngân hàng khác cũng ghi nhận lợi nhuận tăng đột biến.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "url": "https://vnexpress.net/vpbank-lai-ky-luc-gan-11-000-ty-dong-5098551.html"
+      },
+      {
+        "title": "🤖 Netflix dùng AI cho phim tài liệu: Nhanh gấp đôi, chi phí giảm nửa",
+        "desc": "Netflix thừa nhận đã sử dụng AI cho 17 phút phim tài liệu, giúp tăng tốc độ sản xuất và giảm chi phí đáng kể. Công nghệ AI đang ngày càng được ứng dụng rộng rãi trong nhiều lĩnh vực.",
+        "tag": "feature",
+        "tagLabel": "✨ FEATURE",
+        "url": "https://genk.vn/netflix-thua-nhan-da-dung-ai-cho-17-phut-phim-tai-lieu-nhanh-gap-doi-chi-phi-giam-mot-nua-khi-ngan-sach-tien-sat-20-ty-usd-165261807004229605.chn"
+      },
+      {
+        "title": "📜 Chủ tịch UBND xã được tăng quyền xử phạt đất đai gấp 50 lần",
+        "desc": "Chính phủ ban hành Nghị định 281, tăng quyền xử phạt vi phạm hành chính về đất đai cho Chủ tịch UBND xã lên gấp 50 lần, lên đến 250 triệu đồng, tăng cường quản lý đất đai tại địa phương.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "url": "https://tuoitre.vn/chu-tich-ubnd-xa-duoc-xu-phat-vi-pham-hanh-chinh-ve-dat-dai-gap-50-lan-so-voi-truoc-100260715094217618.htm"
+      },
+      {
+        "title": "📈 Khối ngoại bán ròng 2.100 tỷ khi VN-Index mất 40 điểm",
+        "desc": "Trong tuần VN-Index giảm 40 điểm, khối ngoại đã bán ròng gần 2.100 tỷ đồng, gây áp lực lớn lên thị trường chứng khoán. Cổ phiếu PNJ cũng 'thủng' đáy 15 tháng.",
+        "tag": "hot",
+        "tagLabel": "🔥 HOT",
+        "url": "https://cafef.vn/ban-rong-gan-2100-ty-dong-trong-tuan-index-mat-40-diem-khoi-ngoai-dang-xa-ma-nao-188260718000826322.chn"
+      }
+    ],
+    "topRepos": [],
+    "topGaming": [
+      {
+        "title": "🎪 T1 vs HLE tại EWC 2026: Áp lực đè nặng",
+        "desc": "Trận đấu giữa T1 và HLE tại EWC 2026 đang chứng kiến một tuyển thủ đặc biệt chịu áp lực lớn, thu hút sự chú ý của fan.",
+        "tag": "chart",
+        "tagLabel": "📊 CHART",
+        "url": "https://cl44.cnnd.vn/mot-tuyen-thu-dac-biet-chiu-ap-luc-trong-tran-dau-t1-hle-thuoc-ewc-2026-178260717010551264.chn"
+      },
+      {
+        "title": "🏆 Gumayusi lần đầu chia sẻ về chức vô địch MSI 2026 không có Faker",
+        "desc": "Tuyển thủ Gumayusi đã có những chia sẻ về danh hiệu quốc tế lớn đầu tiên của mình tại MSI 2026, khi không còn đồng hành cùng Faker.",
+        "tag": "chart",
+        "tagLabel": "📊 CHART",
+        "url": "https://cl44.cnnd.vn/gumayusi-lan-dau-noi-ve-danh-hieu-gianh-duoc-sau-khi-roi-xa-faker-178260716210040413.chn"
+      },
+      {
+        "title": "💻 Võ Lâm Truyền Kỳ: 20 năm vẫn là 'mái nhà chung' của game thủ",
+        "desc": "Sau 20 năm phát hành, Võ Lâm Truyền Kỳ vẫn giữ vững vị thế, là tựa game gắn kết hàng triệu game thủ Việt.",
+        "tag": "gameplay",
+        "tagLabel": "🎮 GAMEPLAY",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcTREZUdXWVZwZXliTUo5RTlYcVoyOWV6MUo3VWlZaFN1WkptYllFRUFKYXRZQk1zRnFYMS1LTkg3QnRzUjk5b1llS0RpbjdZbUtlSTNRVjVUaU1nWkNTZmJHZEFJeGc1dlpuZGdlZ0VvSHMxWHJ5bmtXZXFqVV9xVXhlZzhpUGNIQWE4bkxhVmpkMl8wc2tmLTFyUmpnVWZrempTd0pXcGZ0Wks1Tk5z?oc=5"
+      }
+    ]
+  },
+  {
     "weekLabel": "Tuần 19/2026",
     "fromDate": "2026-05-04",
     "toDate": "2026-05-10",
