@@ -1,5 +1,180 @@
 [
   {
+    "date": "2026-07-19",
+    "dayLabel": "Chủ Nhật",
+    "dateLabel": "19/07/2026",
+    "entertainment": [
+      {
+        "title": "🎬 'The Odyssey' Gây Sốt Phòng Vé, Dàn Sao Khủng Lộ Diện",
+        "desc": "Bom tấn 'The Odyssey' đang càn quét phòng vé Bắc Mỹ, đồng thời hé lộ dàn diễn viên hơn 20 tên tuổi đình đám.",
+        "tag": "movie",
+        "tagLabel": "🎬 PHIM",
+        "source": "19/07·VnExpress",
+        "url": "https://vnexpress.net/dan-dien-vien-dong-bom-tan-the-odyssey-5099115.html"
+      },
+      {
+        "title": "⭐ Lisa (BLACKPINK) Đổ Bộ Đám Cưới Hot Nhất Thái Lan",
+        "desc": "Lisa của BLACKPINK cùng dàn sao hạng A Thái Lan như Baifern, Mario Maurer đã 'đốt cháy' lễ cưới của cặp đôi Nadech - Yaya.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "19/07·VnExpress",
+        "url": "https://vnexpress.net/lisa-va-dan-sao-thai-du-le-cuoi-nadech-yaya-5097020.html"
+      },
+      {
+        "title": "📺 Đại Nghĩa Cạo Tóc Gây Sốc Trên Sân Khấu 'Anh Trai Vượt Ngàn Chông Gai'",
+        "desc": "MC Đại Nghĩa khiến khán giả bất ngờ khi dùng tông đơ cạo tóc ngay trên sân khấu chương trình 'Anh Trai Vượt Ngàn Chông Gai'.",
+        "tag": "show",
+        "tagLabel": "📺 SHOW",
+        "source": "19/07·VnExpress",
+        "url": "https://vnexpress.net/dai-nghia-cao-toc-tren-san-khau-5099093.html"
+      },
+      {
+        "title": "⭐ Jisoo (BLACKPINK) Bị Yêu Cầu Ngừng Đóng Phim Sau 3 Thất Bại Liên Tiếp",
+        "desc": "Sau khi liên tiếp góp mặt trong 3 dự án phim không thành công, Jisoo (BLACKPINK) đang đối mặt với làn sóng yêu cầu ngừng diễn xuất từ khán giả.",
+        "detail": "Dù là một trong những idol hàng đầu Kpop, con đường diễn xuất của Jisoo lại gặp nhiều trắc trở. Việc 3 bộ phim gần đây cô tham gia đều không đạt được thành công như mong đợi đã khiến nhiều netizen bày tỏ sự thất vọng, thậm chí yêu cầu cô tập trung vào sự nghiệp âm nhạc. Áp lực này đặt ra thách thức lớn cho Jisoo trong việc khẳng định bản thân ở vai trò diễn viên.",
+        "tag": "celeb",
+        "tagLabel": "⭐ CELEB",
+        "source": "18/07·Kenh14",
+        "url": "https://kenh14.vn/jisoo-blackpink-bi-yeu-cau-ngung-dong-phim-215260718225217178.chn"
+      },
+      {
+        "title": "🎬 Phim Hàn 8 Tập Phá 11 Kỷ Lục: Rating Cao Hơn Đỉnh Everest!",
+        "desc": "Một bộ phim Hàn Quốc chỉ với 8 tập đã tạo nên cơn địa chấn khi phá vỡ 11 kỷ lục, đạt rating 'cao hơn đỉnh Everest' và nam chính được khen hoàn hảo.",
+        "detail": "Trong bối cảnh thị trường phim ảnh cạnh tranh khốc liệt, tác phẩm này nổi lên như một hiện tượng hiếm có. Với kịch bản chặt chẽ, diễn xuất đỉnh cao và đặc biệt là nam chính 'hoàn hảo', bộ phim đã nhanh chóng chinh phục khán giả, thiết lập những kỷ lục rating chưa từng có. Đây là minh chứng cho thấy chất lượng vẫn là yếu tố then chốt để tạo nên một 'siêu phẩm' thực sự.",
+        "tag": "movie",
+        "tagLabel": "🎬 PHIM",
+        "source": "19/07·Kenh14",
+        "url": "https://kenh14.vn/khong-ai-lam-lai-phim-han-chieu-8-tap-pha-11-ky-luc-rating-cao-hon-dinh-everest-nam-chinh-don-gian-la-hoan-hao-215260719112709251.chn"
+      }
+    ],
+    "trending": [
+      {
+        "title": "🔥 'Vietnam Is Calling': Việt Nam Đang 'Trending' Khắp Mạng Xã Hội",
+        "desc": "Cụm từ 'Vietnam is calling' đang viral mạnh mẽ trên các nền tảng mạng xã hội, đặc biệt là TikTok, với hàng loạt video quảng bá vẻ đẹp Việt Nam.",
+        "tag": "viral",
+        "tagLabel": "🔥 VIRAL",
+        "source": "19/07·Vietcetera",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQWUFFbnhYdXdHWEZ1REIxNjVySDJ0dkZza0hLa25TLXBhNlN4X0J4d2hmS3YyUGY3MGs4Vmx5XzBLUXNkaHZEWGs1SnoycExpb0k5UXFtYWR3X2hmd2xvR29YbEdzWkk1VVdtSDJTZGZXS0RaYWRXSDF6NVhVSHdQZUhIWHBqYnVDR1UyUlFUdXUxSHlBeXBiRDZkejNUUdIBowFBVV95cUxObVVxNEdEdGV0R3JsaUx5MUwtWkxZNTdqTDczVy0tRzR3dzFvbmR4ank4NDNYZ0ZEc1RyMXZKYTg4NmxFQnk5Wk1VQVRiYXJYVHVGQmRtWHVzdnRZcGFWTFNaQTBzTTkwU2VFS0ljY2pjSDdLTndyNW1QV1NpWkVMV2NjM3RKSzBsQm1ZYTB4bXFvVC1Fc3dzVXl5SVRYdmRKNzZj?oc=5"
+      }
+    ],
+    "gaming": [
+      {
+        "title": "🎮 GTA 6: Chi Phí 'Khủng' Khiến Game Thủ Mới Chùn Bước",
+        "desc": "Game thủ đang xôn xao về chi phí dự kiến để trải nghiệm GTA 6, với con số 'khủng' có thể là rào cản cho người chơi mới.",
+        "detail": "Dù chưa ra mắt, GTA 6 đã gây bão với những đồn đoán về giá game, DLC và các gói nâng cấp trong game. Nhiều game thủ đã thử tính toán và đưa ra con số không hề nhỏ, khiến những người mới muốn thử sức với siêu phẩm này phải cân nhắc kỹ lưỡng. Đây là một thách thức lớn cho Rockstar Games trong việc cân bằng giữa lợi nhuận và khả năng tiếp cận của cộng đồng game thủ.",
+        "tag": "console",
+        "tagLabel": "🎮 CONSOLE",
+        "source": "17/07·cl44.cnnd.vn",
+        "url": "https://cl44.cnnd.vn/game-thu-tinh-toan-chi-phi-de-choi-gta-6-con-so-khung-khien-nhieu-nguoi-choi-moi-chun-buoc-178260717140805413.chn"
+      }
+    ],
+    "lifestyle": [
+      {
+        "title": "💪 Uống Nước Chanh Mỗi Sáng: Lợi Ích Bất Ngờ Cho Sức Khỏe",
+        "desc": "Bắt đầu ngày mới với một cốc nước chanh có thể mang lại nhiều lợi ích đáng ngạc nhiên cho sức khỏe của bạn.",
+        "detail": "Nước chanh ấm không chỉ giúp thanh lọc cơ thể, hỗ trợ tiêu hóa mà còn cung cấp vitamin C dồi dào, tăng cường hệ miễn dịch. Nhiều chuyên gia dinh dưỡng khuyến khích thói quen này để cải thiện làn da, hỗ trợ giảm cân và cân bằng độ pH trong cơ thể. Tuy nhiên, bạn nên uống bằng ống hút và súc miệng sau đó để bảo vệ men răng nhé.",
+        "tag": "health",
+        "tagLabel": "💪 HEALTH",
+        "source": "19/07·VnExpress",
+        "url": "https://vnexpress.net/dieu-gi-xay-ra-khi-uong-nuoc-chanh-moi-sang-5099027.html"
+      },
+      {
+        "title": "✈️ Săn 'Gương Trời' Tại Biển Khánh Hòa: Điểm Đến Mới Cực Hot!",
+        "desc": "Biển Mỹ Hòa, Khánh Hòa đang trở thành điểm đến 'sống ảo' cực hot với hiện tượng 'gương trời' độc đáo vào những ngày đầu tháng 6 và 7.",
+        "detail": "Hiện tượng 'gương trời' xảy ra khi mặt biển lặng như tờ, phản chiếu bầu trời xanh biếc tạo nên khung cảnh huyền ảo, thu hút đông đảo du khách và nhiếp ảnh gia. Để có những bức ảnh đẹp nhất, bạn nên đến vào lúc bình minh hoặc hoàng hôn khi thủy triều xuống thấp. Đừng quên chuẩn bị máy ảnh và trang phục thật đẹp để 'bắt trọn' khoảnh khắc kỳ diệu này nhé!",
+        "tag": "travel",
+        "tagLabel": "✈️ TRAVEL",
+        "source": "19/07·VnExpress",
+        "url": "https://vnexpress.net/san-guong-troi-tai-bien-khanh-hoa-5098938.html"
+      },
+      {
+        "title": "🍜 Ăn Hải Sản Mùa Hè: Cẩn Thận 3 Nguy Cơ Gây Tổn Thương Thận!",
+        "desc": "Mùa hè là mùa hải sản lên ngôi, nhưng bác sĩ cảnh báo 3 nguy cơ tiềm ẩn có thể gây tổn thương thận nếu ăn không đúng cách.",
+        "detail": "Hải sản rất ngon và bổ dưỡng, nhưng nếu ăn quá nhiều, không tươi sống hoặc chế biến sai cách có thể dẫn đến ngộ độc, tăng axit uric gây gout, hoặc nhiễm khuẩn ảnh hưởng đến thận. Đặc biệt, người có tiền sử bệnh thận cần hết sức lưu ý. Hãy chọn hải sản tươi ngon, nấu chín kỹ và ăn với lượng vừa phải để bảo vệ sức khỏe bạn nhé.",
+        "tag": "food",
+        "tagLabel": "🍜 FOOD",
+        "source": "17/07·VnExpress",
+        "url": "https://vnexpress.net/3-nguy-co-gay-ton-thuong-than-khi-an-hai-san-vao-mua-he-5098665.html"
+      }
+    ],
+    "vietnam": [
+      {
+        "title": "🏙️ Tai Nạn Thương Tâm Tại Trang Trại Chăn Nuôi Thanh Hóa: 3 Người Tử Vong",
+        "desc": "Một vụ tai nạn nghiêm trọng tại trang trại chăn nuôi ở Thanh Hóa đã khiến 3 người tử vong và 4 người khác bị thương.",
+        "detail": "Vụ việc xảy ra tại xã Thạch Quảng, huyện Thạch Thành, tỉnh Thanh Hóa, ban đầu được xác định do ngạt khí và điện giật. Đây là một lời cảnh tỉnh về an toàn lao động trong các trang trại chăn nuôi, đặc biệt là trong môi trường kín và có sử dụng điện. Các cơ quan chức năng đang khẩn trương điều tra nguyên nhân và hỗ trợ các gia đình nạn nhân.",
+        "tag": "society",
+        "tagLabel": "🏙️ XÃ HỘI",
+        "source": "19/07·VnExpress",
+        "url": "https://vnexpress.net/ba-nguoi-tu-vong-do-tai-nan-trong-trang-trai-chan-nuoi-5099075.html"
+      },
+      {
+        "title": "💼 Apple Tăng Giá iCloud+ Tại Việt Nam, Gói Cao Nhất Gần 1,8 Triệu Đồng",
+        "desc": "Apple vừa điều chỉnh tăng giá dịch vụ lưu trữ đám mây iCloud+ tại Việt Nam, với gói cao nhất lên gần 1,8 triệu đồng.",
+        "tag": "economy",
+        "tagLabel": "💼 KINH TẾ",
+        "source": "18/07·Tuổi Trẻ",
+        "url": "https://tuoitre.vn/apple-tang-gia-icloud-tai-viet-nam-goi-cao-nhat-len-gan-18-trieu-dong-100260718185037959.htm"
+      },
+      {
+        "title": "🚦 17 Tàu Bay Tại Việt Nam Dừng Hoạt Động Vì Thiếu Động Cơ",
+        "desc": "Cục Hàng không Việt Nam thông báo có tới 17 tàu bay đang phải dừng hoạt động do thiếu động cơ, ảnh hưởng đến lịch trình bay.",
+        "detail": "Tình trạng thiếu động cơ đang gây ra nhiều khó khăn cho các hãng hàng không Việt Nam, dẫn đến việc hủy hoặc chậm chuyến, ảnh hưởng trực tiếp đến kế hoạch di chuyển của hành khách. Nguyên nhân được cho là do chuỗi cung ứng toàn cầu gặp vấn đề. Đây là một thách thức lớn cho ngành hàng không trong việc đảm bảo chất lượng dịch vụ và đáp ứng nhu cầu đi lại ngày càng tăng.",
+        "tag": "traffic",
+        "tagLabel": "🚦 GIAO THÔNG",
+        "source": "19/07·VnExpress",
+        "url": "https://vnexpress.net/17-tau-bay-tai-viet-nam-van-dung-hoat-dong-vi-thieu-dong-co-5099121.html"
+      }
+    ],
+    "tech": [
+      {
+        "title": "🤖 Cuộc Đua Thiết Bị AI Hậu Smartphone: Thất Bại 'Đẹp' Của Humane AI, Rabbit R1",
+        "desc": "Các thiết bị AI được quảng cáo là 'tương lai hậu-smartphone' như Humane AI và Rabbit R1 đang liên tiếp gặp thất bại, đặt ra câu hỏi về hướng đi của AI.",
+        "tag": "ai",
+        "tagLabel": "🤖 AI",
+        "source": "19/07·Tinhte",
+        "url": "https://tinhte.vn/thread/cuoc-dua-thiet-bi-ai-hau-smartphone-humane-ai-rabbit-r1-voi-lich-su-toan-nhung-that-bai-dep.4161139/"
+      },
+      {
+        "title": "🚀 AMD Ra Mắt Ryzen AI Halo: Mini PC Mạnh Mẽ Cho Nhà Phát Triển AI",
+        "desc": "AMD vừa trình làng Ryzen AI Halo, dòng mini PC sử dụng nền tảng Ryzen AI Max+ 'Strix Halo', cạnh tranh trực tiếp với NVIDIA DGX Spark.",
+        "detail": "Ryzen AI Halo được thiết kế đặc biệt dành cho các nhà phát triển AI, cung cấp hiệu năng mạnh mẽ trong một thiết kế nhỏ gọn. Với khả năng chạy cả Windows và Linux, thiết bị này hứa hẹn sẽ là công cụ đắc lực cho việc nghiên cứu và phát triển các ứng dụng AI. Đây là động thái cho thấy AMD đang tăng cường cạnh tranh trong thị trường AI, mang đến nhiều lựa chọn hơn cho giới công nghệ.",
+        "tag": "launch",
+        "tagLabel": "🚀 LAUNCH",
+        "source": "19/07·Tinhte",
+        "url": "https://tinhte.vn/thread/amd-ra-mat-ryzen-ai-halo-mini-pc-cho-ai-canh-tranh-voi-dgx-spark-chay-duoc-ca-windows-va-linux.4161762/"
+      },
+      {
+        "title": "💻 Windows 11 Trên 8GB RAM: Ngay Cả Microsoft Cũng 'Bó Tay'?",
+        "desc": "Nhiều năm qua, 8GB RAM được xem là cấu hình tối thiểu cho Windows 11, nhưng thực tế cho thấy ngay cả Microsoft cũng khó 'cứu nổi' hiệu năng ở mức này.",
+        "detail": "Người dùng Windows 11 với 8GB RAM thường xuyên gặp phải tình trạng giật lag, chậm chạp khi mở nhiều ứng dụng hoặc chạy các tác vụ nặng. Điều này gây khó chịu cho dân văn phòng và những người làm việc cần hiệu suất ổn định. Lời khuyên từ các chuyên gia là nên nâng cấp lên ít nhất 16GB RAM để có trải nghiệm mượt mà hơn, đặc biệt trong bối cảnh các ứng dụng ngày càng 'ngốn' tài nguyên.",
+        "tag": "pc",
+        "tagLabel": "💻 PC",
+        "source": "19/07·Genk",
+        "url": "https://genk.vn/ngay-ca-microsoft-cung-khong-cuu-noi-windows-11-tren-8gb-ram-165261907092328071.chn"
+      }
+    ],
+    "finance": [
+      {
+        "title": "📈 Thanh Khoản Chứng Khoán Giảm Thấp Nhất 1 Tháng Qua",
+        "desc": "Dòng tiền giao dịch trên thị trường chứng khoán đã giảm xuống mức thấp nhất trong một tháng qua, đặt ra câu hỏi về xu hướng tuần tới.",
+        "detail": "Việc thanh khoản sụt giảm mạnh thường là dấu hiệu cho thấy tâm lý thận trọng của nhà đầu tư, hoặc thiếu vắng thông tin hỗ trợ thị trường. Điều này có thể ảnh hưởng đến đà tăng trưởng của VN-Index trong ngắn hạn. Các nhà đầu tư cần theo dõi sát sao các yếu tố vĩ mô và thông tin doanh nghiệp để đưa ra quyết định phù hợp trong bối cảnh thị trường đang có nhiều diễn biến khó lường.",
+        "tag": "stock",
+        "tagLabel": "📈 CK",
+        "source": "19/07·CafeF",
+        "url": "https://cafef.vn/thanh-khoan-giam-thap-nhat-mot-thang-qua-chung-khoan-di-ve-dau-tuan-toi-188260719101452543.chn"
+      },
+      {
+        "title": "₿ Triệt Phá Đường Dây Tiền Ảo CVX Lừa Đảo Hơn 100 Tỷ Đồng",
+        "desc": "Một đường dây lừa đảo tiền ảo CVX đã bị triệt phá, chiếm đoạt trên 100 tỷ đồng từ khoảng 3.000 người tham gia.",
+        "detail": "Núp bóng dưới danh nghĩa hệ sinh thái công nghệ, đường dây này đã dụ dỗ hàng ngàn người đầu tư vào đồng tiền ảo CVX với những lời hứa hẹn lợi nhuận 'khủng'. Vụ việc một lần nữa cảnh báo về những rủi ro tiềm ẩn khi tham gia vào thị trường tiền ảo không được kiểm soát. Người dân cần nâng cao cảnh giác, tìm hiểu kỹ thông tin và chỉ đầu tư vào các kênh chính thống, minh bạch để tránh 'tiền mất tật mang'.",
+        "tag": "crypto",
+        "tagLabel": "₿ CRYPTO",
+        "source": "19/07·CafeBiz",
+        "url": "https://cafebiz.vn/triet-pha-duong-day-tien-ao-cvx-lua-3000-nguoi-chiem-doat-tren-100-ty-dong-176260719094158129.chn"
+      }
+    ]
+  },
+  {
     "date": "2026-07-18",
     "dayLabel": "Thứ Bảy",
     "dateLabel": "18/07/2026",
