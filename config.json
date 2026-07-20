@@ -6,7 +6,10 @@
     "footer": "🐟 Cá Mặn Đau Lưng · Sáng 9AM · Recap 10AM · Không tin lá cải"
   },
   "telegram": {
-    "chat_ids": ["655323886", "782194719"]
+    "chat_ids": [
+      "655323886",
+      "782194719"
+    ]
   },
   "topics": {
     "entertainment": {
@@ -67,7 +70,10 @@
       ],
       "rss_feeds": [
         "https://gamek.vn/home.rss",
-        "https://news.google.com/rss/search?q=game+mobile+PC+m%E1%BB%9Bi+VN&hl=vi&gl=VN&ceid=VN:vi"
+        "https://news.google.com/rss/search?q=game+mobile+PC+m%E1%BB%9Bi+VN&hl=vi&gl=VN&ceid=VN:vi",
+        "https://gamek.vn/pc-console.rss",
+        "https://gamek.vn/mobile-app.rss",
+        "https://gamek.vn/esport.rss"
       ],
       "prompt_instruction": "Game hot đang được bàn tán, event/patch/update lớn, mobile game viral VN, top Steam/console. Viết bắt trend, hấp dẫn dân chơi game từ mobile đến console.",
       "schema": "{\"title\":\"emoji+tên game\",\"desc\":\"tiếng Việt 1-2 câu nêu điểm hấp dẫn\",\"detail\":\"tiếng Việt 3-5 câu bổ sung bối cảnh, thay đổi và impact, không lặp desc\",\"tag\":\"pc|mobile|console|event\",\"tagLabel\":\"💻 PC|📱 MOBILE|🎮 CONSOLE|🎪 EVENT\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
@@ -157,6 +163,27 @@
       ],
       "prompt_instruction": "Chứng khoán VN, crypto, vàng, BĐS, lãi suất — tin có impact người 30-40 tuổi đang tích lũy tài sản. Con số cụ thể (giá, %, biến động). URL chỉ từ Dữ liệu tìm kiếm.",
       "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt 1-2 câu nêu con số\",\"detail\":\"tiếng Việt 3-5 câu bổ sung bối cảnh, số liệu và impact tài chính, không lặp desc\",\"tag\":\"stock|crypto|gold|realestate|rate\",\"tagLabel\":\"📈 CK|₿ CRYPTO|🪙 VÀNG|🏠 BĐS|💵 LÃI SUẤT\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
+    },
+    "sports_thethao": {
+      "enabled": true,
+      "data_source": "jina",
+      "output_field": "sports",
+      "emoji": "⚽",
+      "section_label": "Thể thao",
+      "min_items": 3,
+      "max_items": 5,
+      "search_queries": [
+        "thể thao Việt Nam {month_year} bóng đá",
+        "V-League bóng đá VN {month_year}",
+        "Champions League Ngoại hạng Anh {month_year}"
+      ],
+      "rss_feeds": [
+        "https://www.24h.com.vn/upload/rss/thethao.rss",
+        "https://www.24h.com.vn/upload/rss/bongda.rss",
+        "https://www.24h.com.vn/upload/rss/tennis.rss"
+      ],
+      "prompt_instruction": "Tin thể thao nổi bật: bóng đá VN + quốc tế, tennis, các môn khác. Ưu tiên trận đấu vừa/sắp diễn ra, chuyển nhượng lớn, kết quả gây bất ngờ. URL chỉ từ Dữ liệu tìm kiếm.",
+      "schema": "{\"title\":\"emoji+tên\",\"desc\":\"tiếng Việt max 2 câu, có tỉ số/tên đội\",\"tag\":\"football|tennis|other|transfer\",\"tagLabel\":\"⚽ BÓNG ĐÁ|🎾 TENNIS|🏆 KHÁC|🔄 CHUYỂN NHƯỢNG\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     }
   },
   "tone_guidance": "TONE: người viết 30-40 tuổi VN, vui vẻ, đời, chuyên nghiệp nhưng không cứng nhắc. Xưng 'bạn' hoặc 'anh chị'. Tránh teen slang quá đà và CAPS. Cho phép tin showbiz/phim/nhạc/trending/gaming hấp dẫn, viết bắt trend miễn có nguồn đàng hoàng — không chọn tin rác/clickbait trắng trợn. 1 emoji đầu title, tối đa 1 emoji trong desc. Câu ngắn, thông tin đậm, có con số cụ thể khi có. Ngôn ngữ: chủ yếu Việt Nam, cho phép mix Anh khi giữ tên riêng/thuật ngữ."
