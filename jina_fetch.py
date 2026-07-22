@@ -6,6 +6,15 @@ JINA_API_KEY = os.environ.get("JINA_API_KEY", "")
 SEARCH_URL   = "https://s.jina.ai/"
 GITHUB_API   = "https://api.github.com/search/repositories"
 
+# Domains blocked from all fetchers: paywalled / login-required / unreliable.
+# Match is substring on lowercased URL so subdomains like cl44.cnnd.vn are covered.
+BLOCKED_DOMAINS = ("cnnd.vn",)
+
+
+def is_blocked_url(url: str) -> bool:
+    u = (url or "").lower()
+    return any(d in u for d in BLOCKED_DOMAINS)
+
 
 # ── Jina Search ──────────────────────────────────────────────────────────────
 
@@ -24,8 +33,10 @@ def jina_search(query: str, max_results: int = 5) -> list[dict]:
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.loads(resp.read())
-        results = data.get("data", [])[:max_results]
-        print(f"  [jina] '{query}' → {len(results)} results")
+        raw = data.get("data", [])
+        results = [r for r in raw if not is_blocked_url(r.get("url", ""))][:max_results]
+        blocked = len(raw) - len([r for r in raw if not is_blocked_url(r.get("url", ""))])
+        print(f"  [jina] '{query}' → {len(results)} results" + (f" ({blocked} blocked)" if blocked else ""))
         return [
             {
                 "title": r.get("title", ""),
@@ -82,7 +93,8 @@ def github_search(query: str, max_results: int = 8) -> list[dict]:
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.loads(resp.read())
-        items = data.get("items", [])[:max_results]
+        raw = data.get("items", [])
+        items = [it for it in raw if not is_blocked_url(it.get("html_url", ""))][:max_results]
         print(f"  [github] '{query}' → {len(items)} repos")
         return [
             {

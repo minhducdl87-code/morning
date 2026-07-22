@@ -64,18 +64,17 @@
       "min_items": 3,
       "max_items": 5,
       "search_queries": [
-        "Steam trending game {month_year} review",
-        "mobile game hot {month_year} Việt Nam",
-        "PS5 Xbox Nintendo Switch game mới {month_year}"
+        "Steam trending game {month_year} review site:pcgamer.com OR site:ign.com OR site:eurogamer.net",
+        "mobile game hot {month_year} site:gamek.vn OR site:tinhte.vn OR site:genk.vn",
+        "PS5 Xbox Nintendo Switch game mới {month_year} site:ign.com OR site:gamespot.com OR site:eurogamer.net"
       ],
       "rss_feeds": [
         "https://gamek.vn/home.rss",
-        "https://news.google.com/rss/search?q=game+mobile+PC+m%E1%BB%9Bi+VN&hl=vi&gl=VN&ceid=VN:vi",
         "https://gamek.vn/pc-console.rss",
         "https://gamek.vn/mobile-app.rss",
         "https://gamek.vn/esport.rss"
       ],
-      "prompt_instruction": "Game hot đang được bàn tán, event/patch/update lớn, mobile game viral VN, top Steam/console. Viết bắt trend, hấp dẫn dân chơi game từ mobile đến console.",
+      "prompt_instruction": "Game hot đang được bàn tán, event/patch/update lớn, mobile game viral VN, top Steam/console. Viết bắt trend, hấp dẫn dân chơi game từ mobile đến console. CHỈ dùng URL từ Dữ liệu tìm kiếm/RSS bên trên, tuyệt đối KHÔNG chọn link từ cnnd.vn, cl44.cnnd.vn hay bất kỳ site yêu cầu đăng nhập/paywall nào.",
       "schema": "{\"title\":\"emoji+tên game\",\"desc\":\"tiếng Việt 1-2 câu nêu điểm hấp dẫn\",\"detail\":\"tiếng Việt 3-5 câu bổ sung bối cảnh, thay đổi và impact, không lặp desc\",\"tag\":\"pc|mobile|console|event\",\"tagLabel\":\"💻 PC|📱 MOBILE|🎮 CONSOLE|🎪 EVENT\",\"source\":\"ngày·nguồn\",\"url\":\"\"}"
     },
     "lifestyle_wellness": {

@@ -1,6 +1,7 @@
 """RSS/Atom feed fetcher — supplements Jina search for VN-specific sources."""
 import urllib.request
 import xml.etree.ElementTree as ET
+from jina_fetch import is_blocked_url
 
 DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0 morning-digest"}
 RSS_TIMEOUT    = 10
@@ -31,7 +32,7 @@ def fetch_rss(url: str, max_items: int = MAX_PER_FEED) -> list[dict]:
         link  = (item.findtext("link") or "").strip()
         desc  = (item.findtext("description") or "").strip()
         pub   = item.findtext("pubDate") or ""
-        if title and link:
+        if title and link and not is_blocked_url(link):
             items.append({
                 "title":       strip_cdata(title),
                 "url":         link,
@@ -50,7 +51,7 @@ def fetch_rss(url: str, max_items: int = MAX_PER_FEED) -> list[dict]:
             link = link_el.get("href") if link_el is not None else ""
             desc = (entry.findtext(ns+"summary") or entry.findtext(ns+"content") or "").strip()
             pub  = entry.findtext(ns+"published") or entry.findtext(ns+"updated") or ""
-            if title and link:
+            if title and link and not is_blocked_url(link):
                 items.append({
                     "title":       strip_cdata(title),
                     "url":         link,
