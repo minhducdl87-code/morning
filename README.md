@@ -67,7 +67,7 @@ Hệ thống bản tin tự động hàng ngày (Morning Digest) + chatbot Teleg
 | `generate_weekly.py` | Tổng hợp 7 daily cards → Gemini → write weekly.json (Chủ Nhật) |
 | `generate_monthly.py` | Tổng hợp toàn tháng → write monthly.json (ngày 1 tháng, support backfill) |
 | `jina_fetch.py` | Fetch data qua Jina Search API + GitHub Search API (dispatcher `fetch_topic_context`) |
-| `rss_fetch.py` | Fetch RSS/Atom feed (vnexpress, cafef, tinhte, tuoitre, ...) |
+| `rss_fetch.py` | Fetch RSS/Atom feed (vnexpress, cafef, tinhte, tuoitre, kenh14, thanhnien, ...) — lọc bài cũ >14 ngày (pubDate), đưa pubDate vào context LLM |
 | `digest_utils.py` | Utilities: normalize_title, Jaccard dedup (threshold 0.55), DEDUP_DAYS=7, batch HEAD-check URLs (ThreadPool 8), validate_news_items, URL blacklist |
 | `notify-telegram.py` | Push Telegram: lúc 9h (daily digest) + 10h (recap 3 tin top) |
 | `bot/` | Cloudflare Worker (TypeScript) — webhook, RAG, commands, LLM integration, KV state |
